@@ -1,0 +1,603 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"la",
+				"label2"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 490.0,
+		"last_filter": "kodi",
+		"selected_items":
+		[
+			[
+				"kodi",
+				"KodiDevKit: Check Fonts"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"sublime",
+				"SublimeKodi: Check for invalid nodes / attributes"
+			],
+			[
+				"",
+				"SublimeKodi: Check Variables"
+			],
+			[
+				"subl",
+				"SublimeKodi: Check for invalid nodes / attributes"
+			],
+			[
+				"Package Control:",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 659.0
+	},
+	"console":
+	{
+		"height": 855.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"//ALIENWARE/Kodi/addons/skin.omni"
+	],
+	"file_history":
+	[
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/DialogSlider.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/Includes_WidgetContent.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/View_52_Thumbnail.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/Includes_CommonValues.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/script-globalsearch-main.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/custom_1119_Apps.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/SettingsProfile.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/script-globalsearch-infodialog.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/DialogBusy.xml",
+		"//ALIENWARE/Kodi/addons/skin.omni/addon.xml",
+		"//ALIENWARE/Kodi/addons/skin.omni/1080i/Startup.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/DialogVolumeBar.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/View_500_Wall.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/shortcuts/template.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/DialogFavourites.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/MyWeather.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/Settings.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/includes.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/SkinSettings.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/addon.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/View_57_Shift.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/variables.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/LoginScreen.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/script.database.cleaner-summary.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/readme.md",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/Home.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/SmartPlaylistRule.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/language/resource.language.en_gb/strings.po",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/SettingsCategory.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/Includes_Backgrounds.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/Includes_Menus.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/script-cu-lrclyrics-main.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/language/resource.language.en_us/strings.po",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/DialogSelect.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/Includes_Animations.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/Includes_VideoLyrics.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/Font.xml",
+		"/E/TV Shows/Falling Skies/tvshow.nfo",
+		"/I/TV Shows/Scandal/tvshow.nfo",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/DialogVideoInfo.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/script-script.extendedinfo-DialogVideoInfo.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/custom_1123_MoreMenu.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/script-script.extendedinfo-DialogInfo.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/View_502_Episode.xml",
+		"/C/Users/Alienware/Downloads/skin.aeon.nox.5/skin.aeon.nox.5/1080i/IncludesVideoLyrics.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/custom_1133_ArtMenu.xml",
+		"/C/Users/Alienware/Downloads/skin.aeon.nox.5/skin.aeon.nox.5/1080i/script-cu-lrclyrics-main.xml",
+		"/C/Users/Alienware/Downloads/skin.aeon.nox.5/1080i/Font.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/MyPVRRecordings.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/shortcuts/overrides.xml",
+		"/C/Users/Alienware/Downloads/skin.aeon.nox.5/1080i/Includes.xml",
+		"/C/Users/Alienware/Downloads/skin.aeon.nox.5/1080i/script-cu-lrclyrics-main.xml",
+		"/C/Users/Alienware/Downloads/skin.aeon.nox.5/1080i/IncludesVideoLyrics.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/defaults.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/DialogAddonInfo.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/DialogMusicInfo.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/DialogPictureInfo.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/View_508_SongList.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/DialogFullScreenInfo.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/View_59_Fanart.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/View_507_BigList.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/View_501_LowList.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/MusicVisualisation.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/script-skinshortcuts.xml",
+		"//ALIENWARE/Kodi/userdata/addon_data/skin.mimic/settings.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/shortcuts/musicvideos.DATA.xml",
+		"//ALIENWARE/Kodi/addons/script.skinshortcuts/resources/lib/nodefunctions.py",
+		"/E/TV Shows/XIII The Series/Season 1/XIII - S01E02.en.srt",
+		"/E/TV Shows/XIII The Series/Season 1/XIII - S01E01.en.srt",
+		"/C/Users/Alienware/Downloads/XIII.The.Series.S01E13.720p.BluRay.TheWretched.en.srt",
+		"/C/Users/Alienware/AppData/Local/Temp/Temp1_xiii.the.conspiracy.(2008).eng.1cd.(3451163).zip/xiii.the.conspiracy.(3451163).nfo",
+		"/C/texturecache.cfg",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/View_50_List.xml",
+		"/I/TV Shows/TURN Washington's Spies/tvshow.nfo",
+		"/E/TV Shows/Bates Motel/tvshow.nfo",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/MyPVRChannels.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/MyPVRGuide.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/RecordPrefs.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/script-lazytv-main.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/script-script.extendedinfo-VideoList.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/script-script.extendedinfo-YoutubeList.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/SettingsSystemInfo.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/View_51_InfoWall.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/View_55_LowPanel.xml",
+		"/I/TV Shows/Everybody Loves Raymond/Season 7/Everybody.Loves.Raymond.S07E10.720p.w.e.b.-BS.nfo",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/VideoFullScreen.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/TexturePacker.bat",
+		"//ALIENWARE/Kodi/addons/skin.mimic/.gitignore",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/MyPlaylist.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/DialogSeekBar.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/custom_1120_OSDSettings.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/MyPrograms.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/MyPics.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/MyMusicNav.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/AddonBrowser.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/MyVideoNav.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/DialogPVRChannelsOSD.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/VideoOSD.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/Startup.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/DialogPlayerProcessInfo.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/PlayerControls.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/MusicOSD.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/FileBrowser.xml",
+		"//ALIENWARE/Kodi/addons/resource.images.weathericons.monstr/addon.xml",
+		"//ALIENWARE/Kodi/addons/resource.images.moviecountryicons.flags/addon.xml",
+		"//ALIENWARE/Kodi/addons/resource.images.moviecountryicons.maps/addon.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/DialogButtonMenu.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/DialogContextMenu.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/View_505_Panel.xml",
+		"//ALIENWARE/Kodi/addons/script.youtube.browser/addon.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/custom_1121_Dependencies.xml",
+		"//ALIENWARE/Kodi/addons/resource.images.weatherfanart.abstract/addon.xml",
+		"//ALIENWARE/Kodi/addons/resource.images.moviecountryicons.flags/readme.md",
+		"//ALIENWARE/Kodi/addons/resource.images.moviecountryicons.maps/readme.md",
+		"//ALIENWARE/Kodi/addons/plugin.video.npr/addon.xml",
+		"/C/Users/Alienware/Downloads/mapsicon-master/README.md",
+		"//ALIENWARE/Kodi/addons/resource.images.moviecountryicons.maps/License.txt",
+		"//ALIENWARE/Kodi/addons/skin.mimic/1080i/custom_1122_BackgroundCustomizer.xml",
+		"//ALIENWARE/Kodi/userdata/playlists/video/Alfred Hitchcock.xsp",
+		"//ALIENWARE/Kodi/kodi.log",
+		"//ALIENWARE/Kodi/userdata/playlists/video/Adult.xsp",
+		"//ALIENWARE/Kodi/userdata/playlists/video/Bad Movies.xsp",
+		"//ALIENWARE/Kodi/addons/resource.images.moviecountryicons.flags/License.txt",
+		"//ALIENWARE/Kodi/addons/script.colorbox/addon.xml",
+		"//ALIENWARE/Kodi/addons/resource.images.moviecountryicons.flags/info.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/shortcuts/tvshows.DATA.xml",
+		"//ALIENWARE/Kodi/addons/skin.mimic/shortcuts/movies.DATA.xml",
+		"/C/Users/Alienware/AppData/Local/Temp/Temp1_Mimic Skinbackup (2016-12-10 19.51.34).zip/skinshortcuts/skin.mimic-musicvideos.DATA.xml"
+	],
+	"find":
+	{
+		"height": 43.0
+	},
+	"find_in_files":
+	{
+		"height": 117.0,
+		"where_history":
+		[
+			"\\\\ALIENWARE\\Kodi\\addons\\skin.mimic\\1080i",
+			"\\\\ALIENWARE\\Kodi\\addons\\skin.mimic18\\1080i",
+			"C:\\KodiJarvis\\portable_data\\addons\\skin.mimic\\1080i",
+			"\\\\ALIENWARE\\Kodi\\addons\\skin.mimic18\\1080i",
+			"\\\\ALIENWARE\\Kodi\\addons\\skin.mimic\\1080i",
+			"C:\\Users\\Alienware\\Downloads\\Madnox",
+			"\\\\ALIENWARE\\Kodi\\addons\\skin.mimic\\1080i",
+			"C:\\Users\\Alienware\\Downloads\\Madnox",
+			"\\\\ALIENWARE\\Kodi\\addons\\skin.mimic\\1080i",
+			"C:\\Users\\Alienware\\Downloads\\Madnox",
+			"\\\\ALIENWARE\\Kodi\\addons\\skin.mimic\\1080i",
+			"C:\\Users\\Alienware\\Downloads\\Madnox",
+			"\\\\ALIENWARE\\Kodi\\addons\\skin.mimic\\1080i",
+			"\\\\HTPC\\Kodi\\addons\\skin.mimic\\1080i"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"<texture colordiffuse=\"55000000\"",
+			"WidgetNameLabelVar",
+			"GlobalFanartSetting",
+			"overlayvar",
+			"overlayopacityvar",
+			"\"9034\"",
+			"(9000)",
+			"submenulistcont",
+			"submenu",
+			"121",
+			"Lyric",
+			"31205",
+			"lyric",
+			"blogger",
+			"peace_sans.ttf",
+			"peace",
+			"norwester.ttf",
+			"Molot.ttf",
+			"Digitalt.ttf",
+			"SF Distant Galaxy.ttf",
+			"lyrics5b",
+			"lyrics1b",
+			"lyrics3s",
+			"blogger",
+			"01ff",
+			"lyrics4",
+			"mont",
+			"lyrics4",
+			"mont",
+			"lyrics8b",
+			"textcolo",
+			"HighlandGothicFLF.ttf",
+			"Odin Rounded - Bold.ttf",
+			"helsinki.ttf",
+			"Jomhuria-Regular.ttf",
+			"Lobster_1.3.ttf",
+			"LockedWindow.ttf",
+			"lyrspin01.ttf",
+			"lyrspin02.ttf",
+			"lyrspin03.ttf",
+			"lyrspin04.ttf",
+			"lyrspin05.ttf",
+			"lyrspin10.ttf",
+			"lyrspin09.ttf",
+			"lyrspin08.ttf",
+			"lyrspin07.ttf",
+			"lyrspin06.ttf",
+			"Art2Customizer",
+			"idgettype",
+			"[ListItem.Overlay]",
+			"overlay",
+			"starrating",
+			"rating0.png",
+			"starr",
+			"starratingvar",
+			"logo",
+			"-submenu",
+			"submenu",
+			"<texture colordiffuse=\"33787878\" border=\"5\">listselect_fo.png</texture>",
+			"overlaylist",
+			"\"50\"",
+			"texturenofocus",
+			"51",
+			"cast",
+			"widget",
+			"<autoscroll",
+			"autoscroll",
+			"<autoscroll time=\"3000\" delay=\"4000\" repeat=\"5000\">!Skin.HasSetting(Disable.AutoScroll)</autoscroll>",
+			"autoscroll",
+			"stringcompare",
+			"widgetIcon",
+			"]</",
+			"blank.png",
+			"black.png",
+			"background1.png",
+			"fadelabel",
+			"addons/youtube.png",
+			"youtube.png",
+			"overlay",
+			"plugin:",
+			"31055",
+			"31058",
+			"31067",
+			"31066",
+			"31065",
+			"31064",
+			"31063",
+			"31061",
+			"31060",
+			"31062",
+			"31142",
+			"31151",
+			"31244",
+			"31243",
+			"toolbox",
+			"tookit",
+			"quicknav",
+			"menuplayercontrol",
+			"playlist",
+			"31026",
+			"updated",
+			"31301",
+			"playlist",
+			"playlistbutton",
+			"postervar",
+			"background.png",
+			"youtube",
+			"31958",
+			"31967",
+			"31936",
+			"31916",
+			"31915",
+			"31914",
+			"31913",
+			"31912",
+			"31166",
+			"rcbimportlabels",
+			"empty",
+			"countries",
+			"skin helper backg",
+			"VisibleFadeEffect",
+			"background fallback",
+			"error",
+			"\"recent",
+			"dialogeffect",
+			"animation.dialog",
+			"dialogeffect",
+			"Window_OpenClose_Animation"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"(9010)",
+			"PassionOne-Regular.ttf",
+			"peace_sans.ttf",
+			"norwester.ttf",
+			"Molot.ttf",
+			"Bungee-Regular.ttf",
+			"MontserratAlternates-Bold.ttf",
+			"Blogger_Sans-Bold.ttf",
+			"BubblegumSans-Regular.ttf",
+			"helsinki.ttf",
+			"Jomhuria-Regular.ttf",
+			"Lobster_1.3.ttf",
+			"lyrics/Days.ttf",
+			"lyrics/LockedWindow.ttf",
+			"lyrics/SF Distant Galaxy.ttf",
+			"lyrics/Odin Rounded - Bold.ttf",
+			"lyrics/Geomancy - Extra Bold.ttf",
+			"lyrics/Digitalt.ttf",
+			"lyrics/theboldfont.ttf",
+			"lyrics/HighlandGothicFLF.ttf",
+			"lyrics/BOXING.ttf",
+			"lyrics/Exo2-BlackItalic.ttf",
+			"<include>AutoscrollDefault</include>",
+			"addons/youtube2.png",
+			"Animation.Dialog",
+			"WindowSlideAnimation",
+			"!Skin.HasSetting(Disable.AutoScroll)",
+			"Disable.AutoScroll",
+			"WebHostingHub-Modified",
+			"<defaultcontrol />",
+			"<texture />",
+			"<alttexturenofocus />",
+			"<pagecontrol />",
+			"<font />",
+			"<texturenofocus />",
+			"<texturefocus />",
+			"<label />",
+			"<icon />",
+			"><",
+			"<texture border=\"16\">dialog_context.png</texture>",
+			"border=\"16\"",
+			"overlays/diffuse-overlay.png",
+			"<texture border=\"5\">listselect_fo.png</texture>",
+			"<texture border=\"5\">thumbs/diffuse.png</texture>",
+			"Jaldi-Regular",
+			"Biryani-UltraLight",
+			"Khula-Light",
+			"Assistant",
+			"_textbox",
+			"Dosis",
+			"$VAR[ColorHighlightVar]",
+			"(music)",
+			"(videos)",
+			"<textcolor>$VAR[ColorDisabledVar]</textcolor>",
+			"script-script.extendedinfo",
+			"InfoPanelButtonsValues",
+			"osd/button_bg.png",
+			"top",
+			"left",
+			"$EXP[isSong]",
+			"$EXP[isSeason]",
+			"$EXP[isAlbum]",
+			"$EXP[isArtist]",
+			"$EXP[isEpisode]",
+			"$EXP[isMusicvideo]",
+			"$EXP[isTvshow]",
+			"$EXP[isMovie]",
+			"left",
+			"top",
+			"left",
+			"Integer.IsGreater",
+			"String.IsEqual",
+			"PosterVar",
+			"ThumbVar",
+			"fallback=\"DefaultFallback.png\"",
+			"String.IsEqual(",
+			"String.Contains",
+			"String.IsEmpty",
+			"String.Contains",
+			"",
+			"Integer.IsGreater",
+			"braz",
+			"Enable.PersistentWidgets",
+			"<width>10<",
+			"<width>10</width>",
+			"<left>1910</left>",
+			"Sawasdee",
+			"Garuda.ttf",
+			"osd/",
+			"Existence-",
+			"font_MainMenu",
+			"font15_title",
+			"font13_title",
+			"dialogeffect",
+			"5000",
+			"colordiffuse=\"white11\"",
+			"HomeLayout",
+			"StringCompare(Skin.String(HomeLayout.value),1)",
+			"StringCompare(Skin.String(HomeLayout.value),3)",
+			"StringCompare(Skin.String(HomeLayout.value),2)",
+			"",
+			"$INFO[Skin.String(weathericons.path)]",
+			"top",
+			"left",
+			"thumbs/diffuse.png",
+			"",
+			"top",
+			"left",
+			"$VAR[ColorTextVar]",
+			"$VAR[ColorTextVar]]",
+			"$VAR[ColorTextVar]",
+			"$VAR[ColorTextVar]\n                    <colordiffuse>$VAR[ColorBackgroundVar]</colordiffuse>",
+			"<texture>background.png</texture>\n                    <colordiffuse>$VAR[ColorBackgroundVar]</colordiffuse>",
+			"font14",
+			"top",
+			"left",
+			"font14",
+			"top",
+			"left",
+			"blank.png",
+			"-",
+			"blank.png",
+			"font14",
+			"top",
+			"left",
+			"maintext",
+			">maintext<",
+			"font14"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.example":
+	{
+		"height": 108.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Omni.sublime-project",
+	"replace":
+	{
+		"height": 80.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 625.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"\\\\ALIENWARE\\Kodi\\addons\\skin.mimic\\MimicSkinKrypton.sublime-project"
+			]
+		],
+		"width": 475.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 330.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
