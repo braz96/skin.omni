@@ -141,7 +141,7 @@
 	</include>-->
 	<include name="MainMenu">
         <control type="group">
-        	<visible>![Window.IsVisible(favourites) | Window.IsVisible(script-globalsearch-main.xml) | Window.IsVisible(script-lazytv-main.xml) | Window.IsVisible(script-lazytv-BigScreenList.xml)]</visible>
+        	<visible>![Window.IsVisible(favourites) | Window.IsVisible(script-lazytv-main.xml) | Window.IsVisible(script-lazytv-BigScreenList.xml)]</visible>
             <!--<include>MainMenuSlide</include>-->
             <control type="group">
             	<!--<animation effect="fade" start="100" end="50" time="300" condition="!Control.HasFocus(9000)">Conditional</animation>
@@ -178,11 +178,14 @@
 					<height>1080</height>
 					<onright condition="Window.IsActive(home) + !String.IsEmpty(Container(9000).ListItem.Property(widget))">9003</onright>
 					<onright condition="Window.IsActive(settings)">9020</onright>
-					<onright condition="Window.IsActive(videos) | Window.IsActive(music) | Window.IsActive(videoplaylist) | Window.IsActive(musicplaylist) | Window.IsActive(1119)">50</onright>
+					<onright condition="Window.IsActive(videos) | Window.IsActive(music) | Window.IsActive(videoplaylist) | Window.IsActive(musicplaylist) | Window.IsActive(1119) | Window.IsActive(addonbrowser) | Window.IsActive(programs) | Window.IsActive(pictures) | Window.IsActive(eventlog)">50</onright>
 					<onright condition="Window.IsActive(weather)">305</onright>
 					<onright condition="Window.IsActive(SettingsCategory.xml)">3</onright>
 					<onright condition="Window.IsActive(skinsettings)">9030</onright>
 					<onright condition="Window.IsActive(script-skinshortcuts.xml)">SetFocus(211)</onright>
+					<onright condition="Window.IsActive(script-globalsearch-main.xml)">SetFocus(9020)</onright>
+					<onright condition="Window.IsActive(profiles)">2</onright>
+					<onright condition="Window.IsActive(filemanager)">20</onright>
 					<onleft>9010</onleft>
 					<ondown>9000</ondown>
 					<onup>9000</onup>

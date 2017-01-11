@@ -638,7 +638,7 @@
         <value condition="Window.IsActive(1119)">DefaultAddon.png</value>
         <value>DefaultArtist.png</value>
     </variable>
-    <!--<variable name="HeaderSubLabelInfoDialog">
+    <variable name="HeaderSubLabelInfoDialog">
     	<value condition="String.IsEqual(ListItem.DBTYPE,movie) + !String.IsEmpty(ListItem.Tagline)">$INFO[ListItem.Tagline]</value>
     	<value condition="String.IsEqual(ListItem.DBTYPE,movie) + String.IsEmpty(ListItem.Tagline)">$INFO[ListItem.OriginalTitle]</value>
     	<value condition="String.IsEqual(ListItem.DBTYPE,tvshow) + !String.IsEmpty(Window(Home).Property(NextAired.Status))">$INFO[Window(Home).Property(NextAired.Status)]</value>
@@ -648,7 +648,7 @@
 		<value condition="String.IsEqual(ListItem.DBTYPE,album)">$INFO[ListItem.Artist]</value>
 		<value condition="String.IsEqual(ListItem.DBTYPE,song)">$INFO[ListItem.Artist]$INFO[ListItem.Album, • ]</value>
     	<value>$LOCALIZE[14116]</value>
-    </variable>-->
+    </variable>
     <variable name="HeaderSubLabel">
     	<value condition="Window.IsActive(script-script.extendedinfo-DialogInfo.xml) + !String.IsEmpty(Window.Property(AlsoKnownAs))">$INFO[Window.Property(AlsoKnownAs)]</value>
     	<value condition="Window.IsActive(script-script.extendedinfo-DialogInfo.xml) + String.IsEmpty(Window.Property(AlsoKnownAs))">$LOCALIZE[14116]</value>
@@ -793,7 +793,7 @@
 		<value>blank.png</value>
 	</variable>
 	<variable name="WidgetArt">
-		<value condition="String.IsEqual(Container(9000).ListItem.Property(widget),myplaylists)">DefaultPlaylist.png</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(widget),myplaylists)">DefaultFallbackPlaylist.png</value>
 		<value condition="String.StartsWith(Container(9000).ListItem.Property(widgetPath),videodb://movies/genres/) | String.StartsWith(Container(9000).ListItem.Property(widgetPath),library://video/movies/genres.xml) | String.StartsWith(Container(9000).ListItem.Property(widgetPath),videodb://tvshows/genres/) | String.StartsWith(Container(9000).ListItem.Property(widgetPath),library://video/tvshows/genres.xml)">$INFO[ListItem.Label,special://skin/extras/videogenre/,.png]</value>
 		<value condition="System.HasAddon(resource.images.moviecountryicons.maps) + [String.StartsWith(Container(9000).ListItem.Property(widgetPath),videodb://movies/country/) | String.StartsWith(Container(9000).ListItem.Property(widgetPath),library://video/movies/country.xml) | String.StartsWith(Container(9000).ListItem.Property(widgetPath),videodb://tvshows/country/) | String.StartsWith(Container(9000).ListItem.Property(widgetPath),library://video/tvshows/country.xml)]">$INFO[ListItem.Label,resource://resource.images.moviecountryicons.maps/,.png]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[21371]) | String.IsEmpty(Container(9000).ListItem.Property(widgetIcon))">$INFO[ListItem.Icon]</value>

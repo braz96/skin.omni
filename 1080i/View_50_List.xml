@@ -8,7 +8,6 @@
 			<control type="group">
 				<left>150</left>
 				<top>0</top>
-				<animation effect="slide" start="0,0" end="0,15" time="0" tween="cubic" easing="inout" condition="Window.IsActive(addonbrowser) | Window.IsActive(programs) | $EXP[PluginAdvancedLauncher]">Conditional</animation>
 				<control type="group">
 	                <visible>Integer.IsGreater(Container(50).NumItems,0)</visible>
 	                <control type="image">
@@ -61,7 +60,7 @@
 	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,0)">Conditional</animation>
 		            </control>
 		            <control type="image">
-	                	<visible>Control.HasFocus(50) + [Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists) | String.IsEqual(Container.SortMethod,$LOCALIZE[13409])]</visible>
+	                	<visible>Control.HasFocus(50) + [Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists) | Container.Content(images) | String.IsEqual(Container.SortMethod,$LOCALIZE[13409])]</visible>
 	                    <animation effect="fade" time="320" delay="200">Visible</animation>
 	                    <animation effect="fade" time="50">Hidden</animation>
 		                <top>180</top>
@@ -227,7 +226,7 @@
 							<param name="OverlayListWidth" value="1000" />
 						</include>
 					</focusedlayout>
-					<itemlayout height="120" width="1000" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons)">
+					<itemlayout height="120" width="1000" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(images)">
 						<control type="image">
 							<visible>!Container.Content(songs)</visible>
 							<top>10</top>
@@ -288,7 +287,7 @@
 							<label>$VAR[ListRightLabel]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="120" width="1000" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons)">
+					<focusedlayout height="120" width="1000" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(images)">
 						<control type="image">
 							<visible>!Container.Content(songs)</visible>
 							<top>10</top>
@@ -656,7 +655,6 @@
 				<control type="group">
 					<left>1690</left>
 					<visible>[![$EXP[isMovie] | $EXP[isTvshow] | $EXP[isSeason] | $EXP[isSet] | Container.Content(actors) | Window.IsActive(videoplaylist) | $EXP[isEpisode] | Container.Content(addons) | $EXP[isArtist] | $EXP[isAlbum] | $EXP[isSong] | $EXP[isMusicvideo]] | [String.Contains(Container.FolderPath,plugin.video) + !$EXP[isEpisode]]] + !String.StartsWith(ListItem.Icon,Default)</visible>
-					<animation effect="slide" start="0,0" end="0,15" time="0" tween="cubic" easing="inout" condition="$EXP[PluginAdvancedLauncher]">Conditional</animation>
 					<control type="image">
 						<width>560</width>
 						<height>840</height>
@@ -668,7 +666,6 @@
 				<control type="group">
 					<left>1690</left>
 					<visible>[[Container.Content(addons) | $EXP[isArtist] | $EXP[isAlbum] | $EXP[isSong] | $EXP[isMusicvideo] | Container.Content(studios)] | String.StartsWith(ListItem.Icon,Default)] + ![Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists)]</visible>
-					<animation effect="slide" time="0" start="0,0" end="0,15" condition="Window.IsActive(programs) | Window.IsActive(addonbrowser)">Conditional</animation>
 					<control type="image">
 						<visible>String.StartsWith(ListItem.Icon,Default) | Container.Content(countries)</visible>
 						<width>560</width>

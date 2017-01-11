@@ -7,64 +7,65 @@
 	<onload>ClearProperty(MediaMenu,Home)</onload>
 	<onunload>ClearProperty(MediaMenu,Home)</onunload>
 	<onunload>ClearProperty(Window.HasSettings,Home)</onunload>
-	<views>50,52,520,57,501</views>
+	<views>50,500</views>
 	<controls>
 		<include>CommonBackground</include>
 		<control type="group">
+            <animation effect="slide" start="0" end="430" time="300" condition="Control.HasFocus(9010)">Conditional</animation>
+            <animation effect="slide" start="0" end="-400" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">Conditional</animation>
+			<animation effect="slide" start="0" end="400" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">WindowClose</animation>
+            <top>0</top>
+            <left>-430</left>
+            <include>Submenu</include>
+            <include>MainMenu</include>
 			<include>View_50_List</include>
 			<!-- view id = 50 -->
-			<include>View_52_Thumbnail</include>
-			<!-- view id = 52 -->
-			<include>AddonWall</include>
-			<!-- view id = 520 -->
-			<include>ShiftFixedList</include>
-			<!-- view id = 57 -->
-			<include>AddonLowList</include>
-			<!-- view id = 501 -->
-		</control>
-		<include>Topbar</include>
-		<control type="group">
-			<left>-440</left>
-			<include>SideBladeLeft</include>
-			<control type="grouplist" id="9050">
-				<include>MediaMenuTop</include>
-				<control type="edit" id="19">
-					<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
-					<description>Filter</description>
-					<textwidth>372</textwidth>
-					<include>ButtonCommonValues</include>
-					<label>587</label>
+			<include>View_500_Wall</include>
+			<!-- view id = 500 -->
+			<include>Topbar</include>
+			<control type="group">
+				<left>2350</left>
+				<include>SideBladeRight</include>
+				<control type="grouplist" id="9050">
+					<include>MediaMenuTop</include>
+					<control type="edit" id="19">
+						<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
+						<description>Filter</description>
+						<textwidth>372</textwidth>
+						<include>ButtonCommonValues</include>
+						<label>587</label>
+					</control>
+					<control type="radiobutton" id="20">
+						<visible>Container.CanFilterAdvanced</visible>
+						<description>Filter</description>
+						<include>ButtonCommonValues</include>
+						<label>587</label>
+						<onclick>right</onclick>
+						<onclick>Filter</onclick>
+					</control>
+					<!--<control type="button" id="203">
+						<description>Actions label</description>
+						<textwidth>352</textwidth>
+						<font>font13_title</font>
+						<include>ButtonCommonValues</include>
+						<label>31039</label>
+						<enable>no</enable>
+						<disabledcolor>$VAR[ColorHighlightVar]</disabledcolor>
+					</control>-->
+					<control type="button" id="205">
+						<include>ButtonCommonValues</include>
+						<label>10140</label>
+						<onclick>Addon.OpenSettings($INFO[Container.PluginName])</onclick>
+						<visible>!String.IsEmpty(Container.PluginName)</visible>
+					</control>
+					<!--<include>QuicknavButton</include>-->
+					<include>PlaylistButtons</include>
+					<include content="MenuPlayerControls">
+						<param name="PlayerControlsOnDown" value="1802" />
+					</include>
 				</control>
-				<control type="radiobutton" id="20">
-					<visible>Container.CanFilterAdvanced</visible>
-					<description>Filter</description>
-					<include>ButtonCommonValues</include>
-					<label>587</label>
-					<onclick>right</onclick>
-					<onclick>Filter</onclick>
-				</control>
-				<control type="button" id="203">
-					<description>Actions label</description>
-					<textwidth>352</textwidth>
-					<font>font13_title</font>
-					<include>ButtonCommonValues</include>
-					<label>31039</label>
-					<enable>no</enable>
-					<disabledcolor>$VAR[ColorHighlightVar]</disabledcolor>
-				</control>
-				<control type="button" id="205">
-					<include>ButtonCommonValues</include>
-					<label>10140</label>
-					<onclick>Addon.OpenSettings($INFO[Container.PluginName])</onclick>
-					<visible>!String.IsEmpty(Container.PluginName)</visible>
-				</control>
-				<include>QuicknavButton</include>
-				<include>PlaylistButtons</include>
-				<include content="MenuPlayerControls">
-					<param name="PlayerControlsOnDown" value="1802" />
-				</include>
+				<!--<include condition="!Skin.HasSetting(Disable.Quicknav)">QuicknavMenu</include>-->
 			</control>
-			<include condition="!Skin.HasSetting(Disable.Quicknav)">QuicknavMenu</include>
 		</control>
 	</controls>
 </window>

@@ -182,9 +182,9 @@
 						<label2>$INFO[Container(211).ListItem.Property(widgetName)]</label2>
 						<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
 					</control>
-					<!--<control type="button" id="501">
+					<control type="button" id="501">
 						<description>Widget icon</description>
-						<width>1316</width>
+						<width>1246</width>
 						<height>90</height>
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
@@ -194,7 +194,7 @@
 						<enable>!String.IsEqual(Container(211).ListItem.Property(widgetName),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName),settings)</enable>
 						<onclick>SetProperty(chooseProperty,widgetIcon)</onclick>
 						<onclick>SendClick(404)</onclick>
-					</control>-->
+					</control>
 					<control type="button" id="502">
 						<description>Widget sort by</description>
 						<width>1246</width>
@@ -226,7 +226,7 @@
 			<control type="scrollbar" id="60">
 				<visible allowhiddenfocus="true">[Control.HasFocus(60) | ControlGroup(90001).HasFocus] + String.IsEmpty(Window.Property(additionalDialog)) + Window.IsVisible(SkinSettings.xml)</visible>
 				<animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
-				<left>1910</left>
+				<left>2340</left>
 				<top>120</top>
 				<width>10</width>
 				<height>960</height>
