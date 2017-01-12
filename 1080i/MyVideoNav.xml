@@ -27,8 +27,8 @@
 		<include>CommonBackground</include>
 		<control type="group">
             <animation effect="slide" start="0" end="430" time="300" condition="Control.HasFocus(9010)">Conditional</animation>
-            <animation effect="slide" start="0" end="-400" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">Conditional</animation>
-			<animation effect="slide" start="0" end="400" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">WindowClose</animation>
+            <animation effect="slide" start="0" end="-630" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">Conditional</animation>
+			<animation effect="slide" start="0" end="630" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">WindowClose</animation>
             <top>0</top>
             <left>-430</left>
             <include>Submenu</include>
@@ -45,7 +45,6 @@
 					<include>MediaMenuTop</include>
 					<control type="button" id="10">
 						<description>Watched Toggle</description>
-						<textwidth>255</textwidth>
 						<include>ButtonCommonValues</include>
 						<label>20367</label>
 						<label2>$INFO[Container.NumItems]</label2>
@@ -53,7 +52,6 @@
 					<control type="edit" id="19">
 						<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
 						<description>Filter</description>
-						<textwidth>372</textwidth>
 						<include>ButtonCommonValues</include>
 						<label>587</label>
 					</control>

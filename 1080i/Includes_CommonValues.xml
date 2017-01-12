@@ -26,10 +26,10 @@
 	</include>
 	<!-- Buttons -->
 	<include name="ButtonCommonValues">
-		<width>400</width>
-		<textwidth>300</textwidth>
-		<font>font13</font>
-		<radioposx>340</radioposx>
+		<width>630</width>
+		<height>90</height>
+		<font>font14</font>
+		<textoffsetx>30</textoffsetx>
 	</include>
 	<include name="ButtonInfoDialogsCommonValues">
 		<width>277</width>

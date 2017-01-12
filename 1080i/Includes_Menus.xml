@@ -356,7 +356,7 @@
 						<height>120</height>
 						<font>font_SubMenu</font>
 						<textcolor>$VAR[ColorMenuVar]</textcolor>
-						<textoffsetx>20</textoffsetx>
+						<textoffsetx>30</textoffsetx>
 						<selectedcolor>$VAR[ColorMenuVar]</selectedcolor>
 						<align>right</align>
 						<label>$INFO[ListItem.Label]</label>
@@ -380,7 +380,7 @@
 							<height>120</height>
 							<font>font_SubMenu</font>
 							<textcolor>$VAR[ColorMenuVar]</textcolor>
-							<textoffsetx>20</textoffsetx>
+							<textoffsetx>30</textoffsetx>
 							<align>right</align>
 							<label>$INFO[ListItem.Label]</label>
 						</control>

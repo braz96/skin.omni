@@ -48,8 +48,8 @@
 		<control type="image">
 			<left>0</left>
 			<top>0</top>
-			<width>400</width>
-			<height>1112</height>
+			<width>630</width>
+			<height>1080</height>
 			<texture colordiffuse="$VAR[ColorDialogVar]">dialog_clean.png</texture>
 		</control>
 		<control type="button" id="9051">
@@ -105,8 +105,8 @@
 	</include>
 	<include name="MediaMenuTop">
 		<left>0</left>
-		<top>15</top>
-		<width>400</width>
+		<top>0</top>
+		<width>630</width>
 		<height>1080</height>
 		<onright>9050</onright>
 		<onleft>ClearProperty(MediaMenu,Home)</onleft>
@@ -533,11 +533,11 @@
 		<control type="group" id="1810">
 			<visible>Player.HasMedia + Control.IsVisible(9050)</visible>
 			<control type="grouplist" id="6050">
-				<animation effect="slide" start="-440,0" end="0,0" time="400" tween="quadratic" easing="out">Visible</animation>
+				<animation effect="slide" start="-630,0" end="0,0" time="400" tween="quadratic" easing="out">Visible</animation>
 				<top>0</top>
 				<left>0</left>
-				<height>60</height>
-				<width>400</width>
+				<height>90</height>
+				<width>630</width>
 				<align>left</align>
 				<scrolltime tween="sine">200</scrolltime>
 				<orientation>horizontal</orientation>
@@ -549,7 +549,8 @@
 				<onback>50</onback>
 				<control type="button" id="6051">
 					<label>g</label>
-					<width>57</width>
+					<width>90</width>
+					<height>90</height>
 					<font>IconPlayer</font>
 					<onclick>PlayerControl(Previous)</onclick>
 					<textoffsetx>0</textoffsetx>
@@ -557,7 +558,8 @@
 				</control>
 				<control type="button" id="6052">
 					<label>H</label>
-					<width>57</width>
+					<width>90</width>
+					<height>90</height>
 					<font>IconPlayer</font>
 					<onclick>PlayerControl(Rewind)</onclick>
 					<enable>Player.SeekEnabled</enable>
@@ -567,7 +569,8 @@
 				<control type="togglebutton" id="6053">
 					<label>I</label>
 					<altlabel>K</altlabel>
-					<width>57</width>
+					<width>90</width>
+					<height>90</height>
 					<font>IconPlayer</font>
 					<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
 					<onclick>PlayerControl(Play)</onclick>
@@ -577,7 +580,8 @@
 				</control>
 				<control type="button" id="6054">
 					<label>J</label>
-					<width>57</width>
+					<width>90</width>
+					<height>90</height>
 					<font>IconPlayer</font>
 					<onclick>PlayerControl(Stop)</onclick>
 					<textoffsetx>0</textoffsetx>
@@ -585,7 +589,8 @@
 				</control>
 				<control type="button" id="6055">
 					<label>G</label>
-					<width>57</width>
+					<width>90</width>
+					<height>90</height>
 					<font>IconPlayer</font>
 					<onclick>PlayerControl(Forward)</onclick>
 					<enable>Player.SeekEnabled</enable>
@@ -594,7 +599,8 @@
 				</control>
 				<control type="button" id="6056">
 					<label>f</label>
-					<width>57</width>
+					<width>90</width>
+					<height>90</height>
 					<font>IconPlayer</font>
 					<onclick>PlayerControl(Next)</onclick>
 					<textoffsetx>0</textoffsetx>
@@ -602,7 +608,8 @@
 				</control>
 				<control type="button" id="6057">
 					<label>q</label>
-					<width>58</width>
+					<width>90</width>
+					<height>90</height>
 					<font>IconPlayer</font>
 					<onclick condition="Player.HasVideo">ActivateWindow(fullscreenvideo)</onclick>
 					<onclick condition="Player.HasAudio">ActivateWindow(visualisation)</onclick>
