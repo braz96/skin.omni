@@ -3,7 +3,7 @@
 	<defaultcontrol always="true">50</defaultcontrol>
 	<menucontrol>9051</menucontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50,500</views>
+	<views>50,500,57</views>
 	<onload>SetProperty(Window.HasSettings,True,home)</onload>
 	<onload>ClearProperty(MediaMenu,Home)</onload>
 	<onunload>ClearProperty(MediaMenu,Home)</onunload>
@@ -12,16 +12,18 @@
 		<include>CommonBackground</include>
 		<control type="group">
             <animation effect="slide" start="0" end="430" time="300" condition="Control.HasFocus(9010)">Conditional</animation>
-            <animation effect="slide" start="0" end="-400" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">Conditional</animation>
-			<animation effect="slide" start="0" end="400" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">WindowClose</animation>
+            <animation effect="slide" start="0" end="-630" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">Conditional</animation>
+			<animation effect="slide" start="0" end="630" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">WindowClose</animation>
             <top>0</top>
             <left>-430</left>
-            <include>Submenu</include>
-            <include>MainMenu</include>
 			<include>View_50_List</include>
 			<!-- view id = 50 -->
 			<include>View_500_Wall</include>
 			<!-- view id = 500 -->
+			<include>View_57_Shift</include>
+			<!-- view id = 57 -->
+			<include>Submenu</include>
+            <include>MainMenu</include>
 			<include>Topbar</include>
 			<control type="group">
 				<left>2350</left>

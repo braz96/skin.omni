@@ -294,7 +294,7 @@
 				<control type="group">
 					<visible>$EXP[isTvshow] + ![Control.IsVisible(50) | Control.IsVisible(150)]</visible>
 					<animation effect="fade" time="300" start="0" end="100" delay="100">Visible</animation>
-					<top>875</top>
+					<top>910</top>
 					<control type="group">
 						<visible>!String.IsEmpty(ListItem.Property(TotalSeasons))</visible>
 						<width>200</width>

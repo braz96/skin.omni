@@ -9,7 +9,6 @@
 	</coordinates>
 	<controls>
 		<control type="group">
-			<visible>false</visible>
 			<control type="image">
 				<description>background image</description>
 				<width>800</width>
@@ -39,7 +38,7 @@
 					<control type="label">
 						<description>Busy label</description>
 						<width>300</width>
-						<height>80</height>
+						<height>35</height>
 						<label>$INFO[ListItem.Label]</label>
 						<font>font14</font>
 					</control>
@@ -48,7 +47,7 @@
 					<control type="label">
 						<description>Busy label</description>
 						<width>300</width>
-						<height>80</height>
+						<height>35</height>
 						<label>$INFO[ListItem.Label]</label>
 						<font>font14</font>
 					</control>

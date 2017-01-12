@@ -14,7 +14,7 @@
 			<property name="widgetType">movies</property>
 			<property name="widgetPath">special://profile/playlists/video/Alfred Hitchcock.xsp</property>
 			<property name="widgetTarget">videos</property>
-			<property name="widgetIcon">31100</property>
+			<property name="widgetIcon">20021</property>
 			<onclick condition="Library.HasContent(Movies)">ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/titles/,return)</property>
 			<property name="list">videodb://movies/titles/</property>
@@ -26,23 +26,6 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<label>Fanart</label>
-			<label2>Picture Source</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<property name="labelID">fanart</property>
-			<property name="defaultID" />
-			<property name="translatedPath">ActivateWindow(Pictures,"C:\\Users\\Alienware\\Pictures\\Fanart\\",return)</property>
-			<onclick>ActivateWindow(Pictures,"C:\\Users\\Alienware\\Pictures\\Fanart\\",return)</onclick>
-			<property name="path">ActivateWindow(Pictures,"C:\\Users\\Alienware\\Pictures\\Fanart\\",return)</property>
-			<property name="list">C:\\Users\\Alienware\\Pictures\\Fanart\\</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">fanart</property>
-			<property name="group">mainmenu</property>
-			<property name="hasSubmenu">False</property>
-		</item>
-		<item id="3">
-			<property name="id">$NUMBER[3]</property>
 			<label>$LOCALIZE[20343]</label>
 			<label2>Custom item</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -54,7 +37,7 @@
 			<property name="widgetType">tvshows</property>
 			<property name="widgetPath">videodb://inprogresstvshows/</property>
 			<property name="widgetTarget">videos</property>
-			<property name="widgetIcon">31088</property>
+			<property name="widgetIcon">20021</property>
 			<property name="widgetSortBy">lastplayed</property>
 			<property name="widgetSortDirection">descending</property>
 			<onclick condition="Library.HasContent(TVShows)">ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
@@ -66,8 +49,8 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
 		</item>
-		<item id="4">
-			<property name="id">$NUMBER[4]</property>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
 			<label>$LOCALIZE[31502]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/remote.png</icon>
@@ -90,8 +73,8 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
 		</item>
-		<item id="5">
-			<property name="id">$NUMBER[5]</property>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
 			<label>$LOCALIZE[10005]</label>
 			<label2>Custom item</label2>
 			<icon>DefaultMusicAlbums.png</icon>
@@ -112,8 +95,8 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
 		</item>
-		<item id="6">
-			<property name="id">$NUMBER[6]</property>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
 			<label>$LOCALIZE[20389]</label>
 			<label2>Custom item</label2>
 			<icon>DefaultMusicVideos.png</icon>
@@ -134,8 +117,8 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
 		</item>
-		<item id="7">
-			<property name="id">$NUMBER[7]</property>
+		<item id="6">
+			<property name="id">$NUMBER[6]</property>
 			<label>$LOCALIZE[15016]</label>
 			<label2>Custom item</label2>
 			<icon>DefaultGames.png</icon>
@@ -156,8 +139,8 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
-		<item id="8">
-			<property name="id">$NUMBER[8]</property>
+		<item id="7">
+			<property name="id">$NUMBER[7]</property>
 			<label>$LOCALIZE[24001]</label>
 			<label2>Custom item</label2>
 			<icon>special://skin/extras/icons/addon.png</icon>
@@ -179,8 +162,8 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
 		</item>
-		<item id="9">
-			<property name="id">$NUMBER[9]</property>
+		<item id="8">
+			<property name="id">$NUMBER[8]</property>
 			<label>$LOCALIZE[1036]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/favourite.png</icon>
@@ -191,8 +174,8 @@
 			<onclick>noop</onclick>
 			<property name="hasSubmenu">False</property>
 		</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
+		<item id="9">
+			<property name="id">$NUMBER[9]</property>
 			<label>$LOCALIZE[12600]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/weather.png</icon>
@@ -210,8 +193,8 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
 			<label>$LOCALIZE[137]</label>
 			<label2>Program</label2>
 			<icon>DefaultIconSearch.png</icon>
@@ -232,8 +215,8 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
 			<label>$LOCALIZE[5]</label>
 			<label2>Common menu item</label2>
 			<icon>DefaultIconSettings.png</icon>
@@ -386,7 +369,7 @@
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">3</property>
+			<property name="mainmenuid">2</property>
 			<label>$LOCALIZE[31314]</label>
 			<label2>Videos</label2>
 			<icon>DefaultRecentlyAddedEpisodes.png</icon>
@@ -407,7 +390,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">3</property>
+			<property name="mainmenuid">2</property>
 			<label>$LOCALIZE[575]</label>
 			<label2>Custom item</label2>
 			<icon>DefaultFolder.png</icon>
@@ -429,7 +412,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">3</property>
+			<property name="mainmenuid">2</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>TV shows</label2>
 			<icon>DefaultGenre.png</icon>
@@ -451,7 +434,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">3</property>
+			<property name="mainmenuid">2</property>
 			<label>$LOCALIZE[14022]</label>
 			<label2>Custom item</label2>
 			<icon>special://skin/extras/icons/folder.png</icon>
@@ -473,7 +456,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">3</property>
+			<property name="mainmenuid">2</property>
 			<label>$LOCALIZE[24069]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -494,7 +477,7 @@
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">4</property>
+			<property name="mainmenuid">3</property>
 			<label>$LOCALIZE[22020]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -516,7 +499,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">4</property>
+			<property name="mainmenuid">3</property>
 			<label>$LOCALIZE[19163]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -538,7 +521,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">4</property>
+			<property name="mainmenuid">3</property>
 			<label>$LOCALIZE[19040]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -560,7 +543,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">4</property>
+			<property name="mainmenuid">3</property>
 			<label>$LOCALIZE[137]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -582,7 +565,7 @@
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">5</property>
+			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[589]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/musicdisc.png</icon>
@@ -603,7 +586,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">5</property>
+			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[31314]</label>
 			<label2>Music</label2>
 			<icon>DefaultMusicRecentlyAdded.png</icon>
@@ -625,7 +608,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">5</property>
+			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>Music</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -647,7 +630,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">5</property>
+			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[14022]</label>
 			<label2>Custom item</label2>
 			<icon>special://skin/extras/icons/folder.png</icon>
@@ -668,7 +651,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">5</property>
+			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[24069]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -689,7 +672,7 @@
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[589]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/musicdisc.png</icon>
@@ -710,7 +693,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[31314]</label>
 			<label2>Videos</label2>
 			<icon>DefaultRecentlyAddedEpisodes.png</icon>
@@ -731,7 +714,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[575]</label>
 			<label2>Custom item</label2>
 			<icon>DefaultFolder.png</icon>
@@ -753,7 +736,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>TV shows</label2>
 			<icon>DefaultGenre.png</icon>
@@ -775,7 +758,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[14022]</label>
 			<label2>Custom item</label2>
 			<icon>special://skin/extras/icons/folder.png</icon>
@@ -797,7 +780,7 @@
 		</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[24069]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -818,7 +801,7 @@
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">7</property>
 			<label>$LOCALIZE[1037]</label>
 			<label2>item</label2>
 			<icon>special://skin/extras/icons/addon.png</icon>
@@ -839,7 +822,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">7</property>
 			<label>$LOCALIZE[1038]</label>
 			<label2>Music</label2>
 			<icon>special://skin/extras/icons/addon.png</icon>
@@ -860,7 +843,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">7</property>
 			<label>$LOCALIZE[1039]</label>
 			<label2>Pictures</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -881,7 +864,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">7</property>
 			<label>$LOCALIZE[1043]</label>
 			<label2>Programs</label2>
 			<icon>special://skin/extras/icons/program.png</icon>
@@ -902,7 +885,7 @@
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">11</property>
 			<label>$LOCALIZE[7]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/file.png</icon>
@@ -920,7 +903,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">11</property>
 			<label>$LOCALIZE[14111]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/info.png</icon>
@@ -939,7 +922,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">11</property>
 			<label>$LOCALIZE[13009]</label>
 			<label2>Kodi Command</label2>
 			<icon>special://skin/extras/icons/power.png</icon>
@@ -958,7 +941,7 @@
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">13</property>
+			<property name="mainmenuid">12</property>
 			<label>$LOCALIZE[589]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/musicdisc.png</icon>
@@ -976,7 +959,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">13</property>
+			<property name="mainmenuid">12</property>
 			<label>$LOCALIZE[7]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/file.png</icon>
@@ -994,7 +977,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">13</property>
+			<property name="mainmenuid">12</property>
 			<label>$LOCALIZE[14111]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/info.png</icon>
@@ -1026,7 +1009,7 @@
 			<property name="widgetType">movies</property>
 			<property name="widgetPath">special://profile/playlists/video/Alfred Hitchcock.xsp</property>
 			<property name="widgetTarget">videos</property>
-			<property name="widgetIcon">31100</property>
+			<property name="widgetIcon">20021</property>
 			<onclick condition="StringCompare(Window(10000).Property(submenuVisibility),movies) + [Library.HasContent(Movies)]">ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/titles/,return)</property>
 			<property name="list">videodb://movies/titles/</property>
@@ -1177,23 +1160,6 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<label>Fanart</label>
-			<label2>Picture Source</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<property name="labelID">fanart</property>
-			<property name="defaultID" />
-			<property name="translatedPath">ActivateWindow(Pictures,"C:\\Users\\Alienware\\Pictures\\Fanart\\",return)</property>
-			<onclick>ActivateWindow(Pictures,"C:\\Users\\Alienware\\Pictures\\Fanart\\",return)</onclick>
-			<property name="path">ActivateWindow(Pictures,"C:\\Users\\Alienware\\Pictures\\Fanart\\",return)</property>
-			<property name="list">C:\\Users\\Alienware\\Pictures\\Fanart\\</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">fanart</property>
-			<property name="group">mainmenu</property>
-			<property name="hasSubmenu">False</property>
-		</item>
-		<item id="3">
-			<property name="id">$NUMBER[3]</property>
 			<label>$LOCALIZE[20343]</label>
 			<label2>Custom item</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -1205,7 +1171,7 @@
 			<property name="widgetType">tvshows</property>
 			<property name="widgetPath">videodb://inprogresstvshows/</property>
 			<property name="widgetTarget">videos</property>
-			<property name="widgetIcon">31088</property>
+			<property name="widgetIcon">20021</property>
 			<property name="widgetSortBy">lastplayed</property>
 			<property name="widgetSortDirection">descending</property>
 			<onclick condition="StringCompare(Window(10000).Property(submenuVisibility),tvshows) + [Library.HasContent(TVShows)]">ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
@@ -1221,7 +1187,7 @@
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">3</property>
+			<property name="mainmenuid">2</property>
 			<label>$LOCALIZE[31314]</label>
 			<label2>Videos</label2>
 			<icon>DefaultRecentlyAddedEpisodes.png</icon>
@@ -1243,7 +1209,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">3</property>
+			<property name="mainmenuid">2</property>
 			<label>$LOCALIZE[575]</label>
 			<label2>Custom item</label2>
 			<icon>DefaultFolder.png</icon>
@@ -1266,7 +1232,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">3</property>
+			<property name="mainmenuid">2</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>TV shows</label2>
 			<icon>DefaultGenre.png</icon>
@@ -1289,7 +1255,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">3</property>
+			<property name="mainmenuid">2</property>
 			<label>$LOCALIZE[14022]</label>
 			<label2>Custom item</label2>
 			<icon>special://skin/extras/icons/folder.png</icon>
@@ -1312,7 +1278,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">3</property>
+			<property name="mainmenuid">2</property>
 			<label>$LOCALIZE[24069]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -1332,8 +1298,8 @@
 			<property name="isSubmenu">True</property>
 			<property name="submenuVisibility">tvshows</property>
 		</item>
-		<item id="4">
-			<property name="id">$NUMBER[4]</property>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
 			<label>$LOCALIZE[31502]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/remote.png</icon>
@@ -1359,7 +1325,7 @@
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">4</property>
+			<property name="mainmenuid">3</property>
 			<label>$LOCALIZE[22020]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -1382,7 +1348,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">4</property>
+			<property name="mainmenuid">3</property>
 			<label>$LOCALIZE[19163]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -1405,7 +1371,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">4</property>
+			<property name="mainmenuid">3</property>
 			<label>$LOCALIZE[19040]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -1428,7 +1394,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">4</property>
+			<property name="mainmenuid">3</property>
 			<label>$LOCALIZE[137]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -1449,8 +1415,8 @@
 			<property name="isSubmenu">True</property>
 			<property name="submenuVisibility">num-31502</property>
 		</item>
-		<item id="5">
-			<property name="id">$NUMBER[5]</property>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
 			<label>$LOCALIZE[10005]</label>
 			<label2>Custom item</label2>
 			<icon>DefaultMusicAlbums.png</icon>
@@ -1475,7 +1441,7 @@
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">5</property>
+			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[589]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/musicdisc.png</icon>
@@ -1497,7 +1463,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">5</property>
+			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[31314]</label>
 			<label2>Music</label2>
 			<icon>DefaultMusicRecentlyAdded.png</icon>
@@ -1520,7 +1486,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">5</property>
+			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>Music</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -1543,7 +1509,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">5</property>
+			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[14022]</label>
 			<label2>Custom item</label2>
 			<icon>special://skin/extras/icons/folder.png</icon>
@@ -1565,7 +1531,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">5</property>
+			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[24069]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -1585,8 +1551,8 @@
 			<property name="isSubmenu">True</property>
 			<property name="submenuVisibility">music</property>
 		</item>
-		<item id="6">
-			<property name="id">$NUMBER[6]</property>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
 			<label>$LOCALIZE[20389]</label>
 			<label2>Custom item</label2>
 			<icon>DefaultMusicVideos.png</icon>
@@ -1611,7 +1577,7 @@
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[589]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/musicdisc.png</icon>
@@ -1633,7 +1599,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[31314]</label>
 			<label2>Videos</label2>
 			<icon>DefaultRecentlyAddedEpisodes.png</icon>
@@ -1655,7 +1621,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[575]</label>
 			<label2>Custom item</label2>
 			<icon>DefaultFolder.png</icon>
@@ -1678,7 +1644,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>TV shows</label2>
 			<icon>DefaultGenre.png</icon>
@@ -1701,7 +1667,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[14022]</label>
 			<label2>Custom item</label2>
 			<icon>special://skin/extras/icons/folder.png</icon>
@@ -1724,7 +1690,7 @@
 		</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[24069]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -1744,8 +1710,8 @@
 			<property name="isSubmenu">True</property>
 			<property name="submenuVisibility">musicvideos</property>
 		</item>
-		<item id="7">
-			<property name="id">$NUMBER[7]</property>
+		<item id="6">
+			<property name="id">$NUMBER[6]</property>
 			<label>$LOCALIZE[15016]</label>
 			<label2>Custom item</label2>
 			<icon>DefaultGames.png</icon>
@@ -1766,8 +1732,8 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
-		<item id="8">
-			<property name="id">$NUMBER[8]</property>
+		<item id="7">
+			<property name="id">$NUMBER[7]</property>
 			<label>$LOCALIZE[24001]</label>
 			<label2>Custom item</label2>
 			<icon>special://skin/extras/icons/addon.png</icon>
@@ -1792,7 +1758,7 @@
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">7</property>
 			<label>$LOCALIZE[1037]</label>
 			<label2>item</label2>
 			<icon>special://skin/extras/icons/addon.png</icon>
@@ -1814,7 +1780,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">7</property>
 			<label>$LOCALIZE[1038]</label>
 			<label2>Music</label2>
 			<icon>special://skin/extras/icons/addon.png</icon>
@@ -1836,7 +1802,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">7</property>
 			<label>$LOCALIZE[1039]</label>
 			<label2>Pictures</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -1858,7 +1824,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">7</property>
 			<label>$LOCALIZE[1043]</label>
 			<label2>Programs</label2>
 			<icon>special://skin/extras/icons/program.png</icon>
@@ -1878,8 +1844,8 @@
 			<property name="isSubmenu">True</property>
 			<property name="submenuVisibility">num-24001</property>
 		</item>
-		<item id="9">
-			<property name="id">$NUMBER[9]</property>
+		<item id="8">
+			<property name="id">$NUMBER[8]</property>
 			<label>$LOCALIZE[1036]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/favourite.png</icon>
@@ -1890,8 +1856,8 @@
 			<onclick>noop</onclick>
 			<property name="hasSubmenu">False</property>
 		</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
+		<item id="9">
+			<property name="id">$NUMBER[9]</property>
 			<label>$LOCALIZE[12600]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/weather.png</icon>
@@ -1909,8 +1875,8 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
 			<label>$LOCALIZE[137]</label>
 			<label2>Program</label2>
 			<icon>DefaultIconSearch.png</icon>
@@ -1931,8 +1897,8 @@
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">False</property>
 		</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
 			<label>$LOCALIZE[5]</label>
 			<label2>Common menu item</label2>
 			<icon>DefaultIconSettings.png</icon>
@@ -1952,7 +1918,7 @@
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">11</property>
 			<label>$LOCALIZE[7]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/file.png</icon>
@@ -1971,7 +1937,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">11</property>
 			<label>$LOCALIZE[14111]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/info.png</icon>
@@ -1991,7 +1957,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">11</property>
 			<label>$LOCALIZE[13009]</label>
 			<label2>Kodi Command</label2>
 			<icon>special://skin/extras/icons/power.png</icon>
@@ -2276,16 +2242,10 @@
 			<property name="isSubmenu">True</property>
 		</item>
 	</include>
-	<include name="skinshortcuts-group-fanart">
-		<description>No items</description>
-	</include>
-	<include name="skinshortcuts-group-alt-fanart">
-		<description>No items</description>
-	</include>
 	<include name="skinshortcuts-group-tvshows">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">3</property>
+			<property name="mainmenuid">2</property>
 			<label>$LOCALIZE[31314]</label>
 			<label2>Videos</label2>
 			<icon>DefaultRecentlyAddedEpisodes.png</icon>
@@ -2306,7 +2266,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">3</property>
+			<property name="mainmenuid">2</property>
 			<label>$LOCALIZE[575]</label>
 			<label2>Custom item</label2>
 			<icon>DefaultFolder.png</icon>
@@ -2328,7 +2288,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">3</property>
+			<property name="mainmenuid">2</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>TV shows</label2>
 			<icon>DefaultGenre.png</icon>
@@ -2350,7 +2310,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">3</property>
+			<property name="mainmenuid">2</property>
 			<label>$LOCALIZE[14022]</label>
 			<label2>Custom item</label2>
 			<icon>special://skin/extras/icons/folder.png</icon>
@@ -2372,7 +2332,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">3</property>
+			<property name="mainmenuid">2</property>
 			<label>$LOCALIZE[24069]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -2395,7 +2355,7 @@
 	<include name="skinshortcuts-group-alt-tvshows">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">3</property>
+			<property name="mainmenuid">2</property>
 			<label>$LOCALIZE[31314]</label>
 			<label2>Videos</label2>
 			<icon>DefaultRecentlyAddedEpisodes.png</icon>
@@ -2416,7 +2376,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">3</property>
+			<property name="mainmenuid">2</property>
 			<label>$LOCALIZE[575]</label>
 			<label2>Custom item</label2>
 			<icon>DefaultFolder.png</icon>
@@ -2438,7 +2398,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">3</property>
+			<property name="mainmenuid">2</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>TV shows</label2>
 			<icon>DefaultGenre.png</icon>
@@ -2460,7 +2420,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">3</property>
+			<property name="mainmenuid">2</property>
 			<label>$LOCALIZE[14022]</label>
 			<label2>Custom item</label2>
 			<icon>special://skin/extras/icons/folder.png</icon>
@@ -2482,7 +2442,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">3</property>
+			<property name="mainmenuid">2</property>
 			<label>$LOCALIZE[24069]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -2505,7 +2465,7 @@
 	<include name="skinshortcuts-group-num-31502">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">4</property>
+			<property name="mainmenuid">3</property>
 			<label>$LOCALIZE[22020]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -2527,7 +2487,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">4</property>
+			<property name="mainmenuid">3</property>
 			<label>$LOCALIZE[19163]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -2549,7 +2509,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">4</property>
+			<property name="mainmenuid">3</property>
 			<label>$LOCALIZE[19040]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -2571,7 +2531,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">4</property>
+			<property name="mainmenuid">3</property>
 			<label>$LOCALIZE[137]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -2595,7 +2555,7 @@
 	<include name="skinshortcuts-group-alt-num-31502">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">4</property>
+			<property name="mainmenuid">3</property>
 			<label>$LOCALIZE[22020]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -2617,7 +2577,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">4</property>
+			<property name="mainmenuid">3</property>
 			<label>$LOCALIZE[19163]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -2639,7 +2599,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">4</property>
+			<property name="mainmenuid">3</property>
 			<label>$LOCALIZE[19040]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -2661,7 +2621,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">4</property>
+			<property name="mainmenuid">3</property>
 			<label>$LOCALIZE[137]</label>
 			<label2>$ADDON[script.skinshortcuts 32017]</label2>
 			<icon>DefaultTVShows.png</icon>
@@ -2685,7 +2645,7 @@
 	<include name="skinshortcuts-group-music">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">5</property>
+			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[589]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/musicdisc.png</icon>
@@ -2706,7 +2666,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">5</property>
+			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[31314]</label>
 			<label2>Music</label2>
 			<icon>DefaultMusicRecentlyAdded.png</icon>
@@ -2728,7 +2688,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">5</property>
+			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>Music</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -2750,7 +2710,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">5</property>
+			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[14022]</label>
 			<label2>Custom item</label2>
 			<icon>special://skin/extras/icons/folder.png</icon>
@@ -2771,7 +2731,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">5</property>
+			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[24069]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -2794,7 +2754,7 @@
 	<include name="skinshortcuts-group-alt-music">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">5</property>
+			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[589]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/musicdisc.png</icon>
@@ -2815,7 +2775,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">5</property>
+			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[31314]</label>
 			<label2>Music</label2>
 			<icon>DefaultMusicRecentlyAdded.png</icon>
@@ -2837,7 +2797,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">5</property>
+			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>Music</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -2859,7 +2819,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">5</property>
+			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[14022]</label>
 			<label2>Custom item</label2>
 			<icon>special://skin/extras/icons/folder.png</icon>
@@ -2880,7 +2840,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">5</property>
+			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[24069]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -2903,7 +2863,7 @@
 	<include name="skinshortcuts-group-musicvideos">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[589]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/musicdisc.png</icon>
@@ -2924,7 +2884,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[31314]</label>
 			<label2>Videos</label2>
 			<icon>DefaultRecentlyAddedEpisodes.png</icon>
@@ -2945,7 +2905,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[575]</label>
 			<label2>Custom item</label2>
 			<icon>DefaultFolder.png</icon>
@@ -2967,7 +2927,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>TV shows</label2>
 			<icon>DefaultGenre.png</icon>
@@ -2989,7 +2949,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[14022]</label>
 			<label2>Custom item</label2>
 			<icon>special://skin/extras/icons/folder.png</icon>
@@ -3011,7 +2971,7 @@
 		</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[24069]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3034,7 +2994,7 @@
 	<include name="skinshortcuts-group-alt-musicvideos">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[589]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/musicdisc.png</icon>
@@ -3055,7 +3015,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[31314]</label>
 			<label2>Videos</label2>
 			<icon>DefaultRecentlyAddedEpisodes.png</icon>
@@ -3076,7 +3036,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[575]</label>
 			<label2>Custom item</label2>
 			<icon>DefaultFolder.png</icon>
@@ -3098,7 +3058,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>TV shows</label2>
 			<icon>DefaultGenre.png</icon>
@@ -3120,7 +3080,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[14022]</label>
 			<label2>Custom item</label2>
 			<icon>special://skin/extras/icons/folder.png</icon>
@@ -3142,7 +3102,7 @@
 		</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">6</property>
+			<property name="mainmenuid">5</property>
 			<label>$LOCALIZE[24069]</label>
 			<label2>Kodi Command</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3171,7 +3131,7 @@
 	<include name="skinshortcuts-group-num-24001">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">7</property>
 			<label>$LOCALIZE[1037]</label>
 			<label2>item</label2>
 			<icon>special://skin/extras/icons/addon.png</icon>
@@ -3192,7 +3152,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">7</property>
 			<label>$LOCALIZE[1038]</label>
 			<label2>Music</label2>
 			<icon>special://skin/extras/icons/addon.png</icon>
@@ -3213,7 +3173,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">7</property>
 			<label>$LOCALIZE[1039]</label>
 			<label2>Pictures</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -3234,7 +3194,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">7</property>
 			<label>$LOCALIZE[1043]</label>
 			<label2>Programs</label2>
 			<icon>special://skin/extras/icons/program.png</icon>
@@ -3257,7 +3217,7 @@
 	<include name="skinshortcuts-group-alt-num-24001">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">7</property>
 			<label>$LOCALIZE[1037]</label>
 			<label2>item</label2>
 			<icon>special://skin/extras/icons/addon.png</icon>
@@ -3278,7 +3238,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">7</property>
 			<label>$LOCALIZE[1038]</label>
 			<label2>Music</label2>
 			<icon>special://skin/extras/icons/addon.png</icon>
@@ -3299,7 +3259,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">7</property>
 			<label>$LOCALIZE[1039]</label>
 			<label2>Pictures</label2>
 			<icon>DefaultAddonPicture.png</icon>
@@ -3320,7 +3280,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">8</property>
+			<property name="mainmenuid">7</property>
 			<label>$LOCALIZE[1043]</label>
 			<label2>Programs</label2>
 			<icon>special://skin/extras/icons/program.png</icon>
@@ -3361,7 +3321,7 @@
 	<include name="skinshortcuts-group-num-5">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">11</property>
 			<label>$LOCALIZE[7]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/file.png</icon>
@@ -3379,7 +3339,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">11</property>
 			<label>$LOCALIZE[14111]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/info.png</icon>
@@ -3398,7 +3358,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">11</property>
 			<label>$LOCALIZE[13009]</label>
 			<label2>Kodi Command</label2>
 			<icon>special://skin/extras/icons/power.png</icon>
@@ -3419,7 +3379,7 @@
 	<include name="skinshortcuts-group-alt-num-5">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">11</property>
 			<label>$LOCALIZE[7]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/file.png</icon>
@@ -3437,7 +3397,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">11</property>
 			<label>$LOCALIZE[14111]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/info.png</icon>
@@ -3456,7 +3416,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">12</property>
+			<property name="mainmenuid">11</property>
 			<label>$LOCALIZE[13009]</label>
 			<label2>Kodi Command</label2>
 			<icon>special://skin/extras/icons/power.png</icon>
@@ -3477,7 +3437,7 @@
 	<include name="skinshortcuts-group-quicknav">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">13</property>
+			<property name="mainmenuid">12</property>
 			<label>$LOCALIZE[589]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/musicdisc.png</icon>
@@ -3495,7 +3455,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">13</property>
+			<property name="mainmenuid">12</property>
 			<label>$LOCALIZE[7]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/file.png</icon>
@@ -3513,7 +3473,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">13</property>
+			<property name="mainmenuid">12</property>
 			<label>$LOCALIZE[14111]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/info.png</icon>
@@ -3534,7 +3494,7 @@
 	<include name="skinshortcuts-group-alt-quicknav">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">13</property>
+			<property name="mainmenuid">12</property>
 			<label>$LOCALIZE[589]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/musicdisc.png</icon>
@@ -3552,7 +3512,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">13</property>
+			<property name="mainmenuid">12</property>
 			<label>$LOCALIZE[7]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/file.png</icon>
@@ -3570,7 +3530,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">13</property>
+			<property name="mainmenuid">12</property>
 			<label>$LOCALIZE[14111]</label>
 			<label2>Common menu item</label2>
 			<icon>special://skin/extras/icons/info.png</icon>
@@ -3883,13 +3843,13 @@
 				<animation condition="Integer.IsGreater(Container(80112).Column,0)" easing="inout" effect="slide" end="424,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80112" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),fanart)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
 				<include content="WidgetContents">
 					<param name="id">80112</param>
-					<param name="path" />
-					<param name="target" />
-					<param name="sortby" />
-					<param name="sortdirection" />
+					<param name="path">videodb://inprogresstvshows/</param>
+					<param name="target">videos</param>
+					<param name="sortby">lastplayed</param>
+					<param name="sortdirection">descending</param>
 					<param name="onup">80112</param>
 					<param name="ondown">80112</param>
 					<param name="onleft">9000</param>
@@ -3912,7 +3872,7 @@
 				<animation condition="Integer.IsGreater(Container(80122).Column,0)" easing="inout" effect="slide" end="405,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80122" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),fanart)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
 				<include content="WeatherWidgetContents">
 					<param name="id">80122</param>
 				</include>
@@ -4058,7 +4018,7 @@
 				<animation condition="Integer.IsGreater(Container(80132).Column,0)" easing="inout" effect="slide" end="760,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80132" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),fanart)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
 				<include content="SettingsWidgetContents">
 					<param name="id">80132</param>
 					<param name="onup">80132</param>
@@ -4121,11 +4081,11 @@
 				<animation condition="Integer.IsGreater(Container(80113).Column,0)" easing="inout" effect="slide" end="424,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80113" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-31502)</visible>
 				<include content="WidgetContents">
 					<param name="id">80113</param>
-					<param name="path">videodb://inprogresstvshows/</param>
-					<param name="target">videos</param>
+					<param name="path">pvr://channels/tv/*?view=lastplayed</param>
+					<param name="target">pvr</param>
 					<param name="sortby">lastplayed</param>
 					<param name="sortdirection">descending</param>
 					<param name="onup">80113</param>
@@ -4150,7 +4110,7 @@
 				<animation condition="Integer.IsGreater(Container(80123).Column,0)" easing="inout" effect="slide" end="405,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80123" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-31502)</visible>
 				<include content="WeatherWidgetContents">
 					<param name="id">80123</param>
 				</include>
@@ -4296,7 +4256,7 @@
 				<animation condition="Integer.IsGreater(Container(80133).Column,0)" easing="inout" effect="slide" end="760,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80133" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-31502)</visible>
 				<include content="SettingsWidgetContents">
 					<param name="id">80133</param>
 					<param name="onup">80133</param>
@@ -4359,13 +4319,13 @@
 				<animation condition="Integer.IsGreater(Container(80114).Column,0)" easing="inout" effect="slide" end="424,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80114" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-31502)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),music)</visible>
 				<include content="WidgetContents">
 					<param name="id">80114</param>
-					<param name="path">pvr://channels/tv/*?view=lastplayed</param>
-					<param name="target">pvr</param>
-					<param name="sortby">lastplayed</param>
-					<param name="sortdirection">descending</param>
+					<param name="path">musicdb://recentlyaddedalbums/</param>
+					<param name="target">music</param>
+					<param name="sortby" />
+					<param name="sortdirection" />
 					<param name="onup">80114</param>
 					<param name="ondown">80114</param>
 					<param name="onleft">9000</param>
@@ -4388,7 +4348,7 @@
 				<animation condition="Integer.IsGreater(Container(80124).Column,0)" easing="inout" effect="slide" end="405,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80124" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-31502)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),music)</visible>
 				<include content="WeatherWidgetContents">
 					<param name="id">80124</param>
 				</include>
@@ -4534,7 +4494,7 @@
 				<animation condition="Integer.IsGreater(Container(80134).Column,0)" easing="inout" effect="slide" end="760,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80134" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-31502)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),music)</visible>
 				<include content="SettingsWidgetContents">
 					<param name="id">80134</param>
 					<param name="onup">80134</param>
@@ -4597,11 +4557,11 @@
 				<animation condition="Integer.IsGreater(Container(80115).Column,0)" easing="inout" effect="slide" end="424,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80115" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),music)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),musicvideos)</visible>
 				<include content="WidgetContents">
 					<param name="id">80115</param>
-					<param name="path">musicdb://recentlyaddedalbums/</param>
-					<param name="target">music</param>
+					<param name="path">videodb://recentlyaddedmusicvideos/</param>
+					<param name="target">videos</param>
 					<param name="sortby" />
 					<param name="sortdirection" />
 					<param name="onup">80115</param>
@@ -4626,7 +4586,7 @@
 				<animation condition="Integer.IsGreater(Container(80125).Column,0)" easing="inout" effect="slide" end="405,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80125" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),music)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),musicvideos)</visible>
 				<include content="WeatherWidgetContents">
 					<param name="id">80125</param>
 				</include>
@@ -4772,7 +4732,7 @@
 				<animation condition="Integer.IsGreater(Container(80135).Column,0)" easing="inout" effect="slide" end="760,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80135" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),music)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),musicvideos)</visible>
 				<include content="SettingsWidgetContents">
 					<param name="id">80135</param>
 					<param name="onup">80135</param>
@@ -4835,11 +4795,11 @@
 				<animation condition="Integer.IsGreater(Container(80116).Column,0)" easing="inout" effect="slide" end="424,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80116" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),musicvideos)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),plugin-program-advanced-emulator-launcher)</visible>
 				<include content="WidgetContents">
 					<param name="id">80116</param>
-					<param name="path">videodb://recentlyaddedmusicvideos/</param>
-					<param name="target">videos</param>
+					<param name="path">plugin://plugin.program.advanced.emulator.launcher/?com=SHOW_FAVOURITES</param>
+					<param name="target">programs</param>
 					<param name="sortby" />
 					<param name="sortdirection" />
 					<param name="onup">80116</param>
@@ -4864,7 +4824,7 @@
 				<animation condition="Integer.IsGreater(Container(80126).Column,0)" easing="inout" effect="slide" end="405,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80126" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),musicvideos)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),plugin-program-advanced-emulator-launcher)</visible>
 				<include content="WeatherWidgetContents">
 					<param name="id">80126</param>
 				</include>
@@ -5010,7 +4970,7 @@
 				<animation condition="Integer.IsGreater(Container(80136).Column,0)" easing="inout" effect="slide" end="760,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80136" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),musicvideos)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),plugin-program-advanced-emulator-launcher)</visible>
 				<include content="SettingsWidgetContents">
 					<param name="id">80136</param>
 					<param name="onup">80136</param>
@@ -5073,13 +5033,13 @@
 				<animation condition="Integer.IsGreater(Container(80117).Column,0)" easing="inout" effect="slide" end="424,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80117" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),plugin-program-advanced-emulator-launcher)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-24001)</visible>
 				<include content="WidgetContents">
 					<param name="id">80117</param>
-					<param name="path">plugin://plugin.program.advanced.emulator.launcher/?com=SHOW_FAVOURITES</param>
-					<param name="target">programs</param>
-					<param name="sortby" />
-					<param name="sortdirection" />
+					<param name="path">addons://sources/video/</param>
+					<param name="target">videos</param>
+					<param name="sortby">lastused</param>
+					<param name="sortdirection">descending</param>
 					<param name="onup">80117</param>
 					<param name="ondown">80117</param>
 					<param name="onleft">9000</param>
@@ -5102,7 +5062,7 @@
 				<animation condition="Integer.IsGreater(Container(80127).Column,0)" easing="inout" effect="slide" end="405,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80127" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),plugin-program-advanced-emulator-launcher)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-24001)</visible>
 				<include content="WeatherWidgetContents">
 					<param name="id">80127</param>
 				</include>
@@ -5248,7 +5208,7 @@
 				<animation condition="Integer.IsGreater(Container(80137).Column,0)" easing="inout" effect="slide" end="760,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80137" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),plugin-program-advanced-emulator-launcher)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-24001)</visible>
 				<include content="SettingsWidgetContents">
 					<param name="id">80137</param>
 					<param name="onup">80137</param>
@@ -5311,13 +5271,13 @@
 				<animation condition="Integer.IsGreater(Container(80118).Column,0)" easing="inout" effect="slide" end="424,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80118" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-24001)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),)</visible>
 				<include content="WidgetContents">
 					<param name="id">80118</param>
-					<param name="path">addons://sources/video/</param>
-					<param name="target">videos</param>
-					<param name="sortby">lastused</param>
-					<param name="sortdirection">descending</param>
+					<param name="path" />
+					<param name="target" />
+					<param name="sortby" />
+					<param name="sortdirection" />
 					<param name="onup">80118</param>
 					<param name="ondown">80118</param>
 					<param name="onleft">9000</param>
@@ -5340,7 +5300,7 @@
 				<animation condition="Integer.IsGreater(Container(80128).Column,0)" easing="inout" effect="slide" end="405,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80128" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-24001)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),)</visible>
 				<include content="WeatherWidgetContents">
 					<param name="id">80128</param>
 				</include>
@@ -5486,7 +5446,7 @@
 				<animation condition="Integer.IsGreater(Container(80138).Column,0)" easing="inout" effect="slide" end="760,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80138" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-24001)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),)</visible>
 				<include content="SettingsWidgetContents">
 					<param name="id">80138</param>
 					<param name="onup">80138</param>
@@ -5549,7 +5509,7 @@
 				<animation condition="Integer.IsGreater(Container(80119).Column,0)" easing="inout" effect="slide" end="424,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80119" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),weather)</visible>
 				<include content="WidgetContents">
 					<param name="id">80119</param>
 					<param name="path" />
@@ -5578,7 +5538,7 @@
 				<animation condition="Integer.IsGreater(Container(80129).Column,0)" easing="inout" effect="slide" end="405,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80129" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),weather)</visible>
 				<include content="WeatherWidgetContents">
 					<param name="id">80129</param>
 				</include>
@@ -5724,7 +5684,7 @@
 				<animation condition="Integer.IsGreater(Container(80139).Column,0)" easing="inout" effect="slide" end="760,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80139" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),weather)</visible>
 				<include content="SettingsWidgetContents">
 					<param name="id">80139</param>
 					<param name="onup">80139</param>
@@ -5787,11 +5747,11 @@
 				<animation condition="Integer.IsGreater(Container(801110).Column,0)" easing="inout" effect="slide" end="424,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="801110" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),weather)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-137)</visible>
 				<include content="WidgetContents">
 					<param name="id">801110</param>
-					<param name="path" />
-					<param name="target" />
+					<param name="path">special://videoplaylists/</param>
+					<param name="target">videos</param>
 					<param name="sortby" />
 					<param name="sortdirection" />
 					<param name="onup">801110</param>
@@ -5816,7 +5776,7 @@
 				<animation condition="Integer.IsGreater(Container(801210).Column,0)" easing="inout" effect="slide" end="405,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="801210" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),weather)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-137)</visible>
 				<include content="WeatherWidgetContents">
 					<param name="id">801210</param>
 				</include>
@@ -5962,7 +5922,7 @@
 				<animation condition="Integer.IsGreater(Container(801310).Column,0)" easing="inout" effect="slide" end="760,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="801310" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),weather)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-137)</visible>
 				<include content="SettingsWidgetContents">
 					<param name="id">801310</param>
 					<param name="onup">801310</param>
@@ -6025,11 +5985,11 @@
 				<animation condition="Integer.IsGreater(Container(801111).Column,0)" easing="inout" effect="slide" end="424,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="801111" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-137)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-5)</visible>
 				<include content="WidgetContents">
 					<param name="id">801111</param>
-					<param name="path">special://videoplaylists/</param>
-					<param name="target">videos</param>
+					<param name="path" />
+					<param name="target" />
 					<param name="sortby" />
 					<param name="sortdirection" />
 					<param name="onup">801111</param>
@@ -6054,7 +6014,7 @@
 				<animation condition="Integer.IsGreater(Container(801211).Column,0)" easing="inout" effect="slide" end="405,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="801211" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-137)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-5)</visible>
 				<include content="WeatherWidgetContents">
 					<param name="id">801211</param>
 				</include>
@@ -6200,251 +6160,13 @@
 				<animation condition="Integer.IsGreater(Container(801311).Column,0)" easing="inout" effect="slide" end="760,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="801311" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-137)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-5)</visible>
 				<include content="SettingsWidgetContents">
 					<param name="id">801311</param>
 					<param name="onup">801311</param>
 					<param name="ondown">801311</param>
 					<param name="onleft">9000</param>
 					<param name="onright">801311</param>
-				</include>
-			</control>
-		</control>
-		<include content="WidgetBusyAnimation">
-			<param name="id">801112</param>
-		</include>
-		<control type="group">
-			<visible>![Window.IsVisible(favourites) | Window.IsVisible(script-globalsearch-main.xml) | Window.IsVisible(script-lazytv-main.xml) | Window.IsVisible(script-lazytv-BigScreenList.xml) | Window.IsVisible(movieinformation) | Window.IsVisible(musicinformation) | Window.IsVisible(songinformation) | Window.IsActive(addoninformation)]</visible>
-			<include>Animation.Common</include>
-			<left>604</left>
-			<top>155</top>
-			<control type="image">
-				<visible>Control.HasFocus(801112) + !Container(801112).IsUpdating + [[String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[21371]) + ![String.Contains(Container(9000).ListItem.Property(widgetPath),recentlyaddedepisodes) | String.Contains(Container(9000).ListItem.Property(widgetType),episodes)]] | String.IsEmpty(Container(9000).ListItem.Property(widgetIcon))]</visible>
-				<left>48</left>
-				<top>10</top>
-				<width>385</width>
-				<height>425</height>
-				<include>FocusedBackgroundFade</include>
-				<texture border="5" colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
-				<animation condition="Integer.IsGreater(Container(801112).Row,0)" easing="inout" effect="slide" end="0,445" time="300" tween="cubic">Conditional</animation>
-				<animation condition="Integer.IsGreater(Container(801112).Column,3)" easing="inout" effect="slide" end="405,0" time="300" tween="cubic">Conditional</animation>
-				<animation condition="Integer.IsGreater(Container(801112).Column,2)" easing="inout" effect="slide" end="405,0" time="300" tween="cubic">Conditional</animation>
-				<animation condition="Integer.IsGreater(Container(801112).Column,1)" easing="inout" effect="slide" end="405,0" time="300" tween="cubic">Conditional</animation>
-				<animation condition="Integer.IsGreater(Container(801112).Column,0)" easing="inout" effect="slide" end="405,0" time="300" tween="cubic">Conditional</animation>
-			</control>
-			<control type="image">
-				<visible>Control.HasFocus(801112) + !Container(801112).IsUpdating + String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[20021])</visible>
-				<left>48</left>
-				<top>20</top>
-				<width>250</width>
-				<height>405</height>
-				<include>FocusedBackgroundFade</include>
-				<texture border="5" colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
-				<animation condition="Integer.IsGreater(Container(801112).Row,0)" easing="inout" effect="slide" end="0,445" time="300" tween="cubic">Conditional</animation>
-				<animation condition="Integer.IsGreater(Container(801112).Column,5)" easing="inout" effect="slide" end="270,0" time="300" tween="cubic">Conditional</animation>
-				<animation condition="Integer.IsGreater(Container(801112).Column,4)" easing="inout" effect="slide" end="270,0" time="300" tween="cubic">Conditional</animation>
-				<animation condition="Integer.IsGreater(Container(801112).Column,3)" easing="inout" effect="slide" end="270,0" time="300" tween="cubic">Conditional</animation>
-				<animation condition="Integer.IsGreater(Container(801112).Column,2)" easing="inout" effect="slide" end="270,0" time="300" tween="cubic">Conditional</animation>
-				<animation condition="Integer.IsGreater(Container(801112).Column,1)" easing="inout" effect="slide" end="270,0" time="300" tween="cubic">Conditional</animation>
-				<animation condition="Integer.IsGreater(Container(801112).Column,0)" easing="inout" effect="slide" end="270,0" time="300" tween="cubic">Conditional</animation>
-			</control>
-			<control type="image">
-				<visible>Control.HasFocus(801112) + !Container(801112).IsUpdating + [String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[20445]) | String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31100]) | String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31088]) | [String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[21371]) + [String.Contains(Container(9000).ListItem.Property(widgetPath),recentlyaddedepisodes) | String.Contains(Container(9000).ListItem.Property(widgetType),episodes)]]]</visible>
-				<left>10</left>
-				<top>10</top>
-				<width>404</width>
-				<height>276</height>
-				<include>FocusedBackgroundFade</include>
-				<texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
-				<animation condition="Integer.IsGreater(Container(801112).Row,1)" easing="inout" effect="slide" end="0,296" time="300" tween="cubic">Conditional</animation>
-				<animation condition="Integer.IsGreater(Container(801112).Row,0)" easing="inout" effect="slide" end="0,296" time="300" tween="cubic">Conditional</animation>
-				<animation condition="Integer.IsGreater(Container(801112).Column,2)" easing="inout" effect="slide" end="424,0" time="300" tween="cubic">Conditional</animation>
-				<animation condition="Integer.IsGreater(Container(801112).Column,1)" easing="inout" effect="slide" end="424,0" time="300" tween="cubic">Conditional</animation>
-				<animation condition="Integer.IsGreater(Container(801112).Column,0)" easing="inout" effect="slide" end="424,0" time="300" tween="cubic">Conditional</animation>
-			</control>
-			<control id="801112" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-5)</visible>
-				<include content="WidgetContents">
-					<param name="id">801112</param>
-					<param name="path" />
-					<param name="target" />
-					<param name="sortby" />
-					<param name="sortdirection" />
-					<param name="onup">801112</param>
-					<param name="ondown">801112</param>
-					<param name="onleft">9000</param>
-					<param name="onright">801112</param>
-					<param name="orientation">vertical</param>
-				</include>
-			</control>
-			<control type="image">
-				<visible>Control.HasFocus(801212) + !Container(801212).IsUpdating</visible>
-				<animation delay="200" effect="fade" time="320">Visible</animation>
-				<animation effect="fade" time="200">Hidden</animation>
-				<left>49</left>
-				<top>430</top>
-				<width>385</width>
-				<height>425</height>
-				<texture border="5" colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
-				<animation condition="Integer.IsGreater(Container(801212).Column,3)" easing="inout" effect="slide" end="405,0" time="300" tween="cubic">Conditional</animation>
-				<animation condition="Integer.IsGreater(Container(801212).Column,2)" easing="inout" effect="slide" end="405,0" time="300" tween="cubic">Conditional</animation>
-				<animation condition="Integer.IsGreater(Container(801212).Column,1)" easing="inout" effect="slide" end="405,0" time="300" tween="cubic">Conditional</animation>
-				<animation condition="Integer.IsGreater(Container(801212).Column,0)" easing="inout" effect="slide" end="405,0" time="300" tween="cubic">Conditional</animation>
-			</control>
-			<control id="801212" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-5)</visible>
-				<include content="WeatherWidgetContents">
-					<param name="id">801212</param>
-				</include>
-			</control>
-			<control type="group">
-				<visible>Control.IsVisible(801212)</visible>
-				<top>20</top>
-				<left>39</left>
-				<width>1620</width>
-				<height>390</height>
-				<top>370</top>
-				<control type="image">
-					<top>20</top>
-					<left>20</left>
-					<right>20</right>
-					<height>310</height>
-					<texture>overlays/diffuse-overlay.png</texture>
-				</control>
-				<control type="grouplist">
-					<left>20</left>
-					<right>20</right>
-					<top>327</top>
-					<height>50</height>
-					<orientation>horizontal</orientation>
-					<control type="label">
-						<width>auto</width>
-						<font>font13</font>
-						<label>$LOCALIZE[31204]</label>
-					</control>
-					<control type="label">
-						<width>auto</width>
-						<font>font13</font>
-						<label> $LOCALIZE[1405] </label>
-						<visible>!String.IsEmpty(Window(weather).Property(Location))</visible>
-					</control>
-					<control type="label">
-						<width>auto</width>
-						<font>font13</font>
-						<label>$INFO[Window(weather).Property(Location)]</label>
-					</control>
-				</control>
-				<control type="image">
-					<left>40</left>
-					<top>40</top>
-					<height>270</height>
-					<aspectratio align="left" aligny="center" scalediffuse="false">keep</aspectratio>
-					<texture background="true">$VAR[WeatherIconVar]$INFO[Window(weather).Property(Current.FanartCode),,.png]</texture>
-				</control>
-				<control type="grouplist">
-					<top>0</top>
-					<left>350</left>
-					<orientation>horizontal</orientation>
-					<control type="label">
-						<description>current temp Value</description>
-						<width>auto</width>
-						<height>270</height>
-						<font>WeatherTemp</font>
-						<label>$INFO[Window(weather).Property(Current.Temperature)]</label>
-					</control>
-					<control type="label">
-						<description>current temp Value Units</description>
-						<left>270</left>
-						<width>auto</width>
-						<height>216</height>
-						<font>font16</font>
-						<label>$INFO[System.TemperatureUnits]</label>
-					</control>
-				</control>
-				<control type="label">
-					<description>current condition label</description>
-					<top>210</top>
-					<left>350</left>
-					<width>800</width>
-					<height>60</height>
-					<label>$INFO[Window(weather).Property(Current.Condition)], $LOCALIZE[402] $INFO[Window(weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</label>
-					<font>font30</font>
-				</control>
-				<control type="grouplist">
-					<left>1120</left>
-					<top>60</top>
-					<width>438</width>
-					<itemgap>20</itemgap>
-					<control type="label">
-						<label>[COLOR $VAR[ColorHighlightVar]]$LOCALIZE[406]: [/COLOR]$INFO[Window(weather).Property(Current.Humidity)]</label>
-						<width>438</width>
-						<height>40</height>
-						<align>right</align>
-						<font>font14</font>
-					</control>
-					<control type="label">
-						<label>[COLOR $VAR[ColorHighlightVar]]$LOCALIZE[404]:[/COLOR] $INFO[Window(weather).Property(Current.Wind)]</label>
-						<width>438</width>
-						<height>40</height>
-						<align>right</align>
-						<font>font14</font>
-					</control>
-					<control type="label">
-						<label>[COLOR $VAR[ColorHighlightVar]]$LOCALIZE[33027]:[/COLOR] [LOWERCASE]$INFO[Window(weather).Property(Today.Sunrise)][/LOWERCASE]</label>
-						<width>438</width>
-						<height>40</height>
-						<align>right</align>
-						<font>font14</font>
-					</control>
-					<control type="label">
-						<label>[COLOR $VAR[ColorHighlightVar]]$LOCALIZE[33028]:[/COLOR] [LOWERCASE]$INFO[Window(weather).Property(Today.Sunset)][/LOWERCASE]</label>
-						<width>438</width>
-						<height>40</height>
-						<align>right</align>
-						<font>font14</font>
-					</control>
-				</control>
-			</control>
-			<control type="image">
-				<visible>Control.HasFocus(801312) + !Container(801312).IsUpdating</visible>
-				<animation delay="200" effect="fade" time="320">Visible</animation>
-				<animation effect="fade" time="200">Hidden</animation>
-				<left>70</left>
-				<top>55</top>
-				<width>740</width>
-				<height>140</height>
-				<include>FocusedBackgroundFade</include>
-				<texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
-				<animation condition="Integer.IsGreater(Container(801312).Row,3)" easing="inout" effect="slide" end="0,160" time="300" tween="cubic">Conditional</animation>
-				<animation condition="Integer.IsGreater(Container(801312).Row,2)" easing="inout" effect="slide" end="0,160" time="300" tween="cubic">Conditional</animation>
-				<animation condition="Integer.IsGreater(Container(801312).Row,1)" easing="inout" effect="slide" end="0,160" time="300" tween="cubic">Conditional</animation>
-				<animation condition="Integer.IsGreater(Container(801312).Row,0)" easing="inout" effect="slide" end="0,160" time="300" tween="cubic">Conditional</animation>
-				<animation condition="Integer.IsGreater(Container(801312).Column,0)" easing="inout" effect="slide" end="760,0" time="300" tween="cubic">Conditional</animation>
-			</control>
-			<control type="image">
-				<visible>Control.HasFocus(801312) + !Container(801312).IsUpdating</visible>
-				<animation delay="200" effect="fade" time="320">Visible</animation>
-				<animation effect="fade" time="200">Hidden</animation>
-				<left>70</left>
-				<top>55</top>
-				<width>140</width>
-				<height>140</height>
-				<include>FocusedBackgroundFade</include>
-				<texture>overlays/diffuse-overlay.png</texture>
-				<animation condition="Integer.IsGreater(Container(801312).Row,3)" easing="inout" effect="slide" end="0,160" time="300" tween="cubic">Conditional</animation>
-				<animation condition="Integer.IsGreater(Container(801312).Row,2)" easing="inout" effect="slide" end="0,160" time="300" tween="cubic">Conditional</animation>
-				<animation condition="Integer.IsGreater(Container(801312).Row,1)" easing="inout" effect="slide" end="0,160" time="300" tween="cubic">Conditional</animation>
-				<animation condition="Integer.IsGreater(Container(801312).Row,0)" easing="inout" effect="slide" end="0,160" time="300" tween="cubic">Conditional</animation>
-				<animation condition="Integer.IsGreater(Container(801312).Column,0)" easing="inout" effect="slide" end="760,0" time="300" tween="cubic">Conditional</animation>
-			</control>
-			<control id="801312" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-5)</visible>
-				<include content="SettingsWidgetContents">
-					<param name="id">801312</param>
-					<param name="onup">801312</param>
-					<param name="ondown">801312</param>
-					<param name="onleft">9000</param>
-					<param name="onright">801312</param>
 				</include>
 			</control>
 		</control>
@@ -6530,13 +6252,6 @@
 			<description>Widget Background Image</description>
 			<imagepath background="true">$INFO[Container(801111).ListItem.Art(fanart)]</imagepath>
 		</control>
-		<control type="multiimage">
-			<include>BackgroundFadeAnimation</include>
-			<visible>Control.HasFocus(801112) + !String.IsEmpty(Container(801112).ListItem.Art(fanart))</visible>
-			<include>FullscreenDimensions</include>
-			<description>Widget Background Image</description>
-			<imagepath background="true">$INFO[Container(801112).ListItem.Art(fanart)]</imagepath>
-		</control>
 	</include>
 	<include name="skinshortcuts-template-WeatherWidgetFanart">
 		<include condition="StringCompare(System.ProfileName,Master user)">skinshortcuts-template-WeatherWidgetFanart-Master user</include>
@@ -6618,13 +6333,6 @@
 			<include>FullscreenDimensions</include>
 			<description>Widget Background Image</description>
 			<imagepath background="true">$INFO[Skin.String(weatherfanart.path)]$INFO[Container(801211).ListItem.Property(FanartCode)]$VAR[WeatherFanartExtension]</imagepath>
-		</control>
-		<control type="multiimage">
-			<include>BackgroundFadeAnimation</include>
-			<visible>Control.HasFocus(801212) + !String.IsEmpty(Skin.String(weatherfanart.path))</visible>
-			<include>FullscreenDimensions</include>
-			<description>Widget Background Image</description>
-			<imagepath background="true">$INFO[Skin.String(weatherfanart.path)]$INFO[Container(801212).ListItem.Property(FanartCode)]$VAR[WeatherFanartExtension]</imagepath>
 		</control>
 	</include>
 </includes>
