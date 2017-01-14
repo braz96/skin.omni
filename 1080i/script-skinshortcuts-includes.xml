@@ -103,18 +103,8 @@
 			<thumb>DefaultMusicVideos.png</thumb>
 			<property name="labelID">musicvideos</property>
 			<property name="defaultID">musicvideos</property>
-			<property name="widget">recentlyaddedmusicvideos</property>
-			<property name="widgetName">20390</property>
-			<property name="widgetType">musicvideos</property>
-			<property name="widgetPath">videodb://recentlyaddedmusicvideos/</property>
-			<property name="widgetTarget">videos</property>
-			<onclick condition="Library.HasContent(MusicVideos)">ActivateWindow(Videos,videodb://musicvideos/titles/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://musicvideos/titles/,return)</property>
-			<property name="list">videodb://musicvideos/titles/</property>
-			<onclick condition="![Library.HasContent(MusicVideos)]">ActivateWindow(Videos,sources://video/,return)</onclick>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">musicvideos</property>
-			<property name="group">mainmenu</property>
+			<visible>False</visible>
+			<onclick>noop</onclick>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="6">
@@ -684,11 +674,11 @@
 			<property name="list">PlayerControl(PartyMode(Video))</property>
 			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),musicvideos)</visible>
 			<property name="group">musicvideos</property>
-			<property name="widget">recentlyaddedmusicvideos</property>
-			<property name="widgetPath">videodb://recentlyaddedmusicvideos/</property>
-			<property name="widgetTarget">videos</property>
-			<property name="widgetType">musicvideos</property>
-			<property name="widgetName">20390</property>
+			<property name="widget">recentalbums</property>
+			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
+			<property name="widgetTarget">music</property>
+			<property name="widgetType">albums</property>
+			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="2">
@@ -705,11 +695,11 @@
 			<property name="list">videodb://recentlyaddedmusicvideos/</property>
 			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),musicvideos)</visible>
 			<property name="group">musicvideos</property>
-			<property name="widget">recentlyaddedmusicvideos</property>
-			<property name="widgetPath">videodb://recentlyaddedmusicvideos/</property>
-			<property name="widgetTarget">videos</property>
-			<property name="widgetType">musicvideos</property>
-			<property name="widgetName">20390</property>
+			<property name="widget">recentalbums</property>
+			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
+			<property name="widgetTarget">music</property>
+			<property name="widgetType">albums</property>
+			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="3">
@@ -727,11 +717,11 @@
 			<property name="list">library://video/musicvideos/inprogressmusicvideos.xml/</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicvideos</property>
-			<property name="widget">recentlyaddedmusicvideos</property>
-			<property name="widgetPath">videodb://recentlyaddedmusicvideos/</property>
-			<property name="widgetTarget">videos</property>
-			<property name="widgetType">musicvideos</property>
-			<property name="widgetName">20390</property>
+			<property name="widget">recentalbums</property>
+			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
+			<property name="widgetTarget">music</property>
+			<property name="widgetType">albums</property>
+			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="4">
@@ -749,11 +739,11 @@
 			<property name="list">videodb://musicvideos/genres/</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicvideos</property>
-			<property name="widget">recentlyaddedmusicvideos</property>
-			<property name="widgetPath">videodb://recentlyaddedmusicvideos/</property>
-			<property name="widgetTarget">videos</property>
-			<property name="widgetType">musicvideos</property>
-			<property name="widgetName">20390</property>
+			<property name="widget">recentalbums</property>
+			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
+			<property name="widgetTarget">music</property>
+			<property name="widgetType">albums</property>
+			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="5">
@@ -771,11 +761,11 @@
 			<property name="list">videodb://musicvideos/</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicvideos</property>
-			<property name="widget">recentlyaddedmusicvideos</property>
-			<property name="widgetPath">videodb://recentlyaddedmusicvideos/</property>
-			<property name="widgetTarget">videos</property>
-			<property name="widgetType">musicvideos</property>
-			<property name="widgetName">20390</property>
+			<property name="widget">recentalbums</property>
+			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
+			<property name="widgetTarget">music</property>
+			<property name="widgetType">albums</property>
+			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="6">
@@ -792,11 +782,11 @@
 			<property name="list">UpdateLibrary(video,,true)</property>
 			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),musicvideos)</visible>
 			<property name="group">musicvideos</property>
-			<property name="widget">recentlyaddedmusicvideos</property>
-			<property name="widgetPath">videodb://recentlyaddedmusicvideos/</property>
-			<property name="widgetTarget">videos</property>
-			<property name="widgetType">musicvideos</property>
-			<property name="widgetName">20390</property>
+			<property name="widget">recentalbums</property>
+			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
+			<property name="widgetTarget">music</property>
+			<property name="widgetType">albums</property>
+			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="1">
@@ -1559,21 +1549,10 @@
 			<thumb>DefaultMusicVideos.png</thumb>
 			<property name="labelID">musicvideos</property>
 			<property name="defaultID">musicvideos</property>
-			<property name="widget">recentlyaddedmusicvideos</property>
-			<property name="widgetName">20390</property>
-			<property name="widgetType">musicvideos</property>
-			<property name="widgetPath">videodb://recentlyaddedmusicvideos/</property>
-			<property name="widgetTarget">videos</property>
-			<onclick condition="StringCompare(Window(10000).Property(submenuVisibility),musicvideos) + [Library.HasContent(MusicVideos)]">ActivateWindow(Videos,videodb://musicvideos/titles/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://musicvideos/titles/,return)</property>
-			<property name="list">videodb://musicvideos/titles/</property>
-			<onclick condition="StringCompare(Window(10000).Property(submenuVisibility),musicvideos) + [![Library.HasContent(MusicVideos)]]">ActivateWindow(Videos,sources://video/,return)</onclick>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">musicvideos</property>
-			<property name="group">mainmenu</property>
+			<visible>False</visible>
+			<onclick condition="StringCompare(Window(10000).Property(submenuVisibility),musicvideos)">noop</onclick>
 			<property name="hasSubmenu">True</property>
-			<onclick condition="StringCompare(Window(10000).Property(submenuVisibility),musicvideos) + [Library.HasContent(MusicVideos)]">SetProperty(submenuVisibility,musicvideos,10000)</onclick>
-			<onclick condition="StringCompare(Window(10000).Property(submenuVisibility),musicvideos) + [![Library.HasContent(MusicVideos)]]">SetProperty(submenuVisibility,musicvideos,10000)</onclick>
+			<onclick>SetProperty(submenuVisibility,musicvideos,10000)</onclick>
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
@@ -1589,11 +1568,11 @@
 			<property name="list">PlayerControl(PartyMode(Video))</property>
 			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),musicvideos)</visible>
 			<property name="group">musicvideos</property>
-			<property name="widget">recentlyaddedmusicvideos</property>
-			<property name="widgetPath">videodb://recentlyaddedmusicvideos/</property>
-			<property name="widgetTarget">videos</property>
-			<property name="widgetType">musicvideos</property>
-			<property name="widgetName">20390</property>
+			<property name="widget">recentalbums</property>
+			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
+			<property name="widgetTarget">music</property>
+			<property name="widgetType">albums</property>
+			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
 			<property name="submenuVisibility">musicvideos</property>
 		</item>
@@ -1611,11 +1590,11 @@
 			<property name="list">videodb://recentlyaddedmusicvideos/</property>
 			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),musicvideos)</visible>
 			<property name="group">musicvideos</property>
-			<property name="widget">recentlyaddedmusicvideos</property>
-			<property name="widgetPath">videodb://recentlyaddedmusicvideos/</property>
-			<property name="widgetTarget">videos</property>
-			<property name="widgetType">musicvideos</property>
-			<property name="widgetName">20390</property>
+			<property name="widget">recentalbums</property>
+			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
+			<property name="widgetTarget">music</property>
+			<property name="widgetType">albums</property>
+			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
 			<property name="submenuVisibility">musicvideos</property>
 		</item>
@@ -1634,11 +1613,11 @@
 			<property name="list">library://video/musicvideos/inprogressmusicvideos.xml/</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicvideos</property>
-			<property name="widget">recentlyaddedmusicvideos</property>
-			<property name="widgetPath">videodb://recentlyaddedmusicvideos/</property>
-			<property name="widgetTarget">videos</property>
-			<property name="widgetType">musicvideos</property>
-			<property name="widgetName">20390</property>
+			<property name="widget">recentalbums</property>
+			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
+			<property name="widgetTarget">music</property>
+			<property name="widgetType">albums</property>
+			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
 			<property name="submenuVisibility">musicvideos</property>
 		</item>
@@ -1657,11 +1636,11 @@
 			<property name="list">videodb://musicvideos/genres/</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicvideos</property>
-			<property name="widget">recentlyaddedmusicvideos</property>
-			<property name="widgetPath">videodb://recentlyaddedmusicvideos/</property>
-			<property name="widgetTarget">videos</property>
-			<property name="widgetType">musicvideos</property>
-			<property name="widgetName">20390</property>
+			<property name="widget">recentalbums</property>
+			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
+			<property name="widgetTarget">music</property>
+			<property name="widgetType">albums</property>
+			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
 			<property name="submenuVisibility">musicvideos</property>
 		</item>
@@ -1680,11 +1659,11 @@
 			<property name="list">videodb://musicvideos/</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicvideos</property>
-			<property name="widget">recentlyaddedmusicvideos</property>
-			<property name="widgetPath">videodb://recentlyaddedmusicvideos/</property>
-			<property name="widgetTarget">videos</property>
-			<property name="widgetType">musicvideos</property>
-			<property name="widgetName">20390</property>
+			<property name="widget">recentalbums</property>
+			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
+			<property name="widgetTarget">music</property>
+			<property name="widgetType">albums</property>
+			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
 			<property name="submenuVisibility">musicvideos</property>
 		</item>
@@ -1702,11 +1681,11 @@
 			<property name="list">UpdateLibrary(video,,true)</property>
 			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),musicvideos)</visible>
 			<property name="group">musicvideos</property>
-			<property name="widget">recentlyaddedmusicvideos</property>
-			<property name="widgetPath">videodb://recentlyaddedmusicvideos/</property>
-			<property name="widgetTarget">videos</property>
-			<property name="widgetType">musicvideos</property>
-			<property name="widgetName">20390</property>
+			<property name="widget">recentalbums</property>
+			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
+			<property name="widgetTarget">music</property>
+			<property name="widgetType">albums</property>
+			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
 			<property name="submenuVisibility">musicvideos</property>
 		</item>
@@ -2875,11 +2854,11 @@
 			<property name="list">PlayerControl(PartyMode(Video))</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicvideos</property>
-			<property name="widget">recentlyaddedmusicvideos</property>
-			<property name="widgetPath">videodb://recentlyaddedmusicvideos/</property>
-			<property name="widgetTarget">videos</property>
-			<property name="widgetType">musicvideos</property>
-			<property name="widgetName">20390</property>
+			<property name="widget">recentalbums</property>
+			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
+			<property name="widgetTarget">music</property>
+			<property name="widgetType">albums</property>
+			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="2">
@@ -2896,11 +2875,11 @@
 			<property name="list">videodb://recentlyaddedmusicvideos/</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicvideos</property>
-			<property name="widget">recentlyaddedmusicvideos</property>
-			<property name="widgetPath">videodb://recentlyaddedmusicvideos/</property>
-			<property name="widgetTarget">videos</property>
-			<property name="widgetType">musicvideos</property>
-			<property name="widgetName">20390</property>
+			<property name="widget">recentalbums</property>
+			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
+			<property name="widgetTarget">music</property>
+			<property name="widgetType">albums</property>
+			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="3">
@@ -2918,11 +2897,11 @@
 			<property name="list">library://video/musicvideos/inprogressmusicvideos.xml/</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicvideos</property>
-			<property name="widget">recentlyaddedmusicvideos</property>
-			<property name="widgetPath">videodb://recentlyaddedmusicvideos/</property>
-			<property name="widgetTarget">videos</property>
-			<property name="widgetType">musicvideos</property>
-			<property name="widgetName">20390</property>
+			<property name="widget">recentalbums</property>
+			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
+			<property name="widgetTarget">music</property>
+			<property name="widgetType">albums</property>
+			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="4">
@@ -2940,11 +2919,11 @@
 			<property name="list">videodb://musicvideos/genres/</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicvideos</property>
-			<property name="widget">recentlyaddedmusicvideos</property>
-			<property name="widgetPath">videodb://recentlyaddedmusicvideos/</property>
-			<property name="widgetTarget">videos</property>
-			<property name="widgetType">musicvideos</property>
-			<property name="widgetName">20390</property>
+			<property name="widget">recentalbums</property>
+			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
+			<property name="widgetTarget">music</property>
+			<property name="widgetType">albums</property>
+			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="5">
@@ -2962,11 +2941,11 @@
 			<property name="list">videodb://musicvideos/</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicvideos</property>
-			<property name="widget">recentlyaddedmusicvideos</property>
-			<property name="widgetPath">videodb://recentlyaddedmusicvideos/</property>
-			<property name="widgetTarget">videos</property>
-			<property name="widgetType">musicvideos</property>
-			<property name="widgetName">20390</property>
+			<property name="widget">recentalbums</property>
+			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
+			<property name="widgetTarget">music</property>
+			<property name="widgetType">albums</property>
+			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="6">
@@ -2983,11 +2962,11 @@
 			<property name="list">UpdateLibrary(video,,true)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicvideos</property>
-			<property name="widget">recentlyaddedmusicvideos</property>
-			<property name="widgetPath">videodb://recentlyaddedmusicvideos/</property>
-			<property name="widgetTarget">videos</property>
-			<property name="widgetType">musicvideos</property>
-			<property name="widgetName">20390</property>
+			<property name="widget">recentalbums</property>
+			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
+			<property name="widgetTarget">music</property>
+			<property name="widgetType">albums</property>
+			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
 		</item>
 	</include>
@@ -3006,11 +2985,11 @@
 			<property name="list">PlayerControl(PartyMode(Video))</property>
 			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),musicvideos)</visible>
 			<property name="group">musicvideos</property>
-			<property name="widget">recentlyaddedmusicvideos</property>
-			<property name="widgetPath">videodb://recentlyaddedmusicvideos/</property>
-			<property name="widgetTarget">videos</property>
-			<property name="widgetType">musicvideos</property>
-			<property name="widgetName">20390</property>
+			<property name="widget">recentalbums</property>
+			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
+			<property name="widgetTarget">music</property>
+			<property name="widgetType">albums</property>
+			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="2">
@@ -3027,11 +3006,11 @@
 			<property name="list">videodb://recentlyaddedmusicvideos/</property>
 			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),musicvideos)</visible>
 			<property name="group">musicvideos</property>
-			<property name="widget">recentlyaddedmusicvideos</property>
-			<property name="widgetPath">videodb://recentlyaddedmusicvideos/</property>
-			<property name="widgetTarget">videos</property>
-			<property name="widgetType">musicvideos</property>
-			<property name="widgetName">20390</property>
+			<property name="widget">recentalbums</property>
+			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
+			<property name="widgetTarget">music</property>
+			<property name="widgetType">albums</property>
+			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="3">
@@ -3049,11 +3028,11 @@
 			<property name="list">library://video/musicvideos/inprogressmusicvideos.xml/</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicvideos</property>
-			<property name="widget">recentlyaddedmusicvideos</property>
-			<property name="widgetPath">videodb://recentlyaddedmusicvideos/</property>
-			<property name="widgetTarget">videos</property>
-			<property name="widgetType">musicvideos</property>
-			<property name="widgetName">20390</property>
+			<property name="widget">recentalbums</property>
+			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
+			<property name="widgetTarget">music</property>
+			<property name="widgetType">albums</property>
+			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="4">
@@ -3071,11 +3050,11 @@
 			<property name="list">videodb://musicvideos/genres/</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicvideos</property>
-			<property name="widget">recentlyaddedmusicvideos</property>
-			<property name="widgetPath">videodb://recentlyaddedmusicvideos/</property>
-			<property name="widgetTarget">videos</property>
-			<property name="widgetType">musicvideos</property>
-			<property name="widgetName">20390</property>
+			<property name="widget">recentalbums</property>
+			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
+			<property name="widgetTarget">music</property>
+			<property name="widgetType">albums</property>
+			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="5">
@@ -3093,11 +3072,11 @@
 			<property name="list">videodb://musicvideos/</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicvideos</property>
-			<property name="widget">recentlyaddedmusicvideos</property>
-			<property name="widgetPath">videodb://recentlyaddedmusicvideos/</property>
-			<property name="widgetTarget">videos</property>
-			<property name="widgetType">musicvideos</property>
-			<property name="widgetName">20390</property>
+			<property name="widget">recentalbums</property>
+			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
+			<property name="widgetTarget">music</property>
+			<property name="widgetType">albums</property>
+			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="6">
@@ -3114,11 +3093,11 @@
 			<property name="list">UpdateLibrary(video,,true)</property>
 			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),musicvideos)</visible>
 			<property name="group">musicvideos</property>
-			<property name="widget">recentlyaddedmusicvideos</property>
-			<property name="widgetPath">videodb://recentlyaddedmusicvideos/</property>
-			<property name="widgetTarget">videos</property>
-			<property name="widgetType">musicvideos</property>
-			<property name="widgetName">20390</property>
+			<property name="widget">recentalbums</property>
+			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
+			<property name="widgetTarget">music</property>
+			<property name="widgetType">albums</property>
+			<property name="widgetName">359</property>
 			<property name="isSubmenu">True</property>
 		</item>
 	</include>
@@ -4557,11 +4536,11 @@
 				<animation condition="Integer.IsGreater(Container(80115).Column,0)" easing="inout" effect="slide" end="424,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80115" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),musicvideos)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),)</visible>
 				<include content="WidgetContents">
 					<param name="id">80115</param>
-					<param name="path">videodb://recentlyaddedmusicvideos/</param>
-					<param name="target">videos</param>
+					<param name="path" />
+					<param name="target" />
 					<param name="sortby" />
 					<param name="sortdirection" />
 					<param name="onup">80115</param>
@@ -4586,7 +4565,7 @@
 				<animation condition="Integer.IsGreater(Container(80125).Column,0)" easing="inout" effect="slide" end="405,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80125" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),musicvideos)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),)</visible>
 				<include content="WeatherWidgetContents">
 					<param name="id">80125</param>
 				</include>
@@ -4732,7 +4711,7 @@
 				<animation condition="Integer.IsGreater(Container(80135).Column,0)" easing="inout" effect="slide" end="760,0" time="300" tween="cubic">Conditional</animation>
 			</control>
 			<control id="80135" type="panel">
-				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),musicvideos)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),)</visible>
 				<include content="SettingsWidgetContents">
 					<param name="id">80135</param>
 					<param name="onup">80135</param>

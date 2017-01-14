@@ -132,7 +132,7 @@
 			<label2>$INFO[Container.Viewmode]</label2>
 			<include>ButtonCommonValues</include>
 			<onclick>SendClick(2)</onclick>
-			<enable>Control.IsEnabled(2)</enable>
+			<enable>Control.IsEnabled(2) + ![Window.IsActive(tvchannels) | Window.IsActive(tvguide) | Window.IsActive(tvrecordings) | Window.IsActive(tvsearch) | Window.IsActive(tvtimers)]</enable>
 		</control>
 		<control type="button" id="2">
 			<description>View button</description>
@@ -234,13 +234,12 @@
 	</include>
 	<include name="PVRMediaMenu">
 		<control type="group">
-			<left>-440</left>
-			<include>SideBladeLeft</include>
+			<left>2350</left>
+			<include>SideBladeRight</include>
 			<control type="grouplist" id="9050">
 				<include>MediaMenuTop</include>
 				<control type="radiobutton" id="31">
 					<description>Filter</description>
-					<textwidth>352</textwidth>
 					<include>ButtonCommonValues</include>
 					<label>587</label>
 					<selected>Container.Filtered</selected>
@@ -249,52 +248,45 @@
 				</control>
 				<control type="button" id="28">
 					<description>Channel Groups</description>
-					<textwidth>352</textwidth>
 					<include>ButtonCommonValues</include>
 					<label />
 					<visible>Window.IsActive(TVChannels) | Window.IsActive(TVGuide)</visible>
 				</control>
 				<control type="radiobutton" id="5">
 					<description>Group recording items by folder structure</description>
-					<textwidth>352</textwidth>
 					<include>ButtonCommonValues</include>
 					<label>19270</label>
 					<visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
 				</control>
 				<control type="radiobutton" id="6">
 					<description>Show hidden channels</description>
-					<textwidth>352</textwidth>
 					<include>ButtonCommonValues</include>
 					<label>19051</label>
 					<visible>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)</visible>
 				</control>
 				<control type="radiobutton" id="7">
 					<description>Show deleted recordings</description>
-					<textwidth>352</textwidth>
 					<include>ButtonCommonValues</include>
 					<label>19184</label>
 					<visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
 				</control>
 				<control type="radiobutton" id="8">
 					<description>Hide disabled timers</description>
-					<textwidth>352</textwidth>
 					<include>ButtonCommonValues</include>
 					<label>19077</label>
 					<visible>Window.IsActive(TVTimers) | Window.IsActive(RadioTimers) | Window.IsActive(TVTimerRules) | Window.IsActive(RadioTimerRules)</visible>
 				</control>
-				<control type="button" id="203">
+				<!--<control type="button" id="203">
 					<description>View options</description>
-					<textwidth>352</textwidth>
 					<font>font13_title</font>
 					<include>ButtonCommonValues</include>
 					<label>31039</label>
 					<enable>no</enable>
 					<disabledcolor>$VAR[ColorHighlightVar]</disabledcolor>
-				</control>
+				</control>-->
 				<control type="button" id="100">
 					<description>Channels</description>
 					<label>19019</label>
-					<textwidth>352</textwidth>
 					<include>ButtonCommonValues</include>
 					<onclick>ClearProperty(MediaMenu,Home)</onclick>
 					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
@@ -303,7 +295,6 @@
 				<control type="button" id="101">
 					<description>Guide</description>
 					<label>22020</label>
-					<textwidth>352</textwidth>
 					<include>ButtonCommonValues</include>
 					<onclick>ClearProperty(MediaMenu,Home)</onclick>
 					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
@@ -312,7 +303,6 @@
 				<control type="button" id="102">
 					<description>Recordings</description>
 					<label>19163</label>
-					<textwidth>352</textwidth>
 					<include>ButtonCommonValues</include>
 					<onclick>ClearProperty(MediaMenu,Home)</onclick>
 					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
@@ -320,7 +310,6 @@
 				</control>
 				<control type="button" id="105">
 					<description>Timer Rules</description>
-					<textwidth>352</textwidth>
 					<include>ButtonCommonValues</include>
 					<label>19138</label>
 					<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimerRules)</onclick>
@@ -329,7 +318,6 @@
 				<control type="button" id="103">
 					<description>Timers</description>
 					<label>19040</label>
-					<textwidth>352</textwidth>
 					<include>ButtonCommonValues</include>
 					<onclick>ClearProperty(MediaMenu,Home)</onclick>
 					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
@@ -338,7 +326,6 @@
 				<control type="button" id="104">
 					<description>Search</description>
 					<label>137</label>
-					<textwidth>352</textwidth>
 					<include>ButtonCommonValues</include>
 					<onclick>ClearProperty(MediaMenu,Home)</onclick>
 					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
@@ -353,13 +340,13 @@
 					<enable>no</enable>
 					<disabledcolor>$VAR[ColorHighlightVar]</disabledcolor>
 				</control>-->
-				<include>QuicknavButton</include>
+				<!--<include>QuicknavButton</include>-->
 				<include>PlaylistButtons</include>
 				<include content="MenuPlayerControls">
 					<param name="PlayerControlsOnDown" value="1802" />
 				</include>
 			</control>
-			<include condition="!Skin.HasSetting(Disable.Quicknav)">QuicknavMenu</include>
+			<!--<include condition="!Skin.HasSetting(Disable.Quicknav)">QuicknavMenu</include>-->
 		</control>
 	</include>
 	<include name="SettingsMediaMenu">
@@ -836,7 +823,7 @@
     </include>
     <include name="OverlayList">
     	<control type="group">
-    		<visible>$EXP[isVideo] | $EXP[isMovie] | $EXP[isTvshow] | $EXP[isSeason] | $EXP[isEpisode] | $EXP[isSet] | $EXP[isMusicvideo] | Container.Content(files) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(movies) | Container.Content(musicvideos) | Container.Content(videos)</visible>
+    		<visible>$EXP[isVideo] | $EXP[isMovie] | $EXP[isTvshow] | $EXP[isSeason] | $EXP[isEpisode] | $EXP[isSet] | $EXP[isMusicvideo] | Container.Content(files) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(movies) | Container.Content(musicvideos) | Container.Content(videos) | Window.IsActive(tvrecordings)</visible>
 	    	<control type="label">
 				<left>0</left>
 				<textoffsetx>20</textoffsetx>

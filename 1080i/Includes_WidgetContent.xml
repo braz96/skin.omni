@@ -408,7 +408,7 @@
                 <right>20</right>
                 <top>234</top>
                 <height>50</height>
-                <label>$INFO[ListItem.Label]</label>
+                <label>$VAR[WidgetThumbnailLabel]</label>
             </control>
             <control type="image">
                 <visible>!String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31088])</visible>
@@ -446,7 +446,7 @@
                 <right>20</right>
                 <top>234</top>
                 <height>50</height>
-                <label>$INFO[ListItem.Label]</label>
+                <label>$VAR[WidgetThumbnailLabel]</label>
             </control>
             <control type="image">
                 <visible>!String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31088])</visible>
@@ -484,7 +484,7 @@
                 <right>20</right>
                 <top>383</top>
                 <height>50</height>
-                <label>$INFO[ListItem.Label]</label>
+                <label>$VAR[WidgetThumbnailLabel]</label>
             </control>
             <control type="image">
                 <left>58</left>
@@ -512,7 +512,7 @@
                 <right>20</right>
                 <top>383</top>
                 <height>50</height>
-                <label>$INFO[ListItem.Label]</label>
+                <label>$VAR[WidgetThumbnailLabel]</label>
             </control>
             <control type="image">
                 <left>58</left>

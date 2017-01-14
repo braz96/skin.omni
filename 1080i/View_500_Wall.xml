@@ -12,7 +12,7 @@
                 <visible>Integer.IsGreater(Container(500).NumItems,0)</visible>
                 <animation effect="fade" time="320" delay="300">Visible</animation>
                 <control type="image">
-                	<visible>[Container.Content(sets) | [[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)] + !Skin.HasSetting(Enable.IconLandscape) + !Skin.HasSetting(Enable.IconBanner) + !Skin.HasSetting(Enable.IconLogo)] | [Container.Content(seasons) + Skin.HasSetting(Enable.IconLandscape)] | [Container.Content(seasons) + Skin.HasSetting(Enable.IconLogo)]] + Control.HasFocus(500) </visible>
+                	<visible>[Container.Content(sets) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(actors)] + Control.HasFocus(500)</visible>
                     <left>48</left>
                     <top>20</top>
                     <width>250</width>
@@ -42,7 +42,7 @@
                     <animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,0)">Conditional</animation>
                 </control>
                 <control type="image">
-                	<visible>[Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(images) | Container.Content()] + Control.HasFocus(500)</visible>
+                	<visible>[Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(images) | Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(tags) | Container.Content(years) | Container.Content(directors) | Container.Content(studios)] + Control.HasFocus(500)</visible>
                     <left>48</left>
                     <top>10</top>
                     <width>385</width>
@@ -71,7 +71,7 @@
 				<preloaditems>2</preloaditems>
 				<viewtype label="31086">Icon</viewtype>
 				<scrolltime tween="quadratic" easing="out">300</scrolltime>
-				<itemlayout height="445" width="270" condition="[[Container.Content(movies) | Container.Content(tvshows) | Container.Content(sets) | Container.Content(seasons)] + !Skin.HasSetting(Enable.IconLandscape) + !Skin.HasSetting(Enable.IconBanner) + !Skin.HasSetting(Enable.IconLogo)] | [Container.Content(seasons) + Skin.HasSetting(Enable.IconLandscape)] | [Container.Content(seasons) + Skin.HasSetting(Enable.IconLogo)]">
+				<itemlayout height="445" width="270" condition="[Container.Content(sets) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(actors)] + Control.HasFocus(500)">
 					<control type="image">
 		                <top>30</top>
 		                <left>58</left>
@@ -81,10 +81,10 @@
 		            </control>
 					<control type="label">
 		                <left>58</left>
-		                <right>20</right>
+		                <width>230</width>
 		                <top>373</top>
 		                <height>50</height>
-		                <label>$VAR[WidgetThumbnailLabel]</label>
+		                <label>$INFO[ListItem.Label]</label>
 		            </control>
 		            <control type="image">
 		                <left>58</left>
@@ -99,7 +99,7 @@
 		                <param name="OverlayTop" value="28" />
 		            </include>
 				</itemlayout>
-				<focusedlayout height="445" width="270" condition="[[Container.Content(movies) | Container.Content(tvshows) | Container.Content(sets) | Container.Content(seasons)] + !Skin.HasSetting(Enable.IconLandscape) + !Skin.HasSetting(Enable.IconBanner) + !Skin.HasSetting(Enable.IconLogo)] | [Container.Content(seasons) + Skin.HasSetting(Enable.IconLandscape)] | [Container.Content(seasons) + Skin.HasSetting(Enable.IconLogo)]">
+				<focusedlayout height="445" width="270" condition="[Container.Content(sets) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(actors)] + Control.HasFocus(500)">
 					<control type="image">
 		                <top>30</top>
 		                <left>58</left>
@@ -109,10 +109,10 @@
 		            </control>
 					<control type="label">
 		                <left>58</left>
-		                <right>20</right>
+		                <width>230</width>
 		                <top>373</top>
 		                <height>50</height>
-		                <label>$VAR[WidgetThumbnailLabel]</label>
+		                <label>$INFO[ListItem.Label]</label>
 		            </control>
 		            <control type="image">
 		                <left>58</left>
@@ -129,7 +129,7 @@
 				</focusedlayout>
 				<itemlayout height="296" width="424" condition="Container.Content(episodes) | Container.Content(files)">
 					<control type="image">
-		                <top>21</top>
+		                <top>20</top>
 		                <left>20</left>
 		                <right>20</right>
 		                <height>216</height>
@@ -144,7 +144,7 @@
 		            </control>
 		            <control type="image">
 		                <left>20</left>
-		                <top>21</top>
+		                <top>20</top>
 		                <width>384</width>
 		                <height>216</height>
 		                <aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
@@ -157,7 +157,7 @@
 				</itemlayout>
 				<focusedlayout height="296" width="424" condition="Container.Content(episodes) | Container.Content(files)">
 					<control type="image">
-		                <top>21</top>
+		                <top>20</top>
 		                <left>20</left>
 		                <right>20</right>
 		                <height>216</height>
@@ -172,7 +172,7 @@
 		            </control>
 		            <control type="image">
 		                <left>20</left>
-		                <top>21</top>
+		                <top>20</top>
 		                <width>384</width>
 		                <height>216</height>
 		                <aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
@@ -183,7 +183,7 @@
 		                <param name="OverlayTop" value="20" />
 		            </include>
 				</focusedlayout>
-				<itemlayout height="445" width="405" condition="Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(images) | Container.Content()">
+				<itemlayout height="445" width="405" condition="Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(images) | Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(tags) | Container.Content(years) | Container.Content(directors) | Container.Content(studios)">
 					<control type="image">
 		                <top>20</top>
 		                <left>58</left>
@@ -204,14 +204,14 @@
 		                <width>365</width>
 		                <height>365</height>
 		                <aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
-		                <texture background="true" fallback="DefaultFolder.png" diffuse="diffuse/thumbnail.png">$VAR[ThumbVar]</texture>
+		                <texture background="true" fallback="DefaultFolder.png" diffuse="diffuse/thumbnail.png">$VAR[ListIcon]</texture>
 		            </control>
 		            <include content="OverlayIcons">
 		                <param name="OverlayLeft" value="364" />
 		                <param name="OverlayTop" value="18" />
 		            </include>
 				</itemlayout>
-				<focusedlayout height="445" width="405" condition="Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(images) | Container.Content()">
+				<focusedlayout height="445" width="405" condition="Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(images) | Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(tags) | Container.Content(years) | Container.Content(directors) | Container.Content(studios)">
 					<control type="image">
 		                <top>20</top>
 		                <left>58</left>
@@ -232,7 +232,7 @@
 		                <width>365</width>
 		                <height>365</height>
 		                <aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
-		                <texture background="true" fallback="DefaultFolder.png" diffuse="diffuse/thumbnail.png">$VAR[ThumbVar]</texture>
+		                <texture background="true" fallback="DefaultFolder.png" diffuse="diffuse/thumbnail.png">$VAR[ListIcon]</texture>
 		            </control>
 		            <include content="OverlayIcons">
 		                <param name="OverlayLeft" value="364" />

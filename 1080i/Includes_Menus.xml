@@ -161,6 +161,7 @@
 	                <height>120</height>
 	                <!--<animation effect="fade" start="100" end="60" time="300" condition="Window.IsActive(home) + !Control.HasFocus(9000) + !Control.HasFocus(9010)">Conditional</animation>-->
 	                <animation effect="fade" start="100" end="0" time="300" condition="!Control.HasFocus(9000) + !Control.HasFocus(9010)">Conditional</animation>
+	                <animation effect="fade" start="100" end="60" time="300" condition="Control.HasFocus(9010)">Conditional</animation>
 	                <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
 	                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Row,7)">Conditional</animation>
 	                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Row,6)">Conditional</animation>
@@ -178,7 +179,7 @@
 					<height>1080</height>
 					<onright condition="Window.IsActive(home) + !String.IsEmpty(Container(9000).ListItem.Property(widget))">9003</onright>
 					<onright condition="Window.IsActive(settings)">9020</onright>
-					<onright condition="Window.IsActive(videos) | Window.IsActive(music) | Window.IsActive(videoplaylist) | Window.IsActive(musicplaylist) | Window.IsActive(1119) | Window.IsActive(addonbrowser) | Window.IsActive(programs) | Window.IsActive(pictures) | Window.IsActive(eventlog)">50</onright>
+					<onright condition="Window.IsActive(videos) | Window.IsActive(music) | Window.IsActive(videoplaylist) | Window.IsActive(musicplaylist) | Window.IsActive(1119) | Window.IsActive(addonbrowser) | Window.IsActive(programs) | Window.IsActive(pictures) | Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvsearch) | Window.IsActive(tvtimers)">50</onright>
 					<onright condition="Window.IsActive(weather)">305</onright>
 					<onright condition="Window.IsActive(SettingsCategory.xml)">3</onright>
 					<onright condition="Window.IsActive(skinsettings)">9030</onright>
@@ -186,6 +187,7 @@
 					<onright condition="Window.IsActive(script-globalsearch-main.xml)">SetFocus(9020)</onright>
 					<onright condition="Window.IsActive(profiles)">2</onright>
 					<onright condition="Window.IsActive(filemanager)">20</onright>
+					<onright condition="Window.IsActive(tvguide)">10</onright>
 					<onleft>9010</onleft>
 					<ondown>9000</ondown>
 					<onup>9000</onup>
@@ -327,6 +329,22 @@
 				<height>1080</height>
 				<texture colordiffuse="$VAR[ColorDialogVar]">dialog_clean.png</texture>
 			</control>
+			<control type="image">
+				<top>0</top>
+				<left>0</left>
+	            <width>430</width>
+	            <height>120</height>
+	            <!--<animation effect="fade" start="100" end="60" time="300" condition="Window.IsActive(home) + !Control.HasFocus(9000) + !Control.HasFocus(9010)">Conditional</animation>-->
+	            <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+	            <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Row,7)">Conditional</animation>
+	            <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Row,6)">Conditional</animation>
+	            <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Row,5)">Conditional</animation>
+	            <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Row,4)">Conditional</animation>
+	            <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Row,3)">Conditional</animation>
+	            <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Row,2)">Conditional</animation>
+	            <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Row,1)">Conditional</animation>
+	            <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Row,0)">Conditional</animation>
+	        </control>
 			<control type="panel" id="9010">
 				<include>VisibleFadeEffect</include>
 				<left>0</left>
@@ -363,16 +381,16 @@
 					</control>
 				</itemlayout>
 				<focusedlayout height="120" width="430">
-					<control type="image">
+					<!--<control type="image">
 						<width>430</width>
 						<height>120</height>
 						<texture colordiffuse="ff454545">white.png</texture>
-					</control>
-					<control type="image">
+					</control>-->
+					<!--<control type="image">
 						<width>430</width>
 						<height>120</height>
 						<texture colordiffuse="$VAR[ColorHighlightVar]">special://skin/overlays/gray30-80.png</texture>
-					</control>
+					</control>-->
 					<control type="group">
 						<!--<visible>Control.HasFocus(9010)</visible>-->
 						<control type="label">

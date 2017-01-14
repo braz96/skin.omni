@@ -18,10 +18,10 @@
 			</control>
 			<control type="image">
                 <description>Busy animation</description>
-                <top>40</top>
-                <left>40</left>
-                <width>60</width>
-                <height>60</height>
+                <top>20</top>
+                <left>20</left>
+                <width>80</width>
+                <height>80</height>
                 <texture colordiffuse="$VAR[ColorTextVar]" fallback="special://skin/extras/spinners/Sun.png">$INFO[Skin.String(busyloader)]</texture>
                 <aspectratio>keep</aspectratio>
                 <animation effect="rotate" start="360" end="0" center="auto" time="3000" loop="true" condition="true">conditional</animation>
@@ -30,7 +30,7 @@
 				<left>132</left>
 				<top>32</top>
 				<width>300</width>
-				<height>35</height>
+				<height>40</height>
 				<scrolltime tween="quadratic" easing="out">0</scrolltime>
 				<autoscroll time="1000" repeat="1000">true</autoscroll>
 				<orientation>vertical</orientation>
@@ -38,7 +38,7 @@
 					<control type="label">
 						<description>Busy label</description>
 						<width>300</width>
-						<height>35</height>
+						<height>40</height>
 						<label>$INFO[ListItem.Label]</label>
 						<font>font14</font>
 					</control>
@@ -47,7 +47,7 @@
 					<control type="label">
 						<description>Busy label</description>
 						<width>300</width>
-						<height>35</height>
+						<height>40</height>
 						<label>$INFO[ListItem.Label]</label>
 						<font>font14</font>
 					</control>

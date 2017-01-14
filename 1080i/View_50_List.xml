@@ -94,14 +94,14 @@
 					<pagecontrol>60</pagecontrol>
 					<preloaditems>2</preloaditems>
 					<scrolltime tween="quadratic" easing="out">200</scrolltime>
-					<itemlayout height="120" width="1000" condition="[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)] + !String.IsEqual(Container.SortMethod,$LOCALIZE[13409])">
+					<itemlayout height="120" width="1000" condition="[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets) | Container.Content(actors)] + !String.IsEqual(Container.SortMethod,$LOCALIZE[13409])">
 						<control type="image">
 							<top>10</top>
 							<left>10</left>
 							<width>67</width>
 							<height>100</height>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-							<texture>$INFO[ListItem.Art(thumb)]</texture>
+							<texture fallback="DefaultFallback.png">$INFO[ListItem.Art(thumb)]</texture>
 						</control>
 						<control type="label">
 							<visible>ListItem.IsPlaying + !Player.Paused</visible>
@@ -160,14 +160,14 @@
 							<param name="OverlayListWidth" value="1000" />
 						</include>
 					</itemlayout>
-					<focusedlayout height="120" width="1000" condition="[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)] + !String.IsEqual(Container.SortMethod,$LOCALIZE[13409])">
+					<focusedlayout height="120" width="1000" condition="[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets) | Container.Content(actors)] + !String.IsEqual(Container.SortMethod,$LOCALIZE[13409])">
 						<control type="image">
 							<top>10</top>
 							<left>10</left>
 							<width>67</width>
 							<height>100</height>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-							<texture>$INFO[ListItem.Art(thumb)]</texture>
+							<texture fallback="DefaultFallback.png">$INFO[ListItem.Art(thumb)]</texture>
 						</control>
 						<control type="label">
 							<visible>ListItem.IsPlaying + !Player.Paused</visible>
@@ -654,7 +654,7 @@
 				</control>
 				<control type="group">
 					<left>1690</left>
-					<visible>[![$EXP[isMovie] | $EXP[isTvshow] | $EXP[isSeason] | $EXP[isSet] | Container.Content(actors) | Window.IsActive(videoplaylist) | $EXP[isEpisode] | Container.Content(addons) | $EXP[isArtist] | $EXP[isAlbum] | $EXP[isSong] | $EXP[isMusicvideo]] | [String.Contains(Container.FolderPath,plugin.video) + !$EXP[isEpisode]]] + !String.StartsWith(ListItem.Icon,Default)</visible>
+					<visible>[![$EXP[isMovie] | $EXP[isTvshow] | $EXP[isSeason] | $EXP[isSet] | Container.Content(actors) | Window.IsActive(videoplaylist) | $EXP[isEpisode] | Container.Content(addons) | $EXP[isArtist] | $EXP[isAlbum] | $EXP[isSong] | $EXP[isMusicvideo] | Container.Content()] | [String.Contains(Container.FolderPath,plugin.video) + !$EXP[isEpisode]]] + !String.StartsWith(ListItem.Icon,Default)</visible>
 					<control type="image">
 						<width>560</width>
 						<height>840</height>

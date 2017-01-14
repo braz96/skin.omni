@@ -25,7 +25,23 @@
 	                <visible>Control.HasFocus(90700)</visible>
 	                <animation effect="fade" time="320" delay="200">Visible</animation>
 	                <animation effect="fade" time="50">Hidden</animation>
-	                <texture colordiffuse="$VAR[ColorHighlightVar]" border="5">listselect_fo.png</texture>
+	                <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+	                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(90700).Row,5)">Conditional</animation>
+	                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(90700).Row,4)">Conditional</animation>
+	                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(90700).Row,3)">Conditional</animation>
+	                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(90700).Row,2)">Conditional</animation>
+	                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(90700).Row,1)">Conditional</animation>
+	                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(90700).Row,0)">Conditional</animation>
+	            </control>
+	            <control type="image">
+	                <left>33</left>
+	                <top>88</top>
+	                <width>120</width>
+	                <height>120</height>
+	                <visible>Control.HasFocus(90700)</visible>
+	                <animation effect="fade" time="320" delay="200">Visible</animation>
+	                <animation effect="fade" time="50">Hidden</animation>
+	                <texture>overlays/diffuse-overlay.png</texture>
 	                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(90700).Row,5)">Conditional</animation>
 	                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(90700).Row,4)">Conditional</animation>
 	                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(90700).Row,3)">Conditional</animation>
@@ -57,18 +73,18 @@
 						<texture background="true" fallback="DefaultAddon.png" diffuse="diffuse/list-icon.png">$INFO[ListItem.Icon]</texture>
 					</control>
 					<control type="label">
-						<left>135</left>
+						<left>140</left>
 						<top>3</top>
-						<width>800</width>
+						<right>20</right>
 						<height>70</height>
 						<font>font30</font>
 						<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
-						<left>135</left>
+						<left>140</left>
 						<top>52</top>
-						<width>800</width>
+						<right>20</right>
 						<height>60</height>
 						<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 						<label>$INFO[ListItem.Label2]</label>
@@ -85,16 +101,16 @@
 					</control>
 					<control type="label">
 						<top>3</top>
-						<left>135</left>
-						<width>800</width>
+						<left>140</left>
+						<right>20</right>
 						<height>70</height>
 						<font>font30</font>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
-						<left>135</left>
+						<left>140</left>
 						<top>52</top>
-						<width>800</width>
+						<right>20</right>
 						<height>60</height>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
