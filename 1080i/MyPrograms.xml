@@ -12,6 +12,7 @@
 		<include>CommonBackground</include>
 		<control type="group">
             <animation effect="slide" start="0" end="430" time="300" condition="Control.HasFocus(9010)">Conditional</animation>
+            <animation effect="slide" start="0" end="-430" time="200" condition="Control.HasFocus(9010)">WindowClose</animation>
             <animation effect="slide" start="0" end="-630" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">Conditional</animation>
 			<animation effect="slide" start="0" end="630" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">WindowClose</animation>
             <top>0</top>

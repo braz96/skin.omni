@@ -11,6 +11,7 @@
 		<include>CommonBackground</include>
 		<control type="group">
             <animation effect="slide" start="0" end="430" time="300" condition="Control.HasFocus(9010)">Conditional</animation>
+            <animation effect="slide" start="0" end="-430" time="200" condition="Control.HasFocus(9010)">WindowClose</animation>
             <animation effect="slide" start="0" end="-400" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">Conditional</animation>
 			<animation effect="slide" start="0" end="400" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">WindowClose</animation>
             <top>0</top>
@@ -35,7 +36,7 @@
 					<ondown>9030</ondown>
 					<pagecontrol />
 					<scrolltime tween="quadratic" easing="out">200</scrolltime>
-					<visible>!Window.IsActive(script-skinshortcuts.xml)</visible>
+					<!--<visible>!Window.IsActive(script-skinshortcuts.xml)</visible>-->
 					<include>SettingsFadeEffect</include>
 					<itemlayout height="90" width="356">
 						<control type="label">
@@ -116,10 +117,10 @@
 					<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 					<animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
 					<animation effect="fade" start="100" end="0" time="0" tween="sine" easing="inout">Hidden</animation>
-					<visible>!Window.IsActive(script-skinshortcuts.xml)</visible>
+					<!--<visible>!Window.IsActive(script-skinshortcuts.xml)</visible>-->
 				</control>
 				<control type="group" id="9040">
-					<visible>!Window.IsActive(script-skinshortcuts.xml)</visible>
+					<!--<visible>!Window.IsActive(script-skinshortcuts.xml)</visible>-->
 					<include>SettingsFadeEffect</include>
 					<control type="grouplist" id="9001">
 						<description>Home window control area</description>
@@ -301,13 +302,13 @@
 			                    <onclick condition="System.HasAddon(script.image.resource.select)">Addon.OpenSettings(script.image.resource.select)</onclick>
 			                    <onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 				            </item>
-				            <item id="8">
+				            <!--<item id="8">
 								<icon>$INFO[System.AddonIcon(script.lazytv)]</icon>
 								<label>31224</label>
 			                    <label2>$INFO[System.AddonVersion(script.lazytv)]</label2>
 			                    <onclick condition="System.HasAddon(script.lazytv)">Addon.OpenSettings(script.lazytv)</onclick>
 			                    <onclick condition="!System.HasAddon(script.lazytv)">InstallAddon(script.lazytv)</onclick>
-				            </item>
+				            </item>-->
 				            <item id="9">
 								<icon>$INFO[System.AddonIcon(service.library.data.provider)]</icon>
 								<label>31176</label>

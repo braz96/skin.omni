@@ -141,7 +141,6 @@
 	</include>-->
 	<include name="MainMenu">
         <control type="group">
-        	<visible>![Window.IsVisible(favourites) | Window.IsVisible(script-lazytv-main.xml) | Window.IsVisible(script-lazytv-BigScreenList.xml)]</visible>
             <!--<include>MainMenuSlide</include>-->
             <control type="group">
             	<!--<animation effect="fade" start="100" end="50" time="300" condition="!Control.HasFocus(9000)">Conditional</animation>
@@ -188,9 +187,11 @@
 					<onright condition="Window.IsActive(profiles)">2</onright>
 					<onright condition="Window.IsActive(filemanager)">20</onright>
 					<onright condition="Window.IsActive(tvguide)">10</onright>
+					<!--<onright condition="Window.IsActive(favourites)">SetFocus(450)</onright>-->
 					<onleft>9010</onleft>
 					<ondown>9000</ondown>
 					<onup>9000</onup>
+					<onclick condition="Windows.IsActive(favourites)">Dialog.Close</onclick>
 					<scrolltime tween="quadratic" easing="out">300</scrolltime>
 					<orientation>Vertical</orientation>
 					<itemlayout height="120" width="430">
@@ -199,7 +200,7 @@
 							<left>20</left>
 							<width>80</width>
 							<height>80</height>
-							<texture colordiffuse="$VAR[ColorTextVar]">$INFO[ListItem.Icon]</texture>
+							<texture colordiffuse="$VAR[ColorMenuVar]">$INFO[ListItem.Icon]</texture>
 						</control>
 						<!--<control type="label">
 							<width>430</width>
@@ -231,7 +232,7 @@
 							<left>20</left>
 							<width>80</width>
 							<height>80</height>
-							<texture colordiffuse="$VAR[ColorTextVar]">$INFO[ListItem.Icon]</texture>
+							<texture colordiffuse="$VAR[ColorMenuVar]">$INFO[ListItem.Icon]</texture>
 						</control>
 						<!--<control type="label">
 							<width>430</width>
@@ -373,9 +374,9 @@
 						<width>430</width>
 						<height>120</height>
 						<font>font_SubMenu</font>
-						<textcolor>$VAR[ColorMenuVar]</textcolor>
+						<textcolor>$VAR[ColorTextVar]</textcolor>
 						<textoffsetx>30</textoffsetx>
-						<selectedcolor>$VAR[ColorMenuVar]</selectedcolor>
+						<selectedcolor>$VAR[ColorTextVar]</selectedcolor>
 						<align>right</align>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
@@ -397,7 +398,7 @@
 							<width>430</width>
 							<height>120</height>
 							<font>font_SubMenu</font>
-							<textcolor>$VAR[ColorMenuVar]</textcolor>
+							<textcolor>$VAR[ColorTextVar]</textcolor>
 							<textoffsetx>30</textoffsetx>
 							<align>right</align>
 							<label>$INFO[ListItem.Label]</label>

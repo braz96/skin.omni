@@ -1,6 +1,6 @@
 # Kodi Media Center language file
-# Addon Name: Mimic
-# Addon id: skin.mimic
+# Addon Name: Omni
+# Addon id: skin.omni
 # Addon Provider: braz
 msgid ""
 msgstr ""
@@ -581,20 +581,20 @@ msgid "AutoCompletion for virtual keyboard"
 msgstr "AutoCompletion for virtual keyboard"
 
 msgctxt "#31145"
-msgid "Set general text colour"
-msgstr "Set general text color"
+msgid "Set text colour"
+msgstr "Set text color"
 
 msgctxt "#31146"
-msgid "Choose General Text Colour"
-msgstr "Choose General Text Color"
+msgid "Choose Text Colour"
+msgstr "Choose Text Color"
 
 msgctxt "#31147"
-msgid "Set menu text colour"
-msgstr "Set menu text color"
+msgid "Set menu icon colour"
+msgstr "Set menu icon color"
 
 msgctxt "#31148"
-msgid "Choose Menu Text Colour"
-msgstr "Choose Menu Text Color"
+msgid "Choose Menu Icon Colour"
+msgstr "Choose Menu Icon Color"
 
 msgctxt "#31149"
 msgid "Choose a widget to display on the home screen to have easy access to content from the library."
@@ -729,8 +729,8 @@ msgid "ToolBox Script"
 msgstr "ToolBox Script"
 
 msgctxt "#31183"
-msgid "Mimic supports these add-ons. Click to install or open add-on settings if already installed."
-msgstr "Mimic supports these add-ons. Click to install or open add-on settings if already installed."
+msgid "These add-ons are supported. Click to install or open add-on settings if already installed."
+msgstr "These add-ons are supported. Click to install or open add-on settings if already installed."
 
 msgctxt "#31184"
 msgid "New search"
@@ -780,22 +780,6 @@ msgctxt "#31195"
 msgid "About"
 msgstr "About"
 
-msgctxt "#31196"
-msgid "mim·ic"
-msgstr "mim·ic"
-
-msgctxt "#31197"
-msgid "1. To imitate"
-msgstr "1. To imitate"
-
-msgctxt "#31198"
-msgid "Synonyms: resemble, look like, have the appearance of"
-msgstr "Synonyms: resemble, look like, have the appearance of"
-
-msgctxt "#31199"
-msgid "As its name implies, this skin owes much to the Kodi community. In no particular order, I'd like to thank the following individuals:[CR][CR][B]— BigNoid[/B], for developing Aeon Nox, on which this skin is based.[CR][B]— Jeroen[/B], for creating reFocus and some of the views included here.[CR][B]— BobCratchett[/B], for creating the skinshortcuts script and updating Mimic to use its latest features.[CR][B]— Phil65[/B], for the ExtendedInfo script and the selected item animation that is used throughout Mimic.[CR][B]— Marcelveldt[/B], for the skin helper service that makes the colour picker and so many other things possible.[CR][B]— JurialMunkey[/B], for Arctic Zephyr, which was the inspiration for the header and several other features.[CR]And finally, all of the users, translators, testers, and fans of Mimic.[CR][CR]Support Kodi by donating @ http://kodi.tv/contribute/donate/"
-msgstr "As its name implies, this skin owes much to the Kodi community. In no particular order, I'd like to thank the following individuals:[CR][CR][B]— BigNoid[/B], for developing Aeon Nox, on which this skin is based.[CR][B]— Jeroen[/B], for creating reFocus and some of the views included here.[CR][B]— BobCratchett[/B], for creating the skinshortcuts script and updating Mimic to use its latest features.[CR][B]— Phil65[/B], for the ExtendedInfo script and the selected item animation that is used throughout Mimic.[CR][B]— Marcelveldt[/B], for the skin helper service that makes the color picker and so many other things possible.[CR][B]— JurialMunkey[/B], for Arctic Zephyr, which was the inspiration for the header and several other features.[CR]And finally, all of the users, translators, testers, and fans of Mimic.[CR][CR]Support Kodi by donating @ http://kodi.tv/contribute/donate/"
-
 msgctxt "#31200"
 msgid "Codec information"
 msgstr "Codec information"
@@ -821,8 +805,8 @@ msgid "Lyrics Source"
 msgstr "Lyrics Source"
 
 msgctxt "#31206"
-msgid "Select from one of the Mimic colour themes or create your own."
-msgstr "Select from one of the Mimic color themes or create your own."
+msgid "Select from one of the skin colour themes or create your own."
+msgstr "Select from one of the skin color themes or create your own."
 
 msgctxt "#31207"
 msgid "Choose the colour for focused items and highlighted text."

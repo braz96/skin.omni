@@ -6,7 +6,7 @@
 			<label>$LOCALIZE[342]</label>
 			<label2>Common menu item</label2>
 			<icon>DefaultMovies.png</icon>
-			<thumb>DefaultMovies.png</thumb>
+			<thumb>special://skin/extras/icons/</thumb>
 			<property name="labelID">movies</property>
 			<property name="defaultID">movies</property>
 			<property name="widget">Playlist</property>
@@ -991,7 +991,7 @@
 			<label>$LOCALIZE[342]</label>
 			<label2>Common menu item</label2>
 			<icon>DefaultMovies.png</icon>
-			<thumb>DefaultMovies.png</thumb>
+			<thumb>special://skin/extras/icons/</thumb>
 			<property name="labelID">movies</property>
 			<property name="defaultID">movies</property>
 			<property name="widget">Playlist</property>
@@ -3535,7 +3535,7 @@
 			<param name="id">80111</param>
 		</include>
 		<control type="group">
-			<visible>![Window.IsVisible(favourites) | Window.IsVisible(script-globalsearch-main.xml) | Window.IsVisible(script-lazytv-main.xml) | Window.IsVisible(script-lazytv-BigScreenList.xml) | Window.IsVisible(movieinformation) | Window.IsVisible(musicinformation) | Window.IsVisible(songinformation) | Window.IsActive(addoninformation)]</visible>
+			<visible>![Window.IsVisible(movieinformation) | Window.IsVisible(musicinformation) | Window.IsVisible(songinformation) | Window.IsActive(addoninformation)]</visible>
 			<include>Animation.Common</include>
 			<left>604</left>
 			<top>155</top>
@@ -3773,7 +3773,7 @@
 			<param name="id">80112</param>
 		</include>
 		<control type="group">
-			<visible>![Window.IsVisible(favourites) | Window.IsVisible(script-globalsearch-main.xml) | Window.IsVisible(script-lazytv-main.xml) | Window.IsVisible(script-lazytv-BigScreenList.xml) | Window.IsVisible(movieinformation) | Window.IsVisible(musicinformation) | Window.IsVisible(songinformation) | Window.IsActive(addoninformation)]</visible>
+			<visible>![Window.IsVisible(movieinformation) | Window.IsVisible(musicinformation) | Window.IsVisible(songinformation) | Window.IsActive(addoninformation)]</visible>
 			<include>Animation.Common</include>
 			<left>604</left>
 			<top>155</top>
@@ -4011,7 +4011,7 @@
 			<param name="id">80113</param>
 		</include>
 		<control type="group">
-			<visible>![Window.IsVisible(favourites) | Window.IsVisible(script-globalsearch-main.xml) | Window.IsVisible(script-lazytv-main.xml) | Window.IsVisible(script-lazytv-BigScreenList.xml) | Window.IsVisible(movieinformation) | Window.IsVisible(musicinformation) | Window.IsVisible(songinformation) | Window.IsActive(addoninformation)]</visible>
+			<visible>![Window.IsVisible(movieinformation) | Window.IsVisible(musicinformation) | Window.IsVisible(songinformation) | Window.IsActive(addoninformation)]</visible>
 			<include>Animation.Common</include>
 			<left>604</left>
 			<top>155</top>
@@ -4249,7 +4249,7 @@
 			<param name="id">80114</param>
 		</include>
 		<control type="group">
-			<visible>![Window.IsVisible(favourites) | Window.IsVisible(script-globalsearch-main.xml) | Window.IsVisible(script-lazytv-main.xml) | Window.IsVisible(script-lazytv-BigScreenList.xml) | Window.IsVisible(movieinformation) | Window.IsVisible(musicinformation) | Window.IsVisible(songinformation) | Window.IsActive(addoninformation)]</visible>
+			<visible>![Window.IsVisible(movieinformation) | Window.IsVisible(musicinformation) | Window.IsVisible(songinformation) | Window.IsActive(addoninformation)]</visible>
 			<include>Animation.Common</include>
 			<left>604</left>
 			<top>155</top>
@@ -4487,7 +4487,7 @@
 			<param name="id">80115</param>
 		</include>
 		<control type="group">
-			<visible>![Window.IsVisible(favourites) | Window.IsVisible(script-globalsearch-main.xml) | Window.IsVisible(script-lazytv-main.xml) | Window.IsVisible(script-lazytv-BigScreenList.xml) | Window.IsVisible(movieinformation) | Window.IsVisible(musicinformation) | Window.IsVisible(songinformation) | Window.IsActive(addoninformation)]</visible>
+			<visible>![Window.IsVisible(movieinformation) | Window.IsVisible(musicinformation) | Window.IsVisible(songinformation) | Window.IsActive(addoninformation)]</visible>
 			<include>Animation.Common</include>
 			<left>604</left>
 			<top>155</top>
@@ -4725,7 +4725,7 @@
 			<param name="id">80116</param>
 		</include>
 		<control type="group">
-			<visible>![Window.IsVisible(favourites) | Window.IsVisible(script-globalsearch-main.xml) | Window.IsVisible(script-lazytv-main.xml) | Window.IsVisible(script-lazytv-BigScreenList.xml) | Window.IsVisible(movieinformation) | Window.IsVisible(musicinformation) | Window.IsVisible(songinformation) | Window.IsActive(addoninformation)]</visible>
+			<visible>![Window.IsVisible(movieinformation) | Window.IsVisible(musicinformation) | Window.IsVisible(songinformation) | Window.IsActive(addoninformation)]</visible>
 			<include>Animation.Common</include>
 			<left>604</left>
 			<top>155</top>
@@ -4963,7 +4963,7 @@
 			<param name="id">80117</param>
 		</include>
 		<control type="group">
-			<visible>![Window.IsVisible(favourites) | Window.IsVisible(script-globalsearch-main.xml) | Window.IsVisible(script-lazytv-main.xml) | Window.IsVisible(script-lazytv-BigScreenList.xml) | Window.IsVisible(movieinformation) | Window.IsVisible(musicinformation) | Window.IsVisible(songinformation) | Window.IsActive(addoninformation)]</visible>
+			<visible>![Window.IsVisible(movieinformation) | Window.IsVisible(musicinformation) | Window.IsVisible(songinformation) | Window.IsActive(addoninformation)]</visible>
 			<include>Animation.Common</include>
 			<left>604</left>
 			<top>155</top>
@@ -5201,7 +5201,7 @@
 			<param name="id">80118</param>
 		</include>
 		<control type="group">
-			<visible>![Window.IsVisible(favourites) | Window.IsVisible(script-globalsearch-main.xml) | Window.IsVisible(script-lazytv-main.xml) | Window.IsVisible(script-lazytv-BigScreenList.xml) | Window.IsVisible(movieinformation) | Window.IsVisible(musicinformation) | Window.IsVisible(songinformation) | Window.IsActive(addoninformation)]</visible>
+			<visible>![Window.IsVisible(movieinformation) | Window.IsVisible(musicinformation) | Window.IsVisible(songinformation) | Window.IsActive(addoninformation)]</visible>
 			<include>Animation.Common</include>
 			<left>604</left>
 			<top>155</top>
@@ -5439,7 +5439,7 @@
 			<param name="id">80119</param>
 		</include>
 		<control type="group">
-			<visible>![Window.IsVisible(favourites) | Window.IsVisible(script-globalsearch-main.xml) | Window.IsVisible(script-lazytv-main.xml) | Window.IsVisible(script-lazytv-BigScreenList.xml) | Window.IsVisible(movieinformation) | Window.IsVisible(musicinformation) | Window.IsVisible(songinformation) | Window.IsActive(addoninformation)]</visible>
+			<visible>![Window.IsVisible(movieinformation) | Window.IsVisible(musicinformation) | Window.IsVisible(songinformation) | Window.IsActive(addoninformation)]</visible>
 			<include>Animation.Common</include>
 			<left>604</left>
 			<top>155</top>
@@ -5677,7 +5677,7 @@
 			<param name="id">801110</param>
 		</include>
 		<control type="group">
-			<visible>![Window.IsVisible(favourites) | Window.IsVisible(script-globalsearch-main.xml) | Window.IsVisible(script-lazytv-main.xml) | Window.IsVisible(script-lazytv-BigScreenList.xml) | Window.IsVisible(movieinformation) | Window.IsVisible(musicinformation) | Window.IsVisible(songinformation) | Window.IsActive(addoninformation)]</visible>
+			<visible>![Window.IsVisible(movieinformation) | Window.IsVisible(musicinformation) | Window.IsVisible(songinformation) | Window.IsActive(addoninformation)]</visible>
 			<include>Animation.Common</include>
 			<left>604</left>
 			<top>155</top>
@@ -5915,7 +5915,7 @@
 			<param name="id">801111</param>
 		</include>
 		<control type="group">
-			<visible>![Window.IsVisible(favourites) | Window.IsVisible(script-globalsearch-main.xml) | Window.IsVisible(script-lazytv-main.xml) | Window.IsVisible(script-lazytv-BigScreenList.xml) | Window.IsVisible(movieinformation) | Window.IsVisible(musicinformation) | Window.IsVisible(songinformation) | Window.IsActive(addoninformation)]</visible>
+			<visible>![Window.IsVisible(movieinformation) | Window.IsVisible(musicinformation) | Window.IsVisible(songinformation) | Window.IsActive(addoninformation)]</visible>
 			<include>Animation.Common</include>
 			<left>604</left>
 			<top>155</top>
