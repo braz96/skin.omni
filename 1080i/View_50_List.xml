@@ -507,14 +507,14 @@
 						</control>
 						<control type="label">
 							<top>3</top>
-							<left>210</left>
+							<left>218</left>
 							<right>80</right>
 							<height>70</height>
 							<font>font30</font>
 							<label>$VAR[ListMainLabelVar]</label>
 						</control>
 						<control type="label">
-							<left>210</left>
+							<left>218</left>
 							<top>52</top>
 							<right>80</right>
 							<height>60</height>
@@ -561,14 +561,14 @@
 						</control>
 						<control type="label">
 							<top>3</top>
-							<left>210</left>
+							<left>218</left>
 							<right>80</right>
 							<height>70</height>
 							<font>font30</font>
 							<label>$VAR[ListMainLabelVar]</label>
 						</control>
 						<control type="label">
-							<left>210</left>
+							<left>218</left>
 							<top>52</top>
 							<right>80</right>
 							<height>60</height>

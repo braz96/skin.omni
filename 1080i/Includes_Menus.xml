@@ -182,12 +182,10 @@
 					<onright condition="Window.IsActive(weather)">305</onright>
 					<onright condition="Window.IsActive(SettingsCategory.xml)">3</onright>
 					<onright condition="Window.IsActive(skinsettings)">9030</onright>
-					<onright condition="Window.IsActive(script-skinshortcuts.xml)">SetFocus(211)</onright>
 					<onright condition="Window.IsActive(script-globalsearch-main.xml)">SetFocus(9020)</onright>
 					<onright condition="Window.IsActive(profiles)">2</onright>
 					<onright condition="Window.IsActive(filemanager)">20</onright>
 					<onright condition="Window.IsActive(tvguide)">10</onright>
-					<!--<onright condition="Window.IsActive(favourites)">SetFocus(450)</onright>-->
 					<onleft>9010</onleft>
 					<ondown>9000</ondown>
 					<onup>9000</onup>
