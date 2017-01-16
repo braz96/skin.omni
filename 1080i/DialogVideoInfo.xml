@@ -194,7 +194,7 @@
 		                <onclick>SendClick(7)</onclick>
 		            </item>
 		            <item id="209">
-		                <icon>special://skin/extras/icons/fanart.png</icon>
+		                <icon>special://skin/extras/icons/fanart2.png</icon>
 		                <onclick>SetFocus(90400)</onclick>
 						<visible>!String.IsEmpty(ListItem.Art(fanart))</visible>
 		            </item>
@@ -1048,6 +1048,17 @@
             	<font>font16</font>
             	<animation effect="fade" time="400" tween="inout" easing="sine" start="0" end="100" delay="5000">Visible</animation>
             </control>-->
+            <control type="label">
+            	<left>20</left>
+				<top>120</top>
+				<width>1156</width>
+				<height>440</height>
+				<align>center</align>
+            	<visible>[Container(9000).HasFocus(207) + !Integer.IsGreater(Container(150).NumItems,0)] | [Container(9000).HasFocus(203) + !Integer.IsGreater(Container(350).NumItems,0)] | [Container(9000).HasFocus(555) + !Integer.IsGreater(Container(50).NumItems,0)]</visible>
+            	<label>31137</label>
+            	<font>font16</font>
+            	<animation effect="fade" time="400" tween="inout" easing="sine" start="0" end="100" delay="5000">Visible</animation>
+            </control>
 		</control>
 		<control type="group">
 			<animation effect="slide" start="-720" end="0" time="300">WindowOpen</animation>
