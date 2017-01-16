@@ -101,8 +101,7 @@
 				<top>920</top>
 				<width>FullScreenWidth</width>
 				<height>160</height>
-				<texture>menu_fo.png</texture>
-				<colordiffuse>33000000</colordiffuse>
+				<texture colordiffuse="$VAR[ColorBackgroundVar]">topbar.png</texture>
 			</control>
 			<control type="label">
 				<include>VisibleFadeEffect</include>

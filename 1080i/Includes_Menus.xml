@@ -151,7 +151,7 @@
 					<top>0</top>
 					<width>120</width>
 					<height>1080</height>
-					<texture colordiffuse="ff232323">white.png</texture>
+					<texture colordiffuse="$VAR[ColorBackgroundVar]">menu.png</texture>
 	            </control>
             	<control type="image">
 	    			<top>0</top>
@@ -326,7 +326,8 @@
 				<top>0</top>
 				<width>430</width>
 				<height>1080</height>
-				<texture colordiffuse="$VAR[ColorDialogVar]">dialog_clean.png</texture>
+				<texture>submenu.png</texture>
+				<colordiffuse>$VAR[ColorBackgroundVar]</colordiffuse>
 			</control>
 			<control type="image">
 				<top>0</top>

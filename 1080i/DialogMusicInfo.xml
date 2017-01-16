@@ -24,8 +24,7 @@
 				<left>0</left>
 				<width>1080</width>
 				<height>120</height>
-				<texture>menu_fo.png</texture>
-				<colordiffuse>33000000</colordiffuse>
+				<texture colordiffuse="$VAR[ColorBackgroundVar]">topbar.png</texture>
 			</control>
 			<control type="label">
 				<top>15</top>
@@ -77,7 +76,7 @@
 				<top>0</top>
 				<width>120</width>
 				<height>1080</height>
-				<texture colordiffuse="ff232323">white.png</texture>
+				<texture colordiffuse="$VAR[ColorBackgroundVar]">menu.png</texture>
             </control>
         	<control type="image">
     			<top>0</top>
@@ -1302,8 +1301,7 @@
 			<control type="image">
 				<width>720</width>
 				<height>1080</height>
-				<texture>menu_fo.png</texture>
-				<colordiffuse>33000000</colordiffuse>
+				<texture colordiffuse="$VAR[ColorBackgroundVar]">topbar.png</texture>
 			</control>
             <control type="image">
                 <width>720</width>
