@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<!-- Video Wall -->
 	<include name="View_500_Wall">
 		<control type="group">
 			<visible>Control.IsVisible(500) + !$EXP[isInfoDialog]</visible>
 			<include>Animation.Common</include>
-			<!--<animation effect="slide" start="0" end="430" time="300" condition="Control.HasFocus(9010)">Conditional</animation>-->
 			<top>155</top>
 			<left>606</left>
 			<control type="group">
@@ -243,7 +241,6 @@
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(500) + !$EXP[isInfoDialog]</visible>
-			<!--<animation effect="slide" time="0" end="0,15" condition="Window.IsActive(videos)">Conditional</animation>-->
 			<include>Scrollbar_Vertical</include>
 		</control>
 	</include>

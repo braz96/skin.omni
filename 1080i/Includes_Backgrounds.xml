@@ -2,7 +2,12 @@
 <includes>
 	<include name="CommonBackground">
 		<control type="group">
-			<include>GlobalFanart</include>
+			<control type="multiimage">
+				<description>Normal Default Background Image</description>
+				<include>FullscreenDimensions</include>
+				<include>BackgroundFadeAnimation</include>
+				<imagepath fallback="special://skin/backgrounds/default_bg.jpg" background="true">$VAR[GlobalBackgroundVar]</imagepath>
+			</control>
 			<include condition="Window.IsActive(script-NextAired-TVGuide.xml) | Window.IsActive(script-NextAired-TVGuide2.xml)">TVShowNextAiredBackground</include>
 			<include condition="Window.IsActive(weather)">WeatherBackground</include>
 			<include condition="Window.IsActive(script-globalsearch-main.xml)">GlobalSearchBG</include>
@@ -27,31 +32,6 @@
 			<include>FullscreenDimensions</include>
 			<texture>$VAR[CommonBackgroundOverlay]</texture>
 			<colordiffuse>$VAR[ColorBackgroundVar]</colordiffuse>
-		</control>
-	</include>
-	<include name="GlobalFanart">
-		<control type="list" id="9033">
-			<include>HiddenList</include>
-			<content>
-				<include condition="Window.IsActive(pictures)">PicturesFallback</include>
-				<include condition="Window.IsActive(music) | Window.IsActive(musicplaylist)">MusicFallback</include>
-				<include condition="Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvguide) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch)">LiveTVFallback</include>
-				<include condition="Window.IsActive(programs) | Window.IsActive(addonbrowser) | Window.IsActive(1119)">AppsFallback</include>
-				<include condition="Window.IsActive(SettingsCategory.xml) | Window.IsActive(systeminfo) | Window.IsActive(skinsettings) | Window.IsActive(settings) | Window.IsActive(filemanager) | Window.IsActive(eventlog) | Window.IsActive(profiles)">SystemFallback</include>
-				<include condition="Window.IsActive(weather)">WeatherFallback</include>
-				<include condition="Window.IsActive(videos) | Window.IsActive(videoplaylist)">VideoFallback</include>
-				<item>
-					<onclick>noop</onclick>
-					<thumb>$INFO[Window(home).Property(fakelabel)]</thumb>
-					<visible>no</visible>
-				</item>
-			</content>
-		</control>
-		<control type="multiimage">
-			<description>Normal Default Background Image</description>
-			<include>FullscreenDimensions</include>
-			<include>BackgroundFadeAnimation</include>
-			<imagepath fallback="special://skin/backgrounds/default_bg.jpg" background="true">$VAR[GlobalBackgroundVar]</imagepath>
 		</control>
 	</include>
 	<include name="TVShowNextAiredBackground">
@@ -130,64 +110,6 @@
 			<randomize>true</randomize>
 			<include>BackgroundFadeAnimation</include>
 		</control>
-	</include>
-	<include name="MusicFallback">
-		<item>
-			<onclick>noop</onclick>
-			<thumb>$INFO[Skin.String(Music.Fallback)]</thumb>
-		</item>
-	</include>
-	<include name="SystemFallback">
-		<item>
-			<onclick>noop</onclick>
-			<thumb>$INFO[Skin.String(System.Fallback)]</thumb>
-		</item>
-	</include>
-	<include name="LiveTVFallback">
-		<item>
-			<onclick>noop</onclick>
-			<thumb>$INFO[Skin.String(LiveTV.Fallback)]</thumb>
-		</item>
-	</include>
-	<include name="PicturesFallback">
-		<item>
-			<onclick>noop</onclick>
-			<thumb>$INFO[Skin.String(Pictures.Fallback)]</thumb>
-		</item>
-	</include>
-	<include name="AppsFallback">
-		<item>
-			<onclick>noop</onclick>
-			<thumb>$INFO[Skin.String(Apps.Fallback)]</thumb>
-		</item>
-	</include>
-	<include name="WeatherFallback">
-		<item>
-			<onclick>noop</onclick>
-			<thumb>$INFO[Skin.String(Weather.Fallback)]</thumb>
-		</item>
-	</include>
-	<include name="VideoFallback">
-		<item>
-			<onclick>noop</onclick>
-			<thumb>$INFO[Skin.String(Movies.Fallback)]</thumb>
-			<visible>Container.Content(movies) | String.Contains(Container.FolderPath,library://video/movies/) | String.Contains(Container.FolderPath,videodb://movies/)</visible>
-		</item>
-		<item>
-			<onclick>noop</onclick>
-			<thumb>$INFO[Skin.String(TVShows.Fallback)]</thumb>
-			<visible>Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | String.Contains(Container.FolderPath,library://video/tvshows/) | String.Contains(Container.FolderPath,videodb://tvshows/)</visible>
-		</item>
-		<item>
-			<onclick>noop</onclick>
-			<thumb>$INFO[Skin.String(MusicVideos.Fallback)]</thumb>
-			<visible>Container.Content(musicvideos) | String.Contains(Container.FolderPath,library://video/musicvideos/) | String.Contains(Container.FolderPath,videodb://musicvideos/)</visible>
-		</item>
-		<item>
-			<onclick>noop</onclick>
-			<thumb>$INFO[Skin.String(Videos.Fallback)]</thumb>
-			<visible>![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies) | Container.Content(musicvideos) | String.Contains(Container.FolderPath,library://video/movies/) | String.Contains(Container.FolderPath,library://video/tvshows/) | String.Contains(Container.FolderPath,library://video/musicvideos/) | String.Contains(Container.FolderPath,videodb://movies/) | String.Contains(Container.FolderPath,videodb://tvshows/) | String.Contains(Container.FolderPath,videodb://musicvideos/)]</visible>
-		</item>
 	</include>
 	<include name="GlobalSearchBG">
 		<control type="image">

@@ -1,126 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1134">
 	<defaultcontrol always="true">90001</defaultcontrol>
-	<onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mode=single&amp;options=clonewidgets&amp;mainmenuID=9000&amp;group=mainmenu|quicknav)</onunload>
+	<onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mode=single&amp;options=clonewidgets&amp;mainmenuID=9000&amp;group=mainmenu)</onunload>
 	<allowoverlay>no</allowoverlay>
 	<coordinates>
 		<system>1</system>
 		<left>122</left>
-		<top>50</top>
+		<top>75</top>
 	</coordinates>
 	<include>Animation.Dialog</include>
-	<!--<include condition="!Window.IsVisible(SkinSettings.xml)">Animation.Dialog</include>
-	<animation effect="slide" start="0,0" end="0,30" time="0" condition="!Window.IsVisible(SkinSettings.xml)">Conditional</animation>-->
 	<controls>
-		<!--<control type="group">
-			<visible>!Window.IsActive(SkinSettings.xml)</visible>
-			<top>90</top>
-			<left>53</left>
-			<include content="DialogBackgroundCommons">
-				<param name="DialogBackgroundWidth" value="1814" />
-				<param name="DialogBackgroundHeight" value="840" />
-				<param name="DialogHeaderLabel" value="31249" />
-				<param name="DialogHeaderId" value="" />
-			</include>
-		</control>-->
 		<include content="DialogBackgroundCommons">
 			<param name="DialogBackgroundWidth" value="1676" />
-			<param name="DialogBackgroundHeight" value="980" />
+			<param name="DialogBackgroundHeight" value="930" />
 			<param name="DialogHeaderLabel" value="$LOCALIZE[31180]" />
 			<param name="DialogHeaderId" value="2" />
 		</include>
-		<!--<include>CommonBackground</include>-->
 		<control type="group">
-            <!--<animation effect="slide" start="0" end="430" time="300" condition="Control.HasFocus(9010)">Conditional</animation>
-            <animation effect="slide" start="0" end="-430" time="200" condition="Control.HasFocus(9010)">WindowClose</animation>
-            <animation effect="slide" start="0" end="-400" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">Conditional</animation>
-			<animation effect="slide" start="0" end="400" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">WindowClose</animation>
-            <top>0</top>
-            <left>-430</left>
-            <include>Submenu</include>
-            <include>MainMenu</include>
-            <include>Topbar</include>-->
 			<control type="group">
-				<!--<visible>String.IsEmpty(Window.Property(additionalDialog))</visible>-->
 				<left>0</left>
 				<top>88</top>
-				<!--<include>Animation.Common</include>-->
-				<!--<animation type="WindowOpen" reversible="false" condition="Window.IsVisible(SkinSettings.xml)">
-		            <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in" />
-		            <effect type="zoom" start="50" end="100" time="300" center="auto" tween="quadratic" easing="out" />
-		        </animation>-->
 				<control type="list" id="211">
 					<left>32</left>
 					<top>0</top>
-					<width>356</width>
-					<height>720</height>
-					<onleft>9000</onleft>
+					<width>380</width>
+					<height>810</height>
+					<onleft>61</onleft>
 					<onright>90001</onright>
 					<onup>211</onup>
 					<ondown>211</ondown>
-					<!--<pagecontrol>61</pagecontrol>-->
+					<pagecontrol>61</pagecontrol>
 					<scrolltime tween="quadratic" easing="out">200</scrolltime>
-					<itemlayout height="90" width="356">
+					<itemlayout height="90" width="380">
+						<control type="image">
+							<top>10</top>
+							<left>300</left>
+							<width>70</width>
+							<height>70</height>
+							<texture>$INFO[ListItem.Icon]</texture>
+						</control>
 						<control type="label">
 							<animation effect="fade" time="0" end="30" condition="String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)">Conditional</animation>
-							<width>356</width>
+							<left>20</left>
+							<right>100</right>
 							<height>90</height>
 							<font>font15</font>
-							<textoffsetx>20</textoffsetx>
 							<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 							<align>right</align>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="90" width="356">
+					<focusedlayout height="90" width="380">
 						<control type="image">
-							<width>356</width>
+							<width>380</width>
 							<height>90</height>
-							<texture border="5">listselect_fo.png</texture>
+							<texture>listselect_fo.png</texture>
 							<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
 							<animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(211)">Conditional</animation>
 						</control>
+						<control type="image">
+							<left>290</left>
+							<width>90</width>
+							<height>90</height>
+							<texture>overlays/diffuse-overlay.png</texture>
+							<animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(211)">Conditional</animation>
+						</control>
+						<control type="image">
+							<top>10</top>
+							<left>300</left>
+							<width>70</width>
+							<height>70</height>
+							<texture>$INFO[ListItem.Icon]</texture>
+						</control>
 						<control type="label">
-							<width>356</width>
+							<left>20</left>
+							<right>100</right>
 							<height>90</height>
 							<font>font15</font>
-							<textoffsetx>20</textoffsetx>
 							<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
 							<align>right</align>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</focusedlayout>
 				</control>
-				<!--<control type="scrollbar" id="61">
-					<left>0</left>
-					<top>-83</top>
-					<width>12</width>
-					<height>1080</height>
-					<onleft>211</onleft>
+				<control type="scrollbar" id="61">
+					<left>17</left>
+					<top>0</top>
+					<width>10</width>
+					<height>810</height>
+					<onleft>9000</onleft>
 					<onright>211</onright>
 					<ondown>61</ondown>
 					<onup>61</onup>
-				</control>-->
-				<control type="textbox">
-					<description>description area</description>
-					<!--<visible>Window.IsVisible(SkinSettings.xml)</visible>-->
-					<left>440</left>
-					<top>742</top>
-					<width>1205</width>
-					<height>140</height>
-					<font>font15_textbox</font>
-					<textcolor>$VAR[ColorHighlightVar]</textcolor>
-					<label>$VAR[SkinShortcutsDescriptionVar]</label>
-					<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
-					<animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
-					<animation effect="fade" start="100" end="0" time="0" tween="sine" easing="inout">Hidden</animation>
 				</control>
 				<control type="grouplist" id="90001">
 					<description>control area</description>
 					<left>440</left>
 					<top>0</top>
 					<width>1205</width>
-					<height>720</height>
+					<height>810</height>
 					<itemgap>0</itemgap>
 					<pagecontrol>60</pagecontrol>
 					<onleft>211</onleft>
@@ -172,16 +150,6 @@
 						<label>$LOCALIZE[31242]</label>
 						<label2>$INFO[Container(211).ListItem.Property(thumbnail)]</label2>
 					</control>
-					<!--<control type="button" id="310">
-						<description>Change background</description>
-						<width>1316</width>
-						<height>90</height>
-						<textoffsetx>30</textoffsetx>
-						<font>font15</font>
-						<label>$ADDON[script.skinshortcuts 32045]</label>
-						<label2>$INFO[Container(211).ListItem.Property(backgroundName)]</label2>
-						<visible>Window.IsVisible(SkinSettings.xml)</visible>
-					</control>-->
 					<control type="button" id="312">
 						<description>Change widget</description>
 						<width>1205</width>

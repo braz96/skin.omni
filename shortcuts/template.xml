@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <template>
 
-    <other include="widget-vertical">
+    <other include="widgets">
         <property name="id" tag="mainmenuid" />
         <property name="path" tag="property" attribute="name|widgetPath" />
         <property name="target" tag="property" attribute="name|widgetTarget" />

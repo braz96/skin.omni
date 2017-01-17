@@ -228,8 +228,6 @@
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(57) + !$EXP[isInfoDialog]</visible>
-			<!--<animation effect="slide" time="0" start="0,0" end="0,15" condition="Container.Content(addons) + !Window.IsActive(videos) + !Window.IsActive(pictures)">Conditional</animation>
-			<top>-15</top>-->
 			<include>Scrollbar_Horizontal</include>
 		</control>
 	</include>
@@ -299,14 +297,6 @@
 					<label>[UPPERCASE]$LOCALIZE[13409][/UPPERCASE] $INFO[ListItem.Top250,#]</label>
 				</control>
 			</control>
-			<!--<control type="group">
-				<visible>Control.IsVisible(57) + !String.IsEqual(Container.SortMethod,$LOCALIZE[13409])</visible>
-				<include condition="Skin.HasSetting(Enable.MediaFlags)" content="MediaFlags">
-					<param name="left" value="935" />
-					<param name="top" value="-5" />
-					<param name="align" value="right" />
-				</include>
-			</control>-->
 			<control type="group">
 				<left>30</left>
 				<top>100</top>

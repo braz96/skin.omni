@@ -6,7 +6,7 @@
 	<onload>ClearProperty(MediaMenu,Home)</onload>
 	<onunload>ClearProperty(MediaMenu,Home)</onunload>
 	<onunload>ClearProperty(Window.HasSettings,Home)</onunload>-->
-	<onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mode=single&amp;options=clonewidgets&amp;mainmenuID=9000&amp;group=mainmenu|quicknav)</onunload>
+	<onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mode=single&amp;options=clonewidgets&amp;mainmenuID=9000&amp;group=mainmenu)</onunload>
 	<controls>
 		<include>CommonBackground</include>
 		<control type="group">
@@ -500,19 +500,6 @@
 							<onclick>Skin.ToggleSetting(Enable.MediaFlags)</onclick>
 							<selected>Skin.HasSetting(Enable.MediaFlags)</selected>
 						</control>
-						<control type="radiobutton" id="207">
-							<include>SkinSettingsButtonDefaults</include>
-							<label>31250</label>
-							<onclick>Skin.ToggleSetting(Disable.Quicknav)</onclick>
-							<selected>!Skin.HasSetting(Disable.Quicknav)</selected>
-						</control>
-						<control type="radiobutton" id="208">
-							<include>SkinSettingsButtonDefaults</include>
-							<label>31251</label>
-							<onclick>Skin.ToggleSetting(Disable.MainQuicknav)</onclick>
-							<selected>!Skin.HasSetting(Disable.MainQuicknav)</selected>
-							<enable>!Skin.HasSetting(Disable.Quicknav)</enable>
-						</control>
 						<control type="button" id="203">
 							<include>SkinSettingsButtonDefaults</include>
 							<label>31943</label>
@@ -668,24 +655,6 @@
 							<onclick condition="!System.HasAddon(plugin.program.autocompletion)">InstallAddon(plugin.program.autocompletion)</onclick>
 							<selected>!Skin.HasSetting(Disable.AutoComplete)</selected>
 						</control>
-						<control type="button" id="303">
-							<include>SkinSettingsButtonDefaults</include>
-							<label>31119</label>
-							<onclick condition="System.HasAddon(script.toolbox)">RunScript(script.toolbox)</onclick>
-							<onclick condition="!System.HasAddon(script.toolbox)">InstallAddon(script.toolbox)</onclick>
-						</control>
-						<!--<control type="button" id="303">
-							<include>SkinSettingsButtonDefaults</include>
-							<label>31119</label>
-							<onclick condition="System.HasAddon(script.toolbox)">RunScript(script.toolbox,info=extrafanartmovie)</onclick>
-							<onclick condition="!System.HasAddon(script.toolbox)">InstallAddon(script.toolbox)</onclick>
-						</control>
-						<control type="button" id="304">
-							<include>SkinSettingsButtonDefaults</include>
-							<label>31120</label>
-							<onclick condition="System.HasAddon(script.toolbox)">RunScript(script.toolbox,info=extrafanarttvshow)</onclick>
-							<onclick condition="!System.HasAddon(script.toolbox)">InstallAddon(script.toolbox)</onclick>
-						</control>-->
 					</control>
 					<control type="grouplist" id="9004">
 						<description>Advanced control area</description>

@@ -24,6 +24,7 @@
             <include>MainMenu</include>
             <include>Topbar</include>
             <control type="group">
+            	<include>Animation.Common</include>
             	<left>600</left>
 				<control type="group">
 					<width>105</width>
