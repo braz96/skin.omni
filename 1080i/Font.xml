@@ -22,24 +22,6 @@
 			<size>30</size>
 		</font>
 		<font>
-			<name>font_Actor</name>
-			<filename>weblysleekuil.ttf</filename>
-			<size>30</size>
-			<linespacing>1.0</linespacing>
-		</font>
-		<font>
-			<name>font13_textbox</name>
-			<filename>weblysleekuil.ttf</filename>
-			<size>30</size>
-			<linespacing>1.0</linespacing>
-		</font>
-		<font>
-			<name>font13_widget</name>
-			<filename>weblysleekuil.ttf</filename>
-			<size>30</size>
-			<linespacing>1.0</linespacing>
-		</font>
-		<font>
 			<name>font14</name>
 			<filename>weblysleekuil.ttf</filename>
 			<size>33</size>
@@ -105,12 +87,6 @@
 			<filename>weblysleekuil.ttf</filename>
 			<style>uppercase</style>
 			<size>52</size>
-		</font>
-		<font>
-			<name>font_MainMenu</name>
-			<filename>weblysleekuil.ttf</filename>
-			<linespacing>0</linespacing>
-			<size>55</size>
 		</font>
 		<font>
 			<name>font_SubMenu</name>
@@ -359,24 +335,6 @@
 			<size>26</size>
 		</font>
 		<font>
-			<name>font_Actor</name>
-			<filename>arial.ttf</filename>
-			<size>26</size>
-			<linespacing>1.4</linespacing>
-		</font>
-		<font>
-			<name>font13_textbox</name>
-			<filename>arial.ttf</filename>
-			<size>26</size>
-			<linespacing>1.27</linespacing>
-		</font>
-		<font>
-			<name>font13_widget</name>
-			<filename>arial.ttf</filename>
-			<size>26</size>
-			<linespacing>1.36</linespacing>
-		</font>
-		<font>
 			<name>font14</name>
 			<filename>arial.ttf</filename>
 			<size>29</size>
@@ -442,12 +400,6 @@
 			<filename>arial.ttf</filename>
 			<style>uppercase</style>
 			<size>48</size>
-		</font>
-		<font>
-			<name>font_MainMenu</name>
-			<filename>arial.ttf</filename>
-			<linespacing>0</linespacing>
-			<size>51</size>
 		</font>
 		<font>
 			<name>font_SubMenu</name>
@@ -696,24 +648,6 @@
 			<size>30</size>
 		</font>
 		<font>
-			<name>font_Actor</name>
-			<filename>Assistant-Light.ttf</filename>
-			<size>30</size>
-			<linespacing>1.2</linespacing>
-		</font>
-		<font>
-			<name>font13_textbox</name>
-			<filename>Assistant-Light.ttf</filename>
-			<size>30</size>
-			<linespacing>1.1</linespacing>
-		</font>
-		<font>
-			<name>font13_widget</name>
-			<filename>Assistant-Light.ttf</filename>
-			<size>30</size>
-			<linespacing>1.15</linespacing>
-		</font>
-		<font>
 			<name>font14</name>
 			<filename>Assistant-Light.ttf</filename>
 			<size>35</size>
@@ -779,12 +713,6 @@
 			<filename>Assistant-Light.ttf</filename>
 			<style>uppercase</style>
 			<size>54</size>
-		</font>
-		<font>
-			<name>font_MainMenu</name>
-			<filename>Assistant-Light.ttf</filename>
-			<linespacing>0</linespacing>
-			<size>57</size>
 		</font>
 		<font>
 			<name>font_SubMenu</name>
@@ -1033,24 +961,6 @@
 			<size>30</size>
 		</font>
 		<font>
-			<name>font_Actor</name>
-			<filename>Catamaran-ExtraLight.ttf</filename>
-			<size>30</size>
-			<linespacing>0.77</linespacing>
-		</font>
-		<font>
-			<name>font13_textbox</name>
-			<filename>Catamaran-ExtraLight.ttf</filename>
-			<size>30</size>
-			<linespacing>0.77</linespacing>
-		</font>
-		<font>
-			<name>font13_widget</name>
-			<filename>Catamaran-ExtraLight.ttf</filename>
-			<size>30</size>
-			<linespacing>0.8</linespacing>
-		</font>
-		<font>
 			<name>font14</name>
 			<filename>Catamaran-ExtraLight.ttf</filename>
 			<size>33</size>
@@ -1116,12 +1026,6 @@
 			<filename>Catamaran-ExtraLight.ttf</filename>
 			<style>uppercase</style>
 			<size>52</size>
-		</font>
-		<font>
-			<name>font_MainMenu</name>
-			<filename>Catamaran-ExtraLight.ttf</filename>
-			<linespacing>0</linespacing>
-			<size>55</size>
 		</font>
 		<font>
 			<name>font_SubMenu</name>
@@ -1370,24 +1274,6 @@
 			<size>32</size>
 		</font>
 		<font>
-			<name>font_Actor</name>
-			<filename>Changa-ExtraLight.ttf</filename>
-			<size>32</size>
-			<linespacing>0.66</linespacing>
-		</font>
-		<font>
-			<name>font13_textbox</name>
-			<filename>Changa-ExtraLight.ttf</filename>
-			<size>32</size>
-			<linespacing>0.66</linespacing>
-		</font>
-		<font>
-			<name>font13_widget</name>
-			<filename>Changa-ExtraLight.ttf</filename>
-			<size>32</size>
-			<linespacing>0.66</linespacing>
-		</font>
-		<font>
 			<name>font14</name>
 			<filename>Changa-ExtraLight.ttf</filename>
 			<size>35</size>
@@ -1453,12 +1339,6 @@
 			<filename>Changa-ExtraLight.ttf</filename>
 			<style>uppercase</style>
 			<size>54</size>
-		</font>
-		<font>
-			<name>font_MainMenu</name>
-			<filename>Changa-ExtraLight.ttf</filename>
-			<linespacing>0</linespacing>
-			<size>57</size>
 		</font>
 		<font>
 			<name>font_SubMenu</name>
@@ -1707,24 +1587,6 @@
 			<size>32</size>
 		</font>
 		<font>
-			<name>font_Actor</name>
-			<filename>Jaldi-Regular.ttf</filename>
-			<size>32</size>
-			<linespacing>0.78</linespacing>
-		</font>
-		<font>
-			<name>font13_textbox</name>
-			<filename>Jaldi-Regular.ttf</filename>
-			<size>32</size>
-			<linespacing>0.78</linespacing>
-		</font>
-		<font>
-			<name>font13_widget</name>
-			<filename>Jaldi-Regular.ttf</filename>
-			<size>32</size>
-			<linespacing>0.74</linespacing>
-		</font>
-		<font>
 			<name>font14</name>
 			<filename>Jaldi-Regular.ttf</filename>
 			<size>35</size>
@@ -1790,12 +1652,6 @@
 			<filename>Jaldi-Regular.ttf</filename>
 			<style>uppercase</style>
 			<size>54</size>
-		</font>
-		<font>
-			<name>font_MainMenu</name>
-			<filename>Jaldi-Regular.ttf</filename>
-			<linespacing>0</linespacing>
-			<size>57</size>
 		</font>
 		<font>
 			<name>font_SubMenu</name>
@@ -2044,24 +1900,6 @@
 			<size>30</size>
 		</font>
 		<font>
-			<name>font_Actor</name>
-			<filename>Kanit-ExtraLight.ttf</filename>
-			<size>30</size>
-			<linespacing>1.0</linespacing>
-		</font>
-		<font>
-			<name>font13_textbox</name>
-			<filename>Kanit-ExtraLight.ttf</filename>
-			<size>30</size>
-			<linespacing>1.0</linespacing>
-		</font>
-		<font>
-			<name>font13_widget</name>
-			<filename>Kanit-ExtraLight.ttf</filename>
-			<size>30</size>
-			<linespacing>0.9</linespacing>
-		</font>
-		<font>
 			<name>font14</name>
 			<filename>Kanit-ExtraLight.ttf</filename>
 			<size>33</size>
@@ -2127,12 +1965,6 @@
 			<filename>Kanit-ExtraLight.ttf</filename>
 			<style>uppercase</style>
 			<size>52</size>
-		</font>
-		<font>
-			<name>font_MainMenu</name>
-			<filename>Kanit-ExtraLight.ttf</filename>
-			<linespacing>0</linespacing>
-			<size>55</size>
 		</font>
 		<font>
 			<name>font_SubMenu</name>
@@ -2381,24 +2213,6 @@
 			<size>27</size>
 		</font>
 		<font>
-			<name>font_Actor</name>
-			<filename>NotoSans-Regular.ttf</filename>
-			<size>27</size>
-			<linespacing>1.27</linespacing>
-		</font>
-		<font>
-			<name>font13_textbox</name>
-			<filename>NotoSans-Regular.ttf</filename>
-			<size>27</size>
-			<linespacing>1.2</linespacing>
-		</font>
-		<font>
-			<name>font13_widget</name>
-			<filename>NotoSans-Regular.ttf</filename>
-			<size>27</size>
-			<linespacing>1.13</linespacing>
-		</font>
-		<font>
 			<name>font14</name>
 			<filename>NotoSans-Regular.ttf</filename>
 			<size>30</size>
@@ -2464,12 +2278,6 @@
 			<filename>NotoSans-Regular.ttf</filename>
 			<style>uppercase</style>
 			<size>49</size>
-		</font>
-		<font>
-			<name>font_MainMenu</name>
-			<filename>NotoSans-Regular.ttf</filename>
-			<linespacing>0</linespacing>
-			<size>52</size>
 		</font>
 		<font>
 			<name>font_SubMenu</name>
@@ -2718,24 +2526,6 @@
 			<size>27</size>
 		</font>
 		<font>
-			<name>font_Actor</name>
-			<filename>NotoSerif-Regular.ttf</filename>
-			<size>27</size>
-			<linespacing>1.27</linespacing>
-		</font>
-		<font>
-			<name>font13_textbox</name>
-			<filename>NotoSerif-Regular.ttf</filename>
-			<size>27</size>
-			<linespacing>1.2</linespacing>
-		</font>
-		<font>
-			<name>font13_widget</name>
-			<filename>NotoSerif-Regular.ttf</filename>
-			<size>27</size>
-			<linespacing>1.13</linespacing>
-		</font>
-		<font>
 			<name>font14</name>
 			<filename>NotoSerif-Regular.ttf</filename>
 			<size>30</size>
@@ -2801,12 +2591,6 @@
 			<filename>NotoSerif-Regular.ttf</filename>
 			<style>uppercase</style>
 			<size>49</size>
-		</font>
-		<font>
-			<name>font_MainMenu</name>
-			<filename>NotoSerif-Regular.ttf</filename>
-			<linespacing>0</linespacing>
-			<size>52</size>
 		</font>
 		<font>
 			<name>font_SubMenu</name>
@@ -3055,24 +2839,6 @@
 			<size>30</size>
 		</font>
 		<font>
-			<name>font_Actor</name>
-			<filename>Roboto-Light.ttf</filename>
-			<size>30</size>
-			<linespacing>1.27</linespacing>
-		</font>
-		<font>
-			<name>font13_textbox</name>
-			<filename>Roboto-Light.ttf</filename>
-			<size>30</size>
-			<linespacing>1.2</linespacing>
-		</font>
-		<font>
-			<name>font13_widget</name>
-			<filename>Roboto-Light.ttf</filename>
-			<size>30</size>
-			<linespacing>1.18</linespacing>
-		</font>
-		<font>
 			<name>font14</name>
 			<filename>Roboto-Light.ttf</filename>
 			<size>33</size>
@@ -3138,12 +2904,6 @@
 			<filename>Roboto-Light.ttf</filename>
 			<style>uppercase</style>
 			<size>52</size>
-		</font>
-		<font>
-			<name>font_MainMenu</name>
-			<filename>Roboto-Light.ttf</filename>
-			<linespacing>0</linespacing>
-			<size>55</size>
 		</font>
 		<font>
 			<name>font_SubMenu</name>
@@ -3392,24 +3152,6 @@
 			<size>30</size>
 		</font>
 		<font>
-			<name>font_Actor</name>
-			<filename>Sawasdee.ttf</filename>
-			<size>30</size>
-			<linespacing>0.9</linespacing>
-		</font>
-		<font>
-			<name>font13_textbox</name>
-			<filename>Sawasdee.ttf</filename>
-			<size>30</size>
-			<linespacing>0.9</linespacing>
-		</font>
-		<font>
-			<name>font13_widget</name>
-			<filename>Sawasdee.ttf</filename>
-			<size>30</size>
-			<linespacing>0.9</linespacing>
-		</font>
-		<font>
 			<name>font14</name>
 			<filename>Sawasdee.ttf</filename>
 			<size>33</size>
@@ -3475,12 +3217,6 @@
 			<filename>Sawasdee.ttf</filename>
 			<style>uppercase</style>
 			<size>52</size>
-		</font>
-		<font>
-			<name>font_MainMenu</name>
-			<filename>Sawasdee.ttf</filename>
-			<linespacing>0</linespacing>
-			<size>55</size>
 		</font>
 		<font>
 			<name>font_SubMenu</name>
@@ -3729,24 +3465,6 @@
 			<size>28</size>
 		</font>
 		<font>
-			<name>font_Actor</name>
-			<filename>Ubuntu-L.ttf</filename>
-			<size>30</size>
-			<linespacing>1.32</linespacing>
-		</font>
-		<font>
-			<name>font13_textbox</name>
-			<filename>Ubuntu-L.ttf</filename>
-			<size>30</size>
-			<linespacing>1.32</linespacing>
-		</font>
-		<font>
-			<name>font13_widget</name>
-			<filename>Ubuntu-L.ttf</filename>
-			<size>30</size>
-			<linespacing>1.22</linespacing>
-		</font>
-		<font>
 			<name>font14</name>
 			<filename>Ubuntu-L.ttf</filename>
 			<size>33</size>
@@ -3812,12 +3530,6 @@
 			<filename>Ubuntu-L.ttf</filename>
 			<style>uppercase</style>
 			<size>52</size>
-		</font>
-		<font>
-			<name>font_MainMenu</name>
-			<filename>Ubuntu-L.ttf</filename>
-			<linespacing>0</linespacing>
-			<size>55</size>
 		</font>
 		<font>
 			<name>font_SubMenu</name>

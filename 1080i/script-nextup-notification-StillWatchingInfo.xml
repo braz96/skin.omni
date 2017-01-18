@@ -23,16 +23,16 @@
                 <width>100%</width>
                 <height>100%</height>
                 <fadetime>350</fadetime>
-                <aspectratio scalediffuse="false">scale</aspectratio>
-                <texture diffuse="diffuse/nextup.png">$INFO[Player.Art(fanart)]</texture>
+                <aspectratio>scale</aspectratio>
+                <texture>$INFO[Player.Art(fanart)]</texture>
             </control>
 
             <control type="image" description="blackline">
                 <width>100%</width>
                 <height>64</height>
                 <top>206</top>
-                <aspectratio scalediffuse="false">scale</aspectratio>
-                <texture colordiffuse="BB000000" border="5">diffuse/actor-label.png</texture>
+                <aspectratio>scale</aspectratio>
+                <texture colordiffuse="BB000000">diffuse/actor-label.png</texture>
             </control>
 
             <!--<control type="image">
@@ -40,7 +40,7 @@
                 <left>190</left>
                 <height>100</height>
                 <width>100</width>
-                <aspectratio scalediffuse="false">keep</aspectratio>
+                <aspectratio>keep</aspectratio>
                 <texture colordiffuse="$VAR[ColorHighlightVar]">overlays/overlaybg.png</texture>
                 <visible>!String.IsEmpty(Player.TimeRemaining)</visible>
             </control>

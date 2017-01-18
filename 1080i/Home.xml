@@ -57,8 +57,8 @@
                 <visible>![Window.IsVisible(favourites) | Window.IsVisible(script-globalsearch-main.xml) | Window.IsVisible(script-lazytv-main.xml) | Window.IsVisible(script-lazytv-BigScreenList.xml)]</visible>
                 <animation effect="slide" time="0" start="0,0" end="-212,-60" condition="Skin.HasSetting(Enable.HorizontalMenu)">Conditional</animation>
                 <include>Animation.Common</include>
-                <top>210</top>
-                <left>594</left>
+                <top>200</top>
+                <left>860</left>
                 <width>1200</width>
                 <height>780</height>
                 <align>center</align>

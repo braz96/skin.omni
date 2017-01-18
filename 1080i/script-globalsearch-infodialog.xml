@@ -1016,7 +1016,7 @@
 				<left>72</left>
 				<width>560</width>
 				<height>820</height>
-				<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
+				<aspectratio align="center" aligny="center">scale</aspectratio>
 				<texture background="true" diffuse="diffuse/videoinfo-poster.png">$INFO[Container(100).ListItem.Icon]</texture>
 			</control>
 			<control type="image">
@@ -1025,7 +1025,7 @@
 				<left>72</left>
 				<width>560</width>
 				<height>560</height>
-				<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
+				<aspectratio align="center" aligny="center">scale</aspectratio>
 				<texture background="true" diffuse="diffuse/list-square.png">$INFO[Container(100).ListItem.Icon]</texture>
 			</control>
 			<control type="image">

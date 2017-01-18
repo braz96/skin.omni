@@ -29,8 +29,8 @@
 						<top>100</top>
 						<width>340</width>
 						<height>490</height>
-						<aspectratio scalediffuse="false">scale</aspectratio>
-						<texture fallback="DefaultFallback.png" background="true" diffuse="diffuse/shift-poster.png">$VAR[PosterVar]</texture>
+						<aspectratio>scale</aspectratio>
+						<texture fallback="DefaultFallback.png" background="true">$VAR[PosterVar]</texture>
 						<bordersize>20</bordersize>
 					</control>
 					<control type="image">
@@ -38,7 +38,7 @@
 						<top>100</top>
 						<width>340</width>
 						<height>490</height>
-						<texture border="5">overlays/diffuse-overlay.png</texture>
+						<texture>overlays/diffuse-overlay.png</texture>
 						<bordersize>20</bordersize>
 					</control>
 					<include content="OverlayIcons">
@@ -55,8 +55,8 @@
 							<top>100</top>
 							<width>340</width>
 							<height>490</height>
-							<aspectratio scalediffuse="false">scale</aspectratio>
-							<texture fallback="DefaultFallback.png" background="true" diffuse="diffuse/shift-poster.png">$VAR[PosterVar]</texture>
+							<aspectratio>scale</aspectratio>
+							<texture fallback="DefaultFallback.png" background="true">$VAR[PosterVar]</texture>
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
@@ -66,7 +66,7 @@
 							<top>100</top>
 							<width>340</width>
 							<height>490</height>
-							<texture border="5">overlays/diffuse-overlay.png</texture>
+							<texture>overlays/diffuse-overlay.png</texture>
 							<bordersize>20</bordersize>
 						</control>
 						<include content="OverlayIcons">
@@ -81,8 +81,8 @@
 						<top>265</top>
 						<width>340</width>
 						<height>340</height>
-						<aspectratio scalediffuse="false">scale</aspectratio>
-						<texture background="true" diffuse="diffuse/shift-square.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio>scale</aspectratio>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<bordersize>20</bordersize>
 					</control>
 					<control type="image">
@@ -90,7 +90,7 @@
 						<top>265</top>
 						<width>340</width>
 						<height>340</height>
-						<texture border="5">overlays/diffuse-overlay.png</texture>
+						<texture>overlays/diffuse-overlay.png</texture>
 						<bordersize>20</bordersize>
 					</control>
 					<include content="OverlayIcons">
@@ -107,8 +107,8 @@
 							<top>265</top>
 							<width>340</width>
 							<height>340</height>
-							<aspectratio scalediffuse="false">scale</aspectratio>
-							<texture background="true" diffuse="diffuse/shift-square.png">$INFO[ListItem.Icon]</texture>
+							<aspectratio>scale</aspectratio>
+							<texture background="true">$INFO[ListItem.Icon]</texture>
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
@@ -118,7 +118,7 @@
 							<top>265</top>
 							<width>340</width>
 							<height>340</height>
-							<texture border="5">overlays/diffuse-overlay.png</texture>
+							<texture>overlays/diffuse-overlay.png</texture>
 							<bordersize>20</bordersize>
 						</control>
 						<include content="OverlayIcons">
@@ -133,8 +133,8 @@
 						<top>240</top>
 						<width>610</width>
 						<height>360</height>
-						<aspectratio scalediffuse="false">scale</aspectratio>
-						<texture background="true" diffuse="diffuse/shift-landscape.png">$VAR[LandscapeArtVar]</texture>
+						<aspectratio>scale</aspectratio>
+						<texture background="true">$VAR[LandscapeArtVar]</texture>
 						<bordersize>20</bordersize>
 					</control>
 					<control type="image">
@@ -142,7 +142,7 @@
 						<top>240</top>
 						<width>610</width>
 						<height>360</height>
-						<texture border="5">overlays/diffuse-overlay.png</texture>
+						<texture>overlays/diffuse-overlay.png</texture>
 						<bordersize>20</bordersize>
 					</control>
 					<include content="OverlayIcons">
@@ -159,8 +159,8 @@
 							<top>240</top>
 							<width>610</width>
 							<height>360</height>
-							<aspectratio scalediffuse="false">scale</aspectratio>
-							<texture background="true" diffuse="diffuse/shift-landscape.png">$VAR[LandscapeArtVar]</texture>
+							<aspectratio>scale</aspectratio>
+							<texture background="true">$VAR[LandscapeArtVar]</texture>
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
@@ -170,7 +170,7 @@
 							<top>240</top>
 							<width>610</width>
 							<height>360</height>
-							<texture border="5">overlays/diffuse-overlay.png</texture>
+							<texture>overlays/diffuse-overlay.png</texture>
 							<bordersize>20</bordersize>
 						</control>
 						<include content="OverlayIcons">
@@ -185,8 +185,8 @@
 						<top>265</top>
 						<width>340</width>
 						<height>340</height>
-						<aspectratio scalediffuse="false">scale</aspectratio>
-						<texture background="true" diffuse="diffuse/shift-square.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio>scale</aspectratio>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<bordersize>20</bordersize>
 					</control>
 					<control type="image">
@@ -194,7 +194,7 @@
 						<top>265</top>
 						<width>340</width>
 						<height>340</height>
-						<texture border="5">overlays/diffuse-overlay.png</texture>
+						<texture>overlays/diffuse-overlay.png</texture>
 						<bordersize>20</bordersize>
 					</control>
 				</itemlayout>
@@ -207,8 +207,8 @@
 							<top>265</top>
 							<width>340</width>
 							<height>340</height>
-							<aspectratio scalediffuse="false">scale</aspectratio>
-							<texture background="true" diffuse="diffuse/shift-square.png">$INFO[ListItem.Icon]</texture>
+							<aspectratio>scale</aspectratio>
+							<texture background="true">$INFO[ListItem.Icon]</texture>
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
@@ -218,7 +218,7 @@
 							<top>265</top>
 							<width>340</width>
 							<height>340</height>
-							<texture border="5">overlays/diffuse-overlay.png</texture>
+							<texture>overlays/diffuse-overlay.png</texture>
 							<bordersize>20</bordersize>
 						</control>
 					</control>

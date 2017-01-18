@@ -31,7 +31,7 @@
                 <top>206</top>
                 <width>100%</width>
                 <height>64</height>
-                <aspectratio scalediffuse="false">scale</aspectratio>
+                <aspectratio>scale</aspectratio>
                 <texture colordiffuse="$VAR[ColorBackgroundVar]">background.png</texture>
             </control>
 

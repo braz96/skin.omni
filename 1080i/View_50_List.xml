@@ -646,8 +646,8 @@
 					<control type="image">
 						<width>560</width>
 						<height>840</height>
-						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-						<texture background="true" diffuse="diffuse/list-poster.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio align="center" aligny="center">scale</aspectratio>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<fadetime>IconCrossfadeTime</fadetime>
 					</control>
 				</control>
@@ -669,7 +669,7 @@
 						<visible>String.StartsWith(ListItem.Icon,Default) | Container.Content(countries)</visible>
 						<width>560</width>
 						<height>560</height>
-						<texture colordiffuse="33000000" border="5">listselect_fo.png</texture>
+						<texture colordiffuse="33000000">listselect_fo.png</texture>
 					</control>
 					<control type="grouplist">
 						<itemgap>15</itemgap>
@@ -677,16 +677,16 @@
 							<visible>!Container.Content(addons)</visible>
 							<width>560</width>
 							<height>560</height>
-							<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-							<texture background="true" diffuse="diffuse/list-square.png" fallback="DefaultFolder.png">$VAR[ThumbViewImage]</texture>
+							<aspectratio align="center" aligny="center">scale</aspectratio>
+							<texture background="true" fallback="DefaultFolder.png">$VAR[ThumbViewImage]</texture>
 							<fadetime>IconCrossfadeTime</fadetime>
 						</control>
 						<control type="image">
 							<visible>Container.Content(addons)</visible>
 							<width>560</width>
 							<height>560</height>
-							<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-							<texture background="true" diffuse="diffuse/list-square.png">$INFO[ListItem.Icon]</texture>
+							<aspectratio align="center" aligny="center">scale</aspectratio>
+							<texture background="true">$INFO[ListItem.Icon]</texture>
 							<fadetime>IconCrossfadeTime</fadetime>
 						</control>
 						<control type="label">
@@ -769,8 +769,8 @@
 					<control type="image">
 						<width>560</width>
 						<height>342</height>
-						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-						<texture background="true" diffuse="diffuse/list-fanart.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio align="center" aligny="center">scale</aspectratio>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<fadetime>IconCrossfadeTime</fadetime>
 						<visible>!String.IsEmpty(ListItem.Plot)</visible>
 					</control>

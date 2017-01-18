@@ -27,7 +27,7 @@
 	                    <visible>Control.HasFocus(450)</visible>
 	                    <animation effect="fade" time="320" delay="200">Visible</animation>
 	                    <animation effect="fade" time="50">Hidden</animation>
-	                    <texture colordiffuse="$VAR[ColorHighlightVar]" border="5">listselect_fo.png</texture>
+	                    <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
 	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(450).Row,3)">Conditional</animation>
 	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(450).Row,2)">Conditional</animation>
 	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(450).Row,1)">Conditional</animation>
@@ -49,8 +49,8 @@
 							<top>10</top>
 							<width>100</width>
 							<height>100</height>
-							<aspectratio aligny="center" align="center" scalediffuse="false">keep</aspectratio>
-							<texture diffuse="diffuse/list-icon.png">$INFO[ListItem.Icon]</texture>
+							<aspectratio aligny="center" align="center">keep</aspectratio>
+							<texture>$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<left>120</left>
@@ -69,8 +69,8 @@
 							<top>10</top>
 							<width>100</width>
 							<height>100</height>
-							<aspectratio aligny="center" align="center" scalediffuse="false">keep</aspectratio>
-							<texture diffuse="diffuse/list-icon.png">$INFO[ListItem.Icon]</texture>
+							<aspectratio aligny="center" align="center">keep</aspectratio>
+							<texture>$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<left>120</left>
@@ -91,7 +91,7 @@
 	                    <visible>Control.HasFocus(451)</visible>
 	                    <animation effect="fade" time="320" delay="200">Visible</animation>
 	                    <animation effect="fade" time="50">Hidden</animation>
-	                    <texture colordiffuse="$VAR[ColorHighlightVar]" border="5">listselect_fo.png</texture>
+	                    <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
 	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(451).Row,3)">Conditional</animation>
 	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(451).Row,2)">Conditional</animation>
 	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(451).Row,1)">Conditional</animation>
@@ -113,8 +113,8 @@
 							<top>10</top>
 							<width>100</width>
 							<height>100</height>
-							<aspectratio aligny="center" align="center" scalediffuse="false">keep</aspectratio>
-							<texture diffuse="diffuse/list-icon.png">$INFO[ListItem.Icon]</texture>
+							<aspectratio aligny="center" align="center">keep</aspectratio>
+							<texture>$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<left>120</left>
@@ -143,8 +143,8 @@
 							<top>10</top>
 							<width>100</width>
 							<height>100</height>
-							<aspectratio aligny="center" align="center" scalediffuse="false">keep</aspectratio>
-							<texture diffuse="diffuse/list-icon.png">$INFO[ListItem.Icon]</texture>
+							<aspectratio aligny="center" align="center">keep</aspectratio>
+							<texture>$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<left>120</left>

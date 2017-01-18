@@ -20,8 +20,8 @@
 				<top>30</top>
 				<width>80</width>
 				<height>80</height>
-				<aspectratio scalediffuse="false">keep</aspectratio>
-				<texture diffuse="diffuse/nowplaying.png"></texture>
+				<aspectratio>keep</aspectratio>
+				<texture />
 			</control>
 			<control type="fadelabel" id="401">
 				<description>Line 1 Label</description>

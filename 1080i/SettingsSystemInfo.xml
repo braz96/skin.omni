@@ -16,12 +16,12 @@
             <top>0</top>
             <left>-430</left>
 			<control type="group">
-				<left>540</left>
+				<left>550</left>
 				<top>180</top>
 				<include>Animation.Common</include>
 				<control type="grouplist" id="9020">
-					<left>82</left>
-					<top>0</top>
+					<left>80</left>
+					<top>10</top>
 					<width>356</width>
 					<height>840</height>
 					<itemgap>0</itemgap>
@@ -104,7 +104,7 @@
 	                <colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
 	            </control>
 				<control type="group">
-					<left>480</left>
+					<left>470</left>
 					<top>740</top>
 					<control type="label" id="52">
 						<visible>False</visible>

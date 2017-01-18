@@ -25,7 +25,7 @@
                     <visible>Control.HasFocus(3)</visible>
                     <animation effect="fade" time="320" delay="200">Visible</animation>
                     <animation effect="fade" time="50">Hidden</animation>
-                    <texture colordiffuse="$VAR[ColorHighlightVar]" border="5">listselect_fo.png</texture>
+                    <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
                     <animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(3).Row,6)">Conditional</animation>
                     <animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(3).Row,5)">Conditional</animation>
                     <animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(3).Row,4)">Conditional</animation>
@@ -147,8 +147,8 @@
 							<top>10</top>
 							<width>100</width>
 							<height>100</height>
-							<aspectratio aligny="center" align="center" scalediffuse="false">keep</aspectratio>
-							<texture diffuse="diffuse/list-icon.png" fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
+							<aspectratio aligny="center" align="center">keep</aspectratio>
+							<texture fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<visible>!String.IsEmpty(ListItem.Label2)</visible>
@@ -192,8 +192,8 @@
 							<top>10</top>
 							<width>100</width>
 							<height>100</height>
-							<aspectratio aligny="center" align="center" scalediffuse="false">keep</aspectratio>
-							<texture diffuse="diffuse/list-icon.png" fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
+							<aspectratio aligny="center" align="center">keep</aspectratio>
+							<texture fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<visible>!String.IsEmpty(ListItem.Label2)</visible>
@@ -251,7 +251,7 @@
 					<align>center</align>
 					<width>464</width>
 					<label />
-					<texturenofocus colordiffuse="33787878" border="5">listselect_fo.png</texturenofocus>
+					<texturenofocus colordiffuse="33787878">listselect_fo.png</texturenofocus>
 				</control>
 				<control type="button" id="7">
 					<description>Cancel button</description>
@@ -259,7 +259,7 @@
 					<align>center</align>
 					<width>464</width>
 					<label>222</label>
-					<texturenofocus colordiffuse="33787878" border="5">listselect_fo.png</texturenofocus>
+					<texturenofocus colordiffuse="33787878">listselect_fo.png</texturenofocus>
 				</control>
 			</control>
 			<control type="scrollbar" id="60">

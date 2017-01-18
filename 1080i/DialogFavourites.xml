@@ -71,7 +71,7 @@
 		                <top>20</top>
 		                <width>365</width>
 		                <height>365</height>
-		                <aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
+		                <aspectratio align="center" aligny="center">keep</aspectratio>
 		                <texture background="true" fallback="DefaultFolder.png">$VAR[ListIcon]</texture>
 		            </control>
 				</itemlayout>
@@ -95,7 +95,7 @@
 		                <top>20</top>
 		                <width>365</width>
 		                <height>365</height>
-		                <aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
+		                <aspectratio align="center" aligny="center">keep</aspectratio>
 		                <texture background="true" fallback="DefaultFolder.png">$VAR[ListIcon]</texture>
 		            </control>
 				</focusedlayout>

@@ -106,7 +106,7 @@
 							<width>120</width>
 							<height>90</height>
 							<bordersize>3</bordersize>
-							<texture fallback="pvr/genres/0.png" border="5">$INFO[ListItem.Property(GenreType),pvr/genres/,.png]</texture>
+							<texture fallback="pvr/genres/0.png">$INFO[ListItem.Property(GenreType),pvr/genres/,.png]</texture>
 						</control>
 						<control type="group">
 							<visible>[ListItem.HasTimer | ListItem.IsRecording]</visible>
@@ -143,7 +143,7 @@
 						<control type="image" id="14">
 							<width>120</width>
 							<height>90</height>
-							<texture border="5">listselect_fo.png</texture>
+							<texture>listselect_fo.png</texture>
 							<bordersize>3</bordersize>
 							<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
 						</control>

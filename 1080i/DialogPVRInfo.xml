@@ -48,7 +48,7 @@
 						<control type="image">
 							<width>738</width>
 							<height>90</height>
-							<texture border="5">listselect_fo.png</texture>
+							<texture>listselect_fo.png</texture>
 							<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
 							<visible>Control.HasFocus(9002)</visible>
 							<include>VisibleFadeEffect</include>
@@ -145,7 +145,7 @@
 						<label>19165</label>
 						<font>font15_title</font>
 						<align>center</align>
-						<texturenofocus colordiffuse="33787878" border="5">listselect_fo.png</texturenofocus>
+						<texturenofocus colordiffuse="33787878">listselect_fo.png</texturenofocus>
 					</control>
 					<control type="button" id="9">
 						<description>Add timer button</description>
@@ -153,7 +153,7 @@
 						<label>19061</label>
 						<font>font15_title</font>
 						<align>center</align>
-						<texturenofocus colordiffuse="33787878" border="5">listselect_fo.png</texturenofocus>
+						<texturenofocus colordiffuse="33787878">listselect_fo.png</texturenofocus>
 					</control>
 					<control type="button" id="6">
 						<description>Record button</description>
@@ -162,7 +162,7 @@
 						<label />
 						<font>font15_title</font>
 						<align>center</align>
-						<texturenofocus colordiffuse="33787878" border="5">listselect_fo.png</texturenofocus>
+						<texturenofocus colordiffuse="33787878">listselect_fo.png</texturenofocus>
 					</control>
 				</control>
 			</control>

@@ -16,15 +16,6 @@
 		<label />
 		<font />
 	</include>
-	<include name="HiddenList">
-		<left>-100</left>
-		<top>-100</top>
-		<width>100</width>
-		<height>100</height>
-		<itemlayout height="100" width="100" />
-		<focusedlayout height="100" width="100" />
-	</include>
-	<!-- Buttons -->
 	<include name="ButtonCommonValues">
 		<width>630</width>
 		<height>90</height>
@@ -36,7 +27,7 @@
 		<align>center</align>
 		<font>font12_title</font>
 		<textoffsetx>10</textoffsetx>
-		<texturenofocus colordiffuse="33787878" border="5">listselect_fo.png</texturenofocus>
+		<texturenofocus colordiffuse="33787878">listselect_fo.png</texturenofocus>
 	</include>
 	<!-- KeyBoard -->
 	<include name="Objects_KeyOffVars">
@@ -44,8 +35,8 @@
 		<align>center</align>
 		<font>font15</font>
 		<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
-		<texturenofocus colordiffuse="33787878" border="5">listselect_fo.png</texturenofocus>
-		<alttexturenofocus colordiffuse="33ffffff" border="5">listselect_fo.png</alttexturenofocus>
+		<texturenofocus colordiffuse="33787878">listselect_fo.png</texturenofocus>
+		<alttexturenofocus colordiffuse="33ffffff">listselect_fo.png</alttexturenofocus>
 	</include>
 	<include name="Objects_DoubleKeyOff">
 		<left>-123</left>
@@ -85,198 +76,7 @@
 		<fadetime>250</fadetime>
 		<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 		<animation effect="fade" time="200">VisibleChange</animation>
-	</include>
-	<!-- TV Shows Next Aired script -->
-	<include name="TVNextAiredListCommonLayout">
-		<left>522</left>
-		<top>32</top>
-		<width>1316</width>
-		<height>840</height>
-		<onup>60</onup>
-		<ondown>60</ondown>
-		<onleft>9000</onleft>
-		<orientation>horizontal</orientation>
-		<scrolltime tween="quadratic">300</scrolltime>
-		<pagecontrol>60</pagecontrol>
-		<itemlayout height="840" width="435">
-			<control type="image">
-				<left>15</left>
-				<top>20</top>
-				<width>405</width>
-				<height>237</height>
-				<aspectratio aligny="top">keep</aspectratio>
-				<texture background="true">$INFO[ListItem.Property(Art(clearlogo))]</texture>
-			</control>
-			<control type="label">
-				<left>15</left>
-				<top>250</top>
-				<width>405</width>
-				<height>45</height>
-				<label>$LOCALIZE[31010]:</label>
-				<font>font15</font>
-			</control>
-			<control type="textbox">
-				<left>15</left>
-				<top>295</top>
-				<width>405</width>
-				<height>105</height>
-				<label>$INFO[ListItem.Property(NextNumber),,. ]$INFO[ListItem.Property(NextTitle)]</label>
-				<font>font15</font>
-				<autoscroll>false</autoscroll>
-			</control>
-			<control type="label">
-				<left>15</left>
-				<top>400</top>
-				<width>405</width>
-				<height>45</height>
-				<label>$LOCALIZE[31011]:</label>
-				<font>font15</font>
-			</control>
-			<control type="textbox">
-				<left>15</left>
-				<top>445</top>
-				<width>405</width>
-				<height>105</height>
-				<label>$INFO[ListItem.Property(LatestDate),, • ]$INFO[ListItem.Property(LatestTitle)]</label>
-				<font>font15</font>
-				<autoscroll>false</autoscroll>
-			</control>
-			<control type="label">
-				<description>Episode Number</description>
-				<top>550</top>
-				<width>435</width>
-				<height>45</height>
-				<label>$LOCALIZE[126]:</label>
-				<textoffsetx>15</textoffsetx>
-				<font>font15</font>
-			</control>
-			<control type="label">
-				<description>Episode Number</description>
-				<top>595</top>
-				<width>435</width>
-				<height>45</height>
-				<label>$INFO[ListItem.Property(Status)]</label>
-				<textoffsetx>15</textoffsetx>
-				<font>font15</font>
-			</control>
-			<control type="label">
-				<description>Episode Number</description>
-				<top>700</top>
-				<width>435</width>
-				<height>45</height>
-				<label>$LOCALIZE[31012]:</label>
-				<textoffsetx>15</textoffsetx>
-				<font>font15</font>
-			</control>
-			<control type="label">
-				<description>Episode Number</description>
-				<top>745</top>
-				<width>435</width>
-				<height>45</height>
-				<label>$INFO[ListItem.Property(ShortTime)]$INFO[ListItem.Property(Network), @ ]</label>
-				<textoffsetx>15</textoffsetx>
-				<font>font15</font>
-			</control>
-		</itemlayout>
-		<focusedlayout height="840" width="435">
-			<control type="image">
-				<left>15</left>
-				<top>20</top>
-				<width>405</width>
-				<height>237</height>
-				<aspectratio aligny="top">keep</aspectratio>
-				<texture background="true">$INFO[ListItem.Property(Art(clearlogo))]</texture>
-			</control>
-			<control type="label">
-				<left>15</left>
-				<top>250</top>
-				<width>405</width>
-				<height>45</height>
-				<label>$LOCALIZE[31010]:</label>
-				<font>font15</font>
-			</control>
-			<control type="textbox">
-				<left>15</left>
-				<top>295</top>
-				<width>405</width>
-				<height>105</height>
-				<label>$INFO[ListItem.Property(NextNumber),,. ]$INFO[ListItem.Property(NextTitle)]</label>
-				<font>font15</font>
-				<autoscroll>false</autoscroll>
-			</control>
-			<control type="label">
-				<left>15</left>
-				<top>400</top>
-				<width>405</width>
-				<height>45</height>
-				<label>$LOCALIZE[31011]:</label>
-				<font>font15</font>
-			</control>
-			<control type="textbox">
-				<left>15</left>
-				<top>445</top>
-				<width>405</width>
-				<height>105</height>
-				<label>$INFO[ListItem.Property(LatestDate),, • ]$INFO[ListItem.Property(LatestTitle)]</label>
-				<font>font15</font>
-				<autoscroll>false</autoscroll>
-			</control>
-			<control type="label">
-				<description>Episode Number</description>
-				<top>550</top>
-				<width>435</width>
-				<height>45</height>
-				<label>$LOCALIZE[126]:</label>
-				<textoffsetx>15</textoffsetx>
-				<font>font15</font>
-			</control>
-			<control type="label">
-				<description>Episode Number</description>
-				<top>595</top>
-				<width>435</width>
-				<height>45</height>
-				<label>$INFO[ListItem.Property(Status)]</label>
-				<textoffsetx>15</textoffsetx>
-				<font>font15</font>
-			</control>
-			<control type="label">
-				<description>Episode Number</description>
-				<top>700</top>
-				<width>435</width>
-				<height>45</height>
-				<label>$LOCALIZE[31012]:</label>
-				<textoffsetx>15</textoffsetx>
-				<font>font15</font>
-			</control>
-			<control type="label">
-				<description>Episode Number</description>
-				<top>745</top>
-				<width>435</width>
-				<height>45</height>
-				<label>$INFO[ListItem.Property(ShortTime)]$INFO[ListItem.Property(Network), @ ]</label>
-				<textoffsetx>15</textoffsetx>
-				<font>font15</font>
-			</control>
-		</focusedlayout>
-	</include>
-	<include name="GlobalSearchCommons">
-        <include>ThumbnailItemBackground</include>
-        <control type="label">
-            <left>20</left>
-            <right>20</right>
-            <top>327</top>
-            <height>50</height>
-            <label>$INFO[ListItem.Label]</label>
-        </control>
-        <control type="image">
-            <left>20</left>
-            <top>20</top>
-            <right>20</right>
-            <height>310</height>
-            <aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
-            <texture background="true" fallback="DefaultFolder.png" diffuse="diffuse/thumbnail.png">$INFO[ListItem.Icon]</texture>
-        </control>
-	</include>
+	</include>	
 	<include name="SkinSettingsButtonDefaults">
 		<width>1246</width>
 		<height>90</height>

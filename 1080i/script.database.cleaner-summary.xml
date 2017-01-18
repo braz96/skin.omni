@@ -241,7 +241,7 @@
                 <onup>17</onup>
                 <label>222</label>
                 <font>font15_title</font>
-                <texturenofocus colordiffuse="33787878" border="5">listselect_fo.png</texturenofocus>
+                <texturenofocus colordiffuse="33787878">listselect_fo.png</texturenofocus>
             </control>
             <control type="button" id="200">
                 <description>Settings button</description>
@@ -252,7 +252,7 @@
                 <label>10004</label>
                 <font>font15_title</font>
                 <onclick>Addon.OpenSettings(script.database.cleaner)</onclick>
-                <texturenofocus colordiffuse="33787878" border="5">listselect_fo.png</texturenofocus>
+                <texturenofocus colordiffuse="33787878">listselect_fo.png</texturenofocus>
             </control>
             <control type="button" id="2">
                 <description>Clean button</description>
@@ -262,7 +262,7 @@
                 <onup>17</onup>
                 <label>Clean database</label>
                 <font>font15_title</font>
-                <texturenofocus colordiffuse="33787878" border="5">listselect_fo.png</texturenofocus>
+                <texturenofocus colordiffuse="33787878">listselect_fo.png</texturenofocus>
             </control>
         </control>
 	</controls>

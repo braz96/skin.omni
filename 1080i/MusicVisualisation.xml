@@ -220,8 +220,8 @@
 					<description>Cover image</description>
 					<width>280</width>
 					<height>280</height>
-					<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-					<texture fallback="DefaultAlbumCover.png" diffuse="diffuse/musicviz.png">$INFO[Player.Art(thumb)]</texture>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
+					<texture fallback="DefaultAlbumCover.png">$INFO[Player.Art(thumb)]</texture>
 				</control>
 			</control>
 			<control type="grouplist">

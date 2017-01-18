@@ -31,7 +31,7 @@
                         <width>330</width>
                         <height>370</height>
                         <include>FocusedBackgroundFade</include>
-                        <texture colordiffuse="$VAR[ColorHighlightVar]" border="5">listselect_fo.png</texture>
+                        <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
                         <animation effect="slide" end="0,390" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(2).Row,0)">Conditional</animation>
                     </control>
                 </control>
@@ -67,8 +67,8 @@
                             <top>20</top>
                             <right>20</right>
                             <height>310</height>
-                            <aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
-                            <texture background="true" fallback="DefaultIconProfile.png" diffuse="diffuse/thumbnail.png">$VAR[ProfileIconVar]</texture>
+                            <aspectratio align="center" aligny="center">keep</aspectratio>
+                            <texture background="true" fallback="DefaultIconProfile.png">$VAR[ProfileIconVar]</texture>
                         </control>
                     </itemlayout>
 
@@ -93,8 +93,8 @@
                             <top>20</top>
                             <right>20</right>
                             <height>310</height>
-                            <aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
-                            <texture background="true" fallback="DefaultIconProfile.png" diffuse="diffuse/thumbnail.png">$VAR[ProfileIconVar]</texture>
+                            <aspectratio align="center" aligny="center">keep</aspectratio>
+                            <texture background="true" fallback="DefaultIconProfile.png">$VAR[ProfileIconVar]</texture>
                         </control>
                     </focusedlayout>
     			</control>
@@ -163,8 +163,8 @@
     					<left>1000</left>
     					<width>100</width>
     					<height>100</height>
-    					<aspectratio align="center" aligny="center" scalediffuse="false">keep</aspectratio>
-    					<texture fallback="DefaultActor.png" diffuse="diffuse/list-icon.png">$INFO[System.ProfileThumb]</texture>
+    					<aspectratio align="center" aligny="center">keep</aspectratio>
+    					<texture fallback="DefaultActor.png">$INFO[System.ProfileThumb]</texture>
     				</control>
     				<control type="label">
     					<width>980</width>

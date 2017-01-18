@@ -255,7 +255,7 @@
 					</control>
 				</control>
 				<control type="group" id="100">
-					<!--<visible>!Window.IsVisible(script-globalsearch-infodialog.xml)</visible>-->
+					<visible>!Window.IsVisible(script-globalsearch-infodialog.xml)</visible>
 					<include>Animation.Common</include>
 					<top>60</top>
 					<control type="group">
@@ -501,7 +501,7 @@
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(151).Row,0)">Conditional</animation>
 			                </control>
 			                <control type="image">
-				                <width>87</width>
+				                <width>120</width>
 				                <height>120</height>
 				                <texture>overlays/diffuse-overlay.png</texture>
 				                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(151).Row,5)">Conditional</animation>
@@ -1207,8 +1207,8 @@
 								<control type="panel" id="151">
 									<left>0</left>
 									<top>0</top>
-									<width>1400</width>
-									<height>780</height>
+									<width>1100</width>
+									<height>840</height>
 									<pagecontrol>67</pagecontrol>
 									<onleft>Control.SetFocus(9020)</onleft>
 									<onright condition="Container(151).HasNext | Container(151).HasPrevious">67</onright>
@@ -1219,27 +1219,55 @@
 									<orientation>vertical</orientation>
 									<viewtype label="535">list</viewtype>
 									<preloaditems>2</preloaditems>
-									<itemlayout width="350" height="390">
-										<include>GlobalSearchCommons</include>
+									<itemlayout width="840" height="120">
 										<control type="image">
-							                <top>20</top>
-							                <left>20</left>
-							                <right>20</right>
-							                <height>310</height>
-							                <texture border="5">overlays/diffuse-overlay.png</texture>
-							            </control>
+											<top>10</top>
+											<left>10</left>
+											<width>100</width>
+											<height>100</height>
+											<aspectratio align="center" aligny="center">scale</aspectratio>
+											<texture fallback="DefaultFallback.png">$INFO[ListItem.Icon]</texture>
+										</control>
+										<control type="label">
+											<top>3</top>
+											<left>140</left>
+											<right>80</right>
+											<height>70</height>
+											<font>font30</font>
+											<label>$INFO[ListItem.Label]</label>
+										</control>
+										<control type="label">
+											<left>140</left>
+											<top>52</top>
+											<right>80</right>
+											<height>60</height>
+											<label>$INFO[ListItem.Property(Artist)]</label>
+										</control>
 									</itemlayout>
-									<focusedlayout width="350" height="390">
-										<include>GlobalSearchCommons</include>
+									<focusedlayout width="840" height="120">
 										<control type="image">
-							                <animation center="auto" condition="Control.HasFocus(151)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							                <animation center="auto" condition="Control.HasFocus(151)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
-							                <top>20</top>
-							                <left>20</left>
-							                <right>20</right>
-							                <height>310</height>
-							                <texture border="5">overlays/diffuse-overlay.png</texture>
-							            </control>
+											<top>10</top>
+											<left>10</left>
+											<width>100</width>
+											<height>100</height>
+											<aspectratio align="center" aligny="center">scale</aspectratio>
+											<texture fallback="DefaultFallback.png">$INFO[ListItem.Icon]</texture>
+										</control>
+										<control type="label">
+											<top>3</top>
+											<left>140</left>
+											<right>80</right>
+											<height>70</height>
+											<font>font30</font>
+											<label>$INFO[ListItem.Label]</label>
+										</control>
+										<control type="label">
+											<left>140</left>
+											<top>52</top>
+											<right>80</right>
+											<height>60</height>
+											<label>$INFO[ListItem.Property(Artist)]</label>
+										</control>
 									</focusedlayout>
 								</control>
 							</control>

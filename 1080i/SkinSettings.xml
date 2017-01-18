@@ -28,15 +28,12 @@
 					<top>0</top>
 					<width>356</width>
 					<height>840</height>
-					<!--<onleft>SetProperty(MediaMenu,True,home)</onleft>
-					<onleft>SetFocus(9050,7)</onleft>-->
 					<onleft>9000</onleft>
 					<onright condition="!Container(9030).HasFocus(9)">9040</onright>
 					<onup>9030</onup>
 					<ondown>9030</ondown>
 					<pagecontrol />
 					<scrolltime tween="quadratic" easing="out">200</scrolltime>
-					<!--<visible>!Window.IsActive(script-skinshortcuts.xml)</visible>-->
 					<include>SettingsFadeEffect</include>
 					<itemlayout height="90" width="356">
 						<control type="label">
@@ -144,19 +141,6 @@
 							<label>31096</label>
 							<onclick>RunScript(script.skinshortcuts,type=resetall)</onclick>
 						</control>
-						<!--<control type="button" id="101">
-							<include>SkinSettingsButtonDefaults</include>
-							<label>31018</label>
-							<label2>$VAR[MenuOrientationVar]</label2>
-							<onclick>Skin.ToggleSetting(Enable.HorizontalMenu)</onclick>
-						</control>
-						<control type="radiobutton" id="105">
-							<include>SkinSettingsButtonDefaults</include>
-							<label>31231</label>
-							<onclick>Skin.ToggleSetting(Enable.CombineMenus)</onclick>
-							<selected>Skin.HasSetting(Enable.CombineMenus)</selected>
-							<enable>!Skin.HasSetting(Enable.HorizontalMenu)</enable>
-						</control>-->
 						<control type="radiobutton" id="104">
 							<include>SkinSettingsButtonDefaults</include>
 							<label>31236</label>
@@ -184,8 +168,8 @@
 								<top>10</top>
 								<width>70</width>
 								<height>70</height>
-								<aspectratio scalediffuse="false">keep</aspectratio>
-								<texture background="true" fallback="DefaultAddon.png" diffuse="diffuse/list-icon.png">$INFO[ListItem.Icon]</texture>
+								<aspectratio>keep</aspectratio>
+								<texture background="true" fallback="DefaultAddon.png">$INFO[ListItem.Icon]</texture>
 							</control>
 							<control type="label">
 								<textoffsetx>100</textoffsetx>
@@ -217,8 +201,8 @@
 								<top>10</top>
 								<width>70</width>
 								<height>70</height>
-								<aspectratio scalediffuse="false">keep</aspectratio>
-								<texture background="true" fallback="DefaultAddon.png" diffuse="diffuse/list-icon.png">$INFO[ListItem.Icon]</texture>
+								<aspectratio>keep</aspectratio>
+								<texture background="true" fallback="DefaultAddon.png">$INFO[ListItem.Icon]</texture>
 							</control>
 							<control type="label">
 								<textoffsetx>100</textoffsetx>
@@ -445,18 +429,6 @@
 							<onclick>Skin.Reset(CustomOverlay)</onclick>
 							<visible>!String.IsEmpty(Skin.String(CustomOverlay))</visible>
 						</control>
-						<!--<control type="button" id="605">
-							<include>SkinSettingsButtonDefaults</include>
-							<label>31163</label>
-							<label2>$INFO[Skin.String(CustomHomeSlideshow)]</label2>
-							<onclick>Skin.SetPath(CustomHomeSlideshow)</onclick>
-						</control>
-						<control type="button" id="606">
-							<include>SkinSettingsButtonDefaults</include>
-							<label>- $LOCALIZE[10035]</label>
-							<onclick>Skin.Reset(CustomHomeSlideshow)</onclick>
-							<visible>!String.IsEmpty(Skin.String(CustomHomeSlideshow))</visible>
-						</control>-->
 						<control type="radiobutton" id="602">
 							<include>SkinSettingsButtonDefaults</include>
 							<label>31124</label>
@@ -580,37 +552,37 @@
 						<control type="image" id="5050">
 							<width>64</width>
 							<height>64</height>
-							<texture border="5">white.png</texture>
+							<texture>white.png</texture>
 							<colordiffuse>$INFO[Skin.String(highlightcolor.name)]</colordiffuse>
 						</control>
 						<control type="image" id="5051">
 							<width>64</width>
 							<height>64</height>
-							<texture border="5">white.png</texture>
+							<texture>white.png</texture>
 							<colordiffuse>$INFO[Skin.String(backgroundcolor.name)]</colordiffuse>
 						</control>
 						<control type="image" id="5052">
 							<width>64</width>
 							<height>64</height>
-							<texture border="5">white.png</texture>
+							<texture>white.png</texture>
 							<colordiffuse>$INFO[Skin.String(dialogcolor.name)]</colordiffuse>
 						</control>
 						<control type="image" id="5053">
 							<width>64</width>
 							<height>64</height>
-							<texture border="5">white.png</texture>
+							<texture>white.png</texture>
 							<colordiffuse>$INFO[Skin.String(textcolor.name)]</colordiffuse>
 						</control>
 						<control type="image" id="5054">
 							<width>64</width>
 							<height>64</height>
-							<texture border="5">white.png</texture>
+							<texture>white.png</texture>
 							<colordiffuse>$INFO[Skin.String(menucolor.name)]</colordiffuse>
 						</control>
 						<control type="image" id="5055">
 							<width>64</width>
 							<height>64</height>
-							<texture border="5">white.png</texture>
+							<texture>white.png</texture>
 							<colordiffuse>$INFO[Skin.String(disabledcolor.name)]</colordiffuse>
 						</control>
 					</control>
@@ -709,7 +681,5 @@
 			<ondown>60</ondown>
 			<onup>60</onup>
 		</control>
-		
-		<!--<include>SettingsMediaMenu</include>-->
 	</controls>
 </window>

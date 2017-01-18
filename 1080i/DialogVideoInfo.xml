@@ -569,7 +569,7 @@
 				                <top>30</top>
 				                <width>230</width>
 				                <height>345</height>
-				                <aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+				                <aspectratio align="center" aligny="center">scale</aspectratio>
 				                <texture background="true" fallback="default_Actor.png">$INFO[ListItem.Art(thumb)]</texture>
 				            </control>
 						</itemlayout>
@@ -593,7 +593,7 @@
 				                <top>30</top>
 				                <width>230</width>
 				                <height>345</height>
-				                <aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+				                <aspectratio align="center" aligny="center">scale</aspectratio>
 				                <texture background="true" fallback="default_Actor.png">$INFO[ListItem.Art(thumb)]</texture>
 				            </control>
 						</focusedlayout>
@@ -655,7 +655,7 @@
 				                <top>20</top>
 				                <width>384</width>
 				                <height>216</height>
-				                <aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+				                <aspectratio align="center" aligny="center">scale</aspectratio>
 				                <texture background="true" fallback="DefaultFolder.png">$INFO[ListItem.Art(thumb)]</texture>
 				            </control>
 				            <include content="OverlayIcons">
@@ -683,7 +683,7 @@
 				                <top>20</top>
 				                <width>384</width>
 				                <height>216</height>
-				                <aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+				                <aspectratio align="center" aligny="center">scale</aspectratio>
 				                <texture background="true" fallback="DefaultFolder.png">$INFO[ListItem.Art(thumb)]</texture>
 				            </control>
 				            <include content="OverlayIcons">
@@ -758,7 +758,7 @@
 				                <top>30</top>
 				                <width>230</width>
 				                <height>345</height>
-				                <aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+				                <aspectratio align="center" aligny="center">scale</aspectratio>
 				                <texture background="true" fallback="DefaultFolder.png">$INFO[ListItem.Art(thumb)]</texture>
 				            </control>
 				            <include content="OverlayIcons">
@@ -786,7 +786,7 @@
 				                <top>30</top>
 				                <width>230</width>
 				                <height>345</height>
-				                <aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+				                <aspectratio align="center" aligny="center">scale</aspectratio>
 				                <texture background="true" fallback="DefaultFolder.png">$INFO[ListItem.Art(thumb)]</texture>
 				            </control>
 				            <include content="OverlayIcons">
@@ -826,7 +826,7 @@
 				<left>0</left>
 				<width>720</width>
 				<height>1080</height>
-				<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
+				<aspectratio align="center" aligny="center">scale</aspectratio>
 				<texture background="true">$VAR[PosterVar]</texture>
 			</control>
 			<control type="group">
@@ -836,8 +836,8 @@
 				<control type="image">
 					<width>720</width>
 					<height>720</height>
-					<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-					<texture background="true" diffuse="diffuse/list-square.png">$INFO[ListItem.Icon]</texture>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
 				</control>
 				<control type="image">
 	                <top>720</top>

@@ -347,9 +347,9 @@
 				<top>19</top>
 				<width>80</width>
 				<height>80</height>
-				<aspectratio align="center" aligny="center" scalediffuse="false">keep</aspectratio>
-				<texture diffuse="diffuse/nowplaying.png">$VAR[HomeNowPlayingThumbVar]</texture>
-				<visible>[!Window.IsVisible(volumebar) + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch-main.xml) | Window.IsVisible(script-globalsearch-infodialog.xml) | Window.IsVisible(favourites)]] | [Player.Muted + !Window.IsVisible(extendedprogressdialog)]</visible>
+				<aspectratio align="center" aligny="center">keep</aspectratio>
+				<texture>$VAR[HomeNowPlayingThumbVar]</texture>
+				<visible>[!Window.IsVisible(volumebar) + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch-main.xml)]] | [Player.Muted + !Window.IsVisible(extendedprogressdialog)]</visible>
 			</control>
 		</control>
 	</include>
@@ -405,7 +405,7 @@
 						<top>5</top>
 						<width>305</width>
 						<height>70</height>
-						<texture colordiffuse="33787878" border="5">listselect_fo.png</texture>
+						<texture colordiffuse="33787878">listselect_fo.png</texture>
 					</control>
 					<control type="label">
 						<top>5</top>
@@ -423,7 +423,7 @@
 						<top>5</top>
 						<width>305</width>
 						<height>70</height>
-						<texture colordiffuse="$VAR[ColorHighlightVar]" border="5">listselect_fo.png</texture>
+						<texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
 						<visible>Control.HasFocus(5000)</visible>
 					</control>
 					<control type="label">
@@ -694,7 +694,7 @@
             <control type="image">
                 <width>100%</width>
                 <height>100%</height>
-                <texture colordiffuse="$VAR[ColorHighlightVar]" border="5">listselect_fo.png</texture>
+                <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
             </control>
             <control type="image">
                 <top>10</top>

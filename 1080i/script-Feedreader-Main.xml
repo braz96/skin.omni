@@ -9,7 +9,7 @@
         <control type="image" id="30001">
             <description>Background image</description>
             <colordiffuse>FF555555</colordiffuse>
-            <aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+            <aspectratio align="center" aligny="center">scale</aspectratio>
             <include>FullscreenDimensions</include>
             <texture />
             <fadetime>2000</fadetime>
@@ -22,7 +22,7 @@
             <visible>true</visible>
             <left>1370</left>
             <top>530</top>
-            <aspectratio scalediffuse="false" align="right" aligny="bottom">keep</aspectratio>
+            <aspectratio align="right" aligny="bottom">keep</aspectratio>
             <fadetime>1000</fadetime>
             <width>500</width>
             <height>500</height>

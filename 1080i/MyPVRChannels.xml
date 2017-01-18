@@ -34,7 +34,7 @@
 	                    <visible>Control.HasFocus(50)</visible>
 	                    <animation effect="fade" time="320" delay="200">Visible</animation>
 	                    <animation effect="fade" time="50">Hidden</animation>
-	                    <texture colordiffuse="$VAR[ColorHighlightVar]" border="5">listselect_fo.png</texture>
+	                    <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
 	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
 	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,4)">Conditional</animation>
 	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,3)">Conditional</animation>
@@ -106,8 +106,8 @@
 							<top>102</top>
 							<width>670</width>
 							<height>8</height>
-							<texturebg colordiffuse="22ffffff" border="5">osd/midtexture.png</texturebg>
-							<midtexture colordiffuse="$VAR[ColorTextVar]" border="5">osd/midtexture.png</midtexture>
+							<texturebg colordiffuse="22ffffff">osd/midtexture.png</texturebg>
+							<midtexture colordiffuse="$VAR[ColorTextVar]">osd/midtexture.png</midtexture>
 							<visible>ListItem.HasEpg</visible>
 							<info>ListItem.Progress</info>
 						</control>
@@ -161,8 +161,8 @@
 							<top>102</top>
 							<width>670</width>
 							<height>8</height>
-							<texturebg colordiffuse="22ffffff" border="5">osd/midtexture.png</texturebg>
-							<midtexture colordiffuse="$VAR[ColorTextVar]" border="5">osd/midtexture.png</midtexture>
+							<texturebg colordiffuse="22ffffff">osd/midtexture.png</texturebg>
+							<midtexture colordiffuse="$VAR[ColorTextVar]">osd/midtexture.png</midtexture>
 							<visible>ListItem.HasEpg</visible>
 							<info>ListItem.Progress</info>
 						</control>

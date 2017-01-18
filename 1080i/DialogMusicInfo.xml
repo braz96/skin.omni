@@ -637,7 +637,7 @@
 				                <top>20</top>
 				                <width>384</width>
 				                <height>216</height>
-				                <aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+				                <aspectratio align="center" aligny="center">scale</aspectratio>
 				                <texture background="true" fallback="DefaultFolder.png">$INFO[ListItem.Art(thumb)]</texture>
 				            </control>
 				            <include content="OverlayIcons">
@@ -665,7 +665,7 @@
 				                <top>20</top>
 				                <width>384</width>
 				                <height>216</height>
-				                <aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+				                <aspectratio align="center" aligny="center">scale</aspectratio>
 				                <texture background="true" fallback="DefaultFolder.png">$INFO[ListItem.Art(thumb)]</texture>
 				            </control>
 				            <include content="OverlayIcons">
@@ -738,7 +738,7 @@
 				                <top>20</top>
 				                <width>365</width>
 				                <height>365</height>
-				                <aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+				                <aspectratio align="center" aligny="center">scale</aspectratio>
 				                <texture background="true" fallback="DefaultFolder.png">$INFO[ListItem.Thumb]</texture>
 				            </control>
 						</itemlayout>
@@ -762,7 +762,7 @@
 				                <top>20</top>
 				                <width>365</width>
 				                <height>365</height>
-				                <aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+				                <aspectratio align="center" aligny="center">scale</aspectratio>
 				                <texture background="true" fallback="DefaultFolder.png">$INFO[ListItem.Thumb]</texture>
 				            </control>
 						</focusedlayout>
@@ -894,8 +894,8 @@
             <control type="image">
                 <width>720</width>
                 <height>720</height>
-                <aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
-                <texture background="true" diffuse="diffuse/list-square.png">$INFO[ListItem.Icon]</texture>
+                <aspectratio align="center" aligny="center">scale</aspectratio>
+                <texture background="true">$INFO[ListItem.Icon]</texture>
             </control>
             <control type="image">
             	<left>30</left>

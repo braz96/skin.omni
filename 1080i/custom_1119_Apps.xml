@@ -246,8 +246,8 @@
 								<top>10</top>
 								<width>100</width>
 								<height>100</height>
-								<aspectratio scalediffuse="false">keep</aspectratio>
-								<texture background="true" diffuse="diffuse/list-icon.png" fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
+								<aspectratio>keep</aspectratio>
+								<texture background="true" fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
 							</control>
 							<control type="label">
 								<visible>!String.IsEmpty(ListItem.AddonSummary)</visible>
@@ -282,8 +282,8 @@
 								<top>10</top>
 								<width>100</width>
 								<height>100</height>
-								<aspectratio scalediffuse="false">keep</aspectratio>
-								<texture background="true" diffuse="diffuse/list-icon.png" fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
+								<aspectratio>keep</aspectratio>
+								<texture background="true" fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
 							</control>
 							<control type="label">
 								<visible>!String.IsEmpty(ListItem.AddonSummary)</visible>
