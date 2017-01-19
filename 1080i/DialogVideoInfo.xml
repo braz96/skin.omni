@@ -33,7 +33,7 @@
 				<width>1030</width>
 				<height>45</height>
 				<font>font30</font>
-				<label>$INFO[ListItem.Label]</label>
+				<label>$VAR[HeaderLabelInfoDialog]</label>
 			</control>
 			<control type="label">
 				<visible>Container(9000).HasFocus(208) | Control.HasFocus(250)</visible>

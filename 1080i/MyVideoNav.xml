@@ -76,30 +76,12 @@
 						<selected>system.ismaster</selected>
 						<visible>system.haslocks</visible>
 					</control>
-					<!--<control type="button" id="203">
-						<description>Actions label</description>
-						<textwidth>352</textwidth>
-						<font>font13_title</font>
-						<include>ButtonCommonValues</include>
-						<label>31039</label>
-						<enable>no</enable>
-						<disabledcolor>$VAR[ColorHighlightVar]</disabledcolor>
-					</control>-->
 					<control type="radiobutton" id="16">
 						<description>PartyMode</description>
 						<label>589</label>
 						<include>ButtonCommonValues</include>
 						<visible>Container.Content(MusicVideos)</visible>
 					</control>
-					<!--<control type="button" id="202">
-						<description>Global Search</description>
-						<label>137</label>
-						<include>ButtonCommonValues</include>
-						<visible>System.HasAddon(script.globalsearch)</visible>
-						<onclick>ClearProperty(MediaMenu,Home)</onclick>
-	 					<onclick>SetFocus(50)</onclick>
-						<onclick>RunScript(script.globalsearch)</onclick>
-					</control>-->
 					<control type="button" id="204">
 						<description>Settings button</description>
 						<include>ButtonCommonValues</include>
@@ -127,13 +109,11 @@
 						<onclick condition="!System.HasAddon(plugin.library.node.editor)">InstallAddon(plugin.library.node.editor)</onclick>
 						<visible>Container.Content() + String.IsEmpty(Container.PluginName)</visible>
 					</control>
-					<!--<include>QuicknavButton</include>-->
 					<include>PlaylistButtons</include>
 					<include content="MenuPlayerControls">
 						<param name="PlayerControlsOnDown" value="1802" />
 					</include>
 				</control>
-				<!--<include condition="!Skin.HasSetting(Disable.Quicknav)">QuicknavMenu</include>-->
 			</control>
         </control>
 		

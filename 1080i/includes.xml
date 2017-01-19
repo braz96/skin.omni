@@ -4,10 +4,9 @@
 	<include file="Includes_Animations.xml" />
 	<include file="Includes_Backgrounds.xml" />
 	<include file="Includes_CommonValues.xml" />
-	<include file="Includes_Home.xml" />
 	<include file="Includes_Menus.xml" />
-	<include file="Includes_WidgetContent.xml" />
 	<include file="Includes_VideoLyrics.xml" />
+	<include file="Includes_WidgetContent.xml" />
 	<include file="View_50_List.xml" />
 	<include file="View_57_Shift.xml" />
 	<include file="View_500_Wall.xml" />
@@ -321,8 +320,8 @@
 					<height>45</height>
 					<font>font30</font>
 					<textoffsetx>15</textoffsetx>
-					<label>$VAR[BreadcrumbsVar]</label>
-					<label2>$VAR[TopbarFadeLabel1]</label2>
+					<label>$VAR[HeaderLabel]</label>
+					<label2>$VAR[HeaderLabel2]</label2>
 					<onclick>noop</onclick>
 					<texturefocus>blank.png</texturefocus>
 				</control>
@@ -334,7 +333,7 @@
 					<textoffsetx>15</textoffsetx>
 					<textcolor>$VAR[ColorHighlightVar]</textcolor>
 					<label>$VAR[HeaderSubLabel]</label>
-					<label2>$VAR[TopbarFadeLabel2]</label2>
+					<label2>$VAR[HeaderSubLabel2]</label2>
 					<onclick>noop</onclick>
 					<texturefocus>blank.png</texturefocus>
 					<focusedcolor>$VAR[ColorHighlightVar]</focusedcolor>
@@ -449,8 +448,6 @@
 			<height>960</height>
 			<onleft condition="![Window.IsActive(addoninformation) | Window.IsActive(settings)]">50</onleft>
 			<onleft condition="Window.IsActive(addoninformation) | Window.IsActive(settings)">9000</onleft>
-			<!--<onright condition="![Window.IsActive(addoninformation) | Window.IsActive(settings)]">50</onright>
-			<onright condition="Window.IsActive(addoninformation) | Window.IsActive(settings)">9000</onright>-->
 			<onright>SetProperty(MediaMenu,True,home)</onright>
 			<onright>SetFocus(9050)</onright>
 			<ondown>60</ondown>

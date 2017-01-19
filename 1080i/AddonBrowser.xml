@@ -43,14 +43,6 @@
 						<label>24999</label>
 						<visible>Control.IsEnabled(8)</visible>
 					</control>
-					<!--<control type="label" id="201">
-						<width>400</width>
-						<height>60</height>
-						<textoffsetx>15</textoffsetx>
-						<font>font13_title</font>
-						<textcolor>$VAR[ColorHighlightVar]</textcolor>
-						<label>31039</label>
-					</control>-->
 					<control type="button" id="9">
 						<description>Check for updates</description>
 						<include>ButtonCommonValues</include>
@@ -67,13 +59,11 @@
 						<include>ButtonCommonValues</include>
 						<label>5</label>
 					</control>
-					<!--<include>QuicknavButton</include>-->
 					<include>PlaylistButtons</include>
 					<include content="MenuPlayerControls">
 						<param name="PlayerControlsOnDown" value="1802" />
 					</include>
 				</control>
-				<!--<include condition="!Skin.HasSetting(Disable.Quicknav)">QuicknavMenu</include>-->
 			</control>
 		</control>
 	</controls>

@@ -87,27 +87,6 @@
             <visible>String.IsEqual(Window.Property(Category),Album)</visible>
             <include>Topbar</include>
         </control>
-        <!--<control type="group">
-            <visible>Control.IsVisible(102) + String.IsEqual(Window.Property(Category),Album)</visible>
-            <animation effect="fade" end="0" start="100" time="150">WindowClose</animation>
-            <top>420</top>
-            <control type="image">
-                <description>Arrow left</description>
-                <left>60</left>
-                <width>29</width>
-                <height>58</height>
-                <texture flipx="true" colordiffuse="$VAR[ColorHighlightVar]">arrowright.png</texture>
-                <visible>Control.IsVisible(104) + Integer.IsGreater(Container(100).NumPages,0) + !String.IsEqual(Container(100).CurrentPage,1)</visible>
-            </control>
-            <control type="image">
-                <description>Arrow right</description>
-                <left>1831</left>
-                <width>29</width>
-                <height>58</height>
-                <texture colordiffuse="$VAR[ColorHighlightVar]">arrowright.png</texture>
-                <visible>Control.IsVisible(104) + Integer.IsGreater(Container(100).NumPages,0) + !String.IsEqual(Container(100).CurrentPage,Container(100).NumPages)</visible>
-            </control>
-        </control>-->
         <control type="group">
             <description>Group for the description</description>
             <visible>Control.IsVisible(102)</visible>

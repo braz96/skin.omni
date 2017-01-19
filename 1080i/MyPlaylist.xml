@@ -25,15 +25,6 @@
 				<include>SideBladeRight</include>
 				<control type="grouplist" id="9050">
 					<include>MediaMenuTop</include>
-					<!--<control type="button" id="203">
-	                    <description>Actions label</description>
-	                    <textwidth>352</textwidth>
-	                    <font>font13_title</font>
-	                    <include>ButtonCommonValues</include>
-	                    <label>31039</label>
-	                    <enable>no</enable>
-	                    <disabledcolor>$VAR[ColorHighlightVar]</disabledcolor>
-	                </control>-->
 					<control type="radiobutton" id="20">
 						<description>Shuffle button</description>
 						<include>ButtonCommonValues</include>
@@ -59,13 +50,11 @@
 						<textwidth>352</textwidth>
 						<include>ButtonCommonValues</include>
 					</control>
-					<!--<include>QuicknavButton</include>-->
 					<include>PlaylistButtons</include>
 					<include content="MenuPlayerControls">
 						<param name="PlayerControlsOnDown" value="1802" />
 					</include>
 				</control>
-				<!--<include condition="!Skin.HasSetting(Disable.Quicknav)">QuicknavMenu</include>-->
 			</control>
 		</control>
 	</controls>

@@ -45,28 +45,17 @@
 						<onclick>right</onclick>
 						<onclick>Filter</onclick>
 					</control>
-					<!--<control type="button" id="203">
-						<description>Actions label</description>
-						<textwidth>352</textwidth>
-						<font>font13_title</font>
-						<include>ButtonCommonValues</include>
-						<label>31039</label>
-						<enable>no</enable>
-						<disabledcolor>$VAR[ColorHighlightVar]</disabledcolor>
-					</control>-->
 					<control type="button" id="205">
 						<include>ButtonCommonValues</include>
 						<label>10140</label>
 						<onclick>Addon.OpenSettings($INFO[Container.PluginName])</onclick>
 						<visible>!String.IsEmpty(Container.PluginName)</visible>
 					</control>
-					<!--<include>QuicknavButton</include>-->
 					<include>PlaylistButtons</include>
 					<include content="MenuPlayerControls">
 						<param name="PlayerControlsOnDown" value="1802" />
 					</include>
 				</control>
-				<!--<include condition="!Skin.HasSetting(Disable.Quicknav)">QuicknavMenu</include>-->
 			</control>
 		</control>
 	</controls>

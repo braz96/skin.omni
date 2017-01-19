@@ -42,12 +42,9 @@
                     <height>780</height>
                     <onright>9020</onright>
                     <onleft>9000</onleft>
-    				<!--<onleft>SetProperty(MediaMenu,True,home)</onleft>
-    				<onleft>SetFocus(9050)</onleft>-->
     				<scrolltime tween="quadratic" easing="out">300</scrolltime>
     				<orientation>vertical</orientation>
     				<itemlayout height="390" width="350">
-                        <!--<include>ThumbnailItemBackground</include>-->
                         <control type="image">
                             <top>20</top>
                             <left>20</left>
@@ -73,7 +70,6 @@
                     </itemlayout>
 
                     <focusedlayout height="390" width="350">
-                        <!--<include>ThumbnailItemBackground</include>-->
                         <control type="image">
                             <top>20</top>
                             <left>20</left>
@@ -179,6 +175,5 @@
     		</control>
             <include>Topbar</include>
         </control>
-		<!--<include>SettingsMediaMenu</include>-->
 	</controls>
 </window>

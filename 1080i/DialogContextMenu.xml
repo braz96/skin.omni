@@ -24,12 +24,6 @@
 			<texture border="16">dialog_context.png</texture>
 			<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
 		</control>
-		<!--<control type="image" id="999">
-			<top>-15</top>
-			<width>460</width>
-			<height>1110</height>
-			<texture colordiffuse="$VAR[ColorDialogVar]">white.png</texture>
-        </control>-->
 		<control type="grouplist" id="996">
 			<description>grouplist for context buttons</description>
 			<left>30</left>

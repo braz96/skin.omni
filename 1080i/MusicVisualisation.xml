@@ -123,14 +123,6 @@
 				<texture border="16">dialog_context.png</texture>
 				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
 			</control>
-			<!--<control type="image">
-				<top>0</top>
-				<left>0</left>
-				<width>1920</width>
-				<height>392</height>
-				<texture colordiffuse="$VAR[ColorDialogVar]">white.png</texture>
-				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
-			</control>-->
 			<control type="image">
 				<left>1590</left>
 				<top>25</top>
