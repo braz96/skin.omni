@@ -145,12 +145,12 @@
 					<item id="204">
 		                <icon>DefaultIconPlay.png</icon>
 		                <onclick>SendClick(8)</onclick>
-		                <visible>String.IsEqual(Control.GetLabel(8),$LOCALIZE[208])</visible>
+		                <visible>Control.IsEnabled(8) + String.IsEqual(Control.GetLabel(8),$LOCALIZE[208])</visible>
 		            </item>
 		            <item id="205">
 		                <icon>DefaultFolder.png</icon>
 		                <onclick>SendClick(8)</onclick>
-		                <visible>String.IsEqual(Control.GetLabel(8),$LOCALIZE[1024])</visible>
+		                <visible>Control.IsEnabled(8) + String.IsEqual(Control.GetLabel(8),$LOCALIZE[1024])</visible>
 		            </item>
 		            <item id="210">
 		                <icon>DefaultPlaylist.png</icon>
@@ -177,14 +177,20 @@
 		                <onclick>noop</onclick>
 		                <visible>System.HasAddon(script.extendedinfo)</visible>
 		            </item>
+		            <item id="213">
+		                <icon>special://skin/extras/icons/splat.png</icon>
+		                <onclick>noop</onclick>
+		                <visible>$EXP[isMovie]</visible>
+		            </item>
 		            <item id="202">
 		                <icon>DefaultVideo.png</icon>
 		                <onclick>SendClick(11)</onclick>
-		                <visible>!String.IsEmpty(ListItem.Trailer)</visible>
+		                <visible>Control.IsEnabled(11) + !String.IsEmpty(ListItem.Trailer)</visible>
 		            </item>
 		            <item id="201">
 		                <icon>DefaultIconFavourite.png</icon>
 		                <onclick>SendClick(7)</onclick>
+		                <visible>Control.IsEnabled(7)</visible>
 		            </item>
 		            <item id="209">
 		                <icon>special://skin/extras/icons/fanart2.png</icon>
@@ -194,10 +200,12 @@
 		            <item id="203">
 		                <icon>DefaultAddonImages.png</icon>
 		                <onclick>SendClick(10)</onclick>
+		                <visible>Control.IsEnabled(10)</visible>
 		            </item>
 					<item id="200">
 		                <icon>DefaultAddonsUpdates.png</icon>
 		                <onclick>SendClick(6)</onclick>
+		                <visible>Control.IsEnabled(6)</visible>
 		            </item>
 		            <item id="212">
 		                <icon>DefaultAddonSource.png</icon>
@@ -797,6 +805,106 @@
 						<content target="video">videodb://movies/sets/$INFO[ListItem.SetID]</content>
 			        </control>
 				</control>
+				<control type="group">
+		        	<visible>Container(9000).HasFocus(213)</visible>
+		        	<animation effect="fade" time="300" start="0" end="100" delay="100">Visible</animation>
+		        	<top>10</top>
+		        	<left>-60</left>
+		        	<control type="group">
+		        		<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Meter))</visible>
+			        	<control type="image">
+			        		<top>0</top>
+			        		<left>0</left>
+			        		<width>100</width>
+			        		<height>100</height>
+			        		<aspectratio>keep</aspectratio>
+			        		<texture>$VAR[RottenTomatoMeter]</texture>
+			        	</control>
+			        	<control type="label">
+			        		<top>0</top>
+			        		<left>130</left>
+			        		<width>200</width>
+			        		<height>100</height>
+			        		<font>font36</font>
+			        		<label>$INFO[Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Meter),,%]</label>
+			        	</control>
+			        	<control type="grouplist">
+			        		<top>110</top>
+			        		<left>0</left>
+			        		<width>300</width>
+			        		<height>120</height>
+			        		<control type="label">
+			        			<width>300</width>
+			        			<height>40</height>
+			        			<font>font13_title</font>
+			        			<label>31272</label>
+			        		</control>
+			        		<control type="label">
+			        			<width>300</width>
+			        			<height>40</height>
+			        			<font>font13</font>
+			        			<label>$LOCALIZE[31269]: $INFO[Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Rating),,/10]</label>
+			        		</control>
+			        		<control type="label">
+			        			<width>300</width>
+			        			<height>40</height>
+			        			<font>font13</font>
+			        			<label>$LOCALIZE[31271]: $INFO[Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Reviews)]</label>
+			        		</control>
+			        	</control>
+			        </control>
+		        	<control type="group">
+		        		<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.UserMeter))</visible>
+			        	<control type="image">
+			        		<top>0</top>
+			        		<left>400</left>
+			        		<width>100</width>
+			        		<height>100</height>
+			        		<aspectratio>keep</aspectratio>
+			        		<texture>addons/popcorn.png</texture>
+			        	</control>
+			        	<control type="label">
+			        		<top>0</top>
+			        		<left>530</left>
+			        		<width>200</width>
+			        		<height>100</height>
+			        		<font>font36</font>
+			        		<label>$INFO[Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.UserMeter),,%]</label>
+			        	</control>
+			        	<control type="grouplist">
+			        		<top>110</top>
+			        		<left>400</left>
+			        		<width>300</width>
+			        		<height>120</height>
+			        		<control type="label">
+			        			<width>300</width>
+			        			<height>40</height>
+			        			<font>font13_title</font>
+			        			<label>31270</label>
+			        		</control>
+			        		<control type="label">
+			        			<width>300</width>
+			        			<height>40</height>
+			        			<font>font13</font>
+			        			<label>$LOCALIZE[31269]: $INFO[Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.UserRating),,/5]</label>
+			        		</control>
+			        		<control type="label">
+			        			<width>300</width>
+			        			<height>40</height>
+			        			<font>font13</font>
+			        			<label>$LOCALIZE[31268]: $INFO[Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.UserReviews)]</label>
+			        		</control>
+			        	</control>
+			        </control>
+		        	<control type="textbox">
+		        		<top>280</top>
+		        		<left>0</left>
+		        		<width>980</width>
+		        		<height>360</height>
+		        		<label>$VAR[CriticConsensus]</label>
+		        		<include>AutoscrollDefault</include>
+		        	</control>
+		        </control>
 			</control>
 		</control>
 		<control type="group">

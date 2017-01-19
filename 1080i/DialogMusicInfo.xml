@@ -103,7 +103,6 @@
 				<onleft condition="Container(9000).HasFocus(207)">150</onleft>
 				<onleft condition="Container(9000).HasFocus(202)">250</onleft>
 				<onleft condition="Container(9000).HasFocus(206)">350</onleft>
-				<!--<onleft condition="Container(9000).HasFocus(213)">350</onleft>-->
 				<onleft condition="Control.IsVisible(400) + [Container(400).HasNext | Container(400).HasPrevious]">60</onleft>
 				<ondown>9000</ondown>
 				<onup>9000</onup>
@@ -188,22 +187,26 @@
 		            	<description>Get Thumb</description>
 		                <icon>DefaultAddonImages.png</icon>
 		                <onclick>SendClick(10)</onclick>
+		                <visible>Control.IsEnabled(10)</visible>
 		            </item>
 		            <item id="210">
 		            	<description>Get Fanart</description>
 		                <icon>special://skin/extras/icons/fanarts.png</icon>
 		                <onclick>SendClick(12)</onclick>
+		                <visible>Control.IsEnabled(12)</visible>
 		            </item>	            	
 
 		            <item id="211">
 		            	<description>User Rating</description>
 		                <icon>DefaultIconFavourite.png</icon>
 		                <onclick>SendClick(7)</onclick>
+		                <visible>Control.IsEnabled(7)</visible>
 		            </item>
 		            <item id="212">
 		            	<description>Refresh</description>
 		                <icon>DefaultAddonsUpdates.png</icon>
 		                <onclick>SendClick(6)</onclick>
+		                <visible>Control.IsEnabled(6)</visible>
 		            </item>
 				</content>
     		</control>

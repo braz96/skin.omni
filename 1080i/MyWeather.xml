@@ -327,7 +327,6 @@
 				<left>2350</left>
 				<include>SideBladeRight</include>
 				<control type="grouplist" id="9050">
-					<visible allowhiddenfocus="true">!Window.IsVisible(1134) + !Control.HasFocus(9013) + !Control.HasFocus(9014)</visible>
 					<animation effect="slide" start="-630,0" end="0,0" time="400" tween="quadratic" easing="out">Visible</animation>
 					<left>0</left>
 					<top>0</top>

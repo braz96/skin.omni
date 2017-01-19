@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<variable name="GlobalBackgroundVar">
-		<value condition="!String.IsEmpty(Container.ListItem.Art(fanart)) + !Skin.HasSetting(Disable.Fanart)">$INFO[Container.ListItem.Art(fanart)]</value>
+		<value condition="!String.IsEmpty(Container.ListItem.Art(fanart))">$INFO[Container.ListItem.Art(fanart)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="!String.IsEmpty(Container.Art(set.fanart))">$INFO[Container.Art(set.fanart)]</value>
 		<value condition="!String.IsEmpty(Container.Art(artist.fanart))">$INFO[Container.Art(artist.fanart)]</value>
 		<value condition="!String.IsEmpty(Container.Art(tvshow.fanart))">$INFO[Container.Art(tvshow.fanart)]</value>
@@ -573,42 +574,6 @@
 		<value condition="String.IsEqual(ListItem.DBTYPE,tvshow)">plugin://script.extendedinfo?info=youtubesearchvideos&amp;&amp;id=$ESCINFO[ListItem.Title] $LOCALIZE[20364]</value>
 		<value condition="String.IsEqual(ListItem.DBTYPE,episode)">plugin://script.extendedinfo?info=youtubesearchvideos&amp;&amp;id=$ESCINFO[ListItem.TVShowTitle] $LOCALIZE[20364]</value>
 		<value>plugin://script.extendedinfo?info=youtubesearchvideos&amp;&amp;id=$ESCINFO[ListItem.Label]</value>
-	</variable>
-	<variable name="StarRatingVar">
-		<value condition="!String.IsEmpty(ListItem.UserRating) + Integer.IsLessOrEqual(ListItem.UserRating,0)">starrating/0.png</value>
-		<value condition="!String.IsEmpty(ListItem.UserRating) + Integer.IsEqual(ListItem.UserRating,1)">starrating/1.png</value>
-		<value condition="!String.IsEmpty(ListItem.UserRating) + Integer.IsEqual(ListItem.UserRating,2)">starrating/2.png</value>
-		<value condition="!String.IsEmpty(ListItem.UserRating) + Integer.IsEqual(ListItem.UserRating,3)">starrating/3.png</value>
-		<value condition="!String.IsEmpty(ListItem.UserRating) + Integer.IsEqual(ListItem.UserRating,4)">starrating/4.png</value>
-		<value condition="!String.IsEmpty(ListItem.UserRating) + Integer.IsEqual(ListItem.UserRating,5)">starrating/5.png</value>
-		<value condition="!String.IsEmpty(ListItem.UserRating) + Integer.IsEqual(ListItem.UserRating,6)">starrating/6.png</value>
-		<value condition="!String.IsEmpty(ListItem.UserRating) + Integer.IsEqual(ListItem.UserRating,7)">starrating/7.png</value>
-		<value condition="!String.IsEmpty(ListItem.UserRating) + Integer.IsEqual(ListItem.UserRating,8)">starrating/8.png</value>
-		<value condition="!String.IsEmpty(ListItem.UserRating) + Integer.IsEqual(ListItem.UserRating,9)">starrating/9.png</value>
-		<value condition="!String.IsEmpty(ListItem.UserRating) + Integer.IsEqual(ListItem.UserRating,10)">starrating/10.png</value>
-		<value condition="Window.IsActive(videos) + Integer.IsLessOrEqual(ListItem.Rating,0)">starrating/0.png</value>
-		<value condition="Window.IsActive(videos) + Integer.IsLessOrEqual(ListItem.Rating,1)">starrating/1.png</value>
-		<value condition="Window.IsActive(videos) + Integer.IsLessOrEqual(ListItem.Rating,2)">starrating/2.png</value>
-		<value condition="Window.IsActive(videos) + Integer.IsLessOrEqual(ListItem.Rating,3)">starrating/3.png</value>
-		<value condition="Window.IsActive(videos) + Integer.IsLessOrEqual(ListItem.Rating,4)">starrating/4.png</value>
-		<value condition="Window.IsActive(videos) + Integer.IsLessOrEqual(ListItem.Rating,5)">starrating/5.png</value>
-		<value condition="Window.IsActive(videos) + Integer.IsLessOrEqual(ListItem.Rating,6)">starrating/6.png</value>
-		<value condition="Window.IsActive(videos) + Integer.IsLessOrEqual(ListItem.Rating,7)">starrating/7.png</value>
-		<value condition="Window.IsActive(videos) + Integer.IsLessOrEqual(ListItem.Rating,8)">starrating/8.png</value>
-		<value condition="Window.IsActive(videos) + Integer.IsLessOrEqual(ListItem.Rating,9)">starrating/9.png</value>
-		<value condition="Window.IsActive(videos) + Integer.IsLessOrEqual(ListItem.Rating,10)">starrating/10.png</value>
-		<value condition="Window.IsActive(music) + Integer.IsLessOrEqual(ListItem.Rating,0)">starrating/0.png</value>
-		<value condition="Window.IsActive(music) + Integer.IsLess(ListItem.Rating,1)">starrating/1.png</value>
-		<value condition="Window.IsActive(music) + Integer.IsEqual(ListItem.Rating,1)">starrating/2.png</value>
-		<value condition="Window.IsActive(music) + Integer.IsLess(ListItem.Rating,2)">starrating/3.png</value>
-		<value condition="Window.IsActive(music) + Integer.IsEqual(ListItem.Rating,2)">starrating/4.png</value>
-		<value condition="Window.IsActive(music) + Integer.IsLess(ListItem.Rating,3)">starrating/5.png</value>
-		<value condition="Window.IsActive(music) + Integer.IsEqual(ListItem.Rating,3)">starrating/6.png</value>
-		<value condition="Window.IsActive(music) + Integer.IsLess(ListItem.Rating,4)">starrating/7.png</value>
-		<value condition="Window.IsActive(music) + Integer.IsEqual(ListItem.Rating,4)">starrating/8.png</value>
-		<value condition="Window.IsActive(music) + Integer.IsLess(ListItem.Rating,5)">starrating/9.png</value>
-		<value condition="Window.IsActive(music) + Integer.IsEqual(ListItem.Rating,5)">starrating/10.png</value>
-
 	</variable>
 	<variable name="StarRatingPlayerVar">
 		<value condition="String.IsEmpty(MusicPlayer.UserRating) | Integer.IsLess(MusicPlayer.UserRating,1)">starrating/0.png</value>

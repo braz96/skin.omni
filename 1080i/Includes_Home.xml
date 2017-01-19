@@ -54,10 +54,11 @@
 			<animation effect="slide" start="1920,0" end="0,0" delay="300" time="240" condition="!window.previous(startup)">WindowOpen</animation>
 			<animation effect="slide" start="1920" end="0" time="240">VisibleChange</animation>
 			<animation effect="slide" start="1920,0" end="0,0" delay="800" time="480" condition="window.previous(startup)">WindowOpen</animation>
+			<left>555</left>
 			<top>1035</top>
 			<control type="group">
 				<control type="label">
-					<left>1885</left>
+					<left>1755</left>
 					<width>40</width>
 					<height>40</height>
 					<label>y</label>
@@ -68,7 +69,7 @@
 					<description>RSS feed</description>
 					<left>15</left>
 					<height>30</height>
-					<width>1853</width>
+					<width>1733</width>
 					<font>font12</font>
 					<urlset>1</urlset>
 					<textcolor>$VAR[ColorHighlightVar]</textcolor>
