@@ -116,12 +116,14 @@
 			<animation effect="slide" tween="cubic" time="500" end="0,400" start="0,0">Hidden</animation>
 			<include>WindowSlideAnimation</include>
 			<control type="image">
-				<top>-14</top>
-				<left>-16</left>
-				<width>1952</width>
-				<height>392</height>
-				<texture border="16">dialog_context.png</texture>
-				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
+				<width>1920</width>
+				<height>340</height>
+				<texture colordiffuse="$VAR[ColorBackgroundVar]">$VAR[CommonBackgroundOverlay]</texture>
+			</control>
+			<control type="image">
+				<width>1920</width>
+				<height>340</height>
+				<texture colordiffuse="$VAR[ColorBackgroundVar]">menu.png</texture>
 			</control>
 			<control type="image">
 				<left>1590</left>
@@ -139,24 +141,24 @@
 				<texture colordiffuse="$VAR[ColorTextVar]">$INFO[MusicPlayer.Codec,flags/audio/,.png]</texture>
 			</control>
 			<control type="progress">
-				<left>345</left>
+				<left>375</left>
 				<top>275</top>
-				<width>1543</width>
+				<width>1510</width>
 				<height>35</height>
 				<info>Player.Progress</info>
 			</control>
 			<control type="label">
 				<top>274</top>
-				<left>355</left>
-				<width>900</width>
+				<left>385</left>
+				<width>1490</width>
 				<height>35</height>
 				<font>font12</font>
 				<label>$INFO[Player.Time]</label>
 			</control>
 			<control type="label">
 				<top>274</top>
-				<left>978</left>
-				<width>900</width>
+				<left>385</left>
+				<width>1490</width>
 				<height>35</height>
 				<font>font12</font>
 				<align>right</align>
@@ -164,22 +166,22 @@
 			</control>
 			<control type="label">
 				<top>274</top>
-				<left>345</left>
-				<width>1543</width>
+				<left>385</left>
+				<width>1490</width>
 				<height>35</height>
 				<font>font12</font>
 				<align>center</align>
 				<label>$VAR[MusicSeekLabelVar]</label>
 			</control>
 			<control type="grouplist">
-				<left>345</left>
-				<top>15</top>
+				<left>372</left>
+				<top>25</top>
 				<width>1300</width>
 				<height>460</height>
 				<itemgap>10</itemgap>
 				<control type="label">
 					<width>1300</width>
-					<height>60</height>
+					<height>50</height>
 					<font>font36</font>
 					<label>$INFO[MusicPlayer.TrackNumber,,. ]$INFO[Player.Title]</label>
 					<scroll>true</scroll>
@@ -206,22 +208,23 @@
 				</control>
 			</control>
 			<control type="group">
-				<left>31</left>
-				<top>30</top>
+				<left>0</left>
+				<top>0</top>
 				<control type="image">
 					<description>Cover image</description>
-					<width>280</width>
-					<height>280</height>
+					<width>340</width>
+					<height>340</height>
 					<aspectratio align="center" aligny="center">scale</aspectratio>
 					<texture fallback="DefaultAlbumCover.png">$INFO[Player.Art(thumb)]</texture>
 				</control>
 			</control>
 			<control type="grouplist">
-				<left>1050</left>
+				<left>385</left>
 				<top>267</top>
-				<width>748</width>
+				<width>1490</width>
 				<height>150</height>
 				<itemgap>10</itemgap>
+				<align>center</align>
 				<orientation>horizontal</orientation>
 				<include>VisibleFadeEffect</include>
 				<visible>Player.Forwarding | Player.Rewinding</visible>
@@ -255,21 +258,23 @@
 		</control>
 		<!-- Artist bio -->
 		<control type="group">
-			<animation effect="slide" end="0,-198" time="240" condition="Window.Next(home)">WindowClose</animation>
-			<animation effect="slide" start="0,-198" end="0,0" time="240">VisibleChange</animation>
-			<animation effect="slide" start="0,-198" end="0,0" time="400" condition="Window.Previous(home)">WindowOpen</animation>
+			<animation effect="slide" end="0,-195" time="240" condition="Window.Next(home)">WindowClose</animation>
+			<animation effect="slide" start="0,-195" end="0,0" time="240">VisibleChange</animation>
+			<animation effect="slide" start="0,-195" end="0,0" time="400" condition="Window.Previous(home)">WindowOpen</animation>
 			<visible>!Window.IsActive(MusicOSD) + !Window.IsActive(1120) + !Window.IsActive(script-cu-lrclyrics-main.xml)</visible>
 			<visible>System.HasAddon(script.artistslideshow) + !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.ArtistBiography))</visible>
 			<visible>[Player.ShowInfo + Skin.HasSetting(Enable.VizInfo)] | Skin.HasSetting(Enable.VizPersistent)</visible>
 			<top>0</top>
 			<control type="group">
 				<control type="image">
-					<top>-16</top>
-					<left>-16</left>
-					<width>1952</width>
-					<height>214</height>
-					<texture border="16">dialog_context.png</texture>
-					<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
+					<width>1920</width>
+					<height>195</height>
+					<texture colordiffuse="$VAR[ColorBackgroundVar]">$VAR[CommonBackgroundOverlay]</texture>
+				</control>
+				<control type="image">
+					<width>1920</width>
+					<height>195</height>
+					<texture colordiffuse="$VAR[ColorBackgroundVar]">menu.png</texture>
 				</control>
 				<control type="textbox">
 					<description>Artist bio</description>

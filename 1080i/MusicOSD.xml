@@ -23,12 +23,18 @@
 			<animation effect="slide" start="0,-120" end="0,0" time="240" tween="quadratic">WindowOpen</animation>
 			<animation effect="slide" end="0,-120" start="0,0" time="240" tween="quadratic">WindowClose</animation>
 			<control type="image">
-				<top>-16</top>
-				<left>-16</left>
-				<width>1952</width>
-				<height>138</height>
-				<texture border="16">dialog_context.png</texture>
-				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
+				<top>0</top>
+				<left>0</left>
+				<width>1920</width>
+				<height>110</height>
+				<texture colordiffuse="$VAR[ColorBackgroundVar]">$VAR[CommonBackgroundOverlay]</texture>
+			</control>
+			<control type="image">
+				<top>0</top>
+				<left>0</left>
+				<width>1920</width>
+				<height>110</height>
+				<texture colordiffuse="$VAR[ColorBackgroundVar]">menu.png</texture>
 			</control>
 			<control type="grouplist" id="202">
 				<top>20</top>

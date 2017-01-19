@@ -8,12 +8,14 @@
 			<visible>!Window.IsActive(videoosd)</visible>
 			<top>0</top>
 			<control type="image">
-				<top>-16</top>
-				<left>-16</left>
-				<width>1952</width>
-				<height>138</height>
-				<texture border="16">dialog_context.png</texture>
-				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
+				<width>1920</width>
+				<height>110</height>
+				<texture colordiffuse="$VAR[ColorBackgroundVar]">$VAR[CommonBackgroundOverlay]</texture>
+			</control>
+			<control type="image">
+				<width>1920</width>
+				<height>110</height>
+				<texture colordiffuse="$VAR[ColorBackgroundVar]">menu.png</texture>
 			</control>
 			<control type="grouplist">
 				<left>0</left>
@@ -90,12 +92,14 @@
 			<visible>![VideoPlayer.Content(livetv) | VideoPlayer.Content(musicvideos)]</visible>
 			<visible>!Window.IsActive(videoosd)</visible>
 			<control type="image">
-				<top>-14</top>
-				<left>-16</left>
-				<width>1952</width>
-				<height>432</height>
-				<texture border="16">dialog_context.png</texture>
-				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
+				<width>1920</width>
+				<height>400</height>
+				<texture colordiffuse="$VAR[ColorBackgroundVar]">$VAR[CommonBackgroundOverlay]</texture>
+			</control>
+			<control type="image">
+				<width>1920</width>
+				<height>400</height>
+				<texture colordiffuse="$VAR[ColorBackgroundVar]">menu.png</texture>
 			</control>
 			<control type="image">
 				<left>30</left>
@@ -199,12 +203,14 @@
 			<visible>VideoPlayer.Content(livetv) | VideoPlayer.Content(musicvideos)</visible>
 			<visible>!Window.IsActive(videoosd)</visible>
 			<control type="image">
-				<top>-16</top>
-				<left>-16</left>
-				<width>1952</width>
-				<height>332</height>
-				<texture border="16">dialog_context.png</texture>
-				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
+				<width>1920</width>
+				<height>300</height>
+				<texture colordiffuse="$VAR[ColorBackgroundVar]">$VAR[CommonBackgroundOverlay]</texture>
+			</control>
+			<control type="image">
+				<width>1920</width>
+				<height>300</height>
+				<texture colordiffuse="$VAR[ColorBackgroundVar]">menu.png</texture>
 			</control>
 			<control type="image">
 				<left>30</left>
