@@ -403,7 +403,7 @@
 						<top>5</top>
 						<width>305</width>
 						<height>70</height>
-						<texture colordiffuse="33787878">listselect_fo.png</texture>
+						<texture colordiffuse="33787878">selecteditem_bg.png</texture>
 					</control>
 					<control type="label">
 						<top>5</top>
@@ -421,7 +421,7 @@
 						<top>5</top>
 						<width>305</width>
 						<height>70</height>
-						<texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+						<texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
 						<visible>Control.HasFocus(5000)</visible>
 					</control>
 					<control type="label">
@@ -690,7 +690,7 @@
             <control type="image">
                 <width>100%</width>
                 <height>100%</height>
-                <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+                <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
             </control>
             <control type="image">
                 <top>10</top>

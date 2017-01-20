@@ -110,7 +110,7 @@
 						<control type="image">
 							<width>356</width>
 							<height>90</height>
-							<texture>listselect_fo.png</texture>
+							<texture>selecteditem_bg.png</texture>
 							<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
@@ -119,7 +119,7 @@
 							<left>430</left>
 							<width>1210</width>
 							<height>90</height>
-							<texture>listselect_fo.png</texture>
+							<texture>selecteditem_bg.png</texture>
 							<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>

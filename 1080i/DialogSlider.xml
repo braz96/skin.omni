@@ -43,9 +43,9 @@
 				<aligny>center</aligny>
 				<texturefocus />
 				<texturenofocus />
-				<texturesliderbar>osd_slider_bg_2.png</texturesliderbar>
-				<textureslidernib>osd_slider_nibNF.png</textureslidernib>
-				<textureslidernibfocus>osd_slider_nib.png</textureslidernibfocus>
+				<texturesliderbar>osd/slider_bg.png</texturesliderbar>
+				<textureslidernib>osd/slider_nib_nf.png</textureslidernib>
+				<textureslidernibfocus>osd/slider_nib_fo.png</textureslidernibfocus>
 				<onup>11</onup>
 				<ondown>11</ondown>
 				<onleft>11</onleft>

@@ -24,7 +24,7 @@
                 <height>234</height>
                 <animation effect="fade" time="320" delay="200">Visible</animation>
                 <animation effect="fade" time="200">Hidden</animation>
-                <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+                <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
                 <animation effect="slide" end="0,222" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(11).Row,1)">Conditional</animation>
                 <animation effect="slide" end="0,222" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(11).Row,0)">Conditional</animation>
                 <animation effect="slide" end="374,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(11).Column,1)">Conditional</animation>
@@ -65,7 +65,7 @@
                     <left>6</left>
                     <width>362</width>
                     <height>50</height>
-                    <texture colordiffuse="BB000000">diffuse/actor-label.png</texture>
+                    <texture colordiffuse="BB000000">overlays/actor-label.png</texture>
                 </control>
                 <control type="label">
                     <left>16</left>
@@ -101,7 +101,7 @@
                         <left>6</left>
                         <width>362</width>
                         <height>50</height>
-                        <texture colordiffuse="BB000000">diffuse/actor-label.png</texture>
+                        <texture colordiffuse="BB000000">overlays/actor-label.png</texture>
                     </control>
                     <control type="label">
                         <left>16</left>

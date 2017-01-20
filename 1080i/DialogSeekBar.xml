@@ -42,8 +42,8 @@
 				<controloffsetx>75</controloffsetx>
 				<controloffsety>0</controloffsety>
 				<texturesliderbar>blank.png</texturesliderbar>
-				<textureslidernib>osd/SeekbarNib.png</textureslidernib>
-				<textureslidernibfocus>osd/SeekbarNib.png</textureslidernibfocus>
+				<textureslidernib>osd/seekbar_nib.png</textureslidernib>
+				<textureslidernibfocus>osd/seekbar_nib.png</textureslidernibfocus>
 			</control>
 			<control type="label">
 				<top>29</top>
@@ -155,8 +155,8 @@
 				<controloffsetx>75</controloffsetx>
 				<controloffsety>0</controloffsety>
 				<texturesliderbar>blank.png</texturesliderbar>
-				<textureslidernib>osd/SeekbarNib.png</textureslidernib>
-				<textureslidernibfocus>osd/SeekbarNib.png</textureslidernibfocus>
+				<textureslidernib>osd/seekbar_nib.png</textureslidernib>
+				<textureslidernibfocus>osd/seekbar_nib.png</textureslidernibfocus>
 			</control>
 			<control type="label">
 				<top>233</top>

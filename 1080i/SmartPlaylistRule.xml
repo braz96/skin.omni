@@ -137,7 +137,7 @@
 				<label>186</label>
 				<font>font15_title</font>
 				<align>center</align>
-				<texturenofocus colordiffuse="33787878">listselect_fo.png</texturenofocus>
+				<texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
 			</control>
 			<control type="button" id="19">
 				<description>Cancel button</description>
@@ -145,7 +145,7 @@
 				<label>222</label>
 				<font>font15_title</font>
 				<align>center</align>
-				<texturenofocus colordiffuse="33787878">listselect_fo.png</texturenofocus>
+				<texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
 			</control>
 		</control>
 	</controls>

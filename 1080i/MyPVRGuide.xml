@@ -37,7 +37,7 @@
 					<pagecontrol>60</pagecontrol>
 					<scrolltime tween="quadratic" easing="out">200</scrolltime>
 					<timeblocks>20</timeblocks>
-					<progresstexture colordiffuse="$VAR[ColorHighlightVar]" border="0,72,18,14">PVR-EpgProgressIndicator.png</progresstexture>
+					<progresstexture colordiffuse="$VAR[ColorHighlightVar]" border="0,72,18,14">osd/epg_progress.png</progresstexture>
 					<rulerunit>6</rulerunit>
 					<onleft>9000</onleft>
 					<onright>SetProperty(MediaMenu,True,home)</onright>
@@ -81,7 +81,7 @@
 							<animation effect="fade" start="100" end="60" time="300" condition="!Control.HasFocus(10)">Conditional</animation>
 							<width>356</width>
 							<height>90</height>
-							<texture>listselect_fo.png</texture> 
+							<texture>selecteditem_bg.png</texture> 
 							<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
 							<bordersize>0,3,0,3</bordersize>
 						</control>
@@ -143,7 +143,7 @@
 						<control type="image" id="14">
 							<width>120</width>
 							<height>90</height>
-							<texture>listselect_fo.png</texture>
+							<texture>selecteditem_bg.png</texture>
 							<bordersize>3</bordersize>
 							<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
 						</control>

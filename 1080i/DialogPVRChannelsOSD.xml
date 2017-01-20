@@ -34,7 +34,7 @@
                     <visible>Control.HasFocus(11)</visible>
                     <animation effect="fade" time="320" delay="200">Visible</animation>
                     <animation effect="fade" time="50">Hidden</animation>
-                    <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+                    <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
                     <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(11).Row,8)">Conditional</animation>
                     <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(11).Row,7)">Conditional</animation>
                     <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(11).Row,6)">Conditional</animation>
@@ -63,7 +63,7 @@
 						<left>15</left>
 						<top>10</top>
 						<width>170</width>
-						<height>96</height>
+						<height>100</height>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
 						<texture background="true" fallback="DefaultTVShows.png">$INFO[ListItem.Icon]</texture>
 					</control>
@@ -118,7 +118,7 @@
 						<left>15</left>
 						<top>10</top>
 						<width>170</width>
-						<height>96</height>
+						<height>100</height>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
 						<texture background="true" fallback="DefaultTVShows.png">$INFO[ListItem.Icon]</texture>
 					</control>

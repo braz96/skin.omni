@@ -36,7 +36,7 @@
                 <width>100%</width>
                 <height>64</height>
                 <aspectratio>scale</aspectratio>
-                <texture colordiffuse="BB000000">diffuse/actor-label.png</texture>
+                <texture colordiffuse="BB000000">overlays/actor-label.png</texture>
             </control>
 
             <control type="image">

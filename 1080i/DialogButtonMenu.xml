@@ -224,7 +224,7 @@
 				<description>Master mode button</description>
 				<texturenofocus />
 				<usealttexture>!System.IsMaster</usealttexture>
-				<alttexturefocus>listselect_fo.png</alttexturefocus>
+				<alttexturefocus>selecteditem_bg.png</alttexturefocus>
 				<alttexturenofocus />
 				<onclick>mastermode</onclick>
 				<label>20046</label>

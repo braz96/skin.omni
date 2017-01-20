@@ -78,7 +78,7 @@
 		                    <animation effect="fade" start="100" end="60" time="300" condition="!Control.HasFocus(9020)">Conditional</animation>
 		                    <animation effect="fade" time="320" delay="200">Visible</animation>
 		                    <animation effect="fade" time="50">Hidden</animation>
-		                    <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+		                    <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
 		                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9020).Row,5)">Conditional</animation>
 		                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9020).Row,4)">Conditional</animation>
 		                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9020).Row,3)">Conditional</animation>
@@ -289,7 +289,7 @@
 			                <control type="image">
 			                    <width>1100</width>
 			                    <height>120</height>
-			                    <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+			                    <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(221).Row,5)">Conditional</animation>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(221).Row,4)">Conditional</animation>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(221).Row,3)">Conditional</animation>
@@ -318,7 +318,7 @@
 			                <control type="image">
 			                    <width>1100</width>
 			                    <height>120</height>
-			                    <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+			                    <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(111).Row,5)">Conditional</animation>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(111).Row,4)">Conditional</animation>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(111).Row,3)">Conditional</animation>
@@ -347,7 +347,7 @@
 			                <control type="image">
 			                    <width>1100</width>
 			                    <height>120</height>
-			                    <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+			                    <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(121).Row,5)">Conditional</animation>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(121).Row,4)">Conditional</animation>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(121).Row,3)">Conditional</animation>
@@ -376,7 +376,7 @@
 			                <control type="image">
 			                    <width>1100</width>
 			                    <height>120</height>
-			                    <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+			                    <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(131).Row,5)">Conditional</animation>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(131).Row,4)">Conditional</animation>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(131).Row,3)">Conditional</animation>
@@ -405,7 +405,7 @@
 			                <control type="image">
 			                    <width>1100</width>
 			                    <height>120</height>
-			                    <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+			                    <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(141).Row,5)">Conditional</animation>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(141).Row,4)">Conditional</animation>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(141).Row,3)">Conditional</animation>
@@ -434,7 +434,7 @@
 			                <control type="image">
 			                    <width>1100</width>
 			                    <height>120</height>
-			                    <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+			                    <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(211).Row,5)">Conditional</animation>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(211).Row,4)">Conditional</animation>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(211).Row,3)">Conditional</animation>
@@ -463,7 +463,7 @@
 			                <control type="image">
 			                    <width>1100</width>
 			                    <height>120</height>
-			                    <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+			                    <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(231).Row,5)">Conditional</animation>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(231).Row,4)">Conditional</animation>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(231).Row,3)">Conditional</animation>
@@ -492,7 +492,7 @@
 			                <control type="image">
 			                    <width>1100</width>
 			                    <height>120</height>
-			                    <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+			                    <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(151).Row,5)">Conditional</animation>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(151).Row,4)">Conditional</animation>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(151).Row,3)">Conditional</animation>
@@ -521,7 +521,7 @@
 			                <control type="image">
 			                    <width>1100</width>
 			                    <height>120</height>
-			                    <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+			                    <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(161).Row,5)">Conditional</animation>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(161).Row,4)">Conditional</animation>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(161).Row,3)">Conditional</animation>
@@ -550,7 +550,7 @@
 			                <control type="image">
 			                    <width>1100</width>
 			                    <height>120</height>
-			                    <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+			                    <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(171).Row,5)">Conditional</animation>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(171).Row,4)">Conditional</animation>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(171).Row,3)">Conditional</animation>
@@ -579,7 +579,7 @@
 			                <control type="image">
 			                    <width>1100</width>
 			                    <height>120</height>
-			                    <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+			                    <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(181).Row,5)">Conditional</animation>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(181).Row,4)">Conditional</animation>
 			                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(181).Row,3)">Conditional</animation>

@@ -27,7 +27,7 @@
 		<align>center</align>
 		<font>font12_title</font>
 		<textoffsetx>10</textoffsetx>
-		<texturenofocus colordiffuse="33787878">listselect_fo.png</texturenofocus>
+		<texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
 	</include>
 	<!-- KeyBoard -->
 	<include name="Objects_KeyOffVars">
@@ -35,8 +35,8 @@
 		<align>center</align>
 		<font>font15</font>
 		<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
-		<texturenofocus colordiffuse="33787878">listselect_fo.png</texturenofocus>
-		<alttexturenofocus colordiffuse="33ffffff">listselect_fo.png</alttexturenofocus>
+		<texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
+		<alttexturenofocus colordiffuse="33ffffff">selecteditem_bg.png</alttexturenofocus>
 	</include>
 	<include name="Objects_DoubleKeyOff">
 		<left>-123</left>
