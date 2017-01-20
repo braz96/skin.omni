@@ -99,7 +99,7 @@
                     <visible>Control.HasFocus(2)</visible>
                     <height>30</height>
                     <top>-52</top>
-                    <left>242</left>
+                    <left>255</left>
                     <control type="label">
                         <visible>Container(2).HasPrevious</visible>
                         <width>30</width>
@@ -123,9 +123,9 @@
     			
     			<control type="grouplist" id="9020">
     				<description>control area</description>
-    				<left>522</left>
-    				<top>10</top>
-    				<width>1316</width>
+    				<left>555</left>
+    				<top>20</top>
+    				<width>1130</width>
     				<height>720</height>
     				<itemgap>0</itemgap>
     				<pagecontrol />
@@ -136,7 +136,7 @@
     				<control type="radiobutton" id="4">
     					<description>Enable Login screen</description>
     					<label>20096</label>
-    					<width>1316</width>
+    					<width>1130</width>
     					<height>90</height>
     					<font>font15</font>
     					<textoffsetx>30</textoffsetx>
@@ -145,7 +145,7 @@
     					<description>Auto Login</description>
     					<label>$LOCALIZE[33084]</label>
     					<label2>$INFO[System.ProfileAutoLogin]</label2>
-    					<width>1316</width>
+    					<width>1130</width>
     					<height>90</height>
     					<font>font15</font>
     					<textoffsetx>30</textoffsetx>
@@ -153,8 +153,8 @@
     				</control>
     			</control>
     			<control type="group">
-    				<left>600</left>
-    				<top>670</top>
+    				<left>585</left>
+    				<top>660</top>
     				<control type="image">
     					<left>1000</left>
     					<width>100</width>

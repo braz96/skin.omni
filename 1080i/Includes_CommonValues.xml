@@ -35,7 +35,7 @@
 		<align>center</align>
 		<font>font15</font>
 		<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
-		<texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
+		<texturenofocus colordiffuse="11ffffff">selecteditem_bg.png</texturenofocus>
 		<alttexturenofocus colordiffuse="33ffffff">selecteditem_bg.png</alttexturenofocus>
 	</include>
 	<include name="Objects_DoubleKeyOff">
