@@ -74,10 +74,6 @@
 						<description>Open Addon button</description>
 						<include>HiddenObject</include>
 					</control>
-					<!--<control type="radiobutton" id="13">
-						<description>Auto update button</description>
-						<include>HiddenObject</include>
-					</control>-->
 	            </control>
 	            <control type="image">
 	            	<left>1080</left>
@@ -109,8 +105,8 @@
 					<height>1080</height>
 					<onleft condition="Container(9000).HasFocus(203)">50</onleft>
 					<onleft condition="Control.IsVisible(400) + [Container(400).HasNext | Container(400).HasPrevious]">60</onleft>
-					<onright>SetProperty(MediaMenu,True,home)</onright>
-					<onright>SetFocus(9050)</onright>
+					<onright condition="Control.IsEnabled(13)">SetProperty(MediaMenu,True,home)</onright>
+					<onright condition="Control.IsEnabled(13)">SetFocus(9050)</onright>
 					<ondown>9000</ondown>
 					<onup>9000</onup>
 					<scrolltime tween="quadratic" easing="out">300</scrolltime>
@@ -158,8 +154,7 @@
 							<description>Install Addon</description>
 			                <icon>special://skin/extras/icons/download.png</icon>
 			                <onclick>SendClick(6)</onclick>
-			                <!--<enable>Control.IsEnabled(6)</enable>-->
-			                <visible>Control.IsEnabled(6) + String.IsEmpty(ListItem.Property(Addon.IsInstalled))</visible>
+			                <visible>Control.IsEnabled(6) + String.IsEqual(Control.GetLabel(6),$LOCALIZE[24038])</visible>
 			            </item>
 			            <item id="201">
 			            	<description>Configure</description>
@@ -202,7 +197,7 @@
 			            	<description>Uninstall</description>
 			                <icon>special://skin/extras/icons/trash.png</icon>
 			                <onclick>SendClick(6)</onclick>
-			                <visible>Control.IsEnabled(6) + !String.IsEmpty(ListItem.Property(Addon.IsInstalled))</visible>
+			                <visible>Control.IsEnabled(6) + String.IsEqual(Control.GetLabel(6),$LOCALIZE[24037])</visible>
 			            </item>
 			            <!--<item id="208">
 			            	<description>Auto Updates On</description>

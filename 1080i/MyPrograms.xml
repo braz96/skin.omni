@@ -7,7 +7,7 @@
 	<onload>ClearProperty(MediaMenu,Home)</onload>
 	<onunload>ClearProperty(MediaMenu,Home)</onunload>
 	<onunload>ClearProperty(Window.HasSettings,Home)</onunload>
-	<views>50,500,57</views>
+	<views>50,500</views>
 	<controls>
 		<include>CommonBackground</include>
 		<control type="group">
@@ -21,8 +21,6 @@
 			<!-- view id = 50 -->
 			<include>View_500_Wall</include>
 			<!-- view id = 500 -->
-			<include>View_57_Shift</include>
-			<!-- view id = 57 -->
 			<include>Submenu</include>
             <include>MainMenu</include>
 			<include>Topbar</include>

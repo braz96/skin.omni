@@ -42,6 +42,7 @@
 					<onright condition="Window.IsActive(profiles)">2</onright>
 					<onright condition="Window.IsActive(filemanager)">20</onright>
 					<onright condition="Window.IsActive(tvguide)">10</onright>
+					<onright condition="Window.IsActive(script-script.extendedinfo-YoutubeList.xml)">SetFocus(500)</onright>
 					<onleft>9010</onleft>
 					<ondown>9000</ondown>
 					<onup>9000</onup>

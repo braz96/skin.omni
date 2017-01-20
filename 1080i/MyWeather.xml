@@ -143,7 +143,6 @@
 			        <scrolltime tween="quadratic" easing="out">300</scrolltime>
 			        <orientation>horizontal</orientation>
 			        <itemlayout height="445" width="405">
-			            <!--<include>ThumbnailItemBackground</include>-->
 			            <control type="image">
 			                <visible>!String.IsEmpty(Skin.String(weatherfanart.path))</visible>
 			                <top>20</top>

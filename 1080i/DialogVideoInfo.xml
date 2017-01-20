@@ -180,7 +180,7 @@
 		            <item id="213">
 		                <icon>special://skin/extras/icons/splat.png</icon>
 		                <onclick>noop</onclick>
-		                <visible>$EXP[isMovie]</visible>
+		                <visible>$EXP[isMovie] + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Meter))</visible>
 		            </item>
 		            <item id="202">
 		                <icon>DefaultVideo.png</icon>

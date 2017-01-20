@@ -75,18 +75,13 @@
 							<onclick>noop</onclick>
 							<icon />
 						</item>
-						<item id="4">
-							<label>16000</label>
-							<onclick>noop</onclick>
-							<icon />
-						</item>
 						<item id="5">
 							<label>31009</label>
 							<onclick>noop</onclick>
 							<icon />
 						</item>
 						<item id="6">
-							<label>31014</label>
+							<label>31026</label>
 							<onclick>noop</onclick>
 							<icon />
 						</item>
@@ -316,13 +311,6 @@
 			                    <onclick condition="System.HasAddon(script.skin.helper.service)">Addon.OpenSettings(script.skin.helper.service)</onclick>
 			                    <onclick condition="!System.HasAddon(script.skin.helper.service)">InstallAddon(script.skin.helper.service)</onclick>
 				            </item>
-				            <item id="20">
-								<icon>$INFO[System.AddonIcon(script.skin.helper.backgrounds)]</icon>
-								<label>31230</label>
-			                    <label2>$INFO[System.AddonVersion(script.skin.helper.backgrounds)]</label2>
-			                    <onclick condition="System.HasAddon(script.skin.helper.backgrounds)">Addon.OpenSettings(script.skin.helper.backgrounds)</onclick>
-			                    <onclick condition="!System.HasAddon(script.skin.helper.backgrounds)">InstallAddon(script.skin.helper.backgrounds)</onclick>
-				            </item>
 				            <item id="16">
 								<icon>$INFO[System.AddonIcon(script.skin.helper.colorpicker)]</icon>
 								<label>31074</label>
@@ -371,13 +359,6 @@
 			                    <label2>$INFO[System.AddonVersion(script.toolbox)]</label2>
 			                    <onclick condition="System.HasAddon(script.toolbox)">Addon.OpenSettings(script.toolbox)</onclick>
 			                    <onclick condition="!System.HasAddon(script.toolbox)">InstallAddon(script.toolbox)</onclick>
-				            </item>
-				            <item id="15">
-								<icon>$INFO[System.AddonIcon(context.youtube.browser)]</icon>
-								<label>31132</label>
-			                    <label2>$INFO[System.AddonVersion(context.youtube.browser)]</label2>
-			                    <onclick condition="System.HasAddon(context.youtube.browser)">Addon.OpenSettings(context.youtube.browser)</onclick>
-			                    <onclick condition="!System.HasAddon(context.youtube.browser)">InstallAddon(context.youtube.browser)</onclick>
 				            </item>
 						</content>
 					</control>
@@ -430,7 +411,7 @@
 							<selected>!Skin.HasSetting(Disable.ShowBackgroundVis)</selected>
 						</control>
 					</control>
-					<control type="grouplist" id="9002">
+					<!--<control type="grouplist" id="9002">
 						<description>General control area</description>
 						<left>494</left>
 						<top>0</top>
@@ -442,25 +423,8 @@
 						<onup>9002</onup>
 						<ondown>9002</ondown>
 						<visible>Container(9030).HasFocus(4)</visible>
-						<control type="radiobutton" id="200">
-							<include>SkinSettingsButtonDefaults</include>
-							<label>20189</label>
-							<onclick>Skin.ToggleSetting(Disable.AutoScroll)</onclick>
-							<selected>!Skin.HasSetting(Disable.AutoScroll)</selected>
-						</control>
-						<control type="button" id="203">
-							<include>SkinSettingsButtonDefaults</include>
-							<label>31943</label>
-							<onclick>ActivateWindow(1127)</onclick>
-						</control>
-						<control type="button" id="204">
-							<description>Busy Loader Image</description>
-	                        <include>SkinSettingsButtonDefaults</include>
-	                        <label>31130</label>
-	                        <label2>$INFO[Skin.String(busyloader)]</label2>
-	                        <onclick>Skin.SetImage(busyloader,special://skin/extras/spinners)</onclick>
-	                    </control>
-					</control>
+						
+					</control>-->
 					<control type="grouplist" id="9005">
 						<description>Colors control area</description>
 						<left>494</left>
@@ -563,7 +527,7 @@
 						</control>
 					</control>
 					<control type="grouplist" id="9003">
-						<description>Extras control area</description>
+						<description>Misc control area</description>
 						<left>494</left>
 						<top>0</top>
 						<width>1246</width>
@@ -574,6 +538,24 @@
 						<onup>9003</onup>
 						<ondown>9003</ondown>
 						<visible>Container(9030).HasFocus(6)</visible>
+						<control type="radiobutton" id="300">
+							<include>SkinSettingsButtonDefaults</include>
+							<label>20189</label>
+							<onclick>Skin.ToggleSetting(Disable.AutoScroll)</onclick>
+							<selected>!Skin.HasSetting(Disable.AutoScroll)</selected>
+						</control>
+						<control type="button" id="303">
+							<include>SkinSettingsButtonDefaults</include>
+							<label>31943</label>
+							<onclick>ActivateWindow(1127)</onclick>
+						</control>
+						<control type="button" id="304">
+							<description>Busy Loader Image</description>
+	                        <include>SkinSettingsButtonDefaults</include>
+	                        <label>31130</label>
+	                        <label2>$INFO[Skin.String(busyloader)]</label2>
+	                        <onclick>Skin.SetImage(busyloader,special://skin/extras/spinners)</onclick>
+	                    </control>
 						<control type="radiobutton" id="306">
 							<description>Startup Playlist Path</description>
 							<include>SkinSettingsButtonDefaults</include>
@@ -592,7 +574,7 @@
 						<control type="radiobutton" id="312">
 							<include>SkinSettingsButtonDefaults</include>
 							<label>31135</label>
-							<onclick>Skin.ToggleSetting(Disable.AutoComplete)</onclick>
+							<onclick condition="System.HasAddon(plugin.program.autocompletion)">Skin.ToggleSetting(Disable.AutoComplete)</onclick>
 							<onclick condition="!System.HasAddon(plugin.program.autocompletion)">InstallAddon(plugin.program.autocompletion)</onclick>
 							<selected>!Skin.HasSetting(Disable.AutoComplete)</selected>
 						</control>

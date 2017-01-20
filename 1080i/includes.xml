@@ -8,7 +8,6 @@
 	<include file="Includes_VideoLyrics.xml" />
 	<include file="Includes_WidgetContent.xml" />
 	<include file="View_50_List.xml" />
-	<include file="View_57_Shift.xml" />
 	<include file="View_500_Wall.xml" />
 	<include file="variables.xml" />
 	<include file="script-skinshortcuts-includes.xml" />
@@ -446,29 +445,12 @@
 			<top>120</top>
 			<width>10</width>
 			<height>960</height>
-			<onleft condition="![Window.IsActive(addoninformation) | Window.IsActive(settings)]">50</onleft>
-			<onleft condition="Window.IsActive(addoninformation) | Window.IsActive(settings)">9000</onleft>
+			<onleft>50</onleft>
 			<onright>SetProperty(MediaMenu,True,home)</onright>
 			<onright>SetFocus(9050)</onright>
 			<ondown>60</ondown>
 			<onup>60</onup>
 		</control>
-	</include>
-	<include name="Scrollbar_Horizontal">
-		<control type="scrollbar" id="60">
-			<visible allowhiddenfocus="true">Control.HasFocus(60) | Container.Scrolling</visible>
-			<animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
-	        <left>550</left>
-	        <top>1070</top>
-	        <width>1800</width>
-	        <height>10</height>
-	        <onup>50</onup>
-	        <ondown>SetProperty(MediaMenu,True,home)</ondown>
-			<ondown>SetFocus(9050)</ondown>
-	        <onleft>60</onleft>
-	        <onright>60</onright>
-	        <orientation>horizontal</orientation>
-	    </control>
 	</include>
 	<include name="OverlayIcons">
 		<control type="group">
