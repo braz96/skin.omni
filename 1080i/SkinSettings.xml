@@ -448,18 +448,6 @@
 							<onclick>Skin.ToggleSetting(Disable.AutoScroll)</onclick>
 							<selected>!Skin.HasSetting(Disable.AutoScroll)</selected>
 						</control>
-						<control type="button" id="201">
-							<include>SkinSettingsButtonDefaults</include>
-							<label>31931</label>
-							<label2>$VAR[VideoPlotLocalizeVar]</label2>
-							<onclick>Skin.ToggleSetting(VideoInfoPlotToggle)</onclick>
-						</control>
-						<control type="radiobutton" id="202">
-							<include>SkinSettingsButtonDefaults</include>
-							<label>31238</label>
-							<onclick>Skin.ToggleSetting(Enable.MediaFlags)</onclick>
-							<selected>Skin.HasSetting(Enable.MediaFlags)</selected>
-						</control>
 						<control type="button" id="203">
 							<include>SkinSettingsButtonDefaults</include>
 							<label>31943</label>
@@ -600,13 +588,6 @@
 							<label2>$INFO[Skin.String(Startup_Playlist_Path)]</label2>
 							<onclick>Skin.SetFile(Startup_Playlist_Path,,special://MusicPlaylists/)</onclick>
 							<enable>Skin.HasSetting(Use_Startup_Playlist)</enable>
-						</control>
-						<control type="radiobutton" id="305">
-							<include>SkinSettingsButtonDefaults</include>
-							<label>31083</label>
-							<onclick>Skin.ToggleSetting(Disable.NextAired)</onclick>
-							<selected>!Skin.HasSetting(Disable.NextAired)</selected>
-							<onclick condition="!System.HasAddon(script.tv.show.next.aired)">InstallAddon(script.tv.show.next.aired)</onclick>
 						</control>
 						<control type="radiobutton" id="312">
 							<include>SkinSettingsButtonDefaults</include>

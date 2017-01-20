@@ -34,6 +34,21 @@
 	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(450).Row,0)">Conditional</animation>
 	                </control>
 	            </control>
+	            <control type="group">
+	                <visible>Integer.IsGreater(Container(450).NumItems,0)</visible>
+	                <control type="image">
+	                    <width>120</width>
+	                    <height>120</height>
+	                    <visible>Control.HasFocus(450)</visible>
+	                    <animation effect="fade" time="320" delay="200">Visible</animation>
+	                    <animation effect="fade" time="50">Hidden</animation>
+	                    <texture>overlays/diffuse-overlay.png</texture>
+	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(450).Row,3)">Conditional</animation>
+	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(450).Row,2)">Conditional</animation>
+	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(450).Row,1)">Conditional</animation>
+	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(450).Row,0)">Conditional</animation>
+	                </control>
+	            </control>
 				<control type="panel" id="450">
 					<width>942</width>
 					<height>600</height>
@@ -98,6 +113,21 @@
 	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(451).Row,0)">Conditional</animation>
 	                </control>
 	            </control>
+	            <control type="group">
+	                <visible>Integer.IsGreater(Container(451).NumItems,0)</visible>
+	                <control type="image">
+	                    <width>120</width>
+	                    <height>120</height>
+	                    <visible>Control.HasFocus(451)</visible>
+	                    <animation effect="fade" time="320" delay="200">Visible</animation>
+	                    <animation effect="fade" time="50">Hidden</animation>
+	                    <texture>overlays/diffuse-overlay.png</texture>
+	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(451).Row,3)">Conditional</animation>
+	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(451).Row,2)">Conditional</animation>
+	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(451).Row,1)">Conditional</animation>
+	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(451).Row,0)">Conditional</animation>
+	                </control>
+	            </control>
 				<control type="panel" id="451">
 					<width>942</width>
 					<height>600</height>
@@ -109,6 +139,7 @@
 					<scrolltime tween="quadratic" easing="out">200</scrolltime>
 					<itemlayout height="120" width="942">
 						<control type="image">
+							<animation effect="zoom" start="100" end="80" center="auto" time="0" condition="String.Contains(ListItem.Icon,special%3A%2F%2Fskin%2Fextras%2Fspinners)">conditional</animation>
 							<left>10</left>
 							<top>10</top>
 							<width>100</width>
@@ -117,9 +148,9 @@
 							<texture>$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
-							<left>120</left>
+							<left>130</left>
 							<top>3</top>
-							<width>822</width>
+							<right>20</right>
 							<height>70</height>
 							<font>font30</font>
 							<textoffsetx>15</textoffsetx>
@@ -127,9 +158,9 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
-							<left>120</left>
+							<left>130</left>
 							<top>52</top>
-							<width>822</width>
+							<right>20</right>
 							<height>60</height>
 							<textoffsetx>15</textoffsetx>
 							<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
@@ -139,6 +170,7 @@
 					</itemlayout>
 					<focusedlayout height="120" width="942">
 						<control type="image">
+							<animation effect="zoom" start="100" end="80" center="auto" time="0" condition="String.Contains(ListItem.Icon,special%3A%2F%2Fskin%2Fextras%2Fspinners)">conditional</animation>
 							<left>10</left>
 							<top>10</top>
 							<width>100</width>
@@ -147,18 +179,18 @@
 							<texture>$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
-							<left>120</left>
+							<left>130</left>
 							<top>3</top>
-							<width>822</width>
+							<right>20</right>
 							<height>70</height>
 							<font>font30</font>
 							<textoffsetx>15</textoffsetx>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
-							<left>120</left>
+							<left>130</left>
 							<top>52</top>
-							<width>822</width>
+							<right>20</right>
 							<height>60</height>
 							<font>font13</font>
 							<textoffsetx>15</textoffsetx>
@@ -217,6 +249,9 @@
 					</control>
 				</control>
 				<control type="image">
+					<visible>!String.StartsWith(ListItem.Icon,DefaultFolderBack.png)</visible>
+					<animation effect="rotate" start="360" end="0" center="auto" time="3000" loop="true" condition="String.Contains(Container(451).ListItem.Icon,special%3A%2F%2Fskin%2Fextras%2Fspinners)">conditional</animation>
+					<animation effect="zoom" start="100" end="40" center="auto" time="0" condition="String.Contains(Container(451).ListItem.Icon,special%3A%2F%2Fskin%2Fextras%2Fspinners)">conditional</animation>
 					<top>350</top>
 					<width>300</width>
 					<height>300</height>

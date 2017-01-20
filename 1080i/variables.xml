@@ -232,15 +232,14 @@
 		<value>$LOCALIZE[20360]</value>
 	</variable>
 	<variable name="VideoInfoPlotVar">
-		<value condition="Skin.HasSetting(VideoInfoPlotToggle) + !String.IsEmpty(ListItem.PlotOutline)">$INFO[ListItem.PlotOutline]</value>
 		<value condition="!String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
+		<value condition="!String.IsEmpty(ListItem.PlotOutline)">$INFO[ListItem.PlotOutline]</value>
 		<value>$LOCALIZE[15063]</value>
 	</variable>
 	<variable name="VideoPlotVar">
 		<value condition="Container.Content(seasons) | String.IsEqual(ListItem.DBTYPE,season)">$INFO[Container.ShowPlot]</value>
 		<value condition="[Container.Content(sets) | String.IsEqual(ListItem.DBTYPE,set)] + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot))">$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)]</value>
-		<value condition="!String.IsEmpty(ListItem.PlotOutline) + !Skin.HasSetting(VideoInfoPlotToggle)">$INFO[ListItem.PlotOutline]</value>
-		<value condition="System.GetBool(videolibrary.showunwatchedplots)">$INFO[ListItem.Plot]</value>
+		<value condition="!String.IsEmpty(ListItem.PlotOutline)">$INFO[ListItem.PlotOutline]</value>
 		<value>$INFO[ListItem.Plot]</value>
 	</variable>
 	<variable name="MusicPlotVar">
@@ -249,10 +248,6 @@
 		<value condition="!String.IsEmpty(ListItem.AddonDescription)">$INFO[ListItem.AddonDescription]$INFO[ListItem.AddonDisclaimer, -- ]</value>
 		<value condition="!String.IsEmpty(ListItem.Comment)">$INFO[ListItem.Comment]</value>
 		<value>$INFO[ListItem.Plot]</value>
-	</variable>
-	<variable name="VideoPlotLocalizeVar">
-		<value condition="Skin.HasSetting(VideoInfoPlotToggle)">$LOCALIZE[31045]</value>
-		<value>$LOCALIZE[31044]</value>
 	</variable>
 	<variable name="SourceFlagVar">
 		<value condition="[String.Contains(ListItem.filename,PDTV) | String.Contains(ListItem.filename,sdtv) | String.Contains(ListItem.filename,sd tv)]">sdtv</value>
@@ -320,14 +315,11 @@
 		<value condition="Control.HasFocus(102)">$LOCALIZE[31081]</value>
 		<value condition="Control.HasFocus(104)">$LOCALIZE[31235]</value>
 		<value condition="Control.HasFocus(200)">$LOCALIZE[31917]</value>
-		<value condition="Control.HasFocus(201)">$LOCALIZE[31932]</value>
-		<value condition="Control.HasFocus(202)">$LOCALIZE[31239]</value>
 		<value condition="Control.HasFocus(203)">$LOCALIZE[31944]</value>
 		<value condition="Control.HasFocus(204)">$LOCALIZE[31131]</value>
 		<value condition="Control.HasFocus(207)">$LOCALIZE[31252]</value>
 		<value condition="Control.HasFocus(208)">$LOCALIZE[31253]</value>
 		<value condition="Control.HasFocus(303) | Control.HasFocus(304)">$LOCALIZE[31121]</value>
-		<value condition="Control.HasFocus(305)">$LOCALIZE[31938]</value>
 		<value condition="Control.HasFocus(306)">$LOCALIZE[31114]</value>
 		<value condition="Control.HasFocus(312)">$LOCALIZE[31136]</value>
 		<value condition="Control.HasFocus(402)">$LOCALIZE[31942]</value>

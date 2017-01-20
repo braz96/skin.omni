@@ -4,7 +4,7 @@
 	<animation effect="slide" start="0,0" end="0,-140" time="180">WindowClose</animation>
 	<coordinates>
 		<system>1</system>
-		<left>510</left>
+		<left>560</left>
 		<top>-12</top>
 	</coordinates>
 	<controls>
@@ -18,8 +18,8 @@
 			</control>
 			<control type="image">
                 <description>Busy animation</description>
-                <top>20</top>
-                <left>20</left>
+                <top>28</top>
+                <left>32</left>
                 <width>80</width>
                 <height>80</height>
                 <texture colordiffuse="$VAR[ColorTextVar]" fallback="special://skin/extras/spinners/Sun.png">$INFO[Skin.String(busyloader)]</texture>
@@ -27,27 +27,27 @@
                 <animation effect="rotate" start="360" end="0" center="auto" time="3000" loop="true" condition="true">conditional</animation>
             </control>
 			<control type="list">
-				<left>132</left>
-				<top>32</top>
+				<left>140</left>
+				<top>25</top>
 				<width>300</width>
-				<height>40</height>
+				<height>50</height>
 				<scrolltime tween="quadratic" easing="out">0</scrolltime>
 				<autoscroll time="1000" repeat="1000">true</autoscroll>
 				<orientation>vertical</orientation>
-				<itemlayout height="80">
+				<itemlayout height="50">
 					<control type="label">
 						<description>Busy label</description>
 						<width>300</width>
-						<height>40</height>
+						<height>50</height>
 						<label>$INFO[ListItem.Label]</label>
 						<font>font14</font>
 					</control>
 				</itemlayout>
-				<focusedlayout height="80">
+				<focusedlayout height="50">
 					<control type="label">
 						<description>Busy label</description>
 						<width>300</width>
-						<height>40</height>
+						<height>50</height>
 						<label>$INFO[ListItem.Label]</label>
 						<font>font14</font>
 					</control>
@@ -73,9 +73,9 @@
 			</control>
 			<control type="progress" id="10">
 				<description>progress control</description>
-				<left>132</left>
+				<left>140</left>
 				<top>70</top>
-				<width>740</width>
+				<width>300</width>
 				<height>14</height>
 			</control>
 		</control>

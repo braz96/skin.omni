@@ -38,7 +38,7 @@
             </control>
             <control type="label">
                 <left>58</left>
-                <right>20</right>
+                <width>230</width>
                 <top>373</top>
                 <height>50</height>
                 <label>$VAR[WidgetThumbnailLabel]</label>
@@ -66,7 +66,7 @@
             </control>
             <control type="label">
                 <left>58</left>
-                <right>20</right>
+                <width>230</width>
                 <top>373</top>
                 <height>50</height>
                 <label>$VAR[WidgetThumbnailLabel]</label>
