@@ -147,7 +147,7 @@
 							<label>$VAR[ListSubLabelVar]</label>
 						</control>
 						<control type="label">
-							<animation effect="slide" end="40" time="0" condition="Container.Content(actors)">Conditional</animation>
+							<visible>!Container.Content(actors)</visible>
 							<right>80</right>
 							<height>116</height>
 							<font>font15</font>
@@ -213,7 +213,7 @@
 							<label>$VAR[ListSubLabelVar]</label>
 						</control>
 						<control type="label">
-							<animation effect="slide" end="40" time="0" condition="Container.Content(actors)">Conditional</animation>
+							<visible>!Container.Content(actors)</visible>
 							<right>80</right>
 							<height>116</height>
 							<font>font15</font>
