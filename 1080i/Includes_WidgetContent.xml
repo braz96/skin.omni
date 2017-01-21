@@ -2,10 +2,10 @@
 <includes>
     <include name="WidgetBusyAnimation">
         <control type="image" id="12345">
-            <visible>Control.IsVisible($PARAM[id]) + Container($PARAM[id]).IsUpdating</visible>
             <description>Busy animation</description>
+            <visible>!Window.IsVisible(volumebar) + !Window.IsVisible(extendedprogressdialog) + Control.IsVisible($PARAM[id]) + Container($PARAM[id]).IsUpdating</visible>
             <top>30</top>
-            <left>30</left>
+            <left>2260</left>
             <width>60</width>
             <height>60</height>
             <texture colordiffuse="$VAR[ColorTextVar]" fallback="special://skin/extras/spinners/Sun.png">$INFO[Skin.String(busyloader)]</texture>

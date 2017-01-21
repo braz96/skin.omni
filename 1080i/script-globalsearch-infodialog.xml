@@ -8,6 +8,15 @@
 	</coordinates>
 	<allowoverlay>no</allowoverlay>
 	<controls>
+		<control type="image">
+			<include>FullscreenDimensions</include>
+			<texture>$INFO[Container(100).ListItem.Property(Fanart)]</texture>
+		</control>
+		<control type="image">
+			<include>FullscreenDimensions</include>
+			<texture>$VAR[CommonBackgroundOverlay]</texture>
+			<colordiffuse>$VAR[ColorBackgroundVar]</colordiffuse>
+		</control>
 		<control type="list" id="100">
 			<left>-10</left>
 			<top>-10</top>
@@ -998,13 +1007,13 @@
 						<include>ButtonInfoDialogsCommonValues</include>
 						<label />
 					</control>
-					<control type="button" id="205">
+					<!--<control type="button" id="205">
 						<description>View fanart</description>
 						<include>ButtonInfoDialogsCommonValues</include>
 						<label>31092</label>
 						<onclick>SetFocus(90400)</onclick>
 						<visible>!String.IsEmpty(Container(100).ListItem.Property(Fanart))</visible>
-					</control>
+					</control>-->
 				</control>
 			</control>
 		</control>
@@ -1038,7 +1047,6 @@
 				<texture background="true">$INFO[Container(100).ListItem.Icon]</texture>
 			</control>
 		</control>
-		<include>Topbar</include>
 		<control type="group">
 			<visible allowhiddenfocus="true">Control.HasFocus(90400)</visible>
 			<include>VisibleFadeEffect</include>

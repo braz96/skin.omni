@@ -10,7 +10,7 @@
 			</control>
 			<include condition="Window.IsActive(script-NextAired-TVGuide.xml) | Window.IsActive(script-NextAired-TVGuide2.xml)">TVShowNextAiredBackground</include>
 			<include condition="Window.IsActive(weather)">WeatherBackground</include>
-			<include condition="Window.IsActive(script-globalsearch-main.xml)">GlobalSearchBG</include>
+			<include condition="Window.IsActive(script-globalsearch-main.xml) | Window.IsActive(script-globalsearch-infodialog.xml)">GlobalSearchBG</include>
 			<control type="visualisation">
 				<include>FullscreenDimensions</include>
 				<visible>Player.HasAudio + !Skin.HasSetting(Disable.ShowBackgroundVis) + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels) + !SlideShow.IsActive</visible>
@@ -32,74 +32,6 @@
 			<include>FullscreenDimensions</include>
 			<texture>$VAR[CommonBackgroundOverlay]</texture>
 			<colordiffuse>$VAR[ColorBackgroundVar]</colordiffuse>
-		</control>
-	</include>
-	<include name="TVShowNextAiredBackground">
-		<control type="group">
-			<visible>!String.IsEmpty(Window(home).Property(TVGuide.BackgroundFanart))</visible>
-			<control type="image">
-				<include>FullscreenDimensions</include>
-				<aspectratio>scale</aspectratio>
-				<texture background="true">$INFO[Container(200).ListItem.Property(Fanart)]</texture>
-				<visible>Control.HasFocus(200)</visible>
-				<fadetime>600</fadetime>
-				<animation effect="fade" time="600">Visible</animation>
-				<animation effect="fade" time="600">Hidden</animation>
-			</control>
-			<control type="image">
-				<include>FullscreenDimensions</include>
-				<aspectratio>scale</aspectratio>
-				<texture background="true">$INFO[Container(201).ListItem.Property(Fanart)]</texture>
-				<visible>Control.HasFocus(201)</visible>
-				<fadetime>600</fadetime>
-				<animation effect="fade" time="600">Visible</animation>
-				<animation effect="fade" time="600">Hidden</animation>
-			</control>
-			<control type="image">
-				<include>FullscreenDimensions</include>
-				<aspectratio>scale</aspectratio>
-				<texture background="true">$INFO[Container(202).ListItem.Property(Fanart)]</texture>
-				<visible>Control.HasFocus(202)</visible>
-				<fadetime>600</fadetime>
-				<animation effect="fade" time="600">Visible</animation>
-				<animation effect="fade" time="600">Hidden</animation>
-			</control>
-			<control type="image">
-				<include>FullscreenDimensions</include>
-				<aspectratio>scale</aspectratio>
-				<texture background="true">$INFO[Container(203).ListItem.Property(Fanart)]</texture>
-				<visible>Control.HasFocus(203)</visible>
-				<fadetime>600</fadetime>
-				<animation effect="fade" time="600">Visible</animation>
-				<animation effect="fade" time="600">Hidden</animation>
-			</control>
-			<control type="image">
-				<include>FullscreenDimensions</include>
-				<aspectratio>scale</aspectratio>
-				<texture background="true">$INFO[Container(204).ListItem.Property(Fanart)]</texture>
-				<visible>Control.HasFocus(204)</visible>
-				<fadetime>600</fadetime>
-				<animation effect="fade" time="600">Visible</animation>
-				<animation effect="fade" time="600">Hidden</animation>
-			</control>
-			<control type="image">
-				<include>FullscreenDimensions</include>
-				<aspectratio>scale</aspectratio>
-				<texture background="true">$INFO[Container(205).ListItem.Property(Fanart)]</texture>
-				<visible>Control.HasFocus(205)</visible>
-				<fadetime>600</fadetime>
-				<animation effect="fade" time="600">Visible</animation>
-				<animation effect="fade" time="600">Hidden</animation>
-			</control>
-			<control type="image">
-				<include>FullscreenDimensions</include>
-				<aspectratio>scale</aspectratio>
-				<texture background="true">$INFO[Container(206).ListItem.Property(Fanart)]</texture>
-				<visible>Control.HasFocus(206)</visible>
-				<fadetime>600</fadetime>
-				<animation effect="fade" time="600">Visible</animation>
-				<animation effect="fade" time="600">Hidden</animation>
-			</control>
 		</control>
 	</include>
 	<include name="WeatherBackground">
