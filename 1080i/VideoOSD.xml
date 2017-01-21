@@ -310,26 +310,28 @@
 				<visible>Player.IsTempo</visible>
 			</control>
 			<control type="group" id="12000">
-				<left>1100</left>
-				<top>130</top>
+				<left>1116</left>
+				<top>110</top>
 				<visible>Control.HasFocus(717) | ControlGroup(12000).HasFocus</visible>
 				<animation effect="fade" time="100">WindowClose</animation>
 				<animation effect="slide" time="0" end="50" condition="VideoPlayer.HasMenu">Conditional</animation>
 				<animation effect="slide" time="0" end="50" condition="VideoPlayer.IsStereoscopic">Conditional</animation>
 				<animation effect="slide" time="0" end="100" condition="Player.TempoEnabled">Conditional</animation>
 				<control type="image">
-					<left>-16</left>
-					<top>-16</top>
-					<width>542</width>
-					<height>312</height>
-					<texture border="16">dialog_context.png</texture>
-					<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
+					<width>510</width>
+					<height>280</height>
+					<texture colordiffuse="$VAR[ColorBackgroundVar]">$VAR[CommonBackgroundOverlay]</texture>
+				</control>
+				<control type="image">
+					<width>510</width>
+					<height>280</height>
+					<texture colordiffuse="$VAR[ColorBackgroundVar]">menu.png</texture>
 				</control>
 				<control type="grouplist" id="12100">
 					<left>20</left>
 					<top>20</top>
 					<width>470</width>
-					<height>260</height>
+					<height>240</height>
 					<itemgap>0</itemgap>
 					<onleft>717</onleft>
 					<onright>717</onright>

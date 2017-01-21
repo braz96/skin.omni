@@ -21,9 +21,6 @@
 			<!-- view id = 50 -->
 			<include>View_500_Wall</include>
 			<!-- view id = 500 -->
-			<include>Submenu</include>
-            <include>MainMenu</include>
-			<include>Topbar</include>
 			<control type="group">
 				<left>2350</left>
 				<include>SideBladeRight</include>
@@ -63,6 +60,9 @@
 					</include>
 				</control>
 			</control>
+			<include>Submenu</include>
+            <include>MainMenu</include>
+			<include>Topbar</include>
 		</control>
 	</controls>
 </window>

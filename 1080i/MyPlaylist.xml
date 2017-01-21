@@ -15,11 +15,8 @@
 			<animation effect="slide" start="0" end="630" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">WindowClose</animation>
             <top>0</top>
             <left>-430</left>
-            <include>Submenu</include>
-            <include>MainMenu</include>
 			<include>View_50_List</include>
 			<!-- view id = 50 -->
-			<include>Topbar</include>
 			<control type="group">
 				<left>2350</left>
 				<include>SideBladeRight</include>
@@ -56,6 +53,9 @@
 					</include>
 				</control>
 			</control>
+			<include>Submenu</include>
+            <include>MainMenu</include>
+			<include>Topbar</include>
 		</control>
 	</controls>
 </window>

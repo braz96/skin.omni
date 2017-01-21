@@ -16,10 +16,6 @@
 			<animation effect="slide" start="0" end="630" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">WindowClose</animation>
             <top>0</top>
             <left>-430</left>
-            <include>Submenu</include>
-	        <include>MainMenu</include>
-			<include>Topbar</include>
-			<include>PVRMediaMenu</include>
 			<control type="group">
 				<description>Recordings group</description>
 				<visible>Control.IsVisible(50)</visible>
@@ -187,6 +183,10 @@
 				<onright>SetFocus(9050)</onright>
 				<orientation>vertical</orientation>
 			</control>
+			<include>Submenu</include>
+	        <include>MainMenu</include>
+			<include>Topbar</include>
+			<include>PVRMediaMenu</include>
 		</control>
 	</controls>
 </window>

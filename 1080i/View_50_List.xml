@@ -92,7 +92,7 @@
 					<viewtype label="535">list</viewtype>
 					<pagecontrol>60</pagecontrol>
 					<preloaditems>2</preloaditems>
-					<scrolltime tween="quadratic" easing="out">200</scrolltime>
+					<scrolltime tween="quadratic" easing="out">300</scrolltime>
 					<itemlayout height="120" width="1000" condition="[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets) | Container.Content(actors)] + !String.IsEqual(Container.SortMethod,$LOCALIZE[13409])">
 						<control type="image">
 							<top>10</top>
@@ -102,7 +102,7 @@
 							<aspectratio align="center" aligny="center">scale</aspectratio>
 							<texture fallback="DefaultFallback.png">$INFO[ListItem.Art(thumb)]</texture>
 						</control>
-						<control type="label">
+						<!--<control type="label">
 							<visible>ListItem.IsPlaying + !Player.Paused</visible>
 							<left>44</left>
 							<top>2</top>
@@ -119,7 +119,7 @@
 							<height>120</height>
 							<font>IconSmall</font>
 							<label>K</label>
-						</control>
+						</control>-->
 						<control type="label">
 							<visible>!Container.Content(sets)</visible>
 							<top>3</top>
@@ -168,7 +168,7 @@
 							<aspectratio align="center" aligny="center">scale</aspectratio>
 							<texture fallback="DefaultFallback.png">$INFO[ListItem.Art(thumb)]</texture>
 						</control>
-						<control type="label">
+						<!--<control type="label">
 							<visible>ListItem.IsPlaying + !Player.Paused</visible>
 							<left>44</left>
 							<top>2</top>
@@ -185,7 +185,7 @@
 							<height>120</height>
 							<font>IconSmall</font>
 							<label>K</label>
-						</control>
+						</control>-->
 						<control type="label">
 							<visible>!Container.Content(sets)</visible>
 							<top>3</top>

@@ -75,7 +75,7 @@
 			<label2>$INFO[Container.Viewmode]</label2>
 			<include>ButtonCommonValues</include>
 			<onclick>SendClick(2)</onclick>
-			<enable>Control.IsEnabled(2) + ![Window.IsActive(tvchannels) | Window.IsActive(tvguide) | Window.IsActive(tvrecordings) | Window.IsActive(tvsearch) | Window.IsActive(tvtimers)]</enable>
+			<enable>Control.IsEnabled(2) + ![Window.IsActive(tvchannels) | Window.IsActive(tvguide) | Window.IsActive(tvrecordings) | Window.IsActive(tvsearch) | Window.IsActive(tvtimers) | Window.IsActive(eventlog)]</enable>
 		</control>
 		<control type="button" id="2">
 			<description>View button</description>

@@ -10,20 +10,6 @@
 	<onunload>ClearProperty(Window.HasSettings,Home)</onunload>
 	<onload condition="System.HasAddon(script.tv.show.next.aired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
 	<controls>
-		<control type="fadelabel" id="4410">
-	        <scrollspeed>20</scrollspeed>
-	        <scrollout>false</scrollout>
-            <top>-10000</top>
-            <pauseatend>7000</pauseatend>
-            <width>1000</width>
-            <height>100</height>
-            <font>font14</font>
-            <textcolor>black</textcolor>
-            <label>$INFO[ListItem.Art(extrafanart1)]</label>
-            <label>$INFO[ListItem.Art(extrafanart2)]</label>
-            <label>$INFO[ListItem.Art(extrafanart3)]</label>
-            <label>$INFO[ListItem.Art(extrafanart4)]</label>
-        </control>
 		<include>CommonBackground</include>
 		<control type="group">
             <animation effect="slide" start="0" end="430" time="300" condition="Control.HasFocus(9010)">Conditional</animation>
@@ -36,9 +22,6 @@
 			<!-- view id = 50 -->
 			<include>View_500_Wall</include>
 			<!-- view id = 500 -->
-			<include>Submenu</include>
-            <include>MainMenu</include>
-			<include>Topbar</include>
 			<control type="group">
 				<left>2350</left>
 				<include>SideBladeRight</include>
@@ -113,7 +96,9 @@
 					</include>
 				</control>
 			</control>
+			<include>Submenu</include>
+            <include>MainMenu</include>
+			<include>Topbar</include>
         </control>
-		
 	</controls>
 </window>

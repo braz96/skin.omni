@@ -12,12 +12,10 @@
 		<control type="group">
             <animation effect="slide" start="0" end="430" time="300" condition="Control.HasFocus(9010)">Conditional</animation>
             <animation effect="slide" start="0" end="-430" time="200" condition="Control.HasFocus(9010)">WindowClose</animation>
-            <animation effect="slide" start="0" end="-400" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">Conditional</animation>
-			<animation effect="slide" start="0" end="400" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">WindowClose</animation>
+            <animation effect="slide" start="0" end="-630" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">Conditional</animation>
+			<animation effect="slide" start="0" end="630" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">WindowClose</animation>
             <top>0</top>
             <left>-430</left>
-            <include>Submenu</include>
-            <include>MainMenu</include>
             <control type="group">
 				<include>Animation.Common</include>
 				<!-- view id = 50 -->
@@ -171,7 +169,6 @@
 				<top>0</top>
 				<include>Scrollbar_Vertical</include>
 			</control>
-			<include>Topbar</include>
 			<control type="group">
 				<left>2350</left>
 				<include>SideBladeRight</include>
@@ -196,6 +193,9 @@
 					</include>
 				</control>
 			</control>
+			<include>Submenu</include>
+            <include>MainMenu</include>
+            <include>Topbar</include>
         </control>
 	</controls>
 </window>
