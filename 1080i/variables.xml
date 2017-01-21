@@ -75,7 +75,7 @@
     	<value condition="Window.IsActive(home) + !String.IsEqual(Container(9000).ListItem.Property(widgetName),weather)">$INFO[Container(9000).ListItem.Property(widgetName)]</value>
 
 		<value condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Property(widgetName),weather) + !Weather.IsFetched">$LOCALIZE[31909]</value>
-		<value condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Property(widgetName),weather) + Weather.IsFetched">$INFO[Window(Weather).Property(WeatherProvider)]</value>
+		<value condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Property(widgetName),weather) + Weather.IsFetched">$INFO[Window(weather).Property(Location)]</value>
 
     	<value condition="Window.IsActive(home) + Window.IsVisible(virtualkeyboard)">$LOCALIZE[137]</value>
     	<value condition="Window.IsActive(home) + Window.IsVisible(shutdownmenu)">$LOCALIZE[13005]</value>

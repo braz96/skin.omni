@@ -105,36 +105,6 @@
                     <height>390</height>
                     <top>370</top>
                     <control type="image">
-                        <top>20</top>
-                        <left>20</left>
-                        <right>20</right>
-                        <height>310</height>
-                        <texture>overlays/diffuse-overlay.png</texture>
-                    </control>
-                    <control type="grouplist">
-                        <left>20</left>
-                        <right>20</right>
-                        <top>327</top>
-                        <height>50</height>
-                        <orientation>horizontal</orientation>
-                        <control type="label">
-                            <width>auto</width>
-                            <font>font13</font>
-                            <label>$LOCALIZE[31204]</label>
-                        </control>
-                        <control type="label">
-                            <width>auto</width>
-                            <font>font13</font>
-                            <label> $LOCALIZE[1405] </label>
-                            <visible>!String.IsEmpty(Window(weather).Property(Location))</visible>
-                        </control>
-                        <control type="label">
-                            <width>auto</width>
-                            <font>font13</font>
-                            <label>$INFO[Window(weather).Property(Location)]</label>
-                        </control>
-                    </control>
-                    <control type="image">
                         <left>40</left>
                         <top>40</top>
                         <height>270</height>
