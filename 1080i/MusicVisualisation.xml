@@ -126,12 +126,12 @@
 				<texture colordiffuse="$VAR[ColorBackgroundVar]">menu.png</texture>
 			</control>
 			<control type="image">
-				<left>1590</left>
+				<left>1595</left>
 				<top>25</top>
-				<width>400</width>
+				<width>360</width>
 				<height>50</height>
 				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="$VAR[ColorTextVar]">$VAR[StarRatingPlayerVar]</texture>
+				<texture fallback="flags/rating/0.0.png" colordiffuse="$VAR[ColorTextVar]">$INFO[MusicPlayer.UserRating,flags/rating/,.png]</texture>
 			</control>
 			<control type="image">
 				<left>1730</left>

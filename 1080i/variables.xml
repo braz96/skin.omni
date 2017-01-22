@@ -530,19 +530,6 @@
 		<value condition="String.IsEqual(ListItem.DBTYPE,episode)">plugin://script.extendedinfo?info=youtubesearchvideos&amp;&amp;id=$ESCINFO[ListItem.TVShowTitle] $LOCALIZE[20364]</value>
 		<value>plugin://script.extendedinfo?info=youtubesearchvideos&amp;&amp;id=$ESCINFO[ListItem.Label]</value>
 	</variable>
-	<variable name="StarRatingPlayerVar">
-		<value condition="String.IsEmpty(MusicPlayer.UserRating) | Integer.IsLess(MusicPlayer.UserRating,1)">starrating/0.png</value>
-		<value condition="Integer.IsEqual(MusicPlayer.UserRating,1)">starrating/1.png</value>
-		<value condition="Integer.IsEqual(MusicPlayer.UserRating,2)">starrating/2.png</value>
-		<value condition="Integer.IsEqual(MusicPlayer.UserRating,3)">starrating/3.png</value>
-		<value condition="Integer.IsEqual(MusicPlayer.UserRating,4)">starrating/4.png</value>
-		<value condition="Integer.IsEqual(MusicPlayer.UserRating,5)">starrating/5.png</value>
-		<value condition="Integer.IsEqual(MusicPlayer.UserRating,6)">starrating/6.png</value>
-		<value condition="Integer.IsEqual(MusicPlayer.UserRating,7)">starrating/7.png</value>
-		<value condition="Integer.IsEqual(MusicPlayer.UserRating,8)">starrating/8.png</value>
-		<value condition="Integer.IsEqual(MusicPlayer.UserRating,9)">starrating/9.png</value>
-		<value condition="Integer.IsEqual(MusicPlayer.UserRating,10)">starrating/10.png</value>
-	</variable>
 	<variable name="WidgetThumbnailLabel">
 		<value condition="String.Contains(Container(9000).ListItem.Property(widgetPath),recentlyaddedepisodes)">$INFO[ListItem.Season,,x]$INFO[ListItem.Episode,,. ]$INFO[ListItem.Title]</value>
 		<value condition="!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
@@ -595,7 +582,7 @@
 		<value condition="String.IsEqual(Skin.String(musicvis.background),posterizefanart) + !Skin.HasSetting(HideVisualizationFanart)">$INFO[Window(home).Property(ImageFilterfa3)]</value>
 	</variable>
 	<variable name="ListRightLabel">
-		<value condition="Container.Content(tvshows)">$INFO[ListItem.Rating]</value>
+		<value condition="Container.Content(tvshows) | Window.IsActive(videoplaylist)">$INFO[ListItem.Rating]</value>
 		<value condition="!Container.Content(albums) + !String.IsEmpty(ListItem.Label2)">$INFO[ListItem.Label2]</value>
 	</variable>
 </includes>

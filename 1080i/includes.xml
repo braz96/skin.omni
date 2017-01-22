@@ -75,7 +75,7 @@
 			<label2>$INFO[Container.Viewmode]</label2>
 			<include>ButtonCommonValues</include>
 			<onclick>SendClick(2)</onclick>
-			<enable>Control.IsEnabled(2) + ![Window.IsActive(tvchannels) | Window.IsActive(tvguide) | Window.IsActive(tvrecordings) | Window.IsActive(tvsearch) | Window.IsActive(tvtimers) | Window.IsActive(eventlog)]</enable>
+			<enable>Control.IsEnabled(2) + ![Window.IsActive(tvchannels) | Window.IsActive(tvguide) | Window.IsActive(tvrecordings) | Window.IsActive(tvsearch) | Window.IsActive(tvtimers) | Window.IsActive(eventlog) | Window.IsActive(videoplaylist) | Window.IsActive(musicplaylist)]</enable>
 		</control>
 		<control type="button" id="2">
 			<description>View button</description>
@@ -514,38 +514,6 @@
 	            <label>A</label>
 	        </control>
 	    </control>
-    </include>
-    <include name="OverlayExtendedInfo">
-    	<control type="group">
-            <visible>!IsEmpty(ListItem.DBID)</visible>
-            <left>$PARAM[OverlayExtendedLeft]</left>
-            <top>$PARAM[OverlayExtendedTop]</top>
-            <control type="image">
-                <width>60</width>
-                <height>60</height>
-                <texture colordiffuse="$VAR[ColorHighlightVar]">overlays/overlaybg.png</texture>
-                <aspectratio align="center" aligny="top">keep</aspectratio>
-            </control>
-            <control type="label">
-                <top>2</top>
-                <left>2</left>
-                <width>56</width>
-                <height>56</height>
-                <align>center</align>
-                <font>IconPlayer</font>
-                <label>T</label>
-            </control>
-            <control type="label">
-                <top>2</top>
-                <left>2</left>
-                <width>56</width>
-                <height>56</height>
-                <align>center</align>
-                <font>IconSuperTiny</font>
-                <textcolor>$VAR[ColorHighlightVar]</textcolor>
-                <label>I</label>
-            </control>
-        </control>
     </include>
     <include name="PlaylistButtons">
     	<control type="button" id="614">
