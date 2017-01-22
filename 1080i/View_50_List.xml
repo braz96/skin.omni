@@ -100,7 +100,7 @@
 							<width>67</width>
 							<height>100</height>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-							<texture fallback="DefaultFallback.png">$INFO[ListItem.Art(thumb)]</texture>
+							<texture background="true" fallback="DefaultFallback.png">$INFO[ListItem.Art(thumb)]</texture>
 						</control>
 						<!--<control type="label">
 							<visible>ListItem.IsPlaying + !Player.Paused</visible>
@@ -166,7 +166,7 @@
 							<width>67</width>
 							<height>100</height>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-							<texture fallback="DefaultFallback.png">$INFO[ListItem.Art(thumb)]</texture>
+							<texture background="true" fallback="DefaultFallback.png">$INFO[ListItem.Art(thumb)]</texture>
 						</control>
 						<!--<control type="label">
 							<visible>ListItem.IsPlaying + !Player.Paused</visible>
@@ -233,7 +233,7 @@
 							<width>100</width>
 							<height>100</height>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-							<texture>$VAR[ListIcon]</texture>
+							<texture background="true">$VAR[ListIcon]</texture>
 						</control>
 						<control type="label">
 							<visible>ListItem.IsPlaying + !Player.Paused</visible>
@@ -294,7 +294,7 @@
 							<width>100</width>
 							<height>100</height>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-							<texture>$VAR[ListIcon]</texture>
+							<texture background="true">$VAR[ListIcon]</texture>
 						</control>
 						<control type="label">
 							<visible>ListItem.IsPlaying + !Player.Paused</visible>
@@ -355,7 +355,7 @@
 							<width>100</width>
 							<height>100</height>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-							<texture>$VAR[ListIcon]</texture>
+							<texture background="true">$VAR[ListIcon]</texture>
 						</control>
 						<control type="label">
 							<visible>String.IsEqual(Container.SortMethod,$LOCALIZE[13409])</visible>
@@ -420,7 +420,7 @@
 							<width>100</width>
 							<height>100</height>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-							<texture>$VAR[ListIcon]</texture>
+							<texture background="true">$VAR[ListIcon]</texture>
 						</control>
 						<control type="label">
 							<visible>String.IsEqual(Container.SortMethod,$LOCALIZE[13409])</visible>
@@ -484,7 +484,7 @@
 							<width>178</width>
 							<height>100</height>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-							<texture>$VAR[ListIcon]</texture>
+							<texture background="true">$VAR[ListIcon]</texture>
 						</control>
 						<control type="label">
 							<visible>ListItem.IsPlaying + !Player.Paused</visible>
@@ -538,7 +538,7 @@
 							<width>178</width>
 							<height>100</height>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-							<texture>$VAR[ListIcon]</texture>
+							<texture background="true">$VAR[ListIcon]</texture>
 						</control>
 						<control type="label">
 							<visible>ListItem.IsPlaying + !Player.Paused</visible>
@@ -592,7 +592,7 @@
 							<width>100</width>
 							<height>100</height>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-							<texture fallback="DefaultFolder.png">$VAR[ListIcon]</texture>
+							<texture background="true" fallback="DefaultFolder.png">$VAR[ListIcon]</texture>
 						</control>
 						<control type="label">
 							<top>3</top>
@@ -617,7 +617,7 @@
 							<width>100</width>
 							<height>100</height>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-							<texture fallback="DefaultFolder.png">$VAR[ListIcon]</texture>
+							<texture background="true" fallback="DefaultFolder.png">$VAR[ListIcon]</texture>
 						</control>
 						<control type="label">
 							<top>3</top>
