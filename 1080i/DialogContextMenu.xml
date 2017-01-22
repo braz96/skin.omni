@@ -32,7 +32,7 @@
 			<height min="60" max="1080">auto</height>
 			<itemgap>0</itemgap>
 			<control type="button" id="994">
-				<textoffsetx>30</textoffsetx>
+				<textoffsetx>15</textoffsetx>
 				<label>$LOCALIZE[14098] $LOCALIZE[20410]</label>
 				<onclick>PlayMedia($ESCINFO[ListItem.Trailer])</onclick>
 				<visible>!String.IsEmpty(ListItem.Trailer)</visible>
