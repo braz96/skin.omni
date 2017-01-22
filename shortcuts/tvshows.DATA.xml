@@ -35,7 +35,7 @@
 		<defaultID>24069</defaultID>
 		<label>24069</label>
 		<label2>Kodi Command</label2>
-		<icon>UpdateVideoLibrary.png</icon>
+		<icon>DefaultAddonsUpdates.png</icon>
 		<thumb/>
 		<action>UpdateLibrary(video,,true)</action>
 	</shortcut>

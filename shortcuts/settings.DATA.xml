@@ -19,7 +19,7 @@
 		<defaultID>13009</defaultID>
 		<label>13009</label>
 		<label2>Kodi Command</label2>
-		<icon>Quit.png</icon>
+		<icon>DefaultIconPower.png</icon>
 		<thumb/>
 		<action>Quit</action>
 	</shortcut>

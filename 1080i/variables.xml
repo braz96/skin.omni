@@ -61,7 +61,6 @@
     	<value condition="Window.IsActive(filemanager) + [Control.HasFocus(20) | Control.HasFocus(30)]">$INFO[Container(20).NumItems,, $LOCALIZE[31025]]</value>
     	<value condition="Window.IsActive(filemanager) + [Control.HasFocus(21) | Control.HasFocus(31)]">$INFO[Container(21).NumItems,, $LOCALIZE[31025]]</value>
     	<value condition="Window.IsActive(script-globalsearch-main.xml)">$LOCALIZE[31186] "$INFO[Window.Property(GlobalSearch.SearchString)]"</value>
-    	<value condition="Window.IsActive(programsettings)">$LOCALIZE[0]</value>
     	<value condition="Window.IsActive(systemsettings)">$LOCALIZE[13000]</value>
     	<value condition="Window.IsActive(servicesettings)">$LOCALIZE[13279]</value>
     	<value condition="Window.IsActive(pvrsettings)">$LOCALIZE[19020]</value>
@@ -160,7 +159,7 @@
 		<value condition="Container.Content(albums) | Container.Content(songs)">$INFO[ListItem.Artist]</value>
 		<value condition="Container.Content(images)">$INFO[ListItem.PictureResolution]</value>
 		<value condition="Window.IsActive(videoplaylist) + !String.IsEmpty(ListItem.Episode)">$INFO[ListItem.Premiered]</value>
-		<value condition="[Container.Content(actors) | Container.Content(directors)] + !Window.IsActive(musicvideos) + !String.IsEmpty(ListItem.Label2)">$INFO[ListItem.Label2] $LOCALIZE[31123]</value>
+		<value condition="[Container.Content(actors) | Container.Content(directors)] + !String.IsEmpty(ListItem.Label2)">$INFO[ListItem.Label2] $LOCALIZE[31123]</value>
 		<value condition="!Container.Content(genres)">$INFO[ListItem.Genre]</value>
 	</variable>
 	<variable name="PosterVar">

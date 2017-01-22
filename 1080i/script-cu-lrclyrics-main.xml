@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<allowoverlay>no</allowoverlay>
-	<defaultcontrol always="false">101</defaultcontrol>
 	<coordinates>
 		<system>1</system>
 		<left>0</left>
@@ -83,7 +82,6 @@
 				<visible>false</visible>
 			</control>
 		</control>
-		<!-- ** Required ** Do not change <id> or <type> -->
 		<!-- ** Required ** Do not change <id> or <type> -->
 		<control type="group">
 			<visible>Window.IsActive(visualisation)</visible>
