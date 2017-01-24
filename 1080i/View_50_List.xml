@@ -808,7 +808,7 @@
 							<label>$VAR[ListRightLabel]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="120" width="795" condition="[Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists)] !Window.IsActive(videoplayist)">
+					<focusedlayout height="120" width="795" condition="[Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists)] + !Window.IsActive(videoplayist)">
 						<control type="image">
 							<top>10</top>
 							<left>10</left>
