@@ -179,7 +179,7 @@
 		                <visible>System.HasAddon(script.extendedinfo)</visible>
 		            </item>
 		            <item id="213">
-		                <icon>special://skin/extras/icons/splat.png</icon>
+		                <icon>$VAR[RottenTomatoIcon]</icon>
 		                <onclick>noop</onclick>
 		                <visible>$EXP[isMovie] + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Meter))</visible>
 		            </item>

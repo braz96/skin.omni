@@ -559,6 +559,10 @@
 		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Consensus))">[COLOR $VAR[ColorHighlightVar]]$LOCALIZE[31265]: [/COLOR]$INFO[Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Consensus)]</value>
 		<value>$LOCALIZE[31266].</value>
 	</variable>
+	<variable name="RottenTomatoIcon">
+		<value condition="String.IsEqual(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Image),rotten)">special://skin/extras/icons/splat.png</value>
+		<value>special://skin/extras/icons/tomato.png</value>
+	</variable>
 	<variable name="ProfileIconVar">
 		<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[20058])">DefaultAddonSource.png</value>
 		<value>$INFO[ListItem.Icon]</value>
