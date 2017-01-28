@@ -308,6 +308,14 @@ msgctxt "#31158"
 msgid "Select icons"
 msgstr "Select icons"
 
+msgctxt "#31159"
+msgid "Move up"
+msgstr "Move up"
+
+msgctxt "#31160"
+msgid "Move down"
+msgstr "Move down"
+
 msgctxt "#31165"
 msgid "Installed"
 msgstr "Installed"
