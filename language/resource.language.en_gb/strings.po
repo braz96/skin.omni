@@ -22,7 +22,11 @@ msgctxt "#31004"
 msgid "Working"
 msgstr ""
 
-#empty strings from id 31005 to 31008
+msgctxt "#31005"
+msgid "Thumbnail (List view)"
+msgstr ""
+
+#empty strings from id 31006 to 31008
 
 msgctxt "#31009"
 msgid "Colours"

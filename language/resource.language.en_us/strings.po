@@ -20,6 +20,10 @@ msgctxt "#31004"
 msgid "Working"
 msgstr "Working"
 
+msgctxt "#31005"
+msgid "Thumbnail (List view)"
+msgstr "Thumbnail (List view)"
+
 msgctxt "#31009"
 msgid "Colours"
 msgstr "Colors"
