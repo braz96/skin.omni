@@ -385,7 +385,7 @@
     <include name="SettingsWidgetContents">
         <visible>String.IsEqual(Container(9000).ListItem.Property(widget),settings)</visible>
         <top>45</top>
-        <left>60</left>
+        <left>90</left>
         <width>1520</width>
         <height>800</height>
         <onleft>$PARAM[onleft]</onleft>

@@ -179,7 +179,7 @@
                     <visible>Control.HasFocus(8013$SKINSHORTCUTS[id]) + !Container(8013$SKINSHORTCUTS[id]).IsUpdating</visible>
                     <animation effect="fade" time="320" delay="200">Visible</animation>
                     <animation effect="fade" time="200">Hidden</animation>
-                    <left>70</left>
+                    <left>100</left>
                     <top>55</top>
                     <width>740</width>
                     <height>140</height>
@@ -195,7 +195,7 @@
                     <visible>Control.HasFocus(8013$SKINSHORTCUTS[id]) + !Container(8013$SKINSHORTCUTS[id]).IsUpdating</visible>
                     <animation effect="fade" time="320" delay="200">Visible</animation>
                     <animation effect="fade" time="200">Hidden</animation>
-                    <left>70</left>
+                    <left>100</left>
                     <top>55</top>
                     <width>140</width>
                     <height>140</height>
