@@ -476,7 +476,7 @@
             </control>
             <control type="label">
             	<visible>!ListItem.IsResumable</visible>
-            	<visible>!Skin.HasSetting(OverlayWatched) + [String.IsEqual(ListItem.Overlay,OverlayWatched.png) | Integer.IsGreater(ListItem.PlayCount,0)]</visible>
+            	<visible>!Skin.HasSetting(Disable.WatchedOverlay) + [String.IsEqual(ListItem.Overlay,OverlayWatched.png) | Integer.IsGreater(ListItem.PlayCount,0)]</visible>
             	<top>1</top>
             	<left>1</left>
                 <width>56</width>
