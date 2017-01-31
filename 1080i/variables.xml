@@ -596,6 +596,7 @@
 	</variable>
 	<variable name="WidgetListSubLabel">
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(widgetType),movies) | String.IsEqual(Container(9000).ListItem.Property(widgetType),tvshows) | String.StartsWith(Container(9000).ListItem.Property(widgetPath),plugin://plugin.program.advanced.emulator.launcher)">$INFO[ListItem.Genre]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(widgetType),episodes)">$INFO[ListItem.TVShowTitle]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(widgetType),albums) | String.IsEqual(Container(9000).ListItem.Property(widgetType),songs) | String.IsEqual(Container(9000).ListItem.Property(widgetType),musicvideos)">$INFO[ListItem.Artist]</value>
 		<value condition="String.StartsWith(Container(9000).ListItem.Property(widgetPath),pvr)">$INFO[ListItem.ChannelNumberLabel,,. ]$INFO[ListItem.Label]</value>
 		<value condition="String.StartsWith(Container(9000).ListItem.Property(widgetPath),addons) + !String.IsEmpty(ListItem.AddonSummary)">$INFO[ListItem.AddonSummary]</value>
