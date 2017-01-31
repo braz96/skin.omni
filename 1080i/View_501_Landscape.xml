@@ -25,8 +25,7 @@
                 </control>
             </control>
 			<control type="panel" id="501">
-				<left>0</left>
-				<top>0</top>
+				<visible>[Container.Content(movies) | Container.Content(tvshows)] + !$EXP[isVideoAddon]</visible>
 				<width>1696</width>
 				<height>890</height>
 				<onleft>9000</onleft>
@@ -39,7 +38,7 @@
 				<preloaditems>2</preloaditems>
 				<viewtype label="31100">Icon</viewtype>
 				<scrolltime tween="quadratic" easing="out">300</scrolltime>
-				<itemlayout height="296" width="424" condition="Container.Content(movies) | Container.Content(tvshows)">
+				<itemlayout height="296" width="424">
 					<control type="image">
 		                <top>20</top>
 		                <left>20</left>
@@ -67,7 +66,7 @@
 		                <param name="OverlayTop" value="20" />
 		            </include>
 				</itemlayout>
-				<focusedlayout height="296" width="424" condition="Container.Content(movies) | Container.Content(tvshows)">
+				<focusedlayout height="296" width="424">
 					<control type="image">
 		                <top>20</top>
 		                <left>20</left>
