@@ -25,7 +25,7 @@
                 </control>
             </control>
 			<control type="panel" id="501">
-				<visible>[Container.Content(movies) | Container.Content(tvshows)] + !$EXP[isVideoAddon]</visible>
+				<visible>[Container.Content(movies) | Container.Content(tvshows)] + !$EXP[isPlugin]</visible>
 				<width>1696</width>
 				<height>890</height>
 				<onleft>9000</onleft>
