@@ -225,32 +225,20 @@
                 <aspectratio>keep</aspectratio>
                 <texture background="true">$VAR[WidgetArt]</texture>
             </control>
-            <control type="group">
-                <visible>!String.StartsWith(Container(9000).ListItem.Property(widgetPath),special://videoplaylists/) + !String.StartsWith(Container(9000).ListItem.Property(widgetPath),favourites://)</visible>
-                <control type="label">
-                    <top>33</top>
-                    <left>220</left>
-                    <right>70</right>
-                    <height>70</height>
-                    <font>font30</font>
-                    <label>$VAR[WidgetListMainLabel]</label>
-                </control>
-                <control type="label">
-                    <top>82</top>
-                    <left>220</left>
-                    <right>70</right>
-                    <height>60</height>
-                    <label>$VAR[WidgetListSubLabel]</label>
-                </control>
-            </control>
             <control type="label">
-                <visible>String.StartsWith(Container(9000).ListItem.Property(widgetPath),special://videoplaylists/) | String.StartsWith(Container(9000).ListItem.Property(widgetPath),favourites://)</visible>
                 <top>33</top>
                 <left>220</left>
                 <right>70</right>
-                <height>110</height>
+                <height>70</height>
                 <font>font30</font>
                 <label>$VAR[WidgetListMainLabel]</label>
+            </control>
+            <control type="label">
+                <top>82</top>
+                <left>220</left>
+                <right>70</right>
+                <height>60</height>
+                <label>$VAR[WidgetListSubLabel]</label>
             </control>
         </itemlayout>
         <focusedlayout height="178" width="848" condition="String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31005])">
@@ -262,32 +250,20 @@
                 <aspectratio>keep</aspectratio>
                 <texture background="true">$VAR[WidgetArt]</texture>
             </control>
-            <control type="group">
-                <visible>!String.StartsWith(Container(9000).ListItem.Property(widgetPath),special://videoplaylists/) + !String.StartsWith(Container(9000).ListItem.Property(widgetPath),favourites://)</visible>
-                <control type="label">
-                    <top>33</top>
-                    <left>220</left>
-                    <right>70</right>
-                    <height>70</height>
-                    <font>font30</font>
-                    <label>$VAR[WidgetListMainLabel]</label>
-                </control>
-                <control type="label">
-                    <top>82</top>
-                    <left>220</left>
-                    <right>70</right>
-                    <height>60</height>
-                    <label>$VAR[WidgetListSubLabel]</label>
-                </control>
-            </control>
             <control type="label">
-                <visible>String.StartsWith(Container(9000).ListItem.Property(widgetPath),special://videoplaylists/) | String.StartsWith(Container(9000).ListItem.Property(widgetPath),favourites://)</visible>
                 <top>33</top>
                 <left>220</left>
                 <right>70</right>
-                <height>110</height>
+                <height>70</height>
                 <font>font30</font>
                 <label>$VAR[WidgetListMainLabel]</label>
+            </control>
+            <control type="label">
+                <top>82</top>
+                <left>220</left>
+                <right>70</right>
+                <height>60</height>
+                <label>$VAR[WidgetListSubLabel]</label>
             </control>
         </focusedlayout>
         <content limit="$VAR[WidgetLimit]" sortby="$PARAM[sortby]" sortorder="$PARAM[sortdirection]" target="$PARAM[target]">$PARAM[path]</content>
