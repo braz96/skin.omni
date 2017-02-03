@@ -14,7 +14,7 @@
 	                    <left>510</left>
 	                    <width>1000</width>
 	                    <height>120</height>
-	                    <visible>Control.HasFocus(50) + [![Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists)] | Window.IsActive(videoplaylist) | Container.Content(videos)]</visible>
+	                    <visible>Control.HasFocus(50) + [![Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists)] | Window.IsActive(videoplaylist) | Container.Content(videos) | Container.Content(files)]</visible>
 	                    <animation effect="fade" time="320" delay="200">Visible</animation>
 	                    <animation effect="fade" time="50">Hidden</animation>
 	                    <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
@@ -59,7 +59,7 @@
 	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,0)">Conditional</animation>
 		            </control>
 		            <control type="image">
-	                	<visible>Control.HasFocus(50) + [Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists) | Container.Content(images) | String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) | Window.IsActive(videoplaylist) | Container.Content(videos)]</visible>
+	                	<visible>Control.HasFocus(50) + [Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists) | Container.Content(images) | String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) | Window.IsActive(videoplaylist) | Container.Content(videos) | Container.Content(files)]</visible>
 	                    <animation effect="fade" time="320" delay="200">Visible</animation>
 	                    <animation effect="fade" time="50">Hidden</animation>
 		                <top>180</top>
@@ -572,7 +572,7 @@
 							<param name="OverlayListWidth" value="1000" />
 						</include>
 					</focusedlayout>
-					<itemlayout height="120" width="1000" condition="Window.IsActive(videoplaylist) | Container.Content(videos)">
+					<itemlayout height="120" width="1000" condition="Window.IsActive(videoplaylist) | Container.Content(videos) | Container.Content(files)">
 						<control type="image">
 							<top>10</top>
 							<left>10</left>
@@ -632,7 +632,7 @@
 							<label>$VAR[ListRightLabel]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="120" width="1000" condition="Window.IsActive(videoplaylist) | Container.Content(videos)">
+					<focusedlayout height="120" width="1000" condition="Window.IsActive(videoplaylist) | Container.Content(videos) | Container.Content(files)">
 						<control type="image">
 							<top>10</top>
 							<left>10</left>
@@ -888,7 +888,7 @@
 				</control>
 				<control type="group">
 					<left>1690</left>
-					<visible>[![$EXP[isMovie] | $EXP[isTvshow] | $EXP[isSeason] | $EXP[isSet] | Container.Content(actors) | Window.IsActive(videoplaylist) | $EXP[isEpisode] | Container.Content(addons) | $EXP[isArtist] | $EXP[isAlbum] | $EXP[isSong] | $EXP[isMusicvideo] | Container.Content()] | [String.Contains(Container.FolderPath,plugin.video) + !$EXP[isEpisode] + !Container.Content()]] + !String.StartsWith(ListItem.Icon,Default)</visible>
+					<visible>[![$EXP[isMovie] | $EXP[isTvshow] | $EXP[isSeason] | $EXP[isSet] | Container.Content(actors) | Window.IsActive(videoplaylist) | $EXP[isEpisode] | Container.Content(addons) | $EXP[isArtist] | $EXP[isAlbum] | $EXP[isSong] | $EXP[isMusicvideo] | Container.Content() | Container.Content(files)] | [String.Contains(Container.FolderPath,plugin.video) + !$EXP[isEpisode] + !Container.Content()]] + !String.StartsWith(ListItem.Icon,Default)</visible>
 					<control type="image">
 						<width>560</width>
 						<height>840</height>
