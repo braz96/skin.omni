@@ -26,7 +26,15 @@ msgctxt "#31005"
 msgid "Thumbnail (List view)"
 msgstr ""
 
-#empty strings from id 31006 to 31008
+msgctxt "#31006"
+msgid "Set music library path"
+msgstr ""
+
+msgctxt "#31007"
+msgid "Set the path to your music source to enable logos in the music information dialogs."
+msgstr ""
+
+#empty strings with id 31008
 
 msgctxt "#31009"
 msgid "Colours"
