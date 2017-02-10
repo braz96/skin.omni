@@ -34,7 +34,9 @@ msgctxt "#31007"
 msgid "Set the path to your music source to enable logos in the music information dialogs."
 msgstr ""
 
-#empty strings with id 31008
+msgctxt "#31008"
+msgid "Recent recordings"
+msgstr ""
 
 msgctxt "#31009"
 msgid "Colours"

@@ -24,7 +24,8 @@
     <icon labelID="programs">special://skin/extras/icons/program.png</icon>
     <icon labelID="sets">special://skin/extras/icons/set.png</icon>
     <icon labelID="weather">special://skin/extras/icons/weather.png</icon>
-    <icon labelID="widgets">special://skin/extras/icons/widget.png</icon>
+    <icon labelID="$ADDON[script.skinshortcuts 32024]">special://skin/extras/icons/keyboard.png</icon>
+    <icon labelID="$ADDON[script.skinshortcuts 32119]">special://skin/extras/icons/widget.png</icon>
     <icon labelID="0">special://skin/extras/icons/program.png</icon>
     <icon labelID="1">special://skin/extras/icons/camera.png</icon>
     <icon labelID="2">special://skin/extras/icons/music.png</icon>
@@ -96,10 +97,13 @@
     <warn heading="$LOCALIZE[750]" message="$LOCALIZE[31072]">ActivateWindow(Settings)</warn>
 
 	<!-- Widgets -->
-    <widget label="1036" icon="DefaultIconFavourite.png" name="Favorites" type="" path="favourites://" target="">myfavorites</widget>
-    <widget label="136" icon="DefaultPlaylist.png" name="Playlists" type="videos" path="special://videoplaylists/" target="video">myplaylists</widget>
+    <widget label="1036" icon="DefaultIconFavourite.png" name="1036" type="" path="favourites://" target="">myfavorites</widget>
+    <widget label="136" icon="DefaultPlaylist.png" name="136" type="videos" path="special://videoplaylists/" target="video">myplaylists</widget>
+    <widget label="31008" condition="System.HasPVRAddon" icon="DefaultAddonPVRClient.png" name="31008" type="" path="pvr://recordings/tv/active?view=flat" target="pvr">recentrecordings</widget>
+    <widget label="31241" condition="System.HasPVRAddon" icon="DefaultAddonPVRClient.png" name="31241" type="" path="pvr://channels/tv/*?view=lastplayed" target="pvr">recentchannels</widget>
     <widget label="5">settings</widget>
     <widget label="12600" condition="!IsEmpty(Weather.Plugin)">weather</widget>
+    
 
 	<!-- Widget Icon Aspect Ratio -->
 	<propertySettings property="widgetIcon" title="$LOCALIZE[31242]" showNone="False" />
@@ -112,6 +116,7 @@
 
     <!-- Widget Sort By -->
     <propertySettings property="widgetSortBy" title="$LOCALIZE[31155]" showNone="True" />
+    <property property="widgetSortBy" label="$LOCALIZE[552]">date</property>
     <property property="widgetSortBy" label="$LOCALIZE[568]">lastplayed</property>
     <property property="widgetSortBy" label="$LOCALIZE[12012]">lastused</property>
     <property property="widgetSortBy" label="$LOCALIZE[551]">sorttitle</property>
