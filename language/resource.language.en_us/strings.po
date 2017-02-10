@@ -52,6 +52,14 @@ msgctxt "#31013"
 msgid "Edit library nodes"
 msgstr "Edit library nodes"
 
+msgctxt "#31014"
+msgid "Enable fanart backgrounds"
+msgstr "Enable fanart backgrounds"
+
+msgctxt "#31015"
+msgid "Enables fanart backgrounds in media sections and home screen widgets."
+msgstr "Enables fanart backgrounds in media sections and home screen widgets."
+
 msgctxt "#31025"
 msgid "items"
 msgstr "items"

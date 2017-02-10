@@ -6,9 +6,8 @@
 				<description>Normal Default Background Image</description>
 				<include>FullscreenDimensions</include>
 				<include>BackgroundFadeAnimation</include>
-				<imagepath fallback="special://skin/backgrounds/default_bg.jpg" background="true">$VAR[GlobalBackgroundVar]</imagepath>
+				<imagepath background="true">$VAR[GlobalBackgroundVar]</imagepath>
 			</control>
-			<include condition="Window.IsActive(script-NextAired-TVGuide.xml) | Window.IsActive(script-NextAired-TVGuide2.xml)">TVShowNextAiredBackground</include>
 			<include condition="Window.IsActive(weather)">WeatherBackground</include>
 			<include condition="Window.IsActive(script-globalsearch-main.xml) | Window.IsActive(script-globalsearch-infodialog.xml)">GlobalSearchBG</include>
 			<control type="visualisation">

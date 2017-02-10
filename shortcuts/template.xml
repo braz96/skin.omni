@@ -254,7 +254,7 @@
     </other>
     <other include="WidgetFanart">
         <property name="id" tag="mainmenuid" />
-        <property name="visible">Control.HasFocus(8011$SKINSHORTCUTS[id]) + !String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Art(fanart))</property>
+        <property name="visible">!Skin.HasSetting(Disable.FanartBackground) + Control.HasFocus(8011$SKINSHORTCUTS[id]) + !String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Art(fanart))</property>
         <property name="imagepath">$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Art(fanart)]</property>
         <controls>
              <control type="multiimage">
@@ -268,7 +268,7 @@
     </other>
     <other include="WeatherWidgetFanart">
         <property name="id" tag="mainmenuid" />
-        <property name="visible">Control.HasFocus(8012$SKINSHORTCUTS[id]) + !String.IsEmpty(Skin.String(weatherfanart.path))</property>
+        <property name="visible">!Skin.HasSetting(Disable.FanartBackground) + Control.HasFocus(8012$SKINSHORTCUTS[id]) + !String.IsEmpty(Skin.String(weatherfanart.path))</property>
         <controls>
              <control type="multiimage">
                 <include>BackgroundFadeAnimation</include>

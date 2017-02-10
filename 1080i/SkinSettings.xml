@@ -371,6 +371,12 @@
 						<onup>9006</onup>
 						<ondown>9006</ondown>
 						<visible>Container(9030).HasFocus(3)</visible>
+						<control type="radiobutton" id="605">
+							<include>SkinSettingsButtonDefaults</include>
+							<label>31014</label>
+							<onclick>Skin.ToggleSetting(Disable.FanartBackground)</onclick>
+							<selected>!Skin.HasSetting(Disable.FanartBackground)</selected>
+						</control>
 						<control type="button" id="601">
 							<include>SkinSettingsButtonDefaults</include>
 							<label>31115</label>
