@@ -35,7 +35,7 @@ msgid "Set the path to your music source to enable logos in the music informatio
 msgstr ""
 
 msgctxt "#31008"
-msgid "Recent recordings"
+msgid "Live TV recordings"
 msgstr ""
 
 msgctxt "#31009"
@@ -76,7 +76,9 @@ msgctxt "#31026"
 msgid "Miscellaneous"
 msgstr ""
 
-#empty sring with id 31027
+msgctxt "#31027"
+msgid "Live TV channels"
+msgstr ""
 
 msgctxt "#31028"
 msgid "Ubuntu"
