@@ -7,8 +7,7 @@
     <controls>
         <include>CommonBackground</include>
         <control type="group">
-            <animation effect="slide" start="0" end="430" time="300" condition="Control.HasFocus(9010)">Conditional</animation>
-            <animation effect="slide" start="0" end="-430" time="200" condition="Control.HasFocus(9010)">WindowClose</animation>
+            <include>MenuSlideAnimation</include>
             <control type="group">
                 <include>Animation.Common</include>
                 <visible>Integer.IsGreater(Container(9020).NumItems,0)</visible>

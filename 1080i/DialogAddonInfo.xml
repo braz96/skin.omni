@@ -12,6 +12,8 @@
 		<control type="group">
 			<animation effect="slide" start="1200" end="0" time="300">WindowOpen</animation>
 			<animation effect="slide" start="0" end="1200" time="300">WindowClose</animation>
+			<animation effect="slide" start="0" end="-630" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">Conditional</animation>
+			<animation effect="slide" start="0" end="630" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">WindowClose</animation>
 			<left>720</left>
 			<width>1200</width>
 			<control type="image">
@@ -26,8 +28,6 @@
 				<texture colordiffuse="$VAR[ColorBackgroundVar]">$VAR[CommonBackgroundOverlay]</texture>
 			</control>
 			<control type="group">
-				<animation effect="slide" start="0" end="-630" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">Conditional</animation>
-				<animation effect="slide" start="0" end="630" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">WindowClose</animation>
 				<control type="image">
 					<left>0</left>
 					<width>1080</width>
@@ -87,7 +87,7 @@
 	    			<left>1080</left>
 	                <width>120</width>
 	                <height>120</height>
-	                <animation effect="fade" start="100" end="60" time="300" condition="!Control.HasFocus(9000) + !Control.HasFocus(9010)">Conditional</animation>
+	                <animation effect="fade" start="100" end="60" time="300" condition="!Control.HasFocus(9000)">Conditional</animation>
 	                <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
 	                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Row,7)">Conditional</animation>
 	                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Row,6)">Conditional</animation>
@@ -343,6 +343,8 @@
 		<control type="group">
 			<animation effect="slide" start="-720" end="0" time="300">WindowOpen</animation>
 			<animation effect="slide" start="0" end="-720" time="300">WindowClose</animation>
+			<animation effect="slide" start="0" end="-630" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">Conditional</animation>
+			<animation effect="slide" start="0" end="630" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">WindowClose</animation>
 			<width>720</width>
 			<height>1080</height>
 			<control type="image">
