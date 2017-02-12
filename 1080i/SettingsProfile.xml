@@ -68,7 +68,7 @@
                             <top>20</top>
                             <right>20</right>
                             <height>310</height>
-                            <aspectratio align="center" aligny="center">keep</aspectratio>
+                            <aspectratio align="center" aligny="center">scale</aspectratio>
                             <texture background="true" fallback="DefaultIconProfile.png">$VAR[ProfileIconVar]</texture>
                         </control>
                     </itemlayout>
@@ -92,7 +92,7 @@
                             <top>20</top>
                             <right>20</right>
                             <height>310</height>
-                            <aspectratio align="center" aligny="center">keep</aspectratio>
+                            <aspectratio align="center" aligny="center">scale</aspectratio>
                             <texture background="true" fallback="DefaultIconProfile.png">$VAR[ProfileIconVar]</texture>
                         </control>
                     </focusedlayout>
@@ -144,7 +144,7 @@
                     <left>450</left>
                     <width>140</width>
                     <height>140</height>
-                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <aspectratio align="center" aligny="center">scale</aspectratio>
                     <texture fallback="DefaultActor.png">$INFO[System.ProfileThumb]</texture>
                 </control>
                 <control type="label">
@@ -171,7 +171,19 @@
             <include>Topbar</include>
             <control type="group">
                 <visible>Control.IsVisible(2)</visible>
-                <include>Scrollbar_Vertical</include>
+                <control type="scrollbar" id="60">
+                    <visible allowhiddenfocus="true">Control.HasFocus(60) | Container.Scrolling</visible>
+                    <animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
+                    <left>2340</left>
+                    <top>120</top>
+                    <width>10</width>
+                    <height>960</height>
+                    <onleft>2</onleft>
+                    <onright>SetProperty(MediaMenu,True,home)</onright>
+                    <onright>SetFocus(9050)</onright>
+                    <ondown>60</ondown>
+                    <onup>60</onup>
+                </control>
             </control>
         </control>
 	</controls>
