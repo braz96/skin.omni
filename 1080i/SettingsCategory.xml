@@ -2,17 +2,18 @@
 <window>
 	<defaultcontrol>3</defaultcontrol>
 	<menucontrol>9051</menucontrol>
-	<onload>SetProperty(Window.HasSettings,True,home)</onload>
-	<onload>ClearProperty(MediaMenu,Home)</onload>
-	<onunload>ClearProperty(Window.HasSettings,Home)</onunload>
+    <onload>SetProperty(Window.HasSettings,True,home)</onload>
+    <onload>ClearProperty(MediaMenu,Home)</onload>
+    <onunload>ClearProperty(MediaMenu,Home)</onunload>
+    <onunload>ClearProperty(Window.HasSettings,Home)</onunload>
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<include>CommonBackground</include>
 		<control type="group">
             <animation effect="slide" start="0" end="430" time="300" condition="Control.HasFocus(9010)">Conditional</animation>
             <animation effect="slide" start="0" end="-430" time="200" condition="Control.HasFocus(9010)">WindowClose</animation>
-            <animation effect="slide" start="0" end="-400" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">Conditional</animation>
-			<animation effect="slide" start="0" end="400" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">WindowClose</animation>
+            <animation effect="slide" start="0" end="-630" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">Conditional</animation>
+			<animation effect="slide" start="0" end="630" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">WindowClose</animation>
             <top>0</top>
             <left>-430</left>
             <control type="group">
@@ -54,7 +55,8 @@
 					<pagecontrol>60</pagecontrol>
 					<onleft>3</onleft>
 					<onright condition="Container(5).HasNext | Container(5).HasPrevious">60</onright>
-					<onright condition="!Container(5).HasNext + !Container(5).HasPrevious">3</onright>
+					<onright condition="!Container(5).HasNext + !Container(5).HasPrevious">SetProperty(MediaMenu,True,home)</onright>
+					<onright condition="!Container(5).HasNext + !Container(5).HasPrevious">SetFocus(9050)</onright>
 					<onup>5</onup>
 					<ondown>5</ondown>
 				</control>
@@ -119,10 +121,49 @@
 				<width>10</width>
 				<height>960</height>
 				<onleft>5</onleft>
-				<onright>3</onright>
+				<onright>SetProperty(MediaMenu,True,home)</onright>
+                <onright>SetFocus(9050)</onright>
 				<ondown>60</ondown>
 				<onup>60</onup>
 			</control>
+			<control type="group">
+                <left>2350</left>
+                <include>SideBladeRight</include>
+                <control type="grouplist" id="9050">
+                    <animation effect="slide" start="-630,0" end="0,0" time="400" tween="quadratic" easing="out">Visible</animation>
+                    <left>0</left>
+                    <top>0</top>
+                    <width>630</width>
+                    <height>1080</height>
+                    <onright>9050</onright>
+                    <onleft>ClearProperty(MediaMenu,Home)</onleft>
+                    <onleft>5</onleft>
+                    <onup>9050</onup>
+                    <ondown>9050</ondown>
+                    <onback>ClearProperty(MediaMenu,Home)</onback>
+                    <onback>5</onback>
+                    <itemgap>0</itemgap>
+                    <control type="button" id="20">
+						<description>Settings level</description>
+						<include>ButtonCommonValues</include>
+						<label />
+						<onclick>SettingsLevelChange</onclick>
+						<visible>False</visible>
+					</control>
+					<control type="button" id="2215">
+						<description>Settings level</description>
+						<include>ButtonCommonValues</include>
+						<label>31047</label>
+						<label2>$INFO[Control.GetLabel(20)]</label2>
+						<onclick>SettingsLevelChange</onclick>
+						<visible>Window.IsActive(SettingsCategory.xml)</visible>
+					</control>
+                    <include>PlaylistButtons</include>
+                    <include content="MenuPlayerControls">
+                        <param name="PlayerControlsOnDown" value="213" />
+                    </include>
+                </control>
+            </control>
 			<include>Submenu</include>
             <include>MainMenu</include>
 			<include>Topbar</include>
