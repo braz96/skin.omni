@@ -47,7 +47,7 @@
                 <visible>system.getbool(input.enablemouse)</visible>
             </control>
             <control type="group" id="9003">
-                <visible>!String.IsEmpty(Container(9000).ListItem.Property(widgetPath)) | String.IsEqual(Container(9000).ListItem.Property(widget),weather) | String.IsEqual(Container(9000).ListItem.Property(widget),settings)</visible>
+                <visible>!String.IsEmpty(Container(9000).ListItem.Property(widgetPath)) | String.IsEqual(Container(9000).ListItem.Property(widget),weather) | String.IsEqual(Container(9000).ListItem.Property(widget),settings) | String.IsEqual(Container(9000).ListItem.Property(widget),systeminfo)</visible>
                 <control type="group">
                     <visible>!Window.IsActive(script-globalsearch-main.xml)</visible>
                     <include>skinshortcuts-template-widgets</include>

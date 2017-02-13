@@ -64,6 +64,18 @@ msgctxt "#31015"
 msgid "Enables fanart backgrounds in media sections and home screen widgets."
 msgstr "Enables fanart backgrounds in media sections and home screen widgets."
 
+msgctxt "#31016"
+msgid "Operating system"
+msgstr "Operating system"
+
+msgctxt "#31017"
+msgid "Screen resolution"
+msgstr "Screen resolution"
+
+msgctxt "#31018"
+msgid "CPU speed"
+msgstr "CPU speed"
+
 msgctxt "#31025"
 msgid "items"
 msgstr "items"

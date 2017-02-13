@@ -605,4 +605,10 @@
 		<value condition="String.StartsWith(Container(9000).ListItem.Property(widgetPath),pvr)">$INFO[ListItem.ChannelNumberLabel,,. ]$INFO[ListItem.Label]</value>
 		<value condition="String.StartsWith(Container(9000).ListItem.Property(widgetPath),addons) + !String.IsEmpty(ListItem.AddonSummary)">$INFO[ListItem.AddonSummary]</value>
 	</variable>
+	<variable name="OSVar">
+		<value condition="System.Platform.Windows">special://skin/extras/icons/windows.png</value>
+		<value condition="System.Platform.Android">special://skin/extras/icons/android.png</value>
+		<value condition="System.Platform.Linux | System.Platform.Linux.RaspberryPi">special://skin/extras/icons/linux.png</value>
+		<value>special://skin/extras/icons/apple.png</value>
+	</variable>
 </includes>
