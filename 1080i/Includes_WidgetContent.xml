@@ -590,7 +590,7 @@
             <item id="1">
                 <label>$LOCALIZE[150]</label>
                 <label2>$INFO[Network.IPAddress]</label2>
-                <icon>special://skin/extras/icons/ip.png</icon>
+                <icon>special://skin/extras/icons/location.png</icon>
                 <onclick>ActivateWindow(systeminfo)</onclick>
             </item>
             <item id="6">
