@@ -101,7 +101,7 @@
     <widget label="31008" condition="System.HasPVRAddon" icon="DefaultAddonPVRClient.png" name="31008" type="" path="pvr://recordings/tv/active?view=flat" target="pvr">recentrecordings</widget>
     <widget label="136" icon="DefaultPlaylist.png" name="136" type="videos" path="special://videoplaylists/" target="video">myplaylists</widget>
     <widget label="5">settings</widget>
-    <widget label="130">systeminfo</widget>
+    <widget label="130" icon="special://skin/extras/icons/info.png">systeminfo</widget>
     <widget label="12600" condition="!IsEmpty(Weather.Plugin)">weather</widget>
     
 
