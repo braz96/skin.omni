@@ -63,6 +63,8 @@
 				<onright condition="!Container(500).HasNext + !Container(500).HasPrevious">SetFocus(9050)</onright>
 				<onup>500</onup>
 				<ondown>500</ondown>
+				<oninfo condition="$EXP[PluginAdvancedLauncher] + System.HasAddon(script.toolbox)">RunScript(script.toolbox,info=textviewer,header='"$INFO[ListItem.Label]"',text='"$VAR[AdvancedLauncherPlotVar]"')</oninfo>
+				<oninfo condition="System.HasAddon(script.extendedinfo) + Container.Content(actors)">RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[ListItem.Label])</oninfo>
 				<pagecontrol>60</pagecontrol>
 				<preloaditems>2</preloaditems>
 				<viewtype label="31086">Icon</viewtype>
