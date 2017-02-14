@@ -500,7 +500,7 @@
     </include>
     <include name="SystemInfoWidgetContents">
         <visible>String.IsEqual(Container(9000).ListItem.Property(widget),systeminfo)</visible>
-        <top>89</top>
+        <top>0</top>
         <left>0</left>
         <width>1696</width>
         <height>890</height>
@@ -563,47 +563,68 @@
             </control>
         </focusedlayout>
         <content>
-            <item id="3">
+            <item id="1">
                 <label>$LOCALIZE[31016]</label>
                 <label2>$INFO[System.KernelVersion]</label2>
                 <icon>$VAR[OSVar]</icon>
                 <onclick>ActivateWindow(systeminfo)</onclick>
+                <visible>!String.IsEmpty(System.KernelVersion)</visible>
+            </item>
+            <item id="2">
+                <label>$LOCALIZE[31018]</label>
+                <label2>$INFO[System.CpuFrequency]</label2>
+                <icon>special://skin/extras/icons/cpu.png</icon>
+                <onclick>ActivateWindow(systeminfo)</onclick>
+                <visible>!String.IsEmpty(System.CpuFrequency)</visible>
+            </item>
+            <item id="3">
+                <label>$LOCALIZE[31019]</label>
+                <label2>$INFO[System.VideoEncoderInfo]</label2>
+                <icon>DefaultVideo.png</icon>
+                <onclick>ActivateWindow(systeminfo)</onclick>
+                <visible>!String.IsEmpty(System.VideoEncoderInfo)</visible>
             </item>
             <item id="4">
                 <label>$LOCALIZE[31017]</label>
                 <label2>$INFO[System.ScreenMode]</label2>
                 <icon>special://skin/extras/icons/resolution.png</icon>
                 <onclick>ActivateWindow(systeminfo)</onclick>
+                <visible>!String.IsEmpty(System.ScreenMode)</visible>
             </item>
-            <item id="2">
+            <item id="5">
                 <label>$LOCALIZE[12390]</label>
                 <label2>$INFO[System.Uptime]</label2>
                 <icon>special://skin/extras/icons/clock.png</icon>
                 <onclick>ActivateWindow(systeminfo)</onclick>
+                <visible>!String.IsEmpty(System.Uptime)</visible>
             </item>
-            <item id="7">
+            <item id="6">
                 <label>$LOCALIZE[12394]</label>
                 <label2>$INFO[System.TotalUptime]</label2>
                 <icon>special://skin/extras/icons/clock.png</icon>
                 <onclick>ActivateWindow(systeminfo)</onclick>
+                <visible>!String.IsEmpty(System.TotalUptime)</visible>
             </item>
-            <item id="1">
+            <item id="7">
                 <label>$LOCALIZE[150]</label>
                 <label2>$INFO[Network.IPAddress]</label2>
                 <icon>special://skin/extras/icons/location.png</icon>
                 <onclick>ActivateWindow(systeminfo)</onclick>
+                <visible>!String.IsEmpty(Network.IPAddress)</visible>
             </item>
-            <item id="6">
+            <item id="8">
                 <label>$LOCALIZE[798]</label>
                 <label2>$INFO[System.InternetState]</label2>
                 <icon>special://skin/extras/icons/service.png</icon>
                 <onclick>ActivateWindow(systeminfo)</onclick>
+                <visible>!String.IsEmpty(System.InternetState)</visible>
             </item>
-            <item id="5">
-                <label>$LOCALIZE[31018]</label>
-                <label2>$INFO[System.CpuFrequency]</label2>
-                <icon>special://skin/extras/icons/cpu.png</icon>
+            <item id="9">
+                <label>$LOCALIZE[19114]</label>
+                <label2>$INFO[System.BuildVersion]</label2>
+                <icon>special://skin/extras/icons/kodi.png</icon>
                 <onclick>ActivateWindow(systeminfo)</onclick>
+                <visible>!String.IsEmpty(System.BuildVersion)</visible>
             </item>
         </content>
     </include>

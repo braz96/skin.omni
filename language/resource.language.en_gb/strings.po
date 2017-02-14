@@ -78,7 +78,11 @@ msgctxt "#31018"
 msgid "CPU speed"
 msgstr ""
 
-#empty strings from id 31019 to 31024
+msgctxt "#31019"
+msgid "Video encoder"
+msgstr ""
+
+#empty strings from id 31020 to 31024
 
 msgctxt "#31025"
 msgid "items"

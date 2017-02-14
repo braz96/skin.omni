@@ -76,6 +76,10 @@ msgctxt "#31018"
 msgid "CPU speed"
 msgstr "CPU speed"
 
+msgctxt "#31019"
+msgid "Video encoder"
+msgstr "Video encoder"
+
 msgctxt "#31025"
 msgid "items"
 msgstr "items"

@@ -254,7 +254,7 @@
                     <animation effect="fade" time="320" delay="200">Visible</animation>
                     <animation effect="fade" time="200">Hidden</animation>
                     <left>50</left>
-                    <top>103</top>
+                    <top>14</top>
                     <width>750</width>
                     <height>150</height>
                     <include>FocusedBackgroundFade</include>
@@ -270,7 +270,7 @@
                     <animation effect="fade" time="320" delay="200">Visible</animation>
                     <animation effect="fade" time="200">Hidden</animation>
                     <left>50</left>
-                    <top>103</top>
+                    <top>14</top>
                     <width>150</width>
                     <height>150</height>
                     <include>FocusedBackgroundFade</include>
@@ -294,7 +294,7 @@
                 <control type="group">
                     <visible>Control.IsVisible(8014$SKINSHORTCUTS[id])</visible>
                     <left>340</left>
-                    <top>655</top>
+                    <top>750</top>
                     <control type="label">
                         <description>CPU Text</description>
                         <left>510</left>
