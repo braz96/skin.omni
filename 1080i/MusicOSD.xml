@@ -174,7 +174,7 @@
 					<font>IconMedium</font>
 					<onclick>Dialog.Close(musicosd)</onclick>
 					<onclick>ActivateWindow(1120)</onclick>
-					<onclick>SetProperty(MusicOSD.Settings,True,home)</onclick>
+					<onclick>SetProperty(MusicOSD.Settings,true,home)</onclick>
 				</control>
 			</control>
 		</control>

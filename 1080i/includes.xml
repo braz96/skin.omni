@@ -40,10 +40,11 @@
 		</control>
 		<control type="button" id="9051">
 			<include>HiddenObject</include>
-			<onfocus condition="String.IsEmpty(Window(Home).Property(MediaMenu))">SetProperty(MediaMenu,True,home)</onfocus>
-			<onfocus condition="String.IsEmpty(Window(Home).Property(MediaMenu))">SetFocus(9050)</onfocus>
-			<onfocus condition="!String.IsEmpty(Window(Home).Property(MediaMenu))">ClearProperty(MediaMenu,Home)</onfocus>
-			<onfocus condition="!String.IsEmpty(Window(Home).Property(MediaMenu))">SetFocus(50)</onfocus>
+			<onfocus>ClearProperty(SubMenu,home)</onfocus>
+			<onfocus condition="String.IsEmpty(Window(home).Property(MediaMenu))">SetProperty(MediaMenu,true,home)</onfocus>
+			<onfocus condition="String.IsEmpty(Window(home).Property(MediaMenu))">SetFocus(9050)</onfocus>
+			<onfocus condition="!String.IsEmpty(Window(home).Property(MediaMenu))">ClearProperty(MediaMenu,home)</onfocus>
+			<onfocus condition="!String.IsEmpty(Window(home).Property(MediaMenu))">SetFocus(50)</onfocus>
 		</control>
 	</include>
 	<include name="KioskModeButton">
@@ -51,7 +52,7 @@
 			<description>Kiosk Mode button</description>
 			<include>ButtonCommonValues</include>
 			<label />
-			<onfocus>ClearProperty(MediaMenu,Home)</onfocus>
+			<onfocus>ClearProperty(MediaMenu,home)</onfocus>
 			<onfocus>SetFocus(50)</onfocus>
 		</control>
 	</include>
@@ -61,13 +62,13 @@
 		<width>630</width>
 		<height>1080</height>
 		<onright>9050</onright>
-		<onleft>ClearProperty(MediaMenu,Home)</onleft>
+		<onleft>ClearProperty(MediaMenu,home)</onleft>
 		<onleft condition="![Window.IsVisible(tvguide) | Window.IsActive(SettingsCategory.xml)]">50</onleft>
 		<onleft condition="Window.IsVisible(tvguide)">10</onleft>
 		<onleft condition="Window.IsActive(SettingsCategory.xml)">3</onleft>
 		<onup>9050</onup>
 		<ondown>9050</ondown>
-		<onback>ClearProperty(MediaMenu,Home)</onback>
+		<onback>ClearProperty(MediaMenu,home)</onback>
 		<onback>50</onback>
 		<itemgap>0</itemgap>
 		<include condition="Skin.HasSetting(KioskMode.Enabled)">KioskModeButton</include>
@@ -164,7 +165,7 @@
 					<description>Channels</description>
 					<label>19019</label>
 					<include>ButtonCommonValues</include>
-					<onclick>ClearProperty(MediaMenu,Home)</onclick>
+					<onclick>ClearProperty(MediaMenu,home)</onclick>
 					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
 					<onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
 				</control>
@@ -172,7 +173,7 @@
 					<description>Guide</description>
 					<label>22020</label>
 					<include>ButtonCommonValues</include>
-					<onclick>ClearProperty(MediaMenu,Home)</onclick>
+					<onclick>ClearProperty(MediaMenu,home)</onclick>
 					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
 					<onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
 				</control>
@@ -180,7 +181,7 @@
 					<description>Recordings</description>
 					<label>19163</label>
 					<include>ButtonCommonValues</include>
-					<onclick>ClearProperty(MediaMenu,Home)</onclick>
+					<onclick>ClearProperty(MediaMenu,home)</onclick>
 					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
 					<onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
 				</control>
@@ -195,7 +196,7 @@
 					<description>Timers</description>
 					<label>19040</label>
 					<include>ButtonCommonValues</include>
-					<onclick>ClearProperty(MediaMenu,Home)</onclick>
+					<onclick>ClearProperty(MediaMenu,home)</onclick>
 					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
 					<onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
 				</control>
@@ -203,7 +204,7 @@
 					<description>Search</description>
 					<label>137</label>
 					<include>ButtonCommonValues</include>
-					<onclick>ClearProperty(MediaMenu,Home)</onclick>
+					<onclick>ClearProperty(MediaMenu,home)</onclick>
 					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
 					<onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
 				</control>
@@ -230,7 +231,7 @@
 				<ondown>$PARAM[PlayerControlsOnDown]</ondown>
 				<onleft>6050</onleft>
 				<onright>6050</onright>
-				<onback>ClearProperty(MediaMenu,Home)</onback>
+				<onback>ClearProperty(MediaMenu,home)</onback>
 				<onback>50</onback>
 				<control type="button" id="6051">
 					<label>g</label>
@@ -460,7 +461,7 @@
 			<width>10</width>
 			<height>960</height>
 			<onleft>50</onleft>
-			<onright>SetProperty(MediaMenu,True,home)</onright>
+			<onright>SetProperty(MediaMenu,true,home)</onright>
 			<onright>SetFocus(9050)</onright>
 			<ondown>60</ondown>
 			<onup>60</onup>
@@ -534,7 +535,7 @@
 			<description>Go to playlist</description>
 			<include>ButtonCommonValues</include>
 			<label>31234</label>
-			<onclick>ClearProperty(MediaMenu,Home)</onclick>
+			<onclick>ClearProperty(MediaMenu,home)</onclick>
 			<onclick condition="!String.IsEqual(Playlist.Length(music),0) + String.IsEqual(Playlist.Length(video),0)">ActivateWindow(musicplaylist)</onclick>
 			<onclick condition="!String.IsEqual(Playlist.Length(video),0) + String.IsEqual(Playlist.Length(music),0)">ActivateWindow(videoplaylist)</onclick>
 			<onclick condition="!String.IsEqual(Playlist.Length(music),0) + !String.IsEqual(Playlist.Length(video),0)">SetProperty(Dialog.1.Label,$LOCALIZE[31193])</onclick>
@@ -616,7 +617,7 @@
 			<width>10</width>
 			<height>960</height>
 			<onleft>101</onleft>
-			<onright>SetProperty(MediaMenu,True,home)</onright>
+			<onright>SetProperty(MediaMenu,true,home)</onright>
 			<onright>SetFocus(9050)</onright>
 			<onup>$PARAM[id]</onup>
 			<ondown>$PARAM[id]</ondown>

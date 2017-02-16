@@ -4,10 +4,8 @@
 	<allowoverlay>no</allowoverlay>
 	<onload>SetFocus(9000,0)</onload>
 	<menucontrol>9051</menucontrol>
-	<onload>SetProperty(Window.HasSettings,True,home)</onload>
-	<onload>ClearProperty(MediaMenu,Home)</onload>
-	<onunload>ClearProperty(MediaMenu,Home)</onunload>
-	<onunload>ClearProperty(Window.HasSettings,Home)</onunload>
+	<onload>ClearProperty(MediaMenu,home)</onload>
+	<onunload>ClearProperty(MediaMenu,home)</onunload>
 	<controls>
 		<control type="group">
 			<animation effect="slide" start="1200" end="0" time="300">WindowOpen</animation>
@@ -105,7 +103,7 @@
 					<height>1080</height>
 					<onleft condition="Container(9000).HasFocus(203)">50</onleft>
 					<onleft condition="Control.IsVisible(400) + [Container(400).HasNext | Container(400).HasPrevious]">60</onleft>
-					<onright condition="Control.IsEnabled(13)">SetProperty(MediaMenu,True,home)</onright>
+					<onright condition="Control.IsEnabled(13)">SetProperty(MediaMenu,true,home)</onright>
 					<onright condition="Control.IsEnabled(13)">SetFocus(9050)</onright>
 					<ondown>9000</ondown>
 					<onup>9000</onup>
@@ -323,11 +321,11 @@
 						<width>630</width>
 						<height>1080</height>
 						<onright>9050</onright>
-						<onleft>ClearProperty(MediaMenu,Home)</onleft>
+						<onleft>ClearProperty(MediaMenu,home)</onleft>
 						<onleft>9000</onleft>
 						<onup>9050</onup>
 						<ondown>9050</ondown>
-						<onback>ClearProperty(MediaMenu,Home)</onback>
+						<onback>ClearProperty(MediaMenu,home)</onback>
 						<onback>9000</onback>
 						<itemgap>0</itemgap>
 						<control type="radiobutton" id="13">

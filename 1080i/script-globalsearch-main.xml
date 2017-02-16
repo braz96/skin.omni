@@ -2,7 +2,7 @@
 <window>
 	<defaultcontrol always="true">9020</defaultcontrol>
 	<menucontrol>9051</menucontrol>
-	<onload>ClearProperty(MediaMenu,Home)</onload>
+	<onload>ClearProperty(MediaMenu,home)</onload>
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<include>CommonBackground</include>
@@ -612,7 +612,7 @@
 									<pagecontrol>60</pagecontrol>
 									<onleft>Control.SetFocus(9020)</onleft>
 									<onright condition="Container(221).HasNext | Container(221).HasPrevious">60</onright>
-									<onright condition="!Container(221).HasNext + !Container(221).HasPrevious">SetProperty(MediaMenu,True,home)</onright>
+									<onright condition="!Container(221).HasNext + !Container(221).HasPrevious">SetProperty(MediaMenu,true,home)</onright>
 									<onright condition="!Container(221).HasNext + !Container(221).HasPrevious">SetFocus(9050)</onright>
 									<onup>221</onup>
 									<ondown>221</ondown>
@@ -697,7 +697,7 @@
 									<pagecontrol>61</pagecontrol>
 									<onleft>Control.SetFocus(9020)</onleft>
 									<onright condition="Container(111).HasNext | Container(111).HasPrevious">61</onright>
-									<onright condition="!Container(111).HasNext + !Container(111).HasPrevious">SetProperty(MediaMenu,True,home)</onright>
+									<onright condition="!Container(111).HasNext + !Container(111).HasPrevious">SetProperty(MediaMenu,true,home)</onright>
 									<onright condition="!Container(111).HasNext + !Container(111).HasPrevious">SetFocus(9050)</onright>
 									<onup>111</onup>
 									<ondown>111</ondown>
@@ -782,7 +782,7 @@
 									<pagecontrol>62</pagecontrol>
 									<onleft>Control.SetFocus(9020)</onleft>
 									<onright condition="Container(121).HasNext | Container(121).HasPrevious">62</onright>
-									<onright condition="!Container(121).HasNext + !Container(121).HasPrevious">SetProperty(MediaMenu,True,home)</onright>
+									<onright condition="!Container(121).HasNext + !Container(121).HasPrevious">SetProperty(MediaMenu,true,home)</onright>
 									<onright condition="!Container(121).HasNext + !Container(121).HasPrevious">SetFocus(9050)</onright>
 									<onup>121</onup>
 									<ondown>121</ondown>
@@ -867,7 +867,7 @@
 									<pagecontrol>63</pagecontrol>
 									<onleft>Control.SetFocus(9020)</onleft>
 									<onright condition="Container(131).HasNext | Container(131).HasPrevious">63</onright>
-									<onright condition="!Container(131).HasNext + !Container(131).HasPrevious">SetProperty(MediaMenu,True,home)</onright>
+									<onright condition="!Container(131).HasNext + !Container(131).HasPrevious">SetProperty(MediaMenu,true,home)</onright>
 									<onright condition="!Container(131).HasNext + !Container(131).HasPrevious">SetFocus(9050)</onright>
 									<onup>131</onup>
 									<ondown>131</ondown>
@@ -952,7 +952,7 @@
 									<pagecontrol>64</pagecontrol>
 									<onleft>Control.SetFocus(9020)</onleft>
 									<onright condition="Container(141).HasNext | Container(141).HasPrevious">64</onright>
-									<onright condition="!Container(141).HasNext + !Container(141).HasPrevious">SetProperty(MediaMenu,True,home)</onright>
+									<onright condition="!Container(141).HasNext + !Container(141).HasPrevious">SetProperty(MediaMenu,true,home)</onright>
 									<onright condition="!Container(141).HasNext + !Container(141).HasPrevious">SetFocus(9050)</onright>
 									<onup>141</onup>
 									<ondown>141</ondown>
@@ -1037,7 +1037,7 @@
 									<pagecontrol>65</pagecontrol>
 									<onleft>Control.SetFocus(9020)</onleft>
 									<onright condition="Container(211).HasNext | Container(211).HasPrevious">65</onright>
-									<onright condition="!Container(211).HasNext + !Container(211).HasPrevious">SetProperty(MediaMenu,True,home)</onright>
+									<onright condition="!Container(211).HasNext + !Container(211).HasPrevious">SetProperty(MediaMenu,true,home)</onright>
 									<onright condition="!Container(211).HasNext + !Container(211).HasPrevious">SetFocus(9050)</onright>
 									<onup>211</onup>
 									<ondown>211</ondown>
@@ -1122,7 +1122,7 @@
 									<pagecontrol>66</pagecontrol>
 									<onleft>Control.SetFocus(9020)</onleft>
 									<onright condition="Container(231).HasNext | Container(231).HasPrevious">66</onright>
-									<onright condition="!Container(231).HasNext + !Container(231).HasPrevious">SetProperty(MediaMenu,True,home)</onright>
+									<onright condition="!Container(231).HasNext + !Container(231).HasPrevious">SetProperty(MediaMenu,true,home)</onright>
 									<onright condition="!Container(231).HasNext + !Container(231).HasPrevious">SetFocus(9050)</onright>
 									<onup>231</onup>
 									<ondown>231</ondown>
@@ -1207,7 +1207,7 @@
 									<pagecontrol>67</pagecontrol>
 									<onleft>Control.SetFocus(9020)</onleft>
 									<onright condition="Container(151).HasNext | Container(151).HasPrevious">67</onright>
-									<onright condition="!Container(151).HasNext + !Container(151).HasPrevious">SetProperty(MediaMenu,True,home)</onright>
+									<onright condition="!Container(151).HasNext + !Container(151).HasPrevious">SetProperty(MediaMenu,true,home)</onright>
 									<onright condition="!Container(151).HasNext + !Container(151).HasPrevious">SetFocus(9050)</onright>
 									<onup>151</onup>
 									<ondown>151</ondown>
@@ -1278,7 +1278,7 @@
 									<pagecontrol>68</pagecontrol>
 									<onleft>Control.SetFocus(9020)</onleft>
 									<onright condition="Container(161).HasNext | Container(161).HasPrevious">68</onright>
-									<onright condition="!Container(161).HasNext + !Container(161).HasPrevious">SetProperty(MediaMenu,True,home)</onright>
+									<onright condition="!Container(161).HasNext + !Container(161).HasPrevious">SetProperty(MediaMenu,true,home)</onright>
 									<onright condition="!Container(161).HasNext + !Container(161).HasPrevious">SetFocus(9050)</onright>
 									<onup>161</onup>
 									<ondown>161</ondown>
@@ -1349,7 +1349,7 @@
 									<pagecontrol>69</pagecontrol>
 									<onleft>Control.SetFocus(9020)</onleft>
 									<onright condition="Container(171).HasNext | Container(171).HasPrevious">69</onright>
-									<onright condition="!Container(171).HasNext + !Container(171).HasPrevious">SetProperty(MediaMenu,True,home)</onright>
+									<onright condition="!Container(171).HasNext + !Container(171).HasPrevious">SetProperty(MediaMenu,true,home)</onright>
 									<onright condition="!Container(171).HasNext + !Container(171).HasPrevious">SetFocus(9050)</onright>
 									<onup>171</onup>
 									<ondown>171</ondown>
@@ -1434,7 +1434,7 @@
 									<pagecontrol>70</pagecontrol>
 									<onleft>Control.SetFocus(9020)</onleft>
 									<onright condition="Container(181).HasNext | Container(181).HasPrevious">70</onright>
-									<onright condition="!Container(181).HasNext + !Container(181).HasPrevious">SetProperty(MediaMenu,True,home)</onright>
+									<onright condition="!Container(181).HasNext + !Container(181).HasPrevious">SetProperty(MediaMenu,true,home)</onright>
 									<onright condition="!Container(181).HasNext + !Container(181).HasPrevious">SetFocus(9050)</onright>
 									<onup>181</onup>
 									<ondown>181</ondown>
@@ -1562,32 +1562,32 @@
 						<top>0</top>
 						<width>630</width>
 						<height>1080</height>
-						<onleft>ClearProperty(MediaMenu,Home)</onleft>
+						<onleft>ClearProperty(MediaMenu,home)</onleft>
 						<onleft>101</onleft>
 						<itemgap>0</itemgap>
 						<control type="button" id="999">
 							<description>New Search</description>
-							<onright>ClearProperty(MediaMenu,Home)</onright>
+							<onright>ClearProperty(MediaMenu,home)</onright>
 							<onright>9000</onright>
-							<onback>ClearProperty(MediaMenu,Home)</onback>
+							<onback>ClearProperty(MediaMenu,home)</onback>
 							<onclick>SendClick(198)</onclick>
-							<onclick>ClearProperty(MediaMenu,Home)</onclick>
+							<onclick>ClearProperty(MediaMenu,home)</onclick>
 							<include>ButtonCommonValues</include>
 							<label>31184</label>
 						</control>
 						<control type="button" id="8">
 							<description>Settings</description>
-							<onright>ClearProperty(MediaMenu,Home)</onright>
+							<onright>ClearProperty(MediaMenu,home)</onright>
 							<onright>9000</onright>
-							<onback>ClearProperty(MediaMenu,Home)</onback>
+							<onback>ClearProperty(MediaMenu,home)</onback>
 							<onclick>Addon.OpenSettings(script.globalsearch)</onclick>
 							<include>ButtonCommonValues</include>
 							<label>5</label>
 						</control>
 						<control type="button" id="613">
-							<onright>ClearProperty(MediaMenu,Home)</onright>
+							<onright>ClearProperty(MediaMenu,home)</onright>
 							<onright>9000</onright>
-							<onback>ClearProperty(MediaMenu,Home)</onback>
+							<onback>ClearProperty(MediaMenu,home)</onback>
 							<include>ButtonCommonValues</include>
 							<label>31193</label>
 							<onclick>Close</onclick>
@@ -1595,9 +1595,9 @@
 							<visible>!String.IsEqual(Playlist.Length(music),0)</visible>
 						</control>
 						<control type="button" id="614">
-							<onright>ClearProperty(MediaMenu,Home)</onright>
+							<onright>ClearProperty(MediaMenu,home)</onright>
 							<onright>9000</onright>
-							<onback>ClearProperty(MediaMenu,Home)</onback>
+							<onback>ClearProperty(MediaMenu,home)</onback>
 							<include>ButtonCommonValues</include>
 							<label>31194</label>
 							<onclick>Close</onclick>

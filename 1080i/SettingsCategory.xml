@@ -2,8 +2,8 @@
 <window>
 	<defaultcontrol>3</defaultcontrol>
 	<menucontrol>9051</menucontrol>
-    <onload>ClearProperty(MediaMenu,Home)</onload>
-    <onunload>ClearProperty(MediaMenu,Home)</onunload>
+    <onload>ClearProperty(MediaMenu,home)</onload>
+    <onunload>ClearProperty(MediaMenu,home)</onunload>
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<include>CommonBackground</include>
@@ -50,7 +50,7 @@
 					<pagecontrol>60</pagecontrol>
 					<onleft>3</onleft>
 					<onright condition="Container(5).HasNext | Container(5).HasPrevious">60</onright>
-					<onright condition="!Container(5).HasNext + !Container(5).HasPrevious">SetProperty(MediaMenu,True,home)</onright>
+					<onright condition="!Container(5).HasNext + !Container(5).HasPrevious">SetProperty(MediaMenu,true,home)</onright>
 					<onright condition="!Container(5).HasNext + !Container(5).HasPrevious">SetFocus(9050)</onright>
 					<onup>5</onup>
 					<ondown>5</ondown>
@@ -116,7 +116,7 @@
 				<width>10</width>
 				<height>960</height>
 				<onleft>5</onleft>
-				<onright>SetProperty(MediaMenu,True,home)</onright>
+				<onright>SetProperty(MediaMenu,true,home)</onright>
                 <onright>SetFocus(9050)</onright>
 				<ondown>60</ondown>
 				<onup>60</onup>
@@ -131,11 +131,11 @@
                     <width>630</width>
                     <height>1080</height>
                     <onright>9050</onright>
-                    <onleft>ClearProperty(MediaMenu,Home)</onleft>
+                    <onleft>ClearProperty(MediaMenu,home)</onleft>
                     <onleft>5</onleft>
                     <onup>9050</onup>
                     <ondown>9050</ondown>
-                    <onback>ClearProperty(MediaMenu,Home)</onback>
+                    <onback>ClearProperty(MediaMenu,home)</onback>
                     <onback>5</onback>
                     <itemgap>0</itemgap>
                     <control type="button" id="20">

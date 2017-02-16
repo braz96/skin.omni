@@ -2,8 +2,8 @@
 <window>
 	<defaultcontrol always="true">305</defaultcontrol>
 	<menucontrol>9051</menucontrol>
-	<onload>ClearProperty(MediaMenu,Home)</onload>
-	<onunload>ClearProperty(MediaMenu,Home)</onunload>
+	<onload>ClearProperty(MediaMenu,home)</onload>
+	<onunload>ClearProperty(MediaMenu,home)</onunload>
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<include>CommonBackground</include>
@@ -110,7 +110,7 @@
 			        <width>1620</width>
 			        <height>445</height>
 			        <onleft>9000</onleft>
-			        <onright>SetProperty(MediaMenu,True,home)</onright>
+			        <onright>SetProperty(MediaMenu,true,home)</onright>
 					<onright>SetFocus(9050)</onright>
 			        <!--<onback>9000</onback>-->
 			        <onup>9000</onup>
@@ -286,11 +286,11 @@
 					<width>630</width>
 					<height>1080</height>
 					<onright>9050</onright>
-					<onleft>ClearProperty(MediaMenu,Home)</onleft>
+					<onleft>ClearProperty(MediaMenu,home)</onleft>
 					<onleft>305</onleft>
 					<onup>9050</onup>
 					<ondown>9050</ondown>
-					<onback>ClearProperty(MediaMenu,Home)</onback>
+					<onback>ClearProperty(MediaMenu,home)</onback>
 					<onback>305</onback>
 					<itemgap>0</itemgap>
 					<control type="button" id="213">

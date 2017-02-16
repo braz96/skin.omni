@@ -2,8 +2,8 @@
 <window>
 	<defaultcontrol always="true">2</defaultcontrol>
 	<menucontrol>9051</menucontrol>
-    <onload>ClearProperty(MediaMenu,Home)</onload>
-    <onunload>ClearProperty(MediaMenu,Home)</onunload>
+    <onload>ClearProperty(MediaMenu,home)</onload>
+    <onunload>ClearProperty(MediaMenu,home)</onunload>
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<include>CommonBackground</include>
@@ -37,7 +37,7 @@
                     <width>1400</width>
                     <height>780</height>
                     <onright condition="Container(2).HasPrevious | Container(2).HasNext">60</onright>
-                    <onright condition="!Container(2).HasNext + !Container(2).HasPrevious">SetProperty(MediaMenu,True,home)</onright>
+                    <onright condition="!Container(2).HasNext + !Container(2).HasPrevious">SetProperty(MediaMenu,true,home)</onright>
                     <onright condition="!Container(2).HasNext + !Container(2).HasPrevious">SetFocus(9050)</onright>
                     <onleft>9000</onleft>
                     <pagecontrol>60</pagecontrol>
@@ -103,11 +103,11 @@
                     <width>630</width>
                     <height>1080</height>
                     <onright>9050</onright>
-                    <onleft>ClearProperty(MediaMenu,Home)</onleft>
+                    <onleft>ClearProperty(MediaMenu,home)</onleft>
                     <onleft>2</onleft>
                     <onup>9050</onup>
                     <ondown>9050</ondown>
-                    <onback>ClearProperty(MediaMenu,Home)</onback>
+                    <onback>ClearProperty(MediaMenu,home)</onback>
                     <onback>2</onback>
                     <itemgap>0</itemgap>
                     <control type="radiobutton" id="4">
@@ -174,7 +174,7 @@
                     <width>10</width>
                     <height>960</height>
                     <onleft>2</onleft>
-                    <onright>SetProperty(MediaMenu,True,home)</onright>
+                    <onright>SetProperty(MediaMenu,true,home)</onright>
                     <onright>SetFocus(9050)</onright>
                     <ondown>60</ondown>
                     <onup>60</onup>

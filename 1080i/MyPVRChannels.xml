@@ -2,8 +2,8 @@
 <window>
 	<defaultcontrol>50</defaultcontrol>
 	<menucontrol>9051</menucontrol>
-	<onload>ClearProperty(MediaMenu,Home)</onload>
-	<onunload>ClearProperty(MediaMenu,Home)</onunload>
+	<onload>ClearProperty(MediaMenu,home)</onload>
+	<onunload>ClearProperty(MediaMenu,home)</onunload>
 	<allowoverlay>no</allowoverlay>
 	<views>50</views>
 	<controls>
@@ -60,7 +60,7 @@
 					<height>840</height>
 					<onleft>9000</onleft>
 					<onright condition="Container(50).HasPrevious | Container(50).HasNext">60</onright>
-					<onright condition="!Container(50).HasPrevious + !Container(50).HasNext">SetProperty(MediaMenu,True,home)</onright>
+					<onright condition="!Container(50).HasPrevious + !Container(50).HasNext">SetProperty(MediaMenu,true,home)</onright>
 					<onright condition="!Container(50).HasPrevious + !Container(50).HasNext">SetFocus(9050)</onright>
 					<onup>50</onup>
 					<ondown>50</ondown>
@@ -236,7 +236,7 @@
 				<top>120</top>
 				<width>10</width>
 				<height>960</height>
-				<onright>SetProperty(MediaMenu,True,home)</onright>
+				<onright>SetProperty(MediaMenu,true,home)</onright>
 				<onright>SetFocus(9050)</onright>
 				<onleft>50</onleft>
 				<ondown>60</ondown>

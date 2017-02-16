@@ -2,8 +2,8 @@
 <window>
     <defaultcontrol always="true">9020</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
-    <onload>ClearProperty(MediaMenu,Home)</onload>
-    <onunload>ClearProperty(MediaMenu,Home)</onunload>
+    <onload>ClearProperty(MediaMenu,home)</onload>
+    <onunload>ClearProperty(MediaMenu,home)</onunload>
     <controls>
         <include>CommonBackground</include>
         <control type="group">

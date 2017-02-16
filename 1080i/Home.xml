@@ -3,7 +3,8 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mode=single&amp;options=clonewidgets&amp;mainmenuID=9000&amp;group=mainmenu)</onload>
-	<onload>ClearProperty(MediaMenu,Home)</onload>
+	<onload>ClearProperty(MediaMenu,home)</onload>
+    <onunload>ClearProperty(MediaMenu,home)</onunload>
 	<controls>
  		<control type="multiimage">
             <include>FullscreenDimensions</include>

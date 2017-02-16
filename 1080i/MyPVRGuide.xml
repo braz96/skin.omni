@@ -2,8 +2,8 @@
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<menucontrol>9051</menucontrol>
-	<onload>ClearProperty(MediaMenu,Home)</onload>
-	<onunload>ClearProperty(MediaMenu,Home)</onunload>
+	<onload>ClearProperty(MediaMenu,home)</onload>
+	<onunload>ClearProperty(MediaMenu,home)</onunload>
 	<allowoverlay>no</allowoverlay>
 	<views>10</views>
 	<controls>
@@ -30,11 +30,11 @@
 					<progresstexture colordiffuse="$VAR[ColorHighlightVar]" border="0,72,18,14">osd/epg_progress.png</progresstexture>
 					<rulerunit>6</rulerunit>
 					<onleft>9000</onleft>
-					<onright>SetProperty(MediaMenu,True,home)</onright>
+					<onright>SetProperty(MediaMenu,true,home)</onright>
 					<onright>SetFocus(9050)</onright>
 					<onup>10</onup>
 					<ondown>10</ondown>
-					<onback>SetProperty(MediaMenu,True,home)</onback>
+					<onback>SetProperty(MediaMenu,true,home)</onback>
 					<onback>SetFocus(9050)</onback>
 					<viewtype label="19032">list</viewtype>
 					<rulerlayout height="60" width="60">

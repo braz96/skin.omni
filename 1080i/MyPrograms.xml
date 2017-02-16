@@ -3,8 +3,8 @@
 	<defaultcontrol always="true">50</defaultcontrol>
 	<menucontrol>9051</menucontrol>
 	<allowoverlay>no</allowoverlay>
-	<onload>ClearProperty(MediaMenu,Home)</onload>
-	<onunload>ClearProperty(MediaMenu,Home)</onunload>
+	<onload>ClearProperty(MediaMenu,home)</onload>
+	<onunload>ClearProperty(MediaMenu,home)</onunload>
 	<views>50,500</views>
 	<controls>
 		<include>CommonBackground</include>

@@ -43,6 +43,7 @@
 					<onright condition="Window.IsActive(filemanager)">20</onright>
 					<onright condition="Window.IsActive(tvguide)">10</onright>
 					<onright condition="Window.IsActive(script-script.extendedinfo-YoutubeList.xml)">SetFocus(500)</onright>
+					<onleft>SetProperty(SubMenu,true,home)</onleft>
 					<onleft>9010</onleft>
 					<ondown>9000</ondown>
 					<onup>9000</onup>
@@ -104,7 +105,9 @@
 				<width>430</width>
 				<height>1080</height>
 				<onleft>9010</onleft>
+				<onright>ClearProperty(SubMenu,home)</onright>
 				<onright>9000</onright>
+				<onback>ClearProperty(SubMenu,home)</onback>
 				<onback>9000</onback>
 				<pagecontrol />
 				<scrolltime tween="quadratic" easing="out">300</scrolltime>

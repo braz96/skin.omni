@@ -4,8 +4,8 @@
 	<menucontrol>9051</menucontrol>
 	<allowoverlay>true</allowoverlay>
 	<views>50,500,501,502</views>
-	<onload>ClearProperty(MediaMenu,Home)</onload>
-	<onunload>ClearProperty(MediaMenu,Home)</onunload>
+	<onload>ClearProperty(MediaMenu,home)</onload>
+	<onunload>ClearProperty(MediaMenu,home)</onunload>
 	<onload condition="System.HasAddon(script.tv.show.next.aired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
 	<controls>
 		<include>CommonBackground</include>

@@ -3,10 +3,8 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<onload>SetFocus(9000,0)</onload>
-	<onload>SetProperty(Window.HasSettings,True,home)</onload>
-	<onload>ClearProperty(MediaMenu,Home)</onload>
-	<onunload>ClearProperty(MediaMenu,Home)</onunload>
-	<onunload>ClearProperty(Window.HasSettings,Home)</onunload>
+	<onload>ClearProperty(MediaMenu,home)</onload>
+	<onunload>ClearProperty(MediaMenu,home)</onunload>
 	<controls>
 		<control type="group">
 			<animation effect="slide" start="1200" end="0" time="300">WindowOpen</animation>
