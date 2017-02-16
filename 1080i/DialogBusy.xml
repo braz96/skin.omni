@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<coordinates>
-		<system>1</system>
-		<left>0</left>
-		<top>0</top>
-	</coordinates>
-	<controls>
-		<control type="group">
-			<control type="image">
+    <coordinates>
+        <system>1</system>
+        <left>0</left>
+        <top>0</top>
+    </coordinates>
+    <controls>
+        <control type="group">
+            <control type="image">
                 <description>Busy animation</description>
                 <visible>!Window.IsVisible(volumebar) + !Window.IsVisible(extendedprogressdialog)</visible>
                 <animation effect="slide" time="0" end="-120" condition="$EXP[isInfoDialog]">Conditional</animation>
@@ -19,10 +19,10 @@
                 <aspectratio>keep</aspectratio>
                 <animation effect="rotate" start="360" end="0" center="auto" time="3000" loop="true" condition="true">conditional</animation>
             </control>
-			<control type="progress" id="10">
-				<description>progress control</description>
-				<include>HiddenObject</include>
-			</control>
-		</control>
-	</controls>
+            <control type="progress" id="10">
+                <description>progress control</description>
+                <include>HiddenObject</include>
+            </control>
+        </control>
+    </controls>
 </window>

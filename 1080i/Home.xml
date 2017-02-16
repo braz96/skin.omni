@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-	<defaultcontrol always="true">9000</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
-	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mode=single&amp;options=clonewidgets&amp;mainmenuID=9000&amp;group=mainmenu)</onload>
-	<onload>ClearProperty(MediaMenu,home)</onload>
+    <defaultcontrol always="true">9000</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mode=single&amp;options=clonewidgets&amp;mainmenuID=9000&amp;group=mainmenu)</onload>
+    <onload>ClearProperty(MediaMenu,home)</onload>
     <onunload>ClearProperty(MediaMenu,home)</onunload>
-	<controls>
- 		<control type="multiimage">
+    <controls>
+        <control type="multiimage">
             <include>FullscreenDimensions</include>
             <include>BackgroundFadeAnimation</include>
             <imagepath background="true">$VAR[HomeBackgroundVar]</imagepath>
@@ -14,16 +14,16 @@
         <include>skinshortcuts-template-WidgetFanart</include>
         <include>skinshortcuts-template-WeatherWidgetFanart</include>
         <control type="visualisation">
-        	<visible>Player.HasAudio + !Skin.HasSetting(Disable.ShowBackgroundVis) + !SlideShow.IsActive</visible>
+            <visible>Player.HasAudio + !Skin.HasSetting(Disable.ShowBackgroundVis) + !SlideShow.IsActive</visible>
             <include>FullscreenDimensions</include>
         </control>
         <control type="group">
             <visible>Player.HasVideo + !Skin.HasSetting(Disable.ShowBackgroundVideo) + !SlideShow.IsActive</visible>
             <control type="image">
-    			<include>FullscreenDimensions</include>
-    			<texture>black.png</texture>
-    		</control>
-     		<control type="videowindow">
+                <include>FullscreenDimensions</include>
+                <texture>black.png</texture>
+            </control>
+            <control type="videowindow">
                 <include>FullscreenDimensions</include>
             </control>
         </control>
@@ -98,5 +98,5 @@
                 </control>
             </control>
         </control>
-	</controls>
+    </controls>
 </window>

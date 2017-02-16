@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<defaultcontrol always="true">2</defaultcontrol>
-	<menucontrol>9051</menucontrol>
+    <defaultcontrol always="true">2</defaultcontrol>
+    <menucontrol>9051</menucontrol>
     <onload>ClearProperty(MediaMenu,home)</onload>
     <onunload>ClearProperty(MediaMenu,home)</onunload>
-	<allowoverlay>no</allowoverlay>
-	<controls>
-		<include>CommonBackground</include>
+    <allowoverlay>no</allowoverlay>
+    <controls>
+        <include>CommonBackground</include>
         <control type="group">
             <include>MenuSlideAnimation</include>
             <top>0</top>
             <left>-430</left>
-    		<control type="group">
-    			<left>550</left>
-    			<top>210</top>
-    			<include>Animation.Common</include>
-    			<control type="group">
+            <control type="group">
+                <left>550</left>
+                <top>210</top>
+                <include>Animation.Common</include>
+                <control type="group">
                     <visible>Integer.IsGreater(Container(2).NumItems,0)</visible>
                     <animation effect="fade" time="320" delay="300">Visible</animation>
                     <control type="image">
@@ -32,7 +32,7 @@
                         <animation effect="slide" end="350,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(2).Column,0)">Conditional</animation>
                     </control>
                 </control>
-    			<control type="panel" id="2">
+                <control type="panel" id="2">
                     <left>200</left>
                     <width>1400</width>
                     <height>780</height>
@@ -42,8 +42,8 @@
                     <onleft>9000</onleft>
                     <pagecontrol>60</pagecontrol>
                     <preloaditems>2</preloaditems>
-    				<scrolltime tween="quadratic" easing="out">300</scrolltime>
-    				<itemlayout height="390" width="350">
+                    <scrolltime tween="quadratic" easing="out">300</scrolltime>
+                    <itemlayout height="390" width="350">
                         <control type="image">
                             <top>20</top>
                             <left>20</left>
@@ -91,8 +91,8 @@
                             <texture background="true" fallback="DefaultIconProfile.png">$VAR[ProfileIconVar]</texture>
                         </control>
                     </focusedlayout>
-    			</control>
-    		</control>
+                </control>
+            </control>
             <control type="group">
                 <left>2350</left>
                 <include>SideBladeRight</include>
@@ -181,5 +181,5 @@
                 </control>
             </control>
         </control>
-	</controls>
+    </controls>
 </window>
