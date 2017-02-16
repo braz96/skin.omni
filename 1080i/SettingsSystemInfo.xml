@@ -2,9 +2,8 @@
 <window>
 	<defaultcontrol always="true">95</defaultcontrol>
 	<menucontrol>9051</menucontrol>
-	<onload>SetProperty(Window.HasSettings,True,home)</onload>
 	<onload>ClearProperty(MediaMenu,Home)</onload>
-	<onunload>ClearProperty(Window.HasSettings,Home)</onunload>
+	<onunload>ClearProperty(MediaMenu,Home)</onunload>
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<include>CommonBackground</include>

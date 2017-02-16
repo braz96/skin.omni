@@ -2,8 +2,6 @@
 <window>
 	<defaultcontrol always="true">9020</defaultcontrol>
 	<menucontrol>9051</menucontrol>
-	<onload condition="!String.IsEmpty(Window(home).Property(Window.HasSettings))">ClearProperty(Window.HasSettings,Home)</onload>
-	<onunload>SetProperty(Window.HasSettings,True,home)</onunload>
 	<onload>ClearProperty(MediaMenu,Home)</onload>
 	<allowoverlay>no</allowoverlay>
 	<controls>
