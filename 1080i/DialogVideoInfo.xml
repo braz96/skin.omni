@@ -1141,7 +1141,7 @@
                 <texture>$INFO[ListItem.Art(fanart)]</texture>
             </control>
             <control type="image">
-                <visible>!$EXP[isMusicVideo]</visible>
+                <visible>!String.IsEmpty(ListItem.Art(clearlogo))</visible>
                 <left>1400</left>
                 <top>820</top>
                 <width>400</width>
@@ -1150,7 +1150,7 @@
                 <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
             </control>
             <control type="image">
-                <visible>$EXP[isMusicVideo] + !String.IsEmpty(Skin.String(MusicLibraryPath))</visible>
+                <visible>!String.IsEmpty(ListItem.Artist) + !String.IsEmpty(Skin.String(MusicLibraryPath))</visible>
                 <left>1400</left>
                 <top>820</top>
                 <width>400</width>
