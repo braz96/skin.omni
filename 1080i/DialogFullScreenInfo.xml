@@ -2,24 +2,24 @@
 <window>
     <controls>
         <control type="group">
-            <animation effect="slide" start="0,-120" end="0,0" time="200">WindowOpen</animation>
-            <animation effect="slide" start="0,-120" end="0,0" time="200">VisibleChange</animation>
-            <animation effect="slide" start="0,0" end="0,-120" time="200">WindowClose</animation>
+            <animation effect="slide" start="0,-100" end="0,0" time="200">WindowOpen</animation>
+            <animation effect="slide" start="0,-100" end="0,0" time="200">VisibleChange</animation>
+            <animation effect="slide" start="0,0" end="0,-100" time="200">WindowClose</animation>
             <visible>!Window.IsActive(videoosd)</visible>
             <top>0</top>
             <control type="image">
                 <width>1920</width>
-                <height>110</height>
+                <height>100</height>
                 <texture colordiffuse="$VAR[ColorBackgroundVar]">$VAR[CommonBackgroundOverlay]</texture>
             </control>
             <control type="image">
                 <width>1920</width>
-                <height>110</height>
+                <height>100</height>
                 <texture colordiffuse="$VAR[ColorBackgroundVar]">menu.png</texture>
             </control>
             <control type="grouplist">
                 <left>0</left>
-                <top>8</top>
+                <top>4</top>
                 <width>FullScreenWidth</width>
                 <height>90</height>
                 <align>center</align>
@@ -153,40 +153,40 @@
             </control>
             <control type="progress">
                 <left>299</left>
-                <top>334</top>
+                <top>330</top>
                 <width>1590</width>
-                <height>37</height>
+                <height>8</height>
                 <info>Player.ProgressCache</info>
                 <midtexture colordiffuse="44ffffff">osd/midtexture.png</midtexture>
             </control>
             <control type="progress">
                 <left>299</left>
-                <top>334</top>
+                <top>330</top>
                 <width>1590</width>
-                <height>37</height>
+                <height>8</height>
                 <info>Player.Progress</info>
             </control>
             <control type="label">
-                <top>334</top>
-                <left>309</left>
-                <width>1570</width>
+                <top>340</top>
+                <left>299</left>
+                <width>1590</width>
                 <height>35</height>
                 <font>font12</font>
                 <label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
             </control>
             <control type="label">
-                <top>334</top>
-                <left>309</left>
-                <width>1570</width>
+                <top>340</top>
+                <left>299</left>
+                <width>1590</width>
                 <height>35</height>
                 <font>font12</font>
                 <align>right</align>
                 <label>$INFO[Player.TimeRemaining]$INFO[Player.Duration, / ]</label>
             </control>
             <control type="label">
-                <top>334</top>
-                <left>309</left>
-                <width>1570</width>
+                <top>340</top>
+                <left>299</left>
+                <width>1590</width>
                 <height>35</height>
                 <font>font12</font>
                 <align>center</align>
@@ -270,40 +270,38 @@
             </control>
             <control type="progress">
                 <left>333</left>
-                <top>233</top>
+                <top>230</top>
                 <width>1557</width>
-                <height>37</height>
+                <height>8</height>
                 <info>Player.ProgressCache</info>
                 <midtexture colordiffuse="44ffffff">osd/midtexture.png</midtexture>
             </control>
             <control type="progress">
                 <left>333</left>
-                <top>233</top>
+                <top>230</top>
                 <width>1557</width>
-                <height>37</height>
+                <height>8</height>
                 <info>Player.Progress</info>
             </control>
             <control type="label">
-                <top>233</top>
+                <top>240</top>
                 <left>333</left>
                 <width>1557</width>
                 <height>35</height>
                 <font>font12</font>
-                <textoffsetx>15</textoffsetx>
                 <label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
             </control>
             <control type="label">
-                <top>233</top>
+                <top>240</top>
                 <left>333</left>
                 <width>1557</width>
                 <height>35</height>
                 <font>font12</font>
                 <align>right</align>
-                <textoffsetx>15</textoffsetx>
                 <label>$INFO[Player.TimeRemaining]$INFO[Player.Duration, / ]</label>
             </control>
             <control type="label">
-                <top>233</top>
+                <top>240</top>
                 <left>333</left>
                 <width>1557</width>
                 <height>35</height>

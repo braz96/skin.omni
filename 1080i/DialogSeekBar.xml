@@ -4,41 +4,41 @@
     <visible>[Window.IsActive(videoosd) | Player.Paused | Player.Seeking | Player.DisplayAfterSeek | Player.Forwarding | Player.Rewinding] + VideoPlayer.IsFullscreen + ![Window.IsVisible(fullscreeninfo) | Window.IsVisible(musicosd) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(PVROSDTeletext) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(subtitlesearch) | Window.IsVisible(videobookmarks) | Window.IsActive(script.pseudotv.TVOverlay.xml) | Window.IsActive(script.pseudotv.live.TVOverlay.xml)]</visible>
     <controls>
         <control type="group">
-            <animation effect="slide" start="0,95" end="0,0" time="200">WindowOpen</animation>
-            <animation effect="slide" start="0,95" end="0,0" time="200">VisibleChange</animation>
-            <animation effect="slide" start="0,0" end="0,95" time="200">WindowClose</animation>
-            <top>985</top>
+            <animation effect="slide" start="0,100" end="0,0" time="200">WindowOpen</animation>
+            <animation effect="slide" start="0,100" end="0,0" time="200">VisibleChange</animation>
+            <animation effect="slide" start="0,0" end="0,100" time="200">WindowClose</animation>
+            <top>980</top>
             <visible>!VideoPlayer.Content(livetv)</visible>
             <control type="image">
                 <width>1920</width>
-                <height>95</height>
+                <height>100</height>
                 <texture colordiffuse="$VAR[ColorBackgroundVar]">$VAR[CommonBackgroundOverlay]</texture>
             </control>
             <control type="image">
                 <width>1920</width>
-                <height>95</height>
+                <height>100</height>
                 <texture colordiffuse="$VAR[ColorBackgroundVar]">menu.png</texture>
             </control>
             <control type="progress">
                 <left>30</left>
-                <top>29</top>
+                <top>30</top>
                 <width>1860</width>
-                <height>37</height>
+                <height>8</height>
                 <info>Player.ProgressCache</info>
                 <midtexture colordiffuse="44ffffff">osd/midtexture.png</midtexture>
             </control>
             <control type="progress">
                 <left>30</left>
-                <top>29</top>
+                <top>30</top>
                 <width>1860</width>
-                <height>37</height>
+                <height>8</height>
                 <info>Player.Progress</info>
             </control>
             <control type="slider" id="401">
                 <left>30</left>
                 <top>30</top>
                 <width>1860</width>
-                <height>37</height>
+                <height>8</height>
                 <controloffsetx>75</controloffsetx>
                 <controloffsety>0</controloffsety>
                 <texturesliderbar>blank.png</texturesliderbar>
@@ -46,24 +46,24 @@
                 <textureslidernibfocus>osd/seekbar_nib.png</textureslidernibfocus>
             </control>
             <control type="label">
-                <top>29</top>
-                <left>45</left>
-                <width>900</width>
+                <top>40</top>
+                <left>30</left>
+                <width>1860</width>
                 <height>35</height>
                 <font>font12</font>
                 <label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
             </control>
             <control type="label">
-                <top>29</top>
-                <left>975</left>
-                <width>900</width>
+                <top>40</top>
+                <left>30</left>
+                <width>1860</width>
                 <height>35</height>
                 <font>font12</font>
                 <align>right</align>
                 <label>$INFO[Player.TimeRemaining]$INFO[Player.Duration, / ]</label>
             </control>
             <control type="label">
-                <top>29</top>
+                <top>40</top>
                 <left>30</left>
                 <width>1860</width>
                 <height>35</height>
@@ -132,24 +132,24 @@
             </control>
             <control type="progress">
                 <left>333</left>
-                <top>233</top>
+                <top>230</top>
                 <width>1557</width>
-                <height>37</height>
+                <height>8</height>
                 <info>Player.ProgressCache</info>
                 <midtexture colordiffuse="44ffffff">osd/midtexture.png</midtexture>
             </control>
             <control type="progress">
                 <left>333</left>
-                <top>233</top>
+                <top>230</top>
                 <width>1557</width>
-                <height>37</height>
+                <height>8</height>
                 <info>Player.Progress</info>
             </control>
             <control type="slider" id="401">
                 <left>333</left>
-                <top>234</top>
+                <top>230</top>
                 <width>1557</width>
-                <height>37</height>
+                <height>8</height>
                 <controloffsetx>75</controloffsetx>
                 <controloffsety>0</controloffsety>
                 <texturesliderbar>blank.png</texturesliderbar>
@@ -157,26 +157,24 @@
                 <textureslidernibfocus>osd/seekbar_nib.png</textureslidernibfocus>
             </control>
             <control type="label">
-                <top>233</top>
+                <top>240</top>
                 <left>333</left>
                 <width>1557</width>
                 <height>35</height>
                 <font>font12</font>
-                <textoffsetx>15</textoffsetx>
                 <label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
             </control>
             <control type="label">
-                <top>233</top>
+                <top>240</top>
                 <left>333</left>
                 <width>1557</width>
                 <height>35</height>
                 <font>font12</font>
                 <align>right</align>
-                <textoffsetx>15</textoffsetx>
                 <label>$INFO[Player.TimeRemaining]$INFO[Player.Duration, / ]</label>
             </control>
             <control type="label">
-                <top>233</top>
+                <top>240</top>
                 <left>333</left>
                 <width>1557</width>
                 <height>35</height>
@@ -187,13 +185,13 @@
         </control>
         <control type="grouplist">
             <animation effect="slide" start="0,100" end="0,0" time="200">WindowOpen</animation>
-            <!--<animation effect="slide" start="0,400" end="0,0" time="200">VisibleChange</animation>-->
             <animation effect="slide" start="0,0" end="0,100" time="200">WindowClose</animation>
-            <left>900</left>
-            <top>1007</top>
-            <width>748</width>
-            <height>150</height>
+            <left>30</left>
+            <top>1013</top>
+            <width>1860</width>
+            <height>40</height>
             <itemgap>10</itemgap>
+            <align>center</align>
             <orientation>horizontal</orientation>
             <include>VisibleFadeEffect</include>
             <visible>Player.Forwarding | Player.Rewinding</visible>

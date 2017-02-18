@@ -147,30 +147,30 @@
                 <left>375</left>
                 <top>275</top>
                 <width>1510</width>
-                <height>35</height>
+                <height>8</height>
                 <info>Player.Progress</info>
             </control>
             <control type="label">
-                <top>274</top>
-                <left>385</left>
-                <width>1490</width>
+                <top>285</top>
+                <left>375</left>
+                <width>1510</width>
                 <height>35</height>
                 <font>font12</font>
                 <label>$INFO[Player.Time]</label>
             </control>
             <control type="label">
-                <top>274</top>
-                <left>385</left>
-                <width>1490</width>
+                <top>285</top>
+                <left>375</left>
+                <width>1510</width>
                 <height>35</height>
                 <font>font12</font>
                 <align>right</align>
                 <label>$INFO[Player.Duration]</label>
             </control>
             <control type="label">
-                <top>274</top>
-                <left>385</left>
-                <width>1490</width>
+                <top>285</top>
+                <left>375</left>
+                <width>1510</width>
                 <height>35</height>
                 <font>font12</font>
                 <align>center</align>
@@ -222,9 +222,9 @@
                 </control>
             </control>
             <control type="grouplist">
-                <left>385</left>
-                <top>267</top>
-                <width>1490</width>
+                <left>375</left>
+                <top>278</top>
+                <width>1510</width>
                 <height>150</height>
                 <itemgap>10</itemgap>
                 <align>center</align>

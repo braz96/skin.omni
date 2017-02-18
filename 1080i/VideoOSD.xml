@@ -117,8 +117,8 @@
                     <visible>Player.SeekEnabled</visible>
                 </control>
                 <control type="togglebutton" id="707">
-                    <label>I</label>
-                    <altlabel>K</altlabel>
+                    <label>K</label>
+                    <altlabel>I</altlabel>
                     <align>center</align>
                     <width>100</width>
                     <height>100</height>
