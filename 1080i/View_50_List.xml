@@ -14,7 +14,7 @@
                         <left>510</left>
                         <width>1000</width>
                         <height>120</height>
-                        <visible>Control.HasFocus(50) + [![Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists)] | Window.IsActive(videoplaylist) | Container.Content(videos) | Container.Content(files)]</visible>
+                        <visible>Control.HasFocus(50) + [![Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(actors) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists)] | Window.IsActive(videoplaylist) | Container.Content(videos) | Container.Content(files)]</visible>
                         <animation effect="fade" time="320" delay="200">Visible</animation>
                         <animation effect="fade" time="50">Hidden</animation>
                         <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
@@ -30,7 +30,7 @@
                         <left>510</left>
                         <width>795</width>
                         <height>120</height>
-                        <visible>Control.HasFocus(50) + !Window.IsActive(videoplaylist) + [Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists)]</visible>
+                        <visible>Control.HasFocus(50) + !Window.IsActive(videoplaylist) + [Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(actors) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists)]</visible>
                         <animation effect="fade" time="320" delay="200">Visible</animation>
                         <animation effect="fade" time="50">Hidden</animation>
                         <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
@@ -43,7 +43,7 @@
                         <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,0)">Conditional</animation>
                     </control>
                     <control type="image">
-                        <visible>Control.HasFocus(50) + !String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets) | Container.Content(actors)]</visible>
+                        <visible>Control.HasFocus(50) + !String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)]</visible>
                         <animation effect="fade" time="320" delay="200">Visible</animation>
                         <animation effect="fade" time="50">Hidden</animation>
                         <top>180</top>
@@ -59,7 +59,7 @@
                         <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,0)">Conditional</animation>
                     </control>
                     <control type="image">
-                        <visible>Control.HasFocus(50) + [Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists) | Container.Content(images) | String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) | Window.IsActive(videoplaylist) | Container.Content(videos) | Container.Content(files)]</visible>
+                        <visible>Control.HasFocus(50) + [Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(actors) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists) | Container.Content(images) | String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) | Window.IsActive(videoplaylist) | Container.Content(videos) | Container.Content(files)]</visible>
                         <animation effect="fade" time="320" delay="200">Visible</animation>
                         <animation effect="fade" time="50">Hidden</animation>
                         <top>180</top>
@@ -110,7 +110,7 @@
                     <pagecontrol>60</pagecontrol>
                     <preloaditems>2</preloaditems>
                     <scrolltime tween="quadratic" easing="out">300</scrolltime>
-                    <itemlayout height="120" width="1000" condition="[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets) | Container.Content(actors)] + !String.IsEqual(Container.SortMethod,$LOCALIZE[13409])">
+                    <itemlayout height="120" width="1000" condition="[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)] + !String.IsEqual(Container.SortMethod,$LOCALIZE[13409])">
                         <control type="image">
                             <top>10</top>
                             <left>10</left>
@@ -173,7 +173,6 @@
                             <label>$VAR[ListSubLabelVar]</label>
                         </control>
                         <control type="label">
-                            <visible>!Container.Content(actors)</visible>
                             <right>80</right>
                             <height>118</height>
                             <font>font15</font>
@@ -185,7 +184,7 @@
                             <param name="OverlayListWidth" value="1000" />
                         </include>
                     </itemlayout>
-                    <focusedlayout height="120" width="1000" condition="[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets) | Container.Content(actors)] + !String.IsEqual(Container.SortMethod,$LOCALIZE[13409])">
+                    <focusedlayout height="120" width="1000" condition="[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)] + !String.IsEqual(Container.SortMethod,$LOCALIZE[13409])">
                         <control type="image">
                             <top>10</top>
                             <left>10</left>
@@ -248,7 +247,6 @@
                             <label>$VAR[ListSubLabelVar]</label>
                         </control>
                         <control type="label">
-                            <visible>!Container.Content(actors)</visible>
                             <right>80</right>
                             <height>118</height>
                             <font>font15</font>
@@ -820,7 +818,7 @@
                             <param name="OverlayListWidth" value="1000" />
                         </include>
                     </focusedlayout>
-                    <itemlayout height="120" width="795" condition="[Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists)] + !Window.IsActive(videoplayist)">
+                    <itemlayout height="120" width="795" condition="[Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(actors) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists)] + !Window.IsActive(videoplayist)">
                         <control type="image">
                             <top>10</top>
                             <left>10</left>
@@ -845,7 +843,7 @@
                             <label>$VAR[ListRightLabel]</label>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="120" width="795" condition="[Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists)] + !Window.IsActive(videoplayist)">
+                    <focusedlayout height="120" width="795" condition="[Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(actors) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists)] + !Window.IsActive(videoplayist)">
                         <control type="image">
                             <top>10</top>
                             <left>10</left>
@@ -877,7 +875,7 @@
                 <top>180</top>
                 <control type="group">
                     <left>1690</left>
-                    <visible>[$EXP[isMovie] | $EXP[isTvshow] | $EXP[isSeason] | $EXP[isSet] | Container.Content(actors)] + !String.Contains(Container.FolderPath,plugin.video) + !String.StartsWith(ListItem.Icon,Default)</visible>
+                    <visible>[$EXP[isMovie] | $EXP[isTvshow] | $EXP[isSeason] | $EXP[isSet]] + !String.Contains(Container.FolderPath,plugin.video) + !String.StartsWith(ListItem.Icon,Default)</visible>
                     <control type="image">
                         <width>560</width>
                         <height>840</height>
@@ -899,7 +897,7 @@
                 </control>
                 <control type="group">
                     <left>1690</left>
-                    <visible>[[Container.Content(addons) | $EXP[isArtist] | $EXP[isAlbum] | $EXP[isSong] | $EXP[isMusicvideo] | Container.Content(studios)] | String.StartsWith(ListItem.Icon,Default)] + ![Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists)]</visible>
+                    <visible>[[Container.Content(addons) | $EXP[isArtist] | $EXP[isAlbum] | $EXP[isSong] | $EXP[isMusicvideo] | Container.Content(studios)] | String.StartsWith(ListItem.Icon,Default)] + ![Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(actors) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists)]</visible>
                     <control type="image">
                         <visible>String.StartsWith(ListItem.Icon,Default) | Container.Content(countries)</visible>
                         <width>560</width>
