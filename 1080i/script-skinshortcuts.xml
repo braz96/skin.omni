@@ -8,15 +8,23 @@
         <left>122</left>
         <top>75</top>
     </coordinates>
-    <include>Animation.Dialog</include>
     <controls>
-        <include content="DialogBackgroundCommons">
-            <param name="DialogBackgroundWidth" value="1676" />
-            <param name="DialogBackgroundHeight" value="930" />
-            <param name="DialogHeaderLabel" value="$LOCALIZE[31180]" />
-            <param name="DialogHeaderId" value="2" />
-        </include>
         <control type="group">
+            <visible>String.IsEmpty(Window.Property(additionalDialog))</visible>
+            <animation type="WindowOpen" reversible="false">
+                <effect type="zoom" start="80" end="100" center="960,540" delay="160" tween="back" time="400" />
+                <effect type="fade" delay="160" end="100" time="400" />
+            </animation>
+            <animation type="WindowClose" reversible="false">
+                <effect type="zoom" start="100" end="80" center="960,540" easing="in" tween="back" time="400" />
+                <effect type="fade" start="100" end="0" time="400" />
+            </animation>
+            <include content="DialogBackgroundCommons">
+                <param name="DialogBackgroundWidth" value="1676" />
+                <param name="DialogBackgroundHeight" value="930" />
+                <param name="DialogHeaderLabel" value="$LOCALIZE[31180]" />
+                <param name="DialogHeaderId" value="2" />
+            </include>
             <control type="group">
                 <left>0</left>
                 <top>88</top>
@@ -32,17 +40,30 @@
                     <pagecontrol>61</pagecontrol>
                     <scrolltime tween="quadratic" easing="out">200</scrolltime>
                     <itemlayout height="90" width="380">
-                        <control type="image">
-                            <top>10</top>
-                            <left>300</left>
-                            <width>70</width>
-                            <height>70</height>
-                            <texture>$INFO[ListItem.Icon]</texture>
+                        <control type="group">
+                            <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                            <control type="image">
+                                <top>10</top>
+                                <left>300</left>
+                                <width>70</width>
+                                <height>70</height>
+                                <texture>$INFO[ListItem.Icon]</texture>
+                            </control>
+                            <control type="label">
+                                <animation effect="fade" time="0" end="30" condition="String.IsEqual(ListItem.Property(skinshortcuts-disabled),true)">Conditional</animation>
+                                <left>20</left>
+                                <right>100</right>
+                                <height>90</height>
+                                <font>font15</font>
+                                <selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
+                                <align>right</align>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
                         </control>
                         <control type="label">
-                            <animation effect="fade" time="0" end="30" condition="String.IsEqual(ListItem.Property(skinshortcuts-disabled),true)">Conditional</animation>
+                            <visible>!String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                             <left>20</left>
-                            <right>100</right>
+                            <right>20</right>
                             <height>90</height>
                             <font>font15</font>
                             <selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
@@ -58,23 +79,36 @@
                             <colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
                             <animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(211)">Conditional</animation>
                         </control>
-                        <control type="image">
-                            <left>290</left>
-                            <width>90</width>
-                            <height>90</height>
-                            <texture>overlays/diffuse-overlay.png</texture>
-                            <animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(211)">Conditional</animation>
-                        </control>
-                        <control type="image">
-                            <top>10</top>
-                            <left>300</left>
-                            <width>70</width>
-                            <height>70</height>
-                            <texture>$INFO[ListItem.Icon]</texture>
+                        <control type="group">
+                            <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                            <control type="image">
+                                <left>290</left>
+                                <width>90</width>
+                                <height>90</height>
+                                <texture>overlays/diffuse-overlay.png</texture>
+                                <animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(211)">Conditional</animation>
+                            </control>
+                            <control type="image">
+                                <top>10</top>
+                                <left>300</left>
+                                <width>70</width>
+                                <height>70</height>
+                                <texture>$INFO[ListItem.Icon]</texture>
+                            </control>
+                            <control type="label">
+                                <left>20</left>
+                                <right>100</right>
+                                <height>90</height>
+                                <font>font15</font>
+                                <selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
+                                <align>right</align>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
                         </control>
                         <control type="label">
+                            <visible>!String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                             <left>20</left>
-                            <right>100</right>
+                            <right>20</right>
                             <height>90</height>
                             <font>font15</font>
                             <selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
@@ -115,7 +149,7 @@
                         <label>$ADDON[script.skinshortcuts 32048]</label>
                     </control>
                     <control type="button" id="305">
-                        <description>Change action</description>
+                        <description>Change label</description>
                         <width>1205</width>
                         <height>90</height>
                         <textoffsetx>30</textoffsetx>
@@ -149,6 +183,7 @@
                         <font>font15</font>
                         <label>$LOCALIZE[31242]</label>
                         <label2>$INFO[Container(211).ListItem.Property(thumbnail)]</label2>
+                        <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                     </control>
                     <control type="button" id="312">
                         <description>Change widget</description>
@@ -199,15 +234,28 @@
                         <onclick>SetProperty(chooseProperty,widgetSortDirection)</onclick>
                         <onclick>SendClick(404)</onclick>
                     </control>
+                    <control type="button" id="504">
+                        <description>Widget limit items</description>
+                        <width>1205</width>
+                        <height>90</height>
+                        <textoffsetx>30</textoffsetx>
+                        <font>font15</font>
+                        <label>- Item limit</label>
+                        <label2>$VAR[WidgetLimitLabel]</label2>
+                        <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                        <enable>!String.IsEqual(Container(211).ListItem.Property(widget),weather) + !String.IsEqual(Container(211).ListItem.Property(widget),settings) + !String.IsEqual(Container(211).ListItem.Property(widget),systeminfo) + !String.IsEqual(Container(211).ListItem.Property(widget),myplaylists)</enable>
+                        <onclick>SetProperty(chooseProperty,widgetLimit)</onclick>
+                        <onclick>SendClick(404)</onclick>
+                    </control>
                 </control>
             </control>
             <control type="scrollbar" id="60">
                 <visible allowhiddenfocus="true">[Control.HasFocus(60) | ControlGroup(90001).HasFocus] + String.IsEmpty(Window.Property(additionalDialog)) + Window.IsVisible(SkinSettings.xml)</visible>
                 <animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
-                <left>2340</left>
-                <top>120</top>
+                <left>1649</left>
+                <top>88</top>
                 <width>10</width>
-                <height>960</height>
+                <height>810</height>
                 <onleft>90001</onleft>
                 <onright>211</onright>
                 <ondown>60</ondown>

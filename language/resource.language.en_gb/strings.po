@@ -100,7 +100,35 @@ msgctxt "#31028"
 msgid "Ubuntu"
 msgstr ""
 
-#empty strings from id 31029 to 31041
+msgctxt "#31029"
+msgid "10"
+msgstr ""
+
+msgctxt "#31030"
+msgid "12"
+msgstr ""
+
+msgctxt "#31031"
+msgid "16"
+msgstr ""
+
+msgctxt "#31032"
+msgid "20"
+msgstr ""
+
+msgctxt "#31033"
+msgid "24"
+msgstr ""
+
+msgctxt "#31034"
+msgid "30"
+msgstr ""
+
+msgctxt "#31035"
+msgid "36"
+msgstr ""
+
+#empty strings from id 31036 to 31041
 
 msgctxt "#31042"
 msgid "Show \"Now Playing\" information blended in the background"
@@ -642,15 +670,7 @@ msgctxt "#31234"
 msgid "Go to playlist"
 msgstr ""
 
-msgctxt "#31235"
-msgid "Limits the number of widget items to 24. May improve performance on low-powered devices."
-msgstr ""
-
-msgctxt "#31236"
-msgid "Limit widget items"
-msgstr ""
-
-#empty strings from id 31237 to 31239
+#empty strings from id 31235 to 31239
 
 msgctxt "#31240"
 msgid "Studio Icons - Square HD"

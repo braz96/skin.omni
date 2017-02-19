@@ -128,6 +128,17 @@
     <property property="widgetSortDirection" label="$LOCALIZE[584]">ascending</property>
     <property property="widgetSortDirection" label="$LOCALIZE[585]">descending</property>
 
+    <!-- Widget Limit -->
+    <propertySettings property="widgetLimit" title="Item limit" showNone="True" />
+    <property property="widgetLimit" label="$LOCALIZE[12318]">$NUMBER[8]</property>
+    <property property="widgetLimit" label="$LOCALIZE[31029]">$NUMBER[10]</property>
+    <property property="widgetLimit" label="$LOCALIZE[31030]">$NUMBER[12]</property>
+    <property property="widgetLimit" label="$LOCALIZE[31031]">$NUMBER[16]</property>
+    <property property="widgetLimit" label="$LOCALIZE[31032]">$NUMBER[20]</property>
+    <property property="widgetLimit" label="$LOCALIZE[31033]">$NUMBER[24]</property>
+    <property property="widgetLimit" label="$LOCALIZE[31034]">$NUMBER[30]</property>
+    <property property="widgetLimit" label="$LOCALIZE[31035]">$NUMBER[36]</property>
+
     <!-- Widget Defaults -->
     <widgetdefaultnode defaultID="movies" group="mainmenu" label="20386" type="movies" path="library://video/movies/recentlyaddedmovies.xml/" target="video">recentlyaddedmovies</widgetdefaultnode>
     <widgetdefaultnode defaultID="tvshows" group="mainmenu" label="626" type="tvshows" path="library://video/tvshows/inprogressshows.xml/" target="video">nextepisodes</widgetdefaultnode>
