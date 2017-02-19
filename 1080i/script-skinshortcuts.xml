@@ -40,30 +40,17 @@
                     <pagecontrol>61</pagecontrol>
                     <scrolltime tween="quadratic" easing="out">200</scrolltime>
                     <itemlayout height="90" width="380">
-                        <control type="group">
-                            <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-                            <control type="image">
-                                <top>10</top>
-                                <left>300</left>
-                                <width>70</width>
-                                <height>70</height>
-                                <texture>$INFO[ListItem.Icon]</texture>
-                            </control>
-                            <control type="label">
-                                <animation effect="fade" time="0" end="30" condition="String.IsEqual(ListItem.Property(skinshortcuts-disabled),true)">Conditional</animation>
-                                <left>20</left>
-                                <right>100</right>
-                                <height>90</height>
-                                <font>font15</font>
-                                <selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
-                                <align>right</align>
-                                <label>$INFO[ListItem.Label]</label>
-                            </control>
+                        <control type="image">
+                            <top>10</top>
+                            <left>300</left>
+                            <width>70</width>
+                            <height>70</height>
+                            <texture>$INFO[ListItem.Icon]</texture>
                         </control>
                         <control type="label">
-                            <visible>!String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                            <animation effect="fade" time="0" end="30" condition="String.IsEqual(ListItem.Property(skinshortcuts-disabled),true)">Conditional</animation>
                             <left>20</left>
-                            <right>20</right>
+                            <right>100</right>
                             <height>90</height>
                             <font>font15</font>
                             <selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
@@ -79,36 +66,23 @@
                             <colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
                             <animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(211)">Conditional</animation>
                         </control>
-                        <control type="group">
-                            <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-                            <control type="image">
-                                <left>290</left>
-                                <width>90</width>
-                                <height>90</height>
-                                <texture>overlays/diffuse-overlay.png</texture>
-                                <animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(211)">Conditional</animation>
-                            </control>
-                            <control type="image">
-                                <top>10</top>
-                                <left>300</left>
-                                <width>70</width>
-                                <height>70</height>
-                                <texture>$INFO[ListItem.Icon]</texture>
-                            </control>
-                            <control type="label">
-                                <left>20</left>
-                                <right>100</right>
-                                <height>90</height>
-                                <font>font15</font>
-                                <selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
-                                <align>right</align>
-                                <label>$INFO[ListItem.Label]</label>
-                            </control>
+                        <control type="image">
+                            <left>290</left>
+                            <width>90</width>
+                            <height>90</height>
+                            <texture>overlays/diffuse-overlay.png</texture>
+                            <animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(211)">Conditional</animation>
+                        </control>
+                        <control type="image">
+                            <top>10</top>
+                            <left>300</left>
+                            <width>70</width>
+                            <height>70</height>
+                            <texture>$INFO[ListItem.Icon]</texture>
                         </control>
                         <control type="label">
-                            <visible>!String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                             <left>20</left>
-                            <right>20</right>
+                            <right>100</right>
                             <height>90</height>
                             <font>font15</font>
                             <selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
@@ -243,7 +217,7 @@
                         <label>- Item limit</label>
                         <label2>$VAR[WidgetLimitLabel]</label2>
                         <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-                        <enable>!String.IsEqual(Container(211).ListItem.Property(widget),weather) + !String.IsEqual(Container(211).ListItem.Property(widget),settings) + !String.IsEqual(Container(211).ListItem.Property(widget),systeminfo) + !String.IsEqual(Container(211).ListItem.Property(widget),myplaylists)</enable>
+                        <enable>!String.IsEqual(Container(211).ListItem.Property(widget),weather) + !String.IsEqual(Container(211).ListItem.Property(widget),settings) + !String.IsEqual(Container(211).ListItem.Property(widget),systeminfo)</enable>
                         <onclick>SetProperty(chooseProperty,widgetLimit)</onclick>
                         <onclick>SendClick(404)</onclick>
                     </control>
