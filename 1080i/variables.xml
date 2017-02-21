@@ -81,7 +81,6 @@
         <value condition="Window.IsActive(home) + Window.IsVisible(virtualkeyboard)">$LOCALIZE[137]</value>
         <value condition="Window.IsActive(home) + Window.IsVisible(shutdownmenu)">$LOCALIZE[13005]</value>
         <value condition="Window.IsActive(home) + Window.IsVisible(busydialog)">$LOCALIZE[503]</value>
-        <value condition="Window.IsActive(1119)">$INFO[Window(Home).Property(SkinHelper.TotalAddons),, $LOCALIZE[31025]]</value>
         <value>$INFO[Container.CurrentItem,, $LOCALIZE[1443] ]$INFO[Container.NumItems,, $LOCALIZE[31025]]</value>
     </variable>
     <variable name="HeaderLabel2">
@@ -223,7 +222,6 @@
     </variable>
     <variable name="VideoPlotVar">
         <value condition="Container.Content(seasons) | String.IsEqual(ListItem.DBTYPE,season)">$INFO[Container.ShowPlot]</value>
-        <value condition="[Container.Content(sets) | String.IsEqual(ListItem.DBTYPE,set)] + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot))">$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)]</value>
         <value condition="!String.IsEmpty(ListItem.PlotOutline)">$INFO[ListItem.PlotOutline]</value>
         <value>$INFO[ListItem.Plot]</value>
     </variable>
@@ -304,17 +302,6 @@
         <value condition="Control.HasFocus(304)">$LOCALIZE[31131]</value>
         <value condition="Control.HasFocus(306)">$LOCALIZE[31114]</value>
         <value condition="Control.HasFocus(312)">$LOCALIZE[31136]</value>
-        <value condition="Control.HasFocus(402)">$LOCALIZE[31942]</value>
-        <value condition="Control.HasFocus(403)">$LOCALIZE[31261]</value>
-        <value condition="Control.HasFocus(407)">$LOCALIZE[31105]</value>
-        <value condition="Control.HasFocus(408)">$LOCALIZE[31133]</value>
-        <value condition="Control.HasFocus(502)">$LOCALIZE[31206]</value>
-        <value condition="Control.HasFocus(503)">$LOCALIZE[31207]</value>
-        <value condition="Control.HasFocus(504)">$LOCALIZE[31208]</value>
-        <value condition="Control.HasFocus(505)">$LOCALIZE[31209]</value>
-        <value condition="Control.HasFocus(506)">$LOCALIZE[31210]</value>
-        <value condition="Control.HasFocus(507)">$LOCALIZE[31220]</value>
-        <value condition="Control.HasFocus(510)">$LOCALIZE[31113]</value>
         <value condition="Control.HasFocus(601)">$LOCALIZE[31116]</value>
         <value condition="Control.HasFocus(602)">$LOCALIZE[31918]</value>
         <value condition="Control.HasFocus(603)">$LOCALIZE[31919]</value>
@@ -420,34 +407,9 @@
         <value condition="!String.IsEmpty(Weather.Plugin) + !Weather.IsFetched">DefaultAddonNone.png</value>
         <value>DefaultIconClock.png</value>
     </variable>
-    <variable name="ColorHighlightVar">
-        <value condition="!String.IsEmpty(Skin.String(highlightcolor.name))">$INFO[Skin.String(highlightcolor.name)]</value>
-        <value>highlight</value>
-    </variable>
-    <variable name="ColorBackgroundVar">
-        <value condition="!String.IsEmpty(Skin.String(backgroundcolor.name))">$INFO[Skin.String(backgroundcolor.name)]</value>
-        <value>background</value>
-    </variable>
-    <variable name="ColorDialogVar">
-        <value condition="!String.IsEmpty(Skin.String(dialogcolor.name))">$INFO[Skin.String(dialogcolor.name)]</value>
-        <value>dialog</value>
-    </variable>
-    <variable name="ColorTextVar">
-        <value condition="!String.IsEmpty(Skin.String(textcolor.name))">$INFO[Skin.String(textcolor.name)]</value>
-        <value>maintext</value>
-    </variable>
-    <variable name="ColorDisabledVar">
-        <value condition="!String.IsEmpty(Skin.String(disabledcolor.name))">$INFO[Skin.String(disabledcolor.name)]</value>
-        <value>disabled</value>
-    </variable>
-    <variable name="ColorMenuVar">
-        <value condition="!String.IsEmpty(Skin.String(menucolor.name))">$INFO[Skin.String(menucolor.name)]</value>
-        <value>maintext</value>
-    </variable>
     <variable name="ColorRecordingVar">
         <value condition="Player.Recording">ffff0000</value>
-        <value condition="!Player.Recording + !String.IsEmpty(Skin.String(menucolor.name))">$INFO[Skin.String(menucolor.name)]</value>
-        <value>maintext</value>
+        <value condition="!Player.Recording">maintext</value>
     </variable>
     <variable name="SortDirection">
         <value condition="Container.SortDirection(Ascending)">$LOCALIZE[31050]</value>
@@ -508,10 +470,10 @@
         <value>$INFO[ListItem.Icon]</value>
     </variable>
     <variable name="AddonDisclaimer">
-        <value condition="!String.IsEmpty(ListItem.AddonDisclaimer)">[COLOR $VAR[ColorHighlightVar]]$LOCALIZE[24052]: [/COLOR][CR]$INFO[ListItem.AddonDisclaimer]</value>
+        <value condition="!String.IsEmpty(ListItem.AddonDisclaimer)">[COLOR highlight]$LOCALIZE[24052]: [/COLOR][CR]$INFO[ListItem.AddonDisclaimer]</value>
     </variable>
     <variable name="AddonNews">
-        <value condition="!String.IsEmpty(ListItem.AddonNews)">[COLOR $VAR[ColorHighlightVar]]$LOCALIZE[24054]: [/COLOR][CR]$INFO[ListItem.AddonNews][CR]</value>
+        <value condition="!String.IsEmpty(ListItem.AddonNews)">[COLOR highlight]$LOCALIZE[24054]: [/COLOR][CR]$INFO[ListItem.AddonNews][CR]</value>
     </variable>
     <variable name="WidgetArt">
         <value condition="String.IsEqual(Container(9000).ListItem.Property(widget),myplaylists) + String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31005])">DefaultPlaylist.png</value>
@@ -570,19 +532,6 @@
     <variable name="videohwdecoder">
         <value condition="Player.Process(videohwdecoder)">$LOCALIZE[31257]</value>
         <value>$LOCALIZE[31258]</value>
-    </variable>
-    <variable name="RottenTomatoMeter">
-        <value condition="String.IsEqual(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Image),fresh)">addons/fresh.png</value>
-        <value condition="String.IsEqual(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Image),rotten)">addons/rotten.png</value>
-        <value condition="String.IsEqual(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Image),certified)">addons/certified.png</value>
-    </variable>
-    <variable name="CriticConsensus">
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Consensus))">[COLOR $VAR[ColorHighlightVar]]$LOCALIZE[31265]: [/COLOR]$INFO[Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Consensus)]</value>
-        <value>$LOCALIZE[31266].</value>
-    </variable>
-    <variable name="RottenTomatoIcon">
-        <value condition="String.IsEqual(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Image),rotten)">special://skin/extras/icons/splat.png</value>
-        <value>special://skin/extras/icons/tomato.png</value>
     </variable>
     <variable name="ProfileIconVar">
         <value condition="String.IsEqual(ListItem.Label,$LOCALIZE[20058])">DefaultAddonSource.png</value>

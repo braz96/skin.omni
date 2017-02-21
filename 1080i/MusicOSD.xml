@@ -25,12 +25,12 @@
             <control type="image">
                 <width>1920</width>
                 <height>100</height>
-                <texture colordiffuse="$VAR[ColorBackgroundVar]">$VAR[CommonBackgroundOverlay]</texture>
+                <texture colordiffuse="background">$VAR[CommonBackgroundOverlay]</texture>
             </control>
             <control type="image">
                 <width>1920</width>
                 <height>100</height>
-                <texture colordiffuse="$VAR[ColorBackgroundVar]">menu.png</texture>
+                <texture colordiffuse="background">menu.png</texture>
             </control>
             <control type="grouplist" id="202">
                 <height>100</height>

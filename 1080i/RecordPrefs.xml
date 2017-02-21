@@ -21,7 +21,7 @@
             <font>font13_title</font>
             <align>left</align>
             <scroll>true</scroll>
-            <textcolor>$VAR[ColorHighlightVar]</textcolor>
+            <textcolor>highlight</textcolor>
         </control>
         <control type="textbox" id="24">
             <left>45</left>

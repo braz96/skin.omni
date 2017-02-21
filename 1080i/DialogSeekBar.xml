@@ -12,12 +12,12 @@
             <control type="image">
                 <width>1920</width>
                 <height>100</height>
-                <texture colordiffuse="$VAR[ColorBackgroundVar]">$VAR[CommonBackgroundOverlay]</texture>
+                <texture colordiffuse="background">$VAR[CommonBackgroundOverlay]</texture>
             </control>
             <control type="image">
                 <width>1920</width>
                 <height>100</height>
-                <texture colordiffuse="$VAR[ColorBackgroundVar]">menu.png</texture>
+                <texture colordiffuse="background">menu.png</texture>
             </control>
             <control type="progress">
                 <left>30</left>
@@ -81,12 +81,12 @@
             <control type="image">
                 <width>1920</width>
                 <height>300</height>
-                <texture colordiffuse="$VAR[ColorBackgroundVar]">$VAR[CommonBackgroundOverlay]</texture>
+                <texture colordiffuse="background">$VAR[CommonBackgroundOverlay]</texture>
             </control>
             <control type="image">
                 <width>1920</width>
                 <height>300</height>
-                <texture colordiffuse="$VAR[ColorBackgroundVar]">menu.png</texture>
+                <texture colordiffuse="background">menu.png</texture>
             </control>
             <control type="image">
                 <width>300</width>
@@ -109,7 +109,7 @@
                 <width>1560</width>
                 <height>40</height>
                 <font>font14</font>
-                <textcolor>$VAR[ColorHighlightVar]</textcolor>
+                <textcolor>highlight</textcolor>
                 <label>$INFO[VideoPlayer.ChannelNumberLabel,,. ]$INFO[VideoPlayer.ChannelName]</label>
             </control>
             <control type="label">
@@ -127,7 +127,7 @@
                 <width>1560</width>
                 <height>40</height>
                 <font>font14</font>
-                <label>[COLOR $VAR[ColorHighlightVar]]$LOCALIZE[19031]: [/COLOR]$INFO[VideoPlayer.NextTitle] $INFO[VideoPlayer.NextStartTime,(, - ]$INFO[VideoPlayer.NextEndTime,,)]</label>
+                <label>[COLOR highlight]$LOCALIZE[19031]: [/COLOR]$INFO[VideoPlayer.NextTitle] $INFO[VideoPlayer.NextStartTime,(, - ]$INFO[VideoPlayer.NextEndTime,,)]</label>
                 <scroll>true</scroll>
             </control>
             <control type="progress">

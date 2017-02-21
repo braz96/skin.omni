@@ -16,12 +16,12 @@
                 <control type="image">
                     <width>900</width>
                     <height>1080</height>
-                    <texture colordiffuse="$VAR[ColorBackgroundVar]">$VAR[CommonBackgroundOverlay]</texture>
+                    <texture colordiffuse="background">$VAR[CommonBackgroundOverlay]</texture>
                 </control>
                 <control type="image">
                     <width>900</width>
                     <height>1080</height>
-                    <texture colordiffuse="$VAR[ColorBackgroundVar]">menu.png</texture>
+                    <texture colordiffuse="background">menu.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -32,7 +32,7 @@
                     <visible>Control.HasFocus(11)</visible>
                     <animation effect="fade" time="320" delay="200">Visible</animation>
                     <animation effect="fade" time="50">Hidden</animation>
-                    <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
+                    <texture colordiffuse="highlight">selecteditem_bg.png</texture>
                     <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(11).Row,7)">Conditional</animation>
                     <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(11).Row,6)">Conditional</animation>
                     <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(11).Row,5)">Conditional</animation>
@@ -121,7 +121,7 @@
                         <width>730</width>
                         <height>8</height>
                         <texturebg colordiffuse="22ffffff">osd/midtexture.png</texturebg>
-                        <midtexture colordiffuse="$VAR[ColorTextVar]">osd/midtexture.png</midtexture>
+                        <midtexture colordiffuse="maintext">osd/midtexture.png</midtexture>
                         <visible>ListItem.HasEpg</visible>
                         <info>ListItem.Progress</info>
                     </control>
@@ -176,7 +176,7 @@
                         <width>730</width>
                         <height>8</height>
                         <texturebg colordiffuse="22ffffff">osd/midtexture.png</texturebg>
-                        <midtexture colordiffuse="$VAR[ColorTextVar]">osd/midtexture.png</midtexture>
+                        <midtexture colordiffuse="maintext">osd/midtexture.png</midtexture>
                         <visible>ListItem.HasEpg</visible>
                         <info>ListItem.Progress</info>
                     </control>

@@ -27,7 +27,7 @@
                         <visible>Control.HasFocus(50)</visible>
                         <animation effect="fade" time="320" delay="200">Visible</animation>
                         <animation effect="fade" time="50">Hidden</animation>
-                        <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
+                        <texture colordiffuse="highlight">selecteditem_bg.png</texture>
                         <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
                         <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,4)">Conditional</animation>
                         <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,3)">Conditional</animation>
@@ -116,7 +116,7 @@
                             <width>730</width>
                             <height>8</height>
                             <texturebg colordiffuse="22ffffff">osd/midtexture.png</texturebg>
-                            <midtexture colordiffuse="$VAR[ColorTextVar]">osd/midtexture.png</midtexture>
+                            <midtexture colordiffuse="maintext">osd/midtexture.png</midtexture>
                             <visible>ListItem.HasEpg</visible>
                             <info>ListItem.Progress</info>
                         </control>
@@ -171,7 +171,7 @@
                             <width>730</width>
                             <height>8</height>
                             <texturebg colordiffuse="22ffffff">osd/midtexture.png</texturebg>
-                            <midtexture colordiffuse="$VAR[ColorTextVar]">osd/midtexture.png</midtexture>
+                            <midtexture colordiffuse="maintext">osd/midtexture.png</midtexture>
                             <visible>ListItem.HasEpg</visible>
                             <info>ListItem.Progress</info>
                         </control>
@@ -207,7 +207,7 @@
                         <height>30</height>
                         <font>font15</font>
                         <visible>Container(50).ListItem.HasEpg</visible>
-                        <label>[COLOR $VAR[ColorHighlightVar]]$INFO[Container(50).ListItem.StartTime]$INFO[Container(50).ListItem.EndTime, - ,: ][/COLOR]$INFO[Container(50).ListItem.Title]</label>
+                        <label>[COLOR highlight]$INFO[Container(50).ListItem.StartTime]$INFO[Container(50).ListItem.EndTime, - ,: ][/COLOR]$INFO[Container(50).ListItem.Title]</label>
                     </control>
                     <control type="label">
                         <left>0</left>
@@ -216,7 +216,7 @@
                         <height>30</height>
                         <font>font15</font>
                         <visible>!String.IsEmpty(Container(50).ListItem.NextTitle)</visible>
-                        <label>[COLOR $VAR[ColorHighlightVar]]$LOCALIZE[19031]:[/COLOR] $INFO[Container(50).ListItem.NextTitle]</label>
+                        <label>[COLOR highlight]$LOCALIZE[19031]:[/COLOR] $INFO[Container(50).ListItem.NextTitle]</label>
                     </control>
                     <control type="textbox" id="80">
                         <label>$INFO[Container(50).ListItem.Plot]</label>

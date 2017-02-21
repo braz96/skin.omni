@@ -53,7 +53,7 @@
                             <right>100</right>
                             <height>90</height>
                             <font>font15</font>
-                            <selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
+                            <selectedcolor>highlight</selectedcolor>
                             <align>right</align>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
@@ -63,7 +63,7 @@
                             <width>380</width>
                             <height>90</height>
                             <texture>selecteditem_bg.png</texture>
-                            <colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
+                            <colordiffuse>highlight</colordiffuse>
                             <animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(211)">Conditional</animation>
                         </control>
                         <control type="image">
@@ -85,7 +85,7 @@
                             <right>100</right>
                             <height>90</height>
                             <font>font15</font>
-                            <selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
+                            <selectedcolor>highlight</selectedcolor>
                             <align>right</align>
                             <label>$INFO[ListItem.Label]</label>
                         </control>

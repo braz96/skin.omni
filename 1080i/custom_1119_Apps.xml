@@ -25,7 +25,7 @@
                             <visible>Control.HasFocus(50)</visible>
                             <animation effect="fade" time="320" delay="200">Visible</animation>
                             <animation effect="fade" time="50">Hidden</animation>
-                            <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
+                            <texture colordiffuse="highlight">selecteditem_bg.png</texture>
                             <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
                             <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,4)">Conditional</animation>
                             <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,3)">Conditional</animation>
@@ -136,7 +136,6 @@
                         <content>
                             <item id="1">
                                 <label>$LOCALIZE[1037]</label>
-                                <label2>$INFO[Window(Home).Property(SkinHelper.TotalVideoAddons)] $LOCALIZE[31025]</label2>
                                 <icon>DefaultAddonVideo.png</icon>
                                 <property name="AppsTarget">videos</property>
                                 <property name="AppsContent">addons://sources/video/</property>
@@ -145,7 +144,6 @@
                             </item>
                             <item id="2">
                                 <label>$LOCALIZE[1038]</label>
-                                <label2>$INFO[Window(Home).Property(SkinHelper.TotalAudioAddons)] $LOCALIZE[31025]</label2>
                                 <icon>DefaultAddonMusic.png</icon>
                                 <property name="AppsTarget">music</property>
                                 <property name="AppsContent">addons://sources/audio/</property>
@@ -154,7 +152,6 @@
                             </item>
                             <item id="3">
                                 <label>$LOCALIZE[1039]</label>
-                                <label2>$INFO[Window(Home).Property(SkinHelper.TotalPicturesAddons)] $LOCALIZE[31025]</label2>
                                 <icon>DefaultAddonPicture.png</icon>
                                 <property name="AppsTarget">pictures</property>
                                 <property name="AppsContent">addons://sources/image/</property>
@@ -163,7 +160,6 @@
                             </item>
                             <item id="4">
                                 <label>$LOCALIZE[1043]</label>
-                                <label2>$INFO[Window(Home).Property(SkinHelper.TotalProgramAddons)] $LOCALIZE[31025]</label2>
                                 <icon>DefaultAddonProgram.png</icon>
                                 <property name="AppsTarget">programs</property>
                                 <property name="AppsContent">addons://sources/executable/</property>
@@ -201,7 +197,7 @@
                             <visible>Control.HasFocus(51)</visible>
                             <animation effect="fade" time="320" delay="200">Visible</animation>
                             <animation effect="fade" time="50">Hidden</animation>
-                            <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
+                            <texture colordiffuse="highlight">selecteditem_bg.png</texture>
                             <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(51).Row,5)">Conditional</animation>
                             <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(51).Row,4)">Conditional</animation>
                             <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(51).Row,3)">Conditional</animation>

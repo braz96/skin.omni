@@ -30,7 +30,7 @@
             <visible>!Window.IsVisible(script-globalsearch-main.xml)</visible>
             <include>FullscreenDimensions</include>
             <texture>$VAR[CommonBackgroundOverlay]</texture>
-            <colordiffuse>$VAR[ColorBackgroundVar]</colordiffuse>
+            <colordiffuse>background</colordiffuse>
         </control>
     </include>
     <include name="WeatherBackground">

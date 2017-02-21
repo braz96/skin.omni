@@ -8,7 +8,7 @@
             <left>2260</left>
             <width>60</width>
             <height>60</height>
-            <texture colordiffuse="$VAR[ColorTextVar]" fallback="special://skin/extras/spinners/Sun.png">$INFO[Skin.String(busyloader)]</texture>
+            <texture colordiffuse="maintext" fallback="special://skin/extras/spinners/Sun.png">$INFO[Skin.String(busyloader)]</texture>
             <aspectratio>keep</aspectratio>
             <animation effect="rotate" start="360" end="0" center="auto" time="3000" loop="true" condition="true">conditional</animation>
         </control>
@@ -298,7 +298,7 @@
                 <height>60</height>
                 <font>font15</font>
                 <align>center</align>
-                <selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
+                <selectedcolor>highlight</selectedcolor>
                 <label>$INFO[ListItem.Label2]</label>
             </control>
             <control type="image">
@@ -316,7 +316,7 @@
                 <height>60</height>
                 <font>font15</font>
                 <align>center</align>
-                <selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
+                <selectedcolor>highlight</selectedcolor>
                 <label>$INFO[ListItem.Property(HighTemp),[COLOR invalid],[/COLOR]]$INFO[ListItem.Property(LowTemp), | [COLOR ff8de0ff],[/COLOR]]</label>
             </control>
             <control type="label">
@@ -342,7 +342,7 @@
                 <height>60</height>
                 <font>font15</font>
                 <align>center</align>
-                <selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
+                <selectedcolor>highlight</selectedcolor>
                 <label>$INFO[ListItem.Label2]</label>
             </control>
             <control type="image">
@@ -360,7 +360,7 @@
                 <height>60</height>
                 <font>font15</font>
                 <align>center</align>
-                <selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
+                <selectedcolor>highlight</selectedcolor>
                 <label>$INFO[ListItem.Property(HighTemp),[COLOR invalid],[/COLOR]]$INFO[ListItem.Property(LowTemp), | [COLOR ff8de0ff],[/COLOR]]</label>
             </control>
             <control type="label">

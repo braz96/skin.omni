@@ -29,7 +29,7 @@
                                 <visible>Control.HasFocus(50)</visible>
                                 <animation effect="fade" time="320" delay="200">Visible</animation>
                                 <animation effect="fade" time="50">Hidden</animation>
-                                <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
+                                <texture colordiffuse="highlight">selecteditem_bg.png</texture>
                                 <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
                                 <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,4)">Conditional</animation>
                                 <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,3)">Conditional</animation>
@@ -76,7 +76,7 @@
                                     <height>100</height>
                                     <aspectratio>keep</aspectratio>
                                     <texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
-                                    <colordiffuse>$VAR[ColorTextVar]</colordiffuse>
+                                    <colordiffuse>maintext</colordiffuse>
                                     <visible>String.Contains(ListItem.Icon,Default)</visible>
                                 </control>
                                 <control type="image">
@@ -120,7 +120,7 @@
                                     <height>100</height>
                                     <aspectratio>keep</aspectratio>
                                     <texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
-                                    <colordiffuse>$VAR[ColorTextVar]</colordiffuse>
+                                    <colordiffuse>maintext</colordiffuse>
                                     <visible>String.Contains(ListItem.Icon,Default)</visible>
                                 </control>
                                 <control type="image">

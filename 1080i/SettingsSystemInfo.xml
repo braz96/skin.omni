@@ -97,7 +97,7 @@
                     <height>70</height>
                     <aspectratio>keep</aspectratio>
                     <texture>logo.png</texture>
-                    <colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
+                    <colordiffuse>highlight</colordiffuse>
                 </control>
                 <control type="group">
                     <left>470</left>
@@ -109,7 +109,7 @@
                         <height>115</height>
                         <label>144</label>
                         <align>left</align>
-                        <textcolor>$VAR[ColorHighlightVar]</textcolor>
+                        <textcolor>highlight</textcolor>
                         <wrapmultiline>true</wrapmultiline>
                         <font>font15</font>
                     </control>

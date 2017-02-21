@@ -25,7 +25,7 @@
                     <width>385</width>
                     <height>425</height>
                     <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
+                    <texture colordiffuse="highlight">selecteditem_bg.png</texture>
                     <animation effect="slide" end="0,445" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,0)">Conditional</animation>
                     <animation effect="slide" end="405,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,3)">Conditional</animation>
                     <animation effect="slide" end="405,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,2)">Conditional</animation>
@@ -39,7 +39,7 @@
                     <width>250</width>
                     <height>405</height>
                     <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
+                    <texture colordiffuse="highlight">selecteditem_bg.png</texture>
                     <animation effect="slide" end="0,445" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,0)">Conditional</animation>
                     <animation effect="slide" end="270,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,5)">Conditional</animation>
                     <animation effect="slide" end="270,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,4)">Conditional</animation>
@@ -55,7 +55,7 @@
                     <width>404</width>
                     <height>276</height>
                     <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
+                    <texture colordiffuse="highlight">selecteditem_bg.png</texture>
                     <animation effect="slide" end="0,296" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,1)">Conditional</animation>
                     <animation effect="slide" end="0,296" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,0)">Conditional</animation>
                     <animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,2)">Conditional</animation>
@@ -71,7 +71,7 @@
                     <width>750</width>
                     <height>150</height>
                     <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
+                    <texture colordiffuse="highlight">selecteditem_bg.png</texture>
                     <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,3)">Conditional</animation>
                     <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,2)">Conditional</animation>
                     <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,1)">Conditional</animation>
@@ -117,7 +117,7 @@
                     <top>430</top>
                     <width>385</width>
                     <height>425</height>
-                    <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
+                    <texture colordiffuse="highlight">selecteditem_bg.png</texture>
                     <animation effect="slide" end="405,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8012$SKINSHORTCUTS[id]).Column,3)">Conditional</animation>
                     <animation effect="slide" end="405,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8012$SKINSHORTCUTS[id]).Column,2)">Conditional</animation>
                     <animation effect="slide" end="405,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8012$SKINSHORTCUTS[id]).Column,1)">Conditional</animation>
@@ -178,28 +178,28 @@
                         <width>438</width>
                         <itemgap>20</itemgap>
                         <control type="label">
-                            <label>[COLOR $VAR[ColorHighlightVar]]$LOCALIZE[406]: [/COLOR]$INFO[Window(weather).Property(Current.Humidity)]</label>
+                            <label>[COLOR highlight]$LOCALIZE[406]: [/COLOR]$INFO[Window(weather).Property(Current.Humidity)]</label>
                             <width>438</width>
                             <height>40</height>
                             <align>right</align>
                             <font>font14</font>
                         </control>
                         <control type="label">
-                            <label>[COLOR $VAR[ColorHighlightVar]]$LOCALIZE[404]:[/COLOR] $INFO[Window(weather).Property(Current.Wind)]</label>
+                            <label>[COLOR highlight]$LOCALIZE[404]:[/COLOR] $INFO[Window(weather).Property(Current.Wind)]</label>
                             <width>438</width>
                             <height>40</height>
                             <align>right</align>
                             <font>font14</font>
                         </control>
                         <control type="label">
-                            <label>[COLOR $VAR[ColorHighlightVar]]$LOCALIZE[33027]:[/COLOR] [LOWERCASE]$INFO[Window(weather).Property(Today.Sunrise)][/LOWERCASE]</label>
+                            <label>[COLOR highlight]$LOCALIZE[33027]:[/COLOR] [LOWERCASE]$INFO[Window(weather).Property(Today.Sunrise)][/LOWERCASE]</label>
                             <width>438</width>
                             <height>40</height>
                             <align>right</align>
                             <font>font14</font>
                         </control>
                         <control type="label">
-                            <label>[COLOR $VAR[ColorHighlightVar]]$LOCALIZE[33028]:[/COLOR] [LOWERCASE]$INFO[Window(weather).Property(Today.Sunset)][/LOWERCASE]</label>
+                            <label>[COLOR highlight]$LOCALIZE[33028]:[/COLOR] [LOWERCASE]$INFO[Window(weather).Property(Today.Sunset)][/LOWERCASE]</label>
                             <width>438</width>
                             <height>40</height>
                             <align>right</align>
@@ -216,7 +216,7 @@
                     <width>750</width>
                     <height>150</height>
                     <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
+                    <texture colordiffuse="highlight">selecteditem_bg.png</texture>
                     <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8013$SKINSHORTCUTS[id]).Row,3)">Conditional</animation>
                     <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8013$SKINSHORTCUTS[id]).Row,2)">Conditional</animation>
                     <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8013$SKINSHORTCUTS[id]).Row,1)">Conditional</animation>
@@ -258,7 +258,7 @@
                     <width>750</width>
                     <height>150</height>
                     <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
+                    <texture colordiffuse="highlight">selecteditem_bg.png</texture>
                     <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8014$SKINSHORTCUTS[id]).Row,3)">Conditional</animation>
                     <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8014$SKINSHORTCUTS[id]).Row,2)">Conditional</animation>
                     <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8014$SKINSHORTCUTS[id]).Row,1)">Conditional</animation>

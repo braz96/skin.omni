@@ -30,7 +30,7 @@
         <control type="image">
             <include>FullscreenDimensions</include>
             <texture>$VAR[CommonBackgroundOverlay]</texture>
-            <colordiffuse>$VAR[ColorBackgroundVar]</colordiffuse>
+            <colordiffuse>background</colordiffuse>
         </control>
         <control type="group">
             <animation effect="slide" start="0" end="430" time="300" condition="Control.HasFocus(9010)">Conditional</animation>
@@ -82,7 +82,7 @@
                         <height>40</height>
                         <label>y</label>
                         <font>IconTiny</font>
-                        <textcolor>$VAR[ColorHighlightVar]</textcolor>
+                        <textcolor>highlight</textcolor>
                     </control>
                     <control type="rss">
                         <description>RSS feed</description>
@@ -91,9 +91,9 @@
                         <width>1733</width>
                         <font>font12</font>
                         <urlset>1</urlset>
-                        <textcolor>$VAR[ColorHighlightVar]</textcolor>
-                        <titlecolor>$VAR[ColorHighlightVar]</titlecolor>
-                        <headlinecolor>$VAR[ColorTextVar]</headlinecolor>
+                        <textcolor>highlight</textcolor>
+                        <titlecolor>highlight</titlecolor>
+                        <headlinecolor>maintext</headlinecolor>
                     </control>
                 </control>
             </control>

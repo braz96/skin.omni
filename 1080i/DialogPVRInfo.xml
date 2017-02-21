@@ -20,14 +20,14 @@
             <control type="image">
                 <width>1200</width>
                 <height>1080</height>
-                <texture colordiffuse="$VAR[ColorBackgroundVar]">$VAR[CommonBackgroundOverlay]</texture>
+                <texture colordiffuse="background">$VAR[CommonBackgroundOverlay]</texture>
             </control>
             <control type="group">
                 <control type="image">
                     <left>0</left>
                     <width>1080</width>
                     <height>120</height>
-                    <texture colordiffuse="$VAR[ColorBackgroundVar]">topbar.png</texture>
+                    <texture colordiffuse="background">topbar.png</texture>
                 </control>
                 <control type="label">
                     <top>15</top>
@@ -42,7 +42,7 @@
                     <left>25</left>
                     <width>1030</width>
                     <height>45</height>
-                    <textcolor>$VAR[ColorHighlightVar]</textcolor>
+                    <textcolor>highlight</textcolor>
                     <font>font14</font>
                     <label>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime] ($INFO[ListItem.StartDate])</label>
                 </control>
@@ -69,7 +69,7 @@
                     <top>0</top>
                     <width>120</width>
                     <height>1080</height>
-                    <texture colordiffuse="$VAR[ColorBackgroundVar]">menu.png</texture>
+                    <texture colordiffuse="background">menu.png</texture>
                 </control>
                 <control type="image">
                     <top>0</top>
@@ -77,7 +77,7 @@
                     <width>120</width>
                     <height>120</height>
                     <animation effect="fade" start="100" end="60" time="300" condition="!Control.HasFocus(9000) + !Control.HasFocus(9010)">Conditional</animation>
-                    <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
+                    <texture colordiffuse="highlight">selecteditem_bg.png</texture>
                     <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Row,7)">Conditional</animation>
                     <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Row,6)">Conditional</animation>
                     <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Row,5)">Conditional</animation>
@@ -101,7 +101,7 @@
                             <left>20</left>
                             <width>80</width>
                             <height>80</height>
-                            <texture colordiffuse="$VAR[ColorTextVar]">$INFO[ListItem.Icon]</texture>
+                            <texture colordiffuse="maintext">$INFO[ListItem.Icon]</texture>
                         </control>
                         <control type="label">
                             <wrapmultiline>true</wrapmultiline>
@@ -120,7 +120,7 @@
                             <left>20</left>
                             <width>80</width>
                             <height>80</height>
-                            <texture colordiffuse="$VAR[ColorTextVar]">$INFO[ListItem.Icon]</texture>
+                            <texture colordiffuse="maintext">$INFO[ListItem.Icon]</texture>
                         </control>
                         <control type="label">
                             <wrapmultiline>true</wrapmultiline>
@@ -181,7 +181,7 @@
                                 <height>50</height>
                                 <font>font15</font>
                                 <align>right</align>
-                                <textcolor>$VAR[ColorHighlightVar]</textcolor>
+                                <textcolor>highlight</textcolor>
                                 <label>$INFO[ListItem.Label2]</label>
                             </control>
                             <control type="label">
@@ -198,7 +198,7 @@
                                 <height>50</height>
                                 <font>font15</font>
                                 <align>right</align>
-                                <textcolor>$VAR[ColorHighlightVar]</textcolor>
+                                <textcolor>highlight</textcolor>
                                 <label>$INFO[ListItem.Label2]</label>
                             </control>
                             <control type="label">
@@ -212,25 +212,25 @@
                         <content>
                             <!--<item>
                                 <label>$INFO[ListItem.Season,,x]$INFO[ListItem.Episode]</label>
-                                <label2>[COLOR $VAR[ColorHighlightVar]]$LOCALIZE[20359]:[/COLOR]</label2>
+                                <label2>[COLOR highlight]$LOCALIZE[20359]:[/COLOR]</label2>
                                 <onclick>noop</onclick>
                                 <visible>!String.IsEmpty(ListItem.Episode)</visible>
                             </item>-->
                             <item>
                                 <label>$INFO[ListItem.ChannelNumberLabel,,. ]$INFO[ListItem.ChannelName]</label>
-                                <label2>[COLOR $VAR[ColorHighlightVar]]$LOCALIZE[19029]:[/COLOR]</label2>
+                                <label2>[COLOR highlight]$LOCALIZE[19029]:[/COLOR]</label2>
                                 <onclick>noop</onclick>
                                 <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                             </item>
                             <item>
                                 <label>$INFO[ListItem.Duration]</label>
-                                <label2>[COLOR $VAR[ColorHighlightVar]]$LOCALIZE[180]:[/COLOR]</label2>
+                                <label2>[COLOR highlight]$LOCALIZE[180]:[/COLOR]</label2>
                                 <onclick>noop</onclick>
                                 <visible>!String.IsEmpty(ListItem.Duration)</visible>
                             </item>
                             <item>
                                 <label>[CAPITALIZE]$INFO[ListItem.Genre][/CAPITALIZE]</label>
-                                <label2>[COLOR $VAR[ColorHighlightVar]]$LOCALIZE[515]:[/COLOR]</label2>
+                                <label2>[COLOR highlight]$LOCALIZE[515]:[/COLOR]</label2>
                                 <onclick>noop</onclick>
                                 <visible>!String.IsEmpty(ListItem.Genre)</visible>
                             </item>
@@ -263,12 +263,12 @@
             <control type="image">
                 <width>720</width>
                 <height>1080</height>
-                <texture colordiffuse="$VAR[ColorBackgroundVar]">$VAR[CommonBackgroundOverlay]</texture>
+                <texture colordiffuse="background">$VAR[CommonBackgroundOverlay]</texture>
             </control>
             <control type="image">
                 <width>720</width>
                 <height>1080</height>
-                <texture colordiffuse="$VAR[ColorBackgroundVar]">topbar.png</texture>
+                <texture colordiffuse="background">topbar.png</texture>
             </control>
             <control type="image">
                 <width>720</width>

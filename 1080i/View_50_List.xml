@@ -17,7 +17,7 @@
                         <visible>Control.HasFocus(50) + [![Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(actors) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists)] | Window.IsActive(videoplaylist) | Container.Content(videos) | Container.Content(files)]</visible>
                         <animation effect="fade" time="320" delay="200">Visible</animation>
                         <animation effect="fade" time="50">Hidden</animation>
-                        <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
+                        <texture colordiffuse="highlight">selecteditem_bg.png</texture>
                         <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
                         <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,4)">Conditional</animation>
                         <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,3)">Conditional</animation>
@@ -33,7 +33,7 @@
                         <visible>Control.HasFocus(50) + !Window.IsActive(videoplaylist) + [Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(actors) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists)]</visible>
                         <animation effect="fade" time="320" delay="200">Visible</animation>
                         <animation effect="fade" time="50">Hidden</animation>
-                        <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
+                        <texture colordiffuse="highlight">selecteditem_bg.png</texture>
                         <animation effect="slide" end="795,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Column,0)">Conditional</animation>
                         <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
                         <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,4)">Conditional</animation>
@@ -927,7 +927,7 @@
                             <width>560</width>
                             <height>30</height>
                             <font>font14</font>
-                            <textcolor>$VAR[ColorHighlightVar]</textcolor>
+                            <textcolor>highlight</textcolor>
                             <label>$LOCALIZE[558]:</label>
                         </control>
                         <control type="label">
@@ -942,7 +942,7 @@
                             <width>560</width>
                             <height>30</height>
                             <font>font14</font>
-                            <textcolor>$VAR[ColorHighlightVar]</textcolor>
+                            <textcolor>highlight</textcolor>
                             <label>$LOCALIZE[562]:</label>
                         </control>
                         <control type="label">
@@ -957,7 +957,7 @@
                             <width>560</width>
                             <height>30</height>
                             <font>font14</font>
-                            <textcolor>$VAR[ColorHighlightVar]</textcolor>
+                            <textcolor>highlight</textcolor>
                             <label>$LOCALIZE[515]:</label>
                         </control>
                         <control type="label">

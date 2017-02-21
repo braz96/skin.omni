@@ -26,7 +26,7 @@
                     <width>404</width>
                     <height>276</height>
                     <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
+                    <texture colordiffuse="highlight">selecteditem_bg.png</texture>
                     <animation effect="slide" end="0,296" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(11).Row,0)">Conditional</animation>
                     <animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(11).Column,1)">Conditional</animation>
                     <animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(11).Column,0)">Conditional</animation>

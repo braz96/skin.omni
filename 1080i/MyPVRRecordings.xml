@@ -25,7 +25,7 @@
                         <visible>Control.HasFocus(50)</visible>
                         <animation effect="fade" time="320" delay="200">Visible</animation>
                         <animation effect="fade" time="50">Hidden</animation>
-                        <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
+                        <texture colordiffuse="highlight">selecteditem_bg.png</texture>
                         <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
                         <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,4)">Conditional</animation>
                         <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,3)">Conditional</animation>
@@ -76,7 +76,7 @@
                             <right>80</right>
                             <height>70</height>
                             <font>font30</font>
-                            <selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
+                            <selectedcolor>highlight</selectedcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -86,7 +86,7 @@
                             <right>80</right>
                             <height>110</height>
                             <font>font30</font>
-                            <selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
+                            <selectedcolor>highlight</selectedcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -95,7 +95,7 @@
                             <left>140</left>
                             <right>80</right>
                             <height>60</height>
-                            <selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
+                            <selectedcolor>highlight</selectedcolor>
                             <label>$INFO[ListItem.Label2]</label>
                         </control>
                         <include content="OverlayList">

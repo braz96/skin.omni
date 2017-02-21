@@ -36,7 +36,7 @@
             <top>0</top>
             <width>630</width>
             <height>1080</height>
-            <texture colordiffuse="$VAR[ColorBackgroundVar]">submenu.png</texture>
+            <texture colordiffuse="background">submenu.png</texture>
         </control>
         <control type="button" id="9051">
             <include>HiddenObject</include>
@@ -45,15 +45,6 @@
             <onfocus condition="String.IsEmpty(Window(home).Property(MediaMenu))">SetFocus(9050)</onfocus>
             <onfocus condition="!String.IsEmpty(Window(home).Property(MediaMenu))">ClearProperty(MediaMenu,home)</onfocus>
             <onfocus condition="!String.IsEmpty(Window(home).Property(MediaMenu))">SetFocus(50)</onfocus>
-        </control>
-    </include>
-    <include name="KioskModeButton">
-        <control type="button">
-            <description>Kiosk Mode button</description>
-            <include>ButtonCommonValues</include>
-            <label />
-            <onfocus>ClearProperty(MediaMenu,home)</onfocus>
-            <onfocus>SetFocus(50)</onfocus>
         </control>
     </include>
     <include name="MediaMenuTop">
@@ -71,7 +62,6 @@
         <onback>ClearProperty(MediaMenu,home)</onback>
         <onback>50</onback>
         <itemgap>0</itemgap>
-        <include condition="Skin.HasSetting(KioskMode.Enabled)">KioskModeButton</include>
         <animation effect="slide" start="-440,0" end="0,0" time="400" tween="quadratic" easing="out">Visible</animation>
         <control type="button" id="1802">
             <label>$LOCALIZE[31906]</label>
@@ -313,7 +303,7 @@
                 <left>550</left>
                 <width>1800</width>
                 <height>120</height>
-                <texture colordiffuse="$VAR[ColorBackgroundVar]">topbar.png</texture>
+                <texture colordiffuse="background">topbar.png</texture>
             </control>
             <control type="group">
                 <left>560</left>
@@ -334,12 +324,12 @@
                     <height>45</height>
                     <font>font14</font>
                     <textoffsetx>15</textoffsetx>
-                    <textcolor>$VAR[ColorHighlightVar]</textcolor>
+                    <textcolor>highlight</textcolor>
                     <label>$VAR[HeaderSubLabel]</label>
                     <label2>$VAR[HeaderSubLabel2]</label2>
                     <onclick>noop</onclick>
                     <texturefocus>blank.png</texturefocus>
-                    <focusedcolor>$VAR[ColorHighlightVar]</focusedcolor>
+                    <focusedcolor>highlight</focusedcolor>
                 </control>
             </control>
             <control type="image">
@@ -372,7 +362,7 @@
                 <left>0</left>
                 <width>1920</width>
                 <height>120</height>
-                <texture colordiffuse="$VAR[ColorBackgroundVar]">topbar.png</texture>
+                <texture colordiffuse="background">topbar.png</texture>
             </control>
             <control type="group">
                 <left>10</left>
@@ -393,12 +383,12 @@
                     <height>45</height>
                     <font>font14</font>
                     <textoffsetx>15</textoffsetx>
-                    <textcolor>$VAR[ColorHighlightVar]</textcolor>
+                    <textcolor>highlight</textcolor>
                     <label>$VAR[HeaderSubLabel]</label>
                     <label2>$VAR[HeaderDialogSubLabel2]</label2>
                     <onclick>noop</onclick>
                     <texturefocus>blank.png</texturefocus>
-                    <focusedcolor>$VAR[ColorHighlightVar]</focusedcolor>
+                    <focusedcolor>highlight</focusedcolor>
                 </control>
             </control>
             <control type="image">
@@ -433,7 +423,7 @@
             <width>$PARAM[DialogBackgroundWidth]</width>
             <height>$PARAM[DialogBackgroundHeight]</height>
             <texture border="16">dialog_context.png</texture>
-            <colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
+            <colordiffuse>dialog</colordiffuse>
         </control>
         <control type="label" id="$PARAM[DialogHeaderId]">
             <description>header label</description>
@@ -495,7 +485,7 @@
                         <top>5</top>
                         <width>305</width>
                         <height>70</height>
-                        <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
+                        <texture colordiffuse="highlight">selecteditem_bg.png</texture>
                         <visible>Control.HasFocus(5000)</visible>
                     </control>
                     <control type="label">
@@ -535,7 +525,7 @@
             <control type="image">
                 <width>60</width>
                 <height>60</height>
-                <texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[OverlayBGVar]</texture>
+                <texture colordiffuse="highlight">$VAR[OverlayBGVar]</texture>
                 <aspectratio align="center" aligny="top">keep</aspectratio>
             </control>
             <control type="label">
@@ -556,7 +546,7 @@
                 <height>56</height>
                 <align>center</align>
                 <font>IconSuperTiny</font>
-                <textcolor>$VAR[ColorHighlightVar]</textcolor>
+                <textcolor>highlight</textcolor>
                 <label>A</label>
             </control>
         </control>
@@ -585,7 +575,7 @@
                 <height>62</height>
                 <align>right</align>
                 <font>IconTiny</font>
-                <textcolor>$VAR[ColorHighlightVar]</textcolor>
+                <textcolor>highlight</textcolor>
                 <label>A</label>
             </control>
         </control>
@@ -699,7 +689,7 @@
                 <right>10</right>
                 <height>60</height>
                 <font>font15</font>
-                <selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
+                <selectedcolor>highlight</selectedcolor>
                 <label>$INFO[ListItem.Label2]: $INFO[ListItem.Label]</label>
             </control>
             <control type="label">
@@ -707,7 +697,7 @@
                 <top>70</top>
                 <right>10</right>
                 <height>60</height>
-                <selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
+                <selectedcolor>highlight</selectedcolor>
                 <label>$INFO[ListItem.Property(Description)]</label>
             </control>
         </itemlayout>
@@ -715,7 +705,7 @@
             <control type="image">
                 <width>100%</width>
                 <height>100%</height>
-                <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
+                <texture colordiffuse="highlight">selecteditem_bg.png</texture>
             </control>
             <control type="image">
                 <top>10</top>
@@ -746,7 +736,7 @@
         <control type="label">
             <height>50</height>
             <label>31259</label>
-            <textcolor>$VAR[ColorHighlightVar]</textcolor>
+            <textcolor>highlight</textcolor>
             <font>font13_title</font>
         </control>
         <control type="label">
@@ -771,7 +761,7 @@
         <control type="label">
             <height>50</height>
             <label>31260</label>
-            <textcolor>$VAR[ColorHighlightVar]</textcolor>
+            <textcolor>highlight</textcolor>
             <font>font13_title</font>
         </control>
         <control type="label">
@@ -787,7 +777,7 @@
         <control type="label">
             <height>50</height>
             <label>138</label>
-            <textcolor>$VAR[ColorHighlightVar]</textcolor>
+            <textcolor>highlight</textcolor>
             <font>font13_title</font>
         </control>
         <control type="label">
@@ -817,7 +807,7 @@
             <height>40</height>
             <font>font13</font>
             <textoffsetx>15</textoffsetx>
-            <textcolor>$VAR[ColorDisabledVar]</textcolor>
+            <textcolor>disabled</textcolor>
             <align>right</align>
             <label>$INFO[Container($PARAM[ContainerID]).NumItems,, $LOCALIZE[31025] • ]$INFO[Container($PARAM[ContainerID]).CurrentPage]$INFO[Container($PARAM[ContainerID]).NumPages,/]</label>
             <visible>Integer.IsGreater(Container($PARAM[ContainerID]).NumItems,0) + [$PARAM[Visibility]]</visible>

@@ -18,13 +18,13 @@
             <control type="image">
                 <width>1200</width>
                 <height>1080</height>
-                <texture colordiffuse="$VAR[ColorBackgroundVar]">$VAR[CommonBackgroundOverlay]</texture>
+                <texture colordiffuse="background">$VAR[CommonBackgroundOverlay]</texture>
             </control>
             <control type="image">
                 <left>0</left>
                 <width>1080</width>
                 <height>120</height>
-                <texture colordiffuse="$VAR[ColorBackgroundVar]">topbar.png</texture>
+                <texture colordiffuse="background">topbar.png</texture>
             </control>
             <control type="label">
                 <top>15</top>
@@ -39,7 +39,7 @@
                 <left>25</left>
                 <width>1030</width>
                 <height>45</height>
-                <textcolor>$VAR[ColorHighlightVar]</textcolor>
+                <textcolor>highlight</textcolor>
                 <font>font14</font>
                 <label>$VAR[HeaderSubLabelInfoDialog]</label>
             </control>
@@ -76,7 +76,7 @@
                 <top>0</top>
                 <width>120</width>
                 <height>1080</height>
-                <texture colordiffuse="$VAR[ColorBackgroundVar]">menu.png</texture>
+                <texture colordiffuse="background">menu.png</texture>
             </control>
             <control type="image">
                 <top>0</top>
@@ -84,7 +84,7 @@
                 <width>120</width>
                 <height>120</height>
                 <animation effect="fade" start="100" end="60" time="300" condition="!Control.HasFocus(9000) + !Control.HasFocus(9010)">Conditional</animation>
-                <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
+                <texture colordiffuse="highlight">selecteditem_bg.png</texture>
                 <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Row,7)">Conditional</animation>
                 <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Row,6)">Conditional</animation>
                 <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Row,5)">Conditional</animation>
@@ -114,7 +114,7 @@
                         <left>20</left>
                         <width>80</width>
                         <height>80</height>
-                        <texture colordiffuse="$VAR[ColorTextVar]">$INFO[ListItem.Icon]</texture>
+                        <texture colordiffuse="maintext">$INFO[ListItem.Icon]</texture>
                     </control>
                 </itemlayout>
                 <focusedlayout height="120" width="120">
@@ -123,7 +123,7 @@
                         <left>20</left>
                         <width>80</width>
                         <height>80</height>
-                        <texture colordiffuse="$VAR[ColorTextVar]">$INFO[ListItem.Icon]</texture>
+                        <texture colordiffuse="maintext">$INFO[ListItem.Icon]</texture>
                     </control>
                 </focusedlayout>
                 <content>
@@ -229,7 +229,7 @@
                             <height>50</height>
                             <font>font15</font>
                             <align>right</align>
-                            <textcolor>$VAR[ColorHighlightVar]</textcolor>
+                            <textcolor>highlight</textcolor>
                             <label>$INFO[ListItem.Label2]</label>
                         </control>
                         <control type="label">
@@ -246,7 +246,7 @@
                             <height>50</height>
                             <font>font15</font>
                             <align>right</align>
-                            <textcolor>$VAR[ColorHighlightVar]</textcolor>
+                            <textcolor>highlight</textcolor>
                             <label>$INFO[ListItem.Label2]</label>
                         </control>
                         <control type="label">
@@ -431,7 +431,7 @@
                         <width>810</width>
                         <height>90</height>
                         <include>FocusedBackgroundFade</include>
-                        <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
+                        <texture colordiffuse="highlight">selecteditem_bg.png</texture>
                         <animation effect="slide" end="0,90" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,7)">Conditional</animation>
                         <animation effect="slide" end="0,90" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,6)">Conditional</animation>
                         <animation effect="slide" end="0,90" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
@@ -511,7 +511,7 @@
                                     <height>62</height>
                                     <align>center</align>
                                     <font>IconSuperTiny</font>
-                                    <textcolor>$VAR[ColorHighlightVar]</textcolor>
+                                    <textcolor>highlight</textcolor>
                                     <label>I</label>
                                 </control>
                             </control>
@@ -557,7 +557,7 @@
                                     <height>62</height>
                                     <align>center</align>
                                     <font>IconSuperTiny</font>
-                                    <textcolor>$VAR[ColorHighlightVar]</textcolor>
+                                    <textcolor>highlight</textcolor>
                                     <label>I</label>
                                 </control>
                             </control>
@@ -597,7 +597,7 @@
                             <width>404</width>
                             <height>276</height>
                             <include>FocusedBackgroundFade</include>
-                            <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
+                            <texture colordiffuse="highlight">selecteditem_bg.png</texture>
                             <animation effect="slide" end="0,296" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(150).Row,1)">Conditional</animation>
                             <animation effect="slide" end="0,296" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(150).Row,0)">Conditional</animation>
                             <animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(150).Column,2)">Conditional</animation>
@@ -702,7 +702,7 @@
                             <width>385</width>
                             <height>425</height>
                             <include>FocusedBackgroundFade</include>
-                            <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
+                            <texture colordiffuse="highlight">selecteditem_bg.png</texture>
                             <animation effect="slide" end="0,445" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(250).Row,0)">Conditional</animation>
                             <animation effect="slide" end="405,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(250).Column,0)">Conditional</animation>
                         </control>
@@ -780,7 +780,7 @@
                         <width>810</width>
                         <height>90</height>
                         <include>FocusedBackgroundFade</include>
-                        <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
+                        <texture colordiffuse="highlight">selecteditem_bg.png</texture>
                         <animation effect="slide" end="0,90" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(350).Row,7)">Conditional</animation>
                         <animation effect="slide" end="0,90" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(350).Row,6)">Conditional</animation>
                         <animation effect="slide" end="0,90" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(350).Row,5)">Conditional</animation>
@@ -887,12 +887,12 @@
             <control type="image">
                 <width>720</width>
                 <height>1080</height>
-                <texture colordiffuse="$VAR[ColorBackgroundVar]">$VAR[CommonBackgroundOverlay]</texture>
+                <texture colordiffuse="background">$VAR[CommonBackgroundOverlay]</texture>
             </control>
             <control type="image">
                 <width>720</width>
                 <height>1080</height>
-                <texture colordiffuse="$VAR[ColorBackgroundVar]">topbar.png</texture>
+                <texture colordiffuse="background">topbar.png</texture>
             </control>
             <control type="image">
                 <width>720</width>

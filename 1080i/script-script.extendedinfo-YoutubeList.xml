@@ -26,7 +26,7 @@
             <control type="image">
                 <include>FullscreenDimensions</include>
                 <texture>background.png</texture>
-                <colordiffuse>$VAR[ColorBackgroundVar]</colordiffuse>
+                <colordiffuse>background</colordiffuse>
                 <fadetime>300</fadetime>
             </control>
         </control>
@@ -47,7 +47,7 @@
                         <visible>Control.HasFocus(500)</visible>
                         <animation effect="fade" time="320" delay="200">Visible</animation>
                         <animation effect="fade" time="200">Hidden</animation>
-                        <texture colordiffuse="$VAR[ColorHighlightVar]">selecteditem_bg.png</texture>
+                        <texture colordiffuse="highlight">selecteditem_bg.png</texture>
                         <animation effect="slide" end="0,410" time="300" tween="cubic" easing="inout" condition="Container(500).Row(1)">Conditional</animation>
                         <animation effect="slide" end="440,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,2)">Conditional</animation>
                         <animation effect="slide" end="440,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,1)">Conditional</animation>
@@ -81,7 +81,7 @@
                                 <top>240</top>
                                 <width>130</width>
                                 <height>30</height>
-                                <texture colordiffuse="$VAR[ColorTextVar]">$INFO[ListItem.Rating,flags/rating/,.png]</texture>
+                                <texture colordiffuse="maintext">$INFO[ListItem.Rating,flags/rating/,.png]</texture>
                             </control>
                             <control type="label">
                                 <top>240</top>
@@ -114,7 +114,7 @@
                                 <top>240</top>
                                 <width>130</width>
                                 <height>30</height>
-                                <texture colordiffuse="$VAR[ColorTextVar]">$INFO[ListItem.Rating,flags/rating/,.png]</texture>
+                                <texture colordiffuse="maintext">$INFO[ListItem.Rating,flags/rating/,.png]</texture>
                             </control>
                             <control type="label">
                                 <top>240</top>
@@ -156,8 +156,8 @@
                 <width>10</width>
                 <height>960</height>
                 <onleft>500</onleft>
-                <onright condition="!Skin.HasSetting(KioskMode.Enabled)">SetProperty(MediaMenu,True,home)</onright>
-                <onright condition="!Skin.HasSetting(KioskMode.Enabled)">SetFocus(9050)</onright>
+                <onright>SetProperty(MediaMenu,True,home)</onright>
+                <onright>SetFocus(9050)</onright>
                 <ondown>60</ondown>
                 <onup>60</onup>
             </control>
