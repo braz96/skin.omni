@@ -44,12 +44,6 @@
             <effect type="fade" start="100" end="0" time="240" />
         </animation>
     </include>
-    <include name="PanelFocusedItemZoom">
-        <animation type="Focus">
-            <effect type="zoom" time="150" start="95" end="100" center="auto" />
-            <effect type="zoom" time="150" start="105" end="100" delay="150" center="auto" />
-        </animation>
-    </include>
     <include name="Animation.Common">
         <animation type="WindowOpen" reversible="false">
             <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in" />

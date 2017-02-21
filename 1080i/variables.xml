@@ -43,6 +43,7 @@
         <value condition="Window.IsActive(weather)">$LOCALIZE[8]</value>
         <value condition="String.Contains(Container.FolderPath,plugin://plugin.program.advanced.launcher/)">$INFO[System.AddonTitle(plugin.program.advanced.launcher)]</value>
         <value condition="Window.IsActive(script-globalsearch-main.xml)">$INFO[System.AddonTitle(script.globalsearch)]</value>
+        <value condition="Window.IsActive(script-script.extendedinfo-YoutubeList.xml)">$INFO[System.AddonTitle(context.youtube.browser)]</value>
         <value condition="Window.IsActive(settings) | Window.IsActive(SettingsCategory.xml) | Window.IsActive(profiles) | Window.IsActive(skinsettings)">$LOCALIZE[5]</value>
         <value condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">$LOCALIZE[19069]</value>
         <value condition="Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)">$LOCALIZE[19163]</value>
@@ -61,6 +62,7 @@
         <value condition="Window.IsActive(filemanager) + [Control.HasFocus(20) | Control.HasFocus(30)]">$INFO[Container(20).NumItems,, $LOCALIZE[31025]]</value>
         <value condition="Window.IsActive(filemanager) + [Control.HasFocus(21) | Control.HasFocus(31)]">$INFO[Container(21).NumItems,, $LOCALIZE[31025]]</value>
         <value condition="Window.IsActive(script-globalsearch-main.xml)">$LOCALIZE[31186] "$INFO[Window.Property(GlobalSearch.SearchString)]"</value>
+        <value condition="Window.IsActive(script-script.extendedinfo-YoutubeList.xml)">$INFO[Window.Property(TotalItems),, $LOCALIZE[31025]]</value>
         <value condition="Window.IsActive(systemsettings)">$LOCALIZE[13000]</value>
         <value condition="Window.IsActive(servicesettings)">$LOCALIZE[13279]</value>
         <value condition="Window.IsActive(pvrsettings)">$LOCALIZE[19020]</value>
@@ -105,6 +107,21 @@
         <value condition="!String.IsEmpty(Player.Title) + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch-main.xml)]">$INFO[Player.Time] / $INFO[Player.Duration]</value>
 
         <value condition="![Player.Playing | Player.HasAudio | Player.HasVideo] + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch-main.xml)]">$INFO[System.Date]</value>
+    </variable>
+    <variable name="HeaderDialogLabel2">
+        <value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Season]$INFO[VideoPlayer.Episode,X,. ]$INFO[Player.Title]</value>
+        <value condition="Player.Playing | Player.HasAudio | Player.HasVideo">$INFO[Player.Title]</value>
+        <value condition="![Player.Playing | Player.HasAudio | Player.HasVideo] + !IsEmpty(Weather.Plugin)">$INFO[Weather.Temperature,, • ][LOWERCASE]$INFO[System.Time][/LOWERCASE]</value>
+        <value condition="![Player.Playing | Player.HasAudio | Player.HasVideo] + IsEmpty(Weather.Plugin)">[LOWERCASE]$INFO[System.Time][/LOWERCASE]</value>
+    </variable>
+    <variable name="HeaderDialogSubLabel2">
+        <value condition="VideoPlayer.Content(livetv)">$INFO[VideoPlayer.ChannelNumber,,: ]$INFO[VideoPlayer.ChannelName]</value>
+        <value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Premiered,, • ]$INFO[VideoPlayer.TvShowTitle]</value>
+        <value condition="VideoPlayer.Content(movies)">$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Genre, • ]</value>
+        <value condition="VideoPlayer.Content(musicvideos)">$INFO[VideoPlayer.Artist]</value>
+        <value condition="Player.HasAudio + !String.IsEmpty(MusicPlayer.Artist)">$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, • ]</value>
+        <value condition="!String.IsEmpty(Player.Title)">$INFO[Player.Time] / $INFO[Player.Duration]</value>
+        <value condition="![Player.Playing | Player.HasAudio | Player.HasVideo]">$INFO[System.Date]</value>
     </variable>
     <variable name="HeaderLabelInfoDialog">
         <value condition="String.IsEqual(ListItem.DBTYPE,episode)">$INFO[ListItem.Season,,x]$INFO[ListItem.Episode,,. ]$INFO[ListItem.Title]</value>

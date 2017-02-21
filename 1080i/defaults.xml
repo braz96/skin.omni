@@ -8,7 +8,7 @@
     <default type="multiimage">
         <left>0</left>
         <top>0</top>
-        <aspectratio align="center">scale</aspectratio>
+        <aspectratio align="center" aligny="center">scale</aspectratio>
         <fadetime>FanartCrossfadeTime</fadetime>
         <include>FullscreenDimensions</include>
         <timeperimage>12000</timeperimage>

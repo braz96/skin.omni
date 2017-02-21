@@ -12,7 +12,6 @@
             <animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
             <animation effect="slide" start="0" end="-630" time="400" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(MediaMenu))">Conditional</animation>
             <animation effect="slide" start="0" end="430" time="300" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(SubMenu))">Conditional</animation>
-            <animation effect="slide" start="0" end="-430" time="200" tween="quadratic" easing="out" condition="!String.IsEmpty(Window(home).Property(SubMenu))">WindowClose</animation>
             <control type="group">
                 <visible>!Window.IsActive(volumebar) | Player.Muted</visible>
                 <animation effect="fade" time="200">VisibleChange</animation>

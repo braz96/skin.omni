@@ -12,7 +12,7 @@
             <param name="DialogBackgroundHeight" value="750" />
             <param name="DialogHeaderLabel" value="$ADDON[pvr.nextpvr 30100]" />
             <param name="DialogHeaderId" value="" />
-        </include>  
+        </include>
         <control type="label" id="20">
             <left>45</left>
             <top>110</top>

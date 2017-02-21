@@ -17,7 +17,7 @@
         </include>
         <control type="group">
             <top>80</top>
-            <left>32</left>
+            <left>30</left>
             <control type="group">
                 <visible>Integer.IsGreater(Container(450).NumItems,0)</visible>
                 <animation effect="fade" time="320" delay="300">Visible</animation>
@@ -39,7 +39,7 @@
             <control type="panel" id="450">
                 <left>0</left>
                 <top>0</top>
-                <width>1696</width>
+                <width>1620</width>
                 <height>890</height>
                 <onup>450</onup>
                 <ondown>450</ondown>

@@ -10,6 +10,7 @@
     <controls>
         <control type="image">
             <include>FullscreenDimensions</include>
+            <aspectratio align="center" aligny="center">scale</aspectratio>
             <texture>$INFO[Container(100).ListItem.Property(Fanart)]</texture>
         </control>
         <control type="image">
@@ -1066,6 +1067,7 @@
             </control>
             <control type="image">
                 <include>FullscreenDimensions</include>
+                <aspectratio align="center" aligny="center">scale</aspectratio>
                 <texture>$INFO[Container(100).ListItem.Property(Fanart)]</texture>
             </control>
         </control>

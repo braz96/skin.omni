@@ -77,8 +77,8 @@
             <label>$LOCALIZE[31906]</label>
             <label2>$INFO[Container.Viewmode]</label2>
             <include>ButtonCommonValues</include>
-            <onclick>SendClick(2)</onclick>
-            <enable>Control.IsEnabled(2) + ![Window.IsActive(tvchannels) | Window.IsActive(tvguide) | Window.IsActive(tvrecordings) | Window.IsActive(tvsearch) | Window.IsActive(tvtimers) | Window.IsActive(eventlog) | Window.IsActive(videoplaylist) | Window.IsActive(musicplaylist)]</enable>
+            <enable>Integer.IsGreater(Container.ViewCount,1)</enable>
+            <onclick>Container.NextViewMode</onclick>
         </control>
         <control type="button" id="2">
             <description>View button</description>
@@ -113,7 +113,8 @@
             <include>ButtonCommonValues</include>
             <label>31155</label>
             <label2>$INFO[Container.SortMethod]</label2>
-            <onclick>Container.NextSortMethod</onclick>
+            <!--<onclick>Container.NextSortMethod</onclick>-->
+            <onclick>SendClick(3)</onclick>
             <enable>Control.IsEnabled(3)</enable>
         </control>
     </include>
@@ -354,6 +355,65 @@
             </control>
             <control type="label">
                 <left>2251</left>
+                <top>19</top>
+                <width>80</width>
+                <height>80</height>
+                <font>font36</font>
+                <align>center</align>
+                <label>$INFO[ListItem.SortLetter,[UPPERCASE],[/UPPERCASE]]</label>
+                <visible>Container.Scrolling + [String.IsEqual(Container.SortMethod,$LOCALIZE[369]) | String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | [Container.Content(artists) + String.IsEqual(Container.SortMethod,$LOCALIZE[557])]]</visible>
+                <visible>[!Window.IsVisible(volumebar) + !Window.IsVisible(busydialog) + !Control.IsVisible(12345) + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch-main.xml)]] | [Player.Muted + !Window.IsVisible(extendedprogressdialog) + !Window.IsVisible(busydialog) + !Control.IsVisible(12345)]</visible>
+            </control>
+        </control>
+    </include>
+    <include name="Topbar_Wide">
+        <control type="group">
+            <control type="image">
+                <left>0</left>
+                <width>1920</width>
+                <height>120</height>
+                <texture colordiffuse="$VAR[ColorBackgroundVar]">topbar.png</texture>
+            </control>
+            <control type="group">
+                <left>10</left>
+                <control type="button">
+                    <top>15</top>
+                    <width>1800</width>
+                    <height>45</height>
+                    <font>font30</font>
+                    <textoffsetx>15</textoffsetx>
+                    <label>$VAR[HeaderLabel]</label>
+                    <label2>$VAR[HeaderDialogLabel2]</label2>
+                    <onclick>noop</onclick>
+                    <texturefocus>blank.png</texturefocus>
+                </control>
+                <control type="button">
+                    <top>58</top>
+                    <width>1800</width>
+                    <height>45</height>
+                    <font>font14</font>
+                    <textoffsetx>15</textoffsetx>
+                    <textcolor>$VAR[ColorHighlightVar]</textcolor>
+                    <label>$VAR[HeaderSubLabel]</label>
+                    <label2>$VAR[HeaderDialogSubLabel2]</label2>
+                    <onclick>noop</onclick>
+                    <texturefocus>blank.png</texturefocus>
+                    <focusedcolor>$VAR[ColorHighlightVar]</focusedcolor>
+                </control>
+            </control>
+            <control type="image">
+                <description>avatar</description>
+                <left>1821</left>
+                <top>19</top>
+                <width>80</width>
+                <height>80</height>
+                <aspectratio align="center" aligny="center">keep</aspectratio>
+                <texture>$VAR[HomeNowPlayingThumbVar]</texture>
+                <visible>[!Window.IsVisible(volumebar) + !Window.IsVisible(busydialog) + !Control.IsVisible(12345)] | [Player.Muted + !Window.IsVisible(busydialog) + !Control.IsVisible(12345)]</visible>
+                <visible>![Container.Scrolling + [String.IsEqual(Container.SortMethod,$LOCALIZE[369]) | String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | [Container.Content(artists) + String.IsEqual(Container.SortMethod,$LOCALIZE[557])]]]</visible>
+            </control>
+            <control type="label">
+                <left>1821</left>
                 <top>19</top>
                 <width>80</width>
                 <height>80</height>
