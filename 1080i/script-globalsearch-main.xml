@@ -14,13 +14,11 @@
         <control type="group">
             <include>MenuSlideAnimation</include>
             <top>0</top>
-            <left>-430</left>
-            <include>Submenu</include>
-            <include>MainMenu</include>
-            <include>Topbar</include>
+            <left>0</left>
+            <include>Topbar_Wide</include>
             <control type="group">
                 <include>Animation.Common</include>
-                <left>600</left>
+                <left>135</left>
                 <control type="group">
                     <width>105</width>
                     <height>30</height>
@@ -66,7 +64,7 @@
                     <control type="group">
                         <visible>Integer.IsGreater(Container(9020).NumItems,0)</visible>
                         <control type="image">
-                            <left>60</left>
+                            <left>0</left>
                             <top>180</top>
                             <width>420</width>
                             <height>120</height>
@@ -82,7 +80,7 @@
                             <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9020).Row,0)">Conditional</animation>
                         </control>
                         <control type="image">
-                            <left>60</left>
+                            <left>0</left>
                             <top>180</top>
                             <width>120</width>
                             <height>120</height>
@@ -99,11 +97,11 @@
                         </control>
                     </control>
                     <control type="panel" id="9020">
-                        <left>60</left>
+                        <left>0</left>
                         <top>180</top>
                         <width>420</width>
                         <height>840</height>
-                        <onleft>9000</onleft>
+                        <onleft>9020</onleft>
                         <onright>101</onright>
                         <onup>9020</onup>
                         <ondown>9020</ondown>
@@ -1510,104 +1508,104 @@
                         </control>
                     </control>
                 </control>
-                <include content="GlobalSearchScrollbar">
-                    <param name="id" value="60" />
-                    <param name="container" value="221" />
-                </include>
-                <include content="GlobalSearchScrollbar">
-                    <param name="id" value="61" />
-                    <param name="container" value="111" />
-                </include>
-                <include content="GlobalSearchScrollbar">
-                    <param name="id" value="62" />
-                    <param name="container" value="121" />
-                </include>
-                <include content="GlobalSearchScrollbar">
-                    <param name="id" value="63" />
-                    <param name="container" value="131" />
-                </include>
-                <include content="GlobalSearchScrollbar">
-                    <param name="id" value="64" />
-                    <param name="container" value="141" />
-                </include>
-                <include content="GlobalSearchScrollbar">
-                    <param name="id" value="65" />
-                    <param name="container" value="211" />
-                </include>
-                <include content="GlobalSearchScrollbar">
-                    <param name="id" value="66" />
-                    <param name="container" value="231" />
-                </include>
-                <include content="GlobalSearchScrollbar">
-                    <param name="id" value="67" />
-                    <param name="container" value="151" />
-                </include>
-                <include content="GlobalSearchScrollbar">
-                    <param name="id" value="68" />
-                    <param name="container" value="161" />
-                </include>
-                <include content="GlobalSearchScrollbar">
-                    <param name="id" value="69" />
-                    <param name="container" value="171" />
-                </include>
-                <include content="GlobalSearchScrollbar">
-                    <param name="id" value="70" />
-                    <param name="container" value="181" />
-                </include>
-                <control type="group">
-                    <left>1750</left>
-                    <include>SideBladeRight</include>
-                    <control type="grouplist" id="9050">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>630</width>
-                        <height>1080</height>
-                        <onleft>ClearProperty(MediaMenu,home)</onleft>
-                        <onleft>101</onleft>
-                        <itemgap>0</itemgap>
-                        <control type="button" id="999">
-                            <description>New Search</description>
-                            <onright>ClearProperty(MediaMenu,home)</onright>
-                            <onright>9000</onright>
-                            <onback>ClearProperty(MediaMenu,home)</onback>
-                            <onclick>SendClick(198)</onclick>
-                            <onclick>ClearProperty(MediaMenu,home)</onclick>
-                            <include>ButtonCommonValues</include>
-                            <label>31184</label>
-                        </control>
-                        <control type="button" id="8">
-                            <description>Settings</description>
-                            <onright>ClearProperty(MediaMenu,home)</onright>
-                            <onright>9000</onright>
-                            <onback>ClearProperty(MediaMenu,home)</onback>
-                            <onclick>Addon.OpenSettings(script.globalsearch)</onclick>
-                            <include>ButtonCommonValues</include>
-                            <label>5</label>
-                        </control>
-                        <control type="button" id="613">
-                            <onright>ClearProperty(MediaMenu,home)</onright>
-                            <onright>9000</onright>
-                            <onback>ClearProperty(MediaMenu,home)</onback>
-                            <include>ButtonCommonValues</include>
-                            <label>31193</label>
-                            <onclick>Close</onclick>
-                            <onclick>ActivateWindow(musicplaylist)</onclick>
-                            <visible>!String.IsEqual(Playlist.Length(music),0)</visible>
-                        </control>
-                        <control type="button" id="614">
-                            <onright>ClearProperty(MediaMenu,home)</onright>
-                            <onright>9000</onright>
-                            <onback>ClearProperty(MediaMenu,home)</onback>
-                            <include>ButtonCommonValues</include>
-                            <label>31194</label>
-                            <onclick>Close</onclick>
-                            <onclick>ActivateWindow(videoplaylist)</onclick>
-                            <visible>!String.IsEqual(Playlist.Length(video),0)</visible>
-                        </control>
-                        <include content="MenuPlayerControls">
-                            <param name="PlayerControlsOnDown" value="999" />
-                        </include>
+            </control>
+            <include content="GlobalSearchScrollbar">
+                <param name="id" value="60" />
+                <param name="container" value="221" />
+            </include>
+            <include content="GlobalSearchScrollbar">
+                <param name="id" value="61" />
+                <param name="container" value="111" />
+            </include>
+            <include content="GlobalSearchScrollbar">
+                <param name="id" value="62" />
+                <param name="container" value="121" />
+            </include>
+            <include content="GlobalSearchScrollbar">
+                <param name="id" value="63" />
+                <param name="container" value="131" />
+            </include>
+            <include content="GlobalSearchScrollbar">
+                <param name="id" value="64" />
+                <param name="container" value="141" />
+            </include>
+            <include content="GlobalSearchScrollbar">
+                <param name="id" value="65" />
+                <param name="container" value="211" />
+            </include>
+            <include content="GlobalSearchScrollbar">
+                <param name="id" value="66" />
+                <param name="container" value="231" />
+            </include>
+            <include content="GlobalSearchScrollbar">
+                <param name="id" value="67" />
+                <param name="container" value="151" />
+            </include>
+            <include content="GlobalSearchScrollbar">
+                <param name="id" value="68" />
+                <param name="container" value="161" />
+            </include>
+            <include content="GlobalSearchScrollbar">
+                <param name="id" value="69" />
+                <param name="container" value="171" />
+            </include>
+            <include content="GlobalSearchScrollbar">
+                <param name="id" value="70" />
+                <param name="container" value="181" />
+            </include>
+            <control type="group">
+                <left>1920</left>
+                <include>SideBladeRight</include>
+                <control type="grouplist" id="9050">
+                    <left>0</left>
+                    <top>0</top>
+                    <width>630</width>
+                    <height>1080</height>
+                    <onleft>ClearProperty(MediaMenu,home)</onleft>
+                    <onleft>101</onleft>
+                    <itemgap>0</itemgap>
+                    <control type="button" id="999">
+                        <description>New Search</description>
+                        <onright>ClearProperty(MediaMenu,home)</onright>
+                        <onright>9000</onright>
+                        <onback>ClearProperty(MediaMenu,home)</onback>
+                        <onclick>SendClick(198)</onclick>
+                        <onclick>ClearProperty(MediaMenu,home)</onclick>
+                        <include>ButtonCommonValues</include>
+                        <label>31184</label>
                     </control>
+                    <control type="button" id="8">
+                        <description>Settings</description>
+                        <onright>ClearProperty(MediaMenu,home)</onright>
+                        <onright>9000</onright>
+                        <onback>ClearProperty(MediaMenu,home)</onback>
+                        <onclick>Addon.OpenSettings(script.globalsearch)</onclick>
+                        <include>ButtonCommonValues</include>
+                        <label>5</label>
+                    </control>
+                    <control type="button" id="613">
+                        <onright>ClearProperty(MediaMenu,home)</onright>
+                        <onright>9000</onright>
+                        <onback>ClearProperty(MediaMenu,home)</onback>
+                        <include>ButtonCommonValues</include>
+                        <label>31193</label>
+                        <onclick>Close</onclick>
+                        <onclick>ActivateWindow(musicplaylist)</onclick>
+                        <visible>!String.IsEqual(Playlist.Length(music),0)</visible>
+                    </control>
+                    <control type="button" id="614">
+                        <onright>ClearProperty(MediaMenu,home)</onright>
+                        <onright>9000</onright>
+                        <onback>ClearProperty(MediaMenu,home)</onback>
+                        <include>ButtonCommonValues</include>
+                        <label>31194</label>
+                        <onclick>Close</onclick>
+                        <onclick>ActivateWindow(videoplaylist)</onclick>
+                        <visible>!String.IsEqual(Playlist.Length(video),0)</visible>
+                    </control>
+                    <include content="MenuPlayerControls">
+                        <param name="PlayerControlsOnDown" value="999" />
+                    </include>
                 </control>
             </control>
         </control>

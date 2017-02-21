@@ -11,8 +11,6 @@
     <visibleoverride group="mainmenu" condition="Library.HasContent(MusicVideos)">ActivateWindow(Videos,sources://video/,return)</visibleoverride>
     <visibleoverride group="mainmenu" condition="!IsEmpty(Weather.Plugin)">ReplaceWindow(servicesettings,weather)</visibleoverride>
 
-    <groupoverride group="mainmenu" condition="Window.IsActive(script-globalsearch-main.xml)">Close</groupoverride>
-
 	<!-- Menu thumbnails -->
 	<thumbnailBrowseDefault>special://skin/extras/icons/</thumbnailBrowseDefault>
 

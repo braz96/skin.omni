@@ -221,15 +221,15 @@
                         <label>$LOCALIZE[169]</label>
                         <include>ButtonCommonValues</include>
                     </control>
+                    <control type="button" id="5005">
+                        <label>$ADDON[script.extendedinfo 32022]</label>
+                        <include>ButtonCommonValues</include>
+                    </control>
                     <control type="button" id="6000">
                         <label>$LOCALIZE[137]</label>
                         <include>ButtonCommonValues</include>
                         <onclick>ClearProperty(MediaMenu,Home)</onclick>
                         <onclick>500</onclick>
-                    </control>
-                    <control type="button" id="5005">
-                        <label>$ADDON[script.extendedinfo 32022]</label>
-                        <include>ButtonCommonValues</include>
                     </control>
                 </control>
             </control>
