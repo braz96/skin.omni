@@ -55,15 +55,15 @@
                 <width>1000</width>
                 <height>480</height>
                 <itemgap>0</itemgap>
-                <pagecontrol>30</pagecontrol>
+                <pagecontrol>60</pagecontrol>
                 <onleft>9</onleft>
-                <onright condition="Container(2).HasNext | Container(2).HasPrevious">30</onright>
+                <onright condition="Container(2).HasNext | Container(2).HasPrevious">60</onright>
                 <onright condition="![Container(2).HasNext | Container(2).HasPrevious]">9001</onright>
                 <onup>2</onup>
                 <ondown>2</ondown>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
             </control>
-            <control type="scrollbar" id="30">
+            <control type="scrollbar" id="60">
                 <visible allowhiddenfocus="true">Control.HasFocus(30) | ControlGroup(2).HasFocus</visible>
                 <animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
                 <left>1010</left>
