@@ -175,7 +175,7 @@
         <sliderwidth>150</sliderwidth>
         <sliderheight>20</sliderheight>
         <texturesliderbar>osd/slider_bg.png</texturesliderbar>
-        <textureslidernib colordiffuse="highlight">osd/slider_nib_nf.png</textureslidernib>
+        <textureslidernib colordiffuse="maintext">osd/slider_nib_nf.png</textureslidernib>
         <textureslidernibfocus>osd/slider_nib_fo.png</textureslidernibfocus>
         <font>font14</font>
         <textcolor>maintext</textcolor>

@@ -296,14 +296,6 @@ msgctxt "#31131"
 msgid "Select the image that will be displayed when information is loading."
 msgstr "Select the image that will be displayed when information is loading."
 
-msgctxt "#31135"
-msgid "Enable keyboard auto complete"
-msgstr "Enable keyboard auto complete"
-
-msgctxt "#31136"
-msgid "Enables auto complete for the Kodi keyboard, with results provided by Google, YouTube, or Bing."
-msgstr "Enables auto complete for the Kodi keyboard, with results provided by Google, YouTube, or Bing."
-
 msgctxt "#31137"
 msgid "No results found"
 msgstr "No results found"
@@ -311,10 +303,6 @@ msgstr "No results found"
 msgctxt "#31139"
 msgid "Changa"
 msgstr "Changa"
-
-msgctxt "#31144"
-msgid "AutoCompletion for virtual keyboard"
-msgstr "AutoCompletion for virtual keyboard"
 
 msgctxt "#31152"
 msgid "Art"

@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">21</defaultcontrol>
-    <include>Animation.Dialog</include>
+    <animation effect="slide" start="0,520" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+    <animation effect="slide" start="0,0" end="0,520" time="300" tween="quadratic" easing="out">WindowClose</animation>
     <coordinates>
         <system>2</system>
-        <left>760</left>
-        <top>262</top>
+        <left>1500</left>
+        <top>560</top>
     </coordinates>
     <controls>
         <control type="group">
-            <animation effect="slide" start="0,0" end="720,0" time="320" tween="cubic" easing="inout" condition="Window.IsActive(virtualkeyboard)">Conditional</animation>
-            <include content="DialogBackgroundCommons">
+            <animation effect="slide" start="0,0" end="0,0" time="320" tween="cubic" easing="inout" condition="Window.IsActive(virtualkeyboard)">Conditional</animation>
+            <!--<include content="DialogBackgroundCommons">
                 <param name="DialogBackgroundWidth" value="300" />
                 <param name="DialogBackgroundHeight" value="552" />
                 <param name="DialogHeaderLabel" value="-" />
                 <param name="DialogHeaderId" value="1" />
-            </include>
+            </include>-->
             <control type="label" id="4">
                 <left>30</left>
-                <top>482</top>
+                <top>450</top>
                 <width>230</width>
                 <height>50</height>
                 <align>center</align>
@@ -26,7 +27,7 @@
             </control>
             <control type="group">
                 <left>35</left>
-                <top>81</top>
+                <top>50</top>
                 <control type="grouplist">
                     <itemgap>10</itemgap>
                     <orientation>horizontal</orientation>

@@ -340,15 +340,7 @@ msgctxt "#31131"
 msgid "Select the image that will be displayed when information is loading."
 msgstr ""
 
-#empty strings from id 31132 to 31134
-
-msgctxt "#31135"
-msgid "Enable keyboard auto complete"
-msgstr ""
-
-msgctxt "#31136"
-msgid "Enables auto complete for the Kodi keyboard, with results provided by Google, YouTube, or Bing."
-msgstr ""
+#empty strings from id 31132 to 31136
 
 msgctxt "#31137"
 msgid "No results found"
@@ -360,13 +352,7 @@ msgctxt "#31139"
 msgid "Changa"
 msgstr ""
 
-#empty strings from id 31140 to 31143
-
-msgctxt "#31144"
-msgid "AutoCompletion for virtual keyboard"
-msgstr ""
-
-#empty string from id 31145 to 31151
+#empty strings from id 31140 to 31151
 
 msgctxt "#31152"
 msgid "Art"

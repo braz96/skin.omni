@@ -1,28 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">9</defaultcontrol>
+    <animation effect="slide" start="0,580" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+    <animation effect="slide" start="0,0" end="0,580" time="300" tween="quadratic" easing="out">WindowClose</animation>
     <coordinates>
         <system>1</system>
-        <left>287</left>
-        <top>198</top>
+        <left>0</left>
+        <top>492</top>
     </coordinates>
-    <include>Animation.Dialog</include>
     <controls>
-        <include content="DialogBackgroundCommons">
+        <!--<include content="DialogBackgroundCommons">
             <param name="DialogBackgroundWidth" value="1346" />
             <param name="DialogBackgroundHeight" value="684" />
             <param name="DialogHeaderLabel" value="-" />
             <param name="DialogHeaderId" value="20" />
-        </include>
+        </include>-->
+        <control type="image">
+            <width>1920</width>
+            <height>588</height>
+            <texture colordiffuse="background">$VAR[CommonBackgroundOverlay]</texture>
+        </control>
+        <control type="image">
+            <top>8</top>
+            <width>1920</width>
+            <height>580</height>
+            <texture colordiffuse="background">submenu.png</texture>
+        </control>
         <!-- left group -->
         <control type="group">
-            <left>31</left>
-            <top>88</top>
+            <left>50</left>
+            <top>58</top>
             <control type="grouplist" id="9">
                 <description>button area</description>
                 <left>0</left>
                 <top>0</top>
-                <width>310</width>
+                <width>350</width>
                 <height>480</height>
                 <itemgap>0</itemgap>
                 <onleft>9001</onleft>
@@ -34,24 +46,27 @@
         </control>
         <!-- right group -->
         <control type="group">
-            <left>357</left>
-            <top>88</top>
+            <left>415</left>
+            <top>58</top>
             <control type="grouplist" id="2">
                 <description>control area</description>
                 <left>0</left>
                 <top>0</top>
-                <width>960</width>
+                <width>1000</width>
                 <height>480</height>
                 <itemgap>0</itemgap>
                 <pagecontrol>30</pagecontrol>
                 <onleft>9</onleft>
-                <onright>30</onright>
+                <onright condition="Container(2).HasNext | Container(2).HasPrevious">30</onright>
+                <onright condition="![Container(2).HasNext | Container(2).HasPrevious]">9001</onright>
                 <onup>2</onup>
                 <ondown>2</ondown>
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
             </control>
             <control type="scrollbar" id="30">
-                <left>964</left>
+                <visible allowhiddenfocus="true">Control.HasFocus(30) | ControlGroup(2).HasFocus</visible>
+                <animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
+                <left>1010</left>
                 <top>0</top>
                 <width>10</width>
                 <height>480</height>
@@ -62,20 +77,19 @@
         </control>
         <!-- button group -->
         <control type="grouplist" id="9001">
-            <left>31</left>
-            <top>591</top>
-            <width>1286</width>
-            <height>60</height>
-            <onleft>9001</onleft>
-            <onright>9001</onright>
-            <onup>2</onup>
-            <ondown>2</ondown>
+            <left>1470</left>
+            <top>58</top>
+            <width>400</width>
+            <height>220</height>
+            <onleft>2</onleft>
+            <onright>9</onright>
+            <onup>9001</onup>
+            <ondown>9001</ondown>
             <align>center</align>
-            <itemgap>14</itemgap>
-            <orientation>horizontal</orientation>
+            <itemgap>20</itemgap>
             <control type="button" id="10">
                 <description>OK Button</description>
-                <width>418</width>
+                <width>400</width>
                 <label>186</label>
                 <align>center</align>
                 <font>font15_title</font>
@@ -83,7 +97,7 @@
             </control>
             <control type="button" id="11">
                 <description>Cancel Button</description>
-                <width>418</width>
+                <width>400</width>
                 <label>222</label>
                 <align>center</align>
                 <font>font15_title</font>
@@ -91,7 +105,7 @@
             </control>
             <control type="button" id="12">
                 <description>Defaults Button</description>
-                <width>418</width>
+                <width>400</width>
                 <label>409</label>
                 <align>center</align>
                 <font>font15_title</font>
