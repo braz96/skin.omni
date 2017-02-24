@@ -64,7 +64,7 @@
                 <scrolltime tween="cubic" easing="out">500</scrolltime>
             </control>
             <control type="scrollbar" id="60">
-                <visible allowhiddenfocus="true">Control.HasFocus(30) | ControlGroup(2).HasFocus</visible>
+                <visible allowhiddenfocus="true">Control.HasFocus(60) | ControlGroup(2).HasFocus</visible>
                 <animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
                 <left>1010</left>
                 <top>0</top>
@@ -112,6 +112,13 @@
                 <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
             </control>
         </control>
+        <control type="image">
+            <top>328</top>
+            <left>1660</left>
+            <width>210</width>
+            <height>210</height>
+            <texture>$INFO[Window.Property(Addon.ID),special://home/addons/,/icon.png]</texture>
+        </control>
         <control type="button" id="13">
             <description>Default Category Button</description>
             <height>60</height>
@@ -142,6 +149,7 @@
         <control type="spincontrolex" id="5">
             <description>Default spincontrolex</description>
             <width>960</width>
+            <textwidth>800</textwidth>
             <height>60</height>
             <textcolor>maintext</textcolor>
             <focusedcolor>maintext</focusedcolor>
@@ -167,6 +175,7 @@
         <control type="sliderex" id="8">
             <description>Default Slider</description>
             <width>960</width>
+            <textwidth>760</textwidth>
             <height>60</height>
             <font>font14</font>
             <textcolor>maintext</textcolor>

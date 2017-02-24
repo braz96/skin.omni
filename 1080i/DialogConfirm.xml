@@ -1,22 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
+    <defaultcontrol always="true">9000</defaultcontrol>
+    <animation effect="slide" start="510" end="0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+    <animation effect="slide" start="0" end="510" time="300" tween="quadratic" easing="out">WindowClose</animation>
     <coordinates>
         <system>1</system>
-        <left>502</left>
-        <top>293</top>
+        <left>1402</left>
+        <top>0</top>
     </coordinates>
-    <include>Animation.Dialog</include>
     <controls>
-        <include content="DialogBackgroundCommons">
+        <!--<include content="DialogBackgroundCommons">
             <param name="DialogBackgroundWidth" value="916" />
             <param name="DialogBackgroundHeight" value="494" />
             <param name="DialogHeaderLabel" value="" />
             <param name="DialogHeaderId" value="1" />
-        </include>
+        </include>-->
+        <control type="image">
+            <width>518</width>
+            <height>1080</height>
+            <texture colordiffuse="background">$VAR[CommonBackgroundOverlay]</texture>
+        </control>
+        <control type="image">
+            <left>8</left>
+            <width>510</width>
+            <height>1080</height>
+            <texture colordiffuse="background">submenu.png</texture>
+        </control>
+        <control type="label" id="1">
+            <left>38</left>
+            <top>30</top>
+            <height>50</height>
+            <width>450</width>
+            <font>font15_title</font>
+            <textcolor>highlight</textcolor>
+        </control>
         <control type="textbox" id="9">
-            <left>45</left>
-            <top>98</top>
-            <width>825</width>
+            <left>38</left>
+            <top>90</top>
+            <width>450</width>
             <height>225</height>
             <font>font14_textbox</font>
             <label />
@@ -24,43 +45,36 @@
         </control>
         <control type="progress" id="20">
             <description>Progressbar</description>
-            <left>45</left>
-            <top>338</top>
-            <width>825</width>
+            <left>38</left>
+            <top>335</top>
+            <width>450</width>
             <height>20</height>
             <info>System.Progressbar</info>
         </control>
         <control type="grouplist" id="9000">
-            <left>30</left>
-            <top>402</top>
-            <width>856</width>
-            <height>60</height>
-            <align>center</align>
-            <itemgap>14</itemgap>
+            <left>8</left>
+            <top>400</top>
+            <width>510</width>
+            <height>270</height>
+            <itemgap>0</itemgap>
             <orientation>horizontal</orientation>
             <control type="button" id="11">
                 <description>OK button</description>
-                <width>276</width>
+                <width>510</width>
                 <label />
-                <font>font15_title</font>
-                <align>center</align>
-                <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
+                <include>ButtonCommonValues</include>
             </control>
             <control type="button" id="10">
                 <description>Cancel button</description>
-                <width>276</width>
+                <width>510</width>
                 <label />
-                <font>font15_title</font>
-                <align>center</align>
-                <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
+                <include>ButtonCommonValues</include>
             </control>
             <control type="button" id="12">
                 <description>Custom button</description>
-                <width>276</width>
+                <width>510</width>
                 <label />
-                <font>font15_title</font>
-                <align>center</align>
-                <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
+                <include>ButtonCommonValues</include>
             </control>
         </control>
     </controls>

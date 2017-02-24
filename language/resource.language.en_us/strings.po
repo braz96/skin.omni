@@ -36,6 +36,10 @@ msgctxt "#31008"
 msgid "Live TV recordings"
 msgstr "Live TV recordings"
 
+msgctxt "#31009"
+msgid "Manual search"
+msgstr "Manual search"
+
 msgctxt "#31010"
 msgid "Next"
 msgstr "Next"

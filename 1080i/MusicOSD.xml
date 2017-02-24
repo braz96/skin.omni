@@ -19,18 +19,18 @@
             <action>seek</action>
         </control>
         <control type="group">
-            <animation effect="slide" end="0,-100" time="240" tween="quadratic" condition="Window.IsVisible(selectdialog) | Window.IsVisible(okdialog) | Window.IsVisible(VisualisationPresetList)">Conditional</animation>
-            <animation effect="slide" start="0,-100" end="0,0" time="240" tween="quadratic">WindowOpen</animation>
-            <animation effect="slide" end="0,-100" start="0,0" time="240" tween="quadratic">WindowClose</animation>
+            <animation effect="slide" end="0,-108" time="240" tween="quadratic" condition="Window.IsVisible(selectdialog) | Window.IsVisible(okdialog) | Window.IsVisible(VisualisationPresetList)">Conditional</animation>
+            <animation effect="slide" start="0,-108" end="0,0" time="240" tween="quadratic">WindowOpen</animation>
+            <animation effect="slide" end="0,-108" start="0,0" time="240" tween="quadratic">WindowClose</animation>
             <control type="image">
                 <width>1920</width>
-                <height>100</height>
+                <height>108</height>
                 <texture colordiffuse="background">$VAR[CommonBackgroundOverlay]</texture>
             </control>
             <control type="image">
                 <width>1920</width>
                 <height>100</height>
-                <texture colordiffuse="background">menu.png</texture>
+                <texture colordiffuse="background">submenu.png</texture>
             </control>
             <control type="grouplist" id="202">
                 <height>100</height>

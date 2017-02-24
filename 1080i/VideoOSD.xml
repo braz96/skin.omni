@@ -21,18 +21,18 @@
             <visible>!VideoPlayer.Content(LiveTV)</visible>
         </control>
         <control type="group">
-            <animation effect="slide" end="0,-100" time="240" tween="quadratic" condition="Window.IsVisible(PVROSDGuide) | Window.IsVisible(PVROSDTeletext) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)">Conditional</animation>
-            <animation effect="slide" start="0,-100" end="0,0" time="240" tween="quadratic">WindowOpen</animation>
-            <animation effect="slide" end="0,-100" start="0,0" time="240" tween="quadratic">WindowClose</animation>
+            <animation effect="slide" end="0,-108" time="240" tween="quadratic" condition="Window.IsVisible(PVROSDGuide) | Window.IsVisible(PVROSDTeletext) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)">Conditional</animation>
+            <animation effect="slide" start="0,-108" end="0,0" time="240" tween="quadratic">WindowOpen</animation>
+            <animation effect="slide" end="0,-108" start="0,0" time="240" tween="quadratic">WindowClose</animation>
             <control type="image">
                 <width>1920</width>
-                <height>100</height>
+                <height>108</height>
                 <texture colordiffuse="background">$VAR[CommonBackgroundOverlay]</texture>
             </control>
             <control type="image">
                 <width>1920</width>
                 <height>100</height>
-                <texture colordiffuse="background">menu.png</texture>
+                <texture colordiffuse="background">submenu.png</texture>
             </control>
             <control type="grouplist" id="202">
                 <height>100</height>
@@ -261,28 +261,33 @@
                 <visible>Player.IsTempo</visible>
             </control>
             <control type="group" id="12000">
-                <left>1116</left>
+                <left>1127</left>
                 <top>100</top>
                 <visible>Control.HasFocus(717) | ControlGroup(12000).HasFocus</visible>
+                <animation effect="fade" time="300">Visible</animation>
+                <animation effect="fade" time="150">Hidden</animation>
+                <animation effect="fade" time="100" delay="160">WindowOpen</animation>
                 <animation effect="fade" time="100">WindowClose</animation>
                 <animation effect="slide" time="0" end="50" condition="VideoPlayer.HasMenu">Conditional</animation>
                 <animation effect="slide" time="0" end="50" condition="VideoPlayer.IsStereoscopic">Conditional</animation>
                 <animation effect="slide" time="0" end="100" condition="Player.TempoEnabled">Conditional</animation>
                 <control type="image">
-                    <width>510</width>
-                    <height>280</height>
+                    <top>8</top>
+                    <width>486</width>
+                    <height>328</height>
                     <texture colordiffuse="background">$VAR[CommonBackgroundOverlay]</texture>
                 </control>
                 <control type="image">
-                    <width>510</width>
-                    <height>280</height>
-                    <texture colordiffuse="background">menu.png</texture>
+                    <left>8</left>
+                    <width>470</width>
+                    <height>328</height>
+                    <texture colordiffuse="background">submenu.png</texture>
                 </control>
                 <control type="grouplist" id="12100">
-                    <left>20</left>
-                    <top>20</top>
+                    <left>8</left>
+                    <top>8</top>
                     <width>470</width>
-                    <height>240</height>
+                    <height>320</height>
                     <itemgap>0</itemgap>
                     <onleft>717</onleft>
                     <onright>717</onright>
@@ -291,6 +296,7 @@
                     <orientation>vertical</orientation>
                     <control type="radiobutton" id="12104">
                         <width>470</width>
+                        <height>80</height>
                         <label>$LOCALIZE[449]</label>
                         <radioposx>350</radioposx>
                         <onclick>ShowSubtitles</onclick>
@@ -300,6 +306,7 @@
                     <control type="button" id="12101">
                         <description>Download with Subtitles script</description>
                         <width>470</width>
+                        <height>80</height>
                         <label>33003</label>
                         <onclick>Dialog.Close(VideoOSD)</onclick>
                         <onclick>ActivateWindow(SubtitleSearch)</onclick>
@@ -307,12 +314,14 @@
                     </control>
                     <control type="button" id="12102">
                         <width>470</width>
+                        <height>80</height>
                         <label>$LOCALIZE[22006]</label>
                         <onclick>SubtitleDelay</onclick>
                         <enable>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</enable>
                     </control>
                     <control type="button" id="12103">
                         <width>470</width>
+                        <height>80</height>
                         <label>$LOCALIZE[21448]</label>
                         <label2>[UPPERCASE]$INFO[VideoPlayer.SubtitlesLanguage][/UPPERCASE]</label2>
                         <onclick>CycleSubtitle</onclick>

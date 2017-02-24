@@ -2,20 +2,20 @@
 <window>
     <controls>
         <control type="group">
-            <animation effect="slide" start="0,-100" end="0,0" time="200">WindowOpen</animation>
-            <animation effect="slide" start="0,-100" end="0,0" time="200">VisibleChange</animation>
-            <animation effect="slide" start="0,0" end="0,-100" time="200">WindowClose</animation>
+            <animation effect="slide" start="0,-108" end="0,0" time="200">WindowOpen</animation>
+            <animation effect="slide" start="0,-108" end="0,0" time="200">VisibleChange</animation>
+            <animation effect="slide" start="0,0" end="0,-108" time="200">WindowClose</animation>
             <visible>!Window.IsActive(videoosd)</visible>
             <top>0</top>
             <control type="image">
                 <width>1920</width>
-                <height>100</height>
+                <height>108</height>
                 <texture colordiffuse="background">$VAR[CommonBackgroundOverlay]</texture>
             </control>
             <control type="image">
                 <width>1920</width>
                 <height>100</height>
-                <texture colordiffuse="background">menu.png</texture>
+                <texture colordiffuse="background">submenu.png</texture>
             </control>
             <control type="grouplist">
                 <left>0</left>
@@ -85,23 +85,25 @@
             </control>
         </control>
         <control type="group">
-            <animation effect="slide" start="0,400" end="0,0" time="200">WindowOpen</animation>
-            <animation effect="slide" start="0,400" end="0,0" time="200">VisibleChange</animation>
-            <animation effect="slide" start="0,0" end="0,400" time="200">WindowClose</animation>
+            <animation effect="slide" start="0,408" end="0,0" time="200">WindowOpen</animation>
+            <animation effect="slide" start="0,408" end="0,0" time="200">VisibleChange</animation>
+            <animation effect="slide" start="0,0" end="0,408" time="200">WindowClose</animation>
             <top>680</top>
             <visible>![VideoPlayer.Content(livetv) | VideoPlayer.Content(musicvideos)]</visible>
             <visible>!Window.IsActive(videoosd)</visible>
             <control type="image">
                 <width>1920</width>
-                <height>400</height>
+                <height>408</height>
                 <texture colordiffuse="background">$VAR[CommonBackgroundOverlay]</texture>
             </control>
             <control type="image">
+                <top>8</top>
                 <width>1920</width>
                 <height>400</height>
-                <texture colordiffuse="background">menu.png</texture>
+                <texture colordiffuse="background">submenu.png</texture>
             </control>
             <control type="image">
+                <top>8</top>
                 <width>267</width>
                 <height>400</height>
                 <aspectratio aligny="center" align="center">scale</aspectratio>
@@ -109,7 +111,7 @@
             </control>
             <control type="grouplist">
                 <left>299</left>
-                <top>15</top>
+                <top>23</top>
                 <control type="label">                  
                     <width>1590</width>
                     <height>70</height>
@@ -153,7 +155,7 @@
             </control>
             <control type="progress">
                 <left>299</left>
-                <top>330</top>
+                <top>338</top>
                 <width>1590</width>
                 <height>8</height>
                 <info>Player.ProgressCache</info>
@@ -161,13 +163,13 @@
             </control>
             <control type="progress">
                 <left>299</left>
-                <top>330</top>
+                <top>338</top>
                 <width>1590</width>
                 <height>8</height>
                 <info>Player.Progress</info>
             </control>
             <control type="label">
-                <top>340</top>
+                <top>348</top>
                 <left>299</left>
                 <width>1590</width>
                 <height>35</height>
@@ -175,7 +177,7 @@
                 <label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
             </control>
             <control type="label">
-                <top>340</top>
+                <top>348</top>
                 <left>299</left>
                 <width>1590</width>
                 <height>35</height>
@@ -184,7 +186,7 @@
                 <label>$INFO[Player.TimeRemaining]$INFO[Player.Duration, / ]</label>
             </control>
             <control type="label">
-                <top>340</top>
+                <top>348</top>
                 <left>299</left>
                 <width>1590</width>
                 <height>35</height>
@@ -194,23 +196,25 @@
             </control>
         </control>
         <control type="group">
-            <animation effect="slide" start="0,300" end="0,0" time="200">WindowOpen</animation>
-            <animation effect="slide" start="0,300" end="0,0" time="200">VisibleChange</animation>
-            <animation effect="slide" start="0,0" end="0,300" time="200">WindowClose</animation>
+            <animation effect="slide" start="0,308" end="0,0" time="200">WindowOpen</animation>
+            <animation effect="slide" start="0,308" end="0,0" time="200">VisibleChange</animation>
+            <animation effect="slide" start="0,0" end="0,308" time="200">WindowClose</animation>
             <top>780</top>
             <visible>VideoPlayer.Content(livetv) | VideoPlayer.Content(musicvideos)</visible>
             <visible>!Window.IsActive(videoosd)</visible>
             <control type="image">
                 <width>1920</width>
-                <height>300</height>
+                <height>308</height>
                 <texture colordiffuse="background">$VAR[CommonBackgroundOverlay]</texture>
             </control>
             <control type="image">
+                <top>8</top>
                 <width>1920</width>
                 <height>300</height>
-                <texture colordiffuse="background">menu.png</texture>
+                <texture colordiffuse="background">submenu.png</texture>
             </control>
             <control type="image">
+                <top>8</top>
                 <width>300</width>
                 <height>300</height>
                 <aspectratio aligny="center" align="center">keep</aspectratio>
@@ -218,7 +222,7 @@
             </control>
             <control type="label">
                 <left>330</left>
-                <top>25</top>
+                <top>33</top>
                 <width>1560</width>
                 <height>40</height>
                 <font>font30</font>
@@ -229,7 +233,7 @@
                 <visible>VideoPlayer.Content(livetv)</visible>
                 <control type="label">
                     <left>330</left>
-                    <top>72</top>
+                    <top>80</top>
                     <width>1560</width>
                     <height>40</height>
                     <font>font13</font>
@@ -239,7 +243,7 @@
                 <control type="label">
                     <label>$INFO[VideoPlayer.Plot]</label>
                     <left>330</left>
-                    <top>120</top>
+                    <top>128</top>
                     <width>1560</width>
                     <height>40</height>
                     <font>font14</font>
@@ -247,7 +251,7 @@
                 </control>
                 <control type="label">
                     <left>330</left>
-                    <top>170</top>
+                    <top>178</top>
                     <width>1560</width>
                     <height>40</height>
                     <font>font14</font>
@@ -259,7 +263,7 @@
                 <visible>VideoPlayer.Content(musicvideos)</visible>
                 <left>330</left>
                 <control type="textbox">
-                    <top>90</top>
+                    <top>98</top>
                     <width>1560</width>
                     <height>108</height>
                     <font>font14_textbox</font>
@@ -270,7 +274,7 @@
             </control>
             <control type="progress">
                 <left>333</left>
-                <top>230</top>
+                <top>238</top>
                 <width>1557</width>
                 <height>8</height>
                 <info>Player.ProgressCache</info>
@@ -278,13 +282,13 @@
             </control>
             <control type="progress">
                 <left>333</left>
-                <top>230</top>
+                <top>238</top>
                 <width>1557</width>
                 <height>8</height>
                 <info>Player.Progress</info>
             </control>
             <control type="label">
-                <top>240</top>
+                <top>248</top>
                 <left>333</left>
                 <width>1557</width>
                 <height>35</height>
@@ -292,7 +296,7 @@
                 <label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
             </control>
             <control type="label">
-                <top>240</top>
+                <top>248</top>
                 <left>333</left>
                 <width>1557</width>
                 <height>35</height>
@@ -301,7 +305,7 @@
                 <label>$INFO[Player.TimeRemaining]$INFO[Player.Duration, / ]</label>
             </control>
             <control type="label">
-                <top>240</top>
+                <top>248</top>
                 <left>333</left>
                 <width>1557</width>
                 <height>35</height>

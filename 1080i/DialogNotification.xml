@@ -2,18 +2,29 @@
 <window>
     <coordinates>
         <left>560</left>
-        <top>-14</top>
+        <top>0</top>
     </coordinates>
     <animation effect="slide" time="300" start="0,-140" end="0,0">WindowOpen</animation>
     <animation effect="slide" time="150" start="0,0" end="0,-140">WindowClose</animation>
     <controls>
         <control type="group">
-            <control type="image">
+            <!--<control type="image">
                 <description>background image</description>
                 <width>800</width>
                 <height>140</height>
                 <texture border="16">dialog_context.png</texture>
                 <colordiffuse>dialog</colordiffuse>
+            </control>-->
+            <control type="image">
+                <width>800</width>
+                <height>134</height>
+                <texture colordiffuse="background">$VAR[CommonBackgroundOverlay]</texture>
+            </control>
+            <control type="image">
+                <left>8</left>
+                <width>784</width>
+                <height>126</height>
+                <texture colordiffuse="background">submenu.png</texture>
             </control>
             <control type="image" id="400">
                 <left>30</left>
