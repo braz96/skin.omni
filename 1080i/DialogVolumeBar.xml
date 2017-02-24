@@ -13,15 +13,22 @@
         </control>
         <control type="group">
             <visible>!Window.IsActive(startup)</visible>
-            <animation effect="slide" end="15,-15" time="0" condition="Window.IsActive(fullscreenvideo) | Window.IsActive(slideshow) | Window.IsActive(visualisation)">Conditional</animation>
+            <animation effect="slide" end="5,-6" time="0" condition="Window.IsActive(fullscreenvideo) | Window.IsActive(slideshow) | Window.IsActive(visualisation)">Conditional</animation>
             <animation effect="fade" start="0" end="100" time="150">WindowOpen</animation>
             <animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
-            <control type="image">
-                <width>120</width>
-                <height>120</height>
-                <texture border="12">dialog_context.png</texture>
-                <colordiffuse>dialog</colordiffuse>
+            <control type="group">
                 <visible>Window.IsActive(fullscreenvideo) | Window.IsActive(slideshow) | Window.IsActive(visualisation)</visible>
+                <control type="image">
+                    <width>120</width>
+                    <height>120</height>
+                    <texture colordiffuse="background">$VAR[CommonBackgroundOverlay]</texture>
+                </control>
+                <control type="image">
+                    <left>8</left>
+                    <width>112</width>
+                    <height>112</height>
+                    <texture colordiffuse="background">submenu.png</texture>
+                </control>
             </control>
             <control type="image">
                 <width>120</width>

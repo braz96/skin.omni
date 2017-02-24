@@ -36,7 +36,7 @@
             <name>font_TextViewer</name>
             <filename>weblysleekuil.ttf</filename>
             <size>33</size>
-            <linespacing>1.25</linespacing>
+            <linespacing>1.28</linespacing>
         </font>
         <font>
             <name>font15</name>

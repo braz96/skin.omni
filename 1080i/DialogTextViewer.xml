@@ -31,7 +31,7 @@
                 <left>50</left>
                 <top>90</top>
                 <width>520</width>
-                <height>940</height>
+                <height>950</height>
                 <font>font_TextViewer</font>
                 <pagecontrol>60</pagecontrol>
             </control>

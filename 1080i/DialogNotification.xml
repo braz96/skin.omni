@@ -28,7 +28,7 @@
             </control>
             <control type="image" id="400">
                 <left>30</left>
-                <top>30</top>
+                <top>20</top>
                 <width>80</width>
                 <height>80</height>
                 <aspectratio>keep</aspectratio>
@@ -37,7 +37,7 @@
             <control type="fadelabel" id="401">
                 <description>Line 1 Label</description>
                 <left>130</left>
-                <top>27</top>
+                <top>17</top>
                 <width>640</width>
                 <height>45</height>
                 <font>font30</font>
@@ -48,7 +48,7 @@
             <control type="fadelabel" id="402">
                 <description>Line 2 Label</description>
                 <left>130</left>
-                <top>69</top>
+                <top>59</top>
                 <width>640</width>
                 <height>45</height>
                 <font>font14</font>
