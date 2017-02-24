@@ -148,7 +148,9 @@ msgctxt "#31048"
 msgid "Music Visualisation Settings"
 msgstr ""
 
-#empty string with id 31049
+msgctxt "#31049"
+msgid "Available groups"
+msgstr ""
 
 msgctxt "#31050"
 msgid "Ascending"

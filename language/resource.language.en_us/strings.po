@@ -140,6 +140,10 @@ msgctxt "#31048"
 msgid "Music Visualisation Settings"
 msgstr "Music Visualization Settings"
 
+msgctxt "#31049"
+msgid "Available groups"
+msgstr "Available groups"
+
 msgctxt "#31050"
 msgid "Ascending"
 msgstr "Ascending"

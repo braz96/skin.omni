@@ -1,49 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">29</defaultcontrol>
+    <animation effect="slide" start="0,708" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+    <animation effect="slide" start="0,0" end="0,708" time="300" tween="quadratic" easing="out">WindowClose</animation>
     <coordinates>
         <system>1</system>
-        <left>92</left>
-        <top>180</top>
+        <left>0</left>
+        <top>372</top>
     </coordinates>
-    <include>Animation.Dialog</include>
     <controls>
         <control type="group">
-            <include content="DialogBackgroundCommons">
-                <param name="DialogBackgroundWidth" value="1735" />
-                <param name="DialogBackgroundHeight" value="720" />
-                <param name="DialogHeaderLabel" value="$LOCALIZE[19143]" />
-                <param name="DialogHeaderId" value="" />
-            </include>
+            <control type="image">
+                <width>1920</width>
+                <height>708</height>
+                <texture colordiffuse="background">$VAR[CommonBackgroundOverlay]</texture>
+            </control>
+            <control type="image">
+                <top>8</top>
+                <width>1920</width>
+                <height>700</height>
+                <texture colordiffuse="background">submenu.png</texture>
+            </control>
             <control type="group">
+                <top>58</top>
                 <control type="group">
                     <description>Group list</description>
                     <control type="label">
                         <description>name label</description>
-                        <left>30</left>
-                        <top>92</top>
-                        <width>435</width>
-                        <height>40</height>
-                        <font>font15</font>
-                        <align>center</align>
+                        <left>50</left>
+                        <top>-15</top>
+                        <width>430</width>
+                        <height>50</height>
+                        <font>font15_title</font>
                         <textcolor>highlight</textcolor>
-                        <label>31506</label>
+                        <label>31049</label>
                     </control>
                     <control type="list" id="13">
-                        <left>30</left>
-                        <top>148</top>
-                        <width>435</width>
+                        <left>50</left>
+                        <top>60</top>
+                        <width>430</width>
                         <height>540</height>
                         <onup>13</onup>
                         <ondown>13</ondown>
-                        <onleft>29</onleft>
-                        <onright>73</onright>
+                        <onleft>9000</onleft>
+                        <onright condition="Container(13).HasNext | Container(13).HasPrevious">73</onright>
+                        <onright condition="![Container(13).HasNext | Container(13).HasPrevious]">11</onright>
                         <pagecontrol>73</pagecontrol>
                         <scrolltime tween="quadratic" easing="out">200</scrolltime>
                         <orientation>vertical</orientation>
                         <itemlayout height="60">
                             <control type="label">
-                                <width>435</width>
+                                <width>430</width>
                                 <height>60</height>
                                 <font>font14</font>
                                 <textoffsetx>15</textoffsetx>
@@ -52,7 +59,7 @@
                         </itemlayout>
                         <focusedlayout height="60">
                             <control type="image">
-                                <width>435</width>
+                                <width>430</width>
                                 <height>60</height>
                                 <texture>selecteditem_bg.png</texture>
                                 <colordiffuse>highlight</colordiffuse>
@@ -60,7 +67,7 @@
                                 <include>VisibleFadeEffect</include>
                             </control>
                             <control type="label">
-                                <width>435</width>
+                                <width>430</width>
                                 <height>60</height>
                                 <font>font14</font>
                                 <textoffsetx>15</textoffsetx>
@@ -69,8 +76,10 @@
                         </focusedlayout>
                     </control>
                     <control type="scrollbar" id="73">
-                        <left>470</left>
-                        <top>148</top>
+                        <visible allowhiddenfocus="true">Control.HasFocus(73) | Control.HasFocus(13)</visible>
+                        <animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
+                        <left>490</left>
+                        <top>60</top>
                         <width>10</width>
                         <height>540</height>
                         <onleft>13</onleft>
@@ -84,28 +93,28 @@
                     <description>Channels list</description>
                     <control type="label" id="21">
                         <description>name label</description>
-                        <left>485</left>
-                        <top>92</top>
-                        <width>435</width>
-                        <height>40</height>
-                        <font>font15</font>
-                        <align>center</align>
+                        <left>510</left>
+                        <top>-15</top>
+                        <width>450</width>
+                        <height>50</height>
+                        <font>font15_title</font>
                         <textcolor>highlight</textcolor>
                     </control>
                     <control type="list" id="11">
-                        <left>485</left>
-                        <top>148</top>
-                        <width>435</width>
+                        <left>510</left>
+                        <top>60</top>
+                        <width>450</width>
                         <height>540</height>
                         <onup>11</onup>
                         <ondown>11</ondown>
-                        <onleft>73</onleft>
-                        <onright>71</onright>
+                        <onleft>13</onleft>
+                        <onright condition="Container(11).HasNext | Container(11).HasPrevious">71</onright>
+                        <onright condition="![Container(11).HasNext | Container(11).HasPrevious]">12</onright>
                         <pagecontrol>71</pagecontrol>
                         <scrolltime>200</scrolltime>
                         <itemlayout height="60">
                             <control type="label">
-                                <width>435</width>
+                                <width>450</width>
                                 <height>60</height>
                                 <font>font14</font>
                                 <textoffsetx>15</textoffsetx>
@@ -114,7 +123,7 @@
                         </itemlayout>
                         <focusedlayout height="60">
                             <control type="image">
-                                <width>435</width>
+                                <width>450</width>
                                 <height>60</height>
                                 <texture>selecteditem_bg.png</texture>
                                 <colordiffuse>highlight</colordiffuse>
@@ -122,7 +131,7 @@
                                 <include>VisibleFadeEffect</include>
                             </control>
                             <control type="label">
-                                <width>435</width>
+                                <width>450</width>
                                 <height>60</height>
                                 <font>font14</font>
                                 <textoffsetx>15</textoffsetx>
@@ -131,8 +140,10 @@
                         </focusedlayout>
                     </control>
                     <control type="scrollbar" id="71">
-                        <left>925</left>
-                        <top>148</top>
+                        <visible allowhiddenfocus="true">Control.HasFocus(71) | Control.HasFocus(11)</visible>
+                        <animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
+                        <left>970</left>
+                        <top>60</top>
                         <width>10</width>
                         <height>540</height>
                         <onleft>11</onleft>
@@ -146,28 +157,29 @@
                     <description>Grouped Channels list</description>
                     <control type="label" id="22">
                         <description>name label</description>
-                        <left>940</left>
-                        <top>92</top>
-                        <width>435</width>
-                        <height>40</height>
-                        <font>font15</font>
+                        <left>990</left>
+                        <top>-15</top>
+                        <width>430</width>
+                        <height>50</height>
+                        <font>font15_title</font>
                         <textcolor>highlight</textcolor>
-                        <align>center</align>
                     </control>
                     <control type="list" id="12">
-                        <left>940</left>
-                        <top>148</top>
-                        <width>435</width>
+                        <left>990</left>
+                        <top>60</top>
+                        <width>430</width>
                         <height>540</height>
                         <onup>12</onup>
                         <ondown>12</ondown>
-                        <onleft>71</onleft>
+                        <onleft>11</onleft>
                         <onright>72</onright>
+                        <onright condition="Container(12).HasNext | Container(12).HasPrevious">72</onright>
+                        <onright condition="![Container(12).HasNext | Container(12).HasPrevious]">9000</onright>
                         <pagecontrol>72</pagecontrol>
                         <scrolltime>200</scrolltime>
                         <itemlayout height="60">
                             <control type="label">
-                                <width>435</width>
+                                <width>430</width>
                                 <height>60</height>
                                 <font>font14</font>
                                 <textoffsetx>15</textoffsetx>
@@ -176,7 +188,7 @@
                         </itemlayout>
                         <focusedlayout height="60">
                             <control type="image">
-                                <width>435</width>
+                                <width>430</width>
                                 <height>60</height>
                                 <texture>selecteditem_bg.png</texture>
                                 <colordiffuse>highlight</colordiffuse>
@@ -184,7 +196,7 @@
                                 <include>VisibleFadeEffect</include>
                             </control>
                             <control type="label">
-                                <width>435</width>
+                                <width>430</width>
                                 <height>60</height>
                                 <font>font14</font>
                                 <textoffsetx>15</textoffsetx>
@@ -193,8 +205,10 @@
                         </focusedlayout>
                     </control>
                     <control type="scrollbar" id="72">
-                        <left>1380</left>
-                        <top>148</top>
+                        <visible allowhiddenfocus="true">Control.HasFocus(72) | Control.HasFocus(12)</visible>
+                        <animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
+                        <left>1430</left>
+                        <top>60</top>
                         <width>10</width>
                         <height>540</height>
                         <onleft>12</onleft>
@@ -207,37 +221,55 @@
             </control>
             <!-- right group -->
             <control type="group">
-                <left>1395</left>
-                <top>148</top>
+                <left>1470</left>
+                <top>58</top>
                 <control type="grouplist" id="9000">
-                    <onleft>72</onleft>
+                    <width>400</width>
+                    <height>380</height>
+                    <onleft>12</onleft>
                     <onright>13</onright>
                     <onup>9000</onup>
                     <ondown>9000</ondown>
+                    <itemgap>20</itemgap>
                     <control type="button" id="29">
                         <description>OK</description>
-                        <width>310</width>
+                        <width>400</width>
                         <label>186</label>
+                        <align>center</align>
+                        <font>font15_title</font>
+                        <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
                     </control>
                     <control type="button" id="26">
                         <description>Add Group</description>
-                        <width>310</width>
+                        <width>400</width>
                         <label>31503</label>
+                        <align>center</align>
+                        <font>font15_title</font>
+                        <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
                     </control>
                     <control type="button" id="27">
                         <description>Rename Group</description>
-                        <width>310</width>
+                        <width>400</width>
                         <label>31504</label>
+                        <align>center</align>
+                        <font>font15_title</font>
+                        <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
                     </control>
                     <control type="radiobutton" id="25">
                         <description>Hide Group</description>
-                        <width>310</width>
+                        <width>400</width>
                         <label>19289</label>
+                        <font>font15_title</font>
+                        <textoffsetx>40</textoffsetx>
+                        <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
                     </control>
                     <control type="button" id="28">
                         <description>Delete Group</description>
-                        <width>310</width>
+                        <width>400</width>
                         <label>31505</label>
+                        <align>center</align>
+                        <font>font15_title</font>
+                        <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
                     </control>
                 </control>
             </control>
