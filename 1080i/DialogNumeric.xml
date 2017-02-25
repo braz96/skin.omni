@@ -1,33 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">21</defaultcontrol>
-    <animation effect="slide" start="0,520" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
-    <animation effect="slide" start="0,0" end="0,520" time="300" tween="quadratic" easing="out">WindowClose</animation>
+    <animation effect="slide" start="0,0" end="-100,266" time="0" condition="Window.IsActive(virtualkeyboard)">Conditional</animation>
+    <animation effect="slide" start="0,520" end="0,0" time="300" tween="quadratic" easing="out" condition="Window.IsActive(virtualkeyboard)">WindowOpen</animation>
+    <animation effect="slide" start="0,0" end="0,520" time="300" tween="quadratic" easing="out" condition="Window.IsActive(virtualkeyboard)">WindowClose</animation>
+    <animation effect="slide" start="338" end="0" time="300" tween="quadratic" easing="out" condition="!Window.IsActive(virtualkeyboard)">WindowOpen</animation>
+    <animation effect="slide" start="0" end="338" time="300" tween="quadratic" easing="out" condition="!Window.IsActive(virtualkeyboard)">WindowClose</animation>
     <coordinates>
         <system>2</system>
-        <left>1500</left>
-        <top>560</top>
+        <left>0</left>
+        <top>0</top>
     </coordinates>
     <controls>
         <control type="group">
-            <animation effect="slide" start="0,0" end="0,0" time="320" tween="cubic" easing="inout" condition="Window.IsActive(virtualkeyboard)">Conditional</animation>
-            <!--<include content="DialogBackgroundCommons">
-                <param name="DialogBackgroundWidth" value="300" />
-                <param name="DialogBackgroundHeight" value="552" />
-                <param name="DialogHeaderLabel" value="-" />
-                <param name="DialogHeaderId" value="1" />
-            </include>-->
-            <control type="label" id="4">
-                <left>30</left>
-                <top>450</top>
-                <width>230</width>
-                <height>50</height>
-                <align>center</align>
-                <font>font15</font>
+            <control type="group">
+                <left>1582</left>
+                <visible>!Window.IsActive(virtualkeyboard)</visible>
+                <control type="image">
+                    <width>338</width>
+                    <height>1080</height>
+                    <texture colordiffuse="background">$VAR[CommonBackgroundOverlay]</texture>
+                </control>
+                <control type="image">
+                    <left>8</left>
+                    <width>330</width>
+                    <height>1080</height>
+                    <texture colordiffuse="background">submenu.png</texture>
+                </control>
+            </control>
+            <control type="label" id="1">
+                <include>HiddenObject</include>
             </control>
             <control type="group">
-                <left>35</left>
-                <top>50</top>
+                <left>1640</left>
+                <top>345</top>
                 <control type="grouplist">
                     <itemgap>10</itemgap>
                     <orientation>horizontal</orientation>
@@ -149,6 +155,13 @@
                         <textwidth>160</textwidth>
                         <include>Objects_SingleKeyOff</include>
                     </control>
+                </control>
+                <control type="label" id="4">
+                    <top>400</top>
+                    <width>230</width>
+                    <height>50</height>
+                    <align>center</align>
+                    <font>font15</font>
                 </control>
             </control>
         </control>

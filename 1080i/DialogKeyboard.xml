@@ -25,15 +25,6 @@
                 <top>8</top>
                 <left>320</left>
                 <animation effect="slide" start="0" end="-180" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(numericinput)">Conditional</animation>
-                <control type="edit" id="312">
-                    <top>450</top>
-                    <width>1280</width>
-                    <height>50</height>
-                    <align>center</align>
-                    <font>font15</font>
-                    <texturefocus />
-                    <texturenofocus />
-                </control>
                 <control type="group" id="4000">
                     <left>15</left>
                     <top>50</top>
@@ -455,6 +446,15 @@
                             <include>Objects_KeyOffVars</include>
                         </control>
                     </control>
+                </control>
+                <control type="edit" id="312">
+                    <top>450</top>
+                    <width>1280</width>
+                    <height>50</height>
+                    <align>center</align>
+                    <font>font15</font>
+                    <texturefocus />
+                    <texturenofocus />
                 </control>
             </control>
         </control>

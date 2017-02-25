@@ -1,22 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
     <defaultcontrol always="true">9090</defaultcontrol>
+    <animation effect="slide" start="508" end="0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+    <animation effect="slide" start="0" end="508" time="300" tween="quadratic" easing="out">WindowClose</animation>
     <coordinates>
         <system>1</system>
-        <left>730</left>
-        <top>170</top>
+        <left>1412</left>
+        <top>0</top>
     </coordinates>
-    <include>Animation.Dialog</include>
     <controls>
-        <include content="DialogBackgroundCommons">
-            <param name="DialogBackgroundWidth" value="460" />
-            <param name="DialogBackgroundHeight" value="740" />
-            <param name="DialogHeaderLabel" value="$ADDON[pvr.nextpvr 30100]" />
-            <param name="DialogHeaderId" value="" />
-        </include>
+        <control type="image">
+            <width>508</width>
+            <height>1080</height>
+            <texture colordiffuse="background">$VAR[CommonBackgroundOverlay]</texture>
+        </control>
+        <control type="image">
+            <left>8</left>
+            <width>500</width>
+            <height>1080</height>
+            <texture colordiffuse="background">submenu.png</texture>
+        </control>
         <control type="panel" id="9090">
-            <left>30</left>
-            <top>30</top>
+            <left>58</left>
+            <top>50</top>
             <width>400</width>
             <height>300</height>
             <onleft>9090</onleft>
@@ -80,11 +86,21 @@
                 </control>
             </focusedlayout>
         </control>
+        <control type="label" id="600">
+            <left>58</left>
+            <top>365</top>
+            <width>400</width>
+            <height>50</height>
+            <align>center</align>
+            <textoffsetx>15</textoffsetx>
+            <scroll>true</scroll>
+            <scrollspeed>20</scrollspeed>
+        </control>
         <control type="list" id="9091">
-            <left>30</left>
+            <left>58</left>
             <top>430</top>
             <width>400</width>
-            <height>275</height>
+            <height>550</height>
             <onleft>9091</onleft>
             <onright>9091</onright>
             <onup>9090</onup>
@@ -110,16 +126,6 @@
                     <label>$INFO[ListItem.Label]</label>
                 </control>
             </focusedlayout>
-        </control>
-        <control type="label" id="600">
-            <left>30</left>
-            <top>365</top>
-            <width>400</width>
-            <height>50</height>
-            <align>center</align>
-            <textoffsetx>15</textoffsetx>
-            <scroll>true</scroll>
-            <scrollspeed>20</scrollspeed>
         </control>
     </controls>
 </window>
