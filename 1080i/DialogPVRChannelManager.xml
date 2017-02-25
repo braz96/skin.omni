@@ -10,24 +10,6 @@
         <top>372</top>
     </coordinates>
     <controls>
-        <!--<control type="group">
-            <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
-            <include content="DialogBackgroundCommons">
-                <param name="DialogBackgroundWidth" value="1280" />
-                <param name="DialogBackgroundHeight" value="842" />
-                <param name="DialogHeaderLabel" value="$LOCALIZE[19199] - $LOCALIZE[19023]" />
-                <param name="DialogHeaderId" value="" />
-            </include>
-        </control>
-        <control type="group">
-            <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
-            <include content="DialogBackgroundCommons">
-                <param name="DialogBackgroundWidth" value="1280" />
-                <param name="DialogBackgroundHeight" value="842" />
-                <param name="DialogHeaderLabel" value="$LOCALIZE[19199] - $LOCALIZE[19024]" />
-                <param name="DialogHeaderId" value="" />
-            </include>
-        </control>-->
         <control type="image">
             <width>1920</width>
             <height>708</height>
@@ -39,7 +21,6 @@
             <height>700</height>
             <texture colordiffuse="background">submenu.png</texture>
         </control>
-
         <control type="list" id="20">
             <left>50</left>
             <top>58</top>
@@ -90,19 +71,16 @@
             </itemlayout>
             <focusedlayout height="120" width="660">
                 <control type="image">
+                    <animation effect="fade" time="50" start="100" end="50" condition="!Control.HasFocus(20)">Conditional</animation>
                     <width>660</width>
                     <height>120</height>
                     <texture>selecteditem_bg.png</texture>
                     <colordiffuse>highlight</colordiffuse>
-                    <visible>Control.HasFocus(20)</visible>
-                    <include>VisibleFadeEffect</include>
                 </control>
                 <control type="image">
                     <width>120</width>
                     <height>120</height>
                     <texture>overlays/diffuse-overlay.png</texture>
-                    <visible>Control.HasFocus(20)</visible>
-                    <include>VisibleFadeEffect</include>
                 </control>
                 <control type="image">
                     <left>10</left>
@@ -113,20 +91,29 @@
                     <texture fallback="DefaultAddonPVRClient.png">$INFO[ListItem.Property(Icon)]</texture>
                 </control>
                 <control type="label">
+                    <top>3</top>
                     <left>140</left>
                     <right>20</right>
-                    <height>60</height>
-                    <font>font14</font>
+                    <height>70</height>
+                    <font>font30</font>
                     <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
                     <visible>ListItem.Property(ActiveChannel)</visible>
                 </control>
                 <control type="label">
+                    <top>3</top>
                     <left>140</left>
                     <right>20</right>
-                    <height>60</height>
-                    <font>font14</font>
+                    <height>70</height>
+                    <font>font30</font>
                     <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
                     <visible>!ListItem.Property(ActiveChannel)</visible>
+                </control>
+                <control type="label">
+                    <left>140</left>
+                    <right>20</right>
+                    <top>52</top>
+                    <height>60</height>
+                    <label>$LOCALIZE[19210]: $INFO[ListItem.Property(ClientName)]</label>
                 </control>
                 <control type="label">
                     <left>140</left>
@@ -136,13 +123,6 @@
                     <align>right</align>
                     <label>T</label>
                     <visible>ListItem.Property(Changed)</visible>
-                </control>
-                <control type="label">
-                    <left>140</left>
-                    <right>20</right>
-                    <top>50</top>
-                    <height>50</height>
-                    <label>$LOCALIZE[19210]: $INFO[ListItem.Property(ClientName)]</label>
                 </control>
             </focusedlayout>
         </control>

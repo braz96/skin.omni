@@ -24,62 +24,10 @@
             <control type="group">
                 <left>50</left>
                 <top>58</top>
-                <control type="group">
-                    <visible>Integer.IsGreater(Container(3).NumItems,0)</visible>
-                    <control type="image">
-                        <left>0</left>
-                        <width>1365</width>
-                        <height>100</height>
-                        <visible>Control.HasFocus(3)</visible>
-                        <animation effect="fade" time="320" delay="200">Visible</animation>
-                        <animation effect="fade" time="50">Hidden</animation>
-                        <texture colordiffuse="highlight">selecteditem_bg.png</texture>
-                        <animation effect="slide" end="0,100" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(3).Row,4)">Conditional</animation>
-                        <animation effect="slide" end="0,100" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(3).Row,3)">Conditional</animation>
-                        <animation effect="slide" end="0,100" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(3).Row,2)">Conditional</animation>
-                        <animation effect="slide" end="0,100" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(3).Row,1)">Conditional</animation>
-                        <animation effect="slide" end="0,100" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(3).Row,0)">Conditional</animation>
-                    </control>
-                </control>
-                <control type="group">
-                    <visible>Integer.IsGreater(Container(6).NumItems,0)</visible>
-                    <control type="image">
-                        <left>0</left>
-                        <width>1365</width>
-                        <height>120</height>
-                        <visible>Control.HasFocus(6)</visible>
-                        <animation effect="fade" time="320" delay="200">Visible</animation>
-                        <animation effect="fade" time="50">Hidden</animation>
-                        <texture colordiffuse="highlight">selecteditem_bg.png</texture>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(6).Row,6)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(6).Row,5)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(6).Row,4)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(6).Row,3)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(6).Row,2)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(6).Row,1)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(6).Row,0)">Conditional</animation>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <width>120</width>
-                        <height>120</height>
-                        <visible>Control.HasFocus(6)</visible>
-                        <animation effect="fade" time="320" delay="200">Visible</animation>
-                        <animation effect="fade" time="50">Hidden</animation>
-                        <texture>overlays/diffuse-overlay.png</texture>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(6).Row,6)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(6).Row,5)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(6).Row,4)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(6).Row,3)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(6).Row,2)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(6).Row,1)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(6).Row,0)">Conditional</animation>
-                    </control>
-                </control>
                 <control type="group" id="9000">
                     <control type="panel" id="3">
                         <left>0</left>
-                        <width>1365</width>
+                        <width>1370</width>
                         <height>600</height>
                         <onup>3</onup>
                         <ondown>3</ondown>
@@ -88,16 +36,16 @@
                         <onright condition="![Container(3).HasNext | Container(3).HasPrevious]">9001</onright>
                         <pagecontrol>60</pagecontrol>
                         <scrolltime tween="quadratic" easing="out">200</scrolltime>
-                        <itemlayout height="100" width="1365">
+                        <itemlayout height="100" width="1370">
                             <control type="label">
-                                <width>1365</width>
+                                <width>1370</width>
                                 <height>100</height>
                                 <textoffsetx>20</textoffsetx>
                                 <font>font16</font>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
-                                <width>1365</width>
+                                <width>1370</width>
                                 <height>100</height>
                                 <textoffsetx>20</textoffsetx>
                                 <font>font16</font>
@@ -105,7 +53,7 @@
                                 <label>$INFO[ListItem.Label2]</label>
                             </control>
                             <control type="label">
-                                <width>1365</width>
+                                <width>1370</width>
                                 <height>100</height>
                                 <textoffsetx>20</textoffsetx>
                                 <align>right</align>
@@ -114,9 +62,15 @@
                                 <visible>ListItem.IsSelected</visible>
                             </control>
                         </itemlayout>
-                        <focusedlayout height="100" width="1365">
+                        <focusedlayout height="100" width="1370">
+                            <control type="image">
+                                <width>1370</width>
+                                <height>100</height>
+                                <texture>selecteditem_bg.png</texture>
+                                <colordiffuse>highlight</colordiffuse>
+                            </control>
                             <control type="label">
-                                <width>1365</width>
+                                <width>1370</width>
                                 <height>100</height>
                                 <textoffsetx>20</textoffsetx>
                                 <font>font16</font>
@@ -124,7 +78,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
-                                <width>1365</width>
+                                <width>1370</width>
                                 <height>100</height>
                                 <textoffsetx>20</textoffsetx>
                                 <font>font16</font>
@@ -132,7 +86,7 @@
                                 <label>$INFO[ListItem.Label2]</label>
                             </control>
                             <control type="label">
-                                <width>1365</width>
+                                <width>1370</width>
                                 <height>100</height>
                                 <textoffsetx>20</textoffsetx>
                                 <align>right</align>
@@ -144,7 +98,7 @@
                     </control>
                     <control type="panel" id="6">
                         <left>0</left>
-                        <width>1365</width>
+                        <width>1370</width>
                         <height>600</height>
                         <onup>6</onup>
                         <ondown>6</ondown>
@@ -153,7 +107,7 @@
                         <onright condition="![Container(6).HasNext | Container(6).HasPrevious]">9001</onright>
                         <pagecontrol>60</pagecontrol>
                         <scrolltime tween="quadratic" easing="out">200</scrolltime>
-                        <itemlayout height="120" width="1365">
+                        <itemlayout height="120" width="1370">
                             <control type="image">
                                 <left>10</left>
                                 <top>10</top>
@@ -198,7 +152,18 @@
                                 <visible>ListItem.IsSelected</visible>
                             </control>
                         </itemlayout>
-                        <focusedlayout height="120" width="1365">
+                        <focusedlayout height="120" width="1370">
+                            <control type="image">
+                                <width>1370</width>
+                                <height>120</height>
+                                <texture>selecteditem_bg.png</texture>
+                                <colordiffuse>highlight</colordiffuse>
+                            </control>
+                            <control type="image">
+                                <width>120</width>
+                                <height>120</height>
+                                <texture>overlays/diffuse-overlay.png</texture>
+                            </control>
                             <control type="image">
                                 <left>10</left>
                                 <top>10</top>
@@ -274,7 +239,7 @@
                 <control type="scrollbar" id="60">
                     <visible allowhiddenfocus="true">Control.HasFocus(60) | ControlGroup(9000).HasFocus</visible>
                     <animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
-                    <left>1375</left>
+                    <left>1380</left>
                     <height>600</height>
                     <width>10</width>
                     <onleft condition="Control.IsVisible(6)">6</onleft>
