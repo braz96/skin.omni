@@ -82,7 +82,7 @@
                 <top>0</top>
                 <width>430</width>
                 <height>1080</height>
-                <texture>submenu.png</texture>
+                <texture>dialog.png</texture>
                 <colordiffuse>background</colordiffuse>
             </control>
             <control type="image">

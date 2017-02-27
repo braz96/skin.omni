@@ -18,7 +18,7 @@
             <top>8</top>
             <width>1920</width>
             <height>550</height>
-            <texture colordiffuse="background">submenu.png</texture>
+            <texture colordiffuse="background">dialog.png</texture>
         </control>
         <control type="label" id="2">
             <include>HiddenObject</include>

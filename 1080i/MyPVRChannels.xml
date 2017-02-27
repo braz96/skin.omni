@@ -224,7 +224,6 @@
                         <width>740</width>
                         <height>244</height>
                         <font>font15_textbox</font>
-                        <include>InfoPanelButtonsValues</include>
                         <include>AutoscrollDefault</include>
                     </control>
                 </control>

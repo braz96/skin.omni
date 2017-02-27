@@ -127,7 +127,7 @@
                 <top>8</top>
                 <width>1920</width>
                 <height>340</height>
-                <texture colordiffuse="background">submenu.png</texture>
+                <texture colordiffuse="background">dialog.png</texture>
             </control>
             <control type="image">
                 <left>1595</left>
@@ -278,7 +278,7 @@
                 <control type="image">
                     <width>1920</width>
                     <height>195</height>
-                    <texture colordiffuse="background">submenu.png</texture>
+                    <texture colordiffuse="background">dialog.png</texture>
                 </control>
                 <control type="textbox">
                     <description>Artist bio</description>

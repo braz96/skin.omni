@@ -22,7 +22,7 @@
                 <top>8</top>
                 <width>1920</width>
                 <height>700</height>
-                <texture colordiffuse="background">submenu.png</texture>
+                <texture colordiffuse="background">dialog.png</texture>
             </control>
             <control type="grouplist" id="90200">
                 <description>control area</description>
@@ -118,7 +118,7 @@
                     <font>font15_title</font>
                     <align>center</align>
                     <width>400</width>
-                    <label>222</label>
+                    <label>15067</label>
                     <onclick>Close</onclick>
                     <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
                 </control>

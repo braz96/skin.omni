@@ -30,7 +30,7 @@
             <control type="image">
                 <width>1920</width>
                 <height>100</height>
-                <texture colordiffuse="background">submenu.png</texture>
+                <texture colordiffuse="background">dialog.png</texture>
             </control>
             <control type="grouplist" id="202">
                 <height>100</height>

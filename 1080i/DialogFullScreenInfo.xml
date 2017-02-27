@@ -15,7 +15,7 @@
             <control type="image">
                 <width>1920</width>
                 <height>100</height>
-                <texture colordiffuse="background">submenu.png</texture>
+                <texture colordiffuse="background">dialog.png</texture>
             </control>
             <control type="grouplist">
                 <left>0</left>
@@ -100,7 +100,7 @@
                 <top>8</top>
                 <width>1920</width>
                 <height>400</height>
-                <texture colordiffuse="background">submenu.png</texture>
+                <texture colordiffuse="background">dialog.png</texture>
             </control>
             <control type="image">
                 <top>8</top>
@@ -211,7 +211,7 @@
                 <top>8</top>
                 <width>1920</width>
                 <height>300</height>
-                <texture colordiffuse="background">submenu.png</texture>
+                <texture colordiffuse="background">dialog.png</texture>
             </control>
             <control type="image">
                 <top>8</top>

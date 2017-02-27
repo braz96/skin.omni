@@ -18,7 +18,7 @@
                 <top>8</top>
                 <width>1920</width>
                 <height>100</height>
-                <texture colordiffuse="background">submenu.png</texture>
+                <texture colordiffuse="background">dialog.png</texture>
             </control>
             <control type="progress">
                 <left>30</left>
@@ -88,7 +88,7 @@
                 <top>8</top>
                 <width>1920</width>
                 <height>300</height>
-                <texture colordiffuse="background">submenu.png</texture>
+                <texture colordiffuse="background">dialog.png</texture>
             </control>
             <control type="image">
                 <top>8</top>

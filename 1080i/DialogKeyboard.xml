@@ -19,7 +19,7 @@
                 <top>8</top>
                 <width>1920</width>
                 <height>520</height>
-                <texture colordiffuse="background">submenu.png</texture>
+                <texture colordiffuse="background">dialog.png</texture>
             </control>
             <control type="group">
                 <top>8</top>

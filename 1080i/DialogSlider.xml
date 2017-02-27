@@ -9,13 +9,6 @@
         <top>0</top>
     </coordinates>
     <controls>
-        <!--<control type="image">
-            <width>720</width>
-            <height>140</height>
-            <texture border="16">dialog_context.png</texture>
-            <colordiffuse>dialog</colordiffuse>
-            <visible>Window.IsActive(fullscreenvideo) | Window.IsActive(visualisation) | Window.isActive(slideshow)</visible>
-        </control>-->
         <control type="image">
             <width>720</width>
             <height>136</height>
@@ -25,7 +18,7 @@
             <left>8</left>
             <width>704</width>
             <height>128</height>
-            <texture colordiffuse="background">submenu.png</texture>
+            <texture colordiffuse="background">dialog.png</texture>
         </control>
         <control type="group">
             <top>8</top>

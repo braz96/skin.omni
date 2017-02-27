@@ -9,12 +9,6 @@
         <top>492</top>
     </coordinates>
     <controls>
-        <!--<include content="DialogBackgroundCommons">
-            <param name="DialogBackgroundWidth" value="1346" />
-            <param name="DialogBackgroundHeight" value="684" />
-            <param name="DialogHeaderLabel" value="-" />
-            <param name="DialogHeaderId" value="20" />
-        </include>-->
         <control type="image">
             <width>1920</width>
             <height>588</height>
@@ -24,7 +18,10 @@
             <top>8</top>
             <width>1920</width>
             <height>580</height>
-            <texture colordiffuse="background">submenu.png</texture>
+            <texture colordiffuse="background">dialog.png</texture>
+        </control>
+        <control type="label" id="20">
+            <include>HiddenObject</include>
         </control>
         <!-- left group -->
         <control type="group">

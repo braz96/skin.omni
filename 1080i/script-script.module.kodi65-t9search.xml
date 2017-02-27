@@ -18,7 +18,7 @@
             <left>8</left>
             <width>500</width>
             <height>1080</height>
-            <texture colordiffuse="background">submenu.png</texture>
+            <texture colordiffuse="background">dialog.png</texture>
         </control>
         <control type="panel" id="9090">
             <left>58</left>

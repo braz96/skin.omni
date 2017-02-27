@@ -27,7 +27,7 @@
                     <left>8</left>
                     <width>112</width>
                     <height>112</height>
-                    <texture colordiffuse="background">submenu.png</texture>
+                    <texture colordiffuse="background">dialog.png</texture>
                 </control>
             </control>
             <control type="image">

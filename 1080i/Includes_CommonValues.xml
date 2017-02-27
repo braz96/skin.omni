@@ -49,16 +49,6 @@
         <height>70</height>
         <include>Objects_KeyOffVars</include>
     </include>
-    <include name="InfoPanelButtonsValues">
-        <height>90</height>
-        <width>501</width>
-        <textoffsetx>15</textoffsetx>
-        <aligny>top</aligny>
-        <font>font14</font>
-        <texturefocus>blank.png</texturefocus>
-        <texturenofocus>blank.png</texturenofocus>
-        <onclick>noop</onclick>
-    </include>
     <include name="SettingsPanelButtonsValues">
         <height>90</height>
         <width>1256</width>
