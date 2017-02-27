@@ -535,7 +535,7 @@
                 <height>80</height>
                 <include>MediaFlagVars</include>
                 <texture>$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]</texture>
-                <visible>!String.IsEmpty(ListItem.VideoAspect) + [![$EXP[isTvshow] | $EXP[isSeason] | Control.IsVisible(500) | Control.IsVisible(50) | Control.IsVisible(57) | Control.IsVisible(501) | Control.IsVisible(55)] | Window.IsActive(movieinformation)]</visible>
+                <visible>!String.IsEmpty(ListItem.VideoAspect) + ![$EXP[isTvshow] | $EXP[isSeason]]</visible>
             </control>
             <control type="image">
                 <height>80</height>
@@ -548,16 +548,16 @@
                 <width>100</width>
                 <include>MediaFlagVars</include>
                 <texture>$INFO[ListItem.AudioChannels,flags/channels/,.png]</texture>
-                <visible>!String.IsEmpty(ListItem.AudioChannels) + ![$EXP[isTvshow] | $EXP[isSeason] | Control.IsVisible(500) | Control.IsVisible(57) | Control.IsVisible(55)]</visible>
+                <visible>!String.IsEmpty(ListItem.AudioChannels) + ![$EXP[isTvshow] | $EXP[isSeason]]</visible>
             </control>
             <control type="image">
                 <height>80</height>
                 <width>100</width>
                 <include>MediaFlagVars</include>
                 <texture>flags/cc.png</texture>
-                <visible>!String.IsEmpty(ListItem.SubtitleLanguage) + ![$EXP[isTvshow] | $EXP[isSeason] | $EXP[isEpisode] | Control.IsVisible(500) | Control.IsVisible(501) | Control.IsVisible(57) | Control.IsVisible(55)]</visible>
+                <visible>!String.IsEmpty(ListItem.SubtitleLanguage) + ![$EXP[isTvshow] | $EXP[isSeason] | $EXP[isEpisode]]</visible>
             </control>
-            <control type="image">
+            <!--<control type="image">
                 <height>80</height>
                 <include>MediaFlagVars</include>
                 <texture>resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
@@ -568,7 +568,7 @@
                 <include>MediaFlagVars</include>
                 <texture fallback="flags/mpaa/NR.png">$VAR[RatingFlagVar]</texture>
                 <visible>[$EXP[isTvshow] | $EXP[isSeason]] + !Window.IsVisible(movieinformation)</visible>
-            </control>
+            </control>-->
         </control>
     </include>
     <include name="GlobalSearchScrollbar">
