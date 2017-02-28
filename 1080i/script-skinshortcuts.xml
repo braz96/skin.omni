@@ -12,7 +12,7 @@
     </coordinates>
     <controls>
         <control type="group">
-            <!--<visible>String.IsEmpty(Window.Property(additionalDialog))</visible>-->
+            <visible>String.IsEmpty(Window.Property(additionalDialog)) + !Window.IsVisible(selectdialog)</visible>
             <animation effect="slide" start="0,708" end="0,0" time="300" delay="300" tween="quadratic" easing="out">Visible</animation>
             <animation effect="slide" start="0,0" end="0,708" time="300" tween="quadratic" easing="out">Hidden</animation>
             <control type="image">

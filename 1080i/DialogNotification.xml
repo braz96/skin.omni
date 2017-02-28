@@ -4,8 +4,8 @@
         <left>560</left>
         <top>0</top>
     </coordinates>
-    <animation effect="slide" time="300" start="0,-140" end="0,0">WindowOpen</animation>
-    <animation effect="slide" time="150" start="0,0" end="0,-140">WindowClose</animation>
+    <animation effect="slide" time="300" start="0,-134" end="0,0">WindowOpen</animation>
+    <animation effect="slide" time="150" start="0,0" end="0,-134">WindowClose</animation>
     <controls>
         <control type="group">
             <control type="image">
@@ -20,8 +20,8 @@
                 <texture colordiffuse="background">dialog.png</texture>
             </control>
             <control type="image" id="400">
-                <left>30</left>
-                <top>20</top>
+                <left>31</left>
+                <top>23</top>
                 <width>80</width>
                 <height>80</height>
                 <aspectratio>keep</aspectratio>
@@ -30,7 +30,7 @@
             <control type="fadelabel" id="401">
                 <description>Line 1 Label</description>
                 <left>130</left>
-                <top>17</top>
+                <top>20</top>
                 <width>640</width>
                 <height>45</height>
                 <font>font30</font>
@@ -41,7 +41,7 @@
             <control type="fadelabel" id="402">
                 <description>Line 2 Label</description>
                 <left>130</left>
-                <top>59</top>
+                <top>62</top>
                 <width>640</width>
                 <height>45</height>
                 <font>font14</font>

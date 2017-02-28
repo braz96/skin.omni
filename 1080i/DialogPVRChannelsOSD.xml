@@ -11,8 +11,6 @@
     <controls>
         <control type="group">
             <control type="group">
-                <!--<animation effect="slide" time="0" end="10" condition="Control.IsVisible(60)">Conditional</animation>
-                <left>-10</left>-->
                 <control type="image">
                     <width>898</width>
                     <height>1080</height>

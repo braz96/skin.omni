@@ -48,13 +48,18 @@
                 <control type="label">
                     <width>1370</width>
                     <height>60</height>
+                    <font>font14</font>
                     <selectedcolor>highlight</selectedcolor>
+                    <textoffsetx>15</textoffsetx>
                     <info>ListItem.Label</info>
                 </control>
                 <control type="label">
                     <width>1370</width>
                     <height>60</height>
+                    <align>right</align>
+                    <font>font14</font>
                     <selectedcolor>highlight</selectedcolor>
+                    <textoffsetx>15</textoffsetx>
                     <info>ListItem.Label2</info>
                 </control>
             </itemlayout>
@@ -69,12 +74,16 @@
                 <control type="label">
                     <width>1370</width>
                     <height>60</height>
+                    <font>font14</font>
+                    <textoffsetx>15</textoffsetx>
                     <info>ListItem.Label</info>
                 </control>
                 <control type="label">
                     <width>1370</width>
                     <height>60</height>
                     <align>right</align>
+                    <font>font14</font>
+                    <textoffsetx>15</textoffsetx>
                     <info>ListItem.Label2</info>
                 </control>
             </focusedlayout>
@@ -90,6 +99,7 @@
             <onright>91</onright>
         </control>
         <control type="grouplist" id="9001">
+            <top>58</top>
             <left>1470</left>
             <height>140</height>
             <width>400</width>
