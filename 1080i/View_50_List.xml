@@ -818,7 +818,7 @@
                             <param name="OverlayListWidth" value="1000" />
                         </include>
                     </focusedlayout>
-                    <itemlayout height="120" width="795" condition="[Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(actors) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists)] + !Window.IsActive(videoplayist)">
+                    <itemlayout height="120" width="795" condition="[Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(actors) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists)] + !Window.IsActive(videoplaylist)">
                         <control type="image">
                             <top>10</top>
                             <left>10</left>
@@ -843,7 +843,7 @@
                             <label>$VAR[ListRightLabel]</label>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="120" width="795" condition="[Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(actors) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists)] + !Window.IsActive(videoplayist)">
+                    <focusedlayout height="120" width="795" condition="[Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(actors) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists)] + !Window.IsActive(videoplaylist)">
                         <control type="image">
                             <top>10</top>
                             <left>10</left>
