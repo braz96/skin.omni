@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <animation effect="slide" start="698" end="0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
-    <animation effect="slide" start="0" end="698" time="300" tween="quadratic" easing="out">WindowClose</animation>
+    <animation effect="slide" start="0,678" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+    <animation effect="slide" start="0,0" end="0,678" time="300" tween="quadratic" easing="out">WindowClose</animation>
     <coordinates>
         <system>1</system>
-        <left>1222</left>
-        <top>0</top>
+        <left>0</left>
+        <top>402</top>
     </coordinates>
     <controls>
         <control type="image">
-            <width>698</width>
-            <height>1080</height>
+            <width>1920</width>
+            <height>678</height>
             <texture colordiffuse="background">$VAR[CommonBackgroundOverlay]</texture>
         </control>
         <control type="image">
-            <left>8</left>
-            <width>690</width>
-            <height>1080</height>
+            <top>8</top>
+            <width>1920</width>
+            <height>670</height>
             <texture colordiffuse="background">dialog.png</texture>
         </control>
         <control type="group">
-            <left>38</left>
-            <top>225</top>
+            <left>660</left>
+            <top>48</top>
             <visible>!VideoPlayer.Content(livetv)</visible>
             <control type="grouplist">
-                <width>630</width>
-                <height>630</height>
+                <width>600</width>
+                <height>600</height>
                 <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
                 <include>VideoDebugContent</include>
             </control>
         </control>
         <control type="group">
-            <left>38</left>
-            <top>0</top>
+            <left>310</left>
+            <top>48</top>
             <visible>VideoPlayer.Content(livetv)</visible>
             <control type="grouplist">
-                <width>630</width>
-                <height>630</height>
+                <width>600</width>
+                <height>600</height>
                 <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
                 <include>VideoDebugContent</include>
             </control>
             <control type="grouplist">
-                <left>38</left>
-                <top>630</top>
-                <width>630</width>
-                <height>630</height>
+                <left>710</left>
+                <top>0</top>
+                <width>600</width>
+                <height>600</height>
                 <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
                 <control type="label">

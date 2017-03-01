@@ -29,7 +29,7 @@
                         <description>Button Summary Values</description>
                         <height>90</height>
                         <width>356</width>
-                        <textoffsetx>15</textoffsetx>
+                        <textoffsetx>30</textoffsetx>
                         <align>right</align>
                         <font>font15</font>
                         <label>20037</label>
@@ -38,7 +38,7 @@
                         <description>Button Storage</description>
                         <height>90</height>
                         <width>356</width>
-                        <textoffsetx>15</textoffsetx>
+                        <textoffsetx>30</textoffsetx>
                         <align>right</align>
                         <font>font15</font>
                         <label>13277</label>
@@ -47,7 +47,7 @@
                         <description>Button Network</description>
                         <height>90</height>
                         <width>356</width>
-                        <textoffsetx>15</textoffsetx>
+                        <textoffsetx>30</textoffsetx>
                         <align>right</align>
                         <font>font15</font>
                         <label>13279</label>
@@ -56,7 +56,7 @@
                         <description>Button Video</description>
                         <height>90</height>
                         <width>356</width>
-                        <textoffsetx>15</textoffsetx>
+                        <textoffsetx>30</textoffsetx>
                         <align>right</align>
                         <font>font15</font>
                         <label>13280</label>
@@ -65,7 +65,7 @@
                         <description>Button Hardware</description>
                         <height>90</height>
                         <width>356</width>
-                        <textoffsetx>15</textoffsetx>
+                        <textoffsetx>30</textoffsetx>
                         <align>right</align>
                         <font>font15</font>
                         <label>13281</label>
@@ -74,7 +74,7 @@
                         <description>Button PVR</description>
                         <height>90</height>
                         <width>356</width>
-                        <textoffsetx>15</textoffsetx>
+                        <textoffsetx>30</textoffsetx>
                         <align>right</align>
                         <font>font15</font>
                         <label>19191</label>
@@ -83,7 +83,7 @@
                         <description>Privacy policy</description>
                         <height>90</height>
                         <width>356</width>
-                        <textoffsetx>15</textoffsetx>
+                        <textoffsetx>30</textoffsetx>
                         <align>right</align>
                         <font>font15</font>
                         <label>12389</label>

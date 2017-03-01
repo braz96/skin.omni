@@ -48,11 +48,10 @@
                         </control>
                         <control type="label">
                             <top>3</top>
-                            <left>120</left>
-                            <right>20</right>
+                            <left>140</left>
+                            <right>30</right>
                             <height>110</height>
                             <font>font30</font>
-                            <textoffsetx>15</textoffsetx>
                             <selectedcolor>highlight</selectedcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
@@ -79,11 +78,10 @@
                         </control>
                         <control type="label">
                             <top>3</top>
-                            <left>120</left>
-                            <right>20</right>
+                            <left>140</left>
+                            <right>30</right>
                             <height>110</height>
                             <font>font30</font>
-                            <textoffsetx>15</textoffsetx>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                     </focusedlayout>
@@ -124,21 +122,19 @@
                             <texture>$INFO[ListItem.Icon]</texture>
                         </control>
                         <control type="label">
-                            <left>130</left>
+                            <left>140</left>
                             <top>3</top>
-                            <right>20</right>
+                            <right>30</right>
                             <height>70</height>
                             <font>font30</font>
-                            <textoffsetx>15</textoffsetx>
                             <selectedcolor>highlight</selectedcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
-                            <left>130</left>
+                            <left>140</left>
                             <top>52</top>
-                            <right>20</right>
+                            <right>30</right>
                             <height>60</height>
-                            <textoffsetx>15</textoffsetx>
                             <selectedcolor>highlight</selectedcolor>
                             <label>$INFO[ListItem.Size]</label>
                             <visible>!String.StartsWith(ListItem.Size,0)</visible>
@@ -166,21 +162,19 @@
                             <texture>$INFO[ListItem.Icon]</texture>
                         </control>
                         <control type="label">
-                            <left>130</left>
+                            <left>140</left>
                             <top>3</top>
-                            <right>20</right>
+                            <right>30</right>
                             <height>70</height>
                             <font>font30</font>
-                            <textoffsetx>15</textoffsetx>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
-                            <left>130</left>
+                            <left>140</left>
                             <top>52</top>
-                            <right>20</right>
+                            <right>30</right>
                             <height>60</height>
                             <font>font13</font>
-                            <textoffsetx>15</textoffsetx>
                             <label>$INFO[ListItem.Size]</label>
                             <visible>!String.StartsWith(ListItem.Size,0)</visible>
                         </control>

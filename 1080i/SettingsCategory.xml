@@ -60,7 +60,7 @@
                 <description>Default Category Button</description>
                 <height>90</height>
                 <width>356</width>
-                <textoffsetx>15</textoffsetx>
+                <textoffsetx>30</textoffsetx>
                 <align>right</align>
                 <font>font15</font>
             </control>

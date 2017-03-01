@@ -29,8 +29,6 @@
             <top>58</top>
             <control type="grouplist" id="9">
                 <description>button area</description>
-                <left>0</left>
-                <top>0</top>
                 <width>350</width>
                 <height>480</height>
                 <itemgap>0</itemgap>
@@ -43,13 +41,11 @@
         </control>
         <!-- right group -->
         <control type="group">
-            <left>415</left>
+            <left>450</left>
             <top>58</top>
             <control type="grouplist" id="2">
                 <description>control area</description>
-                <left>0</left>
-                <top>0</top>
-                <width>1000</width>
+                <width>970</width>
                 <height>480</height>
                 <itemgap>0</itemgap>
                 <pagecontrol>60</pagecontrol>
@@ -64,7 +60,6 @@
                 <visible allowhiddenfocus="true">Control.HasFocus(60) | ControlGroup(2).HasFocus</visible>
                 <animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
                 <left>1010</left>
-                <top>0</top>
                 <width>10</width>
                 <height>480</height>
                 <onleft>2</onleft>
@@ -118,50 +113,32 @@
         </control>
         <control type="button" id="13">
             <description>Default Category Button</description>
-            <height>60</height>
-            <width>310</width>
+            <width>350</width>
             <align>right</align>
-            <aligny>center</aligny>
-            <font>font14</font>
-            <textoffsetx>20</textoffsetx>
             <textcolor>maintext</textcolor>
         </control>
         <control type="button" id="3">
             <description>Default Button</description>
-            <width>960</width>
-            <height>60</height>
-            <font>font14</font>
-            <textcolor>maintext</textcolor>
+            <width>970</width>
             <focusedcolor>maintext</focusedcolor>
         </control>
         <control type="radiobutton" id="4">
             <description>Default RadioButton</description>
-            <width>960</width>
-            <height>60</height>
-            <font>font14</font>
-            <textcolor>maintext</textcolor>
+            <width>970</width>
             <focusedcolor>maintext</focusedcolor>
-            <textwidth>880</textwidth>
         </control>
         <control type="spincontrolex" id="5">
             <description>Default spincontrolex</description>
-            <width>960</width>
-            <textwidth>800</textwidth>
-            <height>60</height>
-            <textcolor>maintext</textcolor>
+            <width>970</width>
             <focusedcolor>maintext</focusedcolor>
-            <font>font14</font>
-            <aligny>center</aligny>
             <reverse>yes</reverse>
         </control>
         <control type="image" id="6">
             <description>Default Separator</description>
-            <width>960</width>
-            <height>1</height>
-            <visible>false</visible>
+            <include>HiddenObject</include>
         </control>
         <control type="label" id="7">
-            <width>960</width>
+            <width>970</width>
             <height>60</height>
             <font>font13_title</font>
             <align>center</align>
@@ -171,11 +148,7 @@
         </control>
         <control type="sliderex" id="8">
             <description>Default Slider</description>
-            <width>960</width>
-            <textwidth>760</textwidth>
-            <height>60</height>
-            <font>font14</font>
-            <textcolor>maintext</textcolor>
+            <width>970</width>
             <focusedcolor>maintext</focusedcolor>
         </control>
     </controls>
