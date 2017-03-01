@@ -33,8 +33,8 @@
             <colordiffuse>background</colordiffuse>
         </control>
         <control type="group">
-            <animation effect="slide" start="0" end="430" time="300" condition="Control.HasFocus(9010)">Conditional</animation>
-            <animation effect="slide" start="0" end="-430" time="200" condition="Control.HasFocus(9010)">WindowClose</animation>
+            <animation effect="slide" start="0" end="430" time="300" tween="quadratic" easing="out" condition="Control.HasFocus(9010)">Conditional</animation>
+            <animation effect="slide" start="0" end="-430" time="200" tween="quadratic" easing="out" condition="Control.HasFocus(9010)">WindowClose</animation>
             <top>0</top>
             <left>-430</left>
             <include>Submenu</include>

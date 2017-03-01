@@ -25,7 +25,7 @@
     <include name="ButtonInfoDialogsCommonValues">
         <width>277</width>
         <align>center</align>
-        <font>font12_title</font>
+        <font>font13_title</font>
         <textoffsetx>10</textoffsetx>
         <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
     </include>

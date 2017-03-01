@@ -650,7 +650,7 @@
             <height>50</height>
             <label>31259</label>
             <textcolor>highlight</textcolor>
-            <font>font13_title</font>
+            <font>font14_title</font>
         </control>
         <control type="label">
             <height>50</height>
@@ -675,7 +675,7 @@
             <height>50</height>
             <label>31260</label>
             <textcolor>highlight</textcolor>
-            <font>font13_title</font>
+            <font>font14_title</font>
         </control>
         <control type="label">
             <height>50</height>
@@ -691,7 +691,7 @@
             <height>50</height>
             <label>138</label>
             <textcolor>highlight</textcolor>
-            <font>font13_title</font>
+            <font>font14_title</font>
         </control>
         <control type="label">
             <height>50</height>

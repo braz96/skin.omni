@@ -51,34 +51,39 @@
         <control type="button" id="7">
             <description>Default Button</description>
             <height>100</height>
+            <font>font15</font>
             <textoffsetx>30</textoffsetx>
         </control>
         <control type="radiobutton" id="8">
             <description>Default RadioButton</description>
             <height>100</height>
+            <font>font15</font>
             <textoffsetx>30</textoffsetx>
         </control>
         <control type="spincontrolex" id="9">
             <description>Default SpinControlex</description>
             <height>100</height>
+            <font>font15</font>
             <textoffsetx>30</textoffsetx>
         </control>
         <control type="edit" id="12">
             <description>Default Edit Control</description>
             <height>100</height>
+            <font>font15</font>
             <textoffsetx>30</textoffsetx>
         </control>
         <control type="sliderex" id="13">
             <description>Default Slider</description>
             <height>100</height>
+            <font>font15</font>
             <textoffsetx>30</textoffsetx>
         </control>
         <control type="label" id="14">
             <description>Default Label</description>
             <height>100</height>
             <textoffsetx>30</textoffsetx>
-            <font>font14</font>
-            <align>center</align>
+            <font>font15_title</font>
+            <textcolor>highlight</textcolor>
         </control>
         <!-- button group -->
         <control type="grouplist" id="9001">

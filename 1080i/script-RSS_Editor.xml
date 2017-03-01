@@ -70,7 +70,7 @@
             <control type="button" id="13">
                 <width>400</width>
                 <label>15019</label>
-                <font>font12_title</font>
+                <font>font13_title</font>
                 <textoffsetx>10</textoffsetx>
                 <align>center</align>
                 <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
@@ -78,14 +78,14 @@
             <control type="button" id="14">
                 <width>400</width>
                 <label>15015</label>
-                <font>font12_title</font>
+                <font>font13_title</font>
                 <textoffsetx>10</textoffsetx>
                 <align>center</align>
                 <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
             </control>
             <control type="button" id="11">
                 <width>400</width>
-                <font>font12_title</font>
+                <font>font13_title</font>
                 <textoffsetx>10</textoffsetx>
                 <align>center</align>
                 <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
@@ -93,7 +93,7 @@
             <control type="button" id="18">
                 <width>400</width>
                 <label>186</label>
-                <font>font12_title</font>
+                <font>font13_title</font>
                 <textoffsetx>10</textoffsetx>
                 <align>center</align>
                 <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
@@ -101,7 +101,7 @@
             <control type="button" id="19">
                 <width>400</width>
                 <label>222</label>
-                <font>font12_title</font>
+                <font>font13_title</font>
                 <textoffsetx>10</textoffsetx>
                 <align>center</align>
                 <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>

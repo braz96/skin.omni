@@ -65,13 +65,13 @@
             <size>55</size>
         </font>
         <font>
-            <name>font12_title</name>
+            <name>font13_title</name>
             <filename>weblysleekuil.ttf</filename>
             <style>uppercase</style>
             <size>30</size>
         </font>
         <font>
-            <name>font13_title</name>
+            <name>font14_title</name>
             <filename>weblysleekuil.ttf</filename>
             <style>uppercase</style>
             <size>33</size>
@@ -372,13 +372,13 @@
             <size>51</size>
         </font>
         <font>
-            <name>font12_title</name>
+            <name>font13_title</name>
             <filename>arial.ttf</filename>
             <style>uppercase</style>
             <size>26</size>
         </font>
         <font>
-            <name>font13_title</name>
+            <name>font14_title</name>
             <filename>arial.ttf</filename>
             <style>uppercase</style>
             <size>29</size>
@@ -650,7 +650,7 @@
             <name>font_TextViewer</name>
             <filename>Assistant-Light.ttf</filename>
             <size>35</size>
-            <linespacing>1.45</linespacing>
+            <linespacing>1.42</linespacing>
         </font>
         <font>
             <name>font15</name>
@@ -679,13 +679,13 @@
             <size>57</size>
         </font>
         <font>
-            <name>font12_title</name>
+            <name>font13_title</name>
             <filename>Assistant-Light.ttf</filename>
             <style>uppercase</style>
             <size>32</size>
         </font>
         <font>
-            <name>font13_title</name>
+            <name>font14_title</name>
             <filename>Assistant-Light.ttf</filename>
             <style>uppercase</style>
             <size>35</size>
@@ -957,7 +957,7 @@
             <name>font_TextViewer</name>
             <filename>Catamaran-ExtraLight.ttf</filename>
             <size>33</size>
-            <linespacing>1.23</linespacing>
+            <linespacing>1.25</linespacing>
         </font>
         <font>
             <name>font15</name>
@@ -986,13 +986,13 @@
             <size>55</size>
         </font>
         <font>
-            <name>font12_title</name>
+            <name>font13_title</name>
             <filename>Catamaran-ExtraLight.ttf</filename>
             <style>uppercase</style>
             <size>30</size>
         </font>
         <font>
-            <name>font13_title</name>
+            <name>font14_title</name>
             <filename>Catamaran-ExtraLight.ttf</filename>
             <style>uppercase</style>
             <size>33</size>
@@ -1264,7 +1264,7 @@
             <name>font_TextViewer</name>
             <filename>Changa-ExtraLight.ttf</filename>
             <size>35</size>
-            <linespacing>0.94</linespacing>
+            <linespacing>0.92</linespacing>
         </font>
         <font>
             <name>font15</name>
@@ -1293,13 +1293,13 @@
             <size>57</size>
         </font>
         <font>
-            <name>font12_title</name>
+            <name>font13_title</name>
             <filename>Changa-ExtraLight.ttf</filename>
             <style>uppercase</style>
             <size>32</size>
         </font>
         <font>
-            <name>font13_title</name>
+            <name>font14_title</name>
             <filename>Changa-ExtraLight.ttf</filename>
             <style>uppercase</style>
             <size>35</size>
@@ -1571,7 +1571,7 @@
             <name>font_TextViewer</name>
             <filename>Jaldi-Regular.ttf</filename>
             <size>35</size>
-            <linespacing>1.02</linespacing>
+            <linespacing>1.01</linespacing>
         </font>
         <font>
             <name>font15</name>
@@ -1600,13 +1600,13 @@
             <size>57</size>
         </font>
         <font>
-            <name>font12_title</name>
+            <name>font13_title</name>
             <filename>Jaldi-Regular.ttf</filename>
             <style>uppercase</style>
             <size>32</size>
         </font>
         <font>
-            <name>font13_title</name>
+            <name>font14_title</name>
             <filename>Jaldi-Regular.ttf</filename>
             <style>uppercase</style>
             <size>35</size>
@@ -1878,7 +1878,7 @@
             <name>font_TextViewer</name>
             <filename>Kanit-ExtraLight.ttf</filename>
             <size>33</size>
-            <linespacing>1.25</linespacing>
+            <linespacing>1.22</linespacing>
         </font>
         <font>
             <name>font15</name>
@@ -1907,13 +1907,13 @@
             <size>55</size>
         </font>
         <font>
-            <name>font12_title</name>
+            <name>font13_title</name>
             <filename>Kanit-ExtraLight.ttf</filename>
             <style>uppercase</style>
             <size>30</size>
         </font>
         <font>
-            <name>font13_title</name>
+            <name>font14_title</name>
             <filename>Kanit-ExtraLight.ttf</filename>
             <style>uppercase</style>
             <size>33</size>
@@ -2185,7 +2185,7 @@
             <name>font_TextViewer</name>
             <filename>NotoSans-Regular.ttf</filename>
             <size>30</size>
-            <linespacing>1.5</linespacing>
+            <linespacing>1.3</linespacing>
         </font>
         <font>
             <name>font15</name>
@@ -2214,13 +2214,13 @@
             <size>52</size>
         </font>
         <font>
-            <name>font12_title</name>
+            <name>font13_title</name>
             <filename>NotoSans-Regular.ttf</filename>
             <style>uppercase</style>
             <size>27</size>
         </font>
         <font>
-            <name>font13_title</name>
+            <name>font14_title</name>
             <filename>NotoSans-Regular.ttf</filename>
             <style>uppercase</style>
             <size>30</size>
@@ -2492,7 +2492,7 @@
             <name>font_TextViewer</name>
             <filename>NotoSerif-Regular.ttf</filename>
             <size>30</size>
-            <linespacing>1.5</linespacing>
+            <linespacing>1.3</linespacing>
         </font>
         <font>
             <name>font15</name>
@@ -2521,13 +2521,13 @@
             <size>52</size>
         </font>
         <font>
-            <name>font12_title</name>
+            <name>font13_title</name>
             <filename>NotoSerif-Regular.ttf</filename>
             <style>uppercase</style>
             <size>27</size>
         </font>
         <font>
-            <name>font13_title</name>
+            <name>font14_title</name>
             <filename>NotoSerif-Regular.ttf</filename>
             <style>uppercase</style>
             <size>30</size>
@@ -2828,13 +2828,13 @@
             <size>55</size>
         </font>
         <font>
-            <name>font12_title</name>
+            <name>font13_title</name>
             <filename>Roboto-Light.ttf</filename>
             <style>uppercase</style>
             <size>30</size>
         </font>
         <font>
-            <name>font13_title</name>
+            <name>font14_title</name>
             <filename>Roboto-Light.ttf</filename>
             <style>uppercase</style>
             <size>33</size>
@@ -3106,7 +3106,7 @@
             <name>font_TextViewer</name>
             <filename>Sawasdee.ttf</filename>
             <size>33</size>
-            <linespacing>1.07</linespacing>
+            <linespacing>1.09</linespacing>
         </font>
         <font>
             <name>font15</name>
@@ -3135,13 +3135,13 @@
             <size>55</size>
         </font>
         <font>
-            <name>font12_title</name>
+            <name>font13_title</name>
             <filename>Sawasdee.ttf</filename>
             <style>uppercase</style>
             <size>28</size>
         </font>
         <font>
-            <name>font13_title</name>
+            <name>font14_title</name>
             <filename>Sawasdee.ttf</filename>
             <style>uppercase</style>
             <size>33</size>
@@ -3442,13 +3442,13 @@
             <size>55</size>
         </font>
         <font>
-            <name>font12_title</name>
+            <name>font13_title</name>
             <filename>Ubuntu-L.ttf</filename>
             <style>uppercase</style>
             <size>28</size>
         </font>
         <font>
-            <name>font13_title</name>
+            <name>font14_title</name>
             <filename>Ubuntu-L.ttf</filename>
             <style>uppercase</style>
             <size>32</size>

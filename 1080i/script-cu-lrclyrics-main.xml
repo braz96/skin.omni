@@ -74,7 +74,7 @@
                 <width>825</width>
                 <height>45</height>
                 <label>$LOCALIZE[31205] - $INFO[Control.GetLabel(200)]</label>
-                <font>font12_title</font>
+                <font>font13_title</font>
                 <align>right</align>
                 <visible>false</visible>
             </control>

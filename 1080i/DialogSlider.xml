@@ -28,7 +28,7 @@
                 <width>345</width>
                 <height>60</height>
                 <textoffsetx>15</textoffsetx>
-                <font>font13_title</font>
+                <font>font14_title</font>
             </control>
             <control type="label" id="12">
                 <description>Slider Value</description>
@@ -36,7 +36,7 @@
                 <width>650</width>
                 <height>60</height>
                 <align>right</align>
-                <font>font13_title</font>
+                <font>font14_title</font>
             </control>
             <control type="slider" id="11">
                 <description>Slider</description>

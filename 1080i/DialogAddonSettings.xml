@@ -140,8 +140,7 @@
         <control type="label" id="7">
             <width>970</width>
             <height>60</height>
-            <font>font13_title</font>
-            <align>center</align>
+            <font>font14_title</font>
             <label />
             <textcolor>highlight</textcolor>
             <textoffsetx>15</textoffsetx>

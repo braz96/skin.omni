@@ -226,7 +226,7 @@
                 <control type="button" id="201">
                     <description>View options</description>
                     <textwidth>352</textwidth>
-                    <font>font13_title</font>
+                    <font>font14_title</font>
                     <include>ButtonCommonValues</include>
                     <label>559</label>
                     <enable>no</enable>

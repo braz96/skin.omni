@@ -44,14 +44,14 @@
                                 <width>1370</width>
                                 <height>100</height>
                                 <textoffsetx>30</textoffsetx>
-                                <font>font16</font>
+                                <font>font15</font>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
                                 <width>1370</width>
                                 <height>100</height>
                                 <textoffsetx>30</textoffsetx>
-                                <font>font16</font>
+                                <font>font15</font>
                                 <align>right</align>
                                 <label>$INFO[ListItem.Label2]</label>
                             </control>
@@ -76,7 +76,7 @@
                                 <width>1370</width>
                                 <height>100</height>
                                 <textoffsetx>30</textoffsetx>
-                                <font>font16</font>
+                                <font>font15</font>
                                 <scroll>true</scroll>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
@@ -84,7 +84,7 @@
                                 <width>1370</width>
                                 <height>100</height>
                                 <textoffsetx>30</textoffsetx>
-                                <font>font16</font>
+                                <font>font15</font>
                                 <align>right</align>
                                 <label>$INFO[ListItem.Label2]</label>
                             </control>

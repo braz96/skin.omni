@@ -97,7 +97,6 @@
                 <width>1246</width>
                 <height>88</height>
                 <font>font15_title</font>
-                <align>center</align>
                 <textcolor>highlight</textcolor>
                 <textoffsetx>30</textoffsetx>
             </control>

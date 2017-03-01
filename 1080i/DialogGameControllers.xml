@@ -31,7 +31,7 @@
                 <left>0</left>
                 <width>330</width>
                 <height>40</height>
-                <font>font12_title</font>
+                <font>font13_title</font>
                 <label>35050</label>
                 <align>center</align>
                 <textcolor>highlight</textcolor>
@@ -85,7 +85,7 @@
                 <left>1040</left>
                 <width>330</width>
                 <height>40</height>
-                <font>font12_title</font>
+                <font>font13_title</font>
                 <label>35059</label>
                 <align>center</align>
                 <textcolor>highlight</textcolor>
