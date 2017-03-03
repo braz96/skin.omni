@@ -8,6 +8,7 @@
     <include file="Includes_VideoLyrics.xml" />
     <include file="Includes_WidgetContent.xml" />
     <include file="View_50_List.xml" />
+    <include file="View_51_Fanart.xml" />
     <include file="View_500_Wall.xml" />
     <include file="View_501_Landscape.xml" />
     <include file="View_502_Logo.xml" />
