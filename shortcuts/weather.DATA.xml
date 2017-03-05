@@ -1,1 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?><shortcuts/>
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts>
+	<shortcut>
+		<defaultID>31036</defaultID>
+		<label>31036</label>
+		<label2>Common menu item</label2>
+		<icon />
+		<thumb />
+		<action>ActivateWindow(1121)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>31037</defaultID>
+		<label>31037</label>
+		<label2>Common menu item</label2>
+		<icon />
+		<thumb />
+		<action>ActivateWindow(1122)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>31038</defaultID>
+		<label>31038</label>
+		<label2>Common menu item</label2>
+		<icon />
+		<thumb />
+		<action>ActivateWindow(1123)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>31039</defaultID>
+		<label>31039</label>
+		<label2>Common menu item</label2>
+		<icon />
+		<thumb />
+		<action>ActivateWindow(1124)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>33035</defaultID>
+		<label>33035</label>
+		<label2>Common menu item</label2>
+		<icon />
+		<thumb />
+		<action>ActivateWindow(1125)</action>
+	</shortcut>
+</shortcuts>

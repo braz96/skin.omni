@@ -124,6 +124,22 @@ msgctxt "#31035"
 msgid "36"
 msgstr "36"
 
+msgctxt "#31036"
+msgid "10 day forecast"
+msgstr "10 day forecast"
+
+msgctxt "#31037"
+msgid "36 hour forecast"
+msgstr "36 hour forecast"
+
+msgctxt "#31038"
+msgid "Weekend forecast"
+msgstr "Weekend forecast"
+
+msgctxt "#31039"
+msgid "Hourly forecast"
+msgstr "Hourly forecast"
+
 msgctxt "#31042"
 msgid "Show \"Now Playing\" information blended in the background"
 msgstr "Show \"Now Playing\" information blended in the background"

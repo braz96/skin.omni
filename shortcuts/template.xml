@@ -114,7 +114,7 @@
                     <animation effect="fade" time="320" delay="200">Visible</animation>
                     <animation effect="fade" time="200">Hidden</animation>
                     <left>49</left>
-                    <top>430</top>
+                    <top>410</top>
                     <width>385</width>
                     <height>425</height>
                     <texture colordiffuse="highlight">selecteditem_bg.png</texture>

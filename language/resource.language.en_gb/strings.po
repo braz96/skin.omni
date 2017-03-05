@@ -128,7 +128,23 @@ msgctxt "#31035"
 msgid "36"
 msgstr ""
 
-#empty strings from id 31036 to 31041
+msgctxt "#31036"
+msgid "10 day forecast"
+msgstr ""
+
+msgctxt "#31037"
+msgid "36 hour forecast"
+msgstr ""
+
+msgctxt "#31038"
+msgid "Weekend forecast"
+msgstr ""
+
+msgctxt "#31039"
+msgid "Hourly forecast"
+msgstr ""
+
+#empty strings from id 31040 to 31041
 
 msgctxt "#31042"
 msgid "Show \"Now Playing\" information blended in the background"
