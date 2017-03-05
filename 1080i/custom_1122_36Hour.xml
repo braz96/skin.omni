@@ -67,7 +67,7 @@
                             <left>30</left>
                             <top>300</top>
                             <width>473</width>
-                            <height>400</height>
+                            <height>420</height>
                             <align>center</align>
                             <font>font15_textbox</font>
                             <label>$INFO[ListItem.Label2]$INFO[ListItem.Property(TemperatureHeading),[CR],: ]$INFO[ListItem.Property(Temperature)]$INFO[ListItem.Property(FeelsLike),[CR]$LOCALIZE[402]: ]$INFO[ListItem.Property(Precipitation),[CR]$LOCALIZE[1448]: ]$INFO[ListItem.Property(Wind),[CR]]$INFO[ListItem.Property(Humidity),[CR]$LOCALIZE[406]: ]</label>
@@ -100,9 +100,10 @@
                             <left>30</left>
                             <top>300</top>
                             <width>473</width>
-                            <height>400</height>
+                            <height>420</height>
                             <align>center</align>
                             <font>font15_textbox</font>
+                            <include>AutoscrollDefault</include>
                             <label>$INFO[ListItem.Label2]$INFO[ListItem.Property(TemperatureHeading),[CR],: ]$INFO[ListItem.Property(Temperature)]$INFO[ListItem.Property(FeelsLike),[CR]$LOCALIZE[402]: ]$INFO[ListItem.Property(Precipitation),[CR]$LOCALIZE[1448]: ]$INFO[ListItem.Property(Wind),[CR]]$INFO[ListItem.Property(Humidity),[CR]$LOCALIZE[406]: ]</label>
                         </control>
                     </focusedlayout>
