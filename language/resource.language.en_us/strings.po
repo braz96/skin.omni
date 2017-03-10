@@ -152,6 +152,10 @@ msgctxt "#31047"
 msgid "Settings level"
 msgstr "Settings level"
 
+msgctxt "#31048"
+msgid "Skin widgets"
+msgstr "Skin widgets"
+
 msgctxt "#31049"
 msgid "Available groups"
 msgstr "Available groups"

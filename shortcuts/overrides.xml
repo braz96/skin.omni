@@ -101,7 +101,58 @@
     <widget label="5">settings</widget>
     <widget label="130" icon="special://skin/extras/icons/info.png">systeminfo</widget>
     <widget label="12600" condition="!IsEmpty(Weather.Plugin)">weather</widget>
-    
+
+    <widget-groupings>
+        <node label="31048">
+            <content>widgets</content>
+        </node>
+        <node label="32030">
+            <content>video</content>
+            <node label="32040">
+                <content>playlist-video</content>
+            </node>
+            <node label="32010">
+                <content>addon-video</content>
+            </node>
+            <node label="32075">
+                <content>videosources</content>
+            </node>
+        </node>
+        <node label="32031">
+            <content>music</content>
+            <node label="32040">
+                <content>playlist-audio</content>
+            </node>
+            <node label="32011">
+                <content>addon-audio</content>
+            </node>
+            <node label="32075">
+                <content>musicsources</content>
+            </node>
+        </node>
+        <node label="32020">
+            <content>picturesources</content>
+        </node>
+        <node label="32007">
+            <node label="32009">
+                <content>addon-program-plugin</content>
+            </node>
+            <node label="32010">
+                <content>addon-video</content>
+            </node>
+            <node label="32011">
+                <content>addon-audio</content>
+            </node>
+            <node label="32012">
+                <content>addon-image</content>
+            </node>
+            <shortcut label="10001" type="32021" icon="DefaultAddonProgram.png" widget="addon" widgetType="program" widgetTarget="programs">addons://sources/executable</shortcut>
+            <shortcut label="20244" type="32021" icon="DefaultAddonProgram.png" widget="addon" widgetType="program" widgetTarget="programs" condition="System.Platform.Android">androidapp://sources/apps</shortcut>
+            <shortcut label="1037" type="32014" icon="DefaultAddonVideo.png" widget="addon" widgetType="video" widgetTarget="video">addons://sources/video</shortcut>
+            <shortcut label="1038" type="32019" icon="DefaultAddonMusic.png" widget="addon" widgetType="music" widgetTarget="music">addons://sources/audio</shortcut>
+            <shortcut label="1039" type="32020" icon="DefaultAddonPicture.png" widget="addon" widgetType="picture" widgetTarget="pictures">addons://sources/image</shortcut>
+        </node>
+    </widget-groupings>
 
 	<!-- Widget Icon Aspect Ratio -->
 	<propertySettings property="widgetIcon" title="$LOCALIZE[31242]" showNone="False" />
