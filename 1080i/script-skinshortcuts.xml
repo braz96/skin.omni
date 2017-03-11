@@ -179,7 +179,6 @@
                         <font>font15</font>
                         <label>$LOCALIZE[31242]</label>
                         <label2>$INFO[Container(211).ListItem.Property(thumbnail)]</label2>
-                        <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                     </control>
                     <control type="button" id="312">
                         <description>Change widget</description>
@@ -213,7 +212,7 @@
                         <label>- $LOCALIZE[31155]</label>
                         <label2>$VAR[WidgetSortByLabel]</label2>
                         <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-                        <enable>!String.IsEqual(Container(211).ListItem.Property(widget),weather) + !String.IsEqual(Container(211).ListItem.Property(widget),settings) + !String.IsEqual(Container(211).ListItem.Property(widget),systeminfo) + !String.IsEqual(Container(211).ListItem.Property(widget),myplaylists)</enable>
+                        <enable>!String.IsEqual(Container(211).ListItem.Property(widget),weather) + !String.IsEqual(Container(211).ListItem.Property(widget),settings) + !String.IsEqual(Container(211).ListItem.Property(widget),systeminfo) + !String.IsEqual(Container(211).ListItem.Property(widget),myplaylists) + !String.IsEqual(Container(211).ListItem.Property(widget),mysubmenu)</enable>
                         <onclick>SetProperty(chooseProperty,widgetSortBy)</onclick>
                         <onclick>SendClick(404)</onclick>
                     </control>
@@ -226,7 +225,7 @@
                         <label>- $LOCALIZE[31156]</label>
                         <label2>$VAR[WidgetSortDirectionLabel]</label2>
                         <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-                        <enable>!String.IsEqual(Container(211).ListItem.Property(widget),weather) + !String.IsEqual(Container(211).ListItem.Property(widget),settings) + !String.IsEqual(Container(211).ListItem.Property(widget),systeminfo) + !String.IsEqual(Container(211).ListItem.Property(widget),myplaylists)</enable>
+                        <enable>!String.IsEqual(Container(211).ListItem.Property(widget),weather) + !String.IsEqual(Container(211).ListItem.Property(widget),settings) + !String.IsEqual(Container(211).ListItem.Property(widget),systeminfo) + !String.IsEqual(Container(211).ListItem.Property(widget),myplaylists) + !String.IsEqual(Container(211).ListItem.Property(widget),mysubmenu)</enable>
                         <onclick>SetProperty(chooseProperty,widgetSortDirection)</onclick>
                         <onclick>SendClick(404)</onclick>
                     </control>
