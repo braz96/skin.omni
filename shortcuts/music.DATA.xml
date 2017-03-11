@@ -17,6 +17,14 @@
 		<action>ActivateWindow(Music,musicdb://recentlyaddedalbums/,return)</action>
 	</shortcut>
 	<shortcut>
+		<defaultID>521</defaultID>
+		<label>521</label>
+		<label2>Music</label2>
+		<icon>DefaultMusicAlbums.png</icon>
+		<thumb/>
+		<action>ActivateWindow(Music,musicdb://compilations/,return)</action>
+	</shortcut>
+	<shortcut>
 		<defaultID>135</defaultID>
 		<label>135</label>
 		<label2>Music</label2>
