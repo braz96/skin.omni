@@ -61,6 +61,7 @@
         <value>$INFO[System.CurrentWindow]</value>
     </variable>
     <variable name="HeaderSubLabel">
+        <value condition="Window.IsActive(1119)">$INFO[Container(51).NumItems,, $LOCALIZE[31025]]</value>
         <value condition="Window.IsVisible(home) + Window.IsActive(DialogContextMenu.xml)">$LOCALIZE[31246]</value>
         <value condition="Window.IsActive(profiles)">$LOCALIZE[13200]</value>
         <value condition="Window.IsActive(systeminfo)">$INFO[Control.GetLabel(52)]</value>
