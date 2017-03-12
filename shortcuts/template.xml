@@ -34,19 +34,19 @@
                 </control>
                 <control type="image">
                     <visible>Control.HasFocus(8011$SKINSHORTCUTS[id]) + !Container(8011$SKINSHORTCUTS[id]).IsUpdating + String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[20021])</visible>
-                    <left>48</left>
-                    <top>20</top>
-                    <width>250</width>
-                    <height>405</height>
+                    <left>12</left>
+                    <top>10</top>
+                    <width>262</width>
+                    <height>422</height>
                     <include>FocusedBackgroundFade</include>
                     <texture colordiffuse="highlight">selecteditem_bg.png</texture>
                     <animation effect="slide" end="0,445" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,0)">Conditional</animation>
-                    <animation effect="slide" end="270,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,5)">Conditional</animation>
-                    <animation effect="slide" end="270,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,4)">Conditional</animation>
-                    <animation effect="slide" end="270,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,3)">Conditional</animation>
-                    <animation effect="slide" end="270,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,2)">Conditional</animation>
-                    <animation effect="slide" end="270,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,1)">Conditional</animation>
-                    <animation effect="slide" end="270,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,0)">Conditional</animation>
+                    <animation effect="slide" end="282,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,5)">Conditional</animation>
+                    <animation effect="slide" end="282,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,4)">Conditional</animation>
+                    <animation effect="slide" end="282,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,3)">Conditional</animation>
+                    <animation effect="slide" end="282,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,2)">Conditional</animation>
+                    <animation effect="slide" end="282,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,1)">Conditional</animation>
+                    <animation effect="slide" end="282,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,0)">Conditional</animation>
                 </control>
                 <control type="image">
                     <visible>Control.HasFocus(8011$SKINSHORTCUTS[id]) + !Container(8011$SKINSHORTCUTS[id]).IsUpdating + [String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[20445]) | String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31100]) | String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31088]) | [String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[21371]) + [String.Contains(Container(9000).ListItem.Property(widgetPath),recentlyaddedepisodes) | String.Contains(Container(9000).ListItem.Property(widgetType),episodes)]]]</visible>
