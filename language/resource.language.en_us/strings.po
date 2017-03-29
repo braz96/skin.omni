@@ -96,34 +96,6 @@ msgctxt "#31028"
 msgid "Ubuntu"
 msgstr "Ubuntu"
 
-msgctxt "#31029"
-msgid "10"
-msgstr "10"
-
-msgctxt "#31030"
-msgid "12"
-msgstr "12"
-
-msgctxt "#31031"
-msgid "16"
-msgstr "16"
-
-msgctxt "#31032"
-msgid "20"
-msgstr "20"
-
-msgctxt "#31033"
-msgid "24"
-msgstr "24"
-
-msgctxt "#31034"
-msgid "30"
-msgstr "30"
-
-msgctxt "#31035"
-msgid "36"
-msgstr "36"
-
 msgctxt "#31036"
 msgid "10 day forecast"
 msgstr "10 day forecast"

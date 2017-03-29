@@ -100,33 +100,7 @@ msgctxt "#31028"
 msgid "Ubuntu"
 msgstr ""
 
-msgctxt "#31029"
-msgid "10"
-msgstr ""
-
-msgctxt "#31030"
-msgid "12"
-msgstr ""
-
-msgctxt "#31031"
-msgid "16"
-msgstr ""
-
-msgctxt "#31032"
-msgid "20"
-msgstr ""
-
-msgctxt "#31033"
-msgid "24"
-msgstr ""
-
-msgctxt "#31034"
-msgid "30"
-msgstr ""
-
-msgctxt "#31035"
-msgid "36"
-msgstr ""
+#empty strings from id 31029 to 31035
 
 msgctxt "#31036"
 msgid "10 day forecast"
