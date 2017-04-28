@@ -180,13 +180,13 @@
                         </item>
                         <item id="205">
                             <description>Enable</description>
-                            <icon>DefaultAddonNone.png</icon>
+                            <icon>special://skin/extras/icons/checkmark.png</icon>
                             <onclick>SendClick(7)</onclick>
                             <visible>Control.IsEnabled(7) + String.StartsWith(Control.GetLabel(7),$LOCALIZE[24022])</visible>
                         </item>
                         <item id="206">
                             <description>Disable</description>
-                            <icon>special://skin/extras/icons/checkmark.png</icon>
+                            <icon>DefaultAddonNone.png</icon>
                             <onclick>SendClick(7)</onclick>
                             <onclick condition="Window.IsVisible(MyPrograms.xml)">Dialog.Close(addoninformation)</onclick>
                             <visible>Control.IsEnabled(7) + !String.StartsWith(Control.GetLabel(7),$LOCALIZE[24022])</visible>
