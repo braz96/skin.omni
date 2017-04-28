@@ -17,6 +17,7 @@
             <include>View_500_Wall</include>
             <!-- view id = 500 -->
             <control type="group">
+                <visible>!Window.IsVisible(addoninformation)</visible>
                 <left>2350</left>
                 <include>SideBladeRight</include>
                 <control type="grouplist" id="9050">

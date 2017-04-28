@@ -446,25 +446,6 @@
                 </control>
             </control>
             <include condition="System.HasAddon(plugin.program.autocompletion) + !System.HasHiddenInput">AutoComplete</include>
-            <!--<control type="group">
-                <visible>Control.IsVisible(313) + !String.IsEmpty(Control.GetLabel(313))</visible>
-                <top>300</top>
-                <control type="label" id="313">
-                    <left>35</left>
-                    <top>98</top>
-                    <width>1250</width>
-                    <height>30</height>
-                    <align>center</align>
-                </control>
-                <control type="label" id="314">
-                    <description>HZLIST label</description>
-                    <left>35</left>
-                    <top>98</top>
-                    <width>1250</width>
-                    <height>30</height>
-                    <align>center</align>
-                </control>
-            </control>-->
         </control>
     </controls>
 </window>
