@@ -308,6 +308,13 @@
                                 <onclick condition="System.HasAddon(script.toolbox)">Addon.OpenSettings(script.toolbox)</onclick>
                                 <onclick condition="!System.HasAddon(script.toolbox)">InstallAddon(script.toolbox)</onclick>
                             </item>
+                            <item id="18">
+                                <icon>$INFO[System.AddonIcon(context.youtube.browser)]</icon>
+                                <label>31002</label>
+                                <label2>$INFO[System.AddonVersion(context.youtube.browser)]</label2>
+                                <onclick condition="System.HasAddon(context.youtube.browser)">Addon.OpenSettings(context.youtube.browser)</onclick>
+                                <onclick condition="!System.HasAddon(context.youtube.browser)">InstallAddon(context.youtube.browser)</onclick>
+                            </item>
                         </content>
                     </control>
                     <control type="grouplist" id="9006">

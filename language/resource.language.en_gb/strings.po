@@ -16,7 +16,11 @@ msgstr ""
 "Language: en_GB\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#empty strings from id 31000 to 31003
+#empty strings from id 31000 to 31001
+
+msgctxt "#31002"
+msgid "YouTube Browser"
+msgstr ""
 
 msgctxt "#31003"
 msgid "AutoCompletion for virtual keyboard"
