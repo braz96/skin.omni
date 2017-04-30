@@ -16,7 +16,11 @@ msgstr ""
 "Language: en_GB\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#empty strings from id 31000 to 31001
+#empty string with id 31000
+
+msgctxt "#31001"
+msgid "Auto update"
+msgstr ""
 
 msgctxt "#31002"
 msgid "YouTube Browser"
@@ -158,21 +162,7 @@ msgctxt "#31051"
 msgid "Descending"
 msgstr ""
 
-#empty strings from id 31052 to 31054
-
-msgctxt "#31055"
-msgid "Open playlist"
-msgstr ""
-
-msgctxt "#31056"
-msgid "Save playlist"
-msgstr ""
-
-msgctxt "#31057"
-msgid "Close playlist"
-msgstr ""
-
-#empty strings from id 31058 to 31059
+#empty strings from id 31052 to 31059
 
 msgctxt "#31060"
 msgid "CU LRC Lyrics"

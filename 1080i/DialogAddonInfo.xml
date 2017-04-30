@@ -220,7 +220,7 @@
                 <control type="label">
                     <top>950</top>
                     <left>1090</left>
-                    <label>Auto update</label>
+                    <label>31001</label>
                     <font>font10</font>
                     <align>center</align>
                     <height>80</height>

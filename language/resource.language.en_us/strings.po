@@ -16,6 +16,10 @@ msgstr ""
 "Language: en_US\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "#31001"
+msgid "Auto update"
+msgstr "Auto update"
+
 msgctxt "#31002"
 msgid "YouTube Browser"
 msgstr "YouTube Browser"
@@ -147,18 +151,6 @@ msgstr "Ascending"
 msgctxt "#31051"
 msgid "Descending"
 msgstr "Descending"
-
-msgctxt "#31055"
-msgid "Open playlist"
-msgstr "Open playlist"
-
-msgctxt "#31056"
-msgid "Save playlist"
-msgstr "Save playlist"
-
-msgctxt "#31057"
-msgid "Close playlist"
-msgstr "Close playlist"
 
 msgctxt "#31060"
 msgid "CU LRC Lyrics"

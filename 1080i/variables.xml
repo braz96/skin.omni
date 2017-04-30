@@ -65,8 +65,10 @@
         <value condition="Window.IsVisible(home) + Window.IsActive(DialogContextMenu.xml)">$LOCALIZE[31246]</value>
         <value condition="Window.IsActive(profiles)">$LOCALIZE[13200]</value>
         <value condition="Window.IsActive(systeminfo)">$INFO[Control.GetLabel(52)]</value>
-        <value condition="Window.IsActive(filemanager) + [Control.HasFocus(20) | Control.HasFocus(30)]">$INFO[Container(20).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="Window.IsActive(filemanager) + [Control.HasFocus(21) | Control.HasFocus(31)]">$INFO[Container(21).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(filemanager) + [Control.HasFocus(20) | Control.HasFocus(30)]">$INFO[Container(20).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(20).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(filemanager) + [Control.HasFocus(21) | Control.HasFocus(31)]">$INFO[Container(21).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(21).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(musicplaylisteditor) + [Control.HasFocus(50) | Control.HasFocus(60)]">$INFO[Container(50).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(50).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(musicplaylisteditor) + [Control.HasFocus(100) | Control.HasFocus(61)]">$INFO[Container(100).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(100).NumItems,, $LOCALIZE[31025]]</value>
         <value condition="Window.IsActive(script-globalsearch-main.xml)">$LOCALIZE[31186] "$INFO[Window.Property(GlobalSearch.SearchString)]"</value>
         <value condition="Window.IsActive(script-script.extendedinfo-YoutubeList.xml)">$INFO[Window.Property(TotalItems),, $LOCALIZE[31025]]</value>
         <value condition="Window.IsActive(systemsettings)">$LOCALIZE[13000]</value>
