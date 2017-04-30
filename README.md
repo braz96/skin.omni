@@ -12,6 +12,14 @@ If you would like to express your appreciation for this skin, please consider a 
 
 
 ***
+**1.2.0**
+- Added fanart list view.
+- Added support for extended weather info.
+- Added submenu widget.
+- Added support for keyboard autocomplete.
+- Misc fixes.
+
+***
 **1.1.0**
 - Removed features that relied on skin.helper.service.
 - Skinned YouTube Browser addon.
