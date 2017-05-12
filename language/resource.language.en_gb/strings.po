@@ -400,9 +400,7 @@ msgctxt "#31170"
 msgid "Artist Slideshow"
 msgstr ""
 
-msgctxt "#31171"
-msgid "colorbox Script"
-msgstr ""
+#empty string with id 31171
 
 msgctxt "#31172"
 msgid "ExtendedInfo Script"

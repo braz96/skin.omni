@@ -16,10 +16,7 @@
     </variable>
     <variable name="VizBackgroundLabelVar">
         <value condition="String.IsEqual(Skin.String(musicvis.background),fanart)">$LOCALIZE[20445]</value>
-        <value condition="String.IsEqual(Skin.String(musicvis.background),bluralbum)">$LOCALIZE[31310]</value>
         <value condition="System.HasAddon(script.artistslideshow) + String.IsEqual(Skin.String(musicvis.background),artistslideshow)">$INFO[System.AddonTitle(script.artistslideshow)]</value>
-        <value condition="String.IsEqual(Skin.String(musicvis.background),pixelfanart)">$LOCALIZE[31168]</value>
-        <value condition="String.IsEqual(Skin.String(musicvis.background),posterizefanart)">$LOCALIZE[31169]</value>
         <value condition="String.IsEqual(Skin.String(musicvis.background),albumwall)">$LOCALIZE[31068]</value>
         <value>$LOCALIZE[231]</value>
     </variable>
@@ -111,7 +108,7 @@
 
         <value condition="Player.HasAudio + !String.IsEmpty(MusicPlayer.Artist) + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch-main.xml)]">$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, • ]</value>
 
-        <value condition="!String.IsEmpty(Player.Title) + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch-main.xml)]">$INFO[Player.Time] / $INFO[Player.Duration]</value>
+        <value condition="!String.IsEmpty(Player.Title) + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch-main.xml)]">$INFO[Player.Time]$INFO[Player.Duration, / ]</value>
 
         <value condition="![Player.Playing | Player.HasAudio | Player.HasVideo] + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch-main.xml)]">$INFO[System.Date]</value>
     </variable>
@@ -127,7 +124,7 @@
         <value condition="VideoPlayer.Content(movies)">$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Genre, • ]</value>
         <value condition="VideoPlayer.Content(musicvideos)">$INFO[VideoPlayer.Artist]</value>
         <value condition="Player.HasAudio + !String.IsEmpty(MusicPlayer.Artist)">$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, • ]</value>
-        <value condition="!String.IsEmpty(Player.Title)">$INFO[Player.Time] / $INFO[Player.Duration]</value>
+        <value condition="!String.IsEmpty(Player.Title)">$INFO[Player.Time]$INFO[Player.Duration, / ]</value>
         <value condition="![Player.Playing | Player.HasAudio | Player.HasVideo]">$INFO[System.Date]</value>
     </variable>
     <variable name="HeaderLabelInfoDialog">
@@ -549,9 +546,6 @@
     </variable>
     <variable name="MusicVizBackground">
         <value condition="String.IsEqual(Skin.String(musicvis.background),fanart) + !Skin.HasSetting(HideVisualizationFanart)">$INFO[Player.Art(fanart)]</value>
-        <value condition="String.IsEqual(Skin.String(musicvis.background),bluralbum) + !Skin.HasSetting(HideVisualizationFanart)">$INFO[Window(home).Property(ImageFilter1)]</value>
-        <value condition="String.IsEqual(Skin.String(musicvis.background),pixelfanart) + !Skin.HasSetting(HideVisualizationFanart)">$INFO[Window(home).Property(ImageFilterfa2)]</value>
-        <value condition="String.IsEqual(Skin.String(musicvis.background),posterizefanart) + !Skin.HasSetting(HideVisualizationFanart)">$INFO[Window(home).Property(ImageFilterfa3)]</value>
     </variable>
     <variable name="ListRightLabel">
         <value condition="Container.Content(tvshows) | Window.IsActive(videoplaylist)">$INFO[ListItem.Rating]</value>

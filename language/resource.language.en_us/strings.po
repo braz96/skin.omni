@@ -348,10 +348,6 @@ msgctxt "#31170"
 msgid "Artist Slideshow"
 msgstr "Artist Slideshow"
 
-msgctxt "#31171"
-msgid "colorbox Script"
-msgstr "colorbox Script"
-
 msgctxt "#31172"
 msgid "ExtendedInfo Script"
 msgstr "ExtendedInfo Script"
