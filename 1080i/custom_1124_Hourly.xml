@@ -163,7 +163,6 @@
                         <item>
                             <label>$LOCALIZE[31909]</label>
                             <icon />
-                            <onclick>noop</onclick>
                             <visible>String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -181,7 +180,6 @@
                             <property name="HeatIndex">$INFO[Window(weather).Property(Hourly.1.HeatIndex)]</property>
                             <property name="WindChill">$INFO[Window(weather).Property(Hourly.1.WindChill)]</property>
                             <label2>$INFO[Window(weather).Property(Hourly.1.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -199,7 +197,6 @@
                             <property name="HeatIndex">$INFO[Window(weather).Property(Hourly.2.HeatIndex)]</property>
                             <property name="WindChill">$INFO[Window(weather).Property(Hourly.2.WindChill)]</property>
                             <label2>$INFO[Window(weather).Property(Hourly.2.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -217,7 +214,6 @@
                             <property name="HeatIndex">$INFO[Window(weather).Property(Hourly.3.HeatIndex)]</property>
                             <property name="WindChill">$INFO[Window(weather).Property(Hourly.3.WindChill)]</property>
                             <label2>$INFO[Window(weather).Property(Hourly.3.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -235,7 +231,6 @@
                             <property name="HeatIndex">$INFO[Window(weather).Property(Hourly.4.HeatIndex)]</property>
                             <property name="WindChill">$INFO[Window(weather).Property(Hourly.4.WindChill)]</property>
                             <label2>$INFO[Window(weather).Property(Hourly.4.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -253,7 +248,6 @@
                             <property name="HeatIndex">$INFO[Window(weather).Property(Hourly.5.HeatIndex)]</property>
                             <property name="WindChill">$INFO[Window(weather).Property(Hourly.5.WindChill)]</property>
                             <label2>$INFO[Window(weather).Property(Hourly.5.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -271,7 +265,6 @@
                             <property name="HeatIndex">$INFO[Window(weather).Property(Hourly.6.HeatIndex)]</property>
                             <property name="WindChill">$INFO[Window(weather).Property(Hourly.6.WindChill)]</property>
                             <label2>$INFO[Window(weather).Property(Hourly.6.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -289,7 +282,6 @@
                             <property name="HeatIndex">$INFO[Window(weather).Property(Hourly.7.HeatIndex)]</property>
                             <property name="WindChill">$INFO[Window(weather).Property(Hourly.7.WindChill)]</property>
                             <label2>$INFO[Window(weather).Property(Hourly.7.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -307,7 +299,6 @@
                             <property name="HeatIndex">$INFO[Window(weather).Property(Hourly.8.HeatIndex)]</property>
                             <property name="WindChill">$INFO[Window(weather).Property(Hourly.8.WindChill)]</property>
                             <label2>$INFO[Window(weather).Property(Hourly.8.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -325,7 +316,6 @@
                             <property name="HeatIndex">$INFO[Window(weather).Property(Hourly.9.HeatIndex)]</property>
                             <property name="WindChill">$INFO[Window(weather).Property(Hourly.9.WindChill)]</property>
                             <label2>$INFO[Window(weather).Property(Hourly.9.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -343,7 +333,6 @@
                             <property name="HeatIndex">$INFO[Window(weather).Property(Hourly.10.HeatIndex)]</property>
                             <property name="WindChill">$INFO[Window(weather).Property(Hourly.10.WindChill)]</property>
                             <label2>$INFO[Window(weather).Property(Hourly.10.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -361,7 +350,6 @@
                             <property name="HeatIndex">$INFO[Window(weather).Property(Hourly.11.HeatIndex)]</property>
                             <property name="WindChill">$INFO[Window(weather).Property(Hourly.11.WindChill)]</property>
                             <label2>$INFO[Window(weather).Property(Hourly.11.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -379,7 +367,6 @@
                             <property name="HeatIndex">$INFO[Window(weather).Property(Hourly.12.HeatIndex)]</property>
                             <property name="WindChill">$INFO[Window(weather).Property(Hourly.12.WindChill)]</property>
                             <label2>$INFO[Window(weather).Property(Hourly.12.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -397,7 +384,6 @@
                             <property name="HeatIndex">$INFO[Window(weather).Property(Hourly.13.HeatIndex)]</property>
                             <property name="WindChill">$INFO[Window(weather).Property(Hourly.13.WindChill)]</property>
                             <label2>$INFO[Window(weather).Property(Hourly.13.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -415,7 +401,6 @@
                             <property name="HeatIndex">$INFO[Window(weather).Property(Hourly.14.HeatIndex)]</property>
                             <property name="WindChill">$INFO[Window(weather).Property(Hourly.14.WindChill)]</property>
                             <label2>$INFO[Window(weather).Property(Hourly.14.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -433,7 +418,6 @@
                             <property name="HeatIndex">$INFO[Window(weather).Property(Hourly.15.HeatIndex)]</property>
                             <property name="WindChill">$INFO[Window(weather).Property(Hourly.15.WindChill)]</property>
                             <label2>$INFO[Window(weather).Property(Hourly.15.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -451,7 +435,6 @@
                             <property name="HeatIndex">$INFO[Window(weather).Property(Hourly.16.HeatIndex)]</property>
                             <property name="WindChill">$INFO[Window(weather).Property(Hourly.16.WindChill)]</property>
                             <label2>$INFO[Window(weather).Property(Hourly.16.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -469,7 +452,6 @@
                             <property name="HeatIndex">$INFO[Window(weather).Property(Hourly.17.HeatIndex)]</property>
                             <property name="WindChill">$INFO[Window(weather).Property(Hourly.17.WindChill)]</property>
                             <label2>$INFO[Window(weather).Property(Hourly.17.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -487,7 +469,6 @@
                             <property name="HeatIndex">$INFO[Window(weather).Property(Hourly.18.HeatIndex)]</property>
                             <property name="WindChill">$INFO[Window(weather).Property(Hourly.18.WindChill)]</property>
                             <label2>$INFO[Window(weather).Property(Hourly.18.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -505,7 +486,6 @@
                             <property name="HeatIndex">$INFO[Window(weather).Property(Hourly.19.HeatIndex)]</property>
                             <property name="WindChill">$INFO[Window(weather).Property(Hourly.19.WindChill)]</property>
                             <label2>$INFO[Window(weather).Property(Hourly.19.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -523,7 +503,6 @@
                             <property name="HeatIndex">$INFO[Window(weather).Property(Hourly.20.HeatIndex)]</property>
                             <property name="WindChill">$INFO[Window(weather).Property(Hourly.20.WindChill)]</property>
                             <label2>$INFO[Window(weather).Property(Hourly.20.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -541,7 +520,6 @@
                             <property name="HeatIndex">$INFO[Window(weather).Property(Hourly.21.HeatIndex)]</property>
                             <property name="WindChill">$INFO[Window(weather).Property(Hourly.21.WindChill)]</property>
                             <label2>$INFO[Window(weather).Property(Hourly.21.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -559,7 +537,6 @@
                             <property name="HeatIndex">$INFO[Window(weather).Property(Hourly.22.HeatIndex)]</property>
                             <property name="WindChill">$INFO[Window(weather).Property(Hourly.22.WindChill)]</property>
                             <label2>$INFO[Window(weather).Property(Hourly.22.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -577,7 +554,6 @@
                             <property name="HeatIndex">$INFO[Window(weather).Property(Hourly.23.HeatIndex)]</property>
                             <property name="WindChill">$INFO[Window(weather).Property(Hourly.23.WindChill)]</property>
                             <label2>$INFO[Window(weather).Property(Hourly.23.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                         </item>
                         <item>
@@ -595,7 +571,6 @@
                             <property name="HeatIndex">$INFO[Window(weather).Property(Hourly.24.HeatIndex)]</property>
                             <property name="WindChill">$INFO[Window(weather).Property(Hourly.24.WindChill)]</property>
                             <label2>$INFO[Window(weather).Property(Hourly.24.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
                         </item>
                     </content>

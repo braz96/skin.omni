@@ -74,6 +74,7 @@
         <value condition="Window.IsActive(skinsettings)">$LOCALIZE[166]</value>
         <value condition="Window.IsActive(playersettings)">$LOCALIZE[16003]</value>
         <value condition="Window.IsActive(mediasettings)">$LOCALIZE[14211]</value>
+        <value condition="Window.IsActive(gamesettings)">$LOCALIZE[15016]</value>
         <value condition="Window.IsActive(interfacesettings)">$LOCALIZE[14206]</value>
         <value condition="Window.IsActive(settings)">$INFO[System.FriendlyName]</value>
         <value condition="Window.IsActive(weather) | Window.IsActive(1121) | Window.IsActive(1122) | Window.IsActive(1123) | Window.IsActive(1124) | Window.IsActive(1125)">$INFO[Window(weather).Property(Location)]</value>
@@ -206,11 +207,6 @@
         <value condition="!String.IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
         <value condition="ListItem.IsParentFolder">DefaultFallbackParent.png</value>
         <value>DefaultFallback.png</value>
-    </variable>
-    <variable name="DurationVar">
-        <value condition="Container.Content(tvshows) + !String.IsEmpty(Window(Home).Property(NextAired.Runtime))">$INFO[Window(Home).Property(NextAired.Runtime)]</value>
-        <value condition="!String.IsEmpty(ListItem.Duration)">$INFO[ListItem.Duration]</value>
-        <value>?</value>
     </variable>
     <variable name="OneOrMoreSeasonsVar">
         <value condition="String.IsEqual(ListItem.Property(TotalSeasons),1)">$LOCALIZE[20373]</value>

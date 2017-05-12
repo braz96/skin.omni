@@ -56,22 +56,18 @@
                     <content>
                         <item id="1">
                             <label>513</label>
-                            <onclick>noop</onclick>
                             <icon />
                         </item>
                         <item id="2">
                             <label>31223</label>
-                            <onclick>noop</onclick>
                             <icon />
                         </item>
                         <item id="3">
                             <label>33069</label>
-                            <onclick>noop</onclick>
                             <icon />
                         </item>
                         <item id="6">
                             <label>31026</label>
-                            <onclick>noop</onclick>
                             <icon />
                         </item>
                     </content>

@@ -192,5 +192,6 @@
                 <orientation>vertical</orientation>
             </control>
         </control>
+        <include>PVRChannelNumberInput</include>
     </controls>
 </window>

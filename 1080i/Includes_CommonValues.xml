@@ -56,7 +56,6 @@
         <textoffsety>-4</textoffsety>
         <aligny>top</aligny>
         <font>font15</font>
-        <onclick>noop</onclick>
     </include>
     <!-- Media Flags -->
     <include name="MediaFlagVars">

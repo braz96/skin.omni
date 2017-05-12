@@ -21,7 +21,7 @@
             <visible>!VideoPlayer.Content(LiveTV)</visible>
         </control>
         <control type="group">
-            <animation effect="slide" end="0,-108" time="240" tween="quadratic" condition="Window.IsVisible(PVROSDGuide) | Window.IsVisible(PVROSDTeletext) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)">Conditional</animation>
+            <animation effect="slide" end="0,-108" time="240" tween="quadratic" condition="Window.IsVisible(pvrchannelguide) | Window.IsVisible(PVROSDTeletext) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)">Conditional</animation>
             <animation effect="slide" start="0,-108" end="0,0" time="240" tween="quadratic">WindowOpen</animation>
             <animation effect="slide" end="0,-108" start="0,0" time="240" tween="quadratic">WindowClose</animation>
             <control type="image">

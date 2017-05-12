@@ -211,7 +211,6 @@
                         <item>
                             <label>$LOCALIZE[31909]</label>
                             <icon />
-                            <onclick>noop</onclick>
                             <visible>String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
                         </item>
                         <item>
@@ -220,7 +219,6 @@
                             <icon>$VAR[WeatherIconVar]$INFO[Window(weather).Property(Day0.FanartCode),,.png]</icon>
                             <property name="HighTemp">$INFO[Window(weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits]</property>
                             <property name="LowTemp">$INFO[Window(weather).Property(Day0.LowTemp)]$INFO[System.TemperatureUnits]</property>
-                            <onclick>noop</onclick>
                         </item>
                         <item>
                             <label>$LOCALIZE[33007]</label>
@@ -228,7 +226,6 @@
                             <icon>$VAR[WeatherIconVar]$INFO[Window(weather).Property(Day1.FanartCode),,.png]</icon>
                             <property name="HighTemp">$INFO[Window(weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]</property>
                             <property name="LowTemp">$INFO[Window(weather).Property(Day1.LowTemp)]$INFO[System.TemperatureUnits]</property>
-                            <onclick>noop</onclick>
                         </item>
                         <item>
                             <label>$INFO[Window(weather).Property(Day2.Title)]</label>
@@ -236,7 +233,6 @@
                             <icon>$VAR[WeatherIconVar]$INFO[Window(weather).Property(Day2.FanartCode),,.png]</icon>
                             <property name="HighTemp">$INFO[Window(weather).Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]</property>
                             <property name="LowTemp">$INFO[Window(weather).Property(Day2.LowTemp)]$INFO[System.TemperatureUnits]</property>
-                            <onclick>noop</onclick>
                         </item>
                         <item>
                             <label>$INFO[Window(weather).Property(Day3.Title)]</label>
@@ -244,7 +240,6 @@
                             <icon>$VAR[WeatherIconVar]$INFO[Window(weather).Property(Day3.FanartCode),,.png]</icon>
                             <property name="HighTemp">$INFO[Window(weather).Property(Day3.HighTemp)]$INFO[System.TemperatureUnits]</property>
                             <property name="LowTemp">$INFO[Window(weather).Property(Day3.LowTemp)]$INFO[System.TemperatureUnits]</property>
-                            <onclick>noop</onclick>
                         </item>
                         <item>
                             <label>$INFO[Window(weather).Property(Day4.Title)]</label>
@@ -252,7 +247,6 @@
                             <icon>$VAR[WeatherIconVar]$INFO[Window(weather).Property(Day4.FanartCode),,.png]</icon>
                             <property name="HighTemp">$INFO[Window(weather).Property(Day4.HighTemp)]$INFO[System.TemperatureUnits]</property>
                             <property name="LowTemp">$INFO[Window(weather).Property(Day4.LowTemp)]$INFO[System.TemperatureUnits]</property>
-                            <onclick>noop</onclick>
                         </item>
                         <item>
                             <visible>!String.IsEmpty(Window(weather).Property(Day5.FanartCode))</visible>
@@ -261,7 +255,6 @@
                             <icon>$VAR[WeatherIconVar]$INFO[Window(weather).Property(Day5.FanartCode),,.png]</icon>
                             <property name="HighTemp">$INFO[Window(weather).Property(Day5.HighTemp)]$INFO[System.TemperatureUnits]</property>
                             <property name="LowTemp">$INFO[Window(weather).Property(Day5.LowTemp)]$INFO[System.TemperatureUnits]</property>
-                            <onclick>noop</onclick>
                         </item>
                         <item>
                             <visible>!String.IsEmpty(Window(weather).Property(Day6.FanartCode))</visible>
@@ -270,7 +263,6 @@
                             <icon>$VAR[WeatherIconVar]$INFO[Window(weather).Property(Day6.FanartCode),,.png]</icon>
                             <property name="HighTemp">$INFO[Window(weather).Property(Day6.HighTemp)]$INFO[System.TemperatureUnits]</property>
                             <property name="LowTemp">$INFO[Window(weather).Property(Day6.LowTemp)]$INFO[System.TemperatureUnits]</property>
-                            <onclick>noop</onclick>
                         </item>
                     </content>
                 </control>

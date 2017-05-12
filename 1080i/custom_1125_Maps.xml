@@ -124,7 +124,6 @@
                             <property name="MapArea">$INFO[Window(weather).Property(Map.1.Area)]</property>
                             <property name="MapLayer">$INFO[Window(weather).Property(Map.1.Layer)]</property>
                             <property name="MapLegend">$INFO[Window(weather).Property(Map.1.Legend)]</property>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Map.1.Area))</visible>
                         </item>
                         <item>
@@ -132,7 +131,6 @@
                             <property name="MapArea">$INFO[Window(weather).Property(Map.2.Area)]</property>
                             <property name="MapLayer">$INFO[Window(weather).Property(Map.2.Layer)]</property>
                             <property name="MapLegend">$INFO[Window(weather).Property(Map.2.Legend)]</property>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Map.2.Area))</visible>
                         </item>
                         <item>
@@ -140,7 +138,6 @@
                             <property name="MapArea">$INFO[Window(weather).Property(Map.3.Area)]</property>
                             <property name="MapLayer">$INFO[Window(weather).Property(Map.3.Layer)]</property>
                             <property name="MapLegend">$INFO[Window(weather).Property(Map.3.Legend)]</property>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Map.3.Area))</visible>
                         </item>
                         <item>
@@ -148,7 +145,6 @@
                             <property name="MapArea">$INFO[Window(weather).Property(Map.4.Area)]</property>
                             <property name="MapLayer">$INFO[Window(weather).Property(Map.4.Layer)]</property>
                             <property name="MapLegend">$INFO[Window(weather).Property(Map.4.Legend)]</property>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Map.4.Area))</visible>
                         </item>
                         <item>
@@ -156,7 +152,6 @@
                             <property name="MapArea">$INFO[Window(weather).Property(Map.5.Area)]</property>
                             <property name="MapLayer">$INFO[Window(weather).Property(Map.5.Layer)]</property>
                             <property name="MapLegend">$INFO[Window(weather).Property(Map.5.Legend)]</property>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Map.5.Area))</visible>
                         </item>
                     </content>

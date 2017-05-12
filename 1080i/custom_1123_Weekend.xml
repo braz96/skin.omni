@@ -181,7 +181,6 @@
                         <item>
                             <label>$LOCALIZE[31909]</label>
                             <icon />
-                            <onclick>noop</onclick>
                             <visible>String.IsEmpty(Window(weather).Property(Weekend.IsFetched))</visible>
                         </item>
                         <item>
@@ -195,7 +194,6 @@
                             <property name="WindDirection">$INFO[Window(weather).Property(Weekend.1.WindDirection)]</property>
                             <property name="Humidity">$INFO[Window(weather).Property(Weekend.1.Humidity)]</property>
                             <property name="ChancePrecipitation">$INFO[Window(weather).Property(Weekend.1.ChancePrecipitation)]</property>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Weekend.IsFetched))</visible>
                         </item>
                         <item>
@@ -209,7 +207,6 @@
                             <property name="WindDirection">$INFO[Window(weather).Property(Weekend.2.WindDirection)]</property>
                             <property name="Humidity">$INFO[Window(weather).Property(Weekend.2.Humidity)]</property>
                             <property name="ChancePrecipitation">$INFO[Window(weather).Property(Weekend.2.ChancePrecipitation)]</property>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Weekend.IsFetched))</visible>
                         </item>
                     </content>

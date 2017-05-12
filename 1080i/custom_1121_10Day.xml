@@ -161,7 +161,6 @@
                         <item>
                             <label>$LOCALIZE[31909]</label>
                             <icon />
-                            <onclick>noop</onclick>
                             <visible>String.IsEmpty(Window(weather).Property(Daily.IsFetched))</visible>
                         </item>
                         <item>
@@ -173,7 +172,6 @@
                             <property name="WindSpeed">$INFO[Window(weather).Property(Daily.1.WindSpeed)]</property>
                             <property name="WindDirection">$INFO[Window(weather).Property(Daily.1.WindDirection)]</property>
                             <label2>$INFO[Window(weather).Property(Daily.1.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Daily.IsFetched))</visible>
                         </item>
                         <item>
@@ -185,7 +183,6 @@
                             <property name="WindSpeed">$INFO[Window(weather).Property(Daily.2.WindSpeed)]</property>
                             <property name="WindDirection">$INFO[Window(weather).Property(Daily.2.WindDirection)]</property>
                             <label2>$INFO[Window(weather).Property(Daily.2.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Daily.IsFetched))</visible>
                         </item>
                         <item>
@@ -197,7 +194,6 @@
                             <property name="WindSpeed">$INFO[Window(weather).Property(Daily.3.WindSpeed)]</property>
                             <property name="WindDirection">$INFO[Window(weather).Property(Daily.3.WindDirection)]</property>
                             <label2>$INFO[Window(weather).Property(Daily.3.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Daily.IsFetched))</visible>
                         </item>
                         <item>
@@ -209,7 +205,6 @@
                             <property name="WindSpeed">$INFO[Window(weather).Property(Daily.4.WindSpeed)]</property>
                             <property name="WindDirection">$INFO[Window(weather).Property(Daily.4.WindDirection)]</property>
                             <label2>$INFO[Window(weather).Property(Daily.4.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Daily.IsFetched))</visible>
                         </item>
                         <item>
@@ -221,7 +216,6 @@
                             <property name="WindSpeed">$INFO[Window(weather).Property(Daily.5.WindSpeed)]</property>
                             <property name="WindDirection">$INFO[Window(weather).Property(Daily.5.WindDirection)]</property>
                             <label2>$INFO[Window(weather).Property(Daily.5.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Daily.IsFetched))</visible>
                         </item>
                         <item>
@@ -233,7 +227,6 @@
                             <property name="WindSpeed">$INFO[Window(weather).Property(Daily.6.WindSpeed)]</property>
                             <property name="WindDirection">$INFO[Window(weather).Property(Daily.6.WindDirection)]</property>
                             <label2>$INFO[Window(weather).Property(Daily.6.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Daily.IsFetched))</visible>
                         </item>
                         <item>
@@ -245,7 +238,6 @@
                             <property name="WindSpeed">$INFO[Window(weather).Property(Daily.7.WindSpeed)]</property>
                             <property name="WindDirection">$INFO[Window(weather).Property(Daily.7.WindDirection)]</property>
                             <label2>$INFO[Window(weather).Property(Daily.7.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Daily.IsFetched))</visible>
                         </item>
                         <item>
@@ -257,7 +249,6 @@
                             <property name="WindSpeed">$INFO[Window(weather).Property(Daily.8.WindSpeed)]</property>
                             <property name="WindDirection">$INFO[Window(weather).Property(Daily.8.WindDirection)]</property>
                             <label2>$INFO[Window(weather).Property(Daily.8.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Daily.IsFetched))</visible>
                         </item>
                         <item>
@@ -269,7 +260,6 @@
                             <property name="WindSpeed">$INFO[Window(weather).Property(Daily.9.WindSpeed)]</property>
                             <property name="WindDirection">$INFO[Window(weather).Property(Daily.9.WindDirection)]</property>
                             <label2>$INFO[Window(weather).Property(Daily.9.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Daily.IsFetched))</visible>
                         </item>
                         <item>
@@ -281,7 +271,6 @@
                             <property name="WindSpeed">$INFO[Window(weather).Property(Daily.10.WindSpeed)]</property>
                             <property name="WindDirection">$INFO[Window(weather).Property(Daily.10.WindDirection)]</property>
                             <label2>$INFO[Window(weather).Property(Daily.10.Outlook)]</label2>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(Daily.IsFetched))</visible>
                         </item>
                     </content>

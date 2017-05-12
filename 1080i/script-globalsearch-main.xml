@@ -160,7 +160,6 @@
                                 <label>$LOCALIZE[31502]</label>
                                 <label2>$INFO[Control.GetLabel(220),, $LOCALIZE[31025]]</label2>
                                 <icon>DefaultAddonPVRClient.png</icon>
-                                <onclick>noop</onclick>
                                 <icon />
                             </item>
                             <item id="2">
@@ -168,7 +167,6 @@
                                 <label>$LOCALIZE[342]</label>
                                 <label2>$INFO[Control.GetLabel(110),, $LOCALIZE[31025]]</label2>
                                 <icon>DefaultVideo.png</icon>
-                                <onclick>noop</onclick>
                                 <onright>111</onright>
                                 <icon />
                             </item>
@@ -177,7 +175,6 @@
                                 <label>$LOCALIZE[20343]</label>
                                 <label2>$INFO[Control.GetLabel(120),, $LOCALIZE[31025]]</label2>
                                 <icon>DefaultTVShows.png</icon>
-                                <onclick>noop</onclick>
                                 <icon />
                             </item>
                             <item id="4">
@@ -185,7 +182,6 @@
                                 <label>$LOCALIZE[33054]</label>
                                 <label2>$INFO[Control.GetLabel(130),, $LOCALIZE[31025]]</label2>
                                 <icon>DefaultTVShows.png</icon>
-                                <onclick>noop</onclick>
                                 <icon />
                             </item>
                             <item id="5">
@@ -193,7 +189,6 @@
                                 <label>$LOCALIZE[20360]</label>
                                 <label2>$INFO[Control.GetLabel(140),, $LOCALIZE[31025]]</label2>
                                 <icon>DefaultTVShows.png</icon>
-                                <onclick>noop</onclick>
                                 <icon />
                             </item>
                             <item id="6">
@@ -201,7 +196,6 @@
                                 <label>$LOCALIZE[344]</label>
                                 <label2>$INFO[Control.GetLabel(210),, $LOCALIZE[31025]]</label2>
                                 <icon>DefaultActor.png</icon>
-                                <onclick>noop</onclick>
                                 <icon />
                             </item>
                             <item id="11">
@@ -209,7 +203,6 @@
                                 <label>$LOCALIZE[20348]</label>
                                 <label2>$INFO[Control.GetLabel(230),, $LOCALIZE[31025]]</label2>
                                 <icon>DefaultDirector.png</icon>
-                                <onclick>noop</onclick>
                                 <icon />
                             </item>
                             <item id="7">
@@ -217,7 +210,6 @@
                                 <label>$LOCALIZE[20389]</label>
                                 <label2>$INFO[Control.GetLabel(150),, $LOCALIZE[31025]]</label2>
                                 <icon>DefaultMusicVideos.png</icon>
-                                <onclick>noop</onclick>
                                 <icon />
                             </item>
                             <item id="8">
@@ -225,7 +217,6 @@
                                 <label>$LOCALIZE[133]</label>
                                 <label2>$INFO[Control.GetLabel(160),, $LOCALIZE[31025]]</label2>
                                 <icon>DefaultActor.png</icon>
-                                <onclick>noop</onclick>
                                 <icon />
                             </item>
                             <item id="9">
@@ -233,7 +224,6 @@
                                 <label>$LOCALIZE[132]</label>
                                 <label2>$INFO[Control.GetLabel(170),, $LOCALIZE[31025]]</label2>
                                 <icon>DefaultMusicAlbums.png</icon>
-                                <onclick>noop</onclick>
                                 <icon />
                             </item>
                             <item id="10">
@@ -241,7 +231,6 @@
                                 <label>$LOCALIZE[134]</label>
                                 <label2>$INFO[Control.GetLabel(180),, $LOCALIZE[31025]]</label2>
                                 <icon>DefaultMusicGenres.png</icon>
-                                <onclick>noop</onclick>
                                 <icon />
                             </item>
                         </content>

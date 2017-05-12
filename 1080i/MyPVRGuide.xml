@@ -219,6 +219,7 @@
                     </control>
                 </control>
             </control>
+            <include>PVRChannelNumberInput</include>
             <include>Submenu</include>
             <include>MainMenu</include>
             <include>Topbar</include>

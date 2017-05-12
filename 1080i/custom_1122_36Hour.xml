@@ -111,7 +111,6 @@
                         <item>
                             <label>$LOCALIZE[31909]</label>
                             <icon />
-                            <onclick>noop</onclick>
                             <visible>String.IsEmpty(Window(weather).Property(36Hour.IsFetched))</visible>
                         </item>
                         <item>
@@ -124,7 +123,6 @@
                             <property name="FeelsLike">$INFO[Window(weather).Property(36Hour.1.FeelsLike)]</property>
                             <property name="Humidity">$INFO[Window(weather).Property(36Hour.1.Humidity)]</property>
                             <property name="Wind">$INFO[Window(weather).Property(36Hour.1.WindSpeed)]$INFO[Window(weather).Property(36Hour.1.WindDirection),  ]$INFO[Window(weather).Property(36Hour.1.WindDegree),  ]</property>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(36Hour.IsFetched))</visible>
                         </item>
                         <item>
@@ -137,7 +135,6 @@
                             <property name="FeelsLike">$INFO[Window(weather).Property(36Hour.2.FeelsLike)]</property>
                             <property name="Humidity">$INFO[Window(weather).Property(36Hour.2.Humidity)]</property>
                             <property name="Wind">$INFO[Window(weather).Property(36Hour.2.WindSpeed)]$INFO[Window(weather).Property(36Hour.2.WindDirection),  ]$INFO[Window(weather).Property(36Hour.2.WindDegree),  ]</property>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(36Hour.IsFetched))</visible>
                         </item>
                         <item>
@@ -150,7 +147,6 @@
                             <property name="FeelsLike">$INFO[Window(weather).Property(36Hour.3.FeelsLike)]</property>
                             <property name="Humidity">$INFO[Window(weather).Property(36Hour.3.Humidity)]</property>
                             <property name="Wind">$INFO[Window(weather).Property(36Hour.3.WindSpeed)]$INFO[Window(weather).Property(36Hour.3.WindDirection),  ]$INFO[Window(weather).Property(36Hour.3.WindDegree),  ]</property>
-                            <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Window(weather).Property(36Hour.IsFetched))</visible>
                         </item>
                     </content>
