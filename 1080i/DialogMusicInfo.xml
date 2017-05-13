@@ -2,7 +2,7 @@
 <window>
     <defaultcontrol always="true">9000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <onload>SetFocus(9000,0)</onload>
+    <onload>SetFocus(9000,0,absolute)</onload>
     <controls>
         <control type="group">
             <animation effect="slide" start="1200" end="0" time="300">WindowOpen</animation>

@@ -225,7 +225,7 @@
                 <top>58</top>
                 <control type="grouplist" id="9000">
                     <width>400</width>
-                    <height>380</height>
+                    <height>460</height>
                     <onleft>12</onleft>
                     <onright>13</onright>
                     <onup>9000</onup>
@@ -267,6 +267,15 @@
                         <description>Delete Group</description>
                         <width>400</width>
                         <label>31505</label>
+                        <align>center</align>
+                        <font>font15_title</font>
+                        <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
+                    </control>
+                    <control type="togglebutton" id="34">
+                        <description>Radio/TV</description>
+                        <width>400</width>
+                        <label>19024</label>
+                        <altlabel>19023</altlabel>
                         <align>center</align>
                         <font>font15_title</font>
                         <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
