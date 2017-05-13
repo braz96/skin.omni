@@ -7,6 +7,7 @@
         <property name="target" tag="property" attribute="name|widgetTarget" />
         <property name="sortby" tag="property" attribute="name|widgetSortBy" />
         <property name="sortdirection" tag="property" attribute="name|widgetSortDirection" />
+        <property name="widgetlimit" tag="property" attribute="name|widgetLimit" />
         <property name="path"></property>
         <property name="target"></property>
         <controls>
@@ -104,7 +105,7 @@
                         <param name="onright">8011$SKINSHORTCUTS[id]</param>
                         <param name="orientation">vertical</param>
                     </include>
-                    <content limit="$VAR[WidgetLimit]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sortdirection]" target="$SKINSHORTCUTS[target]">$SKINSHORTCUTS[path]</content>
+                    <content limit="$SKINSHORTCUTS[widgetlimit]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sortdirection]" target="$SKINSHORTCUTS[target]">$SKINSHORTCUTS[path]</content>
                 </control>
                 <control type="image">
                     <visible>Control.HasFocus(8012$SKINSHORTCUTS[id]) + !Container(8012$SKINSHORTCUTS[id]).IsUpdating</visible>
