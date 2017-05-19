@@ -55,6 +55,7 @@
         <value condition="Window.IsActive(home)">$LOCALIZE[10000]</value>
         <value condition="!String.IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
         <value condition="Window.IsActive(1119)">$LOCALIZE[24001]</value>
+        <value condition="Window.IsActive(games)">$LOCALIZE[15016]</value>
         <value>$INFO[System.CurrentWindow]</value>
     </variable>
     <variable name="HeaderSubLabel">

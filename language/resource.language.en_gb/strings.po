@@ -234,7 +234,9 @@ msgctxt "#31089"
 msgid "Play item on startup"
 msgstr ""
 
-#empty string with id 31090
+msgctxt "#31090"
+msgid "Game add-ons"
+msgstr ""
 
 msgctxt "#31091"
 msgid "Select items"

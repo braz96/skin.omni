@@ -212,6 +212,10 @@ msgctxt "#31089"
 msgid "Play item on startup"
 msgstr "Play item on startup"
 
+msgctxt "#31090"
+msgid "Game add-ons"
+msgstr "Game add-ons"
+
 msgctxt "#31091"
 msgid "Select items"
 msgstr "Select items"

@@ -176,6 +176,14 @@
                                 <visible>System.Platform.Android</visible>
                             </item>
                             <item id="6">
+                                <label>$LOCALIZE[31090]</label>
+                                <icon>DefaultAddonGame.png</icon>
+                                <property name="AppsTarget">games</property>
+                                <property name="AppsContent">addons://sources/game/</property>
+                                <property name="AppsSortBy">lastused</property>
+                                <onclick>ActivateWindow(Games,Addons,return)</onclick>
+                            </item>
+                            <item id="7">
                                 <label>$LOCALIZE[21452]</label>
                                 <icon>DefaultFolder.png</icon>
                                 <property name="AppsTarget">addonbrowser</property>
