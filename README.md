@@ -1,7 +1,7 @@
 ![banner] (http://i.imgur.com/69kkmtA.jpg)
 <h1>OMNI</h1>
 
-This is a new skin for Kodi 17 called OMNI for its omnipresent menus. Users of Mimic will recognize that it was the base for this skin. OMNI is much more streamlined, however, and doesn't have as many customization options. Here's what you need to know:
+This is a skin for Kodi called OMNI for its omnipresent menus. Users of Mimic will recognize that it was the base for this skin. OMNI is much more streamlined, however, and doesn't have as many customization options. Here's what you need to know:
 
 - The main menu and submenus are accessible from every window. Press left from the main menu and everything will slide to the right, revealing the submenu.
 - The main menu and info dialog menus use icons only. Although it may not be absolutely clear at first what some options do, you will quickly figure out what they are.
@@ -10,6 +10,11 @@ This is a new skin for Kodi 17 called OMNI for its omnipresent menus. Users of M
 
 If you would like to express your appreciation for this skin, please consider a donation to the XBMC Foundation. http://kodi.tv/contribute/donate/
 
+
+***
+**2.0.0**
+- Updated for Kodi 18 Leia.
+- Removed support for script.colorbox.
 
 ***
 **1.2.0**
