@@ -31,4 +31,12 @@
 		<thumb/>
 		<action>ActivateWindow(Programs,addons://sources/executable/,return)</action>
 	</shortcut>
+	<shortcut>
+		<defaultID>31090</defaultID>
+		<label>31090</label>
+		<label2>Games</label2>
+		<icon>DefaultAddonGame.png</icon>
+		<thumb/>
+		<action>ActivateWindow(Games,addons://sources/game/,return)</action>
+	</shortcut>
 </shortcuts>
