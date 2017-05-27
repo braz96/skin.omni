@@ -565,4 +565,43 @@
         <value condition="System.Platform.Linux | System.Platform.Linux.RaspberryPi">special://skin/extras/icons/linux.png</value>
         <value>special://skin/extras/icons/apple.png</value>
     </variable>
+    <variable name="Col_lyr1">
+        <value condition="String.EndsWith(Container(110).Currentitem,1)">ffffea4f</value>
+        <value condition="String.EndsWith(Container(110).Currentitem,2)">ffff4d99</value>
+        <value condition="String.EndsWith(Container(110).Currentitem,3)">ffff8554</value>
+        <value condition="String.EndsWith(Container(110).Currentitem,4)">ff4a7eb8</value>
+        <value condition="String.EndsWith(Container(110).Currentitem,5)">ffFF5354</value>
+        <value condition="String.EndsWith(Container(110).Currentitem,6)">ff46e046</value>
+        <value condition="String.EndsWith(Container(110).Currentitem,7)">ffFFEA4F</value>
+        <value condition="String.EndsWith(Container(110).Currentitem,8)">ffFF4D99</value>
+        <value condition="String.EndsWith(Container(110).Currentitem,9)">ffFF8655</value>
+        <value>ff4A7EB8</value>
+    </variable>
+    <variable name="Col_lyr2">
+        <value condition="String.EndsWith(Container(110).Currentitem,1)">ff46e046</value>
+        <value condition="String.EndsWith(Container(110).Currentitem,2)">ffffea4f</value>
+        <value condition="String.EndsWith(Container(110).Currentitem,3)">ff46e046</value>
+        <value condition="String.EndsWith(Container(110).Currentitem,4)">ffFF8655</value>
+        <value condition="String.EndsWith(Container(110).Currentitem,5)">ff46E046</value>
+        <value condition="String.EndsWith(Container(110).Currentitem,6)">ffffea4f</value>
+        <value condition="String.EndsWith(Container(110).Currentitem,7)">ffFF8655</value>
+        <value condition="String.EndsWith(Container(110).Currentitem,8)">ff46E046</value>
+        <value condition="String.EndsWith(Container(110).Currentitem,9)">ffFFEA4F</value>
+        <value>ffFF5354</value>
+    </variable>
+    <variable name="Col_lyr3">
+        <value condition="String.EndsWith(Container(110).Currentitem,1)">ff4a7eb8</value>
+        <value condition="String.EndsWith(Container(110).Currentitem,2)">ff4a80b9</value>
+        <value condition="String.EndsWith(Container(110).Currentitem,3)">ffff4d99</value>
+        <value condition="String.EndsWith(Container(110).Currentitem,4)">ffFF4D99</value>
+        <value condition="String.EndsWith(Container(110).Currentitem,5)">ffFF8655</value>
+        <value condition="String.EndsWith(Container(110).Currentitem,6)">ffff4d99</value>
+        <value condition="String.EndsWith(Container(110).Currentitem,7)">ffFF5354</value>
+        <value condition="String.EndsWith(Container(110).Currentitem,8)">ff4A7EB8</value>
+        <value condition="String.EndsWith(Container(110).Currentitem,9)">ff46E046</value>
+        <value>ffFFEA4F</value>
+    </variable>
+    <variable name="Col_lyr4">
+        <value>fffffaf0</value>
+    </variable>
 </includes>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <allowoverlay>no</allowoverlay>
     <coordinates>
         <system>1</system>
         <left>0</left>
@@ -8,42 +7,20 @@
     </coordinates>
     <controls>
         <control type="group">
-            <!-- ** Required ** Do not change <id> or <type> (Text box for lyrics) -->
-            <control type="textbox" id="100">
-                <description>textarea</description>
-                <left>45</left>
-                <top>100</top>
-                <width>1830</width>
-                <height>508</height>
-                <align>center</align>
-                <font>font12</font>
-            </control>
-            <control type="spincontrol" id="101">
-                <description>Next page button</description>
-                <include>HiddenObject</include>
-                <left>1800</left>
-                <top>470</top>
-                <subtype>page</subtype>
-                <onleft>101</onleft>
-                <onright>101</onright>
-                <ondown>101</ondown>
-                <onup>101</onup>
-                <textcolor>labelheader</textcolor>
-                <showonepage>true</showonepage>
-                <!--<visible>Control.IsVisible(100)</visible>-->
-            </control>
+            <animation effect="slide" end="0,0" start="0,-540" time="250" tween="quadratic" easing="out">WindowOpen</animation>
+            <animation effect="slide" start="0,0" end="0,-540" time="250" tween="quadratic" easing="out">WindowClose</animation>
             <!-- ** Required ** Do not change <id> or <type> (Smooth scrolling list for lyrics) -->
             <control type="list" id="110">
-                <left>45</left>
-                <top>45</top>
+                <left>60</left>
+                <top>65</top>
                 <width>1830</width>
                 <height>450</height>
                 <onleft>111</onleft>
                 <onright>111</onright>
                 <onup>110</onup>
                 <ondown>110</ondown>
-                <!--<pagecontrol>101</pagecontrol>-->
-                <scrolltime tween="quadratic" easing="out">200</scrolltime>
+                <scrolltime>200</scrolltime>
+                <pagecontrol>111</pagecontrol>
                 <itemlayout height="50">
                     <control type="label">
                         <width>1830</width>
@@ -66,218 +43,472 @@
                 </focusedlayout>
             </control>
             <!-- ** Required ** Do not change <id> or <type> (Song Chooser if it gets it wrong) -->
-            
-            <control type="label">
-                <description>Scraper label</description>
-                <left>870</left>
-                <top>1020</top>
-                <width>825</width>
-                <height>45</height>
-                <label>$LOCALIZE[31205] - $INFO[Control.GetLabel(200)]</label>
-                <font>font13_title</font>
-                <align>right</align>
-                <visible>false</visible>
+            <control type="group">
+                <visible>Control.IsVisible(120) + Integer.IsGreater(Container(120).NumItems,0)</visible>
+                <animation effect="slide" start="0,708" end="0,0" time="300" tween="quadratic" easing="out">Visible</animation>
+                <animation effect="slide" start="0,0" end="0,708" time="300" tween="quadratic" easing="out">Hidden</animation>
+                <left>0</left>
+                <top>377</top>
+                <control type="image">
+                    <width>1920</width>
+                    <height>708</height>
+                    <texture colordiffuse="background">$VAR[CommonBackgroundOverlay]</texture>
+                </control>
+                <control type="image">
+                    <top>8</top>
+                    <width>1920</width>
+                    <height>700</height>
+                    <texture colordiffuse="background">dialog.png</texture>
+                </control>
+                <control type="label" id="1">
+                    <include>HiddenObject</include>
+                </control>
+                <control type="list" id="120">
+                    <left>50</left>
+                    <top>58</top>
+                    <width>1370</width>
+                    <height>600</height>
+                    <onup>120</onup>
+                    <ondown>120</ondown>
+                    <onleft>9000</onleft>
+                    <onright condition="Container(120).HasNext | Container(120).HasPrevious">60</onright>
+                    <onright condition="![Container(120).HasNext | Container(120).HasPrevious]">9000</onright>
+                    <pagecontrol>60</pagecontrol>
+                    <scrolltime tween="quadratic" easing="out">200</scrolltime>
+                    <itemlayout height="100" width="1370">
+                        <control type="label">
+                            <width>1370</width>
+                            <height>100</height>
+                            <textoffsetx>20</textoffsetx>
+                            <font>font14</font>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label">
+                            <width>1370</width>
+                            <height>100</height>
+                            <textoffsetx>20</textoffsetx>
+                            <font>font14</font>
+                            <align>right</align>
+                            <label>$INFO[ListItem.Label2]</label>
+                        </control>
+                        <control type="label">
+                            <width>1370</width>
+                            <height>100</height>
+                            <align>right</align>
+                            <font>IconSmall</font>
+                            <textoffsetx>20</textoffsetx>
+                            <label>A</label>
+                            <visible>ListItem.IsSelected</visible>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="100" width="1370">
+                        <control type="image">
+                            <width>1370</width>
+                            <height>100</height>
+                            <texture>selecteditem_bg.png</texture>
+                            <colordiffuse>highlight</colordiffuse>
+                            <visible>Control.HasFocus(120)</visible>
+                            <include>VisibleFadeEffect</include>
+                        </control>
+                        <control type="label">
+                            <width>1370</width>
+                            <height>100</height>
+                            <textoffsetx>20</textoffsetx>
+                            <font>font14</font>
+                            <scroll>true</scroll>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label">
+                            <width>1370</width>
+                            <height>100</height>
+                            <textoffsetx>20</textoffsetx>
+                            <font>font14</font>
+                            <align>right</align>
+                            <label>$INFO[ListItem.Label2]</label>
+                        </control>
+                        <control type="label">
+                            <width>1370</width>
+                            <height>100</height>
+                            <align>right</align>
+                            <font>IconSmall</font>
+                            <textoffsetx>20</textoffsetx>
+                            <label>A</label>
+                            <visible>ListItem.IsSelected</visible>
+                        </control>
+                    </focusedlayout>
+                </control>
+                <control type="scrollbar" id="60">
+                    <visible allowhiddenfocus="true">Control.HasFocus(60) | Control.HasFocus(120)</visible>
+                    <animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
+                    <left>1430</left>
+                    <top>58</top>
+                    <height>600</height>
+                    <width>10</width>
+                    <onleft>120</onleft>
+                    <onright>9000</onright>
+                    <ondown>60</ondown>
+                    <onup>60</onup>
+                </control>
+                <control type="button" id="9000">
+                    <description>Close button</description>
+                    <top>58</top>
+                    <left>1470</left>
+                    <font>font15_title</font>
+                    <align>center</align>
+                    <width>400</width>
+                    <label>15067</label>
+                    <onleft>120</onleft>
+                    <onright>120</onright>
+                    <onclick>Close</onclick>
+                    <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
+                </control>
             </control>
             <control type="label" id="200">
                 <description>Scraper label</description>
                 <include>HiddenObject</include>
             </control>
         </control>
-        <!-- ** Required ** Do not change <id> or <type> -->
         <control type="group">
             <visible>Window.IsActive(visualisation)</visible>
-            <visible>!String.IsEmpty(Container(110).ListItem.Label) + !String.Contains(Container(110).ListItem.Label,@) + !String.Contains(Container(110).ListItem.Label,chorus) + !String.Contains(Container(110).ListItem.Label,lrc) + !String.Contains(Container(110).ListItem.Label,lyric) + !String.Contains(Container(110).ListItem.Label,qq) + !String.Contains(Container(110).ListItem.Label,www)</visible>
+            <visible>!String.IsEmpty(Container(110).ListItem.Label)</visible>
+            <top>50</top>
             <control type="group">
                 <visible>[!String.IsEmpty(Window(Home).Property(culrc.islrc)) + Integer.IsGreater(Container(110).ListItem.Property(duration),299) + !Integer.IsGreater(Container(110).ListItem.Property(duration),1449)] | String.IsEmpty(Container(110).ListItem.Property(part4))</visible>
-                <left>510</left>
-                <top>30</top>
-                <!--Short LINEA 1 & 6-->
-                <control type="group">
-                    <animation effect="rotate" center="auto" start="4" end="4" time="0" condition="true">Conditional</animation>
-                    <control type="textbox">
-                        <visible>!Container(110).OnNext + !Container(110).OnPrevious + [String.EndsWith(Container(110).Currentitem,1) | String.EndsWith(Container(110).Currentitem,6)]</visible>
-                        <animation effect="slide" start="0,-600" end="0,0" time="200" tween="sine" easing="out" reversible="false">Visible</animation>                  
-                        <left>-1</left>
-                        <top>-1</top>
-                        <include>line1</include>
-                        <label>$INFO[Container(110).ListItem.Property(part1)] $INFO[Container(110).ListItem.Property(part2)] $INFO[Container(110).ListItem.Property(part3)] $INFO[Container(110).ListItem.Property(part4)]</label>
-                        <textcolor>black</textcolor>
-                    </control>
-                    <control type="textbox">
-                        <visible>!Container(110).OnNext + !Container(110).OnPrevious + [String.EndsWith(Container(110).Currentitem,1) | String.EndsWith(Container(110).Currentitem,6)]</visible>
-                        <animation effect="slide" start="0,-600" end="0,0" time="200" tween="sine" easing="out" reversible="false">Visible</animation>
-                        <left>2</left>
-                        <top>2</top>
-                        <include>line1</include>
-                        <label>$INFO[Container(110).ListItem.Property(part1)] $INFO[Container(110).ListItem.Property(part2)] $INFO[Container(110).ListItem.Property(part3)] $INFO[Container(110).ListItem.Property(part4)]</label>
-                        <textcolor>black</textcolor>
-                    </control>
-                    <control type="textbox">
-                        <visible>!Container(110).OnNext + !Container(110).OnPrevious + [String.EndsWith(Container(110).Currentitem,1) | String.EndsWith(Container(110).Currentitem,6)]</visible>
-                        <animation effect="slide" start="0,-600" end="0,0" time="200" tween="sine" easing="out" reversible="false">Visible</animation>
-                        <left>0</left>
-                        <top>0</top>
-                        <include>line1</include>
-                        <shadowcolor>black</shadowcolor>
-                        <label>[COLOR=ff89d5e0]$INFO[Container(110).ListItem.Property(part1)] [/COLOR][COLOR=ffc1ddcc]$INFO[Container(110).ListItem.Property(part2)] [/COLOR][COLOR=ffe9e6bd]$INFO[Container(110).ListItem.Property(part3)] [/COLOR][COLOR=fff4ece1]$INFO[Container(110).ListItem.Property(part4)][/COLOR]</label>
-                    </control>
+                <!--Short LINE 1-->
+                <control type="grouplist">
+                    <left>0</left>
+                    <top>199</top>
+                    <width>1920</width>
+                    <height>100</height>
+                    <itemgap>10</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Line1"></include>
                 </control>
-                <!--Short LINEA 3 & 8-->
-                <control type="group">
-                    <animation effect="rotate" center="auto" start="4" end="4" time="0" condition="true">Conditional</animation>
-                    <control type="textbox">
-                        <visible>!Container(110).OnNext + !Container(110).OnPrevious + [String.EndsWith(Container(110).Currentitem,3) | String.EndsWith(Container(110).Currentitem,8)]</visible>
-                        <animation effect="slide" start="-900,0" end="0,0" time="200" tween="sine" easing="out" reversible="false">Visible</animation>
-                        <label>$INFO[Container(110).ListItem.Property(part1)] $INFO[Container(110).ListItem.Property(part2)] $INFO[Container(110).ListItem.Property(part3)][CR]$INFO[Container(110).ListItem.Property(part4)]</label>
-                        <include>line3</include>
-                        <left>-1</left>
-                        <top>-1</top>
-                        <textcolor>black</textcolor>
-                    </control>
-                    <control type="textbox">
-                        <visible>!Container(110).OnNext + !Container(110).OnPrevious + [String.EndsWith(Container(110).Currentitem,3) | String.EndsWith(Container(110).Currentitem,8)]</visible>
-                        <animation effect="slide" start="-900,0" end="0,0" time="200" tween="sine" easing="out" reversible="false">Visible</animation>
-                        <label>$INFO[Container(110).ListItem.Property(part1)] $INFO[Container(110).ListItem.Property(part2)] $INFO[Container(110).ListItem.Property(part3)][CR]$INFO[Container(110).ListItem.Property(part4)]</label>
-                        <include>line3</include>
-                        <left>3</left>
-                        <top>3</top>
-                        <textcolor>black</textcolor>
-                    </control>
-                    <control type="textbox">
-                        <visible>!Container(110).OnNext + !Container(110).OnPrevious + [String.EndsWith(Container(110).Currentitem,3) | String.EndsWith(Container(110).Currentitem,8)]</visible>
-                        <animation effect="slide" start="-900,0" end="0,0" time="200" tween="sine" easing="out" reversible="false">Visible</animation>
-                        <label>[COLOR=ff78a8ff]$INFO[Container(110).ListItem.Property(part1)] [/COLOR][COLOR=ff15a58f]$INFO[Container(110).ListItem.Property(part2)] [/COLOR][COLOR=ffc4e125]$INFO[Container(110).ListItem.Property(part3)][CR][/COLOR][COLOR=ffd9e898]$INFO[Container(110).ListItem.Property(part4)][/COLOR]</label>
-                        <include>line3</include>
-                        <left>0</left>
-                        <top>0</top>
-                        <shadowcolor>black</shadowcolor>
-                    </control>
+                <control type="grouplist">
+                    <left>4</left>
+                    <top>203</top>
+                    <width>1920</width>
+                    <height>100</height>
+                    <itemgap>10</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Line1"></include>
                 </control>
-                <!--Short LINEA 5 & 0-->
-                <control type="group">
-                    <animation effect="rotate" center="auto" start="4" end="4" time="0" condition="true">Conditional</animation>
-                        <control type="textbox">
-                        <visible>!Container(110).OnNext + !Container(110).OnPrevious + [String.EndsWith(Container(110).Currentitem,5) | String.EndsWith(Container(110).Currentitem,0)]</visible>
-                        <animation effect="zoom" center="auto" start="0" end="100" time="200" reversible="false">Visible</animation>
-                        <left>-1</left>
-                        <top>-1</top>
-                        <width>900</width>
-                        <height>600</height>
-                        <label>$INFO[Container(110).ListItem.Property(part1)] $INFO[Container(110).ListItem.Property(part2)] $INFO[Container(110).ListItem.Property(part3)][CR]$INFO[Container(110).ListItem.Property(part4)]</label>
-                        <font>lyrics5s</font>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <textcolor>black</textcolor>
-                    </control>
-                    <control type="textbox">
-                        <visible>!Container(110).OnNext + !Container(110).OnPrevious + [String.EndsWith(Container(110).Currentitem,5) | String.EndsWith(Container(110).Currentitem,0)]</visible>
-                        <animation effect="zoom" center="auto" start="0" end="100" time="200" reversible="false">Visible</animation>
-                        <left>2</left>
-                        <top>2</top>
-                        <width>900</width>
-                        <height>600</height>
-                        <label>$INFO[Container(110).ListItem.Property(part1)] $INFO[Container(110).ListItem.Property(part2)] $INFO[Container(110).ListItem.Property(part3)][CR]$INFO[Container(110).ListItem.Property(part4)]</label>
-                        <font>lyrics5s</font>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <textcolor>black</textcolor>
-                    </control>
-                    <control type="textbox">
-                        <visible>!Container(110).OnNext + !Container(110).OnPrevious + [String.EndsWith(Container(110).Currentitem,5) | String.EndsWith(Container(110).Currentitem,0)]</visible>
-                        <animation effect="zoom" center="auto" start="0" end="100" time="200" reversible="false">Visible</animation>
-                        <left>0</left>
-                        <top>0</top>
-                        <width>900</width>
-                        <height>600</height>
-                        <font>lyrics5s</font>
-                        <shadowcolor>black</shadowcolor>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <label>[COLOR=ffFF9800]$INFO[Container(110).ListItem.Property(part1)] [/COLOR][COLOR=fffffaf0]$INFO[Container(110).ListItem.Property(part2)] [/COLOR][COLOR=ff00BCD4]$INFO[Container(110).ListItem.Property(part3)][/COLOR][CR][COLOR=ffF06292]$INFO[Container(110).ListItem.Property(part4)][/COLOR]</label>
-                    </control>
+                <control type="grouplist">
+                    <left>1</left>
+                    <top>200</top>
+                    <width>1920</width>
+                    <height>100</height>
+                    <itemgap>10</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Line1">
+                        <param name="col11">$VAR[Col_lyr1]</param>
+                        <param name="col12">$VAR[Col_lyr2]</param>
+                        <param name="col13">$VAR[Col_lyr3]</param>
+                    </include>
                 </control>
-                <!--Short LINEA 7 & 2-->
-                <control type="group">
-                    <animation effect="rotate" center="auto" start="4" end="4" time="0" condition="true">Conditional</animation>
-                    <control type="textbox">
-                        <visible>!Container(110).OnNext + !Container(110).OnPrevious + [String.EndsWith(Container(110).Currentitem,7) | String.EndsWith(Container(110).Currentitem,2)]</visible>
-                        <animation effect="slide" start="900,0" end="0,0" time="200" tween="sine" easing="out" reversible="false">Visible</animation>
-                        <left>-1</left>
-                        <top>-1</top>
-                        <include>line7</include>
-                        <label>$INFO[Container(110).ListItem.Property(part1)] $INFO[Container(110).ListItem.Property(part2)] $INFO[Container(110).ListItem.Property(part3)][CR]$INFO[Container(110).ListItem.Property(part4)]</label>
-                        <textcolor>black</textcolor>
-                    </control>
-                    <control type="textbox">
-                        <visible>!Container(110).OnNext + !Container(110).OnPrevious + [String.EndsWith(Container(110).Currentitem,7) | String.EndsWith(Container(110).Currentitem,2)]</visible>
-                        <animation effect="slide" start="900,0" end="0,0" time="200" tween="sine" easing="out" reversible="false">Visible</animation>
-                        <left>2</left>
-                        <top>2</top>
-                        <include>line7</include>
-                        <label>$INFO[Container(110).ListItem.Property(part1)] $INFO[Container(110).ListItem.Property(part2)] $INFO[Container(110).ListItem.Property(part3)][CR]$INFO[Container(110).ListItem.Property(part4)]</label>
-                        <textcolor>black</textcolor>
-                    </control>
-                    <control type="textbox">
-                        <visible>!Container(110).OnNext + !Container(110).OnPrevious + [String.EndsWith(Container(110).Currentitem,7) | String.EndsWith(Container(110).Currentitem,2)]</visible>
-                        <animation effect="slide" start="900,0" end="0,0" time="200" tween="sine" easing="out" reversible="false">Visible</animation>
-                        <left>0</left>
-                        <top>0</top>
-                        <include>line7</include>
-                        <shadowcolor>black</shadowcolor>
-                        <label>[COLOR=ff99B898]$INFO[Container(110).ListItem.Property(part1)] [/COLOR][COLOR=ffFF847C]$INFO[Container(110).ListItem.Property(part2)] [/COLOR][COLOR=ffE84A5F]$INFO[Container(110).ListItem.Property(part3)][/COLOR][CR][COLOR=ffFECEA8]$INFO[Container(110).ListItem.Property(part4)][/COLOR]</label>
-                    </control>
+                <include content="Line1b">
+                    <param name="1b_left">509</param>
+                    <param name="1b_top">223</param>
+                </include>
+                <include content="Line1b">
+                    <param name="1b_left">513</param>
+                    <param name="1b_top">227</param>
+                </include>
+                <include content="Line1b">
+                    <param name="col14">$VAR[Col_lyr4]</param>
+                </include>
+                <!--Short LINE 2-->
+                <include content="Line2">
+                </include>
+                <include content="Line2">
+                    <param name="2_left">14</param>
+                    <param name="2_top">4</param>
+                </include>
+                <include content="Line2">
+                    <param name="col21">$VAR[Col_lyr1]</param>
+                    <param name="col22">$VAR[Col_lyr2]</param>
+                    <param name="col23">$VAR[Col_lyr3]</param>
+                    <param name="col24">$VAR[Col_lyr4]</param>
+                    <param name="2_left">11</param>
+                    <param name="2_top">1</param>
+                </include>
+                <!--Short LINE 3-->
+                <control type="grouplist">
+                    <left>0</left>
+                    <top>199</top>
+                    <width>1920</width>
+                    <height>120</height>
+                    <itemgap>3</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Line3"></include>
                 </control>
-                <!--Short LINEA 9 & 4-->
-                <control type="group">
-                    <animation effect="rotate" center="auto" start="4" end="4" time="0" condition="true">Conditional</animation>
-                    <control type="textbox">
-                        <visible>!Container(110).OnNext + !Container(110).OnPrevious + [String.EndsWith(Container(110).Currentitem,9) | String.EndsWith(Container(110).Currentitem,4)]</visible>
-                        <animation effect="zoom" center="auto" start="400" end="100" time="200" reversible="false">Visible</animation>
-                        <left>-1</left>
-                        <top>-1</top>
-                        <include>line9</include>
-                        <label>$INFO[Container(110).ListItem.Property(part1)] $INFO[Container(110).ListItem.Property(part2)] $INFO[Container(110).ListItem.Property(part3)][CR]$INFO[Container(110).ListItem.Property(part4)]</label>
-                        <textcolor>black</textcolor>
-                    </control>
-                    <control type="textbox">
-                        <visible>!Container(110).OnNext + !Container(110).OnPrevious + [String.EndsWith(Container(110).Currentitem,9) | String.EndsWith(Container(110).Currentitem,4)]</visible>
-                        <animation effect="zoom" center="auto" start="400" end="100" time="200" reversible="false">Visible</animation>
-                        <left>2</left>
-                        <top>2</top>
-                        <include>line9</include>
-                        <label>$INFO[Container(110).ListItem.Property(part1)] $INFO[Container(110).ListItem.Property(part2)] $INFO[Container(110).ListItem.Property(part3)][CR]$INFO[Container(110).ListItem.Property(part4)]</label>
-                        <textcolor>black</textcolor>
-                    </control>
-                    <control type="textbox">
-                        <visible>!Container(110).OnNext + !Container(110).OnPrevious + [String.EndsWith(Container(110).Currentitem,9) | String.EndsWith(Container(110).Currentitem,4)]</visible>
-                        <animation effect="zoom" center="auto" start="400" end="100" time="200" reversible="false">Visible</animation>
-                        <left>0</left>
-                        <top>0</top>
-                        <include>line9</include>
-                        <shadowcolor>black</shadowcolor>
-                        <label>[COLOR=ffFF4E50]$INFO[Container(110).ListItem.Property(part1)] [/COLOR][COLOR=ffFC913A]$INFO[Container(110).ListItem.Property(part2)] [/COLOR][COLOR=ffF9D423]$INFO[Container(110).ListItem.Property(part3)][/COLOR][CR][COLOR=ffEDE574]$INFO[Container(110).ListItem.Property(part4)][/COLOR]</label>
-                    </control>
+                <control type="grouplist">
+                    <left>4</left>
+                    <top>203</top>
+                    <width>1920</width>
+                    <height>120</height>
+                    <itemgap>3</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Line3"></include>
+                </control>
+                <control type="grouplist">
+                    <left>1</left>
+                    <top>200</top>
+                    <width>1920</width>
+                    <height>120</height>
+                    <itemgap>3</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Line3">
+                        <param name="col31">$VAR[Col_lyr1]</param>
+                        <param name="col32">$VAR[Col_lyr2]</param>
+                        <param name="col33">$VAR[Col_lyr3]</param>
+                    </include>
+                </control>
+                <include content="Line3b">
+                    <param name="3b_left">509</param>
+                    <param name="3b_top">229</param>
+                </include>
+                <include content="Line3b">
+                    <param name="3b_left">513</param>
+                    <param name="3b_top">233</param>
+                </include>
+                <include content="Line3b">
+                    <param name="col34">$VAR[Col_lyr4]</param>
+                </include>
+                <!--Short LINE 4-->
+                <include content="Line4"></include>
+                <include content="Line4">
+                    <param name="4_left">4</param>
+                    <param name="4_top">254</param>
+                </include>
+                <include content="Line4">
+                    <param name="col41">$VAR[Col_lyr1]</param>
+                    <param name="col42">$VAR[Col_lyr2]</param>
+                    <param name="col43">$VAR[Col_lyr3]</param>
+                    <param name="col44">$VAR[Col_lyr4]</param>
+                    <param name="4_left">1</param>
+                    <param name="4_top">251</param>
+                </include>
+                <!--Short LINE 5-->
+                <control type="grouplist">
+                    <left>0</left>
+                    <top>99</top>
+                    <width>1920</width>
+                    <height>350</height>
+                    <itemgap>10</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Line5"></include>
+                </control>
+                <control type="grouplist">
+                    <left>4</left>
+                    <top>103</top>
+                    <width>1920</width>
+                    <height>350</height>
+                    <itemgap>10</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Line5"></include>
+                </control>
+                <control type="grouplist">
+                    <left>1</left>
+                    <top>100</top>
+                    <width>1920</width>
+                    <height>350</height>
+                    <itemgap>10</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Line5">
+                        <param name="col51">$VAR[Col_lyr1]</param>
+                        <param name="col52">$VAR[Col_lyr2]</param>
+                        <param name="col53">$VAR[Col_lyr3]</param>
+                        <param name="col54">$VAR[Col_lyr4]</param>
+                    </include>
+                </control>
+                <!--Short LINE 6-->
+                <control type="grouplist">
+                    <left>0</left>
+                    <top>199</top>
+                    <width>1920</width>
+                    <height>100</height>
+                    <itemgap>10</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Line6"></include>
+                </control>
+                <control type="grouplist">
+                    <left>4</left>
+                    <top>203</top>
+                    <width>1920</width>
+                    <height>100</height>
+                    <itemgap>10</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Line6"></include>
+                </control>
+                <control type="grouplist">
+                    <left>1</left>
+                    <top>200</top>
+                    <width>1920</width>
+                    <height>100</height>
+                    <itemgap>10</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Line6">
+                        <param name="col61">$VAR[Col_lyr1]</param>
+                        <param name="col62">$VAR[Col_lyr2]</param>
+                        <param name="col63">$VAR[Col_lyr3]</param>
+                    </include>
+                </control>
+                <include content="Line6b">
+                    <param name="6b_left">509</param>
+                    <param name="6b_top">223</param>
+                </include>
+                <include content="Line6b">
+                    <param name="6b_left">513</param>
+                    <param name="6b_top">227</param>
+                </include>
+                <include content="Line6b">
+                    <param name="col64">$VAR[Col_lyr4]</param>
+                </include>
+                <!--Short LINE 7-->
+                <include content="Line7"></include>
+                <include content="Line7">
+                    <param name="7_left">14</param>
+                    <param name="7_top">4</param>
+                </include>
+                <include content="Line7">
+                    <param name="col71">$VAR[Col_lyr1]</param>
+                    <param name="col72">$VAR[Col_lyr2]</param>
+                    <param name="col73">$VAR[Col_lyr3]</param>
+                    <param name="col74">$VAR[Col_lyr4]</param>
+                    <param name="7_left">11</param>
+                    <param name="7_top">1</param>
+                </include>
+                <!--Short LINE 8-->
+                <control type="grouplist">
+                    <left>0</left>
+                    <top>199</top>
+                    <width>1920</width>
+                    <height>120</height>
+                    <itemgap>3</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Line8"></include>
+                </control>
+                <control type="grouplist">
+                    <left>4</left>
+                    <top>203</top>
+                    <width>1920</width>
+                    <height>120</height>
+                    <itemgap>3</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Line8"></include>
+                </control>
+                <control type="grouplist">
+                    <left>1</left>
+                    <top>200</top>
+                    <width>1920</width>
+                    <height>120</height>
+                    <itemgap>3</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Line8">
+                        <param name="col81">$VAR[Col_lyr1]</param>
+                        <param name="col82">$VAR[Col_lyr2]</param>
+                        <param name="col83">$VAR[Col_lyr3]</param>
+                    </include>
+                </control>
+                <include content="Line8b">
+                    <param name="8b_left">509</param>
+                    <param name="8b_top">229</param>
+                </include>
+                <include content="Line8b">
+                    <param name="8b_left">513</param>
+                    <param name="8b_top">233</param>
+                </include>
+                <include content="Line8b">
+                    <param name="col84">$VAR[Col_lyr4]</param>
+                </include>
+                <!--Short LINE 9-->
+                <include content="Line9"></include>
+                <include content="Line9">
+                    <param name="9_left">4</param>
+                    <param name="9_top">254</param>
+                </include>
+                <include content="Line9">
+                    <param name="col91">$VAR[Col_lyr1]</param>
+                    <param name="col92">$VAR[Col_lyr2]</param>
+                    <param name="col93">$VAR[Col_lyr3]</param>
+                    <param name="col94">$VAR[Col_lyr4]</param>
+                    <param name="9_left">1</param>
+                    <param name="9_top">251</param>
+                </include>
+                <!--Short LINE 0-->
+                <control type="grouplist">
+                    <left>0</left>
+                    <top>99</top>
+                    <width>1920</width>
+                    <height>350</height>
+                    <itemgap>10</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Line0"></include>
+                </control>
+                <control type="grouplist">
+                    <left>4</left>
+                    <top>103</top>
+                    <width>1920</width>
+                    <height>350</height>
+                    <itemgap>10</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Line0"></include>
+                </control>
+                <control type="grouplist">
+                    <left>1</left>
+                    <top>100</top>
+                    <width>1920</width>
+                    <height>350</height>
+                    <itemgap>10</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Line0">
+                        <param name="col01">$VAR[Col_lyr1]</param>
+                        <param name="col02">$VAR[Col_lyr2]</param>
+                        <param name="col03">$VAR[Col_lyr3]</param>
+                        <param name="col04">$VAR[Col_lyr4]</param>
+                    </include>
                 </control>
             </control>  
             <control type="group">
                 <visible>!String.IsEmpty(Container(110).ListItem.Property(part4)) + [Integer.IsGreater(Container(110).ListItem.Property(duration),1449) | String.IsEmpty(Window(Home).Property(culrc.islrc))]</visible>
-                <top>50</top>
-                    <!--LINEA 1-->
-                <include content="Dem_lyr1">
-                </include>
-                <include content="Dem_lyr1">
-                    <param name="left1">4</param>
-                    <param name="top1">254</param>
-                </include>
-                <include content="Dem_lyr1">
-                    <param name="colorlyr11">ff4cb050</param>
-                    <param name="colorlyr12">fffec106</param>
-                    <param name="colorlyr13">ff2095f4</param>
-                    <param name="colorlyr14">fffffaf0</param>
-                    <param name="left1">1</param>
-                    <param name="top1">251</param>
-                </include>
-                <!--LINEA 2-->
+                <!--Line 1-->
                 <control type="grouplist">
                     <left>0</left>
                     <top>199</top>
@@ -286,9 +517,8 @@
                     <itemgap>10</itemgap>
                     <scrolltime>0</scrolltime>
                     <orientation>horizontal</orientation>
-                    <visible>true</visible>
                     <align>center</align>
-                    <include content="Dem_lyr2">
+                    <include content="Lyrics1">
                     </include>
                 </control>
                 <control type="grouplist">
@@ -299,10 +529,8 @@
                     <itemgap>10</itemgap>
                     <scrolltime>0</scrolltime>
                     <orientation>horizontal</orientation>
-                    <visible>true</visible>
                     <align>center</align>
-                    <include content="Dem_lyr2">
-                    </include>
+                    <include content="Lyrics1"></include>
                 </control>
                 <control type="grouplist">
                     <left>1</left>
@@ -312,56 +540,561 @@
                     <itemgap>10</itemgap>
                     <scrolltime>0</scrolltime>
                     <orientation>horizontal</orientation>
-                    <visible>true</visible>
                     <align>center</align>
-                    <include content="Dem_lyr2">
-                        <param name="colorlyr21">ff69bbd3</param>
-                        <param name="colorlyr22">ffe16b6b</param>
-                        <param name="colorlyr23">fff8e950</param>
+                    <include content="Lyrics1">
+                        <param name="col11">$VAR[Col_lyr1]</param>
+                        <param name="col12">$VAR[Col_lyr2]</param>
+                        <param name="col13">$VAR[Col_lyr3]</param>
                     </include>
                 </control>
-                <include content="Dem_lyr2b">
-                    <param name="left2b">509</param>
-                    <param name="top2b">223</param>
+                <include content="Lyrics1b">
+                    <param name="1b_left">509</param>
+                    <param name="1b_top">223</param>
                 </include>
-                <include content="Dem_lyr2b">
-                    <param name="left2b">513</param>
-                    <param name="top2b">227</param>
+                <include content="Lyrics1b">
+                    <param name="1b_left">513</param>
+                    <param name="1b_top">227</param>
                 </include>
-                <include content="Dem_lyr2b">
-                    <param name="colorlyr2b">fffffaf0</param>
+                <include content="Lyrics1b">
+                    <param name="col14">$VAR[Col_lyr4]</param>
                 </include>
-                <!--LINEA 3-->
-                <include content="Dem_lyr3">
+                <!--Line 2-->
+                <include content="Lyrics2"></include>
+                <include content="Lyrics2">
+                    <param name="2_left">4</param>
+                    <param name="2_top">254</param>
                 </include>
-                <include content="Dem_lyr3">
-                    <param name="left3">24</param>
-                    <param name="top3">-16</param>
+                <include content="Lyrics2">
+                    <param name="col21">$VAR[Col_lyr1]</param>
+                    <param name="col22">$VAR[Col_lyr2]</param>
+                    <param name="col23">$VAR[Col_lyr3]</param>
+                    <param name="col24">$VAR[Col_lyr4]</param>
+                    <param name="2_left">1</param>
+                    <param name="2_top">251</param>
                 </include>
-                <include content="Dem_lyr3">
-                    <param name="colorlyr31">ff00E676</param>
-                    <param name="colorlyr32">fffffaf0</param>
-                    <param name="colorlyr33">ffFB8C00</param>
-                    <param name="colorlyr34">ffde6868</param>
-                    <param name="left3">21</param>
-                    <param name="top3">-19</param>
+                <!--Line 3-->
+                <control type="grouplist">
+                    <left>0</left>
+                    <top>199</top>
+                    <width>1920</width>
+                    <height>120</height>
+                    <itemgap>3</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics3"></include>
+                </control>
+                <control type="grouplist">
+                    <left>4</left>
+                    <top>203</top>
+                    <width>1920</width>
+                    <height>120</height>
+                    <itemgap>3</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics3"></include>
+                </control>
+                <control type="grouplist">
+                    <left>1</left>
+                    <top>200</top>
+                    <width>1920</width>
+                    <height>120</height>
+                    <itemgap>3</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics3">
+                        <param name="col31">$VAR[Col_lyr1]</param>
+                        <param name="col32">$VAR[Col_lyr2]</param>
+                        <param name="col33">$VAR[Col_lyr3]</param>
+                    </include>
+                </control>
+                <include content="Lyrics3b">
+                    <param name="3b_left">509</param>
+                    <param name="3b_top">229</param>
                 </include>
-                <!--LINEA 4-->
-                <include content="Dem_lyr4">
+                <include content="Lyrics3b">
+                    <param name="3b_left">513</param>
+                    <param name="3b_top">233</param>
                 </include>
-                <include content="Dem_lyr4">
-                    <param name="left4">4</param>
-                    <param name="top4">254</param>
+                <include content="Lyrics3b">
+                    <param name="col34">$VAR[Col_lyr4]</param>
                 </include>
-                <include content="Dem_lyr4">
-                    <param name="colorlyr41">ffef4051</param>
-                    <param name="colorlyr42">ff51bbb7</param>
-                    <param name="colorlyr43">fffab649</param>
-                    <param name="colorlyr44">ff84efbb</param>
-                    <param name="left4">1</param>
-                    <param name="top4">251</param>
+                <!--Line 4-->
+                <include content="Lyrics4"></include>
+                <include content="Lyrics4">
+                    <param name="4_left">114</param>
+                    <param name="4_top">34</param>
                 </include>
-                <!--LINEA 5-->
+                <include content="Lyrics4">
+                    <param name="col41">$VAR[Col_lyr1]</param>
+                    <param name="col42">$VAR[Col_lyr2]</param>
+                    <param name="col43">$VAR[Col_lyr3]</param>
+                    <param name="col44">$VAR[Col_lyr4]</param>
+                    <param name="4_left">111</param>
+                    <param name="4_top">31</param>
+                </include>
+                <!--Line 5-->
+                <control type="grouplist">
+                    <left>1950</left>
+                    <top>99</top>
+                    <width>1920</width>
+                    <height>350</height>
+                    <itemgap>10</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics5"></include>
+                </control>
+                <control type="grouplist">
+                    <left>1954</left>
+                    <top>103</top>
+                    <width>1920</width>
+                    <height>350</height>
+                    <itemgap>10</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics5"></include>
+                </control>
+                <control type="grouplist">
+                    <left>1951</left>
+                    <top>100</top>
+                    <width>1920</width>
+                    <height>350</height>
+                    <itemgap>10</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics5">
+                        <param name="col51">$VAR[Col_lyr1]</param>
+                        <param name="col52">$VAR[Col_lyr2]</param>
+                        <param name="col53">$VAR[Col_lyr3]</param>
+                        <param name="col54">$VAR[Col_lyr4]</param>
+                    </include>
+                </control>
+                <!--Line 6-->
+                <include content="Lyrics6"></include>
+                <include content="Lyrics6">
+                    <param name="6_left">14</param>
+                    <param name="6_top">4</param>
+                </include>
+                <include content="Lyrics6">
+                    <param name="col61">$VAR[Col_lyr1]</param>
+                    <param name="col62">$VAR[Col_lyr2]</param>
+                    <param name="col63">$VAR[Col_lyr3]</param>
+                    <param name="col64">$VAR[Col_lyr4]</param>
+                    <param name="6_left">11</param>
+                    <param name="6_top">1</param>
+                </include>
+                <!--Line 7-->
+                <control type="grouplist">
+                    <left>0</left>
+                    <top>-201</top>
+                    <width>1920</width>
+                    <height>100</height>
+                    <itemgap>10</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics7"></include>
+                </control>
+                <control type="grouplist">
+                    <left>4</left>
+                    <top>-197</top>
+                    <width>1920</width>
+                    <height>100</height>
+                    <itemgap>10</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics7">
+                    </include>
+                </control>
+                <control type="grouplist">
+                    <left>1</left>
+                    <top>-200</top>
+                    <width>1920</width>
+                    <height>100</height>
+                    <itemgap>10</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics7">
+                        <param name="col71">$VAR[Col_lyr1]</param>
+                        <param name="col72">$VAR[Col_lyr2]</param>
+                        <param name="col73">$VAR[Col_lyr3]</param>
+                    </include>
+                </control>
+                <include content="Lyrics7b">
+                    <param name="7b_left">509</param>
+                    <param name="7b_top">223</param>
+                </include>
+                <include content="Lyrics7b">
+                    <param name="7b_left">513</param>
+                    <param name="7b_top">227</param>
+                </include>
+                <include content="Lyrics7b">
+                    <param name="col74">$VAR[Col_lyr4]</param>
+                </include>
+                <!--Line 8-->
+                <control type="grouplist">
+                    <left>0</left>
+                    <top>199</top>
+                    <width>1920</width>
+                    <height>140</height>
+                    <itemgap>10</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics8"></include>
+                </control>
+                <control type="grouplist">
+                    <left>4</left>
+                    <top>203</top>
+                    <width>1920</width>
+                    <height>140</height>
+                    <itemgap>10</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics8"></include>
+                </control>
+                <control type="grouplist">
+                    <left>1</left>
+                    <top>200</top>
+                    <width>1920</width>
+                    <height>140</height>
+                    <itemgap>10</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics8">
+                        <param name="col81">$VAR[Col_lyr1]</param>
+                        <param name="col82">$VAR[Col_lyr2]</param>
+                        <param name="col83">$VAR[Col_lyr3]</param>
+                    </include>
+                </control>
+                <include content="Lyrics8b">
+                    <param name="8b_left">509</param>
+                    <param name="8b_top">269</param>
+                </include>
+                <include content="Lyrics8b">
+                    <param name="8b_left">513</param>
+                    <param name="8b_top">273</param>
+                </include>
+                <include content="Lyrics8b">
+                    <param name="col84">$VAR[Col_lyr4]</param>
+                </include>
+                <!--Line 9-->
+                <include content="Lyrics9"></include>
+                <include content="Lyrics9">
+                    <param name="9_left">24</param>
+                    <param name="9_top">-16</param>
+                </include>
+                <include content="Lyrics9">
+                    <param name="col91">$VAR[Col_lyr1]</param>
+                    <param name="col92">$VAR[Col_lyr2]</param>
+                    <param name="col93">$VAR[Col_lyr3]</param>
+                    <param name="col94">$VAR[Col_lyr4]</param>
+                    <param name="9_left">21</param>
+                    <param name="9_top">-19</param>
+                </include>
+                <!--Line 10-->
+                    <control type="grouplist">
+                    <left>0</left>
+                    <top>149</top>
+                    <width>1920</width>
+                    <height>350</height>
+                    <itemgap>30</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics10"></include>
+                </control>
+                <control type="grouplist">
+                    <left>4</left>
+                    <top>153</top>
+                    <width>1920</width>
+                    <height>350</height>
+                    <itemgap>30</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics10"></include>
+                </control>
+                <control type="grouplist">
+                    <left>1</left>
+                    <top>150</top>
+                    <width>1920</width>
+                    <height>350</height>
+                    <itemgap>30</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics10">
+                        <param name="col101">$VAR[Col_lyr1]</param>
+                        <param name="col102">$VAR[Col_lyr2]</param>
+                        <param name="col103">$VAR[Col_lyr3]</param>
+                    </include>
+                </control>
+                <include content="Lyrics10b">
+                    <param name="col104">black</param>
+                </include>
+                <include content="Lyrics10b">
+                    <param name="10b_left">623</param>
+                    <param name="10b_top">323</param>
+                    <param name="col104">black</param>
+                </include>
+                <include content="Lyrics10b">
+                    <param name="10b_left">621</param>
+                    <param name="10b_top">321</param>
+                    <param name="col104">$VAR[Col_lyr4]</param>
+                </include>
+                <!--Line 11-->
+                <include content="Lyrics11"></include>
+                <include content="Lyrics11">
+                    <param name="11_left">4</param>
+                    <param name="11_top">254</param>
+                </include>
+                <include content="Lyrics11">
+                    <param name="col111">$VAR[Col_lyr1]</param>
+                    <param name="col112">$VAR[Col_lyr2]</param>
+                    <param name="col113">$VAR[Col_lyr3]</param>
+                    <param name="col114">$VAR[Col_lyr4]</param>
+                    <param name="11_left">1</param>
+                    <param name="11_top">251</param>
+                </include>
+                <!--Line 12-->
+                <include content="Lyrics12"></include>
+                <include content="Lyrics12">
+                    <param name="12_left">14</param>
+                    <param name="12_top">4</param>
+                </include>
+                <include content="Lyrics12">
+                    <param name="col121">$VAR[Col_lyr1]</param>
+                    <param name="12_left">11</param>
+                    <param name="12_top">1</param>
+                </include>
+                <include content="Lyrics12b">
+                </include>
+                <include content="Lyrics12b">
+                    <param name="12b_left">14</param>
+                    <param name="12b_top">184</param>
+                </include>
+                <include content="Lyrics12b">
+                    <param name="col122">$VAR[Col_lyr2]</param>
+                    <param name="col123">$VAR[Col_lyr3]</param>
+                    <param name="12b_left">11</param>
+                    <param name="12b_top">181</param>
+                </include>
+                <include content="Lyrics12c">
+                </include>
+                <include content="Lyrics12c">
+                    <param name="12c_left">14</param>
+                    <param name="12c_top">4</param>
+                </include>
+                <include content="Lyrics12c">
+                    <param name="col124">$VAR[Col_lyr4]</param>
+                    <param name="12c_left">11</param>
+                    <param name="12c_top">1</param>
+                </include>
+                <!--Line 13-->
+                <control type="grouplist">
+                    <left>0</left>
+                    <top>199</top>
+                    <width>1920</width>
+                    <height>125</height>
+                    <itemgap>10</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics13"></include>
+                </control>
+                <control type="grouplist">
+                    <left>4</left>
+                    <top>203</top>
+                    <width>1920</width>
+                    <height>125</height>
+                    <itemgap>10</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics13"></include>
+                </control>
+                <control type="grouplist">
+                    <left>1</left>
+                    <top>200</top>
+                    <width>1920</width>
+                    <height>125</height>
+                    <itemgap>10</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics13">
+                        <param name="col131">$VAR[Col_lyr1]</param>
+                        <param name="col132">$VAR[Col_lyr2]</param>
+                        <param name="col133">$VAR[Col_lyr3]</param>
+                    </include>
+                </control>
+                <include content="Lyrics13b">
+                    <param name="13b_left">509</param>
+                    <param name="13b_top">219</param>
+                </include>
+                <include content="Lyrics13b">
+                    <param name="13b_left">513</param>
+                    <param name="13b_top">223</param>
+                </include>
+                <include content="Lyrics13b">
+                    <param name="col134">$VAR[Col_lyr4]</param>
+                </include>
+                <!--Line 14-->
+                <control type="grouplist">
+                    <left>0</left>
+                    <top>169</top>
+                    <width>1920</width>
+                    <height>350</height>
+                    <itemgap>20</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics14">
+                        <param name="col141">black</param>
+                    </include>
+                </control>
+                <control type="grouplist">
+                    <left>0</left>
+                    <top>169</top>
+                    <width>1920</width>
+                    <height>350</height>
+                    <itemgap>20</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics14">
+                        <param name="col142">black</param>
+                    </include>
+                </control>
+                <control type="grouplist">
+                    <left>0</left>
+                    <top>169</top>
+                    <width>1920</width>
+                    <height>350</height>
+                    <itemgap>20</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics14">
+                        <param name="col143">black</param>
+                    </include>
+                </control>
+                <control type="grouplist">
+                    <top>173</top>
+                    <left>4</left>
+                    <width>1920</width>
+                    <height>350</height>
+                    <itemgap>20</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics14">
+                        <param name="col141">black</param>
+                    </include>
+                </control>
+                <control type="grouplist">
+                    <top>173</top>
+                    <left>4</left>
+                    <width>1920</width>
+                    <height>350</height>
+                    <itemgap>20</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics14">
+                        <param name="col142">black</param>
+                    </include>
+                </control>
+                <control type="grouplist">
+                    <top>173</top>
+                    <left>4</left>
+                    <width>1920</width>
+                    <height>350</height>
+                    <itemgap>20</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics14">
+                        <param name="col143">black</param>
+                    </include>
+                </control>
+                <control type="grouplist">
+                    <top>170</top>
+                    <left>1</left>
+                    <width>1920</width>
+                    <height>350</height>
+                    <itemgap>20</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics14">
+                        <param name="col141">$VAR[Col_lyr1]</param>
+                    </include>
+                </control>
+                <control type="grouplist">
+                    <top>170</top>
+                    <left>1</left>
+                    <width>1920</width>
+                    <height>350</height>
+                    <itemgap>20</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics14">
+                        <param name="col142">$VAR[Col_lyr2]</param>
+                    </include>
+                </control>
+                <control type="grouplist">
+                    <top>170</top>
+                    <left>1</left>
+                    <width>1920</width>
+                    <height>350</height>
+                    <itemgap>20</itemgap>
+                    <scrolltime>0</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <include content="Lyrics14">
+                        <param name="col143">$VAR[Col_lyr3]</param>
+                    </include>
+                </control>
+                <include content="Lyrics14b">
+                    <param name="col144">black</param>
+                </include>
+                <include content="Lyrics14b">
+                    <param name="14b_left">613</param>
+                    <param name="14b_top">358</param>
+                    <param name="col144">black</param>
+                </include>
+                <include content="Lyrics14b">
+                    <param name="14b_left">611</param>
+                    <param name="14b_top">356</param>
+                    <param name="col144">$VAR[Col_lyr4]</param>
+                </include>
+                <!--Line 15-->
+                <include content="Lyrics15"></include>
+                <include content="Lyrics15">
+                    <param name="15_left">174</param>
+                    <param name="15_top">4</param>
+                </include>
+                <include content="Lyrics15">
+                    <param name="col151">$VAR[Col_lyr1]</param>
+                    <param name="col152">$VAR[Col_lyr2]</param>
+                    <param name="col153">$VAR[Col_lyr3]</param>
+                    <param name="col154">$VAR[Col_lyr4]</param>
+                    <param name="15_left">171</param>
+                    <param name="15_top">1</param>
+                </include>
+                <!--Line 16-->
                 <control type="grouplist">
                     <left>0</left>
                     <top>199</top>
@@ -370,10 +1103,8 @@
                     <itemgap>10</itemgap>
                     <scrolltime>0</scrolltime>
                     <orientation>horizontal</orientation>
-                    <visible>true</visible>
                     <align>center</align>
-                    <include content="Dem_lyr5">
-                    </include>
+                    <include content="Lyrics16"></include>
                 </control>
                 <control type="grouplist">
                     <left>4</left>
@@ -383,10 +1114,8 @@
                     <itemgap>10</itemgap>
                     <scrolltime>0</scrolltime>
                     <orientation>horizontal</orientation>
-                    <visible>true</visible>
                     <align>center</align>
-                    <include content="Dem_lyr5">
-                    </include>
+                    <include content="Lyrics16"></include>
                 </control>
                 <control type="grouplist">
                     <left>1</left>
@@ -396,279 +1125,118 @@
                     <itemgap>10</itemgap>
                     <scrolltime>0</scrolltime>
                     <orientation>horizontal</orientation>
-                    <visible>true</visible>
                     <align>center</align>
-                    <include content="Dem_lyr5">
-                        <param name="colorlyr51">ffa70267</param>
-                        <param name="colorlyr52">ff339194</param>
-                        <param name="colorlyr53">fffb6b41</param>
+                    <include content="Lyrics16">
+                        <param name="col161">$VAR[Col_lyr1]</param>
+                        <param name="col162">$VAR[Col_lyr2]</param>
+                        <param name="col163">$VAR[Col_lyr3]</param>
                     </include>
                 </control>
-                <include content="Dem_lyr5b">
-                    <param name="left5b">509</param>
-                    <param name="top5b">229</param>
+                <include content="Lyrics16b">
+                    <param name="16b_left">509</param>
+                    <param name="16b_top">223</param>
                 </include>
-                <include content="Dem_lyr5b">
-                    <param name="left5b">513</param>
-                    <param name="top5b">233</param>
+                <include content="Lyrics16b">
+                    <param name="16b_left">513</param>
+                    <param name="16b_top">227</param>
                 </include>
-                <include content="Dem_lyr5b">
-                    <param name="colorlyr5b">fff6d86b</param>
+                <include content="Lyrics16b">
+                    <param name="col164">$VAR[Col_lyr4]</param>
                 </include>
-                <!--LINEA 6-->
-                <include content="Dem_lyr6">
+                <!--Line 17-->
+                <include content="Lyrics17"></include>
+                <include content="Lyrics17">
+                    <param name="17_left">14</param>
+                    <param name="17_top">4</param>
                 </include>
-                <include content="Dem_lyr6">
-                    <param name="left6">174</param>
-                    <param name="top6">4</param>
+                <include content="Lyrics17">
+                    <param name="col171">$VAR[Col_lyr1]</param>
+                    <param name="col172">$VAR[Col_lyr2]</param>
+                    <param name="col173">$VAR[Col_lyr3]</param>
+                    <param name="col174">$VAR[Col_lyr4]</param>
+                    <param name="17_left">11</param>
+                    <param name="17_top">1</param>
                 </include>
-                <include content="Dem_lyr6">
-                    <param name="colorlyr61">ff00a1b3</param>
-                    <param name="colorlyr62">ffe5e140</param>
-                    <param name="colorlyr63">ffa70267</param>
-                    <param name="colorlyr64">ffFFFDE7</param>
-                    <param name="left6">171</param>
-                    <param name="top6">1</param>
+                <!--Line 18-->
+                <include content="Lyrics18"></include>
+                <include content="Lyrics18">
+                    <param name="18_left">114</param>
+                    <param name="18_top">34</param>
                 </include>
-                <!--LINEA 7-->
+                <include content="Lyrics18">
+                    <param name="col181">$VAR[Col_lyr1]</param>
+                    <param name="col182">$VAR[Col_lyr2]</param>
+                    <param name="col183">$VAR[Col_lyr3]</param>
+                    <param name="col184">$VAR[Col_lyr4]</param>
+                    <param name="18_left">111</param>
+                    <param name="18_top">31</param>
+                </include>
+                <!--Line 19-->
                 <control type="grouplist">
                     <left>0</left>
-                    <top>199</top>
+                    <top>69</top>
                     <width>1920</width>
-                    <height>100</height>
-                    <itemgap>3</itemgap>
+                    <height>350</height>
+                    <itemgap>30</itemgap>
                     <scrolltime>0</scrolltime>
                     <orientation>horizontal</orientation>
-                    <visible>true</visible>
                     <align>center</align>
-                    <include content="Dem_lyr7">
+                    <include content="Lyrics19">
                     </include>
                 </control>
                 <control type="grouplist">
                     <left>4</left>
-                    <top>203</top>
+                    <top>73</top>
                     <width>1920</width>
-                    <height>100</height>
-                    <itemgap>3</itemgap>
+                    <height>350</height>
+                    <itemgap>30</itemgap>
                     <scrolltime>0</scrolltime>
                     <orientation>horizontal</orientation>
-                    <visible>true</visible>
                     <align>center</align>
-                    <include content="Dem_lyr7">
-                    </include>
+                    <include content="Lyrics19"></include>
                 </control>
                 <control type="grouplist">
                     <left>1</left>
-                    <top>200</top>
+                    <top>70</top>
                     <width>1920</width>
-                    <height>100</height>
-                    <itemgap>3</itemgap>
+                    <height>350</height>
+                    <itemgap>30</itemgap>
                     <scrolltime>0</scrolltime>
                     <orientation>horizontal</orientation>
-                    <visible>true</visible>
                     <align>center</align>
-                    <include content="Dem_lyr7">
-                        <param name="colorlyr71">ff607D8B</param>
-                        <param name="colorlyr72">ffFF6B6B</param>
-                        <param name="colorlyr73">ff4ECDC4</param>
+                    <include content="Lyrics19">
+                        <param name="col191">$VAR[Col_lyr1]</param>
+                        <param name="col192">$VAR[Col_lyr2]</param>
+                        <param name="col193">$VAR[Col_lyr3]</param>
                     </include>
                 </control>
-                <include content="Dem_lyr7b">
-                    <param name="left7b">509</param>
-                    <param name="top7b">229</param>
+                <include content="Lyrics19b">
+                    <param name="col194">black</param>
                 </include>
-                <include content="Dem_lyr7b">
-                    <param name="left7b">513</param>
-                    <param name="top7b">233</param>
+                <include content="Lyrics19b">
+                    <param name="19b_left">613</param>
+                    <param name="19b_top">228</param>
+                    <param name="col194">black</param>
                 </include>
-                <include content="Dem_lyr7b">
-                    <param name="colorlyr7b">ffC7F464</param>
+                <include content="Lyrics19b">
+                    <param name="19b_left">611</param>
+                    <param name="19b_top">226</param>
+                    <param name="col194">$VAR[Col_lyr4]</param>
                 </include>
-                <!--LINEA 8-->
-                <include content="Dem_lyr8">
+                <!--Line 20-->
+                <include content="Lyrics20"></include>
+                <include content="Lyrics20">
+                    <param name="20_left">4</param>
+                    <param name="20_top">154</param>
                 </include>
-                <include content="Dem_lyr8">
-                    <param name="left8">4</param>
-                    <param name="top8">154</param>
+                <include content="Lyrics20">
+                    <param name="col201">$VAR[Col_lyr1]</param>
+                    <param name="col202">$VAR[Col_lyr2]</param>
+                    <param name="col203">$VAR[Col_lyr3]</param>
+                    <param name="col204">$VAR[Col_lyr4]</param>
+                    <param name="20_left">1</param>
+                    <param name="20_top">151</param>
                 </include>
-                <include content="Dem_lyr8">
-                    <param name="colorlyr81">ffFF9800</param>
-                    <param name="colorlyr82">fffffaf0</param>
-                    <param name="colorlyr83">ff00BCD4</param>
-                    <param name="colorlyr84">ffF06292</param>
-                    <param name="left8">1</param>
-                    <param name="top8">151</param>
-                </include>
-                <!--LINEA 9-->
-                <include content="Dem_lyr9">
-                </include>
-                <include content="Dem_lyr9">
-                    <param name="left9">14</param>
-                    <param name="top9">4</param>
-                </include>
-                <include content="Dem_lyr9">
-                    <param name="colorlyr91">ffEA80FC</param>
-                    <param name="left9">11</param>
-                    <param name="top9">1</param>
-                </include>
-                <include content="Dem_lyr9b">
-                </include>
-                <include content="Dem_lyr9b">
-                    <param name="left9b">14</param>
-                    <param name="top9b">184</param>
-                </include>
-                <include content="Dem_lyr9b">
-                    <param name="colorlyr92b">ffFFEB3B</param>
-                    <param name="colorlyr93b">ff4DD0E1</param>
-                    <param name="left9b">11</param>
-                    <param name="top9b">181</param>
-                </include>
-                <include content="Dem_lyr9c">
-                </include>
-                <include content="Dem_lyr9c">
-                    <param name="left9c">14</param>
-                    <param name="top9c">4</param>
-                </include>
-                <include content="Dem_lyr9c">
-                    <param name="colorlyr94">fffffaf0</param>
-                    <param name="left9c">11</param>
-                    <param name="top9c">1</param>
-                </include>
-                <!--LINEA 0-->
-                <include content="Dem_lyr0">
-                </include>
-                <include content="Dem_lyr0">
-                    <param name="left0">14</param>
-                    <param name="top0">4</param>
-                </include>
-                <include content="Dem_lyr0">
-                    <param name="colorlyr01">fff7cb03</param>
-                    <param name="colorlyr02">ffe6227c</param>
-                    <param name="colorlyr03">ff76105f</param>
-                    <param name="colorlyr04">ffFFFDE7</param>
-                    <param name="left0">11</param>
-                    <param name="top0">1</param>
-                </include>
-            </control>
-        </control>
-        <control type="group">
-            <visible>Control.IsVisible(120) + Integer.IsGreater(Container(120).NumItems,0)</visible>
-            <animation effect="slide" start="0,708" end="0,0" time="300" tween="quadratic" easing="out">Visible</animation>
-            <animation effect="slide" start="0,0" end="0,708" time="300" tween="quadratic" easing="out">Hidden</animation>
-            <left>0</left>
-            <top>327</top>
-            <control type="image">
-                <width>1920</width>
-                <height>708</height>
-                <texture colordiffuse="background">$VAR[CommonBackgroundOverlay]</texture>
-            </control>
-            <control type="image">
-                <top>8</top>
-                <width>1920</width>
-                <height>700</height>
-                <texture colordiffuse="background">dialog.png</texture>
-            </control>
-            <control type="label" id="1">
-                <include>HiddenObject</include>
-            </control>
-            <control type="panel" id="120">
-                <left>50</left>
-                <top>58</top>
-                <width>1370</width>
-                <height>600</height>
-                <onup>120</onup>
-                <ondown>120</ondown>
-                <onleft>9000</onleft>
-                <onright condition="Container(120).HasNext | Container(120).HasPrevious">60</onright>
-                <onright condition="![Container(120).HasNext | Container(120).HasPrevious]">9000</onright>
-                <pagecontrol>60</pagecontrol>
-                <scrolltime tween="quadratic" easing="out">200</scrolltime>
-                <itemlayout height="100" width="1370">
-                    <control type="label">
-                        <width>1370</width>
-                        <height>100</height>
-                        <textoffsetx>20</textoffsetx>
-                        <font>font14</font>
-                        <label>$INFO[ListItem.Label]</label>
-                    </control>
-                    <control type="label">
-                        <width>1370</width>
-                        <height>100</height>
-                        <textoffsetx>20</textoffsetx>
-                        <font>font14</font>
-                        <align>right</align>
-                        <label>$INFO[ListItem.Label2]</label>
-                    </control>
-                    <control type="label">
-                        <width>1370</width>
-                        <height>100</height>
-                        <align>right</align>
-                        <font>IconSmall</font>
-                        <textoffsetx>20</textoffsetx>
-                        <label>A</label>
-                        <visible>ListItem.IsSelected</visible>
-                    </control>
-                </itemlayout>
-                <focusedlayout height="100" width="1370">
-                    <control type="image">
-                        <width>1370</width>
-                        <height>100</height>
-                        <texture>selecteditem_bg.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
-                        <visible>Control.HasFocus(120)</visible>
-                        <include>VisibleFadeEffect</include>
-                    </control>
-                    <control type="label">
-                        <width>1370</width>
-                        <height>100</height>
-                        <textoffsetx>20</textoffsetx>
-                        <font>font14</font>
-                        <scroll>true</scroll>
-                        <label>$INFO[ListItem.Label]</label>
-                    </control>
-                    <control type="label">
-                        <width>1370</width>
-                        <height>100</height>
-                        <textoffsetx>20</textoffsetx>
-                        <font>font14</font>
-                        <align>right</align>
-                        <label>$INFO[ListItem.Label2]</label>
-                    </control>
-                    <control type="label">
-                        <width>1370</width>
-                        <height>100</height>
-                        <align>right</align>
-                        <font>IconSmall</font>
-                        <textoffsetx>20</textoffsetx>
-                        <label>A</label>
-                        <visible>ListItem.IsSelected</visible>
-                    </control>
-                </focusedlayout>
-            </control>
-            <control type="scrollbar" id="60">
-                <visible allowhiddenfocus="true">Control.HasFocus(60) | Control.HasFocus(120)</visible>
-                <animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
-                <left>1430</left>
-                <top>58</top>
-                <height>600</height>
-                <width>10</width>
-                <onleft>120</onleft>
-                <onright>120</onright>
-                <ondown>60</ondown>
-                <onup>60</onup>
-            </control>
-            <control type="button" id="9000">
-                <description>Close button</description>
-                <top>58</top>
-                <left>1470</left>
-                <font>font15_title</font>
-                <align>center</align>
-                <width>400</width>
-                <label>15067</label>
-                <onleft>5</onleft>
-                <onright>5</onright>
-                <onclick>Close</onclick>
-                <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
             </control>
         </control>
     </controls>
