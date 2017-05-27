@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.omni"
-  version="2.0.0"
+  version="2.0.1"
   name="Omni"
   provider-name="braz">
 	<requires>
@@ -41,6 +41,6 @@
 			<screenshot>resources/screenshot-09.jpg</screenshot>
 			<screenshot>resources/screenshot-10.jpg</screenshot>
 		</assets>
-		<news>2.0.0[CR]- Updated for Kodi 18 Leia.[CR]- Removed support for script.colorbox.</news>
+		<news>2.0.1[CR]- Updated video lyrics to v3 (Thanks Manfeed!).</news>
 	</extension>
 </addon>

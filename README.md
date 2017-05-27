@@ -12,6 +12,10 @@ If you would like to express your appreciation for this skin, please consider a 
 
 
 ***
+**2.0.1**
+- Updated video lyrics to v3 (Thanks Manfeed!).
+
+***
 **2.0.0**
 - Updated for Kodi 18 Leia.
 - Removed support for script.colorbox.
