@@ -14,6 +14,7 @@ If you would like to express your appreciation for this skin, please consider a 
 ***
 **2.0.1**
 - Updated video lyrics to v3 (Thanks Manfeed!).
+- New music view.
 
 ***
 **2.0.0**

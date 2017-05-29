@@ -41,6 +41,6 @@
 			<screenshot>resources/screenshot-09.jpg</screenshot>
 			<screenshot>resources/screenshot-10.jpg</screenshot>
 		</assets>
-		<news>2.0.1[CR]- Updated video lyrics to v3 (Thanks Manfeed!).</news>
+		<news>2.0.1[CR]- Updated video lyrics to v3 (Thanks Manfeed!).[CR]- New music view.</news>
 	</extension>
 </addon>
