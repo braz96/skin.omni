@@ -88,6 +88,8 @@
         <value condition="Window.IsActive(home) + Window.IsVisible(virtualkeyboard)">$LOCALIZE[137]</value>
         <value condition="Window.IsActive(home) + Window.IsVisible(shutdownmenu)">$LOCALIZE[13005]</value>
         <value condition="Window.IsActive(home) + Window.IsVisible(busydialog)">$LOCALIZE[503]</value>
+        <value condition="Control.HasFocus(53)">$INFO[Container(53).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(53).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.HasFocus(54)">$INFO[Container(54).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(54).NumItems,, $LOCALIZE[31025]]</value>
         <value>$INFO[Container.CurrentItem,, $LOCALIZE[1443] ]$INFO[Container.NumItems,, $LOCALIZE[31025]]</value>
     </variable>
     <variable name="HeaderLabel2">

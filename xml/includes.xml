@@ -9,6 +9,7 @@
     <include file="Includes_WidgetContent.xml" />
     <include file="View_50_List.xml" />
     <include file="View_51_Fanart.xml" />
+    <include file="View_52_Music.xml" />
     <include file="View_500_Wall.xml" />
     <include file="View_501_Landscape.xml" />
     <include file="View_502_Logo.xml" />
@@ -45,7 +46,8 @@
             <onfocus condition="String.IsEmpty(Window(home).Property(MediaMenu))">SetProperty(MediaMenu,true,home)</onfocus>
             <onfocus condition="String.IsEmpty(Window(home).Property(MediaMenu))">SetFocus(9050)</onfocus>
             <onfocus condition="!String.IsEmpty(Window(home).Property(MediaMenu))">ClearProperty(MediaMenu,home)</onfocus>
-            <onfocus condition="!String.IsEmpty(Window(home).Property(MediaMenu))">SetFocus(50)</onfocus>
+            <onfocus condition="!String.IsEmpty(Window(home).Property(MediaMenu)) + !Control.IsVisible(54)">SetFocus(50)</onfocus>
+            <onfocus condition="!String.IsEmpty(Window(home).Property(MediaMenu)) + Control.IsVisible(54)">SetFocus(54)</onfocus>
         </control>
     </include>
     <include name="MediaMenuTop">
@@ -55,7 +57,8 @@
         <height>1080</height>
         <onright>9050</onright>
         <onleft>ClearProperty(MediaMenu,home)</onleft>
-        <onleft condition="![Window.IsVisible(tvguide) | Window.IsActive(SettingsCategory.xml)]">50</onleft>
+        <onleft condition="![Window.IsVisible(tvguide) | Window.IsActive(SettingsCategory.xml) | Control.IsVisible(54)]">50</onleft>
+        <onleft condition="![Window.IsVisible(tvguide) | Window.IsActive(SettingsCategory.xml)] + Control.IsVisible(54)">54</onleft>
         <onleft condition="Window.IsVisible(tvguide)">10</onleft>
         <onleft condition="Window.IsActive(SettingsCategory.xml)">3</onleft>
         <onup>9050</onup>

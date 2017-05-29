@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="View_52_Music">
+        <control type="group">
+            <visible>Control.IsVisible(52) + !$EXP[isInfoDialog]</visible>
+            <include>Animation.Common</include>
+            <animation effect="slide" start="0" end="-860" time="300" condition="!String.IsEmpty(Window(home).Property(AlbumFocus))">Conditional</animation>
+            <control type="group">
+                <left>150</left>
+                <top>0</top>
+                <animation effect="fade" start="100" end="0" time="50" condition="!String.IsEmpty(Window(home).Property(AlbumFocus))">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="300" delay="300" condition="String.IsEmpty(Window(home).Property(AlbumFocus))">Conditional</animation>
+                <control type="group">
+                    <visible>Integer.IsGreater(Container(52).NumItems,0)</visible>
+                    <top>180</top>
+                    <left>470</left>
+                    <control type="image">
+                        <width>800</width>
+                        <height>120</height>
+                        <visible>Control.HasFocus(52)</visible>
+                        <animation effect="fade" time="320" delay="200">Visible</animation>
+                        <animation effect="fade" time="50">Hidden</animation>
+                        <texture colordiffuse="highlight">selecteditem_bg.png</texture>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(52).Row,5)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(52).Row,4)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(52).Row,3)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(52).Row,2)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(52).Row,1)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(52).Row,0)">Conditional</animation>
+                    </control>
+                    <control type="image">
+                        <visible>Control.HasFocus(52)</visible>
+                        <animation effect="fade" time="320" delay="200">Visible</animation>
+                        <animation effect="fade" time="50">Hidden</animation>
+                        <width>120</width>
+                        <height>120</height>
+                        <texture>overlays/diffuse-overlay.png</texture>
+                        <animation effect="slide" end="860,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(52).Column,0)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(52).Row,5)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(52).Row,4)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(52).Row,3)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(52).Row,2)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(52).Row,1)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(52).Row,0)">Conditional</animation>
+                    </control>
+                </control>
+                <control type="panel" id="52">
+                    <visible>Container.Content(artists)</visible>
+                    <top>180</top>
+                    <left>470</left>
+                    <width>800</width>
+                    <height>840</height>
+                    <onleft>9000</onleft>
+                    <onright>SetProperty(AlbumFocus,true,home)</onright>
+                    <onright>53</onright>
+                    <onup>52</onup>
+                    <ondown>52</ondown>
+                    <viewtype label="2">list</viewtype>
+                    <pagecontrol>61</pagecontrol>
+                    <preloaditems>2</preloaditems>
+                    <scrolltime tween="quadratic" easing="out">300</scrolltime>
+                    <itemlayout height="120" width="800">
+                        <control type="image">
+                            <top>10</top>
+                            <left>10</left>
+                            <width>100</width>
+                            <height>100</height>
+                            <aspectratio align="center" aligny="center">scale</aspectratio>
+                            <texture background="true" fallback="DefaultFallback.png">$VAR[ListIcon]</texture>
+                        </control>
+                        <control type="label">
+                            <top>3</top>
+                            <left>140</left>
+                            <right>20</right>
+                            <height>70</height>
+                            <font>font30</font>
+                            <label>$VAR[ListMainLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <left>140</left>
+                            <top>52</top>
+                            <right>20</right>
+                            <height>60</height>
+                            <label>$VAR[ListSubLabelVar]</label>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="120" width="800">
+                        <control type="image">
+                            <top>10</top>
+                            <left>10</left>
+                            <width>100</width>
+                            <height>100</height>
+                            <aspectratio align="center" aligny="center">scale</aspectratio>
+                            <texture background="true" fallback="DefaultFallback.png">$VAR[ListIcon]</texture>
+                        </control>
+                        <control type="label">
+                            <top>3</top>
+                            <left>140</left>
+                            <right>20</right>
+                            <height>70</height>
+                            <font>font30</font>
+                            <label>$VAR[ListMainLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <left>140</left>
+                            <top>52</top>
+                            <right>20</right>
+                            <height>60</height>
+                            <label>$VAR[ListSubLabelVar]</label>
+                        </control>
+                    </focusedlayout>
+                </control>
+            </control>
+            <control type="group">
+                <left>1010</left>
+                <top>0</top>
+                <control type="group">
+                    <visible>Integer.IsGreater(Container(53).NumItems,0)</visible>
+                    <top>180</top>
+                    <left>470</left>
+                    <control type="image">
+                        <width>800</width>
+                        <height>120</height>
+                        <visible>Control.HasFocus(53)</visible>
+                        <animation effect="fade" time="320" delay="200">Visible</animation>
+                        <animation effect="fade" time="50">Hidden</animation>
+                        <texture colordiffuse="highlight">selecteditem_bg.png</texture>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(53).Row,5)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(53).Row,4)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(53).Row,3)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(53).Row,2)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(53).Row,1)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(53).Row,0)">Conditional</animation>
+                    </control>
+                    <control type="image">
+                        <visible>Control.HasFocus(53)</visible>
+                        <animation effect="fade" time="320" delay="200">Visible</animation>
+                        <animation effect="fade" time="50">Hidden</animation>
+                        <width>120</width>
+                        <height>120</height>
+                        <texture>overlays/diffuse-overlay.png</texture>
+                        <animation effect="slide" end="860,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(53).Column,0)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(53).Row,5)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(53).Row,4)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(53).Row,3)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(53).Row,2)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(53).Row,1)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(53).Row,0)">Conditional</animation>
+                    </control>
+                    <control type="image">
+                        <visible>!Control.HasFocus(53) + !String.IsEmpty(Window(home).Property(AlbumFocus))</visible>
+                        <animation effect="fade" time="320" delay="200">Visible</animation>
+                        <animation effect="fade" time="50">Hidden</animation>
+                        <width>120</width>
+                        <height>120</height>
+                        <texture colordiffuse="highlight">selecteditem_bg.png</texture>
+                        <animation effect="slide" end="860,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(53).Column,0)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(53).Row,5)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(53).Row,4)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(53).Row,3)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(53).Row,2)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(53).Row,1)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(53).Row,0)">Conditional</animation>
+                    </control>
+                </control>
+                <control type="panel" id="53">
+                    <visible>Container.Content(artists)</visible>
+                    <top>180</top>
+                    <left>470</left>
+                    <width>800</width>
+                    <height>840</height>
+                    <onleft>ClearProperty(AlbumFocus,home)</onleft>
+                    <onleft>52</onleft>
+                    <onright>54</onright>
+                    <onup>53</onup>
+                    <ondown>53</ondown>
+                    <pagecontrol>62</pagecontrol>
+                    <preloaditems>2</preloaditems>
+                    <scrolltime tween="quadratic" easing="out">300</scrolltime>
+                    <itemlayout height="120" width="800">
+                        <control type="image">
+                            <top>10</top>
+                            <left>10</left>
+                            <width>100</width>
+                            <height>100</height>
+                            <aspectratio align="center" aligny="center">scale</aspectratio>
+                            <texture background="true" fallback="DefaultFallback.png">$VAR[ListIcon]</texture>
+                        </control>
+                        <control type="label">
+                            <top>3</top>
+                            <left>140</left>
+                            <right>20</right>
+                            <height>70</height>
+                            <font>font30</font>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label">
+                            <left>140</left>
+                            <top>52</top>
+                            <right>20</right>
+                            <height>60</height>
+                            <label>$INFO[ListItem.Year]</label>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="120" width="800">
+                        <control type="image">
+                            <top>10</top>
+                            <left>10</left>
+                            <width>100</width>
+                            <height>100</height>
+                            <aspectratio align="center" aligny="center">scale</aspectratio>
+                            <texture background="true" fallback="DefaultFallback.png">$VAR[ListIcon]</texture>
+                        </control>
+                        <control type="label">
+                            <top>3</top>
+                            <left>140</left>
+                            <right>20</right>
+                            <height>70</height>
+                            <font>font30</font>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label">
+                            <left>140</left>
+                            <top>52</top>
+                            <right>20</right>
+                            <height>60</height>
+                            <label>$INFO[ListItem.Year]</label>
+                        </control>
+                    </focusedlayout>
+                    <content target="music" sortby="year" sortorder="ascending">$INFO[Container(52).ListItem.DBID,musicdb://artists/,/]</content>
+                </control>
+            </control>
+            <control type="group">
+                <left>1870</left>
+                <top>0</top>
+                <control type="group">
+                    <visible>Integer.IsGreater(Container(54).NumItems,0)</visible>
+                    <top>180</top>
+                    <left>470</left>
+                    <control type="image">
+                        <width>800</width>
+                        <height>120</height>
+                        <visible>Control.HasFocus(54)</visible>
+                        <animation effect="fade" time="320" delay="200">Visible</animation>
+                        <animation effect="fade" time="50">Hidden</animation>
+                        <texture colordiffuse="highlight">selecteditem_bg.png</texture>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(54).Row,5)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(54).Row,4)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(54).Row,3)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(54).Row,2)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(54).Row,1)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(54).Row,0)">Conditional</animation>
+                    </control>
+                    <control type="image">
+                        <visible>Control.HasFocus(54)</visible>
+                        <animation effect="fade" time="320" delay="200">Visible</animation>
+                        <animation effect="fade" time="50">Hidden</animation>
+                        <width>120</width>
+                        <height>120</height>
+                        <texture>overlays/diffuse-overlay.png</texture>
+                        <animation effect="slide" end="860,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(54).Column,0)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(54).Row,5)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(54).Row,4)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(54).Row,3)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(54).Row,2)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(54).Row,1)">Conditional</animation>
+                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(54).Row,0)">Conditional</animation>
+                    </control>
+                </control>
+                <control type="panel" id="54">
+                    <visible>Container.Content(artists)</visible>
+                    <top>180</top>
+                    <left>470</left>
+                    <width>800</width>
+                    <height>840</height>
+                    <onleft>53</onleft>
+                    <onright condition="Container(54).HasNext | Container(54).HasPrevious">60</onright>
+                    <onright condition="!Container(54).HasNext + !Container(54).HasPrevious">SetProperty(MediaMenu,true,home)</onright>
+                    <onright condition="!Container(54).HasNext + !Container(54).HasPrevious">SetFocus(9050)</onright>
+                    <onup>54</onup>
+                    <ondown>54</ondown>
+                    <pagecontrol>60</pagecontrol>
+                    <preloaditems>2</preloaditems>
+                    <scrolltime tween="quadratic" easing="out">300</scrolltime>
+                    <itemlayout height="120" width="800">
+                        <control type="label">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>120</width>
+                            <height>120</height>
+                            <font>font36</font>
+                            <align>center</align>
+                            <label>$INFO[ListItem.TrackNumber]</label>
+                        </control>
+                        <control type="label">
+                            <top>3</top>
+                            <left>140</left>
+                            <right>20</right>
+                            <height>70</height>
+                            <font>font30</font>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label">
+                            <left>140</left>
+                            <top>52</top>
+                            <right>20</right>
+                            <height>60</height>
+                            <label>$INFO[ListItem.Duration]</label>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="120" width="800">
+                        <control type="label">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>120</width>
+                            <height>120</height>
+                            <font>font36</font>
+                            <align>center</align>
+                            <label>$INFO[ListItem.TrackNumber]</label>
+                        </control>
+                        <control type="label">
+                            <top>3</top>
+                            <left>140</left>
+                            <right>20</right>
+                            <height>70</height>
+                            <font>font30</font>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label">
+                            <left>140</left>
+                            <top>52</top>
+                            <right>20</right>
+                            <height>60</height>
+                            <label>$INFO[ListItem.Duration]</label>
+                        </control>
+                    </focusedlayout>
+                    <content target="music" sortby="track" sortorder="ascending">$INFO[Container(53).ListItem.DBID,musicdb://albums/,/]</content>
+                </control>
+            </control>
+        
+        </control>
+        <control type="group">
+            <visible>Control.IsVisible(54) + !Control.HasFocus(52) + !Control.HasFocus(53) + !$EXP[isInfoDialog]</visible>
+            <control type="scrollbar" id="60">
+                <visible allowhiddenfocus="true">Control.HasFocus(60) | Container(54).Scrolling</visible>
+                <animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
+                <left>2340</left>
+                <top>120</top>
+                <width>10</width>
+                <height>960</height>
+                <onleft>54</onleft>
+                <onright>SetProperty(MediaMenu,true,home)</onright>
+                <onright>SetFocus(9050)</onright>
+                <ondown>60</ondown>
+                <onup>60</onup>
+            </control>
+        </control>
+        <control type="group">
+            <visible>Control.IsVisible(52) + !Control.HasFocus(53) + !Control.HasFocus(54) + !$EXP[isInfoDialog]</visible>
+            <control type="scrollbar" id="61">
+                <visible allowhiddenfocus="true">Control.HasFocus(61) | Container.Scrolling</visible>
+                <animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
+                <left>2340</left>
+                <top>120</top>
+                <width>10</width>
+                <height>960</height>
+            </control>
+        </control>
+        <control type="group">
+            <visible>Control.IsVisible(53) + !Control.HasFocus(52) + !Control.HasFocus(54) + !$EXP[isInfoDialog]</visible>
+            <control type="scrollbar" id="62">
+                <visible allowhiddenfocus="true">Control.HasFocus(62) | Container(53).Scrolling</visible>
+                <animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
+                <left>2340</left>
+                <top>120</top>
+                <width>10</width>
+                <height>960</height>
+            </control>
+        </control>
+    </include>
+</includes>
