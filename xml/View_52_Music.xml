@@ -149,8 +149,6 @@
                     </control>
                     <control type="image">
                         <visible>!Control.HasFocus(53) + !String.IsEmpty(Window(home).Property(AlbumFocus))</visible>
-                        <animation effect="fade" time="320" delay="200">Visible</animation>
-                        <animation effect="fade" time="50">Hidden</animation>
                         <width>120</width>
                         <height>120</height>
                         <texture colordiffuse="highlight">selecteditem_bg.png</texture>
