@@ -877,7 +877,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>[![$EXP[isMovie] | $EXP[isTvshow] | $EXP[isSeason] | $EXP[isSet] | Container.Content(actors) | Window.IsActive(videoplaylist) | $EXP[isEpisode] | Container.Content(addons) | $EXP[isArtist] | $EXP[isAlbum] | $EXP[isSong] | $EXP[isMusicvideo] | Container.Content() | Container.Content(files)] | [String.Contains(Container.FolderPath,plugin.video) + !$EXP[isEpisode] + !Container.Content()]] + !String.StartsWith(ListItem.Icon,Default)</visible>
+                    <visible>[![$EXP[isMovie] | $EXP[isTvshow] | $EXP[isSeason] | $EXP[isSet] | Container.Content(actors) | Window.IsActive(videoplaylist) | $EXP[isEpisode] | Container.Content(addons) | $EXP[isArtist] | $EXP[isAlbum] | $EXP[isSong] | $EXP[isMusicvideo] | Container.Content()] | [String.Contains(Container.FolderPath,plugin.video) + !$EXP[isEpisode] + !Container.Content()]] + !String.StartsWith(ListItem.Icon,Default)</visible>
                     <control type="image">
                         <width>560</width>
                         <height>840</height>
