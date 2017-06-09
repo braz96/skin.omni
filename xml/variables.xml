@@ -200,9 +200,10 @@
     </variable>
     <variable name="ThumbVar">
         <value condition="String.Contains(ListItem.Label,* All Albums) | String.Contains(ListItem.Label,* All Songs)">$INFO[ListItem.Icon]</value>
-        <value condition="ListItem.IsParentFolder">DefaultFallbackParent.png</value>
-        <value condition="ListItem.IsFolder">DefaultFallback.png</value>
         <value condition="!String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
+        <value condition="ListItem.IsParentFolder">DefaultFallbackParent.png</value>
+        <value condition="ListItem.IsFolder + !String.StartsWith(ListItem.Icon,Default)">$INFO[ListItem.Icon]</value>
+        <value condition="ListItem.IsFolder">DefaultFallback.png</value>
         <value condition="String.StartsWith(ListItem.Icon,Default)">DefaultFallbackMovies.png</value>
         <value>$INFO[ListItem.Icon]</value>
     </variable>

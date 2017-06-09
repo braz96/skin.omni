@@ -339,7 +339,6 @@
                 <aspectratio aligny="center" align="center">scale</aspectratio>
                 <texture background="true">$INFO[Player.Art(thumb)]</texture>
             </control>
-
             <control type="textbox">
                 <left>742</left>
                 <top>23</top>                 
