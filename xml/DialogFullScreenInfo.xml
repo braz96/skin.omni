@@ -89,7 +89,7 @@
             <animation effect="slide" start="0,408" end="0,0" time="200">VisibleChange</animation>
             <animation effect="slide" start="0,0" end="0,408" time="200">WindowClose</animation>
             <top>680</top>
-            <visible>![VideoPlayer.Content(livetv) | VideoPlayer.Content(musicvideos)]</visible>
+            <visible>![VideoPlayer.Content(livetv) | VideoPlayer.Content(musicvideos) | VideoPlayer.Content(files)]</visible>
             <visible>!Window.IsActive(videoosd)</visible>
             <control type="image">
                 <width>1920</width>
@@ -312,6 +312,80 @@
                 <font>font12</font>
                 <align>center</align>
                 <label>$VAR[SeekLabelVar]</label>
+            </control>
+        </control>
+        <control type="group">
+            <animation effect="slide" start="0,408" end="0,0" time="200">WindowOpen</animation>
+            <animation effect="slide" start="0,408" end="0,0" time="200">VisibleChange</animation>
+            <animation effect="slide" start="0,0" end="0,408" time="200">WindowClose</animation>
+            <top>680</top>
+            <visible>VideoPlayer.Content(files)</visible>
+            <visible>!Window.IsActive(videoosd)</visible>
+            <control type="image">
+                <width>1920</width>
+                <height>408</height>
+                <texture colordiffuse="background">$VAR[CommonBackgroundOverlay]</texture>
+            </control>
+            <control type="image">
+                <top>8</top>
+                <width>1920</width>
+                <height>400</height>
+                <texture colordiffuse="background">dialog.png</texture>
+            </control>
+            <control type="image">
+                <top>8</top>
+                <width>710</width>
+                <height>400</height>
+                <aspectratio aligny="center" align="center">scale</aspectratio>
+                <texture background="true">$INFO[Player.Art(thumb)]</texture>
+            </control>
+
+            <control type="textbox">
+                <left>742</left>
+                <top>23</top>                 
+                <width>1143</width>
+                <height>280</height>
+                <font>font36</font>
+                <aligny>top</aligny>
+                <label>$VAR[PlayerTitleLabelVar]</label>
+            </control>
+            <control type="group">
+                <top>338</top>
+                <left>745</left>
+                <control type="progress">
+                    <width>1140</width>
+                    <height>8</height>
+                    <info>Player.ProgressCache</info>
+                    <midtexture colordiffuse="44ffffff">osd/midtexture.png</midtexture>
+                </control>
+                <control type="progress">
+                    <width>1140</width>
+                    <height>8</height>
+                    <info>Player.Progress</info>
+                </control>
+                <control type="label">
+                    <top>10</top>
+                    <width>1140</width>
+                    <height>35</height>
+                    <font>font12</font>
+                    <label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
+                </control>
+                <control type="label">
+                    <top>10</top>
+                    <width>1140</width>
+                    <height>35</height>
+                    <font>font12</font>
+                    <align>right</align>
+                    <label>$INFO[Player.TimeRemaining]$INFO[Player.Duration, / ]</label>
+                </control>
+                <control type="label">
+                    <top>10</top>
+                    <width>1140</width>
+                    <height>35</height>
+                    <font>font12</font>
+                    <align>center</align>
+                    <label>$VAR[SeekLabelVar]</label>
+                </control>
             </control>
         </control>
     </controls>
