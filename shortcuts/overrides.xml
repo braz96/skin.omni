@@ -197,7 +197,7 @@
     <widgetdefaultnode defaultID="musicvideos" group="mainmenu" label="20390" type="musicvideos" path="library://video/musicvideos/recentlyaddedmusicvideos.xml/" target="video">recentlyaddedmusicvideos</widgetdefaultnode>
     <widgetdefaultnode defaultID="games" group="mainmenu" label="1036" type="programs" path="plugin://plugin.program.advanced.emulator.launcher/?com=SHOW_FAVOURITES" target="programs">favgames</widgetdefaultnode>
     <widgetdefaultnode defaultID="add-ons" group="mainmenu" label="1037" type="addons" path="addons://sources/video/" target="video">videoaddons</widgetdefaultnode>
-    <widgetdefaultnode defaultID="favorites" group="mainmenu" label="1036" type="" path="favourites://" target="">favorites</widgetdefaultnode>
+    <widgetdefaultnode defaultID="favorites" group="mainmenu" label="1036" type="" path="favourites://" target="">myfavorites</widgetdefaultnode>
     <widgetdefaultnode defaultID="script.globalsearch" group="mainmenu" label="136" type="videos" path="special://videoplaylists/" target="video">myplaylists</widgetdefaultnode>
     <widgetdefault labelID="weather" group="mainmenu">weather</widgetdefault>
     <widgetdefault labelID="settings" group="mainmenu">settings</widgetdefault>
