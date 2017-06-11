@@ -16,9 +16,13 @@ msgstr ""
 "Language: en_US\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "#31000"
+msgid "Enable auto update"
+msgstr "Enable auto update"
+
 msgctxt "#31001"
-msgid "Auto update"
-msgstr "Auto update"
+msgid "Diable auto update"
+msgstr "Disable auto update"
 
 msgctxt "#31002"
 msgid "YouTube Browser"
@@ -91,6 +95,10 @@ msgstr "CPU speed"
 msgctxt "#31019"
 msgid "Video encoder"
 msgstr "Video encoder"
+
+msgctxt "#31020"
+msgid "Screen-[CR]shots"
+msgstr "Screen-[CR]shots"
 
 msgctxt "#31025"
 msgid "items"

@@ -919,7 +919,7 @@
             <name>font10</name>
             <filename>Roboto-Light.ttf</filename>
             <size>21</size>
-            <linespacing>0.7</linespacing>
+            <linespacing>0.8</linespacing>
         </font>
         <font>
             <name>font12</name>

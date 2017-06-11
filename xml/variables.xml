@@ -609,4 +609,16 @@
     <variable name="Col_lyr4">
         <value>fffffaf0</value>
     </variable>
+    <variable name="AddonInfoTip">
+        <value condition="Container(9000).HasFocus(200)">$LOCALIZE[24038]</value>
+        <value condition="Container(9000).HasFocus(201)">$LOCALIZE[24020]</value>
+        <value condition="Container(9000).HasFocus(202)">$LOCALIZE[21479]</value>
+        <value condition="Container(9000).HasFocus(203)">$LOCALIZE[31020]</value>
+        <value condition="Container(9000).HasFocus(204)">$LOCALIZE[24069]</value>
+        <value condition="Container(9000).HasFocus(205)">$LOCALIZE[24022]</value>
+        <value condition="Container(9000).HasFocus(206)">$LOCALIZE[24021]</value>
+        <value condition="Container(9000).HasFocus(207)">$LOCALIZE[24037]</value>
+        <value condition="Container(9000).HasFocus(208)">$LOCALIZE[31001]</value>
+        <value condition="Container(9000).HasFocus(209)">$LOCALIZE[31000]</value>
+    </variable>
 </includes>

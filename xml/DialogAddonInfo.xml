@@ -70,6 +70,11 @@
                         <description>Open Addon button</description>
                         <include>HiddenObject</include>
                     </control>
+                    <control type="radiobutton" id="13">
+                        <description>Auto update button</description>
+                        <visible allowhiddenfocus="true">false</visible>
+                        <include>HiddenObject</include>
+                    </control>
                 </control>
                 <control type="image">
                     <left>1080</left>
@@ -101,8 +106,8 @@
                     <height>1080</height>
                     <onleft condition="Container(9000).HasFocus(203)">50</onleft>
                     <onleft condition="Control.IsVisible(400) + [Container(400).HasNext | Container(400).HasPrevious]">60</onleft>
-                    <ondown>13</ondown>
-                    <onup>13</onup>
+                    <ondown>9000</ondown>
+                    <onup>9000</onup>
                     <scrolltime tween="quadratic" easing="out">300</scrolltime>
                     <orientation>Vertical</orientation>
                     <itemlayout height="120" width="120">
@@ -165,7 +170,6 @@
                         <item id="203">
                             <description>Screenshots</description>
                             <icon>special://skin/extras/icons/fanart.png</icon>
-                            
                             <visible>Integer.IsGreater(Container(50).NumItems,0)</visible>
                         </item>
                         <item id="204">
@@ -193,40 +197,32 @@
                             <onclick>SendClick(6)</onclick>
                             <visible>Control.IsEnabled(6) + String.IsEqual(Control.GetLabel(6),$LOCALIZE[24037])</visible>
                         </item>
+                        <item id="208">
+                            <icon>special://skin/extras/icons/autoupdateno.png</icon>
+                            <onclick>SetFocus(13)</onclick>
+                            <onclick>Action(Select)</onclick>
+                            <onclick>SetFocus(9000)</onclick>
+                            <visible>Control.IsEnabled(13) + String.Contains(Control.GetLabel(13),*)</visible>
+                        </item>
+                        <item id="209">
+                            <icon>special://skin/extras/icons/autoupdateyes.png</icon>
+                            <onclick>SetFocus(13)</onclick>
+                            <onclick>Action(Select)</onclick>
+                            <onclick>SetFocus(9000)</onclick>
+                            <visible>Control.IsEnabled(13) + !String.Contains(Control.GetLabel(13),*)</visible>
+                        </item>
                     </content>
                 </control>
-                <control type="radiobutton" id="13">
-                    <description>Auto update button</description>
-                    <onup>SetFocus(9000,10)</onup>
-                    <ondown>SetFocus(9000,0)</ondown>
-                    <top>960</top>
-                    <left>1080</left>
-                    <width>120</width>
-                    <height>120</height>
-                    <font>font10</font>
-                    <textcolor>00000000</textcolor>
-                    <focusedcolor>00000000</focusedcolor>
-                    <align>center</align>
-                    <aligny>top</aligny>
-                    <radiowidth>70</radiowidth>
-                    <radioheight>70</radioheight>
-                    <radioposy>48</radioposy>
-                    <radioposx>25</radioposx>
-                    <textureradioon colordiffuse="maintext">special://skin/extras/icons/autoupdateyes.png</textureradioon>
-                    <textureradiooff colordiffuse="maintext">special://skin/extras/icons/autoupdateno.png</textureradiooff>
-                    <label />
-                    <visible>Control.IsEnabled(13)</visible>
-                </control>
                 <control type="label">
-                    <top>950</top>
+                    <visible>Control.HasFocus(9000)</visible>
+                    <top>970</top>
                     <left>1090</left>
-                    <label>31001</label>
+                    <label>$VAR[AddonInfoTip]</label>
                     <font>font10</font>
                     <align>center</align>
-                    <height>80</height>
+                    <height>100</height>
                     <width>100</width>
                     <wrapmultiline>true</wrapmultiline>
-                    <visible>Control.IsEnabled(13)</visible>
                 </control>
                 <control type="group">
                     <visible>![Control.HasFocus(50) | Container(9000).HasFocus(203)]</visible>

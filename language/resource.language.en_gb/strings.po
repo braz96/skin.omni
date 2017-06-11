@@ -16,10 +16,12 @@ msgstr ""
 "Language: en_GB\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#empty string with id 31000
+msgctxt "#31000"
+msgid "Enable auto update"
+msgstr ""
 
 msgctxt "#31001"
-msgid "Auto update"
+msgid "Disable auto update"
 msgstr ""
 
 msgctxt "#31002"
@@ -94,7 +96,11 @@ msgctxt "#31019"
 msgid "Video encoder"
 msgstr ""
 
-#empty strings from id 31020 to 31024
+msgctxt "#31020"
+msgid "Screen-[CR]shots"
+msgstr ""
+
+#empty strings from id 31021 to 31024
 
 msgctxt "#31025"
 msgid "items"
