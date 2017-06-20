@@ -40,7 +40,7 @@
                     <width>1365</width>
                     <height>100</height>
                     <textoffsetx>20</textoffsetx>
-                    <font>font16</font>
+                    <font>font15</font>
                     <label>$LOCALIZE[31102]</label>
                     <label2>$VAR[VizBackgroundLabelVar]</label2>
                     <onclick>SetProperty(Dialog.1.Label,$LOCALIZE[231])</onclick>
@@ -57,7 +57,7 @@
                     <width>1365</width>
                     <height>100</height>
                     <textoffsetx>20</textoffsetx>
-                    <font>font16</font>
+                    <font>font15</font>
                     <label>31905</label>
                     <onclick>Skin.ToggleSetting(Disable.AnimateFanart)</onclick>
                     <selected>!Skin.HasSetting(Disable.AnimateFanart)</selected>
@@ -68,7 +68,7 @@
                     <width>1365</width>
                     <height>100</height>
                     <textoffsetx>20</textoffsetx>
-                    <font>font16</font>
+                    <font>font15</font>
                     <label>$LOCALIZE[31129]</label>
                     <onclick>Skin.ToggleSetting(HideVisualizationFanart)</onclick>
                     <selected>Skin.HasSetting(HideVisualizationFanart)</selected>
@@ -79,7 +79,7 @@
                     <width>1365</width>
                     <height>100</height>
                     <textoffsetx>20</textoffsetx>
-                    <font>font16</font>
+                    <font>font15</font>
                     <label>$LOCALIZE[31042]</label>
                     <onclick>Skin.ToggleSetting(BigAssLabel)</onclick>
                     <selected>Skin.HasSetting(BigAssLabel)</selected>
@@ -89,7 +89,7 @@
                     <width>1365</width>
                     <height>100</height>
                     <textoffsetx>20</textoffsetx>
-                    <font>font16</font>
+                    <font>font15</font>
                     <label>$LOCALIZE[31108]</label>
                     <label2>$VAR[VizArtistInfoVar]</label2>
                     <onclick condition="!Skin.HasSetting(Enable.VizInfo) + !Skin.HasSetting(Enable.VizPersistent)">Skin.SetBool(Enable.VizInfo)</onclick>
