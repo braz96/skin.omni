@@ -260,7 +260,9 @@ msgctxt "#31100"
 msgid "Landscape"
 msgstr ""
 
-#empty string with id 31101
+msgctxt "#31101"
+msgid "Select fanart"
+msgstr ""
 
 msgctxt "#31102"
 msgid "Background"

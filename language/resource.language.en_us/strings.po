@@ -236,6 +236,10 @@ msgctxt "#31100"
 msgid "Landscape"
 msgstr "Landscape"
 
+msgctxt "#31101"
+msgid "Select fanart"
+msgstr "Select fanart"
+
 msgctxt "#31102"
 msgid "Background"
 msgstr "Background"
