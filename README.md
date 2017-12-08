@@ -1,4 +1,4 @@
-![banner] (http://i.imgur.com/69kkmtA.jpg)
+![banner](http://i.imgur.com/69kkmtA.jpg)
 <h1>OMNI</h1>
 
 This is a skin for Kodi called OMNI for its omnipresent menus. Users of Mimic will recognize that it was the base for this skin. OMNI is much more streamlined, however, and doesn't have as many customization options. Here's what you need to know:
@@ -10,6 +10,10 @@ This is a skin for Kodi called OMNI for its omnipresent menus. Users of Mimic wi
 
 If you would like to express your appreciation for this skin, please consider a donation to the XBMC Foundation. http://kodi.tv/contribute/donate/
 
+
+***
+**2.0.2**
+- Removed selected item animations.
 
 ***
 **2.0.1**
