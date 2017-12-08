@@ -89,21 +89,6 @@
                         </control>
                     </control>
                 </control>
-                <control type="image">
-                    <visible>Control.HasFocus(305) + !Container(305).IsUpdating</visible>
-                    <animation effect="fade" time="320" delay="200">Visible</animation>
-                    <animation effect="fade" time="200">Hidden</animation>
-                    <left>10</left>
-                    <top>390</top>
-                    <width>385</width>
-                    <height>425</height>
-                    <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="highlight">selecteditem_bg.png</texture>
-                    <animation effect="slide" end="445,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(305).Column,3)">Conditional</animation>
-                    <animation effect="slide" end="405,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(305).Column,2)">Conditional</animation>
-                    <animation effect="slide" end="405,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(305).Column,1)">Conditional</animation>
-                    <animation effect="slide" end="405,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(305).Column,0)">Conditional</animation>
-                </control>
                 <control type="panel" id="305">
                     <top>380</top>
                     <width>1620</width>
@@ -164,6 +149,12 @@
                     </itemlayout>
 
                     <focusedlayout height="445" width="405">
+                        <include content="SelectedItemBackground">
+                            <param name="Left" value="10" />
+                            <param name="Top" value="10" />
+                            <param name="Width" value="385" />
+                            <param name="Height" value="425" />
+                        </include>
                         <control type="image">
                             <top>20</top>
                             <left>20</left>

@@ -7,54 +7,6 @@
             <control type="group">
                 <left>150</left>
                 <top>0</top>
-                <control type="group">
-                    <visible>Integer.IsGreater(Container(51).NumItems,0)</visible>
-                    <top>180</top>
-                    <left>470</left>
-                    <control type="image">
-                        <width>800</width>
-                        <height>120</height>
-                        <visible>Control.HasFocus(51)</visible>
-                        <animation effect="fade" time="320" delay="200">Visible</animation>
-                        <animation effect="fade" time="50">Hidden</animation>
-                        <texture colordiffuse="highlight">selecteditem_bg.png</texture>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(51).Row,5)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(51).Row,4)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(51).Row,3)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(51).Row,2)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(51).Row,1)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(51).Row,0)">Conditional</animation>
-                    </control>
-                    <control type="image">
-                        <visible>Control.HasFocus(51) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
-                        <animation effect="fade" time="320" delay="200">Visible</animation>
-                        <animation effect="fade" time="50">Hidden</animation>
-                        <width>87</width>
-                        <height>120</height>
-                        <texture>overlays/diffuse-overlay.png</texture>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(51).Row,5)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(51).Row,4)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(51).Row,3)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(51).Row,2)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(51).Row,1)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(51).Row,0)">Conditional</animation>
-                    </control>
-                    <control type="image">
-                        <visible>Control.HasFocus(51) + Container.Content(artists)</visible>
-                        <animation effect="fade" time="320" delay="200">Visible</animation>
-                        <animation effect="fade" time="50">Hidden</animation>
-                        <width>120</width>
-                        <height>120</height>
-                        <texture>overlays/diffuse-overlay.png</texture>
-                        <animation effect="slide" end="860,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(51).Column,0)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(51).Row,5)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(51).Row,4)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(51).Row,3)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(51).Row,2)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(51).Row,1)">Conditional</animation>
-                        <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(51).Row,0)">Conditional</animation>
-                    </control>
-                </control>
                 <control type="panel" id="51">
                     <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(artists)</visible>
                     <top>180</top>
@@ -129,6 +81,17 @@
                         </include>
                     </itemlayout>
                     <focusedlayout height="120" width="800" condition="Container.Content(movies) | Container.Content(tvshows)">
+                        <include content="SelectedItemBackground">
+                            <param name="Left" value="0" />
+                            <param name="Top" value="0" />
+                            <param name="Width" value="800" />
+                            <param name="Height" value="120" />
+                        </include>
+                        <control type="image">
+                            <width>87</width>
+                            <height>120</height>
+                            <texture>overlays/diffuse-overlay.png</texture>
+                        </control>
                         <control type="image">
                             <top>10</top>
                             <left>10</left>
@@ -211,6 +174,17 @@
                         </control>
                     </itemlayout>
                     <focusedlayout height="120" width="800" condition="Container.Content(artists)">
+                        <include content="SelectedItemBackground">
+                            <param name="Left" value="0" />
+                            <param name="Top" value="0" />
+                            <param name="Width" value="800" />
+                            <param name="Height" value="120" />
+                        </include>
+                        <control type="image">
+                            <width>120</width>
+                            <height>120</height>
+                            <texture>overlays/diffuse-overlay.png</texture>
+                        </control>
                         <control type="image">
                             <top>10</top>
                             <left>10</left>

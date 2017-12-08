@@ -57,6 +57,12 @@
             </include>
         </itemlayout>
         <focusedlayout height="445" width="282" condition="String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[20021])">
+            <include content="SelectedItemBackground">
+                <param name="Left" value="12" />
+                <param name="Top" value="10" />
+                <param name="Width" value="262" />
+                <param name="Height" value="422" />
+            </include>
             <control type="image">
                 <top>20</top>
                 <left>22</left>
@@ -123,6 +129,12 @@
             </include>
         </itemlayout>
         <focusedlayout height="296" width="424" condition="String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[20445]) | String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31100]) | String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31088]) | [String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[21371]) + [String.Contains(Container(9000).ListItem.Property(widgetPath),recentlyaddedepisodes) | String.Contains(Container(9000).ListItem.Property(widgetType),episodes)]]">
+            <include content="SelectedItemBackground">
+                <param name="Left" value="10" />
+                <param name="Top" value="10" />
+                <param name="Width" value="404" />
+                <param name="Height" value="276" />
+            </include>
             <control type="image">
                 <top>20</top>
                 <left>20</left>
@@ -189,6 +201,12 @@
             </include>
         </itemlayout>
         <focusedlayout height="445" width="405" condition="[String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[21371]) + ![String.Contains(Container(9000).ListItem.Property(widgetPath),recentlyaddedepisodes) | String.Contains(Container(9000).ListItem.Property(widgetType),episodes)]] | String.IsEmpty(Container(9000).ListItem.Property(widgetIcon))">
+            <include content="SelectedItemBackground">
+                <param name="Left" value="48" />
+                <param name="Top" value="10" />
+                <param name="Width" value="385" />
+                <param name="Height" value="425" />
+            </include>
             <control type="image">
                 <top>20</top>
                 <left>58</left>
@@ -242,6 +260,19 @@
             </control>
         </itemlayout>
         <focusedlayout height="178" width="848" condition="String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31005])">
+            <include content="SelectedItemBackground">
+                <param name="Left" value="50" />
+                <param name="Top" value="14" />
+                <param name="Width" value="750" />
+                <param name="Height" value="150" />
+            </include>
+            <control type="image">
+                <left>50</left>
+                <top>14</top>
+                <width>150</width>
+                <height>150</height>
+                <texture>overlays/diffuse-overlay.png</texture>
+            </control>
             <control type="image">
                 <left>60</left>
                 <top>24</top>
@@ -327,6 +358,12 @@
             </control>
         </itemlayout>
         <focusedlayout height="445" width="405">
+            <include content="SelectedItemBackground">
+                <param name="Left" value="10" />
+                <param name="Top" value="10" />
+                <param name="Width" value="385" />
+                <param name="Height" value="425" />
+            </include>
             <control type="image">
                 <top>20</top>
                 <left>20</left>
@@ -464,6 +501,19 @@
             </control>
         </itemlayout>
         <focusedlayout height="178" width="848">
+            <include content="SelectedItemBackground">
+                <param name="Left" value="50" />
+                <param name="Top" value="14" />
+                <param name="Width" value="750" />
+                <param name="Height" value="150" />
+            </include>
+            <control type="image">
+                <left>50</left>
+                <top>14</top>
+                <width>150</width>
+                <height>150</height>
+                <texture>overlays/diffuse-overlay.png</texture>
+            </control>
             <control type="image">
                 <left>60</left>
                 <top>24</top>
@@ -530,6 +580,19 @@
             </control>
         </itemlayout>
         <focusedlayout height="178" width="848">
+            <include content="SelectedItemBackground">
+                <param name="Left" value="50" />
+                <param name="Top" value="14" />
+                <param name="Width" value="750" />
+                <param name="Height" value="150" />
+            </include>
+            <control type="image">
+                <left>50</left>
+                <top>14</top>
+                <width>150</width>
+                <height>150</height>
+                <texture>overlays/diffuse-overlay.png</texture>
+            </control>
             <control type="image">
                 <left>60</left>
                 <top>24</top>

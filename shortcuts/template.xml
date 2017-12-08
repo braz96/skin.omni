@@ -19,82 +19,6 @@
                 <include>Animation.Common</include>
                 <left>604</left>
                 <top>155</top>
-                <control type="image">
-                    <visible>Control.HasFocus(8011$SKINSHORTCUTS[id]) + !Container(8011$SKINSHORTCUTS[id]).IsUpdating + [[String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[21371]) + ![String.Contains(Container(9000).ListItem.Property(widgetPath),recentlyaddedepisodes) | String.Contains(Container(9000).ListItem.Property(widgetType),episodes)]] | String.IsEmpty(Container(9000).ListItem.Property(widgetIcon))]</visible>
-                    <left>48</left>
-                    <top>10</top>
-                    <width>385</width>
-                    <height>425</height>
-                    <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="highlight">selecteditem_bg.png</texture>
-                    <animation effect="slide" end="0,445" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,0)">Conditional</animation>
-                    <animation effect="slide" end="405,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,3)">Conditional</animation>
-                    <animation effect="slide" end="405,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,2)">Conditional</animation>
-                    <animation effect="slide" end="405,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,1)">Conditional</animation>
-                    <animation effect="slide" end="405,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,0)">Conditional</animation>
-                </control>
-                <control type="image">
-                    <visible>Control.HasFocus(8011$SKINSHORTCUTS[id]) + !Container(8011$SKINSHORTCUTS[id]).IsUpdating + String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[20021])</visible>
-                    <left>12</left>
-                    <top>10</top>
-                    <width>262</width>
-                    <height>422</height>
-                    <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="highlight">selecteditem_bg.png</texture>
-                    <animation effect="slide" end="0,445" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,0)">Conditional</animation>
-                    <animation effect="slide" end="282,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,5)">Conditional</animation>
-                    <animation effect="slide" end="282,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,4)">Conditional</animation>
-                    <animation effect="slide" end="282,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,3)">Conditional</animation>
-                    <animation effect="slide" end="282,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,2)">Conditional</animation>
-                    <animation effect="slide" end="282,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,1)">Conditional</animation>
-                    <animation effect="slide" end="282,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,0)">Conditional</animation>
-                </control>
-                <control type="image">
-                    <visible>Control.HasFocus(8011$SKINSHORTCUTS[id]) + !Container(8011$SKINSHORTCUTS[id]).IsUpdating + [String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[20445]) | String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31100]) | String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31088]) | [String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[21371]) + [String.Contains(Container(9000).ListItem.Property(widgetPath),recentlyaddedepisodes) | String.Contains(Container(9000).ListItem.Property(widgetType),episodes)]]]</visible>
-                    <left>10</left>
-                    <top>10</top>
-                    <width>404</width>
-                    <height>276</height>
-                    <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="highlight">selecteditem_bg.png</texture>
-                    <animation effect="slide" end="0,296" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,1)">Conditional</animation>
-                    <animation effect="slide" end="0,296" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,0)">Conditional</animation>
-                    <animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,2)">Conditional</animation>
-                    <animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,1)">Conditional</animation>
-                    <animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,0)">Conditional</animation>
-                </control>
-                <control type="image">
-                    <visible>Control.HasFocus(8011$SKINSHORTCUTS[id]) + !Container(8011$SKINSHORTCUTS[id]).IsUpdating + String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31005])</visible>
-                    <animation effect="fade" time="320" delay="200">Visible</animation>
-                    <animation effect="fade" time="200">Hidden</animation>
-                    <left>50</left>
-                    <top>14</top>
-                    <width>750</width>
-                    <height>150</height>
-                    <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="highlight">selecteditem_bg.png</texture>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,3)">Conditional</animation>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,2)">Conditional</animation>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,1)">Conditional</animation>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,0)">Conditional</animation>
-                    <animation effect="slide" end="848,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,0)">Conditional</animation>
-                </control>
-                <control type="image">
-                    <visible>Control.HasFocus(8011$SKINSHORTCUTS[id]) + !Container(8011$SKINSHORTCUTS[id]).IsUpdating + String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31005])</visible>
-                    <animation effect="fade" time="320" delay="200">Visible</animation>
-                    <animation effect="fade" time="200">Hidden</animation>
-                    <left>50</left>
-                    <top>14</top>
-                    <width>150</width>
-                    <height>150</height>
-                    <include>FocusedBackgroundFade</include>
-                    <texture>overlays/diffuse-overlay.png</texture>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,3)">Conditional</animation>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,2)">Conditional</animation>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,1)">Conditional</animation>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Row,0)">Conditional</animation>
-                    <animation effect="slide" end="848,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8011$SKINSHORTCUTS[id]).Column,0)">Conditional</animation>
-                </control>
                 <control type="panel" id="8011$SKINSHORTCUTS[id]">
                     <skinshortcuts>visibility</skinshortcuts>
                     <include content="WidgetContents">
@@ -106,20 +30,6 @@
                         <param name="orientation">vertical</param>
                     </include>
                     <content limit="$SKINSHORTCUTS[widgetlimit]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sortdirection]" target="$SKINSHORTCUTS[target]">$SKINSHORTCUTS[path]</content>
-                </control>
-                <control type="image">
-                    <visible>Control.HasFocus(8012$SKINSHORTCUTS[id]) + !Container(8012$SKINSHORTCUTS[id]).IsUpdating</visible>
-                    <animation effect="fade" time="320" delay="200">Visible</animation>
-                    <animation effect="fade" time="200">Hidden</animation>
-                    <left>49</left>
-                    <top>410</top>
-                    <width>385</width>
-                    <height>425</height>
-                    <texture colordiffuse="highlight">selecteditem_bg.png</texture>
-                    <animation effect="slide" end="405,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8012$SKINSHORTCUTS[id]).Column,3)">Conditional</animation>
-                    <animation effect="slide" end="405,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8012$SKINSHORTCUTS[id]).Column,2)">Conditional</animation>
-                    <animation effect="slide" end="405,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8012$SKINSHORTCUTS[id]).Column,1)">Conditional</animation>
-                    <animation effect="slide" end="405,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8012$SKINSHORTCUTS[id]).Column,0)">Conditional</animation>
                 </control>
                 <control type="panel" id="8012$SKINSHORTCUTS[id]">
                     <skinshortcuts>visibility</skinshortcuts>
@@ -205,38 +115,6 @@
                         </control>
                     </control>
                 </control>
-                <control type="image">
-                    <visible>Control.HasFocus(8013$SKINSHORTCUTS[id]) + !Container(8013$SKINSHORTCUTS[id]).IsUpdating</visible>
-                    <animation effect="fade" time="320" delay="200">Visible</animation>
-                    <animation effect="fade" time="200">Hidden</animation>
-                    <left>50</left>
-                    <top>14</top>
-                    <width>750</width>
-                    <height>150</height>
-                    <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="highlight">selecteditem_bg.png</texture>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8013$SKINSHORTCUTS[id]).Row,3)">Conditional</animation>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8013$SKINSHORTCUTS[id]).Row,2)">Conditional</animation>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8013$SKINSHORTCUTS[id]).Row,1)">Conditional</animation>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8013$SKINSHORTCUTS[id]).Row,0)">Conditional</animation>
-                    <animation effect="slide" end="848,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8013$SKINSHORTCUTS[id]).Column,0)">Conditional</animation>
-                </control>
-                <control type="image">
-                    <visible>Control.HasFocus(8013$SKINSHORTCUTS[id]) + !Container(8013$SKINSHORTCUTS[id]).IsUpdating</visible>
-                    <animation effect="fade" time="320" delay="200">Visible</animation>
-                    <animation effect="fade" time="200">Hidden</animation>
-                    <left>50</left>
-                    <top>14</top>
-                    <width>150</width>
-                    <height>150</height>
-                    <include>FocusedBackgroundFade</include>
-                    <texture>overlays/diffuse-overlay.png</texture>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8013$SKINSHORTCUTS[id]).Row,3)">Conditional</animation>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8013$SKINSHORTCUTS[id]).Row,2)">Conditional</animation>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8013$SKINSHORTCUTS[id]).Row,1)">Conditional</animation>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8013$SKINSHORTCUTS[id]).Row,0)">Conditional</animation>
-                    <animation effect="slide" end="848,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8013$SKINSHORTCUTS[id]).Column,0)">Conditional</animation>
-                </control>
                 <control type="panel" id="8013$SKINSHORTCUTS[id]">
                     <skinshortcuts>visibility</skinshortcuts>
                     <include content="SettingsWidgetContents">
@@ -246,38 +124,6 @@
                         <param name="onleft">9000</param>
                         <param name="onright">8013$SKINSHORTCUTS[id]</param>
                     </include>
-                </control>
-                <control type="image">
-                    <visible>Control.HasFocus(8014$SKINSHORTCUTS[id]) + !Container(8014$SKINSHORTCUTS[id]).IsUpdating</visible>
-                    <animation effect="fade" time="320" delay="200">Visible</animation>
-                    <animation effect="fade" time="200">Hidden</animation>
-                    <left>50</left>
-                    <top>14</top>
-                    <width>750</width>
-                    <height>150</height>
-                    <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="highlight">selecteditem_bg.png</texture>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8014$SKINSHORTCUTS[id]).Row,3)">Conditional</animation>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8014$SKINSHORTCUTS[id]).Row,2)">Conditional</animation>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8014$SKINSHORTCUTS[id]).Row,1)">Conditional</animation>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8014$SKINSHORTCUTS[id]).Row,0)">Conditional</animation>
-                    <animation effect="slide" end="848,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8014$SKINSHORTCUTS[id]).Column,0)">Conditional</animation>
-                </control>
-                <control type="image">
-                    <visible>Control.HasFocus(8014$SKINSHORTCUTS[id]) + !Container(8014$SKINSHORTCUTS[id]).IsUpdating</visible>
-                    <animation effect="fade" time="320" delay="200">Visible</animation>
-                    <animation effect="fade" time="200">Hidden</animation>
-                    <left>50</left>
-                    <top>14</top>
-                    <width>150</width>
-                    <height>150</height>
-                    <include>FocusedBackgroundFade</include>
-                    <texture>overlays/diffuse-overlay.png</texture>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8014$SKINSHORTCUTS[id]).Row,3)">Conditional</animation>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8014$SKINSHORTCUTS[id]).Row,2)">Conditional</animation>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8014$SKINSHORTCUTS[id]).Row,1)">Conditional</animation>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8014$SKINSHORTCUTS[id]).Row,0)">Conditional</animation>
-                    <animation effect="slide" end="848,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(8014$SKINSHORTCUTS[id]).Column,0)">Conditional</animation>
                 </control>
                 <control type="panel" id="8014$SKINSHORTCUTS[id]">
                     <skinshortcuts>visibility</skinshortcuts>

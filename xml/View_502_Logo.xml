@@ -6,24 +6,6 @@
             <include>Animation.Common</include>
             <top>155</top>
             <left>606</left>
-            <control type="group">
-                <visible>Integer.IsGreater(Container(502).NumItems,0)</visible>
-                <animation effect="fade" time="320" delay="300">Visible</animation>
-                <control type="image">
-                    <visible>Control.HasFocus(502)</visible>
-                    <left>10</left>
-                    <top>10</top>
-                    <width>404</width>
-                    <height>276</height>
-                    <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="highlight">selecteditem_bg.png</texture>
-                    <animation effect="slide" end="0,296" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(502).Row,1)">Conditional</animation>
-                    <animation effect="slide" end="0,296" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(502).Row,0)">Conditional</animation>
-                    <animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(502).Column,2)">Conditional</animation>
-                    <animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(502).Column,1)">Conditional</animation>
-                    <animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(502).Column,0)">Conditional</animation>
-                </control>
-            </control>
             <control type="panel" id="502">
                 <visible>[Container.Content(movies) | Container.Content(tvshows)] + !$EXP[isPlugin]</visible>
                 <width>1696</width>
@@ -77,6 +59,12 @@
                     </include>
                 </itemlayout>
                 <focusedlayout height="296" width="424">
+                    <include content="SelectedItemBackground">
+                        <param name="Left" value="10" />
+                        <param name="Top" value="10" />
+                        <param name="Width" value="404" />
+                        <param name="Height" value="276" />
+                    </include>
                     <control type="image">
                         <top>20</top>
                         <left>20</left>

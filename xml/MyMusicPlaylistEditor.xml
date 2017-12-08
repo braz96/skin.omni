@@ -67,14 +67,12 @@
                         </control>
                     </itemlayout>
                     <focusedlayout height="60" width="821">
-                        <control type="image">
-                            <width>821</width>
-                            <height>60</height>
-                            <texture>selecteditem_bg.png</texture>
-                            <colordiffuse>highlight</colordiffuse>
-                            <visible>Control.HasFocus(50)</visible>
-                            <include>VisibleFadeEffect</include>
-                        </control>
+                        <include content="SelectedItemBackground">
+                            <param name="Left" value="0" />
+                            <param name="Top" value="0" />
+                            <param name="Width" value="821" />
+                            <param name="Height" value="60" />
+                        </include>
                         <control type="label">
                             <width>821</width>
                             <height>60</height>

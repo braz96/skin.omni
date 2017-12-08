@@ -19,32 +19,6 @@
             <colordiffuse>background</colordiffuse>
         </control>
         <control type="group">
-            <control type="image">
-                <visible>Control.HasFocus(52)</visible>
-                <left>442</left>
-                <top>160</top>
-                <width>1035</width>
-                <height>150</height>
-                <animation effect="fade" time="320" delay="200">Visible</animation>
-                <animation effect="fade" time="50">Hidden</animation>
-                <texture colordiffuse="highlight">selecteditem_bg.png</texture>
-                <animation effect="slide" end="0,150" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(52).Row,2)">Conditional</animation>
-                <animation effect="slide" end="0,150" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(52).Row,1)">Conditional</animation>
-                <animation effect="slide" end="0,150" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(52).Row,0)">Conditional</animation>
-            </control>
-            <control type="image">
-                <visible>Control.HasFocus(52)</visible>
-                <left>442</left>
-                <top>160</top>
-                <width>150</width>
-                <height>150</height>
-                <animation effect="fade" time="320" delay="200">Visible</animation>
-                <animation effect="fade" time="50">Hidden</animation>
-                <texture>overlays/diffuse-overlay.png</texture>
-                <animation effect="slide" end="0,150" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(52).Row,2)">Conditional</animation>
-                <animation effect="slide" end="0,150" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(52).Row,1)">Conditional</animation>
-                <animation effect="slide" end="0,150" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(52).Row,0)">Conditional</animation>
-            </control>
             <control type="panel" id="52">
                 <left>442</left>
                 <top>160</top>
@@ -84,7 +58,18 @@
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout height="150" width="870">
+                <focusedlayout height="150" width="1035">
+                    <include content="SelectedItemBackground">
+                        <param name="Left" value="0" />
+                        <param name="Top" value="0" />
+                        <param name="Width" value="1035" />
+                        <param name="Height" value="150" />
+                    </include>
+                    <control type="image">
+                        <width>150</width>
+                        <height>150</height>
+                        <texture>overlays/diffuse-overlay.png</texture>
+                    </control>
                     <control type="image">
                         <left>15</left>
                         <top>15</top>

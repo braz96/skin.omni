@@ -8,40 +8,6 @@
         <include>CommonBackground</include>
         <control type="group">
             <include>MenuSlideAnimation</include>
-            <control type="group">
-                <include>Animation.Common</include>
-                <visible>Integer.IsGreater(Container(9020).NumItems,0)</visible>
-                <control type="image">
-                    <visible>Control.HasFocus(9020)</visible>
-                    <animation effect="fade" time="320" delay="200">Visible</animation>
-                    <animation effect="fade" time="50">Hidden</animation>
-                    <left>228</left>
-                    <top>170</top>
-                    <width>750</width>
-                    <height>150</height>
-                    <texture colordiffuse="highlight">selecteditem_bg.png</texture>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9020).Row,3)">Conditional</animation>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9020).Row,2)">Conditional</animation>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9020).Row,1)">Conditional</animation>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9020).Row,0)">Conditional</animation>
-                    <animation effect="slide" end="848,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9020).Column,0)">Conditional</animation>
-                </control>
-                <control type="image">
-                    <visible>Control.HasFocus(9020)</visible>
-                    <animation effect="fade" time="320" delay="200">Visible</animation>
-                    <animation effect="fade" time="50">Hidden</animation>
-                    <left>228</left>
-                    <top>170</top>
-                    <width>150</width>
-                    <height>150</height>
-                    <texture>overlays/diffuse-overlay.png</texture>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9020).Row,3)">Conditional</animation>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9020).Row,2)">Conditional</animation>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9020).Row,1)">Conditional</animation>
-                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9020).Row,0)">Conditional</animation>
-                    <animation effect="slide" end="848,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9020).Column,0)">Conditional</animation>
-                </control>
-            </control>
             <control type="panel" id="9020">
                 <top>156</top>
                 <left>178</left>
@@ -81,6 +47,19 @@
                     </control>
                 </itemlayout>
                 <focusedlayout height="178" width="848">
+                    <include content="SelectedItemBackground">
+                        <param name="Left" value="50" />
+                        <param name="Top" value="14" />
+                        <param name="Width" value="750" />
+                        <param name="Height" value="150" />
+                    </include>
+                    <control type="image">
+                        <left>50</left>
+                        <top>14</top>
+                        <width>150</width>
+                        <height>150</height>
+                        <texture>overlays/diffuse-overlay.png</texture>
+                    </control>
                     <control type="image">
                         <left>60</left>
                         <top>24</top>

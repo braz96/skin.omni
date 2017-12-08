@@ -66,12 +66,12 @@
                             </control>
                         </itemlayout>
                         <focusedlayout height="100" width="1370">
-                            <control type="image">
-                                <width>1370</width>
-                                <height>100</height>
-                                <texture>selecteditem_bg.png</texture>
-                                <colordiffuse>highlight</colordiffuse>
-                            </control>
+                            <include content="SelectedItemBackground">
+                                <param name="Left" value="0" />
+                                <param name="Top" value="0" />
+                                <param name="Width" value="1370" />
+                                <param name="Height" value="100" />
+                            </include>
                             <control type="label">
                                 <width>1370</width>
                                 <height>100</height>
@@ -156,12 +156,12 @@
                             </control>
                         </itemlayout>
                         <focusedlayout height="120" width="1370">
-                            <control type="image">
-                                <width>1370</width>
-                                <height>120</height>
-                                <texture>selecteditem_bg.png</texture>
-                                <colordiffuse>highlight</colordiffuse>
-                            </control>
+                            <include content="SelectedItemBackground">
+                                <param name="Left" value="0" />
+                                <param name="Top" value="0" />
+                                <param name="Width" value="1370" />
+                                <param name="Height" value="120" />
+                            </include>
                             <control type="image">
                                 <width>120</width>
                                 <height>120</height>

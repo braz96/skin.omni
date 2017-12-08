@@ -59,13 +59,12 @@
                 </control>
             </itemlayout>
             <focusedlayout height="100" width="100">
-                <control type="image">
-                    <left>5</left>
-                    <top>5</top>
-                    <width>90</width>
-                    <height>90</height>
-                    <texture colordiffuse="highlight">selecteditem_bg.png</texture>
-                </control>
+                <include content="SelectedItemBackground">
+                    <param name="Left" value="5" />
+                    <param name="Top" value="5" />
+                    <param name="Width" value="90" />
+                    <param name="Height" value="90" />
+                </include>
                 <control type="label">
                     <left>5</left>
                     <top>-10</top>

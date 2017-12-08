@@ -6,54 +6,6 @@
             <include>Animation.Common</include>
             <top>155</top>
             <left>606</left>
-            <control type="group">
-                <visible>Integer.IsGreater(Container(500).NumItems,0)</visible>
-                <animation effect="fade" time="320" delay="300">Visible</animation>
-                <control type="image">
-                    <visible>[Container.Content(sets) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(actors)] + Control.HasFocus(500)</visible>
-                    <left>12</left>
-                    <top>10</top>
-                    <width>262</width>
-                    <height>422</height>
-                    <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="highlight">selecteditem_bg.png</texture>
-                    <animation effect="slide" end="0,445" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
-                    <animation effect="slide" end="282,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,5)">Conditional</animation>
-                    <animation effect="slide" end="282,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,4)">Conditional</animation>
-                    <animation effect="slide" end="282,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,3)">Conditional</animation>
-                    <animation effect="slide" end="282,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,2)">Conditional</animation>
-                    <animation effect="slide" end="282,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,1)">Conditional</animation>
-                    <animation effect="slide" end="282,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,0)">Conditional</animation>
-                </control>
-                <control type="image">
-                    <visible>[Container.Content(files) | Container.Content(episodes) | Container.Content(videos)] + Control.HasFocus(500)</visible>
-                    <left>10</left>
-                    <top>10</top>
-                    <width>404</width>
-                    <height>276</height>
-                    <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="highlight">selecteditem_bg.png</texture>
-                    <animation effect="slide" end="0,296" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,1)">Conditional</animation>
-                    <animation effect="slide" end="0,296" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
-                    <animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,2)">Conditional</animation>
-                    <animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,1)">Conditional</animation>
-                    <animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,0)">Conditional</animation>
-                </control>
-                <control type="image">
-                    <visible>[Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(images) | Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(tags) | Container.Content(years) | Container.Content(directors) | Container.Content(studios)] + Control.HasFocus(500)</visible>
-                    <left>48</left>
-                    <top>10</top>
-                    <width>385</width>
-                    <height>425</height>
-                    <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="highlight">selecteditem_bg.png</texture>
-                    <animation effect="slide" end="0,445" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
-                    <animation effect="slide" end="405,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,3)">Conditional</animation>
-                    <animation effect="slide" end="405,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,2)">Conditional</animation>
-                    <animation effect="slide" end="405,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,1)">Conditional</animation>
-                    <animation effect="slide" end="405,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,0)">Conditional</animation>
-                </control>
-            </control>
             <control type="panel" id="500">
                 <width>1696</width>
                 <height>890</height>
@@ -98,6 +50,12 @@
                     </include>
                 </itemlayout>
                 <focusedlayout height="445" width="282" condition="[Container.Content(sets) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(actors)] + Control.HasFocus(500)">
+                    <include content="SelectedItemBackground">
+                        <param name="Left" value="12" />
+                        <param name="Top" value="10" />
+                        <param name="Width" value="262" />
+                        <param name="Height" value="422" />
+                    </include>
                     <control type="image">
                         <top>20</top>
                         <left>22</left>
@@ -154,6 +112,12 @@
                     </include>
                 </itemlayout>
                 <focusedlayout height="296" width="424" condition="Container.Content(episodes) | Container.Content(files) | Container.Content(videos)">
+                    <include content="SelectedItemBackground">
+                        <param name="Left" value="10" />
+                        <param name="Top" value="10" />
+                        <param name="Width" value="404" />
+                        <param name="Height" value="276" />
+                    </include>
                     <control type="image">
                         <top>20</top>
                         <left>20</left>
@@ -210,6 +174,12 @@
                     </include>
                 </itemlayout>
                 <focusedlayout height="445" width="405" condition="Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(genres) | Container.Content(countries) | Container.Content(tags) | Container.Content(years) | Container.Content(directors) | Container.Content(studios)">
+                    <include content="SelectedItemBackground">
+                        <param name="Left" value="48" />
+                        <param name="Top" value="10" />
+                        <param name="Width" value="385" />
+                        <param name="Height" value="425" />
+                    </include>
                     <control type="image">
                         <top>20</top>
                         <left>58</left>
@@ -266,6 +236,12 @@
                     </include>
                 </itemlayout>
                 <focusedlayout height="445" width="405" condition="Container.Content(images) | Container.Content()">
+                    <include content="SelectedItemBackground">
+                        <param name="Left" value="48" />
+                        <param name="Top" value="10" />
+                        <param name="Width" value="385" />
+                        <param name="Height" value="425" />
+                    </include>
                     <control type="image">
                         <top>20</top>
                         <left>58</left>

@@ -38,25 +38,9 @@
                 <top>202</top>
                 <left>80</left>
                 <include>Animation.Common</include>
-                <control type="group">
-                    <visible>Integer.IsGreater(Container(500).NumItems,0)</visible>
-                    <animation effect="fade" time="320" delay="300">Visible</animation>
-                    <control type="image">
-                        <width>440</width>
-                        <height>380</height>
-                        <visible>Control.HasFocus(500)</visible>
-                        <animation effect="fade" time="320" delay="200">Visible</animation>
-                        <animation effect="fade" time="200">Hidden</animation>
-                        <texture colordiffuse="highlight">selecteditem_bg.png</texture>
-                        <animation effect="slide" end="0,410" time="300" tween="cubic" easing="inout" condition="Container(500).Row(1)">Conditional</animation>
-                        <animation effect="slide" end="440,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,2)">Conditional</animation>
-                        <animation effect="slide" end="440,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,1)">Conditional</animation>
-                        <animation effect="slide" end="440,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,0)">Conditional</animation>
-                    </control>
-                </control>
                 <control type="panel" id="500">
-                    <left>12</left>
-                    <top>12</top>
+                    <left>0</left>
+                    <top>0</top>
                     <width>1760</width>
                     <height>820</height>
                     <viewtype label="31234">icon</viewtype>
@@ -70,6 +54,8 @@
                     <orientation>vertical</orientation>
                     <itemlayout height="410" width="440">
                         <control type="group">
+                            <left>12</left>
+                            <top>12</top>
                             <control type="image">
                                 <width>416</width>
                                 <height>235</height>
@@ -102,7 +88,15 @@
                         </control>
                     </itemlayout>
                     <focusedlayout height="410" width="440">
+                        <include content="SelectedItemBackground">
+                            <param name="Left" value="0" />
+                            <param name="Top" value="0" />
+                            <param name="Width" value="440" />
+                            <param name="Height" value="380" />
+                        </include>
                         <control type="group">
+                            <left>12</left>
+                            <top>12</top>
                             <control type="image">
                                 <width>416</width>
                                 <height>235</height>

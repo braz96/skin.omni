@@ -17,19 +17,6 @@
                 <top>210</top>
                 <width>1600</width>
                 <height>780</height>
-                <control type="image">
-                    <visible>Control.HasFocus(305) + !Container(305).IsUpdating</visible>
-                    <animation effect="fade" time="320" delay="200">Visible</animation>
-                    <animation effect="fade" time="200">Hidden</animation>
-                    <left>10</left>
-                    <top>10</top>
-                    <width>513</width>
-                    <height>760</height>
-                    <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="highlight">selecteditem_bg.png</texture>
-                    <animation effect="slide" end="533,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(305).Column,1)">Conditional</animation>
-                    <animation effect="slide" end="533,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(305).Column,0)">Conditional</animation>
-                </control>
                 <control type="panel" id="305">
                     <width>1600</width>
                     <height>780</height>
@@ -74,6 +61,12 @@
                         </control>
                     </itemlayout>
                     <focusedlayout height="780" width="533">
+                        <include content="SelectedItemBackground">
+                            <param name="Left" value="10" />
+                            <param name="Top" value="10" />
+                            <param name="Width" value="513" />
+                            <param name="Height" value="760" />
+                        </include>
                         <control type="image">
                             <top>20</top>
                             <left>20</left>

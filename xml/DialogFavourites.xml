@@ -27,24 +27,6 @@
         <control type="group">
             <top>48</top>
             <left>72.5</left>
-            <control type="group">
-                <visible>Integer.IsGreater(Container(450).NumItems,0)</visible>
-                <animation effect="fade" time="320" delay="300">Visible</animation>
-                <control type="image">
-                    <visible>Control.HasFocus(450)</visible>
-                    <left>10</left>
-                    <top>10</top>
-                    <width>335</width>
-                    <height>375</height>
-                    <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="highlight">selecteditem_bg.png</texture>
-                    <animation effect="slide" end="0,395" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(450).Row,0)">Conditional</animation>
-                    <animation effect="slide" end="355,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(450).Column,3)">Conditional</animation>
-                    <animation effect="slide" end="355,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(450).Column,2)">Conditional</animation>
-                    <animation effect="slide" end="355,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(450).Column,1)">Conditional</animation>
-                    <animation effect="slide" end="355,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(450).Column,0)">Conditional</animation>
-                </control>
-            </control>
             <control type="panel" id="450">
                 <left>0</left>
                 <top>0</top>
@@ -85,6 +67,12 @@
                     </control>
                 </itemlayout>
                 <focusedlayout height="395" width="355">
+                    <include content="SelectedItemBackground">
+                        <param name="Left" value="10" />
+                        <param name="Top" value="10" />
+                        <param name="Width" value="335" />
+                        <param name="Height" value="375" />
+                    </include>
                     <control type="image">
                         <top>20</top>
                         <left>20</left>
