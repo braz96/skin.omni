@@ -351,7 +351,7 @@
                 <height>80</height>
                 <aspectratio align="center" aligny="center">keep</aspectratio>
                 <texture>$VAR[HomeNowPlayingThumbVar]</texture>
-                <visible>[!Window.IsVisible(volumebar) + !Window.IsVisible(busydialog) + !Control.IsVisible(12345) + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch-main.xml)]] | [Player.Muted + !Window.IsVisible(extendedprogressdialog) + !Window.IsVisible(busydialog) + !Control.IsVisible(12345)]</visible>
+                <visible>[!Window.IsVisible(volumebar) + !Window.IsVisible(busydialog) + !Control.IsVisible(12345) + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch.xml)]] | [Player.Muted + !Window.IsVisible(extendedprogressdialog) + !Window.IsVisible(busydialog) + !Control.IsVisible(12345)]</visible>
                 <visible>![Container.Scrolling + [String.IsEqual(Container.SortMethod,$LOCALIZE[369]) | String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | [Container.Content(artists) + String.IsEqual(Container.SortMethod,$LOCALIZE[557])]]]</visible>
             </control>
             <control type="label">
@@ -363,7 +363,7 @@
                 <align>center</align>
                 <label>$INFO[ListItem.SortLetter,[UPPERCASE],[/UPPERCASE]]</label>
                 <visible>Container.Scrolling + [String.IsEqual(Container.SortMethod,$LOCALIZE[369]) | String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | [Container.Content(artists) + String.IsEqual(Container.SortMethod,$LOCALIZE[557])]]</visible>
-                <visible>[!Window.IsVisible(volumebar) + !Window.IsVisible(busydialog) + !Control.IsVisible(12345) + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch-main.xml)]] | [Player.Muted + !Window.IsVisible(extendedprogressdialog) + !Window.IsVisible(busydialog) + !Control.IsVisible(12345)]</visible>
+                <visible>[!Window.IsVisible(volumebar) + !Window.IsVisible(busydialog) + !Control.IsVisible(12345) + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch.xml)]] | [Player.Muted + !Window.IsVisible(extendedprogressdialog) + !Window.IsVisible(busydialog) + !Control.IsVisible(12345)]</visible>
             </control>
         </control>
     </include>
@@ -422,7 +422,7 @@
                 <align>center</align>
                 <label>$INFO[ListItem.SortLetter,[UPPERCASE],[/UPPERCASE]]</label>
                 <visible>Container.Scrolling + [String.IsEqual(Container.SortMethod,$LOCALIZE[369]) | String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | [Container.Content(artists) + String.IsEqual(Container.SortMethod,$LOCALIZE[557])]]</visible>
-                <visible>[!Window.IsVisible(volumebar) + !Window.IsVisible(busydialog) + !Control.IsVisible(12345) + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch-main.xml)]] | [Player.Muted + !Window.IsVisible(extendedprogressdialog) + !Window.IsVisible(busydialog) + !Control.IsVisible(12345)]</visible>
+                <visible>[!Window.IsVisible(volumebar) + !Window.IsVisible(busydialog) + !Control.IsVisible(12345) + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch.xml)]] | [Player.Muted + !Window.IsVisible(extendedprogressdialog) + !Window.IsVisible(busydialog) + !Control.IsVisible(12345)]</visible>
             </control>
         </control>
     </include>
@@ -580,21 +580,6 @@
                 <texture fallback="flags/mpaa/NR.png">$VAR[RatingFlagVar]</texture>
                 <visible>[$EXP[isTvshow] | $EXP[isSeason]] + !Window.IsVisible(movieinformation)</visible>
             </control>-->
-        </control>
-    </include>
-    <include name="GlobalSearchScrollbar">
-        <control type="scrollbar" id="$PARAM[id]">
-            <visible allowhiddenfocus="true">Control.HasFocus($PARAM[id]) | Container($PARAM[container]).Scrolling</visible>
-            <animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
-            <left>1910</left>
-            <top>120</top>
-            <width>10</width>
-            <height>960</height>
-            <onleft>101</onleft>
-            <onright>SetProperty(MediaMenu,true,home)</onright>
-            <onright>SetFocus(9050)</onright>
-            <onup>$PARAM[id]</onup>
-            <ondown>$PARAM[id]</ondown>
         </control>
     </include>
     <include name="AudioDSPPanelContent">

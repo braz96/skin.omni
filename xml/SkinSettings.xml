@@ -332,7 +332,7 @@
                         </control>
                         <control type="button" id="604">
                             <include>SkinSettingsButtonDefaults</include>
-                            <label>- $LOCALIZE[10035]</label>
+                            <label>- $LOCALIZE[13007]</label>
                             <onclick>Skin.Reset(CustomBackground)</onclick>
                             <visible>!String.IsEmpty(Skin.String(CustomBackground))</visible>
                         </control>
@@ -344,7 +344,7 @@
                         </control>
                         <control type="button" id="608">
                             <include>SkinSettingsButtonDefaults</include>
-                            <label>- $LOCALIZE[10035]</label>
+                            <label>- $LOCALIZE[13007]</label>
                             <onclick>Skin.Reset(CustomOverlay)</onclick>
                             <visible>!String.IsEmpty(Skin.String(CustomOverlay))</visible>
                         </control>
@@ -414,7 +414,7 @@
                         </control>
                         <control type="button" id="302">
                             <include>SkinSettingsButtonDefaults</include>
-                            <label>- $LOCALIZE[10035]</label>
+                            <label>- $LOCALIZE[13007]</label>
                             <onclick>Skin.Reset(MusicLibraryPath)</onclick>
                             <visible>!IsEmpty(Skin.String(MusicLibraryPath))</visible>
                         </control>

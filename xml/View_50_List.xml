@@ -816,7 +816,7 @@
                         <include content="SelectedItemBackground">
                             <param name="Left" value="0" />
                             <param name="Top" value="0" />
-                            <param name="Width" value="860" />
+                            <param name="Width" value="805" />
                             <param name="Height" value="120" />
                         </include>
                         <control type="image">
