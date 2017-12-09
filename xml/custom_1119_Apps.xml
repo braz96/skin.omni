@@ -20,7 +20,7 @@
                         <top>180</top>
                         <width>550</width>
                         <height>840</height>
-                        <onleft>9000</onleft>
+                        <onleft>9005</onleft>
                         <onright condition="Integer.IsGreater(Container(51).NumItems,0)">51</onright>
                         <onup>50</onup>
                         <ondown>50</ondown>

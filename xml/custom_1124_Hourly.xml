@@ -22,7 +22,7 @@
                     <top>0</top>
                     <width>1600</width>
                     <height>780</height>
-                    <onleft>9000</onleft>
+                    <onleft>9005</onleft>
                     <onright>SetProperty(MediaMenu,true,home)</onright>
                     <onright>SetFocus(9050)</onright>
                     <onup condition="!String.IsEmpty(Window(weather).Property(Weekend.IsFetched))">ReplaceWindow(1123)</onup>

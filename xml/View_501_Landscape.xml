@@ -10,7 +10,7 @@
                 <visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(artists)] + !$EXP[isPlugin]</visible>
                 <width>1696</width>
                 <height>890</height>
-                <onleft>9000</onleft>
+                <onleft>9005</onleft>
                 <onright condition="Container(501).HasPrevious | Container(501).HasNext">60</onright>
                 <onright condition="!Container(501).HasNext + !Container(501).HasPrevious">SetProperty(MediaMenu,true,home)</onright>
                 <onright condition="!Container(501).HasNext + !Container(501).HasPrevious">SetFocus(9050)</onright>

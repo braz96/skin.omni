@@ -16,7 +16,7 @@
                     <left>470</left>
                     <width>800</width>
                     <height>840</height>
-                    <onleft>9000</onleft>
+                    <onleft>9005</onleft>
                     <onright>SetProperty(AlbumFocus,true,home)</onright>
                     <onright>53</onright>
                     <onup>52</onup>

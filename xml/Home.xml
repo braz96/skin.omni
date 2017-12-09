@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-    <defaultcontrol always="true">9000</defaultcontrol>
+    <defaultcontrol always="true">9005</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mode=single&amp;options=clonewidgets&amp;mainmenuID=9000&amp;group=mainmenu)</onload>
+    <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mode=single&amp;options=clonewidgets&amp;mainmenuID=9005&amp;group=mainmenu)</onload>
     <onload>ClearProperty(MediaMenu,home)</onload>
     <onunload>ClearProperty(MediaMenu,home)</onunload>
     <controls>
@@ -48,7 +48,7 @@
                 <visible>system.getbool(input.enablemouse)</visible>
             </control>
             <control type="group" id="9003">
-                <visible>!String.IsEmpty(Container(9000).ListItem.Property(widgetPath)) | String.IsEqual(Container(9000).ListItem.Property(widget),weather) | String.IsEqual(Container(9000).ListItem.Property(widget),settings) | String.IsEqual(Container(9000).ListItem.Property(widget),systeminfo)</visible>
+                <visible>!String.IsEmpty(Container(9005).ListItem.Property(widgetPath)) | String.IsEqual(Container(9005).ListItem.Property(widget),weather) | String.IsEqual(Container(9005).ListItem.Property(widget),settings) | String.IsEqual(Container(9005).ListItem.Property(widget),systeminfo)</visible>
                 <control type="group">
                     <visible>!Window.IsActive(script-globalsearch.xml)</visible>
                     <include>skinshortcuts-template-widgets</include>
