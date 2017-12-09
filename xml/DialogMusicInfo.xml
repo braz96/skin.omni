@@ -9,11 +9,12 @@
             <animation effect="slide" start="0" end="1200" time="300">WindowClose</animation>
             <left>720</left>
             <width>1200</width>
-            <control type="image">
+            <control type="multiimage">
                 <width>1200</width>
                 <height>1080</height>
+                <include>BackgroundFadeAnimation</include>
                 <aspectratio align="right" aligny="center">scale</aspectratio>
-                <texture>$VAR[GlobalBackgroundVar]</texture>
+                <imagepath background="true">$VAR[GlobalBackgroundVar]</imagepath>
             </control>
             <control type="image">
                 <width>1200</width>
@@ -157,13 +158,13 @@
                         <icon>DefaultAudio.png</icon>
                         <visible>$EXP[isAlbum]</visible>
                     </item>
-                    <item id="207">
+                    <!--<item id="207">
                         <description>YouTube</description>
                         <icon>special://skin/extras/icons/youtube.png</icon>
                         <onclick>RunScript(script.extendedinfo?info=youtubesearch&amp;&amp;id=$ESCINFO[ListItem.Artist] $LOCALIZE[2])</onclick>
                         <visible>System.HasAddon(script.extendedinfo)</visible>
                         <visible>$EXP[isArtist] | $EXP[isAlbum] | $EXP[isSong]</visible>
-                    </item>
+                    </item>-->
                     <item id="208">
                         <icon>special://skin/extras/icons/fanart2.png</icon>
                         <onclick>SetFocus(90400)</onclick>
@@ -533,7 +534,7 @@
                         </focusedlayout>
                     </control>
                 </control>
-                <control type="group">
+                <!--<control type="group">
                     <top>0</top>
                     <left>0</left>
                     <control type="panel" id="150">
@@ -626,7 +627,7 @@
                         <font>font16</font>
                         <animation effect="fade" time="400" start="0" end="100" delay="5000">Visible</animation>
                     </control>
-                </control>
+                </control>-->
                 <control type="group">
                     <left>20</left>
                     <top>0</top>
@@ -788,11 +789,12 @@
             <animation effect="slide" start="0" end="-720" time="300">WindowClose</animation>
             <width>720</width>
             <height>1080</height>
-            <control type="image">
+            <control type="multiimage">
                 <width>720</width>
                 <height>1080</height>
+                <include>BackgroundFadeAnimation</include>
                 <aspectratio align="left" aligny="center">scale</aspectratio>
-                <texture>$VAR[GlobalBackgroundVar]</texture>
+                <imagepath background="true">$VAR[GlobalBackgroundVar]</imagepath>
             </control>
             <control type="image">
                 <width>720</width>

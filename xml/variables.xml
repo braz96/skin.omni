@@ -489,7 +489,7 @@
         <value condition="[String.IsEqual(ListItem.DBTYPE,album) | String.IsEqual(ListItem.DBTYPE,song)] + String.IsEmpty(ListItem.Property(Album_Description))">$LOCALIZE[414]</value>
         <value>$LOCALIZE[547]</value>
     </variable>
-    <variable name="MusicInfoYoutubePath">
+    <!--<variable name="MusicInfoYoutubePath">
         <value condition="String.IsEqual(ListItem.DBTYPE,artist)">plugin://script.extendedinfo?info=youtubesearchvideos&amp;&amp;id=$ESCINFO[ListItem.Artist] $LOCALIZE[2]</value>
         <value condition="String.IsEqual(ListItem.DBTYPE,album)">plugin://script.extendedinfo?info=youtubesearchvideos&amp;&amp;id=$ESCINFO[ListItem.Artist] $ESCINFO[ListItem.Label] $LOCALIZE[558]</value>
         <value condition="String.IsEqual(ListItem.DBTYPE,song)">plugin://script.extendedinfo?info=youtubesearchvideos&amp;&amp;id=$ESCINFO[ListItem.Artist] $ESCINFO[ListItem.Title]</value>
@@ -499,7 +499,7 @@
         <value condition="String.IsEqual(ListItem.DBTYPE,tvshow)">plugin://script.extendedinfo?info=youtubesearchvideos&amp;&amp;id=$ESCINFO[ListItem.Title] $LOCALIZE[20364]</value>
         <value condition="String.IsEqual(ListItem.DBTYPE,episode)">plugin://script.extendedinfo?info=youtubesearchvideos&amp;&amp;id=$ESCINFO[ListItem.TVShowTitle] $LOCALIZE[20364]</value>
         <value>plugin://script.extendedinfo?info=youtubesearchvideos&amp;&amp;id=$ESCINFO[ListItem.Label]</value>
-    </variable>
+    </variable>-->
     <variable name="WidgetThumbnailLabel">
         <value condition="String.Contains(Container(9005).ListItem.Property(widgetPath),recentlyaddedepisodes)">$INFO[ListItem.Season,,x]$INFO[ListItem.Episode,,. ]$INFO[ListItem.Title]</value>
         <value condition="!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
