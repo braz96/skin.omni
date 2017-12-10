@@ -25,7 +25,7 @@
                     <height>840</height>
                     <onup>50</onup>
                     <ondown>50</ondown>
-                    <onleft>9000</onleft>
+                    <onleft>9005</onleft>
                     <onright condition="Container(50).HasPrevious | Container(50).HasNext">60</onright>
                     <onright condition="!Container(50).HasPrevious + !Container(50).HasNext">SetProperty(MediaMenu,true,home)</onright>
                     <onright condition="!Container(50).HasPrevious + !Container(50).HasNext">SetFocus(9050)</onright>

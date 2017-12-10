@@ -22,7 +22,7 @@
                     <onright condition="Container(2).HasPrevious | Container(2).HasNext">60</onright>
                     <onright condition="!Container(2).HasNext + !Container(2).HasPrevious">SetProperty(MediaMenu,true,home)</onright>
                     <onright condition="!Container(2).HasNext + !Container(2).HasPrevious">SetFocus(9050)</onright>
-                    <onleft>9000</onleft>
+                    <onleft>9005</onleft>
                     <pagecontrol>60</pagecontrol>
                     <preloaditems>2</preloaditems>
                     <itemlayout height="390" width="350">

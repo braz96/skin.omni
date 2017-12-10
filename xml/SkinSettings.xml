@@ -17,7 +17,7 @@
                     <top>0</top>
                     <width>356</width>
                     <height>840</height>
-                    <onleft>9000</onleft>
+                    <onleft>9005</onleft>
                     <onright condition="!Container(9030).HasFocus(9)">9040</onright>
                     <onup>9030</onup>
                     <ondown>9030</ondown>

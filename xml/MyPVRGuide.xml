@@ -28,7 +28,7 @@
                     <timeblocks>20</timeblocks>
                     <progresstexture colordiffuse="highlight" border="0,72,18,14">osd/epg_progress.png</progresstexture>
                     <rulerunit>6</rulerunit>
-                    <onleft>9000</onleft>
+                    <onleft>9005</onleft>
                     <onright>SetProperty(MediaMenu,true,home)</onright>
                     <onright>SetFocus(9050)</onright>
                     <onup>10</onup>

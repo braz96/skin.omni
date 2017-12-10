@@ -20,7 +20,7 @@
                 <control type="panel" id="50">
                     <width>1000</width>
                     <height>840</height>
-                    <onleft>9000</onleft>
+                    <onleft>9005</onleft>
                     <onright condition="Container(50).HasPrevious | Container(50).HasNext">60</onright>
                     <onright condition="!Container(50).HasPrevious + !Container(50).HasNext">SetProperty(MediaMenu,true,home)</onright>
                     <onright condition="!Container(50).HasPrevious + !Container(50).HasNext">SetFocus(9050)</onright>

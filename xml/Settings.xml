@@ -15,7 +15,7 @@
                 <height>890</height>
                 <onup>9020</onup>
                 <ondown>9020</ondown>
-                <onleft>9000</onleft>
+                <onleft>9005</onleft>
                 <onright>9020</onright>
                 <preloaditems>2</preloaditems>
                 <viewtype label="535">list</viewtype>
