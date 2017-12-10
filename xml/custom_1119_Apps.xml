@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="1119" type="window">
     <defaultcontrol always="true">50</defaultcontrol>
+    <onload>ClearProperty(MediaMenu,home)</onload>
+    <onunload>ClearProperty(MediaMenu,home)</onunload>
     <controls>
         <include>CommonBackground</include>
         <control type="group">
@@ -140,6 +142,8 @@
                         <height>840</height>
                         <onleft>50</onleft>
                         <onright condition="Container(51).HasNext | Container(51).HasPrevious">60</onright>
+                        <onright condition="![Container(51).HasNext | Container(51).HasPrevious]">SetProperty(MediaMenu,true,home)</onright>
+                        <onright condition="![Container(51).HasNext | Container(51).HasPrevious]">SetFocus(9050)</onright>
                         <onup>51</onup>
                         <ondown>51</ondown>
                         <animation effect="fade" start="100" end="0" time="300" condition="Container(51).IsUpdating">conditional</animation>
@@ -242,8 +246,39 @@
                 <onup>60</onup>
                 <ondown>60</ondown>
                 <onleft>51</onleft>
-                <onright>51</onright>
+                <onright>SetProperty(MediaMenu,true,home)</onright>
+                <onright>SetFocus(9050)</onright>
                 <orientation>vertical</orientation>
+            </control>
+            <control type="group">
+                <left>2350</left>
+                <include>SideBladeRight</include>
+                <control type="grouplist" id="9050">
+                    <animation effect="slide" start="-630,0" end="0,0" time="400" tween="quadratic" easing="out">Visible</animation>
+                    <left>0</left>
+                    <top>0</top>
+                    <width>630</width>
+                    <height>1080</height>
+                    <onright>9050</onright>
+                    <onleft>ClearProperty(MediaMenu,home)</onleft>
+                    <onleft>51</onleft>
+                    <onup>9050</onup>
+                    <ondown>9050</ondown>
+                    <onback>ClearProperty(MediaMenu,home)</onback>
+                    <onback>51</onback>
+                    <itemgap>0</itemgap>
+                    <control type="button" id="204">
+                        <description>Settings button</description>
+                        <textwidth>352</textwidth>
+                        <include>ButtonCommonValues</include>
+                        <label>1390</label>
+                        <onclick>ActivateWindow(systemsettings,addons)</onclick>
+                    </control>
+                    <include>PlaylistButtons</include>
+                    <include content="MenuPlayerControls">
+                        <param name="PlayerControlsOnDown" value="213" />
+                    </include>
+                </control>
             </control>
         </control>
     </controls>
