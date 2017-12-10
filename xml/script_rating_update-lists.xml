@@ -43,7 +43,6 @@
             <onright condition="![Container(10).HasNext | Container(10).HasPrevious]">9001</onright>
             <ondown>91</ondown>
             <pagecontrol>60</pagecontrol>
-            <scrolltime>200</scrolltime>
             <itemlayout height="60">
                 <control type="label">
                     <width>1370</width>

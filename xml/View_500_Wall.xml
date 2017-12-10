@@ -20,7 +20,6 @@
                 <pagecontrol>60</pagecontrol>
                 <preloaditems>2</preloaditems>
                 <viewtype label="31086">Icon</viewtype>
-                <scrolltime tween="quadratic" easing="out">300</scrolltime>
                 <itemlayout height="445" width="282" condition="[Container.Content(sets) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(actors)] + Control.HasFocus(500)">
                     <control type="image">
                         <top>20</top>

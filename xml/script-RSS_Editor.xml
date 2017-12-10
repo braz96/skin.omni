@@ -32,7 +32,6 @@
             <ondown>10</ondown>
             <onleft>9001</onleft>
             <onright>9001</onright>
-            <scrolltime>200</scrolltime>
             <itemlayout height="100">
                 <control type="label">
                     <height>100</height>

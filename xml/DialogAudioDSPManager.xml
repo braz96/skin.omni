@@ -36,7 +36,6 @@
                     <onleft>9000</onleft>
                     <onright>9000</onright>
                     <orientation>horizontal</orientation>
-                    <scrolltime tween="sine" easing="out">200</scrolltime>
                     <itemlayout width="352" height="69">
                         <control type="label">
                             <right>20</right>
@@ -96,7 +95,6 @@
                         <onup>9000</onup>
                         <ondown>9001</ondown>
                         <onright>21</onright>
-                        <scrolltime>200</scrolltime>
                         <pagecontrol>60</pagecontrol>
                         <include>AudioDSPPanelContent</include>
                     </control>
@@ -118,7 +116,6 @@
                         <onup>9000</onup>
                         <ondown>9001</ondown>
                         <onleft>20</onleft>
-                        <scrolltime>200</scrolltime>
                         <pagecontrol>61</pagecontrol>
                         <include>AudioDSPPanelContent</include>
                     </control>

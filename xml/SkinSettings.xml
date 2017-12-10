@@ -22,7 +22,6 @@
                     <onup>9030</onup>
                     <ondown>9030</ondown>
                     <pagecontrol />
-                    <scrolltime tween="quadratic" easing="out">200</scrolltime>
                     <include>SettingsFadeEffect</include>
                     <itemlayout height="90" width="356">
                         <control type="label">
@@ -123,7 +122,6 @@
                         <viewtype label="535">list</viewtype>
                         <pagecontrol>60</pagecontrol>
                         <preloaditems>2</preloaditems>
-                        <scrolltime tween="quadratic" easing="out">200</scrolltime>
                         <itemlayout height="90" width="1316">
                             <control type="image">
                                 <left>10</left>

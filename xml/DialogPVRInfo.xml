@@ -77,8 +77,6 @@
                     <height>1080</height>
                     <ondown>9000</ondown>
                     <onup>9000</onup>
-                    <scrolltime tween="quadratic" easing="out">300</scrolltime>
-                    <orientation>Vertical</orientation>
                     <itemlayout height="120" width="120">
                         <control type="image">
                             <top>20</top>
@@ -163,8 +161,6 @@
                         <top>150</top>
                         <width>1020</width>
                         <height>150</height>
-                        <orientation>vertical</orientation>
-                        <scrolltime tween="quadratic" easing="out">200</scrolltime>
                         <itemlayout height="50" width="1020">
                             <control type="label">
                                 <width>200</width>

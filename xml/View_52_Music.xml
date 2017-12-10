@@ -24,7 +24,6 @@
                     <viewtype label="2">list</viewtype>
                     <pagecontrol>61</pagecontrol>
                     <preloaditems>2</preloaditems>
-                    <scrolltime tween="quadratic" easing="out">300</scrolltime>
                     <itemlayout height="120" width="800">
                         <control type="image">
                             <top>10</top>
@@ -123,7 +122,6 @@
                     <ondown>53</ondown>
                     <pagecontrol>62</pagecontrol>
                     <preloaditems>2</preloaditems>
-                    <scrolltime tween="quadratic" easing="out">300</scrolltime>
                     <itemlayout height="120" width="800">
                         <control type="image">
                             <top>10</top>
@@ -206,7 +204,6 @@
                     <ondown>54</ondown>
                     <pagecontrol>60</pagecontrol>
                     <preloaditems>2</preloaditems>
-                    <scrolltime tween="quadratic" easing="out">300</scrolltime>
                     <itemlayout height="120" width="800">
                         <control type="label">
                             <left>0</left>

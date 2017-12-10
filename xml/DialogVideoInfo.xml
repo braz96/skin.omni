@@ -106,8 +106,6 @@
                 <onleft condition="Control.IsVisible(400) + [Container(400).HasNext | Container(400).HasPrevious]">60</onleft>
                 <ondown>9000</ondown>
                 <onup>9000</onup>
-                <scrolltime tween="quadratic" easing="out">300</scrolltime>
-                <orientation>Vertical</orientation>
                 <itemlayout height="120" width="120">
                     <control type="image">
                         <top>20</top>
@@ -206,9 +204,7 @@
                     <top>150</top>
                     <width>1020</width>
                     <height>800</height>
-                    <orientation>vertical</orientation>
                     <pagecontrol>61</pagecontrol>
-                    <scrolltime tween="quadratic" easing="out">200</scrolltime>
                     <itemlayout height="50" width="1020">
                         <control type="label">
                             <width>180</width>
@@ -493,8 +489,6 @@
                         <onright>9000</onright>
                         <onup>50</onup>
                         <ondown>50</ondown>
-                        <orientation>vertical</orientation>
-                        <scrolltime tween="quadratic" easing="out">300</scrolltime>
                         <visible>Container(9000).HasFocus(206) | Control.HasFocus(50)</visible>
                         <animation effect="fade" time="300" start="0" end="100">Visible</animation>
                         <itemlayout height="445" width="270">
@@ -567,9 +561,7 @@
                         <onright>9000</onright>
                         <onup>150</onup>
                         <ondown>150</ondown>
-                        <orientation>vertical</orientation>
                         <preloaditems>2</preloaditems>
-                        <scrolltime tween="quadratic" easing="out">300</scrolltime>
                         <visible>[Container(9000).HasFocus(207) | Control.HasFocus(150)] + System.HasAddon(script.extendedinfo)</visible>
                         <itemlayout height="296" width="424">
                             <control type="image">
@@ -660,8 +652,6 @@
                         <onright>9000</onright>
                         <onup>250</onup>
                         <ondown>250</ondown>
-                        <orientation>vertical</orientation>
-                        <scrolltime tween="quadratic" easing="out">300</scrolltime>
                         <visible>Container(9000).HasFocus(208) | Control.HasFocus(250)</visible>
                         <animation effect="fade" start="0" end="100" time="500">VisibleChange</animation>
                         <itemlayout height="445" width="270">
@@ -743,7 +733,6 @@
                         <ondown>90700</ondown>
                         <viewtype label="535">list</viewtype>
                         <preloaditems>2</preloaditems>
-                        <scrolltime tween="quadratic" easing="out">200</scrolltime>
                         <itemlayout height="120" width="949">
                             <control type="image">
                                 <left>10</left>

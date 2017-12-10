@@ -36,7 +36,6 @@
                 <onright>5</onright>
                 <onup>3</onup>
                 <ondown>3</ondown>
-                <scrolltime>0</scrolltime>
             </control>
         </control>
         <!-- right group -->
@@ -54,7 +53,6 @@
                 <onright condition="![Container(5).HasNext | Container(5).HasPrevious]">9001</onright>
                 <onup>5</onup>
                 <ondown>5</ondown>
-                <scrolltime tween="cubic" easing="out">500</scrolltime>
             </control>
             <control type="scrollbar" id="65">
                 <visible allowhiddenfocus="true">[Control.HasFocus(65) | ControlGroup(5).HasFocus]</visible>

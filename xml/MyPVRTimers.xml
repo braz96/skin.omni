@@ -30,7 +30,6 @@
                     <onright condition="!Container(50).HasPrevious + !Container(50).HasNext">SetProperty(MediaMenu,true,home)</onright>
                     <onright condition="!Container(50).HasPrevious + !Container(50).HasNext">SetFocus(9050)</onright>
                     <pagecontrol>60</pagecontrol>
-                    <scrolltime tween="quadratic">200</scrolltime>
                     <itemlayout height="90">
                         <control type="label">
                             <left>5</left>

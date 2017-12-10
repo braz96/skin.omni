@@ -32,7 +32,6 @@
             <onright condition="Container(20).HasNext | Container(20).HasPrevious">60</onright>
             <onright condition="![Container(20).HasNext | Container(20).HasPrevious]">9002</onright>
             <pagecontrol>60</pagecontrol>
-            <scrolltime>200</scrolltime>
             <itemlayout height="60" width="660">
                 <control type="image">
                     <left>5</left>

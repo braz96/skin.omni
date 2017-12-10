@@ -19,7 +19,6 @@
                 <onright>111</onright>
                 <onup>110</onup>
                 <ondown>110</ondown>
-                <scrolltime>200</scrolltime>
                 <pagecontrol>111</pagecontrol>
                 <itemlayout height="50">
                     <control type="label">
@@ -74,7 +73,6 @@
                     <onright condition="Container(120).HasNext | Container(120).HasPrevious">60</onright>
                     <onright condition="![Container(120).HasNext | Container(120).HasPrevious]">9000</onright>
                     <pagecontrol>60</pagecontrol>
-                    <scrolltime tween="quadratic" easing="out">200</scrolltime>
                     <itemlayout height="100" width="1370">
                         <control type="label">
                             <width>1370</width>

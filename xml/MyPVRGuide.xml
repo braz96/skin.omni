@@ -25,7 +25,6 @@
                     <width>1720</width>
                     <height>690</height>
                     <pagecontrol>60</pagecontrol>
-                    <scrolltime tween="quadratic" easing="out">200</scrolltime>
                     <timeblocks>20</timeblocks>
                     <progresstexture colordiffuse="highlight" border="0,72,18,14">osd/epg_progress.png</progresstexture>
                     <rulerunit>6</rulerunit>

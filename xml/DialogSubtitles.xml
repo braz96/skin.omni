@@ -44,7 +44,6 @@
                 <onup>120</onup>
                 <ondown>120</ondown>
                 <pagecontrol>121</pagecontrol>
-                <scrolltime tween="quadratic" easing="out">200</scrolltime>
                 <itemlayout width="1365" height="100">
                     <control type="image">
                         <left>25</left>
@@ -256,7 +255,6 @@
                     <onup>160</onup>
                     <ondown>160</ondown>
                     <viewtype label="535">list</viewtype>
-                    <scrolltime tween="quadratic" easing="out">200</scrolltime>
                     <itemlayout width="400" height="100">
                         <control type="label">
                             <width>400</width>

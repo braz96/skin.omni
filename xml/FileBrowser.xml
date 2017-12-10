@@ -36,7 +36,6 @@
                     <onup>450</onup>
                     <ondown>450</ondown>
                     <pagecontrol>60</pagecontrol>
-                    <scrolltime tween="quadratic" easing="out">200</scrolltime>
                     <itemlayout height="120" width="1370">
                         <control type="image">
                             <left>10</left>
@@ -110,7 +109,6 @@
                     <onup>451</onup>
                     <ondown>451</ondown>
                     <pagecontrol>60</pagecontrol>
-                    <scrolltime tween="quadratic" easing="out">200</scrolltime>
                     <itemlayout height="120" width="950">
                         <control type="image">
                             <animation effect="zoom" start="100" end="80" center="auto" time="0" condition="String.Contains(ListItem.Icon,special%3A%2F%2Fskin%2Fextras%2Fspinners)">conditional</animation>

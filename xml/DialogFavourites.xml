@@ -40,8 +40,6 @@
                 <preloaditems>2</preloaditems>
                 <pagecontrol>60</pagecontrol>
                 <viewtype label="21371">list</viewtype>
-                <scrolltime tween="quadratic" easing="out">300</scrolltime>
-                <orientation>vertical</orientation>
                 <itemlayout height="395" width="355">
                     <control type="image">
                         <top>20</top>

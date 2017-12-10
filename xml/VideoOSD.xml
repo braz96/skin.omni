@@ -39,7 +39,6 @@
                 <width>FullScreenWidth</width>
                 <align>center</align>
                 <itemgap>0</itemgap>
-                <scrolltime tween="sine">200</scrolltime>
                 <orientation>horizontal</orientation>
                 <onup>700</onup>
                 <ondown condition="!Control.HasFocus(717)">719</ondown>

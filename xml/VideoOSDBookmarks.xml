@@ -33,10 +33,8 @@
                 <onright condition="![Container(11).HasNext | Container(11).HasPrevious]">9000</onright>
                 <ondown>11</ondown>
                 <onup>11</onup>
-                <scrolltime>200</scrolltime>
                 <viewtype label="536">icon</viewtype>
                 <pagecontrol>60</pagecontrol>
-                <orientation>vertical</orientation>
                 <itemlayout height="322" width="470">
                     <control type="image">
                         <top>20</top>

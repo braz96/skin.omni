@@ -33,7 +33,6 @@
                 <ondown>11</ondown>
                 <viewtype label="535">list</viewtype>
                 <pagecontrol>60</pagecontrol>
-                <scrolltime tween="quadratic" easing="out">200</scrolltime>
                 <itemlayout height="120" width="890">
                     <control type="image">
                         <left>10</left>

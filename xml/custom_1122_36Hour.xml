@@ -26,7 +26,6 @@
                     <onup condition="!String.IsEmpty(Window(weather).Property(Daily.IsFetched))">ReplaceWindow(1121)</onup>
                     <ondown condition="!String.IsEmpty(Window(weather).Property(Weekend.IsFetched))">ReplaceWindow(1123)</ondown>
                     <orientation>horizontal</orientation>
-                    <scrolltime tween="quadratic" easing="out">200</scrolltime>
                     <itemlayout height="780" width="533">
                         <control type="image">
                             <top>20</top>

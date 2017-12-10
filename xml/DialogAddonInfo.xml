@@ -92,8 +92,6 @@
                     <onleft condition="Control.IsVisible(400) + [Container(400).HasNext | Container(400).HasPrevious]">60</onleft>
                     <ondown>9000</ondown>
                     <onup>9000</onup>
-                    <scrolltime tween="quadratic" easing="out">300</scrolltime>
-                    <orientation>Vertical</orientation>
                     <itemlayout height="120" width="120">
                         <control type="image">
                             <top>20</top>
@@ -258,9 +256,7 @@
                         <onright>9000</onright>
                         <onup>50</onup>
                         <ondown>50</ondown>
-                        <orientation>vertical</orientation>
                         <preloaditems>2</preloaditems>
-                        <scrolltime tween="quadratic" easing="out">300</scrolltime>
                         <visible>Container(9000).HasFocus(203) | Control.HasFocus(50)</visible>
                         <itemlayout height="296" width="495">
                             <control type="image">
@@ -339,7 +335,6 @@
                 <width>720</width>
                 <height>300</height>
                 <orientation>horizontal</orientation>
-                <scrolltime tween="quadratic" easing="out">200</scrolltime>
                 <itemlayout height="50" width="720">
                     <control type="label">
                         <left>30</left>

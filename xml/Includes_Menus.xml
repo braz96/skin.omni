@@ -31,8 +31,6 @@
                     <ondown>9005</ondown>
                     <onup>9005</onup>
                     <onclick condition="Windows.IsActive(favourites)">Dialog.Close</onclick>
-                    <scrolltime tween="quadratic" easing="out">300</scrolltime>
-                    <orientation>Vertical</orientation>
                     <itemlayout height="120" width="430">
                         <control type="image">
                             <top>20</top>
@@ -84,8 +82,6 @@
                 <onback>ClearProperty(SubMenu,home)</onback>
                 <onback>9005</onback>
                 <pagecontrol />
-                <scrolltime tween="quadratic" easing="out">300</scrolltime>
-                <orientation>Vertical</orientation>
                 <itemlayout height="120" width="430">
                     <control type="label">
                         <width>430</width>

@@ -25,7 +25,6 @@
                     <onleft>9000</onleft>
                     <pagecontrol>60</pagecontrol>
                     <preloaditems>2</preloaditems>
-                    <scrolltime tween="quadratic" easing="out">300</scrolltime>
                     <itemlayout height="390" width="350">
                         <control type="image">
                             <top>20</top>

@@ -46,12 +46,10 @@
                     <viewtype label="31234">icon</viewtype>
                     <pagecontrol>60</pagecontrol>
                     <preloaditems>2</preloaditems>
-                    <scrolltime tween="quadratic">300</scrolltime>
                     <onleft>500</onleft>
                     <onright>60</onright>
                     <onup>700</onup>
                     <ondown>600</ondown>
-                    <orientation>vertical</orientation>
                     <itemlayout height="410" width="440">
                         <control type="group">
                             <left>12</left>

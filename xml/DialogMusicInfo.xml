@@ -91,8 +91,6 @@
                 <onleft condition="Control.IsVisible(400) + [Container(400).HasNext | Container(400).HasPrevious]">60</onleft>
                 <ondown>9000</ondown>
                 <onup>9000</onup>
-                <scrolltime tween="quadratic" easing="out">300</scrolltime>
-                <orientation>Vertical</orientation>
                 <itemlayout height="120" width="120">
                     <control type="image">
                         <top>20</top>
@@ -207,9 +205,7 @@
                     <top>150</top>
                     <width>1020</width>
                     <height>800</height>
-                    <orientation>vertical</orientation>
                     <pagecontrol>61</pagecontrol>
-                    <scrolltime tween="quadratic" easing="out">200</scrolltime>
                     <itemlayout height="50" width="1020">
                         <control type="label">
                             <width>200</width>
@@ -403,8 +399,6 @@
                         <onup>50</onup>
                         <ondown>50</ondown>
                         <viewtype label="">list</viewtype>
-                        <scrolltime tween="quadratic" easing="out">200</scrolltime>
-                        <orientation>vertical</orientation>
                         <itemlayout height="90" width="810" condition="$EXP[isArtist]">
                             <control type="label">
                                 <width>110</width>
@@ -548,9 +542,7 @@
                         <onright>9000</onright>
                         <onup>150</onup>
                         <ondown>150</ondown>
-                        <orientation>vertical</orientation>
                         <preloaditems>2</preloaditems>
-                        <scrolltime tween="quadratic" easing="out">300</scrolltime>
                         <visible>[Container(9000).HasFocus(207) | Control.HasFocus(150)] + System.HasAddon(script.extendedinfo)</visible>
                         <itemlayout height="296" width="424">
                             <control type="image">
@@ -643,8 +635,6 @@
                         <ondown>250</ondown>
                         <onclick condition="$EXP[isArtist]">PlayMedia(musicdb://artists/$INFO[ListItem.DBID])</onclick>
                         <viewtype label="">list</viewtype>
-                        <scrolltime tween="quadratic" easing="out">200</scrolltime>
-                        <orientation>vertical</orientation>
                         <itemlayout height="445" width="405">
                             <control type="image">
                                 <top>20</top>
@@ -718,8 +708,6 @@
                         <onup>350</onup>
                         <ondown>350</ondown>
                         <viewtype label="">list</viewtype>
-                        <scrolltime tween="quadratic" easing="out">200</scrolltime>
-                        <orientation>vertical</orientation>
                         <itemlayout height="90" width="810">
                             <control type="label">
                                 <width>110</width>

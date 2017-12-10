@@ -220,11 +220,24 @@
         <left>0</left>
         <top>0</top>
         <itemgap>0</itemgap>
+        <scrolltime tween="cubic" easing="out">500</scrolltime>
     </default>
     <default type="scrollbar">
         <showonepage>false</showonepage>
         <texturesliderbackground colordiffuse="white11">selecteditem_bg.png</texturesliderbackground>
         <texturesliderbar colordiffuse="22ffffff">selecteditem_bg.png</texturesliderbar>
         <texturesliderbarfocus colordiffuse="highlight">selecteditem_bg.png</texturesliderbarfocus>
+    </default>
+    <default type="list">
+        <scrolltime tween="cubic" easing="out">500</scrolltime>
+    </default>
+    <default type="wraplist">
+        <scrolltime tween="cubic" easing="out">500</scrolltime>
+    </default>
+    <default type="fixedlist">
+        <scrolltime tween="cubic" easing="out">500</scrolltime>
+    </default>
+    <default type="panel">
+        <scrolltime tween="cubic" easing="out">500</scrolltime>
     </default>
 </includes>

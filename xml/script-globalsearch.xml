@@ -29,7 +29,6 @@
                     <onright>50</onright>
                     <onup>9000</onup>
                     <ondown>9000</ondown>
-                    <scrolltime tween="cubic" easing="out">500</scrolltime>
                     <itemlayout height="120" width="420">
                         <control type="image">
                             <top>10</top>
@@ -94,7 +93,6 @@
                         <viewtype label="535">list</viewtype>
                         <preloaditems>4</preloaditems>
                         <animation effect="fade" time="200">VisibleChange</animation>
-                        <scrolltime tween="cubic" easing="out">500</scrolltime>
                         <itemlayout height="120" width="1180" condition="Container.Content(epg)">
                             <control type="image">
                                 <top>10</top>
@@ -117,6 +115,7 @@
                                 <top>52</top>
                                 <right>80</right>
                                 <height>60</height>
+                                <textcolor>highlight</textcolor>
                                 <label>$INFO[ListItem.Property(ChannelName)]</label>
                             </control>
                             <control type="label">
@@ -192,6 +191,7 @@
                                 <top>52</top>
                                 <right>80</right>
                                 <height>60</height>
+                                <textcolor>highlight</textcolor>
                                 <label>$INFO[ListItem.Genre]</label>
                             </control>
                             <control type="label">
@@ -267,6 +267,7 @@
                                 <top>52</top>
                                 <right>80</right>
                                 <height>60</height>
+                                <textcolor>highlight</textcolor>
                                 <label>$INFO[ListItem.TvShowTitle]</label>
                             </control>
                             <control type="label">
@@ -342,6 +343,7 @@
                                 <top>52</top>
                                 <right>80</right>
                                 <height>60</height>
+                                <textcolor>highlight</textcolor>
                                 <label>$INFO[ListItem.Artist]</label>
                             </control>
                         </itemlayout>
@@ -403,6 +405,7 @@
                                 <top>52</top>
                                 <right>80</right>
                                 <height>60</height>
+                                <textcolor>highlight</textcolor>
                                 <label>$INFO[ListItem.Property(Artist_Genre)]</label>
                             </control>
                         </itemlayout>
@@ -464,6 +467,7 @@
                                 <top>52</top>
                                 <right>80</right>
                                 <height>60</height>
+                                <textcolor>highlight</textcolor>
                                 <label>$INFO[ListItem.Artist]</label>
                             </control>
                             <control type="label">
@@ -539,6 +543,7 @@
                                 <top>52</top>
                                 <right>80</right>
                                 <height>60</height>
+                                <textcolor>highlight</textcolor>
                                 <label>$INFO[ListItem.Artist]$INFO[ListItem.Album, • ]</label>
                             </control>
                             <control type="label">

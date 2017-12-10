@@ -29,8 +29,6 @@
             <onright>9090</onright>
             <onup condition="Integer.IsGreater(Container(9091).NumItems,0)">Control.SetFocus(9091,999)</onup>
             <ondown condition="Integer.IsGreater(Container(9091).NumItems,0)">Control.SetFocus(9091,0)</ondown>
-            <orientation>vertical</orientation>
-            <scrolltime tween="quadratic" easing="out">200</scrolltime>
             <itemlayout height="100" width="100">
                 <control type="image">
                     <left>5</left>
@@ -104,8 +102,6 @@
             <onright>9091</onright>
             <onup>9090</onup>
             <ondown>9090</ondown>
-            <orientation>vertical</orientation>
-            <scrolltime tween="quadratic" easing="out">200</scrolltime>
             <itemlayout height="55" width="390">
                 <control type="label">
                     <width>390</width>

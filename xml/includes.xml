@@ -228,7 +228,6 @@
                 <height>90</height>
                 <width>630</width>
                 <align>left</align>
-                <scrolltime tween="sine">200</scrolltime>
                 <orientation>horizontal</orientation>
                 <onup>614</onup>
                 <ondown>$PARAM[PlayerControlsOnDown]</ondown>
@@ -814,8 +813,6 @@
                 <ondown>5000</ondown>
                 <onback>noop</onback>
                 <pagecontrol>60</pagecontrol>
-                <orientation>vertical</orientation>
-                <scrolltime tween="quadratic" easing="out">200</scrolltime>
                 <itemlayout height="80" width="510">
                     <control type="label">
                         <top>5</top>

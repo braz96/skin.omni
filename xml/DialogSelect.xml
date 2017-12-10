@@ -38,7 +38,6 @@
                         <onright condition="Container(3).HasNext | Container(3).HasPrevious">60</onright>
                         <onright condition="![Container(3).HasNext | Container(3).HasPrevious]">9001</onright>
                         <pagecontrol>60</pagecontrol>
-                        <scrolltime tween="quadratic" easing="out">200</scrolltime>
                         <itemlayout height="100" width="1370">
                             <control type="label">
                                 <width>1370</width>
@@ -109,7 +108,6 @@
                         <onright condition="Container(6).HasNext | Container(6).HasPrevious">60</onright>
                         <onright condition="![Container(6).HasNext | Container(6).HasPrevious]">9001</onright>
                         <pagecontrol>60</pagecontrol>
-                        <scrolltime tween="quadratic" easing="out">200</scrolltime>
                         <itemlayout height="120" width="1370">
                             <control type="image">
                                 <left>10</left>

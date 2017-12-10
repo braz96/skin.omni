@@ -19,8 +19,6 @@
                 <onright>9020</onright>
                 <preloaditems>2</preloaditems>
                 <viewtype label="535">list</viewtype>
-                <scrolltime tween="quadratic" easing="out">300</scrolltime>
-                <orientation>vertical</orientation>
                 <itemlayout height="178" width="848">
                     <control type="image">
                         <left>60</left>

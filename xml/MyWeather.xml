@@ -101,7 +101,6 @@
                     <ondown condition="!String.IsEmpty(Window(weather).Property(Daily.IsFetched))">ReplaceWindow(1121)</ondown>
                     <preloaditems>2</preloaditems>
                     <viewtype label="21371">list</viewtype>
-                    <scrolltime tween="quadratic" easing="out">300</scrolltime>
                     <orientation>horizontal</orientation>
                     <itemlayout height="445" width="405">
                         <control type="image">

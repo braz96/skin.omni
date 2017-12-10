@@ -25,7 +25,6 @@
                         <onup>50</onup>
                         <ondown>50</ondown>
                         <viewtype label="535">list</viewtype>
-                        <scrolltime tween="quadratic" easing="out">200</scrolltime>
                         <itemlayout height="120" width="550">
                             <control type="image">
                                 <left>10</left>
@@ -146,7 +145,6 @@
                         <animation effect="fade" start="100" end="0" time="300" condition="Container(51).IsUpdating">conditional</animation>
                         <viewtype label="535">list</viewtype>
                         <pagecontrol>60</pagecontrol>
-                        <scrolltime tween="quadratic" easing="out">200</scrolltime>
                         <itemlayout height="120" width="1050">
                             <control type="image">
                                 <left>10</left>
@@ -180,6 +178,7 @@
                                 <top>52</top>
                                 <right>20</right>
                                 <height>60</height>
+                                <textcolor>highlight</textcolor>
                                 <label>$INFO[ListItem.AddonSummary]</label>
                             </control>
                         </itemlayout>

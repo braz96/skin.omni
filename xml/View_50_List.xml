@@ -23,7 +23,6 @@
                     <viewtype label="535">list</viewtype>
                     <pagecontrol>60</pagecontrol>
                     <preloaditems>2</preloaditems>
-                    <scrolltime tween="quadratic" easing="out">300</scrolltime>
                     <itemlayout height="120" width="1050" condition="[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)] + !String.IsEqual(Container.SortMethod,$LOCALIZE[13409])">
                         <control type="image">
                             <top>10</top>

@@ -19,7 +19,6 @@
                 <pagecontrol>60</pagecontrol>
                 <preloaditems>2</preloaditems>
                 <viewtype label="31088">Icon</viewtype>
-                <scrolltime tween="quadratic" easing="out">300</scrolltime>
                 <itemlayout height="296" width="424">
                     <control type="image">
                         <top>20</top>
