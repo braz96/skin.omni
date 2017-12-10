@@ -84,6 +84,7 @@
                             <top>52</top>
                             <right>80</right>
                             <height>60</height>
+                            <textcolor>highlight</textcolor>
                             <label>$VAR[ListSubLabelVar]</label>
                         </control>
                         <control type="label">
@@ -254,6 +255,7 @@
                             <top>52</top>
                             <right>20</right>
                             <height>60</height>
+                            <textcolor>highlight</textcolor>
                             <label>$VAR[ListSubLabelVar]</label>
                         </control>
                         <control type="label">
@@ -417,6 +419,7 @@
                             <top>52</top>
                             <right>80</right>
                             <height>60</height>
+                            <textcolor>highlight</textcolor>
                             <label>$VAR[ListSubLabelVar]</label>
                         </control>
                         <control type="label">
@@ -567,6 +570,7 @@
                             <top>52</top>
                             <right>80</right>
                             <height>60</height>
+                            <textcolor>highlight</textcolor>
                             <label>$VAR[ListSubLabelVar]</label>
                         </control>
                         <control type="label">
@@ -698,6 +702,7 @@
                             <top>52</top>
                             <right>80</right>
                             <height>60</height>
+                            <textcolor>highlight</textcolor>
                             <label>$VAR[ListSubLabelVar]</label>
                         </control>
                         <control type="label">

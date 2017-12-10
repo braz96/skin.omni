@@ -91,31 +91,32 @@
         <value condition="Window.IsActive(home) + Window.IsVisible(busydialog)">$LOCALIZE[503]</value>
         <value condition="Control.HasFocus(53)">$INFO[Container(53).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(53).NumItems,, $LOCALIZE[31025]]</value>
         <value condition="Control.HasFocus(54)">$INFO[Container(54).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(54).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.HasFocus(60) + Control.IsVisible(54)">$INFO[Container(54).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(54).NumItems,, $LOCALIZE[31025]]</value>
         <value>$INFO[Container.CurrentItem,, $LOCALIZE[1443] ]$INFO[Container.NumItems,, $LOCALIZE[31025]]</value>
     </variable>
     <variable name="HeaderLabel2">
-        <value condition="VideoPlayer.Content(episodes) + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch.xml)]">$INFO[VideoPlayer.Season]$INFO[VideoPlayer.Episode,X,. ]$INFO[Player.Title]</value>
+        <value condition="VideoPlayer.Content(episodes) + !Window.IsVisible(extendedprogressdialog)">$INFO[VideoPlayer.Season]$INFO[VideoPlayer.Episode,X,. ]$INFO[Player.Title]</value>
 
-        <value condition="[Player.Playing | Player.HasAudio | Player.HasVideo] + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch.xml)]">$INFO[Player.Title]</value>
+        <value condition="[Player.Playing | Player.HasAudio | Player.HasVideo] + !Window.IsVisible(extendedprogressdialog)">$INFO[Player.Title]</value>
 
-        <value condition="![Player.Playing | Player.HasAudio | Player.HasVideo] + !IsEmpty(Weather.Plugin) + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch.xml)]">$INFO[Weather.Temperature,, • ][LOWERCASE]$INFO[System.Time][/LOWERCASE]</value>
+        <value condition="![Player.Playing | Player.HasAudio | Player.HasVideo] + !IsEmpty(Weather.Plugin) + !Window.IsVisible(extendedprogressdialog)">$INFO[Weather.Temperature,, • ][LOWERCASE]$INFO[System.Time][/LOWERCASE]</value>
 
-        <value condition="![Player.Playing | Player.HasAudio | Player.HasVideo] + IsEmpty(Weather.Plugin) + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch.xml)]">[LOWERCASE]$INFO[System.Time][/LOWERCASE]</value>
+        <value condition="![Player.Playing | Player.HasAudio | Player.HasVideo] + IsEmpty(Weather.Plugin) + !Window.IsVisible(extendedprogressdialog)">[LOWERCASE]$INFO[System.Time][/LOWERCASE]</value>
     </variable>
     <variable name="HeaderSubLabel2">
-        <value condition="VideoPlayer.Content(livetv) + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch.xml)]">$INFO[VideoPlayer.ChannelNumber,,: ]$INFO[VideoPlayer.ChannelName]</value>
+        <value condition="VideoPlayer.Content(livetv) + !Window.IsVisible(extendedprogressdialog)">$INFO[VideoPlayer.ChannelNumber,,: ]$INFO[VideoPlayer.ChannelName]</value>
 
-        <value condition="VideoPlayer.Content(episodes) + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch.xml)]">$INFO[VideoPlayer.Premiered,, • ]$INFO[VideoPlayer.TvShowTitle]</value>
+        <value condition="VideoPlayer.Content(episodes) + !Window.IsVisible(extendedprogressdialog)">$INFO[VideoPlayer.Premiered,, • ]$INFO[VideoPlayer.TvShowTitle]</value>
 
-        <value condition="VideoPlayer.Content(movies) + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch.xml)]">$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Genre, • ]</value>
+        <value condition="VideoPlayer.Content(movies) + !Window.IsVisible(extendedprogressdialog)">$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Genre, • ]</value>
 
-        <value condition="VideoPlayer.Content(musicvideos) + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch.xml)]">$INFO[VideoPlayer.Artist]</value>
+        <value condition="VideoPlayer.Content(musicvideos) + !Window.IsVisible(extendedprogressdialog)">$INFO[VideoPlayer.Artist]</value>
 
-        <value condition="Player.HasAudio + !String.IsEmpty(MusicPlayer.Artist) + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch.xml)]">$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, • ]</value>
+        <value condition="Player.HasAudio + !String.IsEmpty(MusicPlayer.Artist) + !Window.IsVisible(extendedprogressdialog)">$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, • ]</value>
 
-        <value condition="!String.IsEmpty(Player.Title) + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch.xml)]">$INFO[Player.Time]$INFO[Player.Duration, / ]</value>
+        <value condition="!String.IsEmpty(Player.Title) + !Window.IsVisible(extendedprogressdialog)">$INFO[Player.Time]$INFO[Player.Duration, / ]</value>
 
-        <value condition="![Player.Playing | Player.HasAudio | Player.HasVideo] + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch.xml)]">$INFO[System.Date]</value>
+        <value condition="![Player.Playing | Player.HasAudio | Player.HasVideo] + !Window.IsVisible(extendedprogressdialog)">$INFO[System.Date]</value>
     </variable>
     <variable name="HeaderDialogLabel2">
         <value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Season]$INFO[VideoPlayer.Episode,X,. ]$INFO[Player.Title]</value>
@@ -542,6 +543,7 @@
     <variable name="ListRightLabel">
         <value condition="Container.Content(tvshows) | Window.IsActive(videoplaylist)">$INFO[ListItem.Rating]</value>
         <value condition="!Container.Content(albums) + !String.IsEmpty(ListItem.Label2)">$INFO[ListItem.Label2]</value>
+        <value condition="Container.Content(albums)">$INFO[ListItem.Year]</value>
     </variable>
     <variable name="WidgetListMainLabel">
         <value condition="String.StartsWith(Container(9005).ListItem.Property(widgetPath),pvr)">$INFO[ListItem.Label2]</value>

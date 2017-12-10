@@ -9,7 +9,7 @@
                 <left>150</left>
                 <top>0</top>
                 <animation effect="fade" start="100" end="0" time="50" condition="!String.IsEmpty(Window(home).Property(AlbumFocus))">Conditional</animation>
-                <animation effect="fade" start="0" end="100" time="300" delay="300" condition="String.IsEmpty(Window(home).Property(AlbumFocus))">Conditional</animation>
+                <animation effect="fade" start="0" end="100" time="100" delay="250" condition="String.IsEmpty(Window(home).Property(AlbumFocus))">Conditional</animation>
                 <control type="panel" id="52">
                     <visible>Container.Content(artists)</visible>
                     <top>180</top>
@@ -47,6 +47,7 @@
                             <top>52</top>
                             <right>20</right>
                             <height>60</height>
+                            <textcolor>highlight</textcolor>
                             <label>$VAR[ListSubLabelVar]</label>
                         </control>
                     </itemlayout>
@@ -145,6 +146,7 @@
                             <top>52</top>
                             <right>20</right>
                             <height>60</height>
+                            <textcolor>highlight</textcolor>
                             <label>$INFO[ListItem.Year]</label>
                         </control>
                     </itemlayout>
@@ -228,6 +230,7 @@
                             <top>52</top>
                             <right>20</right>
                             <height>60</height>
+                            <textcolor>highlight</textcolor>
                             <label>$INFO[ListItem.Duration]</label>
                         </control>
                     </itemlayout>

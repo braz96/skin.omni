@@ -29,7 +29,7 @@
                     <onright>50</onright>
                     <onup>9000</onup>
                     <ondown>9000</ondown>
-                    <scrolltime tween="quadratic">300</scrolltime>
+                    <scrolltime tween="cubic" easing="out">500</scrolltime>
                     <itemlayout height="120" width="420">
                         <control type="image">
                             <top>10</top>
@@ -91,9 +91,10 @@
                         <onright condition="!Container(50).HasNext + !Container(50).HasPrevious">SetFocus(9050)</onright>
                         <onup>50</onup>
                         <ondown>50</ondown>
-                        <orientation>vertical</orientation>
                         <viewtype label="535">list</viewtype>
-                        <preloaditems>2</preloaditems>
+                        <preloaditems>4</preloaditems>
+                        <animation effect="fade" time="200">VisibleChange</animation>
+                        <scrolltime tween="cubic" easing="out">500</scrolltime>
                         <itemlayout height="120" width="1180" condition="Container.Content(epg)">
                             <control type="image">
                                 <top>10</top>
@@ -101,7 +102,7 @@
                                 <width>178</width>
                                 <height>100</height>
                                 <aspectratio align="center" aligny="center">keep</aspectratio>
-                                <texture fallback="DefaultFallback.png">$INFO[ListItem.Icon]</texture>
+                                <texture fallback="DefaultFallback.png" background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="label">
                                 <top>3</top>
@@ -144,7 +145,7 @@
                                 <width>178</width>
                                 <height>100</height>
                                 <aspectratio align="center" aligny="center">keep</aspectratio>
-                                <texture fallback="DefaultFallback.png">$INFO[ListItem.Icon]</texture>
+                                <texture fallback="DefaultFallback.png" background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="label">
                                 <top>3</top>
@@ -176,7 +177,7 @@
                                 <width>67</width>
                                 <height>100</height>
                                 <aspectratio align="center" aligny="center">scale</aspectratio>
-                                <texture fallback="DefaultFallback.png">$INFO[ListItem.Art(poster)]</texture>
+                                <texture fallback="DefaultFallback.png" background="true">$INFO[ListItem.Art(poster)]</texture>
                             </control>
                             <control type="label">
                                 <top>3</top>
@@ -219,7 +220,7 @@
                                 <width>67</width>
                                 <height>100</height>
                                 <aspectratio align="center" aligny="center">scale</aspectratio>
-                                <texture fallback="DefaultFallback.png">$INFO[ListItem.Art(poster)]</texture>
+                                <texture fallback="DefaultFallback.png" background="true">$INFO[ListItem.Art(poster)]</texture>
                             </control>
                             <control type="label">
                                 <top>3</top>
@@ -251,7 +252,7 @@
                                 <width>178</width>
                                 <height>100</height>
                                 <aspectratio align="center" aligny="center">scale</aspectratio>
-                                <texture fallback="DefaultFallback.png">$INFO[ListItem.Icon]</texture>
+                                <texture fallback="DefaultFallback.png" background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="label">
                                 <top>3</top>
@@ -294,7 +295,7 @@
                                 <width>178</width>
                                 <height>100</height>
                                 <aspectratio align="center" aligny="center">scale</aspectratio>
-                                <texture fallback="DefaultFallback.png">$INFO[ListItem.Icon]</texture>
+                                <texture fallback="DefaultFallback.png" background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="label">
                                 <top>3</top>
@@ -326,7 +327,7 @@
                                 <width>100</width>
                                 <height>100</height>
                                 <aspectratio align="center" aligny="center">scale</aspectratio>
-                                <texture fallback="DefaultFallback.png">$INFO[ListItem.Icon]</texture>
+                                <texture fallback="DefaultFallback.png" background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="label">
                                 <top>3</top>
@@ -362,7 +363,7 @@
                                 <width>100</width>
                                 <height>100</height>
                                 <aspectratio align="center" aligny="center">scale</aspectratio>
-                                <texture fallback="DefaultFallback.png">$INFO[ListItem.Icon]</texture>
+                                <texture fallback="DefaultFallback.png" background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="label">
                                 <top>3</top>
@@ -387,7 +388,7 @@
                                 <width>100</width>
                                 <height>100</height>
                                 <aspectratio align="center" aligny="center">scale</aspectratio>
-                                <texture fallback="DefaultFallback.png">$INFO[ListItem.Icon]</texture>
+                                <texture fallback="DefaultFallback.png" background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="label">
                                 <top>3</top>
@@ -423,7 +424,7 @@
                                 <width>100</width>
                                 <height>100</height>
                                 <aspectratio align="center" aligny="center">scale</aspectratio>
-                                <texture fallback="DefaultFallback.png">$INFO[ListItem.Icon]</texture>
+                                <texture fallback="DefaultFallback.png" background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="label">
                                 <top>3</top>
@@ -448,7 +449,7 @@
                                 <width>100</width>
                                 <height>100</height>
                                 <aspectratio align="center" aligny="center">scale</aspectratio>
-                                <texture fallback="DefaultFallback.png">$INFO[ListItem.Icon]</texture>
+                                <texture fallback="DefaultFallback.png" background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="label">
                                 <top>3</top>
@@ -491,7 +492,7 @@
                                 <width>100</width>
                                 <height>100</height>
                                 <aspectratio align="center" aligny="center">scale</aspectratio>
-                                <texture fallback="DefaultFallback.png">$INFO[ListItem.Icon]</texture>
+                                <texture fallback="DefaultFallback.png" background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="label">
                                 <top>3</top>
@@ -523,7 +524,7 @@
                                 <width>100</width>
                                 <height>100</height>
                                 <aspectratio align="center" aligny="center">scale</aspectratio>
-                                <texture fallback="DefaultFallback.png">$INFO[ListItem.Icon]</texture>
+                                <texture fallback="DefaultFallback.png" background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="label">
                                 <top>3</top>
@@ -566,7 +567,7 @@
                                 <width>100</width>
                                 <height>100</height>
                                 <aspectratio align="center" aligny="center">scale</aspectratio>
-                                <texture fallback="DefaultFallback.png">$INFO[ListItem.Icon]</texture>
+                                <texture fallback="DefaultFallback.png" background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="label">
                                 <top>3</top>

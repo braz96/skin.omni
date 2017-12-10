@@ -64,7 +64,8 @@
         <onup>9050</onup>
         <ondown>9050</ondown>
         <onback>ClearProperty(MediaMenu,home)</onback>
-        <onback>50</onback>
+        <onback condition="!Control.IsVisible(54)">50</onback>
+        <onback condition="Control.IsVisible(54)">54</onback>
         <itemgap>0</itemgap>
         <animation effect="slide" start="-440,0" end="0,0" time="400" tween="quadratic" easing="out">Visible</animation>
         <control type="button" id="1802">
@@ -324,8 +325,8 @@
                     <height>45</height>
                     <font>font30</font>
                     <textoffsetx>15</textoffsetx>
-                    <label>$VAR[HeaderLabel]</label>
-                    <label2>$VAR[HeaderLabel2]</label2>
+                    <label>[UPPERCASE]$VAR[HeaderLabel][/UPPERCASE]</label>
+                    <label2>[UPPERCASE]$VAR[HeaderLabel2][/UPPERCASE]</label2>
                     <onclick>noop</onclick>
                     <texturefocus />
                 </control>
@@ -336,8 +337,8 @@
                     <font>font14</font>
                     <textoffsetx>15</textoffsetx>
                     <textcolor>highlight</textcolor>
-                    <label>$VAR[HeaderSubLabel]</label>
-                    <label2>$VAR[HeaderSubLabel2]</label2>
+                    <label>[UPPERCASE]$VAR[HeaderSubLabel][/UPPERCASE]</label>
+                    <label2>[UPPERCASE]$VAR[HeaderSubLabel2][/UPPERCASE]</label2>
                     <onclick>noop</onclick>
                     <texturefocus />
                     <focusedcolor>highlight</focusedcolor>
@@ -351,7 +352,7 @@
                 <height>80</height>
                 <aspectratio align="center" aligny="center">keep</aspectratio>
                 <texture>$VAR[HomeNowPlayingThumbVar]</texture>
-                <visible>[!Window.IsVisible(volumebar) + !Window.IsVisible(busydialog) + !Control.IsVisible(12345) + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch.xml)]] | [Player.Muted + !Window.IsVisible(extendedprogressdialog) + !Window.IsVisible(busydialog) + !Control.IsVisible(12345)]</visible>
+                <visible>[!Window.IsVisible(volumebar) + !Window.IsVisible(busydialog) + !Control.IsVisible(12345) + !Window.IsVisible(extendedprogressdialog)] | [Player.Muted + !Window.IsVisible(extendedprogressdialog) + !Window.IsVisible(busydialog) + !Control.IsVisible(12345)]</visible>
                 <visible>![Container.Scrolling + [String.IsEqual(Container.SortMethod,$LOCALIZE[369]) | String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | [Container.Content(artists) + String.IsEqual(Container.SortMethod,$LOCALIZE[557])]]]</visible>
             </control>
             <control type="label">
@@ -363,7 +364,7 @@
                 <align>center</align>
                 <label>$INFO[ListItem.SortLetter,[UPPERCASE],[/UPPERCASE]]</label>
                 <visible>Container.Scrolling + [String.IsEqual(Container.SortMethod,$LOCALIZE[369]) | String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | [Container.Content(artists) + String.IsEqual(Container.SortMethod,$LOCALIZE[557])]]</visible>
-                <visible>[!Window.IsVisible(volumebar) + !Window.IsVisible(busydialog) + !Control.IsVisible(12345) + [!Window.IsVisible(extendedprogressdialog) | Window.IsVisible(script-globalsearch.xml)]] | [Player.Muted + !Window.IsVisible(extendedprogressdialog) + !Window.IsVisible(busydialog) + !Control.IsVisible(12345)]</visible>
+                <visible>[!Window.IsVisible(volumebar) + !Window.IsVisible(busydialog) + !Control.IsVisible(12345) + !Window.IsVisible(extendedprogressdialog)] | [Player.Muted + !Window.IsVisible(extendedprogressdialog) + !Window.IsVisible(busydialog) + !Control.IsVisible(12345)]</visible>
             </control>
         </control>
     </include>
