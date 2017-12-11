@@ -100,7 +100,11 @@ msgctxt "#31020"
 msgid "Screen-[CR]shots"
 msgstr ""
 
-#empty strings from id 31021 to 31024
+msgctxt "#31021"
+msgid "No add-ons installed"
+msgstr ""
+
+#empty strings from id 31022 to 31024
 
 msgctxt "#31025"
 msgid "items"

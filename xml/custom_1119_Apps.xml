@@ -24,6 +24,8 @@
                         <height>840</height>
                         <onleft>9005</onleft>
                         <onright condition="Integer.IsGreater(Container(51).NumItems,0)">51</onright>
+                        <onright condition="!Integer.IsGreater(Container(51).NumItems,0)">SetProperty(MediaMenu,true,home)</onright>
+                        <onright condition="!Integer.IsGreater(Container(51).NumItems,0)">SetFocus(9050)</onright>
                         <onup>50</onup>
                         <ondown>50</ondown>
                         <viewtype label="535">list</viewtype>
@@ -133,6 +135,17 @@
                             </item>
                         </content>
                     </control>
+                </control>
+                <control type="label">
+                    <top>180</top>
+                    <left>615</left>
+                    <width>1050</width>
+                    <height>840</height>
+                    <font>font16</font>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>31021</label>
+                    <visible>!Integer.IsGreater(Container(51).NumItems,0)</visible>
                 </control>
                 <control type="group">
                     <control type="panel" id="51">
