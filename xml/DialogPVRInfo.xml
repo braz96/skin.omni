@@ -71,7 +71,7 @@
                     <height>1080</height>
                     <texture colordiffuse="background">menu.png</texture>
                 </control>
-                <control type="panel" id="9000">
+                <control type="list" id="9000">
                     <left>1080</left>
                     <width>120</width>
                     <height>1080</height>
@@ -79,6 +79,7 @@
                     <onup>9000</onup>
                     <itemlayout height="120" width="120">
                         <control type="image">
+                            <animation effect="fade" start="100" end="20" condition="True">Conditional</animation>
                             <top>20</top>
                             <left>20</left>
                             <width>80</width>
@@ -97,18 +98,21 @@
                         </control>
                     </itemlayout>
                     <focusedlayout height="120" width="120">
-                        <include content="SelectedItemBackground">
-                            <param name="Left" value="0" />
-                            <param name="Top" value="0" />
-                            <param name="Width" value="120" />
-                            <param name="Height" value="120" />
-                        </include>
-                        <control type="image">
-                            <top>20</top>
-                            <left>20</left>
-                            <width>80</width>
-                            <height>80</height>
-                            <texture colordiffuse="maintext">$INFO[ListItem.Icon]</texture>
+                        <control type="group">
+                            <animation effect="fade" time="50" start="100" end="60" condition="!Control.HasFocus(9000)">Conditional</animation>
+                            <include content="SelectedItemBackground">
+                                <param name="Left" value="0" />
+                                <param name="Top" value="0" />
+                                <param name="Width" value="120" />
+                                <param name="Height" value="120" />
+                            </include>
+                            <control type="image">
+                                <top>20</top>
+                                <left>20</left>
+                                <width>80</width>
+                                <height>80</height>
+                                <texture colordiffuse="maintext">$INFO[ListItem.Icon]</texture>
+                            </control>
                         </control>
                         <control type="label">
                             <wrapmultiline>true</wrapmultiline>

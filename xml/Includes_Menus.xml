@@ -10,7 +10,7 @@
                     <height>1080</height>
                     <texture colordiffuse="background">menu.png</texture>
                 </control>
-                <control type="panel" id="9005">
+                <control type="list" id="9005">
                     <left>430</left>
                     <top>0</top>
                     <width>430</width>
@@ -33,6 +33,7 @@
                     <onclick condition="Windows.IsActive(favourites)">Dialog.Close</onclick>
                     <itemlayout height="120" width="430">
                         <control type="image">
+                            <animation effect="fade" start="100" end="20" condition="True">Conditional</animation>
                             <top>20</top>
                             <left>20</left>
                             <width>80</width>
@@ -41,13 +42,18 @@
                         </control>
                     </itemlayout>
                     <focusedlayout height="120" width="430">
-                        <include content="SelectedItemBackground">
-                            <param name="Left" value="0" />
-                            <param name="Top" value="0" />
-                            <param name="Width" value="120" />
-                            <param name="Height" value="120" />
-                        </include>
+                        <control type="group">
+                            <animation effect="fade" time="50" start="100" end="60" condition="Control.HasFocus(9010)">Conditional</animation>
+                            <animation effect="fade" time="0" start="100" end="0" condition="!Control.HasFocus(9010) + !Control.HasFocus(9005)">Conditional</animation>
+                            <include content="SelectedItemBackground">
+                                <param name="Left" value="0" />
+                                <param name="Top" value="0" />
+                                <param name="Width" value="120" />
+                                <param name="Height" value="120" />
+                            </include>
+                        </control>
                         <control type="image">
+                            <animation effect="fade" start="100" end="20" condition="!Control.HasFocus(9010) + !Control.HasFocus(9005)">Conditional</animation>
                             <top>20</top>
                             <left>20</left>
                             <width>80</width>
