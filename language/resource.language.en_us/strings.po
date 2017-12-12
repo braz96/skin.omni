@@ -77,8 +77,8 @@ msgid "Enable fanart backgrounds"
 msgstr "Enable fanart backgrounds"
 
 msgctxt "#31015"
-msgid "Enables fanart backgrounds in media sections and home screen widgets."
-msgstr "Enables fanart backgrounds in media sections and home screen widgets."
+msgid "Enable to display fanart backgrounds in media sections and home screen widgets."
+msgstr "Enable to display fanart backgrounds in media sections and home screen widgets."
 
 msgctxt "#31016"
 msgid "Operating system"
@@ -103,6 +103,14 @@ msgstr "Screen-[CR]shots"
 msgctxt "#31021"
 msgid "No add-ons installed"
 msgstr "No add-ons installed"
+
+msgctxt "#31022"
+msgid "Set global slideshow"
+msgstr "Set global slideshow"
+
+msgctxt "#31023"
+msgid "Set the path to a folder of images that will be displayed when there is no available fanart."
+msgstr "Set the path to a folder of images that will be displayed when there is no available fanart."
 
 msgctxt "#31025"
 msgid "items"
@@ -277,8 +285,8 @@ msgid "Select fallback background"
 msgstr "Select fallback background"
 
 msgctxt "#31116"
-msgid "Change the background image that is displayed when no other background is available."
-msgstr "Change the background image that is displayed when no other background is available."
+msgid "Select a background image to display when no other background is available."
+msgstr "Select a background image to display when no other background is available."
 
 msgctxt "#31117"
 msgid "NotoSans"
@@ -541,8 +549,8 @@ msgid "A weather provider is not set up yet. In order to view weather informatio
 msgstr "A weather provider is not set up yet. In order to view weather information, choose a weather provider and set up your location."
 
 msgctxt "#31275"
-msgid "Select an image to overlay on the background. Default is 30% grey, 85% opacity."
-msgstr "Select an image to overlay on the background. Default is 30% gray, 85% opacity."
+msgid "Select an image to overlay on the background. Default is 20% grey, 90% opacity."
+msgstr "Select an image to overlay on the background. Default is 20% gray, 90% opacity."
 
 msgctxt "#31276"
 msgid "Select background overlay"

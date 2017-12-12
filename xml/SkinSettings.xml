@@ -322,6 +322,18 @@
                             <onclick>Skin.ToggleSetting(Disable.FanartBackground)</onclick>
                             <selected>!Skin.HasSetting(Disable.FanartBackground)</selected>
                         </control>
+                        <control type="button" id="606">
+                            <include>SkinSettingsButtonDefaults</include>
+                            <label>31022</label>
+                            <label2>$INFO[Skin.String(CustomSlideshow)]</label2>
+                            <onclick>Skin.SetPath(CustomSlideshow)</onclick>
+                        </control>
+                        <control type="button" id="609">
+                            <include>SkinSettingsButtonDefaults</include>
+                            <label>- $LOCALIZE[13007]</label>
+                            <onclick>Skin.Reset(CustomSlideshow)</onclick>
+                            <visible>!String.IsEmpty(Skin.String(CustomSlideshow))</visible>
+                        </control>
                         <control type="button" id="601">
                             <include>SkinSettingsButtonDefaults</include>
                             <label>31115</label>

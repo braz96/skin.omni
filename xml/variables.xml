@@ -7,10 +7,7 @@
         <value condition="!Skin.HasSetting(Disable.FanartBackground) + !String.IsEmpty(Container.Art(artist.fanart))">$INFO[Container.Art(artist.fanart)]</value>
         <value condition="!Skin.HasSetting(Disable.FanartBackground) + !String.IsEmpty(Container.Art(tvshow.fanart))">$INFO[Container.Art(tvshow.fanart)]</value>
         <value condition="!Skin.HasSetting(Disable.FanartBackground) + Window.IsActive(1119) + !String.IsEmpty(Container(51).ListItem.Art(fanart)) + Control.HasFocus(51)">$INFO[Container(51).ListItem.Art(fanart)]</value>
-        <value condition="!String.IsEmpty(Skin.String(CustomBackground))">$INFO[Skin.String(CustomBackground)]</value>
-        <value>special://skin/backgrounds/default_bg.jpg</value>
-    </variable>
-    <variable name="HomeBackgroundVar">
+        <value condition="!String.IsEmpty(Skin.String(CustomSlideshow))">$INFO[Skin.String(CustomSlideshow)]</value>
         <value condition="!String.IsEmpty(Skin.String(CustomBackground))">$INFO[Skin.String(CustomBackground)]</value>
         <value>special://skin/backgrounds/default_bg.jpg</value>
     </variable>
@@ -294,6 +291,7 @@
         <value condition="Control.HasFocus(602)">$LOCALIZE[31918]</value>
         <value condition="Control.HasFocus(603)">$LOCALIZE[31919]</value>
         <value condition="Control.HasFocus(605)">$LOCALIZE[31015]</value>
+        <value condition="Control.HasFocus(606)">$LOCALIZE[31023]</value>
         <value condition="Control.HasFocus(607)">$LOCALIZE[31275]</value>
         <value condition="Control.HasFocus(9007)">$LOCALIZE[31183]</value>
     </variable>

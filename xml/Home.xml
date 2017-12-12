@@ -9,7 +9,7 @@
         <control type="multiimage">
             <include>FullscreenDimensions</include>
             <include>BackgroundFadeAnimation</include>
-            <imagepath background="true">$VAR[HomeBackgroundVar]</imagepath>
+            <imagepath background="true">$VAR[GlobalBackgroundVar]</imagepath>
         </control>
         <include>skinshortcuts-template-WidgetFanart</include>
         <include>skinshortcuts-template-WeatherWidgetFanart</include>
@@ -40,23 +40,11 @@
             <include>Submenu</include>
             <include>MainMenu</include>
             <include>Topbar</include>
-            <control type="button">
-                <width>10</width>
-                <height>1080</height>
-                <texturefocus />
-                <onfocus>SetFocus(9010)</onfocus>
-                <visible>system.getbool(input.enablemouse)</visible>
-            </control>
             <control type="group" id="9003">
                 <visible>!String.IsEmpty(Container(9005).ListItem.Property(widgetPath)) | String.IsEqual(Container(9005).ListItem.Property(widget),weather) | String.IsEqual(Container(9005).ListItem.Property(widget),settings) | String.IsEqual(Container(9005).ListItem.Property(widget),systeminfo)</visible>
-                <control type="group">
-                    <visible>!Window.IsActive(script-globalsearch.xml)</visible>
-                    <include>skinshortcuts-template-widgets</include>
-                </control>
+                <include>skinshortcuts-template-widgets</include>
             </control>
             <control type="label">
-                <visible>![Window.IsVisible(favourites) | Window.IsVisible(script-globalsearch.xml) | Window.IsVisible(script-lazytv-main.xml) | Window.IsVisible(script-lazytv-BigScreenList.xml)]</visible>
-                <animation effect="slide" time="0" start="0,0" end="-212,-60" condition="Skin.HasSetting(Enable.HorizontalMenu)">Conditional</animation>
                 <include>Animation.Common</include>
                 <top>200</top>
                 <left>860</left>
@@ -70,9 +58,9 @@
             <control type="group">
                 <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
                 <animation effect="slide" end="2500,0" time="240">WindowClose</animation>
-                <animation effect="slide" start="1920,0" end="0,0" delay="300" time="240" condition="!window.previous(startup)">WindowOpen</animation>
+                <animation effect="slide" start="1920,0" end="0,0" delay="300" time="240" condition="!Window.Previous(startup)">WindowOpen</animation>
                 <animation effect="slide" start="1920" end="0" time="240">VisibleChange</animation>
-                <animation effect="slide" start="1920,0" end="0,0" delay="800" time="480" condition="window.previous(startup)">WindowOpen</animation>
+                <animation effect="slide" start="1920,0" end="0,0" delay="800" time="480" condition="Window.Previous(startup)">WindowOpen</animation>
                 <left>555</left>
                 <top>1035</top>
                 <control type="group">

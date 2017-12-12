@@ -77,7 +77,7 @@ msgid "Enable fanart backgrounds"
 msgstr ""
 
 msgctxt "#31015"
-msgid "Enables fanart backgrounds in media sections and home screen widgets."
+msgid "Enable to display fanart backgrounds in media sections and home screen widgets."
 msgstr ""
 
 msgctxt "#31016"
@@ -104,7 +104,15 @@ msgctxt "#31021"
 msgid "No add-ons installed"
 msgstr ""
 
-#empty strings from id 31022 to 31024
+msgctxt "#31022"
+msgid "Set global slideshow"
+msgstr ""
+
+msgctxt "#31023"
+msgid "Set the path to a folder of images that will be displayed when there is no available fanart."
+msgstr ""
+
+#empty string with id 31024
 
 msgctxt "#31025"
 msgid "items"
@@ -305,7 +313,7 @@ msgid "Select fallback background"
 msgstr ""
 
 msgctxt "#31116"
-msgid "Change the background image that is displayed when no other background is available."
+msgid "Select a background image to display when no other background is available."
 msgstr ""
 
 msgctxt "#31117"

@@ -47,9 +47,19 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
+                                <visible>!ListItem.IsSelected</visible>
                                 <width>1370</width>
                                 <height>100</height>
                                 <textoffsetx>30</textoffsetx>
+                                <font>font15</font>
+                                <align>right</align>
+                                <label>$INFO[ListItem.Label2]</label>
+                            </control>
+                            <control type="label">
+                                <visible>ListItem.IsSelected</visible>
+                                <width>1370</width>
+                                <height>100</height>
+                                <textoffsetx>90</textoffsetx>
                                 <font>font15</font>
                                 <align>right</align>
                                 <label>$INFO[ListItem.Label2]</label>
@@ -80,9 +90,19 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
+                                <visible>!ListItem.IsSelected</visible>
                                 <width>1370</width>
                                 <height>100</height>
                                 <textoffsetx>30</textoffsetx>
+                                <font>font15</font>
+                                <align>right</align>
+                                <label>$INFO[ListItem.Label2]</label>
+                            </control>
+                            <control type="label">
+                                <visible>ListItem.IsSelected</visible>
+                                <width>1370</width>
+                                <height>100</height>
+                                <textoffsetx>90</textoffsetx>
                                 <font>font15</font>
                                 <align>right</align>
                                 <label>$INFO[ListItem.Label2]</label>
