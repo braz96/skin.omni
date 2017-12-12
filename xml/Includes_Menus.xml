@@ -53,6 +53,7 @@
                             </include>
                         </control>
                         <control type="image">
+                            <animation effect="fade" time="50" start="100" end="60" condition="Control.HasFocus(9010)">Conditional</animation>
                             <animation effect="fade" start="100" end="20" condition="!Control.HasFocus(9010) + !Control.HasFocus(9005)">Conditional</animation>
                             <top>20</top>
                             <left>20</left>
