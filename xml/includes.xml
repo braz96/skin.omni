@@ -260,7 +260,7 @@
                     <width>90</width>
                     <height>90</height>
                     <font>IconPlayer</font>
-                    <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
+                    <usealttexture>Player.Paused</usealttexture>
                     <onclick>PlayerControl(Play)</onclick>
                     <enable>Player.PauseEnabled</enable>
                     <textoffsetx>0</textoffsetx>
