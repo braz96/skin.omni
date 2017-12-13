@@ -179,7 +179,7 @@
                     <width>1300</width>
                     <height>50</height>
                     <font>font36</font>
-                    <label>$INFO[MusicPlayer.TrackNumber,,. ]$INFO[Player.Title]</label>
+                    <label>[UPPERCASE]$INFO[MusicPlayer.TrackNumber,,. ]$INFO[Player.Title][/UPPERCASE]</label>
                     <scroll>true</scroll>
                 </control>
                 <control type="label">

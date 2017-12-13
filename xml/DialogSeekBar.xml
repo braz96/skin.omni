@@ -106,7 +106,7 @@
                 <height>40</height>
                 <font>font30</font>
                 <scroll>true</scroll>
-                <label>$INFO[VideoPlayer.Title]</label>
+                <label>[UPPERCASE]$INFO[VideoPlayer.Title][/UPPERCASE]</label>
             </control>
             <control type="label">
                 <left>330</left>
