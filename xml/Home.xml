@@ -91,12 +91,14 @@
         </control>
         <control type="button" id="9052">
             <description>Player controls button</description>
+            <visible allowhiddenfocus="false">Player.HasMedia</visible>
             <include>HiddenObject</include>
-            <onfocus>SetProperty(HomePlayerControls,true,home)</onfocus>
-            <onfocus>SetFocus(6053)</onfocus>
+            <onfocus condition="Player.HasMedia">SetProperty(HomePlayerControls,true,home)</onfocus>
+            <onfocus condition="Player.HasMedia">SetFocus(6053)</onfocus>
         </control>
         <control type="group">
             <visible>!String.IsEmpty(Window(home).Property(HomePlayerControls))</visible>
+            <include>VisibleFadeEffect</include>
             <top>900</top>
             <left>1200</left>
             <control type="image">
