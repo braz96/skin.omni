@@ -101,7 +101,7 @@
         <value condition="![Player.Playing | Player.HasAudio | Player.HasVideo] + IsEmpty(Weather.Plugin) + !Window.IsVisible(extendedprogressdialog)">[LOWERCASE]$INFO[System.Time][/LOWERCASE]</value>
     </variable>
     <variable name="HeaderSubLabel2">
-        <value condition="VideoPlayer.Content(livetv) + !Window.IsVisible(extendedprogressdialog)">$INFO[VideoPlayer.ChannelNumber,,: ]$INFO[VideoPlayer.ChannelName]</value>
+        <value condition="VideoPlayer.Content(livetv) + !Window.IsVisible(extendedprogressdialog)">$INFO[VideoPlayer.ChannelNumberLabel,,: ]$INFO[VideoPlayer.ChannelName]</value>
 
         <value condition="VideoPlayer.Content(episodes) + !Window.IsVisible(extendedprogressdialog)">$INFO[VideoPlayer.Premiered,, • ]$INFO[VideoPlayer.TvShowTitle]</value>
 
@@ -122,7 +122,7 @@
         <value condition="![Player.Playing | Player.HasAudio | Player.HasVideo] + IsEmpty(Weather.Plugin)">[LOWERCASE]$INFO[System.Time][/LOWERCASE]</value>
     </variable>
     <variable name="HeaderDialogSubLabel2">
-        <value condition="VideoPlayer.Content(livetv)">$INFO[VideoPlayer.ChannelNumber,,: ]$INFO[VideoPlayer.ChannelName]</value>
+        <value condition="VideoPlayer.Content(livetv)">$INFO[VideoPlayer.ChannelNumberLabel,,: ]$INFO[VideoPlayer.ChannelName]</value>
         <value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Premiered,, • ]$INFO[VideoPlayer.TvShowTitle]</value>
         <value condition="VideoPlayer.Content(movies)">$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Genre, • ]</value>
         <value condition="VideoPlayer.Content(musicvideos)">$INFO[VideoPlayer.Artist]</value>
@@ -394,8 +394,8 @@
         <value>DefaultIconClock.png</value>
     </variable>
     <variable name="ColorRecordingVar">
-        <value condition="Player.Recording">ffff0000</value>
-        <value condition="!Player.Recording">maintext</value>
+        <value condition="PVR.IsRecordingPlayingChannel">ffff0000</value>
+        <value condition="!PVR.IsRecordingPlayingChannel">maintext</value>
     </variable>
     <variable name="SortDirection">
         <value condition="Container.SortDirection(Ascending)">$LOCALIZE[31050]</value>

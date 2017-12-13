@@ -336,6 +336,11 @@
                             <visible>!String.IsEmpty(ListItem.Property(Artist_Instrument))</visible>
                         </item>
                         <item>
+                            <label>$INFO[ListItem.Property(Artist_Type)]</label>
+                            <label2>$LOCALIZE[146]</label2>
+                            <visible>!String.IsEmpty(ListItem.Property(Artist_Type))</visible>
+                        </item>
+                        <item>
                             <label>$INFO[ListItem.Filename]</label>
                             <label2>$LOCALIZE[21800]:</label2>
                             <visible>!String.IsEmpty(ListItem.Filename)</visible>

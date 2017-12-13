@@ -157,6 +157,12 @@
                                 <visible>Control.HasFocus(9007)</visible>
                             </control>
                             <control type="image">
+                                <width>90</width>
+                                <height>90</height>
+                                <texture>overlays/diffuse-overlay.png</texture>
+                                <visible>Control.HasFocus(9007)</visible>
+                            </control>
+                            <control type="image">
                                 <left>10</left>
                                 <top>10</top>
                                 <width>70</width>
