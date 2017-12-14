@@ -65,6 +65,7 @@
                                     <top>50</top>
                                     <right>20</right>
                                     <height>60</height>
+                                    <textcolor>highlight</textcolor>
                                     <label>$INFO[ListItem.Property(Event.Description)]</label>
                                 </control>
                                 <control type="label">
