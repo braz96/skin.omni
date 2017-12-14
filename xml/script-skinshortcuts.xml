@@ -3,7 +3,7 @@
     <defaultcontrol always="true">90001</defaultcontrol>
     <animation effect="slide" start="0,708" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
     <animation effect="slide" start="0,0" end="0,708" time="300" tween="quadratic" easing="out">WindowClose</animation>
-    <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mode=single&amp;options=clonewidgets&amp;mainmenuID=9000&amp;group=mainmenu)</onunload>
+    <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mode=single&amp;options=clonewidgets&amp;mainmenuID=9005&amp;group=mainmenu)</onunload>
     <allowoverlay>no</allowoverlay>
     <coordinates>
         <system>1</system>
@@ -27,18 +27,6 @@
                 <texture colordiffuse="background">dialog.png</texture>
             </control>
             <control type="label" id="500">
-                <include>HiddenObject</include>
-            </control>
-            <control type="label" id="101">
-                <include>HiddenObject</include>
-            </control>
-            <control type="button" id="102">
-                <include>HiddenObject</include>
-            </control>
-            <control type="button" id="103">
-                <include>HiddenObject</include>
-            </control>
-            <control type="list" id="111">
                 <include>HiddenObject</include>
             </control>
             <control type="button" id="310">
