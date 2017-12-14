@@ -19,13 +19,13 @@
         <height>890</height>
         <onup>$PARAM[onup]</onup>
         <ondown>$PARAM[ondown]</ondown>
-        <onleft>$PARAM[onleft]</onleft>
-        <onright>$PARAM[onright]</onright>
+        <onleft>9005</onleft>
+        <onright>SetProperty(MediaMenu,true,home)</onright>
+        <onright>SetFocus(9050)</onright>
         <onclick condition="String.StartsWith(Container(9005).ListItem.Property(widgetPath),favorites)">$INFO[ListItem.FileNameAndPath]</onclick>
         <onback>9005</onback>
         <preloaditems>2</preloaditems>
         <viewtype label="21371">list</viewtype>
-        <orientation>$PARAM[orientation]</orientation>
         <visible>!IsEmpty(Container(9005).ListItem.Property(widgetPath)) + !String.IsEqual(Container(9005).ListItem.Property(widget),weather) + !String.IsEqual(Container(9005).ListItem.Property(widget),settings)</visible>
         <itemlayout height="445" width="282" condition="String.IsEqual(Container(9005).ListItem.Property(widgetIcon),$LOCALIZE[20021])">
             <control type="image">
@@ -305,7 +305,8 @@
         <width>1620</width>
         <height>445</height>
         <onleft>9005</onleft>
-        <onright>$PARAM[id]</onright>
+        <onright>SetProperty(MediaMenu,true,home)</onright>
+        <onright>SetFocus(9050)</onright>
         <onup>9005</onup>
         <ondown>9005</ondown>
         <onclick>ActivateWindow(weather)</onclick>
@@ -466,8 +467,9 @@
         <left>0</left>
         <width>1696</width>
         <height>890</height>
-        <onleft>$PARAM[onleft]</onleft>
-        <onright>$PARAM[onright]</onright>
+        <onleft>9005</onleft>
+        <onright>SetProperty(MediaMenu,true,home)</onright>
+        <onright>SetFocus(9050)</onright>
         <onback>9005</onback>
         <onup>$PARAM[onup]</onup>
         <ondown>$PARAM[ondown]</ondown>
@@ -545,8 +547,9 @@
         <left>0</left>
         <width>1696</width>
         <height>890</height>
-        <onleft>$PARAM[onleft]</onleft>
-        <onright>$PARAM[onright]</onright>
+        <onleft>9005</onleft>
+        <onright>SetProperty(MediaMenu,true,home)</onright>
+        <onright>SetFocus(9050)</onright>
         <onback>9005</onback>
         <onup>$PARAM[onup]</onup>
         <ondown>$PARAM[ondown]</ondown>

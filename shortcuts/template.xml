@@ -25,9 +25,6 @@
                         <param name="id">8011$SKINSHORTCUTS[id]</param>
                         <param name="onup">8011$SKINSHORTCUTS[id]</param>
                         <param name="ondown">8011$SKINSHORTCUTS[id]</param>
-                        <param name="onleft">9005</param>
-                        <param name="onright">8011$SKINSHORTCUTS[id]</param>
-                        <param name="orientation">vertical</param>
                     </include>
                     <content limit="$SKINSHORTCUTS[widgetlimit]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sortdirection]" target="$SKINSHORTCUTS[target]">$SKINSHORTCUTS[path]</content>
                 </control>
@@ -121,8 +118,6 @@
                         <param name="id">8013$SKINSHORTCUTS[id]</param>
                         <param name="onup">8013$SKINSHORTCUTS[id]</param>
                         <param name="ondown">8013$SKINSHORTCUTS[id]</param>
-                        <param name="onleft">9005</param>
-                        <param name="onright">8013$SKINSHORTCUTS[id]</param>
                     </include>
                 </control>
                 <control type="panel" id="8014$SKINSHORTCUTS[id]">
@@ -131,8 +126,6 @@
                         <param name="id">8014$SKINSHORTCUTS[id]</param>
                         <param name="onup">8014$SKINSHORTCUTS[id]</param>
                         <param name="ondown">8014$SKINSHORTCUTS[id]</param>
-                        <param name="onleft">9005</param>
-                        <param name="onright">8014$SKINSHORTCUTS[id]</param>
                     </include>
                 </control>
                 <control type="group">

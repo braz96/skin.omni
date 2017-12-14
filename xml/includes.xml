@@ -510,6 +510,7 @@
             <include>ButtonCommonValues</include>
             <label>31234</label>
             <onclick>ClearProperty(MediaMenu,home)</onclick>
+            <onclick>SetFocus(9003)</onclick>
             <onclick condition="!String.IsEqual(Playlist.Length(music),0) + String.IsEqual(Playlist.Length(video),0)">ActivateWindow(musicplaylist)</onclick>
             <onclick condition="!String.IsEqual(Playlist.Length(video),0) + String.IsEqual(Playlist.Length(music),0)">ActivateWindow(videoplaylist)</onclick>
             <onclick condition="!String.IsEqual(Playlist.Length(music),0) + !String.IsEqual(Playlist.Length(video),0)">SetProperty(Dialog.1.Label,$LOCALIZE[31193])</onclick>

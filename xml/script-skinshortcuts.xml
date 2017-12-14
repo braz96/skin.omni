@@ -129,9 +129,9 @@
                     <width>1370</width>
                     <height>600</height>
                     <itemgap>0</itemgap>
-                    <pagecontrol>60</pagecontrol>
+                    <pagecontrol>62</pagecontrol>
                     <onleft>211</onleft>
-                    <onright condition="Container(90001).HasPrevious | Container(90001).HasNext">60</onright>
+                    <onright condition="Container(90001).HasPrevious | Container(90001).HasNext">62</onright>
                     <onright condition="!Container(90001).HasPrevious + !Container(90001).HasNext">211</onright>
                     <onup>90001</onup>
                     <ondown>90001</ondown>
@@ -243,8 +243,8 @@
                     </control>
                 </control>
             </control>
-            <control type="scrollbar" id="60">
-                <visible allowhiddenfocus="true">Control.HasFocus(60) | ControlGroup(90001).HasFocus</visible>
+            <control type="scrollbar" id="62">
+                <visible allowhiddenfocus="true">Control.HasFocus(62) | ControlGroup(90001).HasFocus</visible>
                 <animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
                 <left>1880</left>
                 <top>58</top>
@@ -252,8 +252,8 @@
                 <height>600</height>
                 <onleft>90001</onleft>
                 <onright>211</onright>
-                <ondown>60</ondown>
-                <onup>60</onup>
+                <ondown>62</ondown>
+                <onup>62</onup>
             </control>
         </control>
 
