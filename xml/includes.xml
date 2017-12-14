@@ -46,8 +46,9 @@
             <onfocus condition="String.IsEmpty(Window(home).Property(MediaMenu))">SetProperty(MediaMenu,true,home)</onfocus>
             <onfocus condition="String.IsEmpty(Window(home).Property(MediaMenu))">SetFocus(9050)</onfocus>
             <onfocus condition="!String.IsEmpty(Window(home).Property(MediaMenu))">ClearProperty(MediaMenu,home)</onfocus>
-            <onfocus condition="!String.IsEmpty(Window(home).Property(MediaMenu)) + !Control.IsVisible(54)">SetFocus(50)</onfocus>
+            <onfocus condition="!String.IsEmpty(Window(home).Property(MediaMenu)) + !Control.IsVisible(54) + !Control.IsVisible(9003)">SetFocus(50)</onfocus>
             <onfocus condition="!String.IsEmpty(Window(home).Property(MediaMenu)) + Control.IsVisible(54)">SetFocus(54)</onfocus>
+            <onfocus condition="!String.IsEmpty(Window(home).Property(MediaMenu)) + Control.IsVisible(9003)">SetFocus(9003)</onfocus>
         </control>
     </include>
     <include name="MediaMenuTop">
