@@ -628,19 +628,26 @@
                 <visible>!String.IsEmpty(System.KernelVersion)</visible>
             </item>
             <item id="2">
+                <label>$LOCALIZE[248]</label>
+                <label2>$INFO[System.Language]</label2>
+                <icon>special://skin/extras/icons/language.png</icon>
+                <onclick>ActivateWindow(systeminfo)</onclick>
+                <visible>!String.IsEmpty(System.Language)</visible>
+            </item>
+            <item id="3">
                 <label>$LOCALIZE[31018]</label>
                 <label2>$INFO[System.CpuFrequency]</label2>
                 <icon>special://skin/extras/icons/cpu.png</icon>
                 <onclick>ActivateWindow(systeminfo)</onclick>
                 <visible>!String.IsEmpty(System.CpuFrequency)</visible>
             </item>
-            <item id="3">
+            <!--<item id="3">
                 <label>$LOCALIZE[31019]</label>
                 <label2>$INFO[System.VideoEncoderInfo]</label2>
                 <icon>DefaultVideo.png</icon>
                 <onclick>ActivateWindow(systeminfo)</onclick>
                 <visible>!String.IsEmpty(System.VideoEncoderInfo)</visible>
-            </item>
+            </item>-->
             <item id="4">
                 <label>$LOCALIZE[31017]</label>
                 <label2>$INFO[System.ScreenMode]</label2>
