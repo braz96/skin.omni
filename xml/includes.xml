@@ -327,7 +327,6 @@
                     <textoffsetx>15</textoffsetx>
                     <label>[UPPERCASE]$VAR[HeaderLabel][/UPPERCASE]</label>
                     <label2>[UPPERCASE]$VAR[HeaderLabel2][/UPPERCASE]</label2>
-                    <onclick>noop</onclick>
                     <texturefocus />
                 </control>
                 <control type="button">
@@ -339,7 +338,6 @@
                     <textcolor>highlight</textcolor>
                     <label>[UPPERCASE]$VAR[HeaderSubLabel][/UPPERCASE]</label>
                     <label2>[UPPERCASE]$VAR[HeaderSubLabel2][/UPPERCASE]</label2>
-                    <onclick>noop</onclick>
                     <texturefocus />
                     <focusedcolor>highlight</focusedcolor>
                 </control>
@@ -386,7 +384,6 @@
                     <textoffsetx>15</textoffsetx>
                     <label>$VAR[HeaderLabel]</label>
                     <label2>$VAR[HeaderDialogLabel2]</label2>
-                    <onclick>noop</onclick>
                     <texturefocus />
                 </control>
                 <control type="button">
@@ -398,7 +395,6 @@
                     <textcolor>highlight</textcolor>
                     <label>$VAR[HeaderSubLabel]</label>
                     <label2>$VAR[HeaderDialogSubLabel2]</label2>
-                    <onclick>noop</onclick>
                     <texturefocus />
                     <focusedcolor>highlight</focusedcolor>
                 </control>
@@ -813,7 +809,6 @@
                 <onright>60</onright>
                 <onup>5000</onup>
                 <ondown>5000</ondown>
-                <onback>noop</onback>
                 <pagecontrol>60</pagecontrol>
                 <itemlayout height="80" width="510">
                     <control type="label">
