@@ -132,6 +132,10 @@ msgctxt "#31028"
 msgid "Ubuntu"
 msgstr "Ubuntu"
 
+msgctxt "#31029"
+msgid "Reset this skin setting to its default value."
+msgstr "Reset this skin setting to its default value."
+
 msgctxt "#31036"
 msgid "10 day forecast"
 msgstr "10 day forecast"

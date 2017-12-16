@@ -286,7 +286,7 @@
         <value condition="Control.HasFocus(301)">$LOCALIZE[31007]</value>
         <value condition="Control.HasFocus(303)">$LOCALIZE[31944]</value>
         <value condition="Control.HasFocus(304)">$LOCALIZE[31131]</value>
-        <value condition="Control.HasFocus(306)">$LOCALIZE[31114]</value>
+        <value condition="Control.HasFocus(306) | Control.HasFocus(307)">$LOCALIZE[31114]</value>
         <value condition="Control.HasFocus(601)">$LOCALIZE[31116]</value>
         <value condition="Control.HasFocus(602)">$LOCALIZE[31918]</value>
         <value condition="Control.HasFocus(603)">$LOCALIZE[31919]</value>
@@ -294,6 +294,7 @@
         <value condition="Control.HasFocus(606)">$LOCALIZE[31023]</value>
         <value condition="Control.HasFocus(607)">$LOCALIZE[31275]</value>
         <value condition="Control.HasFocus(9007)">$LOCALIZE[31183]</value>
+        <value condition="Control.HasFocus(609) | Control.HasFocus(604) | Control.HasFocus(608) | Control.HasFocus(302)">$LOCALIZE[31029]</value>
     </variable>
     <variable name="RatingFlagVar">
         <value condition="String.Contains(ListItem.mpaa,US:G) | String.Contains(ListItem.mpaa,USA:G) | String.Contains(ListItem.mpaa,Rated G)">flags/mpaa/G.png</value>

@@ -27,18 +27,28 @@
                     <onup>3</onup>
                     <ondown>3</ondown>
                 </control>
-                <control type="textbox" id="6">
-                    <description>description area</description>
-                    <left>494</left>
-                    <top>742</top>
-                    <width>1246</width>
-                    <height>120</height>
-                    <font>font15_textbox</font>
-                    <textcolor>highlight</textcolor>
-                    <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
-                    <animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
-                    <animation effect="fade" start="100" end="0" time="0" tween="sine" easing="inout">Hidden</animation>
+                <control type="group">
                     <visible>ControlGroup(5).HasFocus()</visible>
+                    <animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
+                    <control type="image">
+                        <top>792</top>
+                        <left>120</left>
+                        <width>50</width>
+                        <height>50</height>
+                        <texture colordiffuse="disabled">DefaultIconInfo.png</texture>
+                    </control>
+                    <control type="textbox" id="6">
+                        <description>description area</description>
+                        <left>180</left>
+                        <top>790</top>
+                        <width>1500</width>
+                        <height>100</height>
+                        <font>font15</font>
+                        <textcolor>disabled</textcolor>
+                        <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+                        <animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
+                        <animation effect="fade" start="100" end="0" time="0" tween="sine" easing="inout">Hidden</animation>
+                    </control>
                 </control>
                 <control type="grouplist" id="5">
                     <description>control area</description>

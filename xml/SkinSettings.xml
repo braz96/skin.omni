@@ -71,18 +71,29 @@
                         </item>
                     </content>
                 </control>
-                <control type="textbox">
-                    <description>description area</description>
-                    <left>494</left>
-                    <top>742</top>
-                    <width>1246</width>
-                    <height>140</height>
-                    <font>font15_textbox</font>
-                    <textcolor>highlight</textcolor>
-                    <label>$VAR[SkinSettingsDescriptionVar]</label>
-                    <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
-                    <animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
-                    <animation effect="fade" start="100" end="0" time="0" tween="sine" easing="inout">Hidden</animation>
+                <control type="group">
+                    <visible>!Control.HasFocus(9005) + !Control.HasFocus(9030) + !Control.HasFocus(60)</visible>
+                    <animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
+                    <control type="image">
+                        <top>792</top>
+                        <left>120</left>
+                        <width>50</width>
+                        <height>50</height>
+                        <texture colordiffuse="disabled">DefaultIconInfo.png</texture>
+                    </control>
+                    <control type="textbox">
+                        <description>description area</description>
+                        <left>180</left>
+                        <top>790</top>
+                        <width>1500</width>
+                        <height>100</height>
+                        <font>font15</font>
+                        <label>$VAR[SkinSettingsDescriptionVar]</label>
+                        <textcolor>disabled</textcolor>
+                        <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+                        <animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
+                        <animation effect="fade" start="100" end="0" time="0" tween="sine" easing="inout">Hidden</animation>
+                    </control>
                 </control>
                 <control type="group" id="9040">
                     <include>SettingsFadeEffect</include>
@@ -399,7 +410,7 @@
                         <height>720</height>
                         <itemgap>0</itemgap>
                         <onleft>9030</onleft>
-                        <onright>60</onright>
+                        <onright>9030</onright>
                         <onup>9003</onup>
                         <ondown>9003</ondown>
                         <pagecontrol>60</pagecontrol>

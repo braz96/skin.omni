@@ -132,7 +132,11 @@ msgctxt "#31028"
 msgid "Ubuntu"
 msgstr ""
 
-#empty strings from id 31029 to 31035
+msgctxt "#31029"
+msgid "Reset this skin setting to its default value."
+msgstr ""
+
+#empty strings from id 31030 to 31035
 
 msgctxt "#31036"
 msgid "10 day forecast"
