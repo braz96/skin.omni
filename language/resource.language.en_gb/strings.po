@@ -37,7 +37,7 @@ msgid "Working"
 msgstr ""
 
 msgctxt "#31005"
-msgid "Thumbnail (List view)"
+msgid "Thumbnail (list)"
 msgstr ""
 
 msgctxt "#31006"
@@ -112,7 +112,9 @@ msgctxt "#31023"
 msgid "Set the path to a folder of images that will be displayed when there is no available fanart."
 msgstr ""
 
-#empty string with id 31024
+msgctxt "#31024"
+msgid "Thumbnail (slim list)"
+msgstr ""
 
 msgctxt "#31025"
 msgid "items"

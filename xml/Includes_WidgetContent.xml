@@ -297,6 +297,55 @@
                 <label>$VAR[WidgetListSubLabel]</label>
             </control>
         </focusedlayout>
+        <itemlayout height="111.25" width="848" condition="String.IsEqual(Container(9005).ListItem.Property(widgetIcon),$LOCALIZE[31024])">
+            <control type="image">
+                <left>60</left>
+                <top>20</top>
+                <width>71</width>
+                <height>71</height>
+                <aspectratio>keep</aspectratio>
+                <texture background="true">$VAR[WidgetArt]</texture>
+            </control>
+            <control type="label">
+                <top>18</top>
+                <left>160</left>
+                <right>70</right>
+                <height>70</height>
+                <font>font30</font>
+                <label>$VAR[WidgetListMainLabel]</label>
+            </control>
+        </itemlayout>
+        <focusedlayout height="111.25" width="848" condition="String.IsEqual(Container(9005).ListItem.Property(widgetIcon),$LOCALIZE[31024])">
+            <include content="SelectedItemBackground">
+                <param name="Left" value="50" />
+                <param name="Top" value="10" />
+                <param name="Width" value="750" />
+                <param name="Height" value="91" />
+            </include>
+            <control type="image">
+                <left>50</left>
+                <top>10</top>
+                <width>91</width>
+                <height>91</height>
+                <texture>overlays/diffuse-overlay.png</texture>
+            </control>
+            <control type="image">
+                <left>60</left>
+                <top>20</top>
+                <width>71</width>
+                <height>71</height>
+                <aspectratio>keep</aspectratio>
+                <texture background="true">$VAR[WidgetArt]</texture>
+            </control>
+            <control type="label">
+                <top>18</top>
+                <left>160</left>
+                <right>70</right>
+                <height>70</height>
+                <font>font30</font>
+                <label>$VAR[WidgetListMainLabel]</label>
+            </control>
+        </focusedlayout>
     </include>
     <include name="WeatherWidgetContents">
         <visible>String.IsEqual(Container(9005).ListItem.Property(widget),weather) + !IsEmpty(Weather.Plugin)</visible>

@@ -37,8 +37,8 @@ msgid "Working"
 msgstr "Working"
 
 msgctxt "#31005"
-msgid "Thumbnail (List view)"
-msgstr "Thumbnail (List view)"
+msgid "Thumbnail (list)"
+msgstr "Thumbnail (list)"
 
 msgctxt "#31006"
 msgid "Set music library path"
@@ -111,6 +111,10 @@ msgstr "Set global slideshow"
 msgctxt "#31023"
 msgid "Set the path to a folder of images that will be displayed when there is no available fanart."
 msgstr "Set the path to a folder of images that will be displayed when there is no available fanart."
+
+msgctxt "#31024"
+msgid "Thumbnail (slim list)"
+msgstr "Thumbnail (slim list)"
 
 msgctxt "#31025"
 msgid "items"

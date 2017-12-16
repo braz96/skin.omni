@@ -462,7 +462,7 @@
         <value condition="!String.IsEmpty(ListItem.AddonNews)">[COLOR highlight]$LOCALIZE[24054]: [/COLOR][CR]$INFO[ListItem.AddonNews][CR]</value>
     </variable>
     <variable name="WidgetArt">
-        <value condition="String.IsEqual(Container(9005).ListItem.Property(widget),myplaylists) + String.IsEqual(Container(9005).ListItem.Property(widgetIcon),$LOCALIZE[31005])">DefaultPlaylist.png</value>
+        <value condition="String.IsEqual(Container(9005).ListItem.Property(widget),myplaylists) + [String.IsEqual(Container(9005).ListItem.Property(widgetIcon),$LOCALIZE[31005]) | String.IsEqual(Container(9005).ListItem.Property(widgetIcon),$LOCALIZE[31024])]">DefaultPlaylist.png</value>
         <value condition="String.IsEqual(Container(9005).ListItem.Property(widget),myplaylists)">DefaultFallbackPlaylist.png</value>
         <value condition="String.IsEqual(Container(9005).ListItem.Property(widgetIcon),$LOCALIZE[20021]) + String.Contains(Container(9005).ListItem.Property(widgetPath),advanced.emulator.launcher)">$INFO[ListItem.Thumb]</value>
         <value condition="String.IsEqual(Container(9005).ListItem.Property(widgetIcon),$LOCALIZE[20021]) + String.StartsWith(Container(9005).ListItem.Property(widgetPath),pvr)">$INFO[ListItem.ActualIcon]</value>
@@ -475,6 +475,8 @@
         <value condition="String.IsEqual(Container(9005).ListItem.Property(widgetIcon),$LOCALIZE[20445]) + !String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
         <value condition="String.IsEqual(Container(9005).ListItem.Property(widgetIcon),$LOCALIZE[31100]) + !String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
         <value condition="String.IsEqual(Container(9005).ListItem.Property(widgetIcon),$LOCALIZE[31088]) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
+        <value condition="String.IsEqual(Container(9005).ListItem.Property(widgetIcon),$LOCALIZE[31024]) + !String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
+        <value condition="String.IsEqual(Container(9005).ListItem.Property(widgetIcon),$LOCALIZE[31024])">$INFO[ListItem.Icon]</value>
         <value condition="!String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
