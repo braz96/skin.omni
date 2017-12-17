@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.omni"
-  version="2.0.2"
+  version="2.1.0"
   name="Omni"
   provider-name="braz">
 	<requires>
 		<import addon="xbmc.gui" version="5.13.0"/>
 		<import addon="resource.images.studios.white" version="0.0.4"/>
-		<import addon="script.skinshortcuts" version="1.9.0"/>
 		<import addon="script.toolbox" version="1.0.0"/>
 	</requires>
 	<extension
@@ -23,7 +22,7 @@
 		<description lang="en_US">A Kodi skin with an omnipresent menu.</description>
 		<platform>all</platform>
 		<license>CC BY-NC-SA 4.0</license>
-		<forum></forum>
+		<forum>https://forum.kodi.tv/forumdisplay.php?fid=271</forum>
 		<website></website>
 		<email></email>
 		<source>https://github.com/braz96/skin.omni</source>

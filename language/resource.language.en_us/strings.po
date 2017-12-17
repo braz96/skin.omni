@@ -136,6 +136,26 @@ msgctxt "#31029"
 msgid "Reset this skin setting to its default value."
 msgstr "Reset this skin setting to its default value."
 
+msgctxt "#31029"
+msgid "Reset this skin setting to its default value."
+msgstr "Reset this skin setting to its default value."
+
+msgctxt "#31030"
+msgid "Unwatched music videos"
+msgstr "Unwatched music videos"
+
+msgctxt "#31031"
+msgid "Random music video artists"
+msgstr "Random music video artists"
+
+msgctxt "#31032"
+msgid "Random music videos"
+msgstr "Random music videos"
+
+msgctxt "#31033"
+msgid "Menu and widgets"
+msgstr "Menu and widgets"
+
 msgctxt "#31036"
 msgid "10 day forecast"
 msgstr "10 day forecast"
@@ -180,6 +200,38 @@ msgctxt "#31051"
 msgid "Descending"
 msgstr "Descending"
 
+msgctxt "#31052"
+msgid "In progress movies"
+msgstr "In progress movies"
+
+msgctxt "#31053"
+msgid "Unwatched movies"
+msgstr "Unwatched movies"
+
+msgctxt "#31054"
+msgid "Random movies"
+msgstr "Random movies"
+
+msgctxt "#31055"
+msgid "Unwatched TV shows"
+msgstr "Unwatched TV shows"
+
+msgctxt "#31056"
+msgid "Random albums"
+msgstr "Random albums"
+
+msgctxt "#31057"
+msgid "Random artists"
+msgstr "Random artists"
+
+msgctxt "#31058"
+msgid "Unplayed albums"
+msgstr "Unplayed albums"
+
+msgctxt "#31059"
+msgid "Most played albums"
+msgstr "Most played albums"
+
 msgctxt "#31060"
 msgid "CU LRC Lyrics"
 msgstr "CU LRC Lyrics"
@@ -205,8 +257,8 @@ msgid "Download artwork"
 msgstr "Download artwork"
 
 msgctxt "#31072"
-msgid "Are you sure you want to delete the Settings menu item? If you delete it, you may not be able to access Settings when using a basic remote."
-msgstr "Are you sure you want to delete the Settings menu item? If you delete it, you may not be able to access Settings when using a basic remote."
+msgid "Disable main menu items and/or widgets to hide them on the home screen."
+msgstr "Disable main menu items and/or widgets to hide them on the home screen."
 
 msgctxt "#31073"
 msgid "Updated"
@@ -215,14 +267,6 @@ msgstr "Updated"
 msgctxt "#31077"
 msgid "Jaldi"
 msgstr "Jaldi"
-
-msgctxt "#31080"
-msgid "Customise submenu"
-msgstr "Customize submenu"
-
-msgctxt "#31081"
-msgid "This will reset ALL of your menu items, widgets, etc. You may want to backup your skin settings first."
-msgstr "This will reset ALL of your menu items, widgets, etc. You may want to backup your skin settings first."
 
 msgctxt "#31086"
 msgid "Wall"
@@ -415,10 +459,6 @@ msgstr "Nextup Service Notification"
 msgctxt "#31178"
 msgid "Search by director"
 msgstr "Search by director"
-
-msgctxt "#31180"
-msgid "Skin Shortcuts"
-msgstr "Skin Shortcuts"
 
 msgctxt "#31181"
 msgid "Studio Icons - White"
@@ -639,14 +679,6 @@ msgstr "View"
 msgctxt "#31909"
 msgid "Fetching forecast info..."
 msgstr "Fetching forecast info..."
-
-msgctxt "#31911"
-msgid "Setup menus and widgets"
-msgstr "Setup menus and widgets"
-
-msgctxt "#31912"
-msgid "Customize the main menu, submenu, and widgets."
-msgstr "Customize the main menu, submenu, and widgets."
 
 msgctxt "#31917"
 msgid "When enabled, text scrolls automatically. When disabled, manual scrolling is required. Note that not every textbox has a manual button."

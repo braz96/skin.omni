@@ -14,7 +14,6 @@
     <include file="View_501_Landscape.xml" />
     <include file="View_502_Logo.xml" />
     <include file="variables.xml" />
-    <include file="script-skinshortcuts-includes.xml" />
     <constant name="FanartCrossfadeTime">500</constant>
     <constant name="IconCrossfadeTime">400</constant>
     <constant name="FullScreenWidth">1920</constant>

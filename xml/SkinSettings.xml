@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">9030</defaultcontrol>
-    <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mode=single&amp;options=clonewidgets&amp;mainmenuID=9000&amp;group=mainmenu)</onunload>
     <controls>
         <include>CommonBackground</include>
         <control type="group">
@@ -54,7 +53,7 @@
                     </focusedlayout>
                     <content>
                         <item id="1">
-                            <label>513</label>
+                            <label>31033</label>
                             <icon />
                         </item>
                         <item id="2">
@@ -72,7 +71,7 @@
                     </content>
                 </control>
                 <control type="group">
-                    <visible>!Control.HasFocus(9005) + !Control.HasFocus(9030) + !Control.HasFocus(60)</visible>
+                    <visible>!Control.HasFocus(9005) + !Control.HasFocus(9030) + !Control.HasFocus(60) + !Control.HasFocus(61)</visible>
                     <animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
                     <control type="image">
                         <top>792</top>
@@ -105,19 +104,249 @@
                         <height>720</height>
                         <itemgap>0</itemgap>
                         <onleft>9030</onleft>
-                        <onright>9030</onright>
-                        <onup>9001</onup>
-                        <ondown>9001</ondown>
+                        <onright>61</onright>
                         <visible>Container(9030).HasFocus(1)</visible>
-                        <control type="button" id="100">
+                        <pagecontrol>61</pagecontrol>
+                        <control type="radiobutton" id="101">
+                            <label>[UPPERCASE]$LOCALIZE[342][/UPPERCASE]</label>
                             <include>SkinSettingsButtonDefaults</include>
-                            <label>31911</label>
-                            <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
+                            <selected>!Skin.HasSetting(HomeMenuNoMovieButton)</selected>
+                            <onclick>Skin.ToggleSetting(HomeMenuNoMovieButton)</onclick>
                         </control>
-                        <control type="button" id="102">
+                        <control type="radiobutton" id="1010">
+                            <label>- $LOCALIZE[20386]</label>
                             <include>SkinSettingsButtonDefaults</include>
-                            <label>31096</label>
-                            <onclick>RunScript(script.skinshortcuts,type=resetall)</onclick>
+                            <selected>!Skin.HasSetting(HomeNoRecentMoviesWidget)</selected>
+                            <onclick>Skin.ToggleSetting(HomeNoRecentMoviesWidget)</onclick>
+                            <visible>!Skin.HasSetting(HomeMenuNoMovieButton)</visible>
+                        </control>
+                        <control type="radiobutton" id="1011">
+                            <label>- $LOCALIZE[31052]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeNoInProgessMoviesWidget)</selected>
+                            <onclick>Skin.ToggleSetting(HomeNoInProgressMoviesWidget)</onclick>
+                            <visible>!Skin.HasSetting(HomeMenuNoMovieButton)</visible>
+                        </control>
+                        <control type="radiobutton" id="1012">
+                            <label>- $LOCALIZE[31053]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeNoUnwatchedMoviesWidget)</selected>
+                            <onclick>Skin.ToggleSetting(HomeNoUnwatchedMoviesWidget)</onclick>
+                            <visible>!Skin.HasSetting(HomeMenuNoMovieButton)</visible>
+                        </control>
+                        <control type="radiobutton" id="1013">
+                            <label>- $LOCALIZE[31054]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeNoRandomMoviesWidget)</selected>
+                            <onclick>Skin.ToggleSetting(HomeNoRandomMoviesWidget)</onclick>
+                            <visible>!Skin.HasSetting(HomeMenuNoMovieButton)</visible>
+                        </control>
+                        <control type="radiobutton" id="1014">
+                            <label>- $LOCALIZE[20434]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeNoMovieSetsWidget)</selected>
+                            <onclick>Skin.ToggleSetting(HomeNoMovieSetsWidget)</onclick>
+                            <visible>!Skin.HasSetting(HomeMenuNoMovieButton)</visible>
+                        </control>
+                        <control type="radiobutton" id="103">
+                            <label>[UPPERCASE]$LOCALIZE[20343][/UPPERCASE]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeMenuNoTVShowButton)</selected>
+                            <onclick>Skin.ToggleSetting(HomeMenuNoTVShowButton)</onclick>
+                        </control>
+                        <control type="radiobutton" id="1030">
+                            <label>- $LOCALIZE[20387]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeNoRecentEpisodesWidget)</selected>
+                            <onclick>Skin.ToggleSetting(HomeNoRecentEpisodesWidget)</onclick>
+                            <visible>!Skin.HasSetting(HomeMenuNoTVShowButton)</visible>
+                        </control>
+                        <control type="radiobutton" id="1031">
+                            <label>- $LOCALIZE[626]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeNoInProgressShowsWidget)</selected>
+                            <onclick>Skin.ToggleSetting(HomeNoInProgressShowsWidget)</onclick>
+                            <visible>!Skin.HasSetting(HomeMenuNoTVShowButton)</visible>
+                        </control>
+                        <control type="radiobutton" id="1032">
+                            <label>- $LOCALIZE[31055]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeNoUnwatchedShowsWidget)</selected>
+                            <onclick>Skin.ToggleSetting(HomeNoUnwatchedShowsWidget)</onclick>
+                            <visible>!Skin.HasSetting(HomeMenuNoTVShowButton)</visible>
+                        </control>
+                        <control type="radiobutton" id="105">
+                            <label>[UPPERCASE]$LOCALIZE[2][/UPPERCASE]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeMenuNoMusicButton)</selected>
+                            <onclick>Skin.ToggleSetting(HomeMenuNoMusicButton)</onclick>
+                        </control>
+                        <control type="radiobutton" id="1050">
+                            <label>- $LOCALIZE[517]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeNoRecentPlayedAlbumsWidget)</selected>
+                            <onclick>Skin.ToggleSetting(HomeNoRecentPlayedAlbumsWidget)</onclick>
+                            <visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
+                        </control>
+                        <control type="radiobutton" id="1051">
+                            <label>- $LOCALIZE[359]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeNoRecentAddedAlbumsWidget)</selected>
+                            <onclick>Skin.ToggleSetting(HomeNoRecentAddedAlbumsWidget)</onclick>
+                            <visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
+                        </control>
+                        <control type="radiobutton" id="1052">
+                            <label>- $LOCALIZE[31056]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeNoRandomAlbumsWidget)</selected>
+                            <onclick>Skin.ToggleSetting(HomeNoRandomAlbumsWidget)</onclick>
+                            <visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
+                        </control>
+                        <control type="radiobutton" id="1053">
+                            <label>- $LOCALIZE[31057]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeNoRandomArtistsWidget)</selected>
+                            <onclick>Skin.ToggleSetting(HomeNoRandomArtistsWidget)</onclick>
+                            <visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
+                        </control>
+                        <control type="radiobutton" id="1054">
+                            <label>- $LOCALIZE[31058]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeNoUnplayedAlbumsWidget)</selected>
+                            <onclick>Skin.ToggleSetting(HomeNoUnplayedAlbumsWidget)</onclick>
+                            <visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
+                        </control>
+                        <control type="radiobutton" id="1055">
+                            <label>- $LOCALIZE[31059]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeNoMostPlayedAlbumsWidget)</selected>
+                            <onclick>Skin.ToggleSetting(HomeNoMostPlayedAlbumsWidget)</onclick>
+                            <visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
+                        </control>
+                        <control type="radiobutton" id="107">
+                            <label>[UPPERCASE]$LOCALIZE[20389][/UPPERCASE]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeMenuNoMusicVideoButton)</selected>
+                            <onclick>Skin.ToggleSetting(HomeMenuNoMusicVideoButton)</onclick>
+                        </control>
+                        <control type="radiobutton" id="1070">
+                            <label>- $LOCALIZE[20390]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeNoRecentMusicVideosWidget)</selected>
+                            <onclick>Skin.ToggleSetting(HomeNoRecentMusicVideosWidget)</onclick>
+                            <visible>!Skin.HasSetting(HomeMenuNoMusicVideoButton)</visible>
+                        </control>
+                        <control type="radiobutton" id="1071">
+                            <label>- $LOCALIZE[31030]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeNoUnwatchedMusicVideosWidget)</selected>
+                            <onclick>Skin.ToggleSetting(HomeNoUnwatchedMusicVideosWidget)</onclick>
+                            <visible>!Skin.HasSetting(HomeMenuNoMusicVideoButton)</visible>
+                        </control>
+                        <control type="radiobutton" id="1072">
+                            <label>- $LOCALIZE[31031]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeNoMusicVideoArtistsWidget)</selected>
+                            <onclick>Skin.ToggleSetting(HomeNoMusicVideoArtistsWidget)</onclick>
+                            <visible>!Skin.HasSetting(HomeMenuNoMusicVideoButton)</visible>
+                        </control>
+                        <control type="radiobutton" id="1073">
+                            <label>- $LOCALIZE[31032]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeNoRandomMusicVideosWidget)</selected>
+                            <onclick>Skin.ToggleSetting(HomeNoRandomMusicVideosWidget)</onclick>
+                            <visible>!Skin.HasSetting(HomeMenuNoMusicVideoButton)</visible>
+                        </control>
+                        <control type="radiobutton" id="108">
+                            <label>[UPPERCASE]$LOCALIZE[19020][/UPPERCASE]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeMenuNoTVButton)</selected>
+                            <onclick>Skin.ToggleSetting(HomeMenuNoTVButton)</onclick>
+                        </control>
+                        <control type="radiobutton" id="109">
+                            <label>[UPPERCASE]$LOCALIZE[19021][/UPPERCASE]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeMenuNoRadioButton)</selected>
+                            <onclick>Skin.ToggleSetting(HomeMenuNoRadioButton)</onclick>
+                        </control>
+                        <control type="radiobutton" id="110">
+                            <label>[UPPERCASE]$LOCALIZE[24001][/UPPERCASE]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeMenuNoAddonsButton)</selected>
+                            <onclick>Skin.ToggleSetting(HomeMenuNoAddonsButton)</onclick>
+                        </control>
+                        <control type="radiobutton" id="1100">
+                            <label>- $LOCALIZE[1037]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeNoVideoAddonsWidget)</selected>
+                            <onclick>Skin.ToggleSetting(HomeNoVideoAddonsWidget)</onclick>
+                            <visible>!Skin.HasSetting(HomeMenuNoAddonsButton)</visible>
+                        </control>
+                        <control type="radiobutton" id="1101">
+                            <label>- $LOCALIZE[1038]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeNoMusicAddonsWidget)</selected>
+                            <onclick>Skin.ToggleSetting(HomeNoMusicAddonsWidget)</onclick>
+                            <visible>!Skin.HasSetting(HomeMenuNoAddonsButton)</visible>
+                        </control>
+                        <control type="radiobutton" id="1102">
+                            <label>- $LOCALIZE[35049]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeNoGameAddonsWidget)</selected>
+                            <onclick>Skin.ToggleSetting(HomeNoGameAddonsWidget)</onclick>
+                            <visible>!Skin.HasSetting(HomeMenuNoAddonsButton)</visible>
+                        </control>
+                        <control type="radiobutton" id="1103">
+                            <label>- $LOCALIZE[1043]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeNoProgramAddonsWidget)</selected>
+                            <onclick>Skin.ToggleSetting(HomeNoProgramAddonsWidget)</onclick>
+                            <visible>!Skin.HasSetting(HomeMenuNoAddonsButton)</visible>
+                        </control>
+                        <control type="radiobutton" id="1104">
+                            <label>- $LOCALIZE[20244]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeNoAndroidAddonsWidget)</selected>
+                            <onclick>Skin.ToggleSetting(HomeNoAndroidAddonsWidget)</onclick>
+                            <visible>!Skin.HasSetting(HomeMenuNoAddonsButton) + System.Platform.Android</visible>
+                        </control>
+                        <control type="radiobutton" id="1105">
+                            <label>- $LOCALIZE[1039]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeNoPictureAddonsWidget)</selected>
+                            <onclick>Skin.ToggleSetting(HomeNoPictureAddonsWidget)</onclick>
+                            <visible>!Skin.HasSetting(HomeMenuNoAddonsButton)</visible>
+                        </control>
+                        <control type="radiobutton" id="113">
+                            <label>[UPPERCASE]$LOCALIZE[15016][/UPPERCASE]</label>
+                            <visible>System.GetBool(gamesgeneral.enable)</visible>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeMenuNoGamesButton)</selected>
+                            <onclick>Skin.ToggleSetting(HomeMenuNoGamesButton)</onclick>
+                        </control>
+                        <control type="radiobutton" id="114">
+                            <label>[UPPERCASE]$LOCALIZE[137][/UPPERCASE]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeMenuNoSearchButton)</selected>
+                            <onclick>Skin.ToggleSetting(HomeMenuNoSearchButton)</onclick>
+                        </control>
+                        <control type="radiobutton" id="115">
+                            <label>[UPPERCASE]$LOCALIZE[8][/UPPERCASE]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeMenuNoWeatherButton)</selected>
+                            <onclick>Skin.ToggleSetting(HomeMenuNoWeatherButton)</onclick>
+                        </control>
+                        <control type="radiobutton" id="116">
+                            <label>[UPPERCASE]$LOCALIZE[5][/UPPERCASE]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeMenuNoSettingsButton)</selected>
+                            <onclick>Skin.ToggleSetting(HomeMenuNoSettingsButton)</onclick>
+                        </control>
+                        <control type="radiobutton" id="117">
+                            <label>[UPPERCASE]$LOCALIZE[13005][/UPPERCASE]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeMenuNoShutdownButton)</selected>
+                            <onclick>Skin.ToggleSetting(HomeMenuNoShutdownButton)</onclick>
                         </control>
                     </control>
                     <control type="list" id="9007">
@@ -283,13 +512,6 @@
                                 <label2>$INFO[System.AddonVersion(script.ratingupdate)]</label2>
                                 <onclick condition="System.HasAddon(script.ratingupdate)">Addon.OpenSettings(script.ratingupdate)</onclick>
                                 <onclick condition="!System.HasAddon(script.ratingupdate)">InstallAddon(script.ratingupdate)</onclick>
-                            </item>
-                            <item id="13">
-                                <icon>$INFO[System.AddonIcon(script.skinshortcuts)]</icon>
-                                <label>31180</label>
-                                <label2>$INFO[System.AddonVersion(script.skinshortcuts)]</label2>
-                                <onclick condition="System.HasAddon(script.skinshortcuts)">Addon.OpenSettings(script.skinshortcuts)</onclick>
-                                <onclick condition="!System.HasAddon(script.skinshortcuts)">InstallAddon(script.skinshortcuts)</onclick>
                             </item>
                             <item id="14">
                                 <icon>$INFO[System.AddonIcon(resource.images.studios.squarehd)]</icon>
@@ -478,6 +700,18 @@
             <onright>9030</onright>
             <ondown>60</ondown>
             <onup>60</onup>
+        </control>
+        <control type="scrollbar" id="61">
+            <visible allowhiddenfocus="true">Control.HasFocus(61) | Container.Scrolling | ControlGroup(9001).HasFocus()</visible>
+            <animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
+            <left>1910</left>
+            <top>120</top>
+            <width>10</width>
+            <height>960</height>
+            <onleft>9001</onleft>
+            <onright>9030</onright>
+            <ondown>61</ondown>
+            <onup>61</onup>
         </control>
     </controls>
 </window>

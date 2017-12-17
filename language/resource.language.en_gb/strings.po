@@ -136,7 +136,23 @@ msgctxt "#31029"
 msgid "Reset this skin setting to its default value."
 msgstr ""
 
-#empty strings from id 31030 to 31035
+msgctxt "#31030"
+msgid "Unwatched music videos"
+msgstr ""
+
+msgctxt "#31031"
+msgid "Random music video artists"
+msgstr ""
+
+msgctxt "#31032"
+msgid "Random music videos"
+msgstr ""
+
+msgctxt "#31033"
+msgid "Menu and widgets"
+msgstr ""
+
+#empty strings from id 31034 to 31035
 
 msgctxt "#31036"
 msgid "10 day forecast"
@@ -186,7 +202,37 @@ msgctxt "#31051"
 msgid "Descending"
 msgstr ""
 
-#empty strings from id 31052 to 31059
+msgctxt "#31052"
+msgid "In progress movies"
+msgstr ""
+
+msgctxt "#31053"
+msgid "Unwatched movies"
+msgstr ""
+
+msgctxt "#31054"
+msgid "Random movies"
+msgstr ""
+
+msgctxt "#31055"
+msgid "Unwatched TV shows"
+msgstr ""
+
+msgctxt "#31056"
+msgid "Random albums"
+msgstr ""
+
+msgctxt "#31057"
+msgid "Random artists"
+msgstr ""
+
+msgctxt "#31058"
+msgid "Unplayed albums"
+msgstr ""
+
+msgctxt "#31059"
+msgid "Most played albums"
+msgstr ""
 
 msgctxt "#31060"
 msgid "CU LRC Lyrics"
@@ -217,7 +263,7 @@ msgid "Download artwork"
 msgstr ""
 
 msgctxt "#31072"
-msgid "Are you sure you want to delete the Settings menu item? If you delete it, you may not be able to access Settings when using a basic remote."
+msgid "Disable main menu items and/or widgets to hide them on the home screen."
 msgstr ""
 
 msgctxt "#31073"
@@ -230,17 +276,7 @@ msgctxt "#31077"
 msgid "Jaldi"
 msgstr ""
 
-#empty strings from id 31078 to 31079
-
-msgctxt "#31080"
-msgid "Customise submenu"
-msgstr ""
-
-msgctxt "#31081"
-msgid "This will reset ALL of your menu items, widgets, etc. You may want to backup your skin settings first."
-msgstr ""
-
-#empty strings from id 31082 to 31085
+#empty strings from id 31078 to 31085
 
 msgctxt "#31086"
 msgid "Wall"
@@ -460,11 +496,7 @@ msgctxt "#31178"
 msgid "Search by director"
 msgstr ""
 
-#empty string with id 31179
-
-msgctxt "#31180"
-msgid "Skin Shortcuts"
-msgstr ""
+#empty strings from id 31179 to 31180
 
 msgctxt "#31181"
 msgid "Studio Icons - White"
@@ -736,17 +768,7 @@ msgctxt "#31909"
 msgid "Fetching forecast info..."
 msgstr ""
 
-#empty string with id 31910
-
-msgctxt "#31911"
-msgid "Setup menus and widgets"
-msgstr ""
-
-msgctxt "#31912"
-msgid "Customize the main menu, submenu, and widgets."
-msgstr ""
-
-#empty strings from id 31913 to 31916
+#empty strings from id 31910 to 31916
 
 msgctxt "#31917"
 msgid "When enabled, text scrolls automatically. When disabled, manual scrolling is required. Note that not every textbox has a manual button."

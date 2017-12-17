@@ -9,8 +9,8 @@
         <control type="group">
             <include>MenuSlideAnimation</include>
             <control type="panel" id="9020">
-                <top>156</top>
-                <left>178</left>
+                <top>155</top>
+                <left>180</left>
                 <width>1696</width>
                 <height>890</height>
                 <onup>9020</onup>
