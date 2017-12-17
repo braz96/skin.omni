@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
     <defaultcontrol always="true">9005</defaultcontrol>
-    <menucontrol>9051</menucontrol>
+    <menucontrol>9052</menucontrol>
     <allowoverlay>no</allowoverlay>
     <onload>ClearProperty(MediaMenu,home)</onload>
     <onunload>ClearProperty(MediaMenu,home)</onunload>
@@ -898,6 +898,118 @@
                         <height>24</height>
                         <info>system.memory(used)</info>
                     </control>
+                </control>
+            </control>
+        </control>
+        <control type="button" id="9052">
+            <description>Player controls button</description>
+            <visible allowhiddenfocus="false">Player.HasMedia</visible>
+            <include>HiddenObject</include>
+            <onfocus>SetProperty(MediaMenu,true,home)</onfocus>
+            <onfocus condition="Player.HasMedia">SetFocus(6053)</onfocus>
+        </control>
+        <control type="group">
+            <visible>!String.IsEmpty(Window(home).Property(MediaMenu))</visible>
+            <include>VisibleFadeEffect</include>
+            <top>900</top>
+            <left>1200</left>
+            <control type="image">
+                <top>0</top>
+                <left>0</left>
+                <width>670</width>
+                <height>130</height>
+                <texture colordiffuse="background">background.png</texture>
+            </control>
+            <control type="image">
+                <top>0</top>
+                <left>0</left>
+                <width>670</width>
+                <height>130</height>
+                <texture colordiffuse="background">menu.png</texture>
+            </control>
+            <control type="grouplist" id="9053">
+                <top>20</top>
+                <left>20</left>
+                <height>90</height>
+                <width>630</width>
+                <align>left</align>
+                <orientation>horizontal</orientation>
+                <onup>ClearProperty(MediaMenu,home)</onup>
+                <onup>9005</onup>
+                <ondown>ClearProperty(MediaMenu,home)</ondown>
+                <ondown>9005</ondown>
+                <onleft>9053</onleft>
+                <onright>9053</onright>
+                <onback>ClearProperty(MediaMenu,home)</onback>
+                <control type="button" id="6051">
+                    <label>g</label>
+                    <width>90</width>
+                    <height>90</height>
+                    <font>IconPlayer</font>
+                    <onclick>PlayerControl(Previous)</onclick>
+                    <textoffsetx>0</textoffsetx>
+                    <align>center</align>
+                </control>
+                <control type="button" id="6052">
+                    <label>H</label>
+                    <width>90</width>
+                    <height>90</height>
+                    <font>IconPlayer</font>
+                    <onclick>PlayerControl(Rewind)</onclick>
+                    <enable>Player.SeekEnabled</enable>
+                    <textoffsetx>0</textoffsetx>
+                    <align>center</align>
+                </control>
+                <control type="togglebutton" id="6053">
+                    <label>I</label>
+                    <altlabel>K</altlabel>
+                    <width>90</width>
+                    <height>90</height>
+                    <font>IconPlayer</font>
+                    <usealttexture>Player.Paused</usealttexture>
+                    <onclick>PlayerControl(Play)</onclick>
+                    <enable>Player.PauseEnabled</enable>
+                    <textoffsetx>0</textoffsetx>
+                    <align>center</align>
+                </control>
+                <control type="button" id="6054">
+                    <label>J</label>
+                    <width>90</width>
+                    <height>90</height>
+                    <font>IconPlayer</font>
+                    <onclick>PlayerControl(Stop)</onclick>
+                    <textoffsetx>0</textoffsetx>
+                    <align>center</align>
+                </control>
+                <control type="button" id="6055">
+                    <label>G</label>
+                    <width>90</width>
+                    <height>90</height>
+                    <font>IconPlayer</font>
+                    <onclick>PlayerControl(Forward)</onclick>
+                    <enable>Player.SeekEnabled</enable>
+                    <textoffsetx>0</textoffsetx>
+                    <align>center</align>
+                </control>
+                <control type="button" id="6056">
+                    <label>f</label>
+                    <width>90</width>
+                    <height>90</height>
+                    <font>IconPlayer</font>
+                    <onclick>PlayerControl(Next)</onclick>
+                    <textoffsetx>0</textoffsetx>
+                    <align>center</align>
+                </control>
+                <control type="button" id="6057">
+                    <label>q</label>
+                    <width>90</width>
+                    <height>90</height>
+                    <font>IconPlayer</font>
+                    <onclick>ClearProperty(MediaMenu,home)</onclick>
+                    <onclick condition="Player.HasVideo">ActivateWindow(fullscreenvideo)</onclick>
+                    <onclick condition="Player.HasAudio">ActivateWindow(visualisation)</onclick>
+                    <textoffsetx>0</textoffsetx>
+                    <align>center</align>
                 </control>
             </control>
         </control>
