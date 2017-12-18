@@ -326,106 +326,102 @@
                 <visible>String.IsEqual(Container(9005).ListItem.Property(id),weather)</visible>
                 <control type="grouplist" id="15001">
                     <left>550</left>
-                    <top>550</top>
+                    <top>580</top>
                     <control type="panel" id="16678">
                         <visible>!IsEmpty(Weather.Plugin)</visible>
                         <width>1800</width>
-                        <height>445</height>
+                        <height>380</height>
                         <onleft>9005</onleft>
                         <onclick>ActivateWindow(weather)</onclick>
                         <preloaditems>2</preloaditems>
                         <viewtype label="21371">list</viewtype>
                         <orientation>horizontal</orientation>
-                        <itemlayout height="445" width="405">
+                        <itemlayout height="380" width="340">
                             <control type="image">
                                 <top>20</top>
                                 <left>40</left>
-                                <width>365</width>
-                                <height>365</height>
+                                <width>300</width>
+                                <height>300</height>
                                 <texture>overlays/diffuse-overlay.png</texture>
                             </control>
                             <control type="label">
-                                <top>50</top>
+                                <top>40</top>
                                 <left>40</left>
-                                <right>20</right>
+                                <width>300</width>
                                 <height>60</height>
                                 <font>font15</font>
                                 <align>center</align>
-                                <selectedcolor>highlight</selectedcolor>
                                 <label>$INFO[ListItem.Label2]</label>
                             </control>
                             <control type="image">
                                 <left>40</left>
-                                <top>100</top>
-                                <right>20</right>
-                                <height>200</height>
+                                <top>90</top>
+                                <width>300</width>
+                                <height>160</height>
                                 <aspectratio align="center" aligny="center">keep</aspectratio>
                                 <texture background="true" fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="label">
-                                <top>290</top>
+                                <top>235</top>
                                 <left>40</left>
-                                <right>20</right>
+                                <width>300</width>
                                 <height>60</height>
                                 <font>font15</font>
                                 <align>center</align>
-                                <selectedcolor>highlight</selectedcolor>
                                 <label>$INFO[ListItem.Property(HighTemp),[COLOR invalid],[/COLOR]]$INFO[ListItem.Property(LowTemp), | [COLOR ff8de0ff],[/COLOR]]</label>
                             </control>
                             <control type="label">
                                 <left>40</left>
                                 <right>20</right>
-                                <top>383</top>
+                                <top>318</top>
                                 <height>50</height>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </itemlayout>
-                        <focusedlayout height="445" width="405">
+                        <focusedlayout height="380" width="340">
                             <include content="SelectedItemBackground">
                                 <param name="Left" value="30" />
                                 <param name="Top" value="10" />
-                                <param name="Width" value="385" />
-                                <param name="Height" value="425" />
+                                <param name="Width" value="320" />
+                                <param name="Height" value="360" />
                             </include>
                             <control type="image">
                                 <top>20</top>
                                 <left>40</left>
-                                <width>365</width>
-                                <height>365</height>
+                                <width>300</width>
+                                <height>300</height>
                                 <texture>overlays/diffuse-overlay.png</texture>
                             </control>
                             <control type="label">
-                                <top>50</top>
+                                <top>40</top>
                                 <left>40</left>
-                                <right>20</right>
+                                <width>300</width>
                                 <height>60</height>
                                 <font>font15</font>
                                 <align>center</align>
-                                <selectedcolor>highlight</selectedcolor>
                                 <label>$INFO[ListItem.Label2]</label>
                             </control>
                             <control type="image">
                                 <left>40</left>
-                                <top>100</top>
-                                <right>20</right>
-                                <height>200</height>
+                                <top>90</top>
+                                <width>300</width>
+                                <height>160</height>
                                 <aspectratio align="center" aligny="center">keep</aspectratio>
                                 <texture background="true" fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="label">
-                                <top>290</top>
+                                <top>235</top>
                                 <left>40</left>
-                                <right>20</right>
+                                <width>300</width>
                                 <height>60</height>
                                 <font>font15</font>
                                 <align>center</align>
-                                <selectedcolor>highlight</selectedcolor>
                                 <label>$INFO[ListItem.Property(HighTemp),[COLOR invalid],[/COLOR]]$INFO[ListItem.Property(LowTemp), | [COLOR ff8de0ff],[/COLOR]]</label>
                             </control>
                             <control type="label">
                                 <left>40</left>
                                 <right>20</right>
-                                <top>383</top>
+                                <top>318</top>
                                 <height>50</height>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
@@ -486,8 +482,8 @@
                     </control>
                 </control>
                 <control type="group">
-                    <left>620</left>
-                    <top>170</top>
+                    <left>640</left>
+                    <top>190</top>
                     <width>1620</width>
                     <height>390</height>
                     <control type="image">

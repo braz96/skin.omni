@@ -39,7 +39,7 @@
             <top>15</top>
             <left>0</left>
             <width>1970</width>
-            <height>620</height>
+            <height>635</height>
             <onleft>9005</onleft>
             <onback>9005</onback>
             <preloaditems>2</preloaditems>
@@ -121,7 +121,7 @@
             <top>15</top>
             <left>0</left>
             <width>1970</width>
-            <height>475</height>
+            <height>495</height>
             <onleft>9005</onleft>
             <onback>9005</onback>
             <preloaditems>2</preloaditems>
@@ -203,71 +203,71 @@
             <top>15</top>
             <left>0</left>
             <width>1970</width>
-            <height>625</height>
+            <height>575</height>
             <onleft>9005</onleft>
             <onback>9005</onback>
             <preloaditems>2</preloaditems>
             <orientation>Horizontal</orientation>
             <viewtype label="21371">list</viewtype>
-            <itemlayout height="445" width="405">
+            <itemlayout height="380" width="340">
                 <control type="image">
                     <top>80</top>
                     <left>40</left>
-                    <width>365</width>
-                    <height>365</height>
+                    <width>300</width>
+                    <height>300</height>
                     <texture>overlays/diffuse-overlay.png</texture>
                 </control>
                 <control type="label">
                     <left>40</left>
-                    <width>365</width>
-                    <top>443</top>
+                    <width>300</width>
+                    <top>378</top>
                     <height>50</height>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
                 <control type="image">
                     <left>40</left>
                     <top>80</top>
-                    <width>365</width>
-                    <height>365</height>
+                    <width>300</width>
+                    <height>300</height>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                     <texture background="true" fallback="$PARAM[fallback_icon]">$PARAM[icon]</texture>
                 </control>
                 <include content="OverlayIcons">
-                    <param name="OverlayLeft" value="346" />
+                    <param name="OverlayLeft" value="281" />
                     <param name="OverlayTop" value="78" />
                 </include>
             </itemlayout>
-            <focusedlayout height="445" width="405">
+            <focusedlayout height="380" width="340">
                 <include content="SelectedItemBackground">
                     <param name="Left" value="30" />
                     <param name="Top" value="70" />
-                    <param name="Width" value="385" />
-                    <param name="Height" value="425" />
+                    <param name="Width" value="320" />
+                    <param name="Height" value="360" />
                 </include>
                 <control type="image">
                     <top>80</top>
                     <left>40</left>
-                    <width>365</width>
-                    <height>365</height>
+                    <width>300</width>
+                    <height>300</height>
                     <texture>overlays/diffuse-overlay.png</texture>
                 </control>
                 <control type="label">
                     <left>40</left>
-                    <width>365</width>
-                    <top>443</top>
+                    <width>300</width>
+                    <top>378</top>
                     <height>50</height>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
                 <control type="image">
                     <left>40</left>
                     <top>80</top>
-                    <width>365</width>
-                    <height>365</height>
+                    <width>300</width>
+                    <height>300</height>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                     <texture background="true" fallback="$PARAM[fallback_icon]">$PARAM[icon]</texture>
                 </control>
                 <include content="OverlayIcons">
-                    <param name="OverlayLeft" value="346" />
+                    <param name="OverlayLeft" value="281" />
                     <param name="OverlayTop" value="78" />
                 </include>
             </focusedlayout>

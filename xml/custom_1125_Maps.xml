@@ -13,7 +13,7 @@
             <left>-430</left>
             <control type="group">
                 <include>Animation.Common</include>
-                <left>660</left>
+                <left>655</left>
                 <top>210</top>
                 <width>1600</width>
                 <height>780</height>
