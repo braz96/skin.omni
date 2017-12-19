@@ -249,16 +249,18 @@
                         <param name="content_path" value="videodb://recentlyaddedmusicvideos/"/>
                         <param name="widget_header" value="$LOCALIZE[20390]"/>
                         <param name="widget_target" value="videos"/>
+                        <param name="label" value="$INFO[ListItem.Artist] - $INFO[ListItem.Label]"/>
                         <param name="list_id" value="16300"/>
                     </include>
                     <include content="WidgetListLandscape" condition="Library.HasContent(musicvideos) + !Skin.HasSetting(HomeNoUnwatchedMusicVideosWidget)">
-                        <param name="content_path" value="special://skin/playlists/unwatched_musicvideos.xsp"/>
+                        <param name="content_path" value="special://skin/extras/playlists/unwatched_musicvideos.xsp"/>
                         <param name="widget_header" value="$LOCALIZE[31030]"/>
                         <param name="widget_target" value="videos"/>
+                        <param name="label" value="$INFO[ListItem.Artist] - $INFO[ListItem.Label]"/>
                         <param name="list_id" value="16400"/>
                     </include>
                     <include content="WidgetListSquare" condition="Library.HasContent(musicvideos) + !Skin.HasSetting(HomeNoMusicVideoArtistsWidget)">
-                        <param name="content_path" value="special://skin/playlists/random_musicvideo_artists.xsp"/>
+                        <param name="content_path" value="special://skin/extras/playlists/random_musicvideo_artists.xsp"/>
                         <param name="widget_header" value="$LOCALIZE[31031]"/>
                         <param name="widget_target" value="music"/>
                         <param name="list_id" value="16200"/>
@@ -266,9 +268,10 @@
                         <param name="icon" value="$INFO[ListItem.Art(thumb)]"/>
                     </include>
                     <include content="WidgetListLandscape" condition="Library.HasContent(musicvideos) + !Skin.HasSetting(HomeNoRandomMusicVideosWidget)">
-                        <param name="content_path" value="special://skin/playlists/random_musicvideos.xsp"/>
+                        <param name="content_path" value="special://skin/extras/playlists/random_musicvideos.xsp"/>
                         <param name="widget_header" value="$LOCALIZE[31032]"/>
                         <param name="widget_target" value="videos"/>
+                        <param name="label" value="$INFO[ListItem.Artist] - $INFO[ListItem.Label]"/>
                         <param name="list_id" value="16500"/>
                     </include>
                 </control>
