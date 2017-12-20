@@ -1636,7 +1636,6 @@
                         <width max="625">auto</width>
                         <height>600</height>
                         <wrapmultiline>true</wrapmultiline>
-                        <height>600</height>
                         <visible>String.EndsWith(Container(110).Currentitem,18) | String.EndsWith(Container(110).Currentitem,38) | String.EndsWith(Container(110).Currentitem,58) | String.EndsWith(Container(110).Currentitem,78) | String.EndsWith(Container(110).Currentitem,98)</visible>
                         <label> $INFO[Container(110).ListItem.Property(part4)]</label>
                         <font>lyr18b</font>
@@ -1671,7 +1670,6 @@
                         <width max="625">auto</width>
                         <height>600</height>
                         <wrapmultiline>true</wrapmultiline>
-                        <height>600</height>
                         <visible>String.EndsWith(Container(110).Currentitem,18) | String.EndsWith(Container(110).Currentitem,38) | String.EndsWith(Container(110).Currentitem,58) | String.EndsWith(Container(110).Currentitem,78) | String.EndsWith(Container(110).Currentitem,98)</visible>
                         <animation type="Visible" reversible="false">
                             <effect type="slide" delay="900" end="0,47" time="300" tween="sine" easing="out" />
