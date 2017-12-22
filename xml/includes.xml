@@ -1234,5 +1234,11 @@
             <linespacing>0.9</linespacing>
             <size>50</size>
         </font>
+        <font>
+            <name>font_Mono</name>
+            <filename>textviewer/NotoMono-Regular.ttf</filename>
+            <linespacing>1.3</linespacing>
+            <size>28</size>
+        </font>
     </include>
 </includes>
