@@ -107,7 +107,7 @@
                     <param name="OverlayTop" value="78" />
                 </include>
             </focusedlayout>
-            <content limit="16" target="$PARAM[widget_target]">$PARAM[content_path]</content>
+            <content limit="16" sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]">$PARAM[content_path]</content>
         </control>
     </include>
     <include name="WidgetListLandscape">

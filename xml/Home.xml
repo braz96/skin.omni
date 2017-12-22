@@ -342,6 +342,7 @@
                         <param name="widget_header" value="$LOCALIZE[13409]"/>
                         <param name="widget_target" value="videos"/>
                         <param name="list_id" value="14300"/>
+                        <param name="sortby" value="random"/>
                     </include>
                     <include content="WidgetListSquare" condition="!Skin.HasSetting(HomeNoFavoritesWidget)">
                         <param name="content_path" value="favourites://"/>
