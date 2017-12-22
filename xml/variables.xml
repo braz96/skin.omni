@@ -84,6 +84,7 @@
         <value condition="Window.IsActive(home) + String.IsEqual(Container(9005).ListItem.Property(id),addons)">$INFO[Window(Home).Property(RandomAddon.Count),$LOCALIZE[20161] $LOCALIZE[24001]: ]</value>
         <value condition="Window.IsActive(home) + String.IsEqual(Container(9005).ListItem.Property(id),weather)">$INFO[Window(weather).Property(Location)]</value>
         <value condition="Window.IsActive(home) + String.IsEqual(Container(9005).ListItem.Property(id),musicvideos)">$INFO[Window(Home).Property(MusicVideos.Count),$LOCALIZE[20389]: ]$INFO[Window(Home).Property(MusicVideos.Watched), • $LOCALIZE[16102]: ]$INFO[Window(Home).Property(MusicVideos.UnWatched), • $LOCALIZE[16101]: ]</value>
+        <value condition="Window.IsActive(home) + String.IsEqual(Container(9005).ListItem.Property(id),search)">$LOCALIZE[31138]</value>
         <value condition="Window.IsActive(home) + String.IsEqual(Container(9005).ListItem.Property(id),shutdown)">$INFO[System.memory(used.percent),$LOCALIZE[31309] ]$INFO[System.CPUUsage, • $LOCALIZE[13271] ]</value>
         <value condition="Window.IsActive(home) + String.IsEqual(Container(9005).ListItem.Property(id),settings)">$INFO[System.FriendlyName]</value>
         <value condition="Control.HasFocus(53)">$INFO[Container(53).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(53).NumItems,, $LOCALIZE[31025]]</value>
