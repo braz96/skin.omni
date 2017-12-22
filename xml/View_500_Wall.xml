@@ -82,7 +82,7 @@
                         <param name="OverlayTop" value="18" />
                     </include>
                 </focusedlayout>
-                <itemlayout height="296" width="424" condition="Container.Content(episodes) | Container.Content(files) | Container.Content(videos)">
+                <itemlayout height="296" width="424" condition="Container.Content(episodes) | Container.Content(files) | Container.Content(videos) | Container.Content(musicvideos)">
                     <control type="image">
                         <top>20</top>
                         <left>20</left>
@@ -110,7 +110,7 @@
                         <param name="OverlayTop" value="20" />
                     </include>
                 </itemlayout>
-                <focusedlayout height="296" width="424" condition="Container.Content(episodes) | Container.Content(files) | Container.Content(videos)">
+                <focusedlayout height="296" width="424" condition="Container.Content(episodes) | Container.Content(files) | Container.Content(videos) | Container.Content(musicvideos)">
                     <include content="SelectedItemBackground">
                         <param name="Left" value="10" />
                         <param name="Top" value="10" />
@@ -144,7 +144,7 @@
                         <param name="OverlayTop" value="20" />
                     </include>
                 </focusedlayout>
-                <itemlayout height="445" width="405" condition="Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(genres) | Container.Content(countries) | Container.Content(tags) | Container.Content(years) | Container.Content(directors) | Container.Content(studios)">
+                <itemlayout height="445" width="405" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(genres) | Container.Content(countries) | Container.Content(tags) | Container.Content(years) | Container.Content(directors) | Container.Content(studios)">
                     <control type="image">
                         <top>20</top>
                         <left>58</left>
@@ -172,7 +172,7 @@
                         <param name="OverlayTop" value="18" />
                     </include>
                 </itemlayout>
-                <focusedlayout height="445" width="405" condition="Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(genres) | Container.Content(countries) | Container.Content(tags) | Container.Content(years) | Container.Content(directors) | Container.Content(studios)">
+                <focusedlayout height="445" width="405" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(genres) | Container.Content(countries) | Container.Content(tags) | Container.Content(years) | Container.Content(directors) | Container.Content(studios)">
                     <include content="SelectedItemBackground">
                         <param name="Left" value="48" />
                         <param name="Top" value="10" />

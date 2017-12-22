@@ -99,7 +99,7 @@
                     <item>
                         <label>$LOCALIZE[20389]</label>
                         <property name="menu_id">$NUMBER[16000]</property>
-                        <onclick condition="Library.HasContent(musicvideos)">ActivateWindow(Videos,musicvideos,return)</onclick>
+                        <onclick condition="Library.HasContent(musicvideos)">ActivateWindow(Videos,videodb://musicvideos/artists/,return)</onclick>
                         <onclick condition="!Library.HasContent(musicvideos)">ActivateWindow(Videos,sources://video/,return)</onclick>
                         <thumb>DefaultMusicVideos.png</thumb>
                         <property name="id">musicvideos</property>
