@@ -45,36 +45,6 @@
                 <font>font16</font>
                 <wrapmultiline>true</wrapmultiline>
             </control>
-            <control type="group">
-                <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
-                <animation effect="slide" end="2500,0" time="240">WindowClose</animation>
-                <animation effect="slide" start="1920,0" end="0,0" delay="300" time="240" condition="!Window.Previous(startup)">WindowOpen</animation>
-                <animation effect="slide" start="1920" end="0" time="240">VisibleChange</animation>
-                <animation effect="slide" start="1920,0" end="0,0" delay="800" time="480" condition="Window.Previous(startup)">WindowOpen</animation>
-                <left>555</left>
-                <top>1035</top>
-                <control type="group">
-                    <control type="label">
-                        <left>1755</left>
-                        <width>40</width>
-                        <height>40</height>
-                        <label>y</label>
-                        <font>IconTiny</font>
-                        <textcolor>highlight</textcolor>
-                    </control>
-                    <control type="rss">
-                        <description>RSS feed</description>
-                        <left>15</left>
-                        <height>30</height>
-                        <width>1733</width>
-                        <font>font12</font>
-                        <urlset>1</urlset>
-                        <textcolor>highlight</textcolor>
-                        <titlecolor>highlight</titlecolor>
-                        <headlinecolor>maintext</headlinecolor>
-                    </control>
-                </control>
-            </control>
             <!--<control type="group">
                 <left>2350</left>
                 <include>SideBladeRight</include>
@@ -937,6 +907,51 @@
                         <width>380</width>
                         <height>24</height>
                         <info>system.memory(used)</info>
+                    </control>
+                </control>
+            </control>
+            <control type="group">
+                <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
+                <animation effect="slide" end="2500,0" time="240">WindowClose</animation>
+                <animation effect="slide" start="1920,0" end="0,0" delay="300" time="240" condition="!Window.Previous(startup)">WindowOpen</animation>
+                <animation effect="slide" start="1920" end="0" time="240">VisibleChange</animation>
+                <animation effect="slide" start="1920,0" end="0,0" delay="800" time="480" condition="Window.Previous(startup)">WindowOpen</animation>
+                <left>550</left>
+                <top>1030</top>
+                <control type="image">
+                    <top>0</top>
+                    <left>0</left>
+                    <width>1800</width>
+                    <height>50</height>
+                    <texture colordiffuse="background">background.png</texture>
+                </control>
+                <control type="image">
+                    <top>0</top>
+                    <left>0</left>
+                    <width>1800</width>
+                    <height>50</height>
+                    <texture colordiffuse="background">menu.png</texture>
+                </control>
+                <control type="group">
+                    <top>5</top>
+                    <control type="label">
+                        <left>1760</left>
+                        <width>40</width>
+                        <height>40</height>
+                        <label>y</label>
+                        <font>IconTiny</font>
+                        <textcolor>highlight</textcolor>
+                    </control>
+                    <control type="rss">
+                        <description>RSS feed</description>
+                        <left>15</left>
+                        <height>30</height>
+                        <width>1733</width>
+                        <font>font12</font>
+                        <urlset>1</urlset>
+                        <textcolor>highlight</textcolor>
+                        <titlecolor>highlight</titlecolor>
+                        <headlinecolor>maintext</headlinecolor>
                     </control>
                 </control>
             </control>
