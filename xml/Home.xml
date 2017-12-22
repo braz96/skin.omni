@@ -337,7 +337,13 @@
                     <height>960</height>
                     <itemgap>-120</itemgap>
                     <usecontrolcoords>true</usecontrolcoords>
-                    <include content="WidgetListSquare">
+                    <include content="WidgetListPoster" condition="Library.HasContent(movies) + !Skin.HasSetting(HomeNoTop250Widget)">
+                        <param name="content_path" value="special://skin/extras/playlists/top250.xsp"/>
+                        <param name="widget_header" value="$LOCALIZE[13409]"/>
+                        <param name="widget_target" value="videos"/>
+                        <param name="list_id" value="14300"/>
+                    </include>
+                    <include content="WidgetListSquare" condition="!Skin.HasSetting(HomeNoFavoritesWidget)">
                         <param name="content_path" value="favourites://"/>
                         <param name="widget_header" value="$LOCALIZE[1036]"/>
                         <param name="widget_target" value=""/>
