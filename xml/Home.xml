@@ -189,7 +189,9 @@
                         <param name="widget_header" value="$LOCALIZE[517]"/>
                         <param name="widget_target" value="music"/>
                         <param name="list_id" value="7100"/>
+                        <param name="label" value="$INFO[ListItem.Label]"/>
                         <param name="icon" value="$INFO[ListItem.Art(thumb)]"/>
+                        <param name="aspect" value="scale"/>
                         <param name="fallback_icon" value="DefaultMusicAlbums.png"/>
                     </include>
                     <include content="WidgetListSquare" condition="Library.HasContent(music) + !Skin.HasSetting(HomeNoRecentAddedAlbumsWidget)">
@@ -197,7 +199,9 @@
                         <param name="widget_header" value="$LOCALIZE[359]"/>
                         <param name="widget_target" value="music"/>
                         <param name="list_id" value="7200"/>
+                        <param name="label" value="$INFO[ListItem.Label]"/>
                         <param name="icon" value="$INFO[ListItem.Art(thumb)]"/>
+                        <param name="aspect" value="scale"/>
                         <param name="fallback_icon" value="DefaultMusicAlbums.png"/>
                     </include>
                     <include content="WidgetListSquare" condition="Library.HasContent(music) + !Skin.HasSetting(HomeNoRandomAlbumsWidget)">
@@ -205,7 +209,9 @@
                         <param name="widget_header" value="$LOCALIZE[31056]"/>
                         <param name="widget_target" value="music"/>
                         <param name="list_id" value="7300"/>
+                        <param name="label" value="$INFO[ListItem.Label]"/>
                         <param name="icon" value="$INFO[ListItem.Art(thumb)]"/>
+                        <param name="aspect" value="scale"/>
                         <param name="fallback_icon" value="DefaultMusicAlbums.png"/>
                     </include>
                     <include content="WidgetListSquare" condition="Library.HasContent(music) + !Skin.HasSetting(HomeNoRandomArtistsWidget)">
@@ -213,7 +219,9 @@
                         <param name="widget_header" value="$LOCALIZE[31057]"/>
                         <param name="widget_target" value="music"/>
                         <param name="list_id" value="7400"/>
+                        <param name="label" value="$INFO[ListItem.Label]"/>
                         <param name="icon" value="$INFO[ListItem.Art(thumb)]"/>
+                        <param name="aspect" value="scale"/>
                         <param name="fallback_icon" value="DefaultMusicArtists.png"/>
                     </include>
                     <include content="WidgetListSquare" condition="Library.HasContent(music) + !Skin.HasSetting(HomeNoUnplayedAlbumsWidget)">
@@ -221,7 +229,9 @@
                         <param name="widget_header" value="$LOCALIZE[31058]"/>
                         <param name="widget_target" value="music"/>
                         <param name="list_id" value="7500"/>
+                        <param name="label" value="$INFO[ListItem.Label]"/>
                         <param name="icon" value="$INFO[ListItem.Art(thumb)]"/>
+                        <param name="aspect" value="scale"/>
                         <param name="fallback_icon" value="DefaultMusicAlbums.png"/>
                     </include>
                     <include content="WidgetListSquare" condition="Library.HasContent(music) + !Skin.HasSetting(HomeNoMostPlayedAlbumsWidget)">
@@ -229,7 +239,9 @@
                         <param name="widget_header" value="$LOCALIZE[31059]"/>
                         <param name="widget_target" value="music"/>
                         <param name="list_id" value="7600"/>
+                        <param name="label" value="$INFO[ListItem.Label]"/>
                         <param name="icon" value="$INFO[ListItem.Art(thumb)]"/>
+                        <param name="aspect" value="scale"/>
                         <param name="fallback_icon" value="DefaultMusicAlbums.png"/>
                         <param name="sortby" value="playcount"/>
                         <param name="sortorder" value="descending"/>
@@ -251,6 +263,7 @@
                         <param name="widget_target" value="videos"/>
                         <param name="label" value="$INFO[ListItem.Artist] - $INFO[ListItem.Label]"/>
                         <param name="list_id" value="16300"/>
+                        <param name="fallback_icon" value="DefaultFallbackMovies.png"/>
                     </include>
                     <include content="WidgetListLandscape" condition="Library.HasContent(musicvideos) + !Skin.HasSetting(HomeNoUnwatchedMusicVideosWidget)">
                         <param name="content_path" value="special://skin/extras/playlists/unwatched_musicvideos.xsp"/>
@@ -258,14 +271,17 @@
                         <param name="widget_target" value="videos"/>
                         <param name="label" value="$INFO[ListItem.Artist] - $INFO[ListItem.Label]"/>
                         <param name="list_id" value="16400"/>
+                        <param name="fallback_icon" value="DefaultFallbackMovies.png"/>
                     </include>
                     <include content="WidgetListSquare" condition="Library.HasContent(musicvideos) + !Skin.HasSetting(HomeNoMusicVideoArtistsWidget)">
                         <param name="content_path" value="special://skin/extras/playlists/random_musicvideo_artists.xsp"/>
                         <param name="widget_header" value="$LOCALIZE[31031]"/>
                         <param name="widget_target" value="music"/>
                         <param name="list_id" value="16200"/>
-                        <param name="widget_limit" value="10"/>
-                        <param name="icon" value="$INFO[ListItem.Art(thumb)]"/>
+                        <param name="sortby" value="random"/>
+                        <param name="label" value="$INFO[ListItem.Label]"/>
+                        <param name="icon" value="$INFO[ListItem.Icon]"/>
+                        <param name="aspect" value="scale"/>
                     </include>
                     <include content="WidgetListLandscape" condition="Library.HasContent(musicvideos) + !Skin.HasSetting(HomeNoRandomMusicVideosWidget)">
                         <param name="content_path" value="special://skin/extras/playlists/random_musicvideos.xsp"/>
@@ -273,6 +289,7 @@
                         <param name="widget_target" value="videos"/>
                         <param name="label" value="$INFO[ListItem.Artist] - $INFO[ListItem.Label]"/>
                         <param name="list_id" value="16500"/>
+                        <param name="fallback_icon" value="DefaultFallbackMovies.png"/>
                     </include>
                 </control>
             </control>
@@ -292,7 +309,10 @@
                         <param name="widget_header" value="$LOCALIZE[31016]"/>
                         <param name="widget_target" value="pvr"/>
                         <param name="list_id" value="12200"/>
-                        <param name="icon" value="$INFO[ListItem.Art(thumb)]"/>
+                        <param name="label" value="$INFO[ListItem.Label]"/>
+                        <param name="icon" value="$INFO[ListItem.Icon]"/>
+                        <param name="fallback_icon" value="DefaultAddonPVRClient.png"/>
+                        <param name="aspect" value="keep"/>
                     </include>
                     <include content="WidgetListSquare" condition="System.HasPVRAddon">
                         <param name="content_path" value="pvr://recordings/tv/active?view=flat"/>
@@ -301,9 +321,10 @@
                         <param name="widget_header" value="$LOCALIZE[31015]"/>
                         <param name="widget_target" value="pvr"/>
                         <param name="list_id" value="12300"/>
-                        <param name="icon" value="$INFO[ListItem.Art(thumb)]"/>
-                        <param name="label" value="$INFO[ListItem.ChannelName]"/>
-                        <param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
+                        <param name="icon" value="$INFO[ListItem.Icon]"/>
+                        <param name="fallback_icon" value="DefaultAddonPVRClient.png"/>
+                        <param name="aspect" value="keep"/>
+                        <param name="label" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
                     </include>
                 </control>
             </control>
@@ -321,7 +342,9 @@
                         <param name="widget_header" value="$LOCALIZE[1036]"/>
                         <param name="widget_target" value=""/>
                         <param name="list_id" value="14200"/>
+                        <param name="label" value="$INFO[ListItem.Label]"/>
                         <param name="icon" value="$INFO[ListItem.Art(thumb)]"/>
+                        <param name="aspect" value="keep"/>
                     </include>
                 </control>
             </control>
@@ -577,7 +600,9 @@
                         <param name="sortby" value="lastused"/>
                         <param name="sortorder" value="descending"/>
                         <param name="list_id" value="8100"/>
+                        <param name="label" value="$INFO[ListItem.Label]"/>
                         <param name="icon" value="$INFO[ListItem.Icon]"/>
+                        <param name="aspect" value="scale"/>
                         <param name="fallback_icon" value="DefaultAddon.png"/>
                     </include>
                     <include content="WidgetListSquare" condition="!Skin.HasSetting(HomeNoMusicAddonsWidget)">
@@ -587,7 +612,9 @@
                         <param name="sortby" value="lastused"/>
                         <param name="sortorder" value="descending"/>
                         <param name="list_id" value="8200"/>
+                        <param name="label" value="$INFO[ListItem.Label]"/>
                         <param name="icon" value="$INFO[ListItem.Icon]"/>
+                        <param name="aspect" value="scale"/>
                         <param name="fallback_icon" value="DefaultAddon.png"/>
                     </include>
                     <include content="WidgetListSquare" condition="!Skin.HasSetting(HomeNoGameAddonsWidget)">
@@ -597,7 +624,9 @@
                         <param name="sortby" value="lastused"/>
                         <param name="sortorder" value="descending"/>
                         <param name="list_id" value="8700"/>
+                        <param name="label" value="$INFO[ListItem.Label]"/>
                         <param name="icon" value="$INFO[ListItem.Icon]"/>
+                        <param name="aspect" value="scale"/>
                         <param name="fallback_icon" value="DefaultAddon.png"/>
                         <param name="visible" value="System.GetBool(gamesgeneral.enable)"/>
                     </include>
@@ -608,7 +637,9 @@
                         <param name="sortby" value="lastused"/>
                         <param name="sortorder" value="descending"/>
                         <param name="list_id" value="8300"/>
+                        <param name="label" value="$INFO[ListItem.Label]"/>
                         <param name="icon" value="$INFO[ListItem.Icon]"/>
+                        <param name="aspect" value="scale"/>
                         <param name="fallback_icon" value="DefaultAddon.png"/>
                     </include>
                     <include content="WidgetListSquare" condition="!Skin.HasSetting(HomeNoAndroidAddonsWidget) + System.Platform.Android">
@@ -618,7 +649,9 @@
                         <param name="sortby" value="lastused"/>
                         <param name="sortorder" value="descending"/>
                         <param name="list_id" value="8400"/>
+                        <param name="label" value="$INFO[ListItem.Label]"/>
                         <param name="icon" value="$INFO[ListItem.Icon]"/>
+                        <param name="aspect" value="scale"/>
                         <param name="fallback_icon" value="DefaultAddon.png"/>
                     </include>
                     <include content="WidgetListSquare" condition="!Skin.HasSetting(HomeNoPictureAddonsWidget)">
@@ -628,7 +661,9 @@
                         <param name="sortby" value="lastused"/>
                         <param name="sortorder" value="descending"/>
                         <param name="list_id" value="8500"/>
+                        <param name="label" value="$INFO[ListItem.Label]"/>
                         <param name="icon" value="$INFO[ListItem.Icon]"/>
+                        <param name="aspect" value="scale"/>
                         <param name="fallback_icon" value="DefaultAddon.png"/>
                     </include>
                 </control>

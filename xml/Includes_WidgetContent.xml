@@ -148,11 +148,11 @@
                     <width>384</width>
                     <height>216</height>
                     <aspectratio align="center" aligny="center">scale</aspectratio>
-                    <texture background="true" fallback="DefaultFolder.png">$INFO[ListItem.Art(thumb)]</texture>
+                    <texture background="true" fallback="$PARAM[fallback_icon]">$INFO[ListItem.Art(thumb)]</texture>
                 </control>
                 <include content="OverlayIcons">
                     <param name="OverlayLeft" value="365" />
-                    <param name="OverlayTop" value="100" />
+                    <param name="OverlayTop" value="80" />
                 </include>
             </itemlayout>
             <focusedlayout height="296" width="424">
@@ -182,11 +182,11 @@
                     <width>384</width>
                     <height>216</height>
                     <aspectratio align="center" aligny="center">scale</aspectratio>
-                    <texture background="true" fallback="DefaultFolder.png">$INFO[ListItem.Art(thumb)]</texture>
+                    <texture background="true" fallback="$PARAM[fallback_icon]">$INFO[ListItem.Art(thumb)]</texture>
                 </control>
                 <include content="OverlayIcons">
                     <param name="OverlayLeft" value="365" />
-                    <param name="OverlayTop" value="100" />
+                    <param name="OverlayTop" value="80" />
                 </include>
             </focusedlayout>
             <content limit="16" sortorder="$PARAM[sortorder]" sortby="$PARAM[sortby]" target="$PARAM[widget_target]">$PARAM[content_path]</content>
@@ -222,14 +222,14 @@
                     <width>300</width>
                     <top>378</top>
                     <height>50</height>
-                    <label>$INFO[ListItem.Label]</label>
+                    <label>$PARAM[label]</label>
                 </control>
                 <control type="image">
                     <left>40</left>
                     <top>80</top>
                     <width>300</width>
                     <height>300</height>
-                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <aspectratio align="center" aligny="center">$PARAM[aspect]</aspectratio>
                     <texture background="true" fallback="$PARAM[fallback_icon]">$PARAM[icon]</texture>
                 </control>
                 <include content="OverlayIcons">
@@ -256,14 +256,14 @@
                     <width>300</width>
                     <top>378</top>
                     <height>50</height>
-                    <label>$INFO[ListItem.Label]</label>
+                    <label>$PARAM[label]</label>
                 </control>
                 <control type="image">
                     <left>40</left>
                     <top>80</top>
                     <width>300</width>
                     <height>300</height>
-                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <aspectratio align="center" aligny="center">$PARAM[aspect]</aspectratio>
                     <texture background="true" fallback="$PARAM[fallback_icon]">$PARAM[icon]</texture>
                 </control>
                 <include content="OverlayIcons">
