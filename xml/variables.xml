@@ -57,8 +57,6 @@
     </variable>
     <variable name="HeaderSubLabel">
         <value condition="Window.IsActive(1119)">$INFO[Container(51).NumItems,, $LOCALIZE[31025]]</value>
-        
-        <!--<value condition="Window.IsVisible(home) + Window.IsActive(DialogContextMenu.xml)">$LOCALIZE[31246]</value>-->
         <value condition="Window.IsActive(profiles)">$LOCALIZE[13200]</value>
         <value condition="Window.IsActive(systeminfo)">$INFO[Control.GetLabel(52)]</value>
         <value condition="Window.IsActive(filemanager) + ![Control.HasFocus(21) | Control.HasFocus(31)]">$INFO[Container(20).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(20).NumItems,, $LOCALIZE[31025]]</value>
@@ -78,12 +76,42 @@
         <value condition="Window.IsActive(interfacesettings)">$LOCALIZE[14206]</value>
         <value condition="Window.IsActive(settings)">$INFO[System.FriendlyName]</value>
         <value condition="Window.IsActive(weather) | Window.IsActive(1121) | Window.IsActive(1122) | Window.IsActive(1123) | Window.IsActive(1124) | Window.IsActive(1125)">$INFO[Window(weather).Property(Location)]</value>
-        <value condition="Window.IsActive(home) + String.IsEqual(Container(9005).ListItem.Property(id),movies)">$INFO[Window(Home).Property(Movies.Count),$LOCALIZE[20342]: ]$INFO[Window(Home).Property(Movies.Watched), • $LOCALIZE[16102]: ]$INFO[Window(Home).Property(Movies.UnWatched), • $LOCALIZE[16101]: ]</value>
-        <value condition="Window.IsActive(home) + String.IsEqual(Container(9005).ListItem.Property(id),tvshows)">$INFO[Window(Home).Property(TVShows.Count),$LOCALIZE[20343]: ]$INFO[Window(Home).Property(Episodes.Count), • $LOCALIZE[20360]: ]$INFO[Window(Home).Property(Episodes.UnWatched), • $LOCALIZE[16101]: ]</value>
-        <value condition="Window.IsActive(home) + String.IsEqual(Container(9005).ListItem.Property(id),music)">$INFO[Window(Home).Property(Music.ArtistsCount),$LOCALIZE[133]: ]$INFO[Window(Home).Property(Music.AlbumsCount), • $LOCALIZE[132]: ]$INFO[Window(Home).Property(Music.SongsCount), • $LOCALIZE[134]: ]</value>
-        <value condition="Window.IsActive(home) + String.IsEqual(Container(9005).ListItem.Property(id),addons)">$INFO[Window(Home).Property(RandomAddon.Count),$LOCALIZE[20161] $LOCALIZE[24001]: ]</value>
+        <!-- Widget item numbers -->
+        <value condition="Window.IsActive(home) + Control.HasFocus(5100)">$INFO[Container(5100).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(5100).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(5200)">$INFO[Container(5200).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(5200).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(5300)">$INFO[Container(5300).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(5300).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(5400)">$INFO[Container(5400).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(5400).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(5600)">$INFO[Container(5600).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(5600).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(6100)">$INFO[Container(6100).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(6100).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(6200)">$INFO[Container(6200).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(6200).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(6300)">$INFO[Container(6300).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(6300).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(7100)">$INFO[Container(7100).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(7100).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(7200)">$INFO[Container(7200).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(7200).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(7300)">$INFO[Container(7300).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(7300).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(7400)">$INFO[Container(7400).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(7400).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(7500)">$INFO[Container(7500).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(7500).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(7600)">$INFO[Container(7600).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(7600).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(8100)">$INFO[Container(8100).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(8100).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(8200)">$INFO[Container(8200).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(8200).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(8300)">$INFO[Container(8300).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(8300).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(8400)">$INFO[Container(8400).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(8400).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(8500)">$INFO[Container(8500).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(8500).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(8700)">$INFO[Container(8700).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(8700).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(16200)">$INFO[Container(16200).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(16200).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(16300)">$INFO[Container(16300).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(16300).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(16400)">$INFO[Container(16400).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(16400).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(16500)">$INFO[Container(16500).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(16500).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(12200)">$INFO[Container(12200).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(12200).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(12300)">$INFO[Container(12300).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(12300).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(14200)">$INFO[Container(14200).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(14200).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsActive(home) + Control.HasFocus(14300)">$INFO[Container(14300).CurrentItem,, $LOCALIZE[1443] ]$INFO[Container(14300).NumItems,, $LOCALIZE[31025]]</value>
+
+        <value condition="Window.IsActive(home) + String.IsEqual(Container(9005).ListItem.Property(id),movies)">$INFO[Window(Home).Property(Movies.Count),, $LOCALIZE[20342]]$INFO[Window(Home).Property(Movies.Watched), • , $LOCALIZE[16102]]$INFO[Window(Home).Property(Movies.UnWatched), • , $LOCALIZE[16101]]</value>
+        <value condition="Window.IsActive(home) + String.IsEqual(Container(9005).ListItem.Property(id),tvshows)">$INFO[Window(Home).Property(TVShows.Count),, $LOCALIZE[20343]]$INFO[Window(Home).Property(Episodes.Count), • , $LOCALIZE[20360]]$INFO[Window(Home).Property(Episodes.UnWatched), • , $LOCALIZE[16101]]</value>
+        <value condition="Window.IsActive(home) + String.IsEqual(Container(9005).ListItem.Property(id),music)">$INFO[Window(Home).Property(Music.ArtistsCount),, $LOCALIZE[133]]$INFO[Window(Home).Property(Music.AlbumsCount), • , $LOCALIZE[132]]$INFO[Window(Home).Property(Music.SongsCount), • , $LOCALIZE[134]]</value>
+        <value condition="Window.IsActive(home) + String.IsEqual(Container(9005).ListItem.Property(id),addons)">$INFO[Window(Home).Property(RandomAddon.Count),, $LOCALIZE[24001]]</value>
         <value condition="Window.IsActive(home) + String.IsEqual(Container(9005).ListItem.Property(id),weather)">$INFO[Window(weather).Property(Location)]</value>
-        <value condition="Window.IsActive(home) + String.IsEqual(Container(9005).ListItem.Property(id),musicvideos)">$INFO[Window(Home).Property(MusicVideos.Count),$LOCALIZE[20389]: ]$INFO[Window(Home).Property(MusicVideos.Watched), • $LOCALIZE[16102]: ]$INFO[Window(Home).Property(MusicVideos.UnWatched), • $LOCALIZE[16101]: ]</value>
+        <value condition="Window.IsActive(home) + String.IsEqual(Container(9005).ListItem.Property(id),musicvideos)">$INFO[Window(Home).Property(MusicVideos.Count),, $LOCALIZE[20389]]$INFO[Window(Home).Property(MusicVideos.Watched), • , $LOCALIZE[16102]]$INFO[Window(Home).Property(MusicVideos.UnWatched), • , $LOCALIZE[16101]]</value>
         <value condition="Window.IsActive(home) + String.IsEqual(Container(9005).ListItem.Property(id),search)">$LOCALIZE[31138]</value>
         <value condition="Window.IsActive(home) + String.IsEqual(Container(9005).ListItem.Property(id),shutdown)">$INFO[System.memory(used.percent),$LOCALIZE[31309] ]$INFO[System.CPUUsage, • $LOCALIZE[13271] ]</value>
         <value condition="Window.IsActive(home) + String.IsEqual(Container(9005).ListItem.Property(id),settings)">$INFO[System.FriendlyName]</value>
