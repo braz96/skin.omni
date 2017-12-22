@@ -9,11 +9,12 @@
             <animation effect="slide" start="0" end="1200" time="300">WindowClose</animation>
             <left>720</left>
             <width>1200</width>
-            <control type="image">
+            <control type="multiimage">
                 <width>1200</width>
                 <height>1080</height>
+                <include>BackgroundFadeAnimation</include>
                 <aspectratio align="right" aligny="center">scale</aspectratio>
-                <texture>$VAR[GlobalBackgroundVar]</texture>
+                <imagepath background="true">$VAR[GlobalBackgroundVar]</imagepath>
             </control>
             <control type="image">
                 <width>1200</width>
@@ -863,11 +864,12 @@
             <animation effect="slide" start="0" end="-720" time="300">WindowClose</animation>
             <width>720</width>
             <height>1080</height>
-            <control type="image">
+            <control type="multiimage">
                 <width>720</width>
                 <height>1080</height>
+                <include>BackgroundFadeAnimation</include>
                 <aspectratio align="left" aligny="center">scale</aspectratio>
-                <texture>$VAR[GlobalBackgroundVar]</texture>
+                <imagepath background="true">$VAR[GlobalBackgroundVar]</imagepath>
             </control>
             <control type="image">
                 <width>720</width>
