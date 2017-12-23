@@ -437,17 +437,17 @@
                         <visible>String.IsEqual(Container(9005).ListItem.Property(id),livetv)</visible>
                     </item>
                     <item>
-                        <label>$LOCALIZE[13409]</label>
-                        <onclick>ClearProperty(SubMenu,home)</onclick>
-                        <onclick>SetFocus(9005)</onclick>
-                        <onclick>ActivateWindow(Videos,special://skin/extras/playlists/top250.xsp,return)</onclick>
-                        <visible>String.IsEqual(Container(9005).ListItem.Property(id),search)</visible>
-                    </item>
-                    <item>
                         <label>$LOCALIZE[1036]</label>
                         <onclick>ClearProperty(SubMenu,home)</onclick>
                         <onclick>SetFocus(9005)</onclick>
                         <onclick>ActivateWindow(favourites)</onclick>
+                        <visible>String.IsEqual(Container(9005).ListItem.Property(id),search)</visible>
+                    </item>
+                    <item>
+                        <label>$LOCALIZE[13409]</label>
+                        <onclick>ClearProperty(SubMenu,home)</onclick>
+                        <onclick>SetFocus(9005)</onclick>
+                        <onclick>ActivateWindow(Videos,special://skin/extras/playlists/top250.xsp,return)</onclick>
                         <visible>String.IsEqual(Container(9005).ListItem.Property(id),search)</visible>
                     </item>
                     <item>

@@ -391,13 +391,6 @@
                     <height>960</height>
                     <itemgap>-120</itemgap>
                     <usecontrolcoords>true</usecontrolcoords>
-                    <include content="WidgetListPoster" condition="Library.HasContent(movies) + !Skin.HasSetting(HomeNoTop250Widget)">
-                        <param name="content_path" value="special://skin/extras/playlists/top250.xsp"/>
-                        <param name="widget_header" value="$LOCALIZE[13409]"/>
-                        <param name="widget_target" value="videos"/>
-                        <param name="list_id" value="14300"/>
-                        <param name="sortby" value="random"/>
-                    </include>
                     <include content="WidgetListSquare" condition="!Skin.HasSetting(HomeNoFavoritesWidget)">
                         <param name="content_path" value="favourites://"/>
                         <param name="widget_header" value="$LOCALIZE[1036]"/>
@@ -407,6 +400,13 @@
                         <param name="label" value="$INFO[ListItem.Label]"/>
                         <param name="icon" value="$INFO[ListItem.Art(thumb)]"/>
                         <param name="aspect" value="keep"/>
+                    </include>
+                    <include content="WidgetListPoster" condition="Library.HasContent(movies) + !Skin.HasSetting(HomeNoTop250Widget)">
+                        <param name="content_path" value="special://skin/extras/playlists/top250.xsp"/>
+                        <param name="widget_header" value="$LOCALIZE[13409]"/>
+                        <param name="widget_target" value="videos"/>
+                        <param name="list_id" value="14300"/>
+                        <param name="sortby" value="random"/>
                     </include>
                 </control>
             </control>
