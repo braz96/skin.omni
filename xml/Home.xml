@@ -403,6 +403,7 @@
                         <param name="widget_header" value="$LOCALIZE[1036]"/>
                         <param name="widget_target" value=""/>
                         <param name="list_id" value="14200"/>
+                        <param name="sortby" value="random"/>
                         <param name="label" value="$INFO[ListItem.Label]"/>
                         <param name="icon" value="$INFO[ListItem.Art(thumb)]"/>
                         <param name="aspect" value="keep"/>

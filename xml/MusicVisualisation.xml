@@ -134,9 +134,10 @@
                 <top>183</top>
                 <width>198</width>
                 <include>MediaFlagVars</include>
-                <texture colordiffuse="maintext">$INFO[MusicPlayer.Codec,flags/audio/,.png]</texture>
+                <texture colordiffuse="disabled">$INFO[MusicPlayer.Codec,flags/audio/,.png]</texture>
             </control>
             <control type="progress">
+                <visible>!String.IsEmpty(Player.Progress)</visible>
                 <left>375</left>
                 <top>283</top>
                 <width>1510</width>
@@ -176,27 +177,37 @@
                 <height>460</height>
                 <itemgap>10</itemgap>
                 <control type="label">
-                    <width>1300</width>
+                    <width>1260</width>
                     <height>50</height>
                     <font>font36</font>
                     <label>[UPPERCASE]$INFO[MusicPlayer.TrackNumber,,. ]$INFO[Player.Title][/UPPERCASE]</label>
                     <scroll>true</scroll>
                 </control>
                 <control type="label">
-                    <width>1300</width>
+                    <visible>!String.IsEmpty(MusicPlayer.Artist)</visible>
+                    <width>1260</width>
                     <height>50</height>
                     <font>font16</font>
                     <textcolor>highlight</textcolor>
                     <label>$INFO[MusicPlayer.Artist]</label>
                 </control>
                 <control type="label">
-                    <width>1300</width>
+                    <visible>String.IsEmpty(MusicPlayer.Artist)</visible>
+                    <width>1260</width>
+                    <height>50</height>
+                    <font>font16</font>
+                    <textcolor>highlight</textcolor>
+                    <label>$INFO[MusicPlayer.BitRate,, Kbps]</label>
+                </control>
+                <control type="label">
+                    <width>1260</width>
                     <height>50</height>
                     <font>font14_textbox</font>
                     <label>$INFO[MusicPlayer.Album]$INFO[MusicPlayer.Year, • ,]</label>
                 </control>
                 <control type="label">
-                    <width>1300</width>
+                    <visible>!String.IsEmpty(MusicPlayer.offset(1).Title)</visible>
+                    <width>1260</width>
                     <height>48</height>
                     <font>font14_textbox</font>
                     <scroll>true</scroll>
