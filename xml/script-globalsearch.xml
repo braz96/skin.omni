@@ -93,7 +93,7 @@
                         <viewtype label="535">list</viewtype>
                         <preloaditems>4</preloaditems>
                         <animation effect="fade" time="200">VisibleChange</animation>
-                        <itemlayout height="120" width="1180" condition="Container.Content(epg)">
+                        <itemlayout height="120" width="1180" condition="Container.Content(livetv)">
                             <control type="image">
                                 <top>10</top>
                                 <left>10</left>
@@ -126,7 +126,7 @@
                                 <label>$INFO[ListItem.Property(Starttime)]</label>
                             </control>
                         </itemlayout>
-                        <focusedlayout height="120" width="1180" condition="Container.Content(epg)">
+                        <focusedlayout height="120" width="1180" condition="Container.Content(livetv)">
                             <include content="SelectedItemBackground">
                                 <param name="Left" value="0" />
                                 <param name="Top" value="0" />
