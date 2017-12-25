@@ -108,9 +108,16 @@
             <include>ButtonCommonValues</include>
             <label>31155</label>
             <label2>$INFO[Container.SortMethod]</label2>
-            <!--<onclick>Container.NextSortMethod</onclick>-->
             <onclick>SendClick(3)</onclick>
             <enable>Control.IsEnabled(3)</enable>
+        </control>
+        <control type="radiobutton" id="1803">
+            <description>2 Columns List Option</description>
+            <label>Two Columns</label>
+            <include>ButtonCommonValues</include>
+            <onclick>Skin.ToggleSetting(Enable.2ColumnList)</onclick>
+            <selected>Skin.HasSetting(Enable.2ColumnList)</selected>
+            <visible>Control.IsVisible(50) + ![Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(actors) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists)]</visible>
         </control>
     </include>
     <include name="PVRMediaMenu">

@@ -23,7 +23,7 @@
                     <viewtype label="535">list</viewtype>
                     <pagecontrol>60</pagecontrol>
                     <preloaditems>2</preloaditems>
-                    <itemlayout height="120" width="1050" condition="[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)] + !String.IsEqual(Container.SortMethod,$LOCALIZE[13409])">
+                    <itemlayout height="120" width="1050" condition="[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)] + !String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + !Skin.HasSetting(Enable.2ColumnList)">
                         <control type="image">
                             <top>10</top>
                             <left>10</left>
@@ -98,7 +98,7 @@
                             <param name="OverlayListWidth" value="1050" />
                         </include>
                     </itemlayout>
-                    <focusedlayout height="120" width="1050" condition="[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)] + !String.IsEqual(Container.SortMethod,$LOCALIZE[13409])">
+                    <focusedlayout height="120" width="1050" condition="[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)] + !String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + !Skin.HasSetting(Enable.2ColumnList)">
                         <include content="SelectedItemBackground">
                             <param name="Left" value="0" />
                             <param name="Top" value="0" />
@@ -183,7 +183,7 @@
                             <param name="OverlayListWidth" value="1050" />
                         </include>
                     </focusedlayout>
-                    <itemlayout height="120" width="1050" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(images)">
+                    <itemlayout height="120" width="1050" condition="[Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(images)] + !Skin.HasSetting(Enable.2ColumnList)">
                         <control type="image">
                             <visible>!Container.Content(songs) + !Container.Content(addons)</visible>
                             <top>10</top>
@@ -265,7 +265,7 @@
                             <label>$VAR[ListRightLabel]</label>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="120" width="1050" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(images)">
+                    <focusedlayout height="120" width="1050" condition="[Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(images)] + !Skin.HasSetting(Enable.2ColumnList)">
                         <include content="SelectedItemBackground">
                             <param name="Left" value="0" />
                             <param name="Top" value="0" />
@@ -357,18 +357,8 @@
                             <label>$VAR[ListRightLabel]</label>
                         </control>
                     </focusedlayout>
-                    <itemlayout height="120" width="1050" condition="Container.Content(musicvideos) | String.IsEqual(Container.SortMethod,$LOCALIZE[13409])">
-                        <control type="image">
-                            <visible>!String.IsEqual(Container.SortMethod,$LOCALIZE[13409])</visible>
-                            <top>10</top>
-                            <left>10</left>
-                            <width>100</width>
-                            <height>100</height>
-                            <aspectratio align="center" aligny="center">scale</aspectratio>
-                            <texture background="true">$VAR[ListIcon]</texture>
-                        </control>
+                    <itemlayout height="120" width="1050" condition="String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + !Skin.HasSetting(Enable.2ColumnList)">
                         <control type="label">
-                            <visible>String.IsEqual(Container.SortMethod,$LOCALIZE[13409])</visible>
                             <left>10</left>
                             <top>10</top>
                             <width>100</width>
@@ -433,7 +423,7 @@
                             <param name="OverlayListWidth" value="1050" />
                         </include>
                     </itemlayout>
-                    <focusedlayout height="120" width="1050" condition="Container.Content(musicvideos) | String.IsEqual(Container.SortMethod,$LOCALIZE[13409])">
+                    <focusedlayout height="120" width="1050" condition="String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + !Skin.HasSetting(Enable.2ColumnList)">
                         <include content="SelectedItemBackground">
                             <param name="Left" value="0" />
                             <param name="Top" value="0" />
@@ -445,17 +435,7 @@
                             <height>120</height>
                             <texture>overlays/diffuse-overlay.png</texture>
                         </control>
-                        <control type="image">
-                            <visible>!String.IsEqual(Container.SortMethod,$LOCALIZE[13409])</visible>
-                            <top>10</top>
-                            <left>10</left>
-                            <width>100</width>
-                            <height>100</height>
-                            <aspectratio align="center" aligny="center">scale</aspectratio>
-                            <texture background="true">$VAR[ListIcon]</texture>
-                        </control>
                         <control type="label">
-                            <visible>String.IsEqual(Container.SortMethod,$LOCALIZE[13409])</visible>
                             <left>10</left>
                             <top>10</top>
                             <width>100</width>
@@ -519,7 +499,7 @@
                             <param name="OverlayListWidth" value="1050" />
                         </include>
                     </focusedlayout>
-                    <itemlayout height="120" width="1050" condition="Window.IsActive(videoplaylist) | Container.Content(videos) | Container.Content(files)">
+                    <itemlayout height="120" width="1050" condition="[Window.IsActive(videoplaylist) | Container.Content(videos) | Container.Content(files)] + !Skin.HasSetting(Enable.2ColumnList)">
                         <control type="image">
                             <top>10</top>
                             <left>10</left>
@@ -580,7 +560,7 @@
                             <label>$VAR[ListRightLabel]</label>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="120" width="1050" condition="Window.IsActive(videoplaylist) | Container.Content(videos) | Container.Content(files)">
+                    <focusedlayout height="120" width="1050" condition="[Window.IsActive(videoplaylist) | Container.Content(videos) | Container.Content(files)] + !Skin.HasSetting(Enable.2ColumnList)">
                         <include content="SelectedItemBackground">
                             <param name="Left" value="0" />
                             <param name="Top" value="0" />
@@ -651,7 +631,7 @@
                             <label>$VAR[ListRightLabel]</label>
                         </control>
                     </focusedlayout>
-                    <itemlayout height="120" width="1050" condition="Container.Content(episodes)">
+                    <itemlayout height="120" width="1050" condition="[Container.Content(episodes) | Container.Content(musicvideos)] + !Skin.HasSetting(Enable.2ColumnList)">
                         <control type="image">
                             <top>10</top>
                             <left>10</left>
@@ -716,7 +696,7 @@
                             <param name="OverlayListWidth" value="1050" />
                         </include>
                     </itemlayout>
-                    <focusedlayout height="120" width="1050" condition="Container.Content(episodes)">
+                    <focusedlayout height="120" width="1050" condition="[Container.Content(episodes) | Container.Content(musicvideos)] + !Skin.HasSetting(Enable.2ColumnList)">
                         <include content="SelectedItemBackground">
                             <param name="Left" value="0" />
                             <param name="Top" value="0" />
@@ -852,10 +832,696 @@
                             <label>$VAR[ListRightLabel]</label>
                         </control>
                     </focusedlayout>
+                    <itemlayout height="120" width="860" condition="[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)] + !String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + Skin.HasSetting(Enable.2ColumnList)">
+                        <control type="image">
+                            <top>10</top>
+                            <left>10</left>
+                            <width>67</width>
+                            <height>100</height>
+                            <aspectratio align="center" aligny="center">scale</aspectratio>
+                            <texture background="true" fallback="DefaultFallback.png">$VAR[ListIcon]</texture>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying + !Player.Paused</visible>
+                            <left>107</left>
+                            <top>3</top>
+                            <width>35</width>
+                            <height>70</height>
+                            <font>IconTiny</font>
+                            <label>I</label>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying + Player.Paused</visible>
+                            <left>107</left>
+                            <top>4</top>
+                            <width>35</width>
+                            <height>70</height>
+                            <font>IconTiny</font>
+                            <label>K</label>
+                        </control>
+                        <control type="label">
+                            <visible>!Container.Content(sets) + !ListItem.IsPlaying</visible>
+                            <top>3</top>
+                            <left>107</left>
+                            <right>130</right>
+                            <height>70</height>
+                            <font>font30</font>
+                            <label>$VAR[ListMainLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying</visible>
+                            <top>3</top>
+                            <left>142</left>
+                            <right>130</right>
+                            <height>70</height>
+                            <font>font30</font>
+                            <label>$VAR[ListMainLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <visible>Container.Content(sets)</visible>
+                            <top>3</top>
+                            <left>107</left>
+                            <right>130</right>
+                            <height>110</height>
+                            <font>font30</font>
+                            <label>$VAR[ListMainLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <visible>!Container.Content(sets)</visible>
+                            <left>107</left>
+                            <top>52</top>
+                            <right>130</right>
+                            <height>60</height>
+                            <textcolor>highlight</textcolor>
+                            <label>$VAR[ListSubLabelVar]</label>
+                        </control>
+                        <include content="OverlayList">
+                            <param name="OverlayListTop" value="28" />
+                            <param name="OverlayListWidth" value="805" />
+                        </include>
+                    </itemlayout>
+                    <focusedlayout height="120" width="860" condition="[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)] + !String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + Skin.HasSetting(Enable.2ColumnList)">
+                        <include content="SelectedItemBackground">
+                            <param name="Left" value="0" />
+                            <param name="Top" value="0" />
+                            <param name="Width" value="805" />
+                            <param name="Height" value="120" />
+                        </include>
+                        <control type="image">
+                            <width>87</width>
+                            <height>120</height>
+                            <texture>overlays/diffuse-overlay.png</texture>
+                        </control>
+                        <control type="image">
+                            <top>10</top>
+                            <left>10</left>
+                            <width>67</width>
+                            <height>100</height>
+                            <aspectratio align="center" aligny="center">scale</aspectratio>
+                            <texture background="true" fallback="DefaultFallback.png">$VAR[ListIcon]</texture>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying + !Player.Paused</visible>
+                            <left>107</left>
+                            <top>3</top>
+                            <width>35</width>
+                            <height>70</height>
+                            <font>IconTiny</font>
+                            <label>I</label>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying + Player.Paused</visible>
+                            <left>107</left>
+                            <top>4</top>
+                            <width>35</width>
+                            <height>70</height>
+                            <font>IconTiny</font>
+                            <label>K</label>
+                        </control>
+                        <control type="label">
+                            <visible>!Container.Content(sets) + !ListItem.IsPlaying</visible>
+                            <top>3</top>
+                            <left>107</left>
+                            <right>130</right>
+                            <height>70</height>
+                            <font>font30</font>
+                            <label>$VAR[ListMainLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying</visible>
+                            <top>3</top>
+                            <left>142</left>
+                            <right>130</right>
+                            <height>70</height>
+                            <font>font30</font>
+                            <label>$VAR[ListMainLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <visible>Container.Content(sets)</visible>
+                            <top>3</top>
+                            <left>107</left>
+                            <right>130</right>
+                            <height>110</height>
+                            <font>font30</font>
+                            <label>$VAR[ListMainLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <visible>!Container.Content(sets)</visible>
+                            <left>107</left>
+                            <top>52</top>
+                            <right>130</right>
+                            <height>60</height>
+                            <label>$VAR[ListSubLabelVar]</label>
+                        </control>
+                        <include content="OverlayList">
+                            <param name="OverlayListTop" value="28" />
+                            <param name="OverlayListWidth" value="805" />
+                        </include>
+                    </focusedlayout>
+                    <itemlayout height="120" width="860" condition="[Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(images)] + Skin.HasSetting(Enable.2ColumnList)">
+                        <control type="image">
+                            <visible>!Container.Content(songs)</visible>
+                            <top>10</top>
+                            <left>10</left>
+                            <width>100</width>
+                            <height>100</height>
+                            <aspectratio align="center" aligny="center">scale</aspectratio>
+                            <texture background="true">$INFO[ListItem.Icon]</texture>
+                        </control>
+                        <control type="label">
+                            <visible>Container.Content(songs)</visible>
+                            <left>0</left>
+                            <top>0</top>
+                            <width>120</width>
+                            <height>120</height>
+                            <font>font36</font>
+                            <align>center</align>
+                            <label>$INFO[ListItem.TrackNumber]</label>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying + !Player.Paused</visible>
+                            <left>140</left>
+                            <top>3</top>
+                            <width>35</width>
+                            <height>70</height>
+                            <font>IconTiny</font>
+                            <label>I</label>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying + Player.Paused</visible>
+                            <left>140</left>
+                            <top>4</top>
+                            <width>35</width>
+                            <height>70</height>
+                            <font>IconTiny</font>
+                            <label>K</label>
+                        </control>
+                        <control type="label">
+                            <visible>!ListItem.IsPlaying</visible>
+                            <top>3</top>
+                            <left>140</left>
+                            <right>140</right>
+                            <height>70</height>
+                            <font>font30</font>
+                            <label>$VAR[ListMainLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying</visible>
+                            <top>3</top>
+                            <left>175</left>
+                            <right>140</right>
+                            <height>70</height>
+                            <font>font30</font>
+                            <label>$VAR[ListMainLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <left>140</left>
+                            <top>52</top>
+                            <right>140</right>
+                            <height>60</height>
+                            <textcolor>highlight</textcolor>
+                            <label>$VAR[ListSubLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <right>75</right>
+                            <height>118</height>
+                            <font>font15</font>
+                            <align>right</align>
+                            <label>$VAR[ListRightLabel]</label>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="120" width="860" condition="[Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(images)] + Skin.HasSetting(Enable.2ColumnList)">
+                        <include content="SelectedItemBackground">
+                            <param name="Left" value="0" />
+                            <param name="Top" value="0" />
+                            <param name="Width" value="805" />
+                            <param name="Height" value="120" />
+                        </include>
+                        <control type="image">
+                            <width>120</width>
+                            <height>120</height>
+                            <texture>overlays/diffuse-overlay.png</texture>
+                        </control>
+                        <control type="image">
+                            <visible>!Container.Content(songs)</visible>
+                            <top>10</top>
+                            <left>10</left>
+                            <width>100</width>
+                            <height>100</height>
+                            <aspectratio align="center" aligny="center">scale</aspectratio>
+                            <texture background="true">$INFO[ListItem.Icon]</texture>
+                        </control>
+                        <control type="label">
+                            <visible>Container.Content(songs)</visible>
+                            <left>0</left>
+                            <top>0</top>
+                            <width>120</width>
+                            <height>120</height>
+                            <font>font36</font>
+                            <align>center</align>
+                            <label>$INFO[ListItem.TrackNumber]</label>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying + !Player.Paused</visible>
+                            <left>140</left>
+                            <top>3</top>
+                            <width>35</width>
+                            <height>70</height>
+                            <font>IconTiny</font>
+                            <label>I</label>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying + Player.Paused</visible>
+                            <left>140</left>
+                            <top>4</top>
+                            <width>35</width>
+                            <height>70</height>
+                            <font>IconTiny</font>
+                            <label>K</label>
+                        </control>
+                        <control type="label">
+                            <visible>!ListItem.IsPlaying</visible>
+                            <top>3</top>
+                            <left>140</left>
+                            <right>140</right>
+                            <height>70</height>
+                            <font>font30</font>
+                            <label>$VAR[ListMainLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying</visible>
+                            <top>3</top>
+                            <left>175</left>
+                            <right>140</right>
+                            <height>70</height>
+                            <font>font30</font>
+                            <label>$VAR[ListMainLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <left>140</left>
+                            <top>52</top>
+                            <right>140</right>
+                            <height>60</height>
+                            <label>$VAR[ListSubLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <right>75</right>
+                            <height>118</height>
+                            <font>font15</font>
+                            <align>right</align>
+                            <label>$VAR[ListRightLabel]</label>
+                        </control>
+                    </focusedlayout>
+                    <itemlayout height="120" width="860" condition="String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + Skin.HasSetting(Enable.2ColumnList)">
+                        <control type="label">
+                            <left>10</left>
+                            <top>10</top>
+                            <width>100</width>
+                            <height>100</height>
+                            <font>font36</font>
+                            <align>center</align>
+                            <label>$INFO[ListItem.Top250]</label>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying + !Player.Paused</visible>
+                            <left>140</left>
+                            <top>3</top>
+                            <width>35</width>
+                            <height>70</height>
+                            <font>IconTiny</font>
+                            <label>I</label>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying + Player.Paused</visible>
+                            <left>140</left>
+                            <top>4</top>
+                            <width>35</width>
+                            <height>70</height>
+                            <font>IconTiny</font>
+                            <label>K</label>
+                        </control>
+                        <control type="label">
+                            <visible>!ListItem.IsPlaying</visible>
+                            <top>3</top>
+                            <left>140</left>
+                            <right>130</right>
+                            <height>70</height>
+                            <font>font30</font>
+                            <label>$VAR[ListMainLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying</visible>
+                            <top>3</top>
+                            <left>175</left>
+                            <right>130</right>
+                            <height>70</height>
+                            <font>font30</font>
+                            <label>$VAR[ListMainLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <left>140</left>
+                            <top>52</top>
+                            <right>130</right>
+                            <height>60</height>
+                            <textcolor>highlight</textcolor>
+                            <label>$VAR[ListSubLabelVar]</label>
+                        </control>
+                        <include content="OverlayList">
+                            <param name="OverlayListTop" value="28" />
+                            <param name="OverlayListWidth" value="805" />
+                        </include>
+                    </itemlayout>
+                    <focusedlayout height="120" width="860" condition="String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + Skin.HasSetting(Enable.2ColumnList)">
+                        <include content="SelectedItemBackground">
+                            <param name="Left" value="0" />
+                            <param name="Top" value="0" />
+                            <param name="Width" value="805" />
+                            <param name="Height" value="120" />
+                        </include>
+                        <control type="image">
+                            <width>120</width>
+                            <height>120</height>
+                            <texture>overlays/diffuse-overlay.png</texture>
+                        </control>
+                        <control type="label">
+                            <left>10</left>
+                            <top>10</top>
+                            <width>100</width>
+                            <height>100</height>
+                            <font>font36</font>
+                            <align>center</align>
+                            <label>$INFO[ListItem.Top250]</label>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying + !Player.Paused</visible>
+                            <left>140</left>
+                            <top>3</top>
+                            <width>35</width>
+                            <height>70</height>
+                            <font>IconTiny</font>
+                            <label>I</label>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying + Player.Paused</visible>
+                            <left>140</left>
+                            <top>4</top>
+                            <width>35</width>
+                            <height>70</height>
+                            <font>IconTiny</font>
+                            <label>K</label>
+                        </control>
+                        <control type="label">
+                            <visible>!ListItem.IsPlaying</visible>
+                            <top>3</top>
+                            <left>140</left>
+                            <right>130</right>
+                            <height>70</height>
+                            <font>font30</font>
+                            <label>$VAR[ListMainLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying</visible>
+                            <top>3</top>
+                            <left>175</left>
+                            <right>130</right>
+                            <height>70</height>
+                            <font>font30</font>
+                            <label>$VAR[ListMainLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <left>140</left>
+                            <top>52</top>
+                            <right>130</right>
+                            <height>60</height>
+                            <label>$VAR[ListSubLabelVar]</label>
+                        </control>
+                        <include content="OverlayList">
+                            <param name="OverlayListTop" value="28" />
+                            <param name="OverlayListWidth" value="805" />
+                        </include>
+                    </focusedlayout>
+                    <itemlayout height="120" width="860" condition="[Window.IsActive(videoplaylist) | Container.Content(videos) | Container.Content(files)] + Skin.HasSetting(Enable.2ColumnList)">
+                        <control type="image">
+                            <top>10</top>
+                            <left>10</left>
+                            <width>100</width>
+                            <height>100</height>
+                            <aspectratio align="center" aligny="center">keep</aspectratio>
+                            <texture background="true">$VAR[ListIcon]</texture>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying + !Player.Paused</visible>
+                            <left>140</left>
+                            <top>3</top>
+                            <width>35</width>
+                            <height>70</height>
+                            <font>IconTiny</font>
+                            <label>I</label>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying + Player.Paused</visible>
+                            <left>140</left>
+                            <top>4</top>
+                            <width>35</width>
+                            <height>70</height>
+                            <font>IconTiny</font>
+                            <label>K</label>
+                        </control>
+                        <control type="label">
+                            <visible>!ListItem.IsPlaying</visible>
+                            <top>3</top>
+                            <left>140</left>
+                            <right>140</right>
+                            <height>70</height>
+                            <font>font30</font>
+                            <label>$VAR[ListMainLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying</visible>
+                            <top>3</top>
+                            <left>175</left>
+                            <right>140</right>
+                            <height>70</height>
+                            <font>font30</font>
+                            <label>$VAR[ListMainLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <left>140</left>
+                            <top>52</top>
+                            <right>140</right>
+                            <height>60</height>
+                            <textcolor>highlight</textcolor>
+                            <label>$VAR[ListSubLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <right>75</right>
+                            <height>118</height>
+                            <font>font15</font>
+                            <align>right</align>
+                            <label>$VAR[ListRightLabel]</label>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="120" width="860" condition="[Window.IsActive(videoplaylist) | Container.Content(videos) | Container.Content(files)] + Skin.HasSetting(Enable.2ColumnList)">
+                        <include content="SelectedItemBackground">
+                            <param name="Left" value="0" />
+                            <param name="Top" value="0" />
+                            <param name="Width" value="805" />
+                            <param name="Height" value="120" />
+                        </include>
+                        <control type="image">
+                            <width>120</width>
+                            <height>120</height>
+                            <texture>overlays/diffuse-overlay.png</texture>
+                        </control>
+                        <control type="image">
+                            <top>10</top>
+                            <left>10</left>
+                            <width>100</width>
+                            <height>100</height>
+                            <aspectratio align="center" aligny="center">keep</aspectratio>
+                            <texture background="true">$VAR[ListIcon]</texture>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying + !Player.Paused</visible>
+                            <left>140</left>
+                            <top>3</top>
+                            <width>35</width>
+                            <height>70</height>
+                            <font>IconTiny</font>
+                            <label>I</label>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying + Player.Paused</visible>
+                            <left>140</left>
+                            <top>4</top>
+                            <width>35</width>
+                            <height>70</height>
+                            <font>IconTiny</font>
+                            <label>K</label>
+                        </control>
+                        <control type="label">
+                            <visible>!ListItem.IsPlaying</visible>
+                            <top>3</top>
+                            <left>140</left>
+                            <right>140</right>
+                            <height>70</height>
+                            <font>font30</font>
+                            <label>$VAR[ListMainLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying</visible>
+                            <top>3</top>
+                            <left>175</left>
+                            <right>140</right>
+                            <height>70</height>
+                            <font>font30</font>
+                            <label>$VAR[ListMainLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <left>140</left>
+                            <top>52</top>
+                            <right>140</right>
+                            <height>60</height>
+                            <label>$VAR[ListSubLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <right>75</right>
+                            <height>118</height>
+                            <font>font15</font>
+                            <align>right</align>
+                            <label>$VAR[ListRightLabel]</label>
+                        </control>
+                    </focusedlayout>
+                    <itemlayout height="120" width="860" condition="[Container.Content(episodes) | Container.Content(musicvideos)] + Skin.HasSetting(Enable.2ColumnList)">
+                        <control type="image">
+                            <top>10</top>
+                            <left>10</left>
+                            <width>178</width>
+                            <height>100</height>
+                            <aspectratio align="center" aligny="center">scale</aspectratio>
+                            <texture background="true">$VAR[ListIcon]</texture>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying + !Player.Paused</visible>
+                            <left>218</left>
+                            <top>3</top>
+                            <width>35</width>
+                            <height>70</height>
+                            <font>IconTiny</font>
+                            <label>I</label>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying + Player.Paused</visible>
+                            <left>218</left>
+                            <top>4</top>
+                            <width>35</width>
+                            <height>70</height>
+                            <font>IconTiny</font>
+                            <label>K</label>
+                        </control>
+                        <control type="label">
+                            <visible>!ListItem.IsPlaying</visible>
+                            <top>3</top>
+                            <left>218</left>
+                            <right>130</right>
+                            <height>70</height>
+                            <font>font30</font>
+                            <label>$VAR[ListMainLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying</visible>
+                            <top>3</top>
+                            <left>253</left>
+                            <right>130</right>
+                            <height>70</height>
+                            <font>font30</font>
+                            <label>$VAR[ListMainLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <left>218</left>
+                            <top>52</top>
+                            <right>130</right>
+                            <height>60</height>
+                            <textcolor>highlight</textcolor>
+                            <label>$VAR[ListSubLabelVar]</label>
+                        </control>
+                        <include content="OverlayList">
+                            <param name="OverlayListTop" value="28" />
+                            <param name="OverlayListWidth" value="805" />
+                        </include>
+                    </itemlayout>
+                    <focusedlayout height="120" width="860" condition="[Container.Content(episodes) | Container.Content(musicvideos)] + Skin.HasSetting(Enable.2ColumnList)">
+                        <include content="SelectedItemBackground">
+                            <param name="Left" value="0" />
+                            <param name="Top" value="0" />
+                            <param name="Width" value="805" />
+                            <param name="Height" value="120" />
+                        </include>
+                        <control type="image">
+                            <width>198</width>
+                            <height>120</height>
+                            <texture>overlays/diffuse-overlay.png</texture>
+                        </control>
+                        <control type="image">
+                            <top>10</top>
+                            <left>10</left>
+                            <width>178</width>
+                            <height>100</height>
+                            <aspectratio align="center" aligny="center">scale</aspectratio>
+                            <texture background="true">$VAR[ListIcon]</texture>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying + !Player.Paused</visible>
+                            <left>218</left>
+                            <top>3</top>
+                            <width>35</width>
+                            <height>70</height>
+                            <font>IconTiny</font>
+                            <label>I</label>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying + Player.Paused</visible>
+                            <left>218</left>
+                            <top>4</top>
+                            <width>35</width>
+                            <height>70</height>
+                            <font>IconTiny</font>
+                            <label>K</label>
+                        </control>
+                        <control type="label">
+                            <visible>!ListItem.IsPlaying</visible>
+                            <top>3</top>
+                            <left>218</left>
+                            <right>130</right>
+                            <height>70</height>
+                            <font>font30</font>
+                            <label>$VAR[ListMainLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <visible>ListItem.IsPlaying</visible>
+                            <top>3</top>
+                            <left>253</left>
+                            <right>130</right>
+                            <height>70</height>
+                            <font>font30</font>
+                            <label>$VAR[ListMainLabelVar]</label>
+                        </control>
+                        <control type="label">
+                            <left>218</left>
+                            <top>52</top>
+                            <right>130</right>
+                            <height>60</height>
+                            <label>$VAR[ListSubLabelVar]</label>
+                        </control>
+                        <include content="OverlayList">
+                            <param name="OverlayListTop" value="28" />
+                            <param name="OverlayListWidth" value="805" />
+                        </include>
+                    </focusedlayout>
                 </control>
             </control>
             <control type="group">
-                <visible>Control.IsVisible(50)</visible>
+                <visible>Control.IsVisible(50) + !Skin.HasSetting(Enable.2ColumnList)</visible>
                 <top>180</top>
                 <left>1730</left>
                 <control type="group">
@@ -879,7 +1545,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>[[Container.Content(addons) | $EXP[isArtist] | $EXP[isAlbum] | $EXP[isSong] | $EXP[isMusicvideo] | Container.Content(studios)] | String.StartsWith(ListItem.Icon,Default)] + ![Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(actors) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists)]</visible>
+                    <visible>[[Container.Content(addons) | $EXP[isArtist] | $EXP[isAlbum] | $EXP[isSong] | Container.Content(studios)] | String.StartsWith(ListItem.Icon,Default)] + ![Container.Content() | Container.Content(genres) | Container.Content(countries) | Container.Content(years) | Container.Content(studios) | Container.Content(actors) | Container.Content(directors) | Container.Content(tags) | Container.Content(playlists)]</visible>
                     <control type="image">
                         <visible>String.StartsWith(ListItem.Icon,Default) | Container.Content(countries)</visible>
                         <width>560</width>
@@ -950,15 +1616,6 @@
                             <label>$INFO[ListItem.Genre]</label>
                         </control>
                         <control type="textbox">
-                            <visible>$EXP[isMusicvideo]</visible>
-                            <description>Description</description>
-                            <width>560</width>
-                            <height>220</height>
-                            <font>font14_textbox</font>
-                            <label>$INFO[ListItem.Plot]</label>
-                            <include>AutoscrollDefault</include>
-                        </control>
-                        <control type="textbox">
                             <visible>$EXP[isArtist] | $EXP[isAlbum]</visible>
                             <label>$VAR[MusicPlotVar]</label>
                             <width>560</width>
@@ -978,7 +1635,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>$EXP[isEpisode] + !String.StartsWith(ListItem.Icon,Default)</visible>
+                    <visible>[$EXP[isEpisode] | $EXP[isMusicvideo]] + !String.StartsWith(ListItem.Icon,Default)</visible>
                     <control type="image">
                         <width>560</width>
                         <height>342</height>

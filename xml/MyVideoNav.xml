@@ -62,7 +62,7 @@
                         <description>PartyMode</description>
                         <label>589</label>
                         <include>ButtonCommonValues</include>
-                        <visible>Container.Content(MusicVideos)</visible>
+                        <visible>Container.Content(musicvideos)</visible>
                     </control>
                     <control type="button" id="204">
                         <description>Settings button</description>
