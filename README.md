@@ -14,7 +14,8 @@ If you would like to express your appreciation for this skin, please consider a 
 ***
 **2.0.2**
 - Removed selected item animations.
-- Update GlobalSearch to support v8.
+- Updated GlobalSearch to support v8.
+- Added 2 column list option.
 
 ***
 **2.0.1**

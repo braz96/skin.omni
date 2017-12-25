@@ -117,7 +117,7 @@
                     <left>470</left>
                     <width>800</width>
                     <height>840</height>
-                    <onclick>RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
+                    <onclick condition="System.HasAddon(script.playalbum)">RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
                     <onleft>ClearProperty(AlbumFocus,home)</onleft>
                     <onleft>52</onleft>
                     <onright>54</onright>

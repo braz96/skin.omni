@@ -41,6 +41,6 @@
 			<screenshot>resources/screenshot-09.jpg</screenshot>
 			<screenshot>resources/screenshot-10.jpg</screenshot>
 		</assets>
-		<news>2.0.2[CR]- Removed selected item animations.[CR]- Update GlobalSearch to support v8.</news>
+		<news>2.0.2[CR]- Removed selected item animations.[CR]- Updated GlobalSearch to support v8.[CR]- Added 2 column list option.</news>
 	</extension>
 </addon>
