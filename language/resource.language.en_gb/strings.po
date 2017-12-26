@@ -578,13 +578,7 @@ msgctxt "#31205"
 msgid "Lyrics Source"
 msgstr ""
 
-#empty strings from id 31206 to 31222
-
-msgctxt "#31223"
-msgid "Supported add-ons"
-msgstr ""
-
-#empty string with id 31224
+#empty strings from id 31206 to 31224
 
 msgctxt "#31225"
 msgid "Artwork Downloader"
@@ -722,7 +716,9 @@ msgctxt "#31411"
 msgid "Sawasdee"
 msgstr ""
 
-#empty string with id 31412
+msgctxt "#31412"
+msgid "Mitr"
+msgstr ""
 
 msgctxt "#31413"
 msgid "Local subtitle available"

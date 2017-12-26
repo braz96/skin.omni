@@ -21,7 +21,8 @@
                 <left>30</left>
                 <width>1500</width>
                 <height>140</height>
-                <label>[UPPERCASE]$PARAM[label][/UPPERCASE]</label>
+                <font>font13_title</font>
+                <label>$PARAM[label]</label>
                 <textcolor>disabled</textcolor>
                 <visible>$PARAM[visible]</visible>
                 <visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>

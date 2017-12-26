@@ -57,7 +57,7 @@
                             <icon />
                         </item>
                         <item id="2">
-                            <label>31223</label>
+                            <label>24001</label>
                             <icon />
                         </item>
                         <item id="3">
@@ -74,7 +74,7 @@
                     <visible>!Control.HasFocus(9005) + !Control.HasFocus(9030) + !Control.HasFocus(60) + !Control.HasFocus(61)</visible>
                     <animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
                     <control type="image">
-                        <top>792</top>
+                        <top>770</top>
                         <left>120</left>
                         <width>50</width>
                         <height>50</height>
@@ -83,10 +83,10 @@
                     <control type="textbox">
                         <description>description area</description>
                         <left>180</left>
-                        <top>790</top>
+                        <top>770</top>
                         <width>1500</width>
-                        <height>100</height>
-                        <font>font15</font>
+                        <height>120</height>
+                        <font>font14_textbox</font>
                         <label>$VAR[SkinSettingsDescriptionVar]</label>
                         <textcolor>disabled</textcolor>
                         <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
