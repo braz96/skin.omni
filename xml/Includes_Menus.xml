@@ -448,7 +448,7 @@
                         <onclick>ClearProperty(SubMenu,home)</onclick>
                         <onclick>SetFocus(9005)</onclick>
                         <onclick>ActivateWindow(Videos,special://skin/extras/playlists/top250.xsp,return)</onclick>
-                        <visible>String.IsEqual(Container(9005).ListItem.Property(id),search)</visible>
+                        <visible>Library.HasContent(movies) + String.IsEqual(Container(9005).ListItem.Property(id),search)</visible>
                     </item>
                     <item>
                         <label>$LOCALIZE[20012]</label>

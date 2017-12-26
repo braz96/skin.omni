@@ -418,7 +418,8 @@
         <value condition="VideoPlayer.Content(livetv) + !String.IsEmpty(Player.Art(thumb))">$INFO[Player.Art(thumb)]</value>
         <value condition="VideoPlayer.Content(livetv)">DefaultAddonPVRClient.png</value>
         <value condition="[Player.Playing | Player.HasVideo | Player.HasAudio] + !String.IsEmpty(Player.Art(thumb))">$INFO[Player.Art(thumb)]</value>
-        <value condition="[Player.Playing | Player.HasVideo | Player.HasAudio] + String.IsEmpty(Player.Art(thumb))">DefaultVideo.png</value>
+        <value condition="Player.Playing + Player.HasAudio + String.IsEmpty(Player.Art(thumb))">DefaultAlbumCover.png</value>
+        <value condition="Player.Playing + Player.HasVideo + String.IsEmpty(Player.Art(thumb))">DefaultVideo.png</value>
         <value condition="!String.IsEmpty(Weather.Plugin) + !Weather.IsFetched">DefaultAddonNone.png</value>
         <value>DefaultIconClock.png</value>
     </variable>

@@ -2,7 +2,7 @@
 <window>
     <views>500</views>
     <defaultcontrol always="true">500</defaultcontrol>
-    <menucontrol>9053</menucontrol>
+    <menucontrol>9051</menucontrol>
     <onload>ClearProperty(MediaMenu,Home)</onload>
     <controls>
         <control type="button" id="9053">
