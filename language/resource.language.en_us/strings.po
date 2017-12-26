@@ -436,6 +436,10 @@ msgctxt "#31170"
 msgid "Artist Slideshow"
 msgstr "Artist Slideshow"
 
+msgctxt "#31171"
+msgid "Two columns"
+msgstr "Two columns"
+
 msgctxt "#31172"
 msgid "ExtendedInfo Script"
 msgstr "ExtendedInfo Script"

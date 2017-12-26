@@ -113,7 +113,7 @@
         </control>
         <control type="radiobutton" id="1803">
             <description>2 Columns List Option</description>
-            <label>Two Columns</label>
+            <label>31171</label>
             <include>ButtonCommonValues</include>
             <onclick>Skin.ToggleSetting(Enable.2ColumnList)</onclick>
             <selected>Skin.HasSetting(Enable.2ColumnList)</selected>

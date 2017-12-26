@@ -468,7 +468,9 @@ msgctxt "#31170"
 msgid "Artist Slideshow"
 msgstr ""
 
-#empty string with id 31171
+msgctxt "#31171"
+msgid "Two columns"
+msgstr ""
 
 msgctxt "#31172"
 msgid "ExtendedInfo Script"
