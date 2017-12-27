@@ -32,10 +32,7 @@
                     <animation effect="slide" time="200" start="0,0" end="0,-120">Visible</animation>
                     <animation effect="slide" time="100" start="0,-120" end="0,0">Hidden</animation>
                     <top>900</top>
-                    <left>0</left>
                     <control type="image">
-                        <top>0</top>
-                        <left>0</left>
                         <width>1800</width>
                         <height>120</height>
                         <texture colordiffuse="background">topbar.png</texture>
