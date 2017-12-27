@@ -29,21 +29,25 @@
                 </control>
                 <control type="group">
                     <visible>ControlGroup(5).HasFocus()</visible>
-                    <animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
+                    <animation effect="slide" time="200" start="0,0" end="0,-120">Visible</animation>
+                    <animation effect="slide" time="100" start="0,-120" end="0,0">Hidden</animation>
+                    <top>900</top>
+                    <left>0</left>
                     <control type="image">
-                        <top>770</top>
-                        <left>120</left>
-                        <width>50</width>
-                        <height>50</height>
-                        <texture colordiffuse="disabled">DefaultIconInfo.png</texture>
+                        <top>0</top>
+                        <left>0</left>
+                        <width>1800</width>
+                        <height>120</height>
+                        <texture colordiffuse="background">topbar.png</texture>
                     </control>
                     <control type="textbox" id="6">
+                        <visible>ControlGroup(5).HasFocus()</visible>
                         <description>description area</description>
-                        <left>180</left>
-                        <top>770</top>
-                        <width>1500</width>
-                        <height>120</height>
-                        <font>font14_textbox</font>
+                        <left>50</left>
+                        <top>10</top>
+                        <width>1690</width>
+                        <height>110</height>
+                        <font>font14_help</font>
                         <textcolor>disabled</textcolor>
                         <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
                         <animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>

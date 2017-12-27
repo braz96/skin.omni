@@ -70,9 +70,9 @@
                     <orientation>vertical</orientation>
                     <control type="label">
                         <height>50</height>
-                        <label>19005</label>
+                        <label>[UPPERCASE]$LOCALIZE[19005][/UPPERCASE]</label>
                         <textcolor>highlight</textcolor>
-                        <font>font14_title</font>
+                        <font>font14</font>
                     </control>
                     <control type="label">
                         <height>50</height>

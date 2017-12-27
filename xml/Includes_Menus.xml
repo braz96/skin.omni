@@ -198,7 +198,7 @@
                     <control type="label">
                         <width>430</width>
                         <height>120</height>
-                        <font>font_SubMenu</font>
+                        <font>font16</font>
                         <textcolor>maintext</textcolor>
                         <textoffsetx>30</textoffsetx>
                         <selectedcolor>maintext</selectedcolor>
@@ -217,7 +217,7 @@
                         <control type="label">
                             <width>430</width>
                             <height>120</height>
-                            <font>font_SubMenu</font>
+                            <font>font16</font>
                             <textcolor>maintext</textcolor>
                             <textoffsetx>30</textoffsetx>
                             <align>right</align>

@@ -648,9 +648,9 @@
     <include name="VideoDebugContent">
         <control type="label">
             <height>50</height>
-            <label>31259</label>
+            <label>[UPPERCASE]$LOCALIZE[31259][/UPPERCASE]</label>
             <textcolor>highlight</textcolor>
-            <font>font14_title</font>
+            <font>font14</font>
         </control>
         <control type="label">
             <height>50</height>
@@ -673,9 +673,9 @@
         </control>
         <control type="label">
             <height>50</height>
-            <label>31260</label>
+            <label>[UPPERCASE]$LOCALIZE[31260][/UPPERCASE]</label>
             <textcolor>highlight</textcolor>
-            <font>font14_title</font>
+            <font>font14</font>
         </control>
         <control type="label">
             <height>50</height>
@@ -689,9 +689,9 @@
         </control>
         <control type="label">
             <height>50</height>
-            <label>138</label>
+            <label>[UPPERCASE]$LOCALIZE[138][/UPPERCASE]</label>
             <textcolor>highlight</textcolor>
-            <font>font14_title</font>
+            <font>font14</font>
         </control>
         <control type="label">
             <height>50</height>

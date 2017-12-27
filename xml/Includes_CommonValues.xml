@@ -22,13 +22,6 @@
         <font>font14</font>
         <textoffsetx>30</textoffsetx>
     </include>
-    <include name="ButtonInfoDialogsCommonValues">
-        <width>277</width>
-        <align>center</align>
-        <font>font13_title</font>
-        <textoffsetx>10</textoffsetx>
-        <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
-    </include>
     <!-- KeyBoard -->
     <include name="Objects_KeyOffVars">
         <textoffsety>32</textoffsety>

@@ -879,9 +879,8 @@
                         <top>18</top>
                         <width>360</width>
                         <height>24</height>
-                        <label>$LOCALIZE[13271]</label>
+                        <label>[UPPERCASE]$LOCALIZE[13271][/UPPERCASE]</label>
                         <align>right</align>
-                        <font>font13_title</font>
                     </control>
                     <control type="progress">
                         <description>CPU BAR</description>
@@ -897,9 +896,8 @@
                         <top>68</top>
                         <width>360</width>
                         <height>24</height>
-                        <label>$LOCALIZE[31309]</label>
+                        <label>[UPPERCASE]$LOCALIZE[31309][/UPPERCASE]</label>
                         <align>right</align>
-                        <font>font13_title</font>
                     </control>
                     <control type="progress">
                         <description>Memory BAR</description>

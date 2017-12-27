@@ -31,8 +31,7 @@
                 <left>0</left>
                 <width>330</width>
                 <height>40</height>
-                <font>font13_title</font>
-                <label>35050</label>
+                <label>[UPPERCASE]$LOCALIZE[35050][/UPPERCASE]</label>
                 <align>center</align>
                 <textcolor>highlight</textcolor>
             </control>
@@ -83,8 +82,7 @@
                 <left>1040</left>
                 <width>330</width>
                 <height>40</height>
-                <font>font13_title</font>
-                <label>35059</label>
+                <label>[UPPERCASE]$LOCALIZE[35059][/UPPERCASE]</label>
                 <align>center</align>
                 <textcolor>highlight</textcolor>
             </control>

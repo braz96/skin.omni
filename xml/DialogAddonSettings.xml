@@ -80,7 +80,6 @@
             <control type="button" id="28">
                 <description>OK Button</description>
                 <width>400</width>
-                <label>186</label>
                 <align>center</align>
                 <font>font15_title</font>
                 <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
@@ -88,7 +87,6 @@
             <control type="button" id="29">
                 <description>Cancel Button</description>
                 <width>400</width>
-                <label>222</label>
                 <align>center</align>
                 <font>font15_title</font>
                 <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
@@ -96,7 +94,6 @@
             <control type="button" id="30">
                 <description>Defaults Button</description>
                 <width>400</width>
-                <label>409</label>
                 <align>center</align>
                 <font>font15_title</font>
                 <texturenofocus colordiffuse="33787878">selecteditem_bg.png</texturenofocus>
