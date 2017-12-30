@@ -156,6 +156,10 @@ msgctxt "#31033"
 msgid "Menu and widgets"
 msgstr "Menu and widgets"
 
+msgctxt "#31034"
+msgid "Jura"
+msgstr "Jura"
+
 msgctxt "#31036"
 msgid "10 day forecast"
 msgstr "10 day forecast"

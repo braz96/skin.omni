@@ -152,7 +152,11 @@ msgctxt "#31033"
 msgid "Menu and widgets"
 msgstr ""
 
-#empty strings from id 31034 to 31035
+msgctxt "#31034"
+msgid "Jura"
+msgstr ""
+
+#empty string with id 31035
 
 msgctxt "#31036"
 msgid "10 day forecast"
