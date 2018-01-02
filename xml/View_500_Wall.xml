@@ -41,7 +41,7 @@
                         <width>242</width>
                         <height>362</height>
                         <aspectratio align="center" aligny="center">scale</aspectratio>
-                        <texture background="true" fallback="DefaultFolder.png">$VAR[PosterVar]</texture>
+                        <texture background="true" fallback="DefaultFallbackMovies.png">$VAR[PosterVar]</texture>
                     </control>
                     <include content="OverlayIcons">
                         <param name="OverlayLeft" value="207" />
@@ -75,7 +75,7 @@
                         <width>242</width>
                         <height>362</height>
                         <aspectratio align="center" aligny="center">scale</aspectratio>
-                        <texture background="true" fallback="DefaultFolder.png">$VAR[PosterVar]</texture>
+                        <texture background="true" fallback="DefaultFallbackMovies.png">$VAR[PosterVar]</texture>
                     </control>
                     <include content="OverlayIcons">
                         <param name="OverlayLeft" value="207" />
