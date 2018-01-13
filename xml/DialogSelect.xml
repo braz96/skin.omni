@@ -135,7 +135,7 @@
                                 <width>100</width>
                                 <height>100</height>
                                 <aspectratio aligny="center" align="center">keep</aspectratio>
-                                <texture background="true" fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
+                                <texture background="true" fallback="DefaultFolder.png">$VAR[ListIcon]</texture>
                             </control>
                             <control type="label">
                                 <visible>!String.IsEmpty(ListItem.Label2)</visible>
@@ -192,7 +192,7 @@
                                 <width>100</width>
                                 <height>100</height>
                                 <aspectratio aligny="center" align="center">keep</aspectratio>
-                                <texture background="true" fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
+                                <texture background="true" fallback="DefaultFolder.png">$VAR[ListIcon]</texture>
                             </control>
                             <control type="label">
                                 <visible>!String.IsEmpty(ListItem.Label2)</visible>
