@@ -49,8 +49,8 @@ msgid "Set the path to your music source to enable logos in the music informatio
 msgstr "Set the path to your music source to enable logos in the music information dialogs."
 
 msgctxt "#31008"
-msgid "Live TV recordings"
-msgstr "Live TV recordings"
+msgid "Recent recordings"
+msgstr "Recent recordings"
 
 msgctxt "#31009"
 msgid "Manual search"

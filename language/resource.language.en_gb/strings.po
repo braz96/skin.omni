@@ -49,7 +49,7 @@ msgid "Set the path to your music source to enable logos in the music informatio
 msgstr ""
 
 msgctxt "#31008"
-msgid "Live TV recordings"
+msgid "Recent recordings"
 msgstr ""
 
 msgctxt "#31009"

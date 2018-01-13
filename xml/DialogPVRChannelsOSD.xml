@@ -74,6 +74,8 @@
                         <top>40</top>
                         <right>20</right>
                         <height>60</height>
+                        <textcolor>highlight</textcolor>
+                        <selectedcolor>highlight</selectedcolor>
                         <label>$INFO[ListItem.ChannelNumberLabel,,. ]$INFO[ListItem.Label]</label>
                     </control>
                     <control type="progress">
