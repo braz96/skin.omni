@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">450</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
     <animation effect="slide" start="0,878" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
     <animation effect="slide" start="0,0" end="0,878" time="300" tween="quadratic" easing="out">WindowClose</animation>
     <coordinates>

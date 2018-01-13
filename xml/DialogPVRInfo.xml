@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">9000</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
     <onload>SetFocus(9000,0)</onload>
     <onload>ClearProperty(MediaMenu,home)</onload>
     <onunload>ClearProperty(MediaMenu,home)</onunload>

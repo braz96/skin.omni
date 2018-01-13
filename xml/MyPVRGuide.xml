@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">10</defaultcontrol>
+    <defaultcontrol always="true">50</defaultcontrol>
     <menucontrol>9051</menucontrol>
     <onload>ClearProperty(MediaMenu,home)</onload>
     <onunload>ClearProperty(MediaMenu,home)</onunload>
-    <allowoverlay>no</allowoverlay>
-    <views>10</views>
+    <views>50</views>
     <controls>
         <include>CommonBackground</include>
         <control type="group">
@@ -14,11 +13,11 @@
             <left>-430</left>
             <control type="group">
                 <description>TV Guide Timeline</description>
-                <visible>Control.IsVisible(10)</visible>
+                <visible>Control.IsVisible(50)</visible>
                 <include>Animation.Common</include>
                 <left>550</left>
                 <top>128</top>
-                <control type="epggrid" id="10">
+                <control type="epggrid" id="50">
                     <description>EPG Grid</description>
                     <left>82</left>
                     <top>0</top>
@@ -31,8 +30,8 @@
                     <onleft>9005</onleft>
                     <onright>SetProperty(MediaMenu,true,home)</onright>
                     <onright>SetFocus(9050)</onright>
-                    <onup>10</onup>
-                    <ondown>10</ondown>
+                    <onup>50</onup>
+                    <ondown>50</ondown>
                     <onback>SetProperty(MediaMenu,true,home)</onback>
                     <onback>SetFocus(9050)</onback>
                     <viewtype label="19032">list</viewtype>
@@ -67,7 +66,7 @@
                     </channellayout>
                     <focusedchannellayout height="90" width="440">
                         <control type="image">
-                            <animation effect="fade" start="100" end="60" time="300" condition="!Control.HasFocus(10)">Conditional</animation>
+                            <animation effect="fade" start="100" end="60" time="300" condition="!Control.HasFocus(50)">Conditional</animation>
                             <width>356</width>
                             <height>90</height>
                             <texture>selecteditem_bg.png</texture> 
@@ -130,6 +129,7 @@
                     </itemlayout>
                     <focusedlayout height="90" width="120">
                         <control type="image" id="14">
+                            <animation effect="fade" start="100" end="60" time="300" condition="!Control.HasFocus(50)">Conditional</animation>
                             <width>120</width>
                             <height>90</height>
                             <texture>selecteditem_bg.png</texture>
@@ -173,8 +173,8 @@
                     <top>64</top>
                     <height>625</height>
                     <width>10</width>
-                    <onleft>10</onleft>
-                    <onright>10</onright>
+                    <onleft>50</onleft>
+                    <onright>50</onright>
                     <ondown>60</ondown>
                     <onup>60</onup>
                 </control>
@@ -184,7 +184,7 @@
                     <width>356</width>
                     <height>180</height>
                     <aspectratio aligny="center" align="center">keep</aspectratio>
-                    <texture>$INFO[Container(10).ListItem.Icon]</texture>
+                    <texture>$INFO[Container(50).ListItem.Icon]</texture>
                 </control>
                 <control type="group">
                     <left>510</left>

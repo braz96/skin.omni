@@ -3,7 +3,6 @@
     <defaultcontrol always="true">20</defaultcontrol>
     <animation effect="slide" start="0,708" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
     <animation effect="slide" start="0,0" end="0,708" time="300" tween="quadratic" easing="out">WindowClose</animation>
-    <allowoverlay>no</allowoverlay>
     <coordinates>
         <system>1</system>
         <left>0</left>

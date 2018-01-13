@@ -2,7 +2,6 @@
 <window>
     <defaultcontrol always="true">9005</defaultcontrol>
     <menucontrol>9052</menucontrol>
-    <allowoverlay>no</allowoverlay>
     <onload>ClearProperty(MediaMenu,home)</onload>
     <onunload>ClearProperty(MediaMenu,home)</onunload>
     <controls>

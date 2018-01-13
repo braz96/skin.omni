@@ -16,14 +16,13 @@
                 <height>1080</height>
                 <onright condition="Window.IsActive(home)">SetFocus($INFO[Container(9005).ListItem.Property(menu_id)])</onright>
                 <onright condition="Window.IsActive(settings) | Window.IsActive(systeminfo)">9020</onright>
-                <onright condition="Window.IsActive(videos) | Window.IsActive(music) | Window.IsActive(videoplaylist) | Window.IsActive(musicplaylist) | Window.IsActive(1119) | Window.IsActive(addonbrowser) | Window.IsActive(programs) | Window.IsActive(pictures) | Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvsearch) | Window.IsActive(tvtimers) | Window.IsActive(musicplaylisteditor) | Window.IsActive(games)">50</onright>
+                <onright condition="Window.IsActive(videos) | Window.IsActive(music) | Window.IsActive(videoplaylist) | Window.IsActive(musicplaylist) | Window.IsActive(1119) | Window.IsActive(addonbrowser) | Window.IsActive(programs) | Window.IsActive(pictures) | Window.IsActive(eventlog) | Window.IsActive(tvguide) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvsearch) | Window.IsActive(tvtimers) | Window.IsActive(musicplaylisteditor) | Window.IsActive(games)">50</onright>
                 <onright condition="Window.IsActive(weather) | Window.IsActive(1121) | Window.IsActive(1122) | Window.IsActive(1123) | Window.IsActive(1124) | Window.IsActive(1125)">305</onright>
                 <onright condition="Window.IsActive(SettingsCategory.xml)">3</onright>
                 <onright condition="Window.IsActive(skinsettings)">9030</onright>
                 <onright condition="Window.IsActive(script-globalsearch.xml)">SetFocus(9000)</onright>
                 <onright condition="Window.IsActive(profiles)">2</onright>
                 <onright condition="Window.IsActive(filemanager)">20</onright>
-                <onright condition="Window.IsActive(tvguide)">10</onright>
                 <onright condition="Window.IsActive(script-script.extendedinfo-YoutubeList.xml)">SetFocus(500)</onright>
                 <onleft condition="Integer.IsGreater(Container(9010).NumItems,0)">SetProperty(SubMenu,true,home)</onleft>
                 <onleft condition="Integer.IsGreater(Container(9010).NumItems,0)">9010</onleft>
