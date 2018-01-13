@@ -256,10 +256,6 @@ msgctxt "#31068"
 msgid "Album wall"
 msgstr "Album wall"
 
-msgctxt "#31071"
-msgid "Download artwork"
-msgstr "Download artwork"
-
 msgctxt "#31072"
 msgid "Disable main menu items and/or widgets to hide them on the home screen."
 msgstr "Disable main menu items and/or widgets to hide them on the home screen."
@@ -539,10 +535,6 @@ msgstr "Current conditions"
 msgctxt "#31205"
 msgid "Lyrics Source"
 msgstr "Lyrics Source"
-
-msgctxt "#31225"
-msgid "Artwork Downloader"
-msgstr "Artwork Downloader"
 
 msgctxt "#31226"
 msgid "Rating Update"

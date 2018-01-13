@@ -450,13 +450,6 @@
                                 <onclick condition="System.HasAddon(script.artistslideshow)">Addon.OpenSettings(script.artistslideshow)</onclick>
                                 <onclick condition="!System.HasAddon(script.artistslideshow)">InstallAddon(script.artistslideshow)</onclick>
                             </item>
-                            <item id="2">
-                                <icon>$INFO[System.AddonIcon(script.artwork.downloader)]</icon>
-                                <label>31225</label>
-                                <label2>$INFO[System.AddonVersion(script.artwork.downloader)]</label2>
-                                <onclick condition="System.HasAddon(script.artwork.downloader)">Addon.OpenSettings(script.artwork.downloader)</onclick>
-                                <onclick condition="!System.HasAddon(script.artwork.downloader)">InstallAddon(script.artwork.downloader)</onclick>
-                            </item>
                             <item id="3">
                                 <icon>$INFO[System.AddonIcon(plugin.program.autocompletion)]</icon>
                                 <label>31003</label>

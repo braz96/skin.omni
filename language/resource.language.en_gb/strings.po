@@ -260,11 +260,7 @@ msgctxt "#31068"
 msgid "Album wall"
 msgstr ""
 
-#empty strings from id 31069 to 31070
-
-msgctxt "#31071"
-msgid "Download artwork"
-msgstr ""
+#empty strings from id 31069 to 31071
 
 msgctxt "#31072"
 msgid "Disable main menu items and/or widgets to hide them on the home screen."
@@ -582,11 +578,7 @@ msgctxt "#31205"
 msgid "Lyrics Source"
 msgstr ""
 
-#empty strings from id 31206 to 31224
-
-msgctxt "#31225"
-msgid "Artwork Downloader"
-msgstr ""
+#empty strings from id 31206 to 31225
 
 msgctxt "#31226"
 msgid "Rating Update"

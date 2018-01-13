@@ -808,22 +808,6 @@
                                 <label2>$LOCALIZE[31201] $INFO[ListItem.Director]</label2>
                                 <onclick>SendClick(13)</onclick>
                             </item>
-                            <item id="2">
-                                <visible>System.HasAddon(script.artwork.downloader) + [$EXP[isMovie] | $EXP[isTvshow]]</visible>
-                                <icon>$INFO[System.AddonIcon(script.artwork.downloader)]</icon>
-                                <label>31071</label>
-                                <label2>$INFO[System.AddonTitle(script.artwork.downloader)]$INFO[System.AddonVersion(script.artwork.downloader), (,)]</label2>
-                                <onclick condition="$EXP[isMovie]">RunScript(script.artwork.downloader, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
-                                <onclick condition="$EXP[isTvshow]">RunScript(script.artwork.downloader, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
-                            </item>
-                            <item id="3">
-                                <visible>System.HasAddon(script.artwork.downloader) + [$EXP[isMovie] | $EXP[isTvshow]]</visible>
-                                <icon>$INFO[System.AddonIcon(script.artwork.downloader)]</icon>
-                                <label>$LOCALIZE[31071] ([LOWERCASE]$LOCALIZE[413][/LOWERCASE])</label>
-                                <label2>$INFO[System.AddonTitle(script.artwork.downloader)]$INFO[System.AddonVersion(script.artwork.downloader), (,)]</label2>
-                                <onclick condition="$EXP[isMovie]">RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
-                                <onclick condition="$EXP[isTvshow]">RunScript(script.artwork.downloader,mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
-                            </item>
                             <item id="4">
                                 <visible>System.HasAddon(script.simpleplaylists) + [$EXP[isMovie] | $EXP[isEpisode]]</visible>
                                 <icon>$INFO[System.AddonIcon(script.simpleplaylists)]</icon>
