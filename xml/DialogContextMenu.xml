@@ -33,9 +33,9 @@
                 <control type="button" id="994">
                     <width>510</width>
                     <include>ButtonCommonValues</include>
-                    <label>$LOCALIZE[14098] $LOCALIZE[20410]</label>
+                    <label>$LOCALIZE[14098] [LOWERCASE]$LOCALIZE[20410][/LOWERCASE]</label>
                     <onclick>PlayMedia($ESCINFO[ListItem.Trailer])</onclick>
-                    <visible>!String.IsEmpty(ListItem.Trailer)</visible>
+                    <visible>!String.IsEmpty(ListItem.Trailer) + !Window.IsVisible(script-globalsearch.xml)</visible>
                 </control>
             </control>
             <control type="button" id="1000">
