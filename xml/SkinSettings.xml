@@ -330,18 +330,18 @@
                             <selected>!Skin.HasSetting(HomeMenuNoSearchButton)</selected>
                             <onclick>Skin.ToggleSetting(HomeMenuNoSearchButton)</onclick>
                         </control>
-                        <control type="radiobutton" id="1140">
-                            <label>- $LOCALIZE[13409]</label>
-                            <include>SkinSettingsButtonDefaults</include>
-                            <selected>!Skin.HasSetting(HomeNoTop250Widget)</selected>
-                            <onclick>Skin.ToggleSetting(HomeNoTop250Widget)</onclick>
-                            <visible>!Skin.HasSetting(HomeMenuNoSearchButton)</visible>
-                        </control>
                         <control type="radiobutton" id="1141">
                             <label>- $LOCALIZE[1036]</label>
                             <include>SkinSettingsButtonDefaults</include>
                             <selected>!Skin.HasSetting(HomeNoFavoritesWidget)</selected>
                             <onclick>Skin.ToggleSetting(HomeNoFavoritesWidget)</onclick>
+                            <visible>!Skin.HasSetting(HomeMenuNoSearchButton)</visible>
+                        </control>
+                        <control type="radiobutton" id="1140">
+                            <label>- $LOCALIZE[13409]</label>
+                            <include>SkinSettingsButtonDefaults</include>
+                            <selected>!Skin.HasSetting(HomeNoTop250Widget)</selected>
+                            <onclick>Skin.ToggleSetting(HomeNoTop250Widget)</onclick>
                             <visible>!Skin.HasSetting(HomeMenuNoSearchButton)</visible>
                         </control>
                         <control type="radiobutton" id="115">
