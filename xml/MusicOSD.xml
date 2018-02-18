@@ -148,6 +148,7 @@
                     <visible>System.HasAddon(script.cu.lrclyrics)</visible>
                 </control>
                 <control type="togglebutton" id="704">
+                    <visible>![MusicPlayer.Content(LiveTV) | MusicPartyMode.Enabled]</visible>
                     <label>N</label>
                     <altlabel>M</altlabel>
                     <align>center</align>
@@ -158,6 +159,7 @@
                     <onclick>PlayerControl(Random)</onclick>
                 </control>
                 <control type="button" id="708">
+                    <visible>![MusicPlayer.Content(LiveTV) | MusicPartyMode.Enabled]</visible>
                     <label>$VAR[MusicOSDRepeatButtonVar]</label>
                     <align>center</align>
                     <width>100</width>
