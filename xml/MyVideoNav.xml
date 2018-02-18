@@ -90,6 +90,14 @@
                         <onclick condition="!System.HasAddon(plugin.library.node.editor)">InstallAddon(plugin.library.node.editor)</onclick>
                         <visible>Container.Content() + String.IsEmpty(Container.PluginName)</visible>
                     </control>
+                    <control type="button" id="206">
+                        <include>ButtonCommonValues</include>
+                        <label>19063</label>
+                        <onclick>ClearProperty(MediaMenu,home)</onclick>
+                        <onclick condition="Control.IsVisible(500)">SetFocus(500,0,absolute)</onclick>
+                        <onclick condition="Control.IsVisible(50)">SetFocus(50,0,absolute)</onclick>
+                        <visible>Container.Content(actors)</visible>
+                    </control>
                     <include>PlaylistButtons</include>
                     <include content="MenuPlayerControls">
                         <param name="PlayerControlsOnDown" value="1802" />

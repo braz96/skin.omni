@@ -210,6 +210,7 @@
         <value condition="Container.Content(episodes) + !String.IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
+        <value condition="Container.Content(actors)">actor_fallback.png</value>
         <value condition="ListItem.IsParentFolder">DefaultFallbackParent.png</value>
         <value condition="ListItem.IsFolder">DefaultFallback.png</value>
         <value condition="Window.IsActive(videos)">DefaultFallbackMovies.png</value>

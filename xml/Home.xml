@@ -110,6 +110,14 @@
                         <param name="sortby" value="random"/>
                         <param name="list_id" value="5600"/>
                     </include>
+                    <!--<include content="WidgetListActor" condition="Library.HasContent(movies) + !Skin.HasSetting(HomeNoMovieActorsWidget)">
+                        <param name="content_path" value="videodb://movies/actors/"/>
+                        <param name="widget_header" value="Popular actors"/>
+                        <param name="widget_target" value="videos"/>
+                        <param name="sortby" value="programcount"/>
+                        <param name="sortorder" value="descending"/>
+                        <param name="list_id" value="5700"/>
+                    </include>-->
                 </control>
             </control>
             <control type="group" id="6000">
@@ -142,6 +150,14 @@
                         <param name="widget_target" value="videos"/>
                         <param name="list_id" value="6300"/>
                     </include>
+                    <!--<include content="WidgetListActor" condition="Library.HasContent(tvshows) + !Skin.HasSetting(HomeNoTVShowActorsWidget)">
+                        <param name="content_path" value="videodb://tvshows/actors/"/>
+                        <param name="widget_header" value="Popular actors"/>
+                        <param name="widget_target" value="videos"/>
+                        <param name="sortby" value="appearances"/>
+                        <param name="sortorder" value="descending"/>
+                        <param name="list_id" value="6400"/>
+                    </include>-->
                 </control>
             </control>
             <control type="group" id="7000">

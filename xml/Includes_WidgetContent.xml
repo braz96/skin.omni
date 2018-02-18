@@ -53,7 +53,7 @@
                     <width>242</width>
                     <height>362</height>
                     <aspectratio align="center" aligny="center">scale</aspectratio>
-                    <texture background="true" fallback="DefaultFolder.png">$INFO[ListItem.Art(poster)]</texture>
+                    <texture background="true" fallback="DefaultFallbackMovies.png">$INFO[ListItem.Art(poster)]</texture>
                 </control>
                 <include content="OverlayIcons">
                     <param name="OverlayLeft" value="225" />
@@ -87,7 +87,7 @@
                     <width>242</width>
                     <height>362</height>
                     <aspectratio align="center" aligny="center">scale</aspectratio>
-                    <texture background="true" fallback="DefaultFolder.png">$INFO[ListItem.Art(poster)]</texture>
+                    <texture background="true" fallback="DefaultFallbackMovies.png">$INFO[ListItem.Art(poster)]</texture>
                 </control>
                 <include content="OverlayIcons">
                     <param name="OverlayLeft" value="225" />
@@ -97,6 +97,80 @@
             <content limit="16" sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]">$PARAM[content_path]</content>
         </control>
     </include>
+    <!--<include name="WidgetListActor">
+        <include>Animation.Common</include>
+        <include content="CategoryLabel">
+            <param name="label">$PARAM[widget_header]</param>
+            <param name="list_id" value="$PARAM[list_id]"/>
+        </include>
+        <control type="panel" id="$PARAM[list_id]">
+            <visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
+            <top>15</top>
+            <left>0</left>
+            <width>1970</width>
+            <height>640</height>
+            <onleft>9005</onleft>
+            <onback>9005</onback>
+            <preloaditems>2</preloaditems>
+            <orientation>Horizontal</orientation>
+            <viewtype label="21371">list</viewtype>
+            <itemlayout height="445" width="282">
+                <control type="image">
+                    <top>80</top>
+                    <left>40</left>
+                    <width>242</width>
+                    <height>362</height>
+                    <texture>overlays/diffuse-overlay.png</texture>
+                </control>
+                <control type="label">
+                    <left>40</left>
+                    <width>242</width>
+                    <top>440</top>
+                    <height>50</height>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+                <control type="image">
+                    <left>40</left>
+                    <top>80</top>
+                    <width>242</width>
+                    <height>362</height>
+                    <aspectratio align="center" aligny="center">scale</aspectratio>
+                    <texture background="true" fallback="actor_fallback.png">$INFO[ListItem.Art(thumb)]</texture>
+                </control>
+            </itemlayout>
+            <focusedlayout height="445" width="282">
+                <include content="SelectedItemBackground">
+                    <param name="Left" value="30" />
+                    <param name="Top" value="70" />
+                    <param name="Width" value="262" />
+                    <param name="Height" value="422" />
+                </include>
+                <control type="image">
+                    <top>80</top>
+                    <left>40</left>
+                    <width>242</width>
+                    <height>362</height>
+                    <texture>overlays/diffuse-overlay.png</texture>
+                </control>
+                <control type="label">
+                    <left>40</left>
+                    <width>242</width>
+                    <top>440</top>
+                    <height>50</height>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+                <control type="image">
+                    <left>40</left>
+                    <top>80</top>
+                    <width>242</width>
+                    <height>362</height>
+                    <aspectratio align="center" aligny="center">scale</aspectratio>
+                    <texture background="true" fallback="actor_fallback.png">$INFO[ListItem.Art(thumb)]</texture>
+                </control>
+            </focusedlayout>
+            <content limit="16" sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]">$PARAM[content_path]</content>
+        </control>
+    </include>-->
     <include name="WidgetListLandscape">
         <include>Animation.Common</include>
         <include content="CategoryLabel">

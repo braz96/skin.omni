@@ -136,7 +136,6 @@
                 <texture colordiffuse="disabled">$INFO[MusicPlayer.Codec,flags/audio/,.png]</texture>
             </control>
             <control type="progress">
-                <visible>!String.IsEmpty(Player.Progress)</visible>
                 <left>375</left>
                 <top>283</top>
                 <width>1510</width>
