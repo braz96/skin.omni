@@ -105,7 +105,7 @@
                         <visible>!Skin.HasSetting(HomeMenuNoMusicVideoButton)</visible>
                     </item>
                     <item>
-                        <label>$LOCALIZE[19020]</label>
+                        <label>$LOCALIZE[31502]</label>
                         <property name="menu_id">$NUMBER[12000]</property>
                         <onclick>ActivateWindow(TVChannels)</onclick>
                         <thumb>DefaultAddonPVRClient.png</thumb>
