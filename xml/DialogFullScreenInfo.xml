@@ -25,32 +25,6 @@
                 <align>center</align>
                 <itemgap>0</itemgap>
                 <orientation>horizontal</orientation>
-                <control type="image" id="800011">
-                    <colordiffuse>maintext</colordiffuse>
-                    <width>320</width>
-                    <include>MediaFlagVars</include>
-                    <bordersize>2</bordersize>
-                    <texture>resource://resource.images.studios.white/$INFO[VideoPlayer.Studio,,.png]</texture>
-                    <visible>!String.IsEmpty(Control.GetLabel(800011))</visible>
-                    <visible>!VideoPlayer.Content(livetv) + !VideoPlayer.Content(files)</visible>
-                </control>
-                <control type="label">
-                    <width>320</width>
-                    <height>90</height>
-                    <align>center</align>
-                    <label>$INFO[VideoPlayer.Studio]</label>
-                    <font>font10</font>
-                    <wrapmultiline>true</wrapmultiline>
-                    <visible>String.IsEmpty(Control.GetLabel(800011))</visible>
-                    <visible>!VideoPlayer.Content(livetv)</visible>
-                </control>
-                <control type="image">
-                    <width>320</width>
-                    <colordiffuse>maintext</colordiffuse>
-                    <include>MediaFlagVars</include>
-                    <texture fallback="flags/mpaa/NR.png">$VAR[VideoRatingFlagVar]</texture>
-                    <visible>!VideoPlayer.Content(livetv)</visible>
-                </control>
                 <control type="image">
                     <width>320</width>
                     <colordiffuse>maintext</colordiffuse>
@@ -68,7 +42,6 @@
                     <colordiffuse>maintext</colordiffuse>
                     <include>MediaFlagVars</include>
                     <texture>$INFO[VideoPlayer.AudioChannels,flags/channels/,.png]</texture>
-                    <visible>VideoPlayer.Content(livetv)</visible>
                 </control>
                 <control type="image">
                     <width>320</width>
@@ -199,7 +172,7 @@
             <animation effect="slide" start="0,308" end="0,0" time="200">WindowOpen</animation>
             <animation effect="slide" start="0,308" end="0,0" time="200">VisibleChange</animation>
             <animation effect="slide" start="0,0" end="0,308" time="200">WindowClose</animation>
-            <top>780</top>
+            <top>772</top>
             <visible>VideoPlayer.Content(livetv) | VideoPlayer.Content(musicvideos)</visible>
             <visible>!Window.IsActive(videoosd)</visible>
             <control type="image">
