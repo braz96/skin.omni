@@ -2,7 +2,7 @@
 <window>
     <defaultcontrol>1</defaultcontrol>
     <visible>[[Player.Seeking | Player.DisplayAfterSeek | [Player.Paused + !Player.Caching] | Player.Forwarding | Player.Rewinding | Player.ShowInfo | Window.IsActive(videoosd) | Window.IsActive(playerprocessinfo)] + Window.IsActive(fullscreenvideo)] | Window.IsActive(visualisation) | !String.IsEmpty(Player.SeekNumeric) | [[Window.IsActive(fullscreenvideo) | Window.IsActive(visualisation)] + !Window.IsActive(pvrosdchannels) + !String.IsEmpty(PVR.ChannelNumberInput)]</visible>
-    <visible>!Window.IsActive(sliderdialog) + !Window.IsActive(fullscreeninfo)</visible>
+    <visible>!Window.IsActive(sliderdialog) + !Window.IsActive(fullscreeninfo) + !Window.IsVisible(osdsubtitlesettings) + !Window.IsVisible(subtitlesearch)</visible>
     <controls>
         <control type="group">
             <animation effect="slide" start="0,108" end="0,0" time="200">WindowOpen</animation>
