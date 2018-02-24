@@ -176,7 +176,7 @@
                                 <width>67</width>
                                 <height>100</height>
                                 <aspectratio align="center" aligny="center">scale</aspectratio>
-                                <texture fallback="DefaultFallback.png" background="true">$INFO[ListItem.Art(poster)]</texture>
+                                <texture fallback="DefaultFallbackMovies.png" background="true">$INFO[ListItem.Art(poster)]</texture>
                             </control>
                             <control type="label">
                                 <top>3</top>
@@ -220,7 +220,7 @@
                                 <width>67</width>
                                 <height>100</height>
                                 <aspectratio align="center" aligny="center">scale</aspectratio>
-                                <texture fallback="DefaultFallback.png" background="true">$INFO[ListItem.Art(poster)]</texture>
+                                <texture fallback="DefaultFallbackMovies.png" background="true">$INFO[ListItem.Art(poster)]</texture>
                             </control>
                             <control type="label">
                                 <top>3</top>
@@ -381,6 +381,68 @@
                                 <right>80</right>
                                 <height>60</height>
                                 <label>$INFO[ListItem.Artist]</label>
+                            </control>
+                        </focusedlayout>
+                        <itemlayout height="120" width="1180" condition="Container.Content(actors) | Container.Content(directors)">
+                            <control type="image">
+                                <top>10</top>
+                                <left>10</left>
+                                <width>100</width>
+                                <height>100</height>
+                                <aspectratio align="center" aligny="center">keep</aspectratio>
+                                <texture fallback="DefaultFallback.png" background="true">$INFO[ListItem.Icon]</texture>
+                            </control>
+                            <control type="label">
+                                <top>3</top>
+                                <left>140</left>
+                                <right>80</right>
+                                <height>70</height>
+                                <font>font30</font>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="label">
+                                <left>140</left>
+                                <top>52</top>
+                                <right>80</right>
+                                <height>60</height>
+                                <textcolor>highlight</textcolor>
+                                <label>$INFO[ListItem.Label2,, $LOCALIZE[342]]</label>
+                            </control>
+                        </itemlayout>
+                        <focusedlayout height="120" width="1180" condition="Container.Content(actors) | Container.Content(directors)">
+                            <include content="SelectedItemBackground">
+                                <param name="Left" value="0" />
+                                <param name="Top" value="0" />
+                                <param name="Width" value="1180" />
+                                <param name="Height" value="120" />
+                            </include>
+                            <control type="image">
+                                <width>120</width>
+                                <height>120</height>
+                                <texture>overlays/diffuse-overlay.png</texture>
+                            </control>
+                            <control type="image">
+                                <top>10</top>
+                                <left>10</left>
+                                <width>100</width>
+                                <height>100</height>
+                                <aspectratio align="center" aligny="center">keep</aspectratio>
+                                <texture fallback="DefaultFallback.png" background="true">$INFO[ListItem.Icon]</texture>
+                            </control>
+                            <control type="label">
+                                <top>3</top>
+                                <left>140</left>
+                                <right>80</right>
+                                <height>70</height>
+                                <font>font30</font>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="label">
+                                <left>140</left>
+                                <top>52</top>
+                                <right>80</right>
+                                <height>60</height>
+                                <label>$INFO[ListItem.Label2,, $LOCALIZE[342]]</label>
                             </control>
                         </focusedlayout>
                         <itemlayout height="120" width="1180" condition="Container.Content(artists)">
