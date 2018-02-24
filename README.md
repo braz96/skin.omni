@@ -12,6 +12,11 @@ If you would like to express your appreciation for this skin, please consider a 
 
 
 ***
+**2.1.0**
+- Complete redesign of home window with static menu and widgets, can enable/disable items in skin settings.
+- Many other fixes and minor changes.
+
+***
 **2.0.2**
 - Removed selected item animations.
 - Updated GlobalSearch to support v8.

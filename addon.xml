@@ -6,14 +6,9 @@
   provider-name="braz">
 	<requires>
 		<import addon="xbmc.gui" version="5.13.0"/>
-		<import addon="resource.images.studios.white" version="0.0.4"/>
-		<import addon="script.globalsearch" version="8.0.0"/>
 		<import addon="script.toolbox" version="1.0.0"/>
 	</requires>
-	<extension
-	  point="xbmc.gui.skin"
-	  debugging="false"
-	  effectslowdown="0.75">
+	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.75">
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -41,6 +36,6 @@
 			<screenshot>resources/screenshot-09.jpg</screenshot>
 			<screenshot>resources/screenshot-10.jpg</screenshot>
 		</assets>
-		<news>2.0.2[CR]- Removed selected item animations.[CR]- Updated GlobalSearch to support v8.[CR]- Added 2 column list option.</news>
+		<news>2.1.0[CR]- Complete redesign of home window with static menu and widgets, can enable/disable items in skin settings.[CR]- Many other fixes and minor changes.</news>
 	</extension>
 </addon>
