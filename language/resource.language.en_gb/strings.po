@@ -500,11 +500,7 @@ msgctxt "#31178"
 msgid "Search by director"
 msgstr ""
 
-#empty strings from id 31179 to 31180
-
-msgctxt "#31181"
-msgid "Studio Icons - White"
-msgstr ""
+#empty strings from id 31179 to 31181
 
 msgctxt "#31182"
 msgid "ToolBox Script"

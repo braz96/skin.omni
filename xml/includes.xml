@@ -572,18 +572,6 @@
                 <texture>flags/cc.png</texture>
                 <visible>!String.IsEmpty(ListItem.SubtitleLanguage) + ![$EXP[isTvshow] | $EXP[isSeason] | $EXP[isEpisode]]</visible>
             </control>
-            <!--<control type="image">
-                <height>80</height>
-                <include>MediaFlagVars</include>
-                <texture>resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
-                <visible>[$EXP[isTvshow] | $EXP[isSeason]] + !Window.IsVisible(movieinformation)</visible>
-            </control>
-            <control type="image">
-                <height>80</height>
-                <include>MediaFlagVars</include>
-                <texture fallback="flags/mpaa/NR.png">$VAR[RatingFlagVar]</texture>
-                <visible>[$EXP[isTvshow] | $EXP[isSeason]] + !Window.IsVisible(movieinformation)</visible>
-            </control>-->
         </control>
     </include>
     <include name="AudioDSPPanelContent">
@@ -740,7 +728,7 @@
         <content>
             <item id="1">
                 <label>$LOCALIZE[14206]</label>
-                <label2>$LOCALIZE[166] • $LOCALIZE[20026] • $LOCALIZE[24008] • $LOCALIZE[20304]</label2>
+                <label2>$LOCALIZE[166] • $LOCALIZE[20026] • $LOCALIZE[24008] • $LOCALIZE[12999]</label2>
                 <icon>DefaultAddonVisualization.png</icon>
                 <onclick>ActivateWindow(InterfaceSettings)</onclick>
             </item>

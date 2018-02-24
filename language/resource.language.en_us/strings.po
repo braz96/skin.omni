@@ -468,10 +468,6 @@ msgctxt "#31178"
 msgid "Search by director"
 msgstr "Search by director"
 
-msgctxt "#31181"
-msgid "Studio Icons - White"
-msgstr "Studio Icons - White"
-
 msgctxt "#31182"
 msgid "ToolBox Script"
 msgstr "ToolBox Script"

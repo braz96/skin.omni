@@ -527,13 +527,6 @@
                                 <onclick condition="System.HasAddon(resource.images.studios.squarehd)">Addon.OpenSettings(resource.images.studios.squarehd)</onclick>
                                 <onclick condition="!System.HasAddon(resource.images.studios.squarehd)">InstallAddon(resource.images.studios.squarehd)</onclick>
                             </item>
-                            <item id="15">
-                                <icon>$INFO[System.AddonIcon(resource.images.studios.white)]</icon>
-                                <label>31181</label>
-                                <label2>$INFO[System.AddonVersion(resource.images.studios.white)]</label2>
-                                <onclick condition="System.HasAddon(resource.images.studios.white)">Addon.OpenSettings(resource.images.studios.white)</onclick>
-                                <onclick condition="!System.HasAddon(resource.images.studios.white)">InstallAddon(resource.images.studios.white)</onclick>
-                            </item>
                             <item id="16">
                                 <icon>$INFO[System.AddonIcon(script.toolbox)]</icon>
                                 <label>31182</label>
