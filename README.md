@@ -13,7 +13,7 @@ If you would like to express your appreciation for this skin, please consider a 
 
 ***
 **2.1.0**
-- Complete redesign of home window with static menu and widgets, can enable/disable items in skin settings.
+- Complete redesign of home window with static menu and widgets (from Estuary), can enable/disable items in skin settings.
 - Many other fixes and minor changes.
 
 ***
